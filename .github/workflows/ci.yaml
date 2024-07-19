@@ -1,4 +1,4 @@
-name: Build and Test 2
+name: Build and Test
 
 on:
   pull_request:
@@ -11,7 +11,7 @@ on:
 
 jobs:
   build-and-test:
-    if: ${{ github.repository == 'mraath/marty-mix' }}
+    if: ${{ github.repository == 'jackyzha0/quartz' }}
     strategy:
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
@@ -28,15 +28,6 @@ jobs:
         with:
           node-version: 18
 
-      - name: Print environment
-        run: env
-
-      - name: Print Node.js version
-        run: node -v
-
-      - name: Print npm version
-        run: npm -v
-
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
@@ -47,15 +38,8 @@ jobs:
 
       - run: npm ci
 
-      - name: Check types
-        run: npx tsc --noEmit
-
-      - name: Check code style
-        run: npx prettier . --check
-
-      - name: Fix code style issues
-        if: failure()
-        run: npx prettier . --write
+      - name: Check types and style
+        run: npm run check
 
       - name: Test
         run: npm test
@@ -64,7 +48,7 @@ jobs:
         run: npx quartz build --bundleInfo
 
   publish-tag:
-    if: ${{ github.repository == 'mraath/marty-mix' && github.ref == 'refs/heads/v4' }}
+    if: ${{ github.repository == 'jackyzha0/quartz' && github.ref == 'refs/heads/v4' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
