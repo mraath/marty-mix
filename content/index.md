@@ -1,6 +1,9 @@
 ---
-title: Welcome to Quartz
+title: Welcome to Marty's Vault
 ---
+Trying to get all my MiX Notes in one place where I can then easily share it with others. Not sure yet if this is the best way forward :-P
 
-This is a blank Quartz installation. OR IS IT?
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+## Starting points
+
+- [[Frangular Getting Started]]
+- 

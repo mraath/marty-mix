@@ -1,11 +1,10 @@
 ---
-title: "Marty Test 1"
+title: How to use Quartz
 draft: false
 tags:
-  -
 ---
 
-## How to use Quartz
+## Quartz Cheatsheet
 
 ### To build it locally and test:
 
@@ -24,4 +23,3 @@ npx quartz sync
 ```
 npx prettier . --write
 ```
-[[GO somewhere ELSE]]
