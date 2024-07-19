@@ -19,8 +19,9 @@ npx quartz build --serve
 npx quartz sync
 ```
 
-### Make things Prittier
+### Make things Prettier
 
 ```
 npx prettier . --write
 ```
+[[GO somewhere ELSE]]
