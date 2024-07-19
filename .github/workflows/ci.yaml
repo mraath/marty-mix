@@ -28,6 +28,15 @@ jobs:
         with:
           node-version: 18
 
+      - name: Print environment
+        run: env
+
+      - name: Print Node.js version
+        run: node -v
+
+      - name: Print npm version
+        run: npm -v
+
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
@@ -38,14 +47,23 @@ jobs:
 
       - run: npm ci
 
-      - name: Check types and style
-        run: npm run check
+      - name: Check types
+        run: tsc --noEmit
+
+      - name: Check code style
+        run: npx prettier . --check
+
+      - name: Fix code style issues
+        if: failure()
+        run: npx prettier . --write
 
       - name: Test
         run: npm test
 
       - name: Ensure Quartz builds, check bundle info
-        run: npx quartz build --bundleInfo
+        run: |
+          chmod +x /Users/runner/.npm/_npx/3e319ef0a9b7387a/node_modules/.bin/quartz
+          npx quartz build --bundleInfo
 
   publish-tag:
     if: ${{ github.repository == 'mraath/marty-mix' && github.ref == 'refs/heads/v4' }}
