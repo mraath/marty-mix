@@ -48,7 +48,7 @@ jobs:
       - run: npm ci
 
       - name: Check types
-        run: tsc --noEmit
+        run: npx tsc --noEmit
 
       - name: Check code style
         run: npx prettier . --check
@@ -61,9 +61,7 @@ jobs:
         run: npm test
 
       - name: Ensure Quartz builds, check bundle info
-        run: |
-          chmod +x /Users/runner/.npm/_npx/3e319ef0a9b7387a/node_modules/.bin/quartz
-          npx quartz build --bundleInfo
+        run: npx quartz build --bundleInfo
 
   publish-tag:
     if: ${{ github.repository == 'mraath/marty-mix' && github.ref == 'refs/heads/v4' }}
