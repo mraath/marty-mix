@@ -8067,10 +8067,10 @@ c63832cf696ea17ae127705dd1d92c44419d4da5: [[OE-501 SPIKE to create the multi-sel
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 73.5061841981398,
-		"scrollY": 391.2740139243257,
+		"scrollX": 1005.3391787398772,
+		"scrollY": 1065.5475751837948,
 		"zoom": {
-			"value": 1.3117981972486537
+			"value": 0.35000000000000003
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
