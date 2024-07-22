@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T09:23
-updated: 2024-05-17T11:43
+updated: 2024-07-22T10:35
 ---
 ## Introduction to moving Shuan's wireframe
 
@@ -12,8 +12,7 @@ I created the next few parts:
 - FE: Ensure the FE action opens the iFrame, which will call the NEW UI  
 - NEW UI: Make use of Shawn’s HTML
 
-The separate pdf is available here:
-[STM-1074 Handover to Pallavi.pdf](https://mixtelematics-my.sharepoint.com/personal/marthinus_raath_mixtelematics_com/Documents/Microsoft%20Teams%20Chat%20Files/STM-1074%20Handover%20to%20Pallavi.pdf)
+The [seperate pdf](https://mixtelematics-my.sharepoint.com/personal/marthinus_raath_mixtelematics_com/Documents/Microsoft%20Teams%20Chat%20Files/STM-1074%20Handover%20to%20Pallavi.pdf)
 
 [[STM-1074 Handover to Pallavi]]
 

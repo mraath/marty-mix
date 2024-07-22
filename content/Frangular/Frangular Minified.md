@@ -1,6 +1,6 @@
 ---
 created: 2024-05-21T15:26
-updated: 2024-05-22T11:26
+updated: 2024-07-22T10:47
 ---
 
 ## Video Available
@@ -12,7 +12,7 @@ updated: 2024-05-22T11:26
 
 ## My notes
 
-![[Frangular Minified Video Notes]]
+![[Frangular Minified Video Notes.svg]]
 
 Van die video op Minified Frangular het ek die volgende gesien.
 (Jammer vir die boek)
