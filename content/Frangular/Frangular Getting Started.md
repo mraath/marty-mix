@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-07-22T09:43
+updated: 2024-07-22T11:28
 ---
 ## Basic intro to Frangular (FR)
 
@@ -110,6 +110,14 @@ IF we decide to do the minified lambda version, we can look at the following:
 
 [[Frangular Minified]]
 
+## Deploying to AWS - using the HOS team's idea
+
+Zonika is busy working on the steps to:
+- Build
+- Deploy
+To AWS
+
+[[Frangular Build and Deploy thanks to Zonika]]
 ## Conclusion
 
 Once the whole flow can be tested and is in place, it is safe to say that everything is working.
