@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-05-28T07:00
+updated: 2024-07-22T09:43
 ---
 ## Basic intro to Frangular (FR)
 
@@ -41,16 +41,14 @@ Well done to them and it gives me hope that the documents to follow will help yo
 ### FR-UI
 
 In this section - there is a link to the ReadMe which will give you a step by step guide.
-This is also available as a seperate pdf.
-[OE-501 UI Documentation.pdf](https://mixtelematics-my.sharepoint.com/personal/marthinus_raath_mixtelematics_com/Documents/Microsoft%20Teams%20Chat%20Files/OE-501%20UI%20Documentation.pdf)
+This is also available as a  [seperate pdf](https://mixtelematics-my.sharepoint.com/personal/marthinus_raath_mixtelematics_com/Documents/Microsoft%20Teams%20Chat%20Files/OE-501%20UI%20Documentation.pdf)
 
 [[OE-501 UI Documentation]]
 
 ### FR-API
 
 Herewith the API - it is more straight forward
-Is is also available as a separate pdf here:
-[OE-501 API Documentation.pdf](https://mixtelematics-my.sharepoint.com/personal/marthinus_raath_mixtelematics_com/Documents/Microsoft%20Teams%20Chat%20Files/OE-501%20API%20Documentation.pdf)
+Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com/personal/marthinus_raath_mixtelematics_com/Documents/Microsoft%20Teams%20Chat%20Files/OE-501%20API%20Documentation.pdf)
 
 [[OE-501 API Documentation]]
 

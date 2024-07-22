@@ -1,6 +1,6 @@
 ---
 created: 2024-01-26T09:58
-updated: 2024-01-29T10:19
+updated: 2024-07-22T09:59
 ---
 ## Overview
 
@@ -9,7 +9,8 @@ As part of OE-20, we are redoing the Configuration Groups page. It is becoming a
 Herewith the overview of the full OE-20 story.
 For the UI section we will purely be looking into the Blue part of the image, Frangular UI and its sub items (UI Components).
 
-![[OE-20 Planning.excalidraw]]
+
+![[OE-20 Planning.excalidraw.svg]]
 
 ## Repo
 
@@ -35,7 +36,7 @@ https://mixtelematics.visualstudio.com/Fleet/_git/Fleet.Services.Operations.UI
 
 ## Basic Frangular flowchart
 
-![[OE-20 Frangular Seed App POC layout]]
+![[OE-20 Frangular Seed App POC layout.svg]]
 
 
 ## Basic examples
@@ -60,7 +61,7 @@ const routes: Routes = [
 
 This is purely for interest. NO need to know all of these parts.
 
-![[Frangular New MiXFleet UI Component.excalidraw]]
+![[Frangular New MiXFleet UI Component.excalidraw.svg]]
 
 ## Future work needed
 

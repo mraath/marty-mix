@@ -1,6 +1,6 @@
 ---
 created: 2024-01-26T08:49
-updated: 2024-01-29T10:22
+updated: 2024-07-22T10:02
 ---
 ## Overview
 
@@ -9,7 +9,7 @@ As part of OE-20, we are redoing the Configuration Groups page. It is becoming a
 Herewith the overview of the full OE-20 story.
 For the API section we will purely be looking into the Green part of the image, Frangular API and its sub items (methods in the new API). IF time is straining we could call our current client methods from the new API Managers. We need to consider internal, vs public methods as per a comment made by Jeremy and later pointed to by Zeshan.
 
-![[OE-20 Planning.excalidraw]]
+![[marty-mix/content/Frangular/OE-20 Planning.excalidraw]]
 
 
 ## Repo
