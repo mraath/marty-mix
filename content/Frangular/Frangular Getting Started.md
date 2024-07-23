@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-07-22T11:28
+updated: 2024-07-23T09:36
 ---
 ## Basic intro to Frangular (FR)
 
@@ -102,6 +102,11 @@ It will be used by FR-UI to get data, etc
 
 [[Integration Testing Between OLD UI, FR-UI and FR-API]]
 
+## Languaging
+
+- [ ] Let's add something here based off of what Palavi worked on
+- [ ] Also add some examples in both API and UI
+
 ## Pipeline and Deployment
 
 Currently we have pipelines
@@ -117,6 +122,7 @@ Zonika is busy working on the steps to:
 - Deploy
 To AWS
 
+- [ ] Add more things Zonika learned here
 [[Frangular Build and Deploy thanks to Zonika]]
 ## Conclusion
 
