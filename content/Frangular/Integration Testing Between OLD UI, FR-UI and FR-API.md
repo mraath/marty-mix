@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T12:07
-updated: 2024-05-17T12:09
+updated: 2024-07-26T15:37
 ---
 ## Integration Intro
 
@@ -62,7 +62,9 @@ Herewith an eg. of how I hardcoded the values in FR-UI for testing.
 Now you need to change all this, so that the hardcoding is not needed.
 Do this by setting up the sending and receiving of messages.
 Both on the OLD UI and FR-UI.
+
 You can follow this:
+
 [[Frangular Messaging OLD UI to FR-UI]]
 
 ## UI

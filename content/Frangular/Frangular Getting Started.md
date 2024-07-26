@@ -1,8 +1,17 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-07-26T08:03
+updated: 2024-07-26T16:11
 ---
 ## Basic intro to Frangular (FR)
+
+
+> [!Info] What is Frangular
+> NO, you can't Google it
+> Fleet team made up the name.
+> As far as I can tell it is made up of:
+> i**FR**ame (which sits on the old UI) AND
+> **Angular** , the new UI language
+
 
 Currently this is still quite the process.
 This process will become much simpler once our DEV environment has all the necessary sub-domains.
@@ -52,7 +61,12 @@ Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com
 
 [[OE-501 API Documentation]]
 
-## STM-1074 Example (FR-UI setup and adding components)
+## Some handy help pages
+
+- Sending INFO between the OLD and the NEW UI pages: [[Frangular Messaging OLD UI to FR-UI]]
+- Toaster Notifications: [[Frangular Notifications]]
+ 
+## EG: STM-1074 Example (FR-UI setup and adding components)
 
 The main document to get going was mentioned above, first look at those, then this will explain how to add new components (pages).
 
@@ -102,9 +116,7 @@ It will be used by FR-UI to get data, etc
 
 [[Integration Testing Between OLD UI, FR-UI and FR-API]]
 
-## Some UI specific help
 
-- [[Frangular Notifications]]
 
 ## Languaging
 

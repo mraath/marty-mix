@@ -1,6 +1,6 @@
 ---
 created: 2024-05-16T12:09
-updated: 2024-05-17T06:25
+updated: 2024-07-26T16:09
 ---
 ## Background
 
@@ -13,6 +13,8 @@ file://.../mix.config.frangular.ui/src/app/configgroups/configgroups.component
 I will break it up below.
 
 ## OLD UI
+
+^31a822
 
 ### HTML
 
