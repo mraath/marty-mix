@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-07-23T11:38
+updated: 2024-07-26T08:03
 ---
 ## Basic intro to Frangular (FR)
 
@@ -102,10 +102,16 @@ It will be used by FR-UI to get data, etc
 
 [[Integration Testing Between OLD UI, FR-UI and FR-API]]
 
+## Some UI specific help
+
+- [[Frangular Notifications]]
+
 ## Languaging
 
 - [ ] Let's add something here based off of what Palavi worked on
 - [ ] Also add some examples in both API and UI
+
+[[Frangular Languaging]]
 
 ## Pipeline and Deployment
 
@@ -126,6 +132,7 @@ To AWS
 
 - [ ] Add more things Zonika learned here
 [[Frangular Build and Deploy thanks to Zonika]]
+
 ## Conclusion
 
 Once the whole flow can be tested and is in place, it is safe to say that everything is working.
