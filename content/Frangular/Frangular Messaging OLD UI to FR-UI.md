@@ -1,6 +1,6 @@
 ---
 created: 2024-05-16T12:09
-updated: 2024-07-30T17:50
+updated: 2024-07-30T18:18
 ---
 ## Background
 
@@ -32,13 +32,14 @@ I used to have it in the initializer, however, the timing was often off.
 After inspecting the Fleet team's operations UI, I tried the below and it seems to be working fine.
 If anything changes I will change it here.
 
-> We still need to pass in the xAuth in the example from the OLD UI, it is already consumed in FR UI
+> We also pass in the xAuth from the OLD UI, it is then consumed in FR UI
 
 ```ts
 //THIS Data structure, just for explanation benefit
 export interface IConfigData {
 	id: string;
 	organisationId: string;
+	xAuth: string;
 	extra: string; //Used eg. lineId, mobileDevice
 }
 
@@ -81,6 +82,7 @@ registerSendReceiveMessages(): void {
 			//THIS data structure is seen above
 			
 			var data = <IConfigData>{ 
+				xAuth: this.authentication.authenticationToken,
 				organisationId: this.organisationId
 			}
 
@@ -111,6 +113,7 @@ public onSelectionCriteriaChanged(eventArgs: DynaMiX.Services.SelectionCriteria.
 	//Sending this to FR UI happens by populating the iframePayload
 	this.organisationId = group.id; //Updating locally
 	var data = <IConfigData>{
+		xAuth: this.authentication.authenticationToken,
 		organisationId: this.organisationId
 	}
 
