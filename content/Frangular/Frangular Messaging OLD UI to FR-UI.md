@@ -1,6 +1,6 @@
 ---
 created: 2024-05-16T12:09
-updated: 2024-07-30T17:10
+updated: 2024-07-30T17:50
 ---
 ## Background
 
@@ -31,6 +31,8 @@ Also to ensure eg. the old UI already has the correct data, before I trigger to 
 I used to have it in the initializer, however, the timing was often off.
 After inspecting the Fleet team's operations UI, I tried the below and it seems to be working fine.
 If anything changes I will change it here.
+
+> We still need to pass in the xAuth in the example from the OLD UI, it is already consumed in FR UI
 
 ```ts
 //THIS Data structure, just for explanation benefit
@@ -177,21 +179,23 @@ Here is an example
 #### Receiving a message
 
 ```ts
-onMessageReceived(msg: Message) { //As you can see the $event is read as the msg object
+onMessageReceived(msg: Message) {
     //This is how the org Id is set from the OLD UI
-    this.organisationId = msg.data.message.data.organisationId; //Here is an example of how the msg ($event) is unpacked to get the data needed
+    this.organisationId = msg.data.message.data.organisationId;
 
-	//More values could be received here from the OLD UI
-    
-    //This is where the authToken gets set from the OLD UI
+	//Here more values could be set or actions taken
+
+    //This is how we set the auth token
     this.sessionService.setAuthToken(msg.data.xAuth).pipe(takeWhile(() => this.alive))
       .subscribe((data) => {
         if (!data)
           return;
 
-		//All of these are used in other sections of logic to determine workflow
         this.authTokenSet = true;
-        this.fetchSelectionCriteriaGrid(); //This will call the method on the hypermedia to call the data
+        if (!this.searched && this.organisationId && this.organisationId !== undefined) {
+          console.log("Getting the config groups from FR-UI");
+          this.getConfigGroups(); //This will call the method on the hypermedia to call the data
+        }
         this.spinnerService.show(false);
       });
   }
@@ -206,19 +210,20 @@ Herewith some code to explain how to set it up.
 //Initialising an iFrameMessage object as a string this will become a JSON object which will be sent to the OLD UI iFrame
 iFrameMessage: string;
 
-//Writing the sendMessage method
-private sendMessage(id: string, action: Actions, lineId: string = "") { //Please note that you can add more values here which you might want to send
-	const payload: IPayload = { //This will be made into a JSON object
-	  action: action,
-	  uid: new Date().valueOf().toString(),
-	  data: {
-		id: id.trim(),          //This sends through an Id, needed to open the template
-		lineId: lineId.trim()   //This example sends in the line Id, for which the template info needs to load data
-	  }
-	};
-	
-	this.iFrameMessage = JSON.stringify(payload); //Here the iFrameMessage gets the JSON(ified) version of Payload, which the OLD UI will unpack to use the data
-}
+//Writing the sendMessage method, in this page this just gets called from other places based on the action and what needs to be sent to the OLD UI
+private sendMessage(id: string, action: Actions, extra: string = "") { //Please note that you can add more values here which you might want to send
+    const payload: IPayload = { //This will be made into a JSON object
+      action: action,
+      uid: new Date().valueOf().toString(),
+      data: {
+        id: id.trim(),                        //This sends through an Id, needed to open the template
+        organisationId: this.organisationId,
+        extra: extra.trim()                   //For this page, it just uses this for extra values need in the OLD UI
+      }
+    };
+
+    this.iFrameMessage = JSON.stringify(payload); //Here the iFrameMessage gets the JSON(ified) version of Payload, which the OLD UI will unpack to use the data
+  }
 
 //Eg. of Calling the sendMessage method
 editMobileDeviceTemplateClicked(dataItem: IConfigurationGroupsMultiselectCarrier) {
