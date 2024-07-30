@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-07-26T16:11
+updated: 2024-07-30T16:16
 ---
 ## Basic intro to Frangular (FR)
 
@@ -63,8 +63,10 @@ Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com
 
 ## Some handy help pages
 
-- Sending INFO between the OLD and the NEW UI pages: [[Frangular Messaging OLD UI to FR-UI]]
-- Toaster Notifications: [[Frangular Notifications]]
+- Sending INFO between the OLD and the NEW UI pages: 
+	- [[Frangular Messaging OLD UI to FR-UI]]
+- Toaster Notifications: 
+	- [[Frangular Notifications]]
  
 ## EG: STM-1074 Example (FR-UI setup and adding components)
 
@@ -116,12 +118,7 @@ It will be used by FR-UI to get data, etc
 
 [[Integration Testing Between OLD UI, FR-UI and FR-API]]
 
-
-
 ## Languaging
-
-- [ ] Let's add something here based off of what Palavi worked on
-- [ ] Also add some examples in both API and UI
 
 [[Frangular Languaging]]
 

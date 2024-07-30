@@ -1,6 +1,6 @@
 ---
 created: 2024-05-16T12:09
-updated: 2024-07-26T16:09
+updated: 2024-07-30T17:10
 ---
 ## Background
 
@@ -8,13 +8,11 @@ In the OLD UI we make use of an iFrame to call the new Frangular UI.
 The OLD UI for instance has the breadcrumb bar with the selected organisation.
 The OLD UI needs to send this value to the Frangular UI (FR-UI).
 
-You can look at the to see how this is done:
+You can look at this in this component:
 file://.../mix.config.frangular.ui/src/app/configgroups/configgroups.component
 I will break it up below.
 
 ## OLD UI
-
-^31a822
 
 ### HTML
 
@@ -28,73 +26,127 @@ In this case the channelname is set to configGroupsMultiselectChannel in the con
 
 ### TS Controller
 
+A big problem for me was the timing of when to send the initial values.
+Also to ensure eg. the old UI already has the correct data, before I trigger to send it through to the FR UI.
+I used to have it in the initializer, however, the timing was often off.
+After inspecting the Fleet team's operations UI, I tried the below and it seems to be working fine.
+If anything changes I will change it here.
 
 ```ts
+//THIS Data structure, just for explanation benefit
+export interface IConfigData {
+	id: string;
+	organisationId: string;
+	extra: string; //Used eg. lineId, mobileDevice
+}
+
+export interface IPayload {
+	data: IConfigData
+	action: Actions,
+	uid: string
+}
+
 //The channel name and other things are set to make the iFrame host adapter element unique.
 static controllerName: string = 'configGroupsMultiselect';
 iframeName: string = "iframeConfigGroupsMultiselectHost";
 iframeUrl: string = angularNextConfigUrl + "/configuration-groups-multiselect";
 channelName: string = "configGroupsMultiselectChannel";
 
-private iframePayload: IPayload; //Used to send data to the FR-UI
 
-//Sending values to the FR-UI
-sendMessage(): void {
-	this.scope.$broadcast("sendIframeMessage", [this.iframeName, this.channelName, this.iframePayload]); //Here you can see how it makes this unique with the use of the iFrameName and channelName
+//Used to send data to the FR-UI
+private iframePayload: IPayload; 
+
+//Storing the currently selected org id
+organisationId: string;
+
+
+//Registering both the send and receive of messages now happens in the constructor
+constructor(...) {
+	super(...);
+	this.registerSendReceiveMessages(); //This is where the registering happens!
 }
 
-//Receiving a message from the FR-UI
-receiveMessage(event: ng.Event, iframeName?: string, channelName?: string, payload?: any): void {
-	if (iframeName !== this.iframeName || channelName !== this.channelName || !payload) //This ensures the correct iFrame is receiving the message
-		return;
+//The above method looks like this
+registerSendReceiveMessages(): void {
+	this.scope.$on("iframeReady", (ev, args) => { //This ensures the iFrame is ready and has all the correct values, eg. Channel name...
+		if (args && args.length === 2 && args[0] === this.iframeName && args[1] === this.channelName) {
+			
+			//This just initialises some data to be sent
+			//For now I just want the org Id
+			
+			//The iframePayload moves data between the OLD UI and FR UI
+			//I have included THIS data structure, but this could be different for your page
+			//THIS data structure is seen above
+			
+			var data = <IConfigData>{ 
+				organisationId: this.organisationId
+			}
 
-	const payloadData: IPayload = JSON.parse(payload.data); //Breaking up the payload
+			this.iframePayload = <IPayload>{
+				data: data,
+				action: Actions.Load,
+				uid: new Date().valueOf().toString()
+			};
 
-	//An example of how, based on the Action value from the FR-UI, the action in the OLD UI is performed
-	//this.updateSelectedOrganisation(payloadData.organisationId, payloadData.organisationName);
-	switch (payloadData.action) {
-		case MiXFleet.ConfigAdmin.Controllers.ConfigGroupsMultiselect.Actions.EditMobileDeviceTemplate:
-			return this.location.setPath("config-admin/templates/mobile-devices/edit", { id: payloadData.data.id });
-		default:
-			return;
-	}
+			this.sendMessage(); //Triggers an initial send
+			this.receiveMessage(); //Triggers an initial receive
+		}
+	});
 }
 
-//Register the sending and receiving of messages
-registerSendReceiveMessages(event: ng.Event, iframeName?: string, channelName?: string): void {
-	if (iframeName !== this.iframeName || channelName !== this.channelName) //Ensure only this iFrame's messages are sent and received here
+//Each time the user selects a different org in the OLD UI, this also needs to be sent to the FR UI
+//This happens on selection criteria changed
+public onSelectionCriteriaChanged(eventArgs: DynaMiX.Services.SelectionCriteria.SelectionCriteriaChangedEventArgs): void {
+	if (!eventArgs.changedProperties.contains("breadcrumbSelection"))
 		return;
 
-	//Breadcrumb bar / selection criteria
-	//  I am still having an issue whereby it doesn't always set the orgId
-	//  It seems like it sometimes times out and then the authToken is lost
-	//  This then results in an authentication error in the FR-API
-	var group: IGroup = this.globalSelectionCriteria.breadcrumbSelection.selectedItems[0]; //Getting the Breadcrumb org selected
+	var group: IGroup = this.globalSelectionCriteria.breadcrumbSelection.selectedItems[0];
 	if (group.type === "asset" && this.globalSelectionCriteria.breadcrumbSelection.selectedTrail.length > 0) {
 		group = this.globalSelectionCriteria.breadcrumbSelection.selectedTrail[this.globalSelectionCriteria.breadcrumbSelection.selectedTrail.length - 1];
 	}
 
-	//Setting default data to send FR-UI
-	this.organisationId = group.id;
+	//Setting the currently selected org id, which will then be sent to the FR UI
+	//Sending this to FR UI happens by populating the iframePayload
+	this.organisationId = group.id; //Updating locally
 	var data = <IConfigData>{
 		organisationId: this.organisationId
 	}
+
 	this.iframePayload = <IPayload>{
 		data: data,
 		action: Actions.Load,
 		uid: new Date().valueOf().toString()
 	};
 
-	this.sendMessage(); //Forcing an initial send to FR-UI
-	this.scope.$on("receiveIframeMessage", (ev, args) => this.receiveMessage(ev, ...args)); //Listening to the Receiving of FR-UI messages
+	this.sendMessage(); //Sending the info to the FR UI
 }
 
-//Initialising to load the registerSendReceiveMessages
-initialize(): ng.Promise<any> {
-	return super.initialize().then(() => {
-		this.scope.$emit('cancelCloseButtonText', 'Close');
-		this.scope.$on('iframeReady', (ev, args) => this.registerSendReceiveMessages(ev, ...args)); //Registering the send and receive of messages
-	});
+//Sending values to the FR-UI
+sendMessage(): void {
+	//Ensure there is an org id, before notifying the FR UI (this was crucial for this page, otherwise the FR UI receive blank info and had many issues)
+	if (this.organisationId && this.organisationId !== undefined) {
+		console.log("ORG sendMessage: " + this.organisationId);
+		this.scope.$broadcast("sendIframeMessage", [this.iframeName, this.channelName, this.iframePayload]);
+	}
+}
+
+//Receiving a message from the FR-UI
+receiveMessage(): void {
+	this.scope.$on("receiveIframeMessage", (ev, args) => {
+		if (args && args.length >= 2 && args[0] === this.iframeName && args[1] === this.channelName && args[2].data) { //This ensures the correct iFrame is receiving the message
+			
+			var payloadData = JSON.parse(args[2].data); //Strip out the iframPayload for easy use
+
+			//In this example we look at the action type, based on that we change the OLD UI to a different page
+			switch (payloadData.action) {
+				case MiXFleet.ConfigAdmin.Controllers.ConfigGroupsMultiselect.Actions.EditMobileDeviceTemplate:
+					return this.location.setPath("config-admin/templates/mobile-devices/edit", { id: payloadData.data.id });
+				...
+				default:
+					return;
+			}
+		}
+	})
 }
 ```
 
