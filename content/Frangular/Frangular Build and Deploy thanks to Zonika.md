@@ -1,7 +1,21 @@
 ---
 created: 2024-07-22T11:27
-updated: 2024-07-26T13:50
+updated: 2024-08-01T10:55
 ---
+## Main things
+
+LOCAL:
+API  xxxxxxxxxxx
+UI    http://localhost:5001
+
+DEV:
+API  mixconfigfrangularapi.dev.mixtelematics.com
+UI    mixconfigfrangularui.dev.mixtelematics.com
+ 
+INT:
+API   mixconfigfrangularapi.mixdevelopment.com
+UI      mixconfigfrangularui.mixdevelopment.com
+
 ## Other URL changes
 
 - DSDEVCFGSQL01.DEV.MIX.LOCAL

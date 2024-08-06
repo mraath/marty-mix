@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-07-30T16:16
+updated: 2024-08-02T10:16
 ---
 ## Basic intro to Frangular (FR)
 
@@ -61,66 +61,14 @@ Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com
 
 [[OE-501 API Documentation]]
 
-## Some handy help pages
+## Helpful pages
 
-- Sending INFO between the OLD and the NEW UI pages: 
+- **Sending and receiving** INFO between the OLD and the NEW UI pages: 
 	- [[Frangular Messaging OLD UI to FR-UI]]
-- Toaster Notifications: 
+- Toaster **Notifications**: 
 	- [[Frangular Notifications]]
- 
-## EG: STM-1074 Example (FR-UI setup and adding components)
-
-The main document to get going was mentioned above, first look at those, then this will explain how to add new components (pages).
-
-Shuan will usually build the UI and CSS (wireframe) (as a component) in the SEED app.
-We then make our own component in our FR-UI app.
-After this we will pull the CSS and HTML from Shuan's work into our component (this sometimes takes a while and shows some error. I will add more documentation below)
-Once the static CSS and HTML is working for this component, we will start with the logic, actual data and binding it to the html.
-As mentioned before, we will need a lot of moving parts.
-Once all the moving parts are in place  (DB, API, Client, FR-API, FR-UI, UI, BE),  we start integration work and testing.
-
-### Get the static wireframe into our code
-
-#### FR-UI Component (static)
-
-[[STM-1074 Moving Shuans html to our component]]
-
-#### How I got the wireframe to our component
-
-[[STM-1074 More in-depth Steps to pull Shawn's wireframe in]]
-
-
-## STM-1074 Example (FR-API and other logic)
-
-### Add OLD API Logic
-
-We will need the route, controller, manager and repo logic here.
-It will use some repo (DB Stored Proc or other) to get or set data.
-It will be used by the Interna; Client Method
-
-### Add the Intermal Client method
-
-It will use the OLD API to get information
-It will be used by FR-API
-
-[[Registering the method in the Internal Client to use in FR-API]]
-
-### Add the FR-API logic
-
-It will use the Internal Client to make calls to our old API
-It will be used by FR-UI to get data, etc
-
-### Questions regarding the above work done
-
-[[STM-1074 Questions regarding the above work done]]
-
-## Integration Testing Between OLD UI, FR-UI and FR-API
-
-[[Integration Testing Between OLD UI, FR-UI and FR-API]]
-
-## Languaging
-
-[[Frangular Languaging]]
+- **Languaging**: 
+	- [[Frangular Languaging]]
 
 ## Pipeline and Deployment
 
@@ -142,8 +90,64 @@ To AWS
 - [ ] Add more things Zonika learned here
 [[Frangular Build and Deploy thanks to Zonika]]
 
+
 ## Conclusion
 
 Once the whole flow can be tested and is in place, it is safe to say that everything is working.
 This process will become much simpler once our DEV environment has all the necessary sub-domains.
 This will mean that we no longer need to run all the individual repos locally in order to test everything.
+
+
+## A Case Study
+
+### EG: STM-1074 Example (FR-UI setup and adding components)
+
+The main document to get going was mentioned above, first look at those, then this will explain how to add new components (pages).
+
+Shuan will usually build the UI and CSS (wireframe) (as a component) in the SEED app.
+We then make our own component in our FR-UI app.
+After this we will pull the CSS and HTML from Shuan's work into our component (this sometimes takes a while and shows some error. I will add more documentation below)
+Once the static CSS and HTML is working for this component, we will start with the logic, actual data and binding it to the html.
+As mentioned before, we will need a lot of moving parts.
+Once all the moving parts are in place  (DB, API, Client, FR-API, FR-UI, UI, BE),  we start integration work and testing.
+
+### Get the static wireframe into our code
+
+#### FR-UI Component (static)
+
+[[STM-1074 Moving Shuans html to our component]]
+
+#### How I got the wireframe to our component
+
+[[STM-1074 More in-depth Steps to pull Shawn's wireframe in]]
+
+
+### STM-1074 Example (FR-API and other logic)
+
+#### Add OLD API Logic
+
+We will need the route, controller, manager and repo logic here.
+It will use some repo (DB Stored Proc or other) to get or set data.
+It will be used by the Interna; Client Method
+
+#### Add the Intermal Client method
+
+It will use the OLD API to get information
+It will be used by FR-API
+
+[[Registering the method in the Internal Client to use in FR-API]]
+
+#### Add the FR-API logic
+
+It will use the Internal Client to make calls to our old API
+It will be used by FR-UI to get data, etc
+
+#### Questions regarding the above work done
+
+[[STM-1074 Questions regarding the above work done]]
+
+### Integration Testing Between OLD UI, FR-UI and FR-API
+
+[[Integration Testing Between OLD UI, FR-UI and FR-API]]
+
+
