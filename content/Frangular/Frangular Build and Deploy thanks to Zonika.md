@@ -1,6 +1,6 @@
 ---
 created: 2024-07-22T11:27
-updated: 2024-08-01T10:55
+updated: 2024-08-06T16:11
 ---
 ## Main things
 
@@ -21,7 +21,32 @@ UI      mixconfigfrangularui.mixdevelopment.com
 - DSDEVCFGSQL01.DEV.MIX.LOCAL
 - config-frangular-api
 - config-frangular-ui
-- 
+
+## DEV Links
+
+UI: angularNextConfigFrangularUrl = "http://localhost:5000"
+	FR UI: APIURL_DEV ="http://localhost:5000";
+		FR API: "ConfigApiUrl": "http://api.deviceconfig.int.development.domain.local"
+
+## More links
+
+some new dev URLS  not sure if there are some of these we should start using  they are going live bit by bit
+
+- Fleet Admin UI  ([https://fleetadmin.dev.mixtelematics.com](https://fleetadmin.dev.mixtelematics.com "https://fleetadmin.dev.mixtelematics.com/"))
+- Fleet Admin API ([https://fleetadminapi.dev.mixtelematics.com](https://fleetadminapi.dev.mixtelematics.com "https://fleetadminapi.dev.mixtelematics.com/"))
+- Operations UI  ([https://operations.dev.mixtelematics.com](https://operations.dev.mixtelematics.com "https://operations.dev.mixtelematics.com/"))
+- Operations API ([https://operationsapi.dev.mixtelematics.com](https://operationsapi.dev.mixtelematics.com "https://operationsapi.dev.mixtelematics.com/"))
+- Auditing UI ([https://auditing.dev.mixtelematics.com](https://auditing.dev.mixtelematics.com "https://auditing.dev.mixtelematics.com/"))
+- Auditing API ([https://auditingapi.dev.mixtelematics.com](https://auditingapi.dev.mixtelematics.com "https://auditingapi.dev.mixtelematics.com/"))
+- Measure UI ([https://measure.dev.mixtelematics.com](https://measure.dev.mixtelematics.com "https://measure.dev.mixtelematics.com/"))
+- Measure API ([https://measureapi.dev.mixtelematics.com](https://measureapi.dev.mixtelematics.com "https://measureapi.dev.mixtelematics.com/"))
+- People UI ([https://people.dev.mixtelematics.com](https://people.dev.mixtelematics.com "https://people.dev.mixtelematics.com/"))
+- People API ([https://peopleapi.dev.mixtelematics.com](https://peopleapi.dev.mixtelematics.com "https://peopleapi.dev.mixtelematics.com/"))
+- Tracking UI ([https://easytrack.dev.mixtelematics.com](https://easytrack.dev.mixtelematics.com "https://easytrack.dev.mixtelematics.com/"))
+- Tracking UI API ([https://easytrackapi.dev.mixtelematics.com](https://easytrackapi.dev.mixtelematics.com "https://easytrackapi.dev.mixtelematics.com/"))
+- Tracking Batch
+- Fleet Batch
+
 ## The  link
 
 https://mixconfigfrangularui.mixdevelopment.com/
