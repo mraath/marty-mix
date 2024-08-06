@@ -1,12 +1,12 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-08-06T12:54
+updated: 2024-08-06T14:05
 ---
 ## Oustanding
 
 ### Overview
 
-![[marty-mix/content/Frangular/OE-20 Planning.excalidraw.svg]]
+![[OE-513 Outstanding Image.png]]
 
 
 ### Story points
