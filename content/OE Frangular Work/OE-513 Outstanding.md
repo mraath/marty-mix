@@ -1,6 +1,6 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-08-06T14:05
+updated: 2024-08-06T14:13
 ---
 ## Oustanding
 
@@ -19,13 +19,13 @@ updated: 2024-08-06T14:05
 | [OE-486](https://csojiramixtelematics.atlassian.net/browse/OE-486) | [[UI] The Configuration Group Multiselect Filters etc - #4.4](https://csojiramixtelematics.atlassian.net/browse/OE-486)                                 | Code Review        | -      |         |
 | [OE-487](https://csojiramixtelematics.atlassian.net/browse/OE-487) | [[UI] The configuration groups list - #4.5](https://csojiramixtelematics.atlassian.net/browse/OE-487)                                                   | Code Review        | -      |         |
 | [OE-491](https://csojiramixtelematics.atlassian.net/browse/OE-491) | [[UI] Assets List Panel - #5](https://csojiramixtelematics.atlassian.net/browse/OE-491)                                                                 | Code Review        | -      |         |
-| [OE-496](https://csojiramixtelematics.atlassian.net/browse/OE-496) | [[API] A new API / Client call to load all Configuration groups and columns needed - #B](https://csojiramixtelematics.atlassian.net/browse/OE-496)      | Code Review        | -      |         |
-| [OE-497](https://csojiramixtelematics.atlassian.net/browse/OE-497) | [[API] A new API / Client call to Load assets for all selected config groups - #C](https://csojiramixtelematics.atlassian.net/browse/OE-497)            | Code Review        | -      |         |
+| [OE-496](https://csojiramixtelematics.atlassian.net/browse/OE-496) | [[API] A new API / Client call to load all Configuration groups and columns needed - # B](https://csojiramixtelematics.atlassian.net/browse/OE-496)     | Code Review        | -      |         |
+| [OE-497](https://csojiramixtelematics.atlassian.net/browse/OE-497) | [[API] A new API / Client call to Load assets for all selected config groups - # C](https://csojiramixtelematics.atlassian.net/browse/OE-497)           | Code Review        | -      |         |
 | [OE-480](https://csojiramixtelematics.atlassian.net/browse/OE-480) | [[BE] Top navigation menu item - #2](https://csojiramixtelematics.atlassian.net/browse/OE-480)                                                          | Code Review        | -      |         |
 | [OE-481](https://csojiramixtelematics.atlassian.net/browse/OE-481) | [[FE Old] New iFrame holding page in the old front-end code - #3](https://csojiramixtelematics.atlassian.net/browse/OE-481)                             | Code Review        | -      |         |
 | [OE-479](https://csojiramixtelematics.atlassian.net/browse/OE-479) | [New Permissions - #1](https://csojiramixtelematics.atlassian.net/browse/OE-479)                                                                        | Closed             | -      |         |
 | [OE-485](https://csojiramixtelematics.atlassian.net/browse/OE-485) | [[UI] Holding page with the Configuration Group Multiselect Panel and Assets List Panel - #4](https://csojiramixtelematics.atlassian.net/browse/OE-485) | Closed             | -      |         |
-| [OE-498](https://csojiramixtelematics.atlassian.net/browse/OE-498) | [[API] A new API / Client call to get the FW versions - #D](https://csojiramixtelematics.atlassian.net/browse/OE-498)                                   | Closed             | -      |         |
+| [OE-498](https://csojiramixtelematics.atlassian.net/browse/OE-498) | [[API] A new API / Client call to get the FW versions - # D](https://csojiramixtelematics.atlassian.net/browse/OE-498)                                  | Closed             | -      |         |
 | [OE-484](https://csojiramixtelematics.atlassian.net/browse/OE-484) | [[UI] Frangular UI Seed app - #8](https://csojiramixtelematics.atlassian.net/browse/OE-484)                                                             | Closed             | -      |         |
 | [OE-492](https://csojiramixtelematics.atlassian.net/browse/OE-492) | [[API] Frangular API Seed app - #6](https://csojiramixtelematics.atlassian.net/browse/OE-492)                                                           | Closed             | -      |         |
 | [OE-521](https://csojiramixtelematics.atlassian.net/browse/OE-521) | [[UI] Unallocated Assets: assign to a Config Group](https://csojiramixtelematics.atlassian.net/browse/OE-521)                                           | In Progress        | 1      |         |
