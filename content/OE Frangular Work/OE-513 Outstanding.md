@@ -1,6 +1,6 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-08-06T17:21
+updated: 2024-08-07T13:34
 ---
 ## Outstanding
 
@@ -63,6 +63,7 @@ updated: 2024-08-06T17:21
 - [ ] Languaging
 - [ ] Grid Ordering / Sort
 - [ ] Timeout issues on API calls
+- [ ] Activate menu for prod & UAT
 
 ### PO questions
 

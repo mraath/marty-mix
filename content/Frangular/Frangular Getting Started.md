@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-08-02T10:16
+updated: 2024-08-07T09:29
 ---
 ## Basic intro to Frangular (FR)
 
@@ -63,6 +63,8 @@ Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com
 
 ## Helpful pages
 
+- Show or hide **menu item**
+	- [[Frangular Show and Hide Menu items]]
 - **Sending and receiving** INFO between the OLD and the NEW UI pages: 
 	- [[Frangular Messaging OLD UI to FR-UI]]
 - Toaster **Notifications**: 
