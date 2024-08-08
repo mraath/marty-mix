@@ -1,6 +1,6 @@
 ---
 created: 2024-07-22T11:27
-updated: 2024-08-06T16:11
+updated: 2024-08-08T10:46
 ---
 ## Main things
 
@@ -27,6 +27,8 @@ UI      mixconfigfrangularui.mixdevelopment.com
 UI: angularNextConfigFrangularUrl = "http://localhost:5000"
 	FR UI: APIURL_DEV ="http://localhost:5000";
 		FR API: "ConfigApiUrl": "http://api.deviceconfig.int.development.domain.local"
+			http://localhost/DynaMiX.DeviceConfig.Services.Api
+			
 
 ## More links
 

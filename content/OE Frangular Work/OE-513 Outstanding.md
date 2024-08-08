@@ -1,6 +1,6 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-08-07T13:34
+updated: 2024-08-08T14:12
 ---
 ## Outstanding
 
@@ -63,14 +63,14 @@ updated: 2024-08-07T13:34
 - [ ] Languaging
 - [ ] Grid Ordering / Sort
 - [ ] Timeout issues on API calls
-- [ ] Activate menu for prod & UAT
+- [ ] Activate menu for prod & UAT (MUCH LATER)
 
 ### PO questions
 
 - [ ] PO: Should FW versions be shown and filtered for MESA only?
 - [ ] Permission / Auth for loading Orgs, Groups, Sites, Assets (Add into API)
 - [x] Is short asset Id within an org unique? I assume it is (so selecting checkbox accordingly) ✅ 2024-08-06
-- [ ] When **hovering** over info for unallocated... display the following help text:  (currently when clicking)
+- [x] When **hovering** over info for unallocated... display the following help text:  (currently when clicking) ✅ 2024-08-08
 
 ### Test this
 
@@ -89,14 +89,16 @@ updated: 2024-08-07T13:34
 	- !! Nuget (current just local)
 - FR API:
 	- DEV: Config/MR/OE-497-Asset-List-Panel.24.9.DEV
+	- INT: Config/MR/OE-497-Asset-List-Panel.INT
 - FR UI:
 	- DEV: Config/MR/Feature/OE-491-Asset-List-Panel.24.9.DEV.ORI
+	- INT: Config/MR/Feature/OE-491-Asset-List-Panel.INT
 - UI:
 	- DEV: ?
-	- INT: ?
+	- INT: Config/MR/Feature/OE-482_ConfigGroupMultiselectMenu.INT
 - BE:
 	- DEV: ?
-	- INT: ?
+	- INT: Config/MR/Feature/OE-482_ConfigGroupMultiselectMenu.INT
 - DB:
 	- DEV: ?
-	- INT: ?
+	- INT: Config/MR/Feature/OE-482_ConfigGroupMultiselectMenu.INT

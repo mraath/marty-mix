@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-08-07T09:29
+updated: 2024-08-08T16:43
 ---
 ## Basic intro to Frangular (FR)
 
@@ -69,6 +69,8 @@ Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com
 	- [[Frangular Messaging OLD UI to FR-UI]]
 - Toaster **Notifications**: 
 	- [[Frangular Notifications]]
+- Spinners
+	- [[Frangular Spinner]]
 - **Languaging**: 
 	- [[Frangular Languaging]]
 
