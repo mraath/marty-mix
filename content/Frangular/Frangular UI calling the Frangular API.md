@@ -1,14 +1,14 @@
 ---
 created: 2024-04-22T11:29
-updated: 2024-07-22T10:40
+updated: 2024-08-09T08:27
 ---
 ## Overview of the moving parts
 
-![[Frangular Moving Parts.excalidraw.svg]]
+![[Frangular Moving Parts.excalidraw.png]]
 
 ## Calling the API from the UI
 
-![[OE-20 Frangular Seed App POC layout.svg]]
+![[OE-20 Frangular Seed App POC layout.png]]
 
 ## Code How Frangular UI calls Frangular API
 

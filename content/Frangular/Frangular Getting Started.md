@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-08-08T16:43
+updated: 2024-08-09T08:31
 ---
 ## Basic intro to Frangular (FR)
 
@@ -12,6 +12,7 @@ updated: 2024-08-08T16:43
 > i**FR**ame (which sits on the old UI) AND
 > **Angular** , the new UI language
 
+If you want to read some background thoughts: [[Frangular - OLD Learning]] (Rather don't 😄)
 
 Currently this is still quite the process.
 This process will become much simpler once our DEV environment has all the necessary sub-domains.
@@ -20,7 +21,12 @@ This will mean that we no longer need to run all the individual repos locally in
 We will be using STM-1074 as an example of how to add a simple form within the new Frangular UI (FR-UI).
 Jira: [[STM-1074] Video event configuration - Jira (atlassian.net)](https://csojiramixtelematics.atlassian.net/browse/STM-1074 "https://csojiramixtelematics.atlassian.net/browse/stm-1074") 
 
-There are a few component to working with Frangular.
+## Moving parts
+
+There are a few components to working with Frangular.
+
+![[Frangular Moving Parts.excalidraw.png]]
+
 Usually:
 - REPO (eg. DB stored proc)
 - API (Our old API which will call this)
@@ -36,7 +42,7 @@ The main things to learns would be:
 - FR-UI (this can get a bit more tricky, document to follow below)
 - UI (just adding a page with an iFrame and a way to get there, eg. menu item or action menu)
 
-## Getting your SEED app up and going
+## You are ready: Getting your SEED app up and going
 
 The new Frangular (FR) work has two main components.
 The FR-UI and
@@ -61,7 +67,7 @@ Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com
 
 [[OE-501 API Documentation]]
 
-## Helpful pages
+## Helpful Code Snippets
 
 - Show or hide **menu item**
 	- [[Frangular Show and Hide Menu items]]
@@ -74,7 +80,7 @@ Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com
 - **Languaging**: 
 	- [[Frangular Languaging]]
 
-## Pipeline and Deployment
+## Pipeline and Deployment (WIP)
 
 Currently we have pipelines
 We are however still deciding on the deployment
@@ -82,7 +88,7 @@ IF we decide to do the minified lambda version, we can look at the following:
 
 [[Frangular Minified]]
 
-## Deploying to AWS - using the HOS team's idea
+## Deploying to AWS - using the HOS team's idea (WIP)
 
 This was mentioned in the section above while talking to the HOS team.
 

@@ -1,6 +1,6 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-08-08T14:12
+updated: 2024-08-08T16:49
 ---
 ## Outstanding
 
@@ -59,7 +59,7 @@ updated: 2024-08-08T14:12
 
 - [x] //TODO: MR: Add GetVideoEventConfigurationDetails back on DEV once DONE with this ✅ 2024-08-06
 - [ ] UpdateAssetsConfigurationGroup: This method still uses proxies - replace
-- [ ] Spinners
+- [x] Spinners ✅ 2024-08-08
 - [ ] Languaging
 - [ ] Grid Ordering / Sort
 - [ ] Timeout issues on API calls
