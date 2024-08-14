@@ -1,6 +1,6 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-08-08T16:49
+updated: 2024-08-14T16:30
 ---
 ## Outstanding
 
@@ -28,32 +28,31 @@ updated: 2024-08-08T16:49
 | [OE-498](https://csojiramixtelematics.atlassian.net/browse/OE-498) | [[API] A new API / Client call to get the FW versions - # D](https://csojiramixtelematics.atlassian.net/browse/OE-498)                                  | Closed             | -      |             |
 | [OE-484](https://csojiramixtelematics.atlassian.net/browse/OE-484) | [[UI] Frangular UI Seed app - #8](https://csojiramixtelematics.atlassian.net/browse/OE-484)                                                             | Closed             | -      |             |
 | [OE-492](https://csojiramixtelematics.atlassian.net/browse/OE-492) | [[API] Frangular API Seed app - #6](https://csojiramixtelematics.atlassian.net/browse/OE-492)                                                           | Closed             | -      |             |
-| [OE-521](https://csojiramixtelematics.atlassian.net/browse/OE-521) | [[UI] Unallocated Assets: assign to a Config Group](https://csojiramixtelematics.atlassian.net/browse/OE-521)                                           | In Progress        | 1      |             |
-| [OE-482](https://csojiramixtelematics.atlassian.net/browse/OE-482) | [[BE] [UI] Replacing the old Configuration Group Page and menu item - #3.2](https://csojiramixtelematics.atlassian.net/browse/OE-482)                   | Open               |        | later       |
-| [OE-483](https://csojiramixtelematics.atlassian.net/browse/OE-483) | [[BE] Auditing (Handled as part of Config-2690) - #7](https://csojiramixtelematics.atlassian.net/browse/OE-483)                                         | Open               |        | later       |
+| [OE-521](https://csojiramixtelematics.atlassian.net/browse/OE-521) | [[UI] Unallocated Assets: assign to a Config Group](https://csojiramixtelematics.atlassian.net/browse/OE-521)                                           | Code Review        | -      |             |
+| [OE-482](https://csojiramixtelematics.atlassian.net/browse/OE-482) | [[BE] [UI] Replacing the old Configuration Group Page and menu item - #3.2](https://csojiramixtelematics.atlassian.net/browse/OE-482)                   | Code Review        | -      |             |
+| [OE-504](https://csojiramixtelematics.atlassian.net/browse/OE-504) | [[UI] Asset Move to Config Group](https://csojiramixtelematics.atlassian.net/browse/OE-504)                                                             | In Progress        | 2      |             |
+| [OE-506](https://csojiramixtelematics.atlassian.net/browse/OE-506) | [[API] Move to Config Group](https://csojiramixtelematics.atlassian.net/browse/OE-506)                                                                  | In Progress        | 2      | almost done |
 | [OE-488](https://csojiramixtelematics.atlassian.net/browse/OE-488) | [[UI] Compile Config - #4.1](https://csojiramixtelematics.atlassian.net/browse/OE-488)                                                                  | Open               | 2      |             |
 | [OE-489](https://csojiramixtelematics.atlassian.net/browse/OE-489) | [[UI] Upload Config - #4.2](https://csojiramixtelematics.atlassian.net/browse/OE-489)                                                                   | Open               | 2      |             |
 | [OE-490](https://csojiramixtelematics.atlassian.net/browse/OE-490) | [[UI] Upload firmware - #4.3](https://csojiramixtelematics.atlassian.net/browse/OE-490)                                                                 | Open               | 2      |             |
+| [OE-514](https://csojiramixtelematics.atlassian.net/browse/OE-514) | [[UI] Add Config Group (4.7)](https://csojiramixtelematics.atlassian.net/browse/OE-514)                                                                 | Open               | 5      |             |
 | [OE-493](https://csojiramixtelematics.atlassian.net/browse/OE-493) | [[API] A new API / Client call to Compile Config - #6.1](https://csojiramixtelematics.atlassian.net/browse/OE-493)                                      | Open               | 5      |             |
 | [OE-494](https://csojiramixtelematics.atlassian.net/browse/OE-494) | [[API] A new API / Client call to Upload Config - #6.2](https://csojiramixtelematics.atlassian.net/browse/OE-494)                                       | Open               | 5      |             |
 | [OE-495](https://csojiramixtelematics.atlassian.net/browse/OE-495) | [[API] A new API / Client call to Upload FW - #6.3](https://csojiramixtelematics.atlassian.net/browse/OE-495)                                           | Open               | 5      |             |
-| [OE-499](https://csojiramixtelematics.atlassian.net/browse/OE-499) | [[API] Micro services - #10](https://csojiramixtelematics.atlassian.net/browse/OE-499)                                                                  | Open               |        | NA          |
-| [OE-500](https://csojiramixtelematics.atlassian.net/browse/OE-500) | [[API] Containers - #11](https://csojiramixtelematics.atlassian.net/browse/OE-500)                                                                      | Open               | -      |             |
-| [OE-503](https://csojiramixtelematics.atlassian.net/browse/OE-503) | [[UI] Reset Flag](https://csojiramixtelematics.atlassian.net/browse/OE-503)                                                                             | Open               |        | removed     |
-| [OE-504](https://csojiramixtelematics.atlassian.net/browse/OE-504) | [[UI] Asset Move to Config Group](https://csojiramixtelematics.atlassian.net/browse/OE-504)                                                             | Open               | 2      |             |
-| [OE-505](https://csojiramixtelematics.atlassian.net/browse/OE-505) | [[API] Reset Flag](https://csojiramixtelematics.atlassian.net/browse/OE-505)                                                                            | Open               | 3      |             |
-| [OE-506](https://csojiramixtelematics.atlassian.net/browse/OE-506) | [[API] Move to Config Group](https://csojiramixtelematics.atlassian.net/browse/OE-506)                                                                  | Open               | 2      | almost done |
 | [OE-507](https://csojiramixtelematics.atlassian.net/browse/OE-507) | [[UI] Asset Config Compile](https://csojiramixtelematics.atlassian.net/browse/OE-507)                                                                   | Open               | 5      |             |
 | [OE-508](https://csojiramixtelematics.atlassian.net/browse/OE-508) | [[UI] Asset Upload Config](https://csojiramixtelematics.atlassian.net/browse/OE-508)                                                                    | Open               | 5      |             |
 | [OE-509](https://csojiramixtelematics.atlassian.net/browse/OE-509) | [[UI] Asset Upload FW](https://csojiramixtelematics.atlassian.net/browse/OE-509)                                                                        | Open               | 5      |             |
 | [OE-510](https://csojiramixtelematics.atlassian.net/browse/OE-510) | [[UI] Asset Reset Flag](https://csojiramixtelematics.atlassian.net/browse/OE-510)                                                                       | Open               | 3      |             |
-| [OE-514](https://csojiramixtelematics.atlassian.net/browse/OE-514) | [[UI] Add Config Group (4.7)](https://csojiramixtelematics.atlassian.net/browse/OE-514)                                                                 | Open               | 5      |             |
-| [OE-515](https://csojiramixtelematics.atlassian.net/browse/OE-515) | [[UI] [API] Alerts Column logic (4.8)](https://csojiramixtelematics.atlassian.net/browse/OE-515)                                                        | Open               | 13     | Later       |
-| [OE-518](https://csojiramixtelematics.atlassian.net/browse/OE-518) | [Port all existing logic not catered for in other stories](https://csojiramixtelematics.atlassian.net/browse/OE-518)                                    | Open               |        | unsure      |
-| [OE-519](https://csojiramixtelematics.atlassian.net/browse/OE-519) | [[API] Populate Last Position for Asset List Panel](https://csojiramixtelematics.atlassian.net/browse/OE-519)                                           | Open               | 8      | Later       |
-| [OE-520](https://csojiramixtelematics.atlassian.net/browse/OE-520) | [[API] Add the VIN Match column](https://csojiramixtelematics.atlassian.net/browse/OE-520)                                                              | Open               | 5      | Later       |
-|                                                                    |                                                                                                                                                         |                    |        |             |
-|                                                                    |                                                                                                                                                         |                    |        |             |
+| [OE-518](https://csojiramixtelematics.atlassian.net/browse/OE-518) | [Port all existing logic not catered for in other stories](https://csojiramixtelematics.atlassian.net/browse/OE-518)                                    | Open               | ????   | unsure      |
+| [OE-500](https://csojiramixtelematics.atlassian.net/browse/OE-500) | [[API] Containers - #11](https://csojiramixtelematics.atlassian.net/browse/OE-500)                                                                      | LATER              | -      | Later       |
+| [OE-483](https://csojiramixtelematics.atlassian.net/browse/OE-483) | [[BE] Auditing (Handled as part of Config-2690) - #7](https://csojiramixtelematics.atlassian.net/browse/OE-483)                                         | LATER              |        | later       |
+| [OE-515](https://csojiramixtelematics.atlassian.net/browse/OE-515) | [[UI] [API] Alerts Column logic (4.8)](https://csojiramixtelematics.atlassian.net/browse/OE-515)                                                        | LATER              | 13     | Later       |
+| [OE-519](https://csojiramixtelematics.atlassian.net/browse/OE-519) | [[API] Populate Last Position for Asset List Panel](https://csojiramixtelematics.atlassian.net/browse/OE-519)                                           | LATER              | 8      | Later       |
+| [OE-520](https://csojiramixtelematics.atlassian.net/browse/OE-520) | [[API] Add the VIN Match column](https://csojiramixtelematics.atlassian.net/browse/OE-520)                                                              | LATER              | 5      | Later       |
+| [OE-503](https://csojiramixtelematics.atlassian.net/browse/OE-503) | [[UI] Reset Flag](https://csojiramixtelematics.atlassian.net/browse/OE-503)                                                                             | REMOVED            |        | removed     |
+| [OE-505](https://csojiramixtelematics.atlassian.net/browse/OE-505) | [[API] Reset Flag](https://csojiramixtelematics.atlassian.net/browse/OE-505)                                                                            | REMOVED            | 3      | REMOVED     |
+| [OE-499](https://csojiramixtelematics.atlassian.net/browse/OE-499) | [[API] Micro services - #10](https://csojiramixtelematics.atlassian.net/browse/OE-499)                                                                  | Open               |        | NA          |
+
 
 ### DEV
 
@@ -63,7 +62,9 @@ updated: 2024-08-08T16:49
 - [ ] Languaging
 - [ ] Grid Ordering / Sort
 - [ ] Timeout issues on API calls
-- [ ] Activate menu for prod & UAT (MUCH LATER)
+- [ ] Activate menu for prod & UAT (MUCH **LATER**)
+- [ ] Add in SelectionCriteria
+	- AllowedOrigins: "https://mixconfigfrangularui.mixdevelopment.com", "https://mixconfigfrangularapi.mixdevelopment.com",
 
 ### PO questions
 

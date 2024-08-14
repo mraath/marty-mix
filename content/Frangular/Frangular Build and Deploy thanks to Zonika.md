@@ -1,6 +1,6 @@
 ---
 created: 2024-07-22T11:27
-updated: 2024-08-08T10:46
+updated: 2024-08-12T16:36
 ---
 ## Main things
 
@@ -29,6 +29,12 @@ UI: angularNextConfigFrangularUrl = "http://localhost:5000"
 		FR API: "ConfigApiUrl": "http://api.deviceconfig.int.development.domain.local"
 			http://localhost/DynaMiX.DeviceConfig.Services.Api
 			
+
+## Cors issues with SelectionCriteria
+
+our UI URL had to be added here for future reference
+[https://dev.azure.com/MiXTelematics/Fleet/_git/Fleet.Services.SelectionCriteria?path=%2FFleet.Services.SelectionCriteria.Web.Api%2Fappsettings.INT.json&version=GBDevelopment&_a=contents](https://dev.azure.com/MiXTelematics/Fleet/_git/Fleet.Services.SelectionCriteria?path=%2FFleet.Services.SelectionCriteria.Web.Api%2Fappsettings.INT.json&version=GBDevelopment&_a=contents "https://dev.azure.com/mixtelematics/fleet/_git/fleet.services.selectioncriteria?path=%2ffleet.services.selectioncriteria.web.api%2fappsettings.int.json&version=gbdevelopment&_a=contents")
+Rudolf had to do it for now as permissions blocked me
 
 ## More links
 
