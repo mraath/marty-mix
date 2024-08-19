@@ -1,7 +1,12 @@
 ---
 created: 2024-08-14T15:57
-updated: 2024-08-14T16:18
+updated: 2024-08-15T13:47
 ---
+> [!Info] Please note
+> If you have a spinner going and want it to be stopped when closing the error message, the error message does this for you.
+> You just need to ensure you are making use of the spinnerService, at least setting it to true, before the code runs which could cause an error
+> [[Frangular Spinner]]
+
 ## CHAT WITH Timothy
 
 The error handling is on the UI. Check the example
