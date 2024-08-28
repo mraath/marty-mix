@@ -1,6 +1,6 @@
 ---
 created: 2024-07-25T16:51
-updated: 2024-07-30T16:03
+updated: 2024-08-20T12:22
 ---
 ## Intro
 
@@ -85,6 +85,16 @@ Ensure you have the correct languaging service code in:
 - moduleService.getModule... culture...
 It also needs to be in the **modulelist**
 
+```ts
+ this.languageService.languageSet.onLanguageSetChanged
+  .pipe(takeWhile(() => this.alive))
+  .subscribe(() => {
+	if (this.authTokenSet) {
+	  this.languageStringsSet = true;
+	}
+  });
+```
+
 ### mix-modules.ts
 
 ![[Frangular Languaging mix modules.png]]
@@ -108,6 +118,13 @@ Inside the contructor
 Hide HTML if no languageset
 
 ![[Frangular Languaging Hide if No Languageset.png]]
+
+## Testing locally
+
+In FR UI, change this line: 
+export const APIURL_DEV = "http://localhost:5000";
+ to:
+ export const APIURL_DEV = "https://mixconfigfrangularapi.mixdevelopment.com";
 
 ## PRs
 

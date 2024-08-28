@@ -1,6 +1,6 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-08-19T14:48
+updated: 2024-08-23T10:17
 ---
 ## Outstanding
 
@@ -13,6 +13,8 @@ updated: 2024-08-19T14:48
 
 ![[OE-513 Story Points]]
 
+
+[[OE-513 Languaging]]
 
 ### DEV
 
@@ -44,9 +46,10 @@ updated: 2024-08-19T14:48
 	- INT: Config/MR/OE-497-Asset-List-Panel.24.8.INT.ORI
 - API: 
 	- DEV: ????
-	- INT: Config/MR/Feature/OE-496-CG-OE-497-Asset.INT.ORI
+	- INT: ~~Config/MR/Feature/OE-496-CG-OE-497-Asset.INT.ORI~~
 - Client:
-	- INT: Config/MR/OE-497-Asset-List-Panel.24.8.INT.ORI
+	- INT: ~~Config/MR/OE-497-Asset-List-Panel.24.8.INT.ORI~~ ~~MOVED~~
+	- INT: Config/MR/Feature/OE-482_ConfigGroupMultiselectMenu.INT
 	- !! Nuget (current just local)
 - FR API:
 	- DEV: Config/MR/OE-497-Asset-List-Panel.24.9.DEV
