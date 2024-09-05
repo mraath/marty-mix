@@ -1,6 +1,6 @@
 ---
 created: 2024-07-30T14:41
-updated: 2024-07-30T15:12
+updated: 2024-09-05T13:25
 ---
 # [AWS Login for SDK access using OKTA](https://confluence.mixtelematics.com/display/softwaredevelopment/AWS+Login+for+SDK+access+using+OKTA)
 
@@ -23,14 +23,13 @@ choco install saml2aws
 This should be run in your own account (not Admin mode)
 
 ```
-saml2aws configure -a default --profile=default --idp-provider=Okta --mfa=PUSH --role=arn:aws:iam::601704920959:role/MiX-DevOpsPowerUser --url=[https://mixtelematics.okta.com/home/amazon_aws/0oasvup9dMjldsRgO5d6/272](https://mixtelematics.okta.com/home/amazon_aws/0oasvup9dMjldsRgO5d6/272) --session-duration=14400 --region=eu-west-1
+saml2aws configure -a default --profile=default --idp-provider=Okta --mfa=PUSH --role=arn:aws:iam::601704920959:role/MiX-DevOpsPowerUser --url=https://mixtelematics.okta.com/home/amazon_aws/0oasvup9dMjldsRgO5d6/272 --session-duration=14400 --region=eu-west-1
 ```
 
-You should be able to just accept the prompts by pressing enter until asked for Username.  This is your Okta Username and Password.  
-
+You should be able to just accept the prompts by pressing enter **until asked for Username**.  (This is your Okta Username and Password. ) 
 After the command has finished you should get the following result:
 
-![[AWS Login for SDK access Configure Result.png]]
+![[AWS Login for SDK access Configure Result.png|500]]
 
 These details are saved to a file in your Users folder:  C:\Users\<YourUsername>\.saml2aws, which can be edited to update settings if needed.
 
@@ -49,6 +48,29 @@ The default is the account name you gave your credentials when configuring.
 Enter your OKTA username and password and you will be good to go.
 
 The confirmation will specify when the session will expire. You will need to run the command again after this time.
+
+## Issues
+
+If you see something like this....
+
+```txt
+Authenticating as marthinusr@production.local ...
+Waiting for approval, please check your Okta Verify app ...
+Approved
+Failed to assume role, please check whether you are permitted to assume the given role for the AWS service: Supplied RoleArn not found in saml assertion: arn:aws:iam::601704920959:role/MiX-DevOpsPowerUser
+```
+
+Look in your AWS account list if you are part of the mentioned role... in this case **DevOpsPowerUser**
+
+![[AWS Login for SDK access AWS Roles.png|400]]
+
+As you can see it is not present, then ensure you change the file **.saml2aws** to the correct role...
+
+![[AWS Login for SDK access file with role.png|500]]
+
+This solved it for me.
+
+## AWS Explorer
 
 To use the AWS Explorer from inside Visual Studio ensure that the Credentials is set to use the Profile:default.
 
