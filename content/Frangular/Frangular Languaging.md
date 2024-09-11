@@ -1,6 +1,6 @@
 ---
 created: 2024-07-25T16:51
-updated: 2024-08-20T12:22
+updated: 2024-09-06T14:09
 ---
 ## Intro
 
@@ -118,6 +118,13 @@ Inside the contructor
 Hide HTML if no languageset
 
 ![[Frangular Languaging Hide if No Languageset.png]]
+
+## Building
+
+> You can only run the pipeline after 8am as the build server is not up before then
+
+- Build Languaging
+- Build BE
 
 ## Testing locally
 

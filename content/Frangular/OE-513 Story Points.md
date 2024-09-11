@@ -1,6 +1,6 @@
 ---
 created: 2024-08-19T14:48
-updated: 2024-08-28T13:00
+updated: 2024-09-06T13:36
 ---
 
 | Key                                                                | Summary                                                                                                                                                 | Status  | Points | More    |
@@ -25,12 +25,12 @@ updated: 2024-08-28T13:00
 | [OE-504](https://csojiramixtelematics.atlassian.net/browse/OE-504) | [[UI] Asset Move to Config Group](https://csojiramixtelematics.atlassian.net/browse/OE-504)                                                             |         | 2      | TEST    |
 | [OE-506](https://csojiramixtelematics.atlassian.net/browse/OE-506) | [[API] Move to Config Group](https://csojiramixtelematics.atlassian.net/browse/OE-506)                                                                  |         | 2      | TEST    |
 | [OE-510](https://csojiramixtelematics.atlassian.net/browse/OE-510) | [[UI] Asset Reset Flag](https://csojiramixtelematics.atlassian.net/browse/OE-510)                                                                       |         | 3      | TEST    |
-| [OE-493](https://csojiramixtelematics.atlassian.net/browse/OE-493) | [[API] A new API / Client call to Compile Config - #6.1](https://csojiramixtelematics.atlassian.net/browse/OE-493)                                      | Justus  | 5      |         |
-| [OE-488](https://csojiramixtelematics.atlassian.net/browse/OE-488) | [[UI] Compile Config - #4.1](https://csojiramixtelematics.atlassian.net/browse/OE-488)                                                                  | Justus  | 2      |         |
+| [OE-493](https://csojiramixtelematics.atlassian.net/browse/OE-493) | [[API] A new API / Client call to Compile Config - #6.1](https://csojiramixtelematics.atlassian.net/browse/OE-493)                                      |         | 5      | Review  |
+| [OE-488](https://csojiramixtelematics.atlassian.net/browse/OE-488) | [[UI] Compile Config - #4.1](https://csojiramixtelematics.atlassian.net/browse/OE-488)                                                                  |         | 2      | Review  |
 | [OE-494](https://csojiramixtelematics.atlassian.net/browse/OE-494) | [[API] A new API / Client call to Upload Config - #6.2](https://csojiramixtelematics.atlassian.net/browse/OE-494)                                       | Justus  | 5      |         |
-| [OE-489](https://csojiramixtelematics.atlassian.net/browse/OE-489) | [[UI] Upload Config - #4.2](https://csojiramixtelematics.atlassian.net/browse/OE-489)                                                                   | Justus  | 2      |         |
-| [OE-495](https://csojiramixtelematics.atlassian.net/browse/OE-495) | [[API] A new API / Client call to Upload FW - #6.3](https://csojiramixtelematics.atlassian.net/browse/OE-495)                                           |         | 5      |         |
-| [OE-490](https://csojiramixtelematics.atlassian.net/browse/OE-490) | [[UI] Upload firmware - #4.3](https://csojiramixtelematics.atlassian.net/browse/OE-490)                                                                 |         | 2      |         |
+| [OE-489](https://csojiramixtelematics.atlassian.net/browse/OE-489) | [[UI] Upload Config - #4.2](https://csojiramixtelematics.atlassian.net/browse/OE-489)                                                                   |         | 2      | Review  |
+| [OE-495](https://csojiramixtelematics.atlassian.net/browse/OE-495) | [[API] A new API / Client call to Upload FW - #6.3](https://csojiramixtelematics.atlassian.net/browse/OE-495)                                           | Marty   | 5      |         |
+| [OE-490](https://csojiramixtelematics.atlassian.net/browse/OE-490) | [[UI] Upload firmware - #4.3](https://csojiramixtelematics.atlassian.net/browse/OE-490)                                                                 | Marty   | 2      |         |
 | [OE-514](https://csojiramixtelematics.atlassian.net/browse/OE-514) | [[UI] Add Config Group (4.7)](https://csojiramixtelematics.atlassian.net/browse/OE-514)                                                                 | Pallavi | 5      |         |
 | [OE-507](https://csojiramixtelematics.atlassian.net/browse/OE-507) | [[UI] Asset Config Compile](https://csojiramixtelematics.atlassian.net/browse/OE-507)                                                                   |         | 5      |         |
 | [OE-508](https://csojiramixtelematics.atlassian.net/browse/OE-508) | [[UI] Asset Upload Config](https://csojiramixtelematics.atlassian.net/browse/OE-508)                                                                    |         | 5      |         |
