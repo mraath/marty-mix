@@ -1,6 +1,6 @@
 ---
 created: 2024-09-10T16:13
-updated: 2024-09-11T11:53
+updated: 2024-09-11T12:05
 ---
 ## Introduction
 
@@ -27,24 +27,24 @@ In this example it was: https://au.mixtelematics.com/DynaMiX.API/fleet-admin/ass
 This calls the following Route in the 
 
 **BE**:
-**ROUTE**: GetDiagnosticsMobileDevice
-**METHOD**: GetDiagnosticsMobileDevice
-This builds up a whole carrier.
-For the IMSI specifically it comes from:
-mobileDevice?.IMSI
-Which is from the DeviceConfigClient
+	**ROUTE**: GetDiagnosticsMobileDevice
+	**METHOD**: GetDiagnosticsMobileDevice
+		This builds up a whole carrier.
+		For the IMSI specifically it comes from:
+			mobileDevice?.IMSI
+			Which is from the DeviceConfigClient
 			
 **DeviceConfigClient**: MobileUnits.GetDiagnosticsMobileDeviceDetails
 	
 **API**:  
-**CONTROLLER**: GetDiagnosticsMobileDeviceDetails
-**MANAGER**: GetDiagnosticsMobileDeviceDetails
-**REPO**: GetStatesForMobileUnit	
-**DB**:
-[state].[MobileUnitState_GetMultipleStateValuesForMobileUnit]
-DeviceConfiguration.DataProcessing
-[state].[MobileUnitState]
-Property Id: 6851923534434202573
+	**CONTROLLER**: GetDiagnosticsMobileDeviceDetails
+	**MANAGER**: GetDiagnosticsMobileDeviceDetails
+	**REPO**: GetStatesForMobileUnit	
+	**DB**:
+		[state].[MobileUnitState_GetMultipleStateValuesForMobileUnit]
+		DeviceConfiguration.DataProcessing
+		[state].[MobileUnitState]
+		Property Id: 6851923534434202573
 
 ## Assets list
 
