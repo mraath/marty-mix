@@ -1,6 +1,6 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-08-23T10:17
+updated: 2024-09-25T08:44
 ---
 ## Outstanding
 
@@ -27,11 +27,14 @@ updated: 2024-08-23T10:17
 - [ ] Activate menu for prod & UAT (MUCH **LATER**)
 - [ ] Add in SelectionCriteria
 	- AllowedOrigins: "https://mixconfigfrangularui.mixdevelopment.com", "https://mixconfigfrangularapi.mixdevelopment.com",
+- [ ] Only show these actions when the user has access
+- [ ] Only show other actions when the user has 
+- [ ] Permissions and Authentication logic for loading Orgs, Groups, Sites, Assets has not been added. Is it OK to do this at a later stage?
 
-### PO questions
+### PO questions - OLD
 
-- [ ] PO: Should FW versions be shown and filtered for MESA only?
-- [ ] Permission / Auth for loading Orgs, Groups, Sites, Assets (Add into API)
+- Handled somewhere else: PO: Should FW versions be shown and filtered for MESA only?
+- Handled somewhere else: Permission / Auth for loading Orgs, Groups, Sites, Assets (Add into API)
 - [x] Is short asset Id within an org unique? I assume it is (so selecting checkbox accordingly) ✅ 2024-08-06
 - [x] When **hovering** over info for unallocated... display the following help text:  (currently when clicking) ✅ 2024-08-08
 
@@ -72,3 +75,12 @@ updated: 2024-08-23T10:17
 - DB:
 	- DEV: ?
 	- INT: Config/MR/Feature/OE-482_ConfigGroupMultiselectMenu.INT
+
+## PO Questions
+
+![[OE-513 PO Questions]]
+
+## Testers Subbugs
+
+![[OE-513 Sub bugs]]
+
