@@ -1,6 +1,6 @@
 ---
 created: 2024-09-25T08:24
-updated: 2024-09-25T09:02
+updated: 2024-09-30T17:07
 ---
 ### Final Approval needed
 
@@ -14,6 +14,12 @@ The testers logged these bugs... should they be implemented or should we just hi
 - [ ] OE-528: Refresh tab not refreshing after click
 - [ ] OE-532: Individual Config Group rows' actions don't work
 - [ ] OE-530: Individual Asset rows' actions don't work
+
+### Wording enhancements?
+
+The testers have picked this up. Should we change this?
+
+- [ ] OE-534: Singular form of an error needed
 
 ### Business Rules needed
 
