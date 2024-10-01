@@ -1,11 +1,12 @@
 ---
 created: 2024-09-18T15:35
-updated: 2024-09-22T20:38
+updated: 2024-09-30T17:20
 ---
 - Under OE-504: **Amy**
 	- [ ] [[OE-525 Unallocated assets move wrong note and error]]: Decommissioned asset cant move to CG. **Marty**: Back to Amy
 	- [ ] [[OE-526 Unallocated Spinner continued]]: Spinner should stop spinning. **Marty**: Back to Amy.
 	- [ ] [[OE-533 Diff Mobile types result in 0 assetcount and still in CG]]: Moving two diff types to the same type a lot happens that seems wrong. **Marty**: Will look into this
+	- [ ] OE-534: Singular form of an error needed? Asked the **PO**
 
 - General: **Asiphe**
 	- [ ] OE-480. **Marty** will close once possible
