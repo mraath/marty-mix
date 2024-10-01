@@ -1,7 +1,7 @@
 ---
 title: Welcome to Marty's Vault
 created: 2024-07-22T08:09
-updated: 2024-10-01T16:08
+updated: 2024-10-02T07:41
 ---
 
 > [!note]
@@ -22,3 +22,7 @@ updated: 2024-10-01T16:08
 ### Coding in Progress
 
 - [[OE-513 Outstanding]]
+
+### Process
+
+- [[DEV Process]]
