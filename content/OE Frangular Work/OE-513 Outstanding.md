@@ -1,12 +1,12 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-09-25T08:44
+updated: 2024-10-02T08:05
 ---
 ## Outstanding
 
 ### Overview
 
-![[OE-513 Outstanding Image.png]]
+![[OE-20 Planning.excalidraw.png]]
 
 
 ### Story points
