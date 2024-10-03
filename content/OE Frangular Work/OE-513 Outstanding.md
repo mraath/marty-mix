@@ -1,6 +1,6 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-10-02T08:05
+updated: 2024-10-02T15:32
 ---
 ## Outstanding
 
@@ -22,14 +22,16 @@ updated: 2024-10-02T08:05
 - [ ] UpdateAssetsConfigurationGroup: This method still uses proxies - replace
 - [x] Spinners ✅ 2024-08-08
 - [ ] Languaging
+- [ ] Languaging doesnt always change, eg. to En / Pig
 - [ ] Grid Ordering / Sort
 - [ ] Timeout issues on API calls
 - [ ] Activate menu for prod & UAT (MUCH **LATER**)
-- [ ] Add in SelectionCriteria
+- [x] Add in SelectionCriteria ✅ 2024-10-02
 	- AllowedOrigins: "https://mixconfigfrangularui.mixdevelopment.com", "https://mixconfigfrangularapi.mixdevelopment.com",
-- [ ] Only show these actions when the user has access
-- [ ] Only show other actions when the user has 
-- [ ] Permissions and Authentication logic for loading Orgs, Groups, Sites, Assets has not been added. Is it OK to do this at a later stage?
+- [ ] Authentication and Authorisation
+	- [ ] Only show these actions when the user has access
+	- [ ] Only show other actions when the user has 
+	- [ ] Permissions and Authentication logic for loading Orgs, Groups, Sites, Assets has not been added. Is it OK to do this at a later stage?
 
 ### PO questions - OLD
 

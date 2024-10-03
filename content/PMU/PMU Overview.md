@@ -1,6 +1,6 @@
 ---
 created: 2024-03-06T15:25
-updated: 2024-10-01T10:00
+updated: 2024-10-02T13:51
 ---
 
 ## PMU Code Setup
@@ -48,7 +48,7 @@ The PMU utility can be found in this directory.
 
 After first opening the project within Visual Studio, you might see this error.
 
-![](WiXToolNotInstalledError.png)
+![](WiXToolNotInstalledError.png.md)
 
 ## WiX Installation
 
