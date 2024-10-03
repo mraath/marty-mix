@@ -1,6 +1,6 @@
 ---
 created: 2024-08-19T14:48
-updated: 2024-09-06T13:36
+updated: 2024-10-03T08:26
 ---
 
 | Key                                                                | Summary                                                                                                                                                 | Status  | Points | More    |
@@ -36,6 +36,8 @@ updated: 2024-09-06T13:36
 | [OE-508](https://csojiramixtelematics.atlassian.net/browse/OE-508) | [[UI] Asset Upload Config](https://csojiramixtelematics.atlassian.net/browse/OE-508)                                                                    |         | 5      |         |
 | [OE-509](https://csojiramixtelematics.atlassian.net/browse/OE-509) | [[UI] Asset Upload FW](https://csojiramixtelematics.atlassian.net/browse/OE-509)                                                                        | Marty   | 5      |         |
 | [OE-518](https://csojiramixtelematics.atlassian.net/browse/OE-518) | [Port all existing logic not catered for in other stories](https://csojiramixtelematics.atlassian.net/browse/OE-518)                                    |         | ????   |         |
+| [OE-538](https://csojiramixtelematics.atlassian.net/browse/OE-538) | Authentication and Permissions                                                                                                                          |         |        |         |
+| [OE-539](https://csojiramixtelematics.atlassian.net/browse/OE-539) | Add Video Event Configuration Action for Config Groups                                                                                                  |         |        |         |
 | [OE-515](https://csojiramixtelematics.atlassian.net/browse/OE-515) | [[UI] [API] Alerts Column logic (4.8)](https://csojiramixtelematics.atlassian.net/browse/OE-515)                                                        |         | 13     | LATER   |
 | [OE-519](https://csojiramixtelematics.atlassian.net/browse/OE-519) | [[API] Populate Last Position for Asset List Panel](https://csojiramixtelematics.atlassian.net/browse/OE-519)                                           |         | 8      | LATER   |
 | [OE-520](https://csojiramixtelematics.atlassian.net/browse/OE-520) | [[API] Add the VIN Match column](https://csojiramixtelematics.atlassian.net/browse/OE-520)                                                              |         | 5      | LATER   |
