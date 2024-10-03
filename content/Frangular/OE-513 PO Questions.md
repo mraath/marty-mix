@@ -1,6 +1,6 @@
 ---
 created: 2024-09-25T08:24
-updated: 2024-10-03T07:39
+updated: 2024-10-03T08:23
 ---
 ### Should we Implement this?
 
@@ -24,8 +24,8 @@ The testers have picked this up. Should we change this?
 ### Other questions to be put into stories
 
 - [ ] The FW Versions filter will continue to just show MESA units with that version.
-- [ ] Permissions and Authentication logic for loading Orgs, Groups, Sites, Assets has to be added before we release this. (To **create** a story)
+- [ ] Permissions and Authentication logic for loading Orgs, Groups, Sites, Assets has to be added before we release this. (OE-538 Created)
 - [ ] Justus: If an Asset is linked to a CG, should we be able to remove the CG? (Keep as the old one is currently working) (**Nicole** to think about Remove logic enhancements for a future enhancement)
-- [ ] Pallavi to add in her new View page in the actions (To **create** a story)
+- [ ] Pallavi to add in her new Video Event Configuration page in the actions (OE-539 Created)
 - [ ] Justus: Compile AND Upload for 3rd party... not supported... what is the supported list? To hide button for unsupported devices. (Future story which will be through about by **Nicole**)
 - [ ] Justus: Comms Status... not coming through on FM. (**Devs** will figure out)
