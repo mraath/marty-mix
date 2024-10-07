@@ -1,24 +1,29 @@
 ---
 created: 2024-09-18T15:35
-updated: 2024-09-30T17:20
+updated: 2024-10-07T08:40
 ---
-- Under OE-504: **Amy**
-	- [ ] [[OE-525 Unallocated assets move wrong note and error]]: Decommissioned asset cant move to CG. **Marty**: Back to Amy
-	- [ ] [[OE-526 Unallocated Spinner continued]]: Spinner should stop spinning. **Marty**: Back to Amy.
-	- [ ] [[OE-533 Diff Mobile types result in 0 assetcount and still in CG]]: Moving two diff types to the same type a lot happens that seems wrong. **Marty**: Will look into this
-	- [ ] OE-534: Singular form of an error needed? Asked the **PO**
 
-- General: **Asiphe**
-	- [ ] OE-480. **Marty** will close once possible
-	- [ ] OE-481. **Marty** will close once possible
-	- [ ] OE-482. Clarification needed. **Marty** comment: This can only happen WAY in the future
-- Under OE-487: **Asiphe**
-	- [ ] OE-528. **Marty** comment: This has not been implemented - will also double check this with the **PO**
-	- [ ] OE-532: **Marty** comment: This has not been implemented - will also double check this with the **PO**
-- Under OE-486: **Asiphe**
-	- [ ] OE-529: Marty comment: As far as I know **Pallavi** is still busy implementing this
-- Under OE-491
-	- [ ] OE-530: **Marty** comment: This has not been implemented - will also double check this with the **PO**
+## Devs to Do
 
-- Under OE-517: **Yanga**
-	- [x] [[OE-531 Unallocated wrong note and spinner]]: Unable to move an asset, Similar to what Amy found. **Marty**: Back to Yanga. ✅ 2024-09-22
+- [ ] [[OE-533 Diff Mobile types result in 0 assetcount and still in CG]]: Amy:  (**Nicole** will change the wording - dont move the incorrectly selected ones) **Marty**
+- [ ] OE-528. Asiphe: Refresh tab not refreshing after click (Only on asset side, no paging) **Marty**
+- [ ] OE-532: Asiphe: Individual Config Group rows' actions don't work (Only Remove, Hyperlink name to edit) **Any Dev**
+- [ ] OE-529:Asiphe: Marty comment: As far as I know **Pallavi** is still busy implementing this
+- [ ] OE-530: Individual Asset rows' actions don't work (Only Remove) **Any Dev**
+- [ ] OE-541: Comms log diff from old. Asiphe: Marty to investigate. Also consider: Justus: Comms Status... not coming through on FM. **Any Dev**
+
+## PO to decide
+
+- [ ] OE-534: Singular form of an error needed? Asked the **PO**
+
+## Future Stories
+
+- [ ] OE-482. **Asiphe**: Clarification needed. **Marty** comment: This can only happen WAY in the future
+
+## Fixed
+
+- [x] [[OE-525 Unallocated assets move wrong note and error]]: Decommissioned asset cant move to CG. **Marty**: Back to Amy ✅ 2024-10-03
+- [x] [[OE-526 Unallocated Spinner continued]]: Spinner should stop spinning. **Marty**: Back to Amy. ✅ 2024-10-03
+- [x] OE-480. **Marty** will close once possible ✅ 2024-10-03
+- [x] OE-481. **Marty** will close once possible ✅ 2024-10-03
+- [x] [[OE-531 Unallocated wrong note and spinner]]: Unable to move an asset, Similar to what Amy found. **Marty**: Back to Yanga. ✅ 2024-09-22
