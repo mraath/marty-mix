@@ -1,16 +1,15 @@
 ---
 created: 2024-09-18T15:35
-updated: 2024-10-08T13:03
+updated: 2024-10-22T15:31
 ---
 
 ## Devs to Do
 
-- [ ] [[OE-532 Add Remove action and Hyperlink Edit]]: Asiphe: Individual Config Group rows' actions don't work (Only Remove, Hyperlink name to edit) **Marty**
-- [ ] OE-541: Comms log diff from old. Asiphe: Marty to investigate. Also consider: Justus: Comms Status... not coming through on FM. **Any Dev**
+- [ ] [[OE-541 Config Compile Status]]: Comms log diff from old. Asiphe: Marty to investigate. Also consider: Justus: Comms Status... not coming through on FM. **Any Dev**
 
 ## Testers
 
-- 
+- [ ] [[OE-532 Add Remove action and Hyperlink Edit]]: Asiphe: Individual Config Group rows' actions don't work (Only Remove, Hyperlink name to edit) **Marty**
 
 ## PO to decide
 

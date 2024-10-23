@@ -1,7 +1,8 @@
 ---
 created: 2024-08-19T14:48
-updated: 2024-10-03T08:26
+updated: 2024-10-23T16:39
 ---
+[Marty OE-513 ALL Issue navigator - Jira (atlassian.net)](https://csojiramixtelematics.atlassian.net/issues/?filter=13064)
 
 | Key                                                                | Summary                                                                                                                                                 | Status  | Points | More    |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------ | ------- |
@@ -18,7 +19,7 @@ updated: 2024-10-03T08:26
 | [OE-486](https://csojiramixtelematics.atlassian.net/browse/OE-486) | [[UI] The Configuration Group Multiselect Filters etc - #4.4](https://csojiramixtelematics.atlassian.net/browse/OE-486)                                 |         | -      | TEST    |
 | [OE-497](https://csojiramixtelematics.atlassian.net/browse/OE-497) | [[API] A new API / Client call to Load assets for all selected config groups - # C](https://csojiramixtelematics.atlassian.net/browse/OE-497)           |         | -      | TEST    |
 | [OE-491](https://csojiramixtelematics.atlassian.net/browse/OE-491) | [[UI] Assets List Panel - #5](https://csojiramixtelematics.atlassian.net/browse/OE-491)                                                                 |         | -      | TEST    |
-| [OE-517](https://csojiramixtelematics.atlassian.net/browse/OE-517) | [[UI] Unallocated Assets (5.7)](https://csojiramixtelematics.atlassian.net/browse/OE-517)                                                               |         | -      | TEST    |
+| [OE-517](https://csojiramixtelematics.atlassian.net/browse/OE-517) | [[UI] Unallocated Assets (5.7)](https://csojiramixtelematics.atlassian.net/browse/OE-517)                                                               |         | -      | Closed  |
 | [OE-516](https://csojiramixtelematics.atlassian.net/browse/OE-516) | [[UI] Asset List Filter (5.6)](https://csojiramixtelematics.atlassian.net/browse/OE-516)                                                                |         | -      | TEST    |
 | [OE-521](https://csojiramixtelematics.atlassian.net/browse/OE-521) | [[UI] Unallocated Assets: assign to a Config Group](https://csojiramixtelematics.atlassian.net/browse/OE-521)                                           |         | -      | TEST    |
 | [OE-482](https://csojiramixtelematics.atlassian.net/browse/OE-482) | [[BE] [UI] Replacing the old Configuration Group Page and menu item - #3.2](https://csojiramixtelematics.atlassian.net/browse/OE-482)                   |         | -      | TEST    |
@@ -29,12 +30,12 @@ updated: 2024-10-03T08:26
 | [OE-488](https://csojiramixtelematics.atlassian.net/browse/OE-488) | [[UI] Compile Config - #4.1](https://csojiramixtelematics.atlassian.net/browse/OE-488)                                                                  |         | 2      | Review  |
 | [OE-494](https://csojiramixtelematics.atlassian.net/browse/OE-494) | [[API] A new API / Client call to Upload Config - #6.2](https://csojiramixtelematics.atlassian.net/browse/OE-494)                                       | Justus  | 5      |         |
 | [OE-489](https://csojiramixtelematics.atlassian.net/browse/OE-489) | [[UI] Upload Config - #4.2](https://csojiramixtelematics.atlassian.net/browse/OE-489)                                                                   |         | 2      | Review  |
-| [OE-495](https://csojiramixtelematics.atlassian.net/browse/OE-495) | [[API] A new API / Client call to Upload FW - #6.3](https://csojiramixtelematics.atlassian.net/browse/OE-495)                                           | Marty   | 5      |         |
-| [OE-490](https://csojiramixtelematics.atlassian.net/browse/OE-490) | [[UI] Upload firmware - #4.3](https://csojiramixtelematics.atlassian.net/browse/OE-490)                                                                 | Marty   | 2      |         |
+| [OE-495](https://csojiramixtelematics.atlassian.net/browse/OE-495) | [[API] A new API / Client call to Upload FW - #6.3](https://csojiramixtelematics.atlassian.net/browse/OE-495)                                           |         | 5      | TEST    |
+| [OE-490](https://csojiramixtelematics.atlassian.net/browse/OE-490) | [[UI] Upload firmware - #4.3](https://csojiramixtelematics.atlassian.net/browse/OE-490)                                                                 |         | 2      | TEST    |
 | [OE-514](https://csojiramixtelematics.atlassian.net/browse/OE-514) | [[UI] Add Config Group (4.7)](https://csojiramixtelematics.atlassian.net/browse/OE-514)                                                                 | Pallavi | 5      |         |
 | [OE-507](https://csojiramixtelematics.atlassian.net/browse/OE-507) | [[UI] Asset Config Compile](https://csojiramixtelematics.atlassian.net/browse/OE-507)                                                                   |         | 5      |         |
 | [OE-508](https://csojiramixtelematics.atlassian.net/browse/OE-508) | [[UI] Asset Upload Config](https://csojiramixtelematics.atlassian.net/browse/OE-508)                                                                    |         | 5      |         |
-| [OE-509](https://csojiramixtelematics.atlassian.net/browse/OE-509) | [[UI] Asset Upload FW](https://csojiramixtelematics.atlassian.net/browse/OE-509)                                                                        | Marty   | 5      |         |
+| [OE-509](https://csojiramixtelematics.atlassian.net/browse/OE-509) | [[UI] Asset Upload FW](https://csojiramixtelematics.atlassian.net/browse/OE-509)                                                                        |         | 5      | TEST    |
 | [OE-518](https://csojiramixtelematics.atlassian.net/browse/OE-518) | [Port all existing logic not catered for in other stories](https://csojiramixtelematics.atlassian.net/browse/OE-518)                                    |         | ????   |         |
 | [OE-538](https://csojiramixtelematics.atlassian.net/browse/OE-538) | Authentication and Permissions                                                                                                                          |         |        |         |
 | [OE-539](https://csojiramixtelematics.atlassian.net/browse/OE-539) | Add Video Event Configuration Action for Config Groups                                                                                                  |         |        |         |

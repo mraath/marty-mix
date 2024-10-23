@@ -151,7 +151,7 @@ Replace Old ^NcAn4b6g
 
 [[OE-489 UI Upload Config]] ^mhtFgNpq
 
-[[OE-490 UI Upload FW]] ^6I7N8YWm
+[[OE-490 CG UI Upload FW]] ^6I7N8YWm
 
 [[OE-493 API Compile Config]] ^irCmfxTr
 
