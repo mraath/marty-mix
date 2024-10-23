@@ -1,15 +1,15 @@
 ---
 created: 2024-09-18T15:35
-updated: 2024-10-22T15:31
+updated: 2024-10-23T16:55
 ---
 
 ## Devs to Do
 
-- [ ] [[OE-541 Config Compile Status]]: Comms log diff from old. Asiphe: Marty to investigate. Also consider: Justus: Comms Status... not coming through on FM. **Any Dev**
+- [ ] [[OE-541 Config Compile Status]]: Diff from old. Asiphe: Marty to investigate. Also consider: Justus: Comms Status... not coming through on FM. **Marty Busy**
 
-## Testers
+## Testers Testing
 
-- [ ] [[OE-532 Add Remove action and Hyperlink Edit]]: Asiphe: Individual Config Group rows' actions don't work (Only Remove, Hyperlink name to edit) **Marty**
+- 
 
 ## PO to decide
 
@@ -30,3 +30,4 @@ updated: 2024-10-22T15:31
 - [x] [[OE-531 Unallocated wrong note and spinner]]: Unable to move an asset, Similar to what Amy found. **Marty**: Back to Yanga. ✅ 2024-09-22
 - [x] [[OE-528 Paging and Refresh bug]]. Asiphe: Refresh tab not refreshing after click (Only on asset side, no paging) **Marty** ✅ 2024-10-08
 - [x] OE-529:Asiphe: Marty comment: As far as I know **Pallavi** is still busy implementing this ✅ 2024-10-08
+- [x] [[OE-532 Add Remove action and Hyperlink Edit]]: Asiphe: Individual Config Group rows' actions don't work (Only Remove, Hyperlink name to edit) **Marty** ✅ 2024-10-23
