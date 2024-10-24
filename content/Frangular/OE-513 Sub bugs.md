@@ -1,15 +1,15 @@
 ---
 created: 2024-09-18T15:35
-updated: 2024-10-23T16:55
+updated: 2024-10-24T10:45
 ---
 
 ## Devs to Do
 
-- [ ] [[OE-541 Config Compile Status]]: Diff from old. Asiphe: Marty to investigate. Also consider: Justus: Comms Status... not coming through on FM. **Marty Busy**
+ - Once Nicole changes the wording, we will need to fix those (OE-534, OE-533)
 
 ## Testers Testing
 
-- 
+- [x] [[OE-541 Config Compile Status]]: Diff from old. Asiphe: Marty to investigate. Also consider: Justus: Comms Status... not coming through on FM. **Marty Done** ✅ 2024-10-24
 
 ## PO to decide
 
