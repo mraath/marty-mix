@@ -261,7 +261,7 @@ Reset Flag ^hOBH0JwB
 
 5.7 ^QoFqjwD1
 
-[[OE-518 Other porting story]] ^mkj4Cyvr
+[[OE-518 Port all existing logic not catered for in other stories]] ^mkj4Cyvr
 
 Uncatered for stories ^BbsQ0YdE
 
