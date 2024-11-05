@@ -1,7 +1,23 @@
 ---
 created: 2024-03-06T15:25
-updated: 2024-10-02T13:51
+updated: 2024-11-05T15:40
 ---
+
+## PMU Introduction
+
+PMU stand for Plug Management System.
+Basically the driver have a plug, which identifies them.
+There are different types (and colours) of plugs.
+It looks like a weird USB stick 😆
+It keeps some information on the plug...
+
+So the PMU system is used to write information to the plug.
+In order to test this functionality you will need a PMU device which you plug into your PC's USB. You then plug the PLUG into this device.
+After this you open up the application and then you can read what is on that plug, but you can also write new information onto this plug.
+
+You don't need this device for all development.
+So you will be able to code against the repo even if you don't have this.
+(I am very tired as I am writing this, so I hope this makes sense...)
 
 ## PMU Code Setup
 

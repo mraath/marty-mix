@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-11-04T11:42
+updated: 2024-11-05T10:01
 ---
 ## Basic intro to Frangular (FR)
 
@@ -83,8 +83,9 @@ Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com
 	- [[Frangular Error Messages]]
 - **Languaging**: 
 	- [[Frangular Languaging]]
-- Grid sorting:
+- Grid:
 	- [[Grid Sorting]]
+	- [[Grid Column Chooser Fix]]
 
 ## Pipeline and Deployment (WIP)
 
