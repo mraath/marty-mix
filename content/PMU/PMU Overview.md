@@ -1,6 +1,6 @@
 ---
 created: 2024-03-06T15:25
-updated: 2024-11-05T15:40
+updated: 2024-11-05T16:26
 ---
 
 ## PMU Introduction
@@ -19,12 +19,38 @@ You don't need this device for all development.
 So you will be able to code against the repo even if you don't have this.
 (I am very tired as I am writing this, so I hope this makes sense...)
 
+## PMU Moving parts
+
+So we have the:
+- **Hardware**: Not always needed
+- **Codebase**: This is where the dev comes in
+
+### Codebase
+
+![[PMU Overview Bootstrapper.png]]
+
+- You will most likely need the following the first time: [[PMU Fix WiX v3]]
+- The code has a few projects in it
+	- It has the normal business logic...
+		- DynaMiX.Core.*
+	- It has a **bootstrapper** (used by the installer)
+		- I think this is where **WiX** comes into play
+	- It also has the **installer**
+		- We have an MSI and
+		- an EXE installer (if I am not mistaken)
+			- (And they work a bit differently)
+	- To keep track of which version we are compiling, we had a manual process of versioning with a **version number** (think there is more below)
+		- One of the teams potentially automated it since then
+	- One of these need to be **signed**... I think there is some more info below on this
+		- If not, I think the HOS team also worked on this
+
 ## PMU Code Setup
 
 First step would be to get you code in order:
 - [[PMU Code Base]]
+- Remember the [[PMU Fix WiX v3]]
 
-## PMU Confluence
+## PMU APP (from old Confluence)
 
 Icon: 
 
@@ -34,6 +60,9 @@ Icon:
 OLD look:
 
 ![[PMU Overview Old Look.png]]
+
+>[!Note]
+>Below this point it gets a bit mirky. There are some notes on versioning, how this was added into the zip file, deploying, putting it on the Q: for deployment, however, I think a lot of this has changed... Let's look into this if needed.... for now **I THINK THE ABOVE IS ENOUGH TO GET THE CODE RUNNING**
 
 ## Bootstrapper
 
