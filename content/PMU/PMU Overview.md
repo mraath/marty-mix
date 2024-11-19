@@ -1,6 +1,6 @@
 ---
 created: 2024-03-06T15:25
-updated: 2024-11-05T16:26
+updated: 2024-11-19T09:22
 ---
 
 ## PMU Introduction
@@ -10,6 +10,8 @@ Basically the driver have a plug, which identifies them.
 There are different types (and colours) of plugs.
 It looks like a weird USB stick 😆
 It keeps some information on the plug...
+
+![[PMU Overview Plug Green.png|300]]
 
 So the PMU system is used to write information to the plug.
 In order to test this functionality you will need a PMU device which you plug into your PC's USB. You then plug the PLUG into this device.
@@ -26,6 +28,8 @@ So we have the:
 - **Codebase**: This is where the dev comes in
 
 ### Codebase
+
+> ../DynaMiX.Backend/Utilities/PlugManagement/DynaMiX.PlugManagement.Standalone/
 
 ![[PMU Overview Bootstrapper.png]]
 
@@ -63,6 +67,11 @@ OLD look:
 
 >[!Note]
 >Below this point it gets a bit mirky. There are some notes on versioning, how this was added into the zip file, deploying, putting it on the Q: for deployment, however, I think a lot of this has changed... Let's look into this if needed.... for now **I THINK THE ABOVE IS ENOUGH TO GET THE CODE RUNNING**
+
+## Current issues
+
+- [[SR-19598 PMU Doesnt allow user credentials]]
+- [[The PMU keeps closing]]
 
 ## Bootstrapper
 

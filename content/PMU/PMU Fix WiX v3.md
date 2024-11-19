@@ -1,6 +1,6 @@
 ---
 created: 2024-03-15T10:14
-updated: 2024-10-01T09:58
+updated: 2024-11-19T10:41
 ---
 ## Video how to fix WiX
 
@@ -38,7 +38,26 @@ Once both of these have been installed:
 
 ### Nuget packages
 
-Core and other Nuget Packages
+- Core and other Nuget Packages
+- We had an error like the below
+![[PMU More Notes Last 5 Errors.png]]
+- In order to fix this
+	- Check the nuget references in the UI project
+	- The reference error icon was displayed
+![[PMU Fix WiX v3 Reference error icon.png|250]]
+- In order to resolve this
+	- Just right-click and delete this
+	- Then in the Nuget Management, re-install it from the Browse tab
+
+## Signtool issue
+
+After this everything should be working fine.
+
+When I built it, I started getting a Signtool issue:
+![[PMU Fix WiX v3 Signtool issue.png]]
+I had a look at the mentioned directory and in my case this file does exist.
+This is most likely (as the error shows) and issue with the signing certificate not being found.
+- [ ] The fix will be done and documented in future
 
 ## OLD Non valid links
 
