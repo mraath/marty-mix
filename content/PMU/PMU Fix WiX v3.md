@@ -1,6 +1,6 @@
 ---
 created: 2024-03-15T10:14
-updated: 2024-11-19T10:41
+updated: 2024-11-19T15:04
 ---
 ## Video how to fix WiX
 
@@ -57,6 +57,7 @@ When I built it, I started getting a Signtool issue:
 ![[PMU Fix WiX v3 Signtool issue.png]]
 I had a look at the mentioned directory and in my case this file does exist.
 This is most likely (as the error shows) and issue with the signing certificate not being found.
+The tool is in the following directory on my PC: C:\Program Files (x86)\Microsoft SDKs\ClickOnce\SignTool
 - [ ] The fix will be done and documented in future
 
 ## OLD Non valid links

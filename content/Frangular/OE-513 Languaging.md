@@ -1,6 +1,6 @@
 ---
 created: 2024-08-20T12:21
-updated: 2024-08-21T17:05
+updated: 2024-11-20T09:07
 ---
 
 ## Code
@@ -92,6 +92,7 @@ button: {{'OK'|dmxTranslate}}
 - [ ] "{{movedAssets}} of the selected asset(s) will move to the new configuration group."
 - [ ] "{{currentConfigGroupName}} makes use of the Dynamic CAN peripheral which requires a Vehicle Identification Number to be entered. This can be entered on the Asset details page in Fleet Admin."
 - [ ] "The following assets were not moved as the VIN is not entered:"
+- [ ] Are you sure you want to reset x (amount) asset(s) configuration to that of the configuration group?
 
 ## HTML
 
