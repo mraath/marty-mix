@@ -1,6 +1,6 @@
 ---
 created: 2024-01-26T09:58
-updated: 2024-07-22T09:59
+updated: 2024-11-26T15:41
 ---
 ## Overview
 
@@ -28,6 +28,8 @@ https://mixtelematics.visualstudio.com/Fleet/_git/Fleet.Services.Operations.UI
 	- You can still make use of Visual Studio
 - Pull the repo (above)
 - Read the ReadMe file for a short setup explanation. [READ HERE](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI?path=/README.md).
+- If the npm install doesn't work, the work around was the zip file, however, the following should rather be used
+	- [[Frangular fix the npm install]]
 - Build the project: 'npm run dev'
 - You can locally test the UI stand-alone, usually with a browser by navigating to: 
 	- Root url: http://localhost:4200/

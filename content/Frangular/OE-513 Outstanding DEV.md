@@ -1,6 +1,6 @@
 ---
 created: 2024-10-22T14:08
-updated: 2024-10-23T16:56
+updated: 2024-11-26T13:51
 ---
 ### Individual issues
 
@@ -16,6 +16,9 @@ updated: 2024-10-23T16:56
 - [ ] OE-538: **Permissions** and Authentication logic for loading Orgs, Groups, Sites, Assets has to be added before we release this.
 	- [ ] CAN Upload FW permissions? (Part of OE-509) - Doesn't seem like the old one did this
 - [ ] OE-539: Pallavi to add in her new Video Event Configuration page in the actions
+- [ ] WHEN changing the config group, the page doesn't re-load
+- [ ] Nicole re Dropdown searchable
+- [ ] CSS "@mixtel/styles": "1.1.19"
 
 ### Done
 
