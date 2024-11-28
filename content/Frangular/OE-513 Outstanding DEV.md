@@ -1,6 +1,6 @@
 ---
 created: 2024-10-22T14:08
-updated: 2024-11-26T13:51
+updated: 2024-11-27T16:39
 ---
 ### Individual issues
 
@@ -19,6 +19,7 @@ updated: 2024-11-26T13:51
 - [ ] WHEN changing the config group, the page doesn't re-load
 - [ ] Nicole re Dropdown searchable
 - [ ] CSS "@mixtel/styles": "1.1.19"
+	- [Pull request 115480: OE-513: Styling shot in the dark - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/115480)
 
 ### Done
 
