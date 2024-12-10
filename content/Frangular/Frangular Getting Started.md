@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-11-05T10:01
+updated: 2024-11-29T12:18
 ---
 ## Basic intro to Frangular (FR)
 
@@ -86,6 +86,8 @@ Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com
 - Grid:
 	- [[Grid Sorting]]
 	- [[Grid Column Chooser Fix]]
+- Styles:
+	- [[Update MiXTel Styles]]
 
 ## Pipeline and Deployment (WIP)
 

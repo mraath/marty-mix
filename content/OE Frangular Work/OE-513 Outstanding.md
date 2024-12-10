@@ -1,7 +1,22 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-10-24T15:23
+updated: 2024-12-10T08:06
 ---
+
+### Overview
+
+![[OE-20 Planning.excalidraw.png]]
+
+
+### Story points
+
+![[OE-513 Story Points]]
+
+
+[[OE-513 Languaging]]
+
+[[OE-513 Branches]]
+
 ## Outstanding
 
 ### DEV
@@ -20,16 +35,3 @@ updated: 2024-10-24T15:23
 
 ![[OE-513 PO Questions]]
 
-### Overview
-
-![[OE-20 Planning.excalidraw.png]]
-
-
-### Story points
-
-![[OE-513 Story Points]]
-
-
-[[OE-513 Languaging]]
-
-[[OE-513 Branches]]

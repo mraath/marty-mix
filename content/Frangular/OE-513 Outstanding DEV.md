@@ -1,6 +1,6 @@
 ---
 created: 2024-10-22T14:08
-updated: 2024-11-27T16:39
+updated: 2024-12-10T08:18
 ---
 ### Individual issues
 
@@ -15,11 +15,9 @@ updated: 2024-11-27T16:39
 - [ ] Activate menu for prod & UAT (MUCH **LATER**)
 - [ ] OE-538: **Permissions** and Authentication logic for loading Orgs, Groups, Sites, Assets has to be added before we release this.
 	- [ ] CAN Upload FW permissions? (Part of OE-509) - Doesn't seem like the old one did this
-- [ ] OE-539: Pallavi to add in her new Video Event Configuration page in the actions
 - [ ] WHEN changing the config group, the page doesn't re-load
 - [ ] Nicole re Dropdown searchable
-- [ ] CSS "@mixtel/styles": "1.1.19"
-	- [Pull request 115480: OE-513: Styling shot in the dark - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/115480)
+
 
 ### Done
 
@@ -32,3 +30,6 @@ updated: 2024-11-27T16:39
 - [x] Spinners ✅ 2024-08-08
 - [x] //TODO: MR: Add GetVideoEventConfigurationDetails back on DEV once DONE with this - Added into a story ✅ 2024-08-06
 - [x] OE-490: I asked previously about the business logic needed here. Previously it would just run the upload FW logic for each asset in the config group, based off of the asset's settings, however, in this story it want some other logic. I then asked if we should just remove the asset's overwritten preferred FW Version in order for the CG FW version to be selected. (Just dont reload the same version, ignore flagged vehicles, compare to FW field...) ✅ 2024-10-23
+- [x] CSS "@mixtel/styles": "1.1.19" ✅ 2024-12-10
+	- [Pull request 115480: OE-513: Styling shot in the dark - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/115480)
+- [x] OE-539: Pallavi to add in her new Video Event Configuration page in the actions ✅ 2024-12-10
