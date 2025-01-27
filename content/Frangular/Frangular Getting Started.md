@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2024-11-29T12:18
+updated: 2025-01-27T10:44
 ---
 ## Basic intro to Frangular (FR)
 
@@ -52,6 +52,12 @@ Please follow these documents to get going on each (FR-API is the simplest)
 I sent the main documentation to get going to Cornel and then to Pallavi.
 They both got going with minimal effort.
 Well done to them and it gives me hope that the documents to follow will help you.
+
+### AWS SAML
+
+Ensure that you have download and installed saml2aws.
+This needs to be done before running the code.
+Here are the steps: [[AWS Login for SDK access]]
 
 ### FR-UI
 
