@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2025-01-27T10:44
+updated: 2025-01-31T11:20
 ---
 ## Basic intro to Frangular (FR)
 
@@ -65,6 +65,17 @@ In this section - there is a link to the ReadMe which will give you a step by st
 This is also available as a  [seperate pdf](https://mixtelematics-my.sharepoint.com/personal/marthinus_raath_mixtelematics_com/Documents/Microsoft%20Teams%20Chat%20Files/OE-501%20UI%20Documentation.pdf)
 
 [[OE-501 UI Documentation]]
+
+#### Please Note
+
+When we implemented lazy loading columns for the grid, we added the kendo indicator control.
+If you have issues, you will need to run one of the below commands within your terminal
+
+```c#
+ng add @progress/kendo-angular-indicators
+//OR
+npm install --save @progress/kendo-angular-indicators
+```
 
 ### FR-API
 

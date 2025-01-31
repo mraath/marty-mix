@@ -1,6 +1,6 @@
 ---
 created: 2024-10-24T15:22
-updated: 2024-10-24T15:23
+updated: 2025-01-27T13:54
 ---
 ### Branches (This has changed as devs were added)
 
@@ -19,6 +19,7 @@ updated: 2024-10-24T15:23
 	- INT: Config/Features/OE_API_INT
 	- "ConfigApiUrl": "http://localhost/DynaMiX.DeviceConfig.Services.Api"
 	- "SelectionCriteriaUrl": "https://selectioncriteria.mixdevelopment.com",
+		- SHOULD BE: https://selectioncriteria.intss.mixdevelopment.com
 - FR UI:
 	- DEV: Config/MR/Feature/OE-491-Asset-List-Panel.24.9.DEV.ORI
 	- ~~INT: Config/MR/Feature/OE-491-Asset-List-Panel.INT~~
