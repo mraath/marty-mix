@@ -1,6 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import fs from "fs"
 import path from "path"
+import matter from "gray-matter"
 
 const HeaderImage: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) => {
   const folderPath = path.dirname(fileData.filePath!)
@@ -11,15 +12,24 @@ const HeaderImage: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) =
     return null
   }
 
-  const title = fileData.frontmatter?.title || "Default Title"
-  const subtitle = fileData.frontmatter?.subtitle || "Default Subtitle"
+  // Parse the Markdown content to find the first H1 and H2 headers
+  const content = matter(fileData.content).content
+  const h1Match = content.match(/^#\s+(.*)$/m)
+  const h2Match = content.match(/^##\s+(.*)$/m)
+  const title = h1Match ? h1Match[1] : "Default Title"
+  const subtitle = h2Match ? h2Match[1] : "Default Subtitle"
 
   return (
-    <div class="page-header">
-      <img src={`./${imageUrl}`} alt="Header Image" />
-      <h1>{title}</h1>
-      <h2>{subtitle}</h2>
-    </div>
+    <>
+      <div class="page-header">
+        <img src={`./${imageUrl}`} alt="Header Image" />
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
+      </div>
+      <div class="page-content">
+        {fileData.content}
+      </div>
+    </>
   )
 }
 
@@ -28,9 +38,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
 }
-  
+
 .page-header {
   position: relative;
   text-align: center;
@@ -47,7 +56,7 @@ html, body {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  position: fixed;
+  position: fixed; /* Ensure the image covers the entire viewport */
   top: 0;
   left: 0;
   z-index: -1;
@@ -71,6 +80,10 @@ html, body {
 .page-header h2 {
   font-size: 2rem;
   white-space: nowrap;
+}
+
+.page-content {
+  padding-top: 100vh; /* Ensure content starts after the header image */
 }
 
 @media (max-width: 600px) {
