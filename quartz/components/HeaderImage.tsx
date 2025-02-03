@@ -1,6 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import fs from "fs"
 import path from "path"
+import matter from "gray-matter"
 
 const HeaderImage: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) => {
   const folderPath = path.dirname(fileData.filePath!)
@@ -12,7 +13,11 @@ const HeaderImage: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) =
   }
 
   const title = fileData.frontmatter?.title || "Default Title"
-  const subtitle = fileData.frontmatter?.subtitle || "Default Subtitle"
+
+  // Parse the Markdown content to find the first H2 header
+  const content = matter(fileData.content).content
+  const h2Match = content.match(/^##\s+(.*)$/m)
+  const subtitle = h2Match ? h2Match[1] : "Default Subtitle"
 
   return (
     <div class="page-header">
@@ -50,7 +55,7 @@ HeaderImage.css = `
 .page-header h2 {
   margin: 0;
   padding: 0.5rem;
-  background: rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
   display: inline-block;
   width: auto;
 }
