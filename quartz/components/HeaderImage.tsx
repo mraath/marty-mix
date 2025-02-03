@@ -4,8 +4,8 @@ import path from "path"
 
 const HeaderImage: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) => {
   const folderPath = path.dirname(fileData.filePath!)
-  const imageFiles = fs.readdirSync(folderPath).filter((file) => /\.(jpg|jpeg|png|gif)$/.test(file))
-  const imageUrl = imageFiles.length > 0 ? path.join(folderPath, imageFiles[0]) : null
+  const imageFiles = fs.readdirSync(folderPath).filter((file) => /\.(jpg|jpeg|png|gif|webp)$/.test(file))
+  const imageUrl = imageFiles.length > 0 ? imageFiles[0] : null
 
   if (!imageUrl) {
     return null
