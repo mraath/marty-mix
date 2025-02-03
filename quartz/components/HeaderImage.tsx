@@ -2,6 +2,7 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
+import { h } from "preact"
 
 const HeaderImage: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) => {
   const folderPath = path.dirname(fileData.filePath!)
@@ -27,7 +28,7 @@ const HeaderImage: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) =
         <h2>{subtitle}</h2>
       </div>
       <div class="page-content">
-        {fileData.content}
+        <div dangerouslySetInnerHTML={{ __html: fileData.content }} />
       </div>
     </>
   )
