@@ -1,10 +1,10 @@
 ---
 created: 2025-01-31T10:48
-updated: 2025-02-03T10:26
+updated: 2025-02-03T11:05
 ---
-# Main Header
+# NICE H1
 
-## Sub Header
+## H2 now reads well
 
 ##### Why to do this
 
