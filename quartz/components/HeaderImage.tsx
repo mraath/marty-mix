@@ -24,6 +24,13 @@ const HeaderImage: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) =
 }
 
 HeaderImage.css = `
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+  
 .page-header {
   position: relative;
   text-align: center;
