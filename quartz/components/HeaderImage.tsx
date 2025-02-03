@@ -11,11 +11,14 @@ const HeaderImage: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) =
     return null
   }
 
+  const title = fileData.frontmatter?.title || "Default Title"
+  const subtitle = fileData.frontmatter?.subtitle || "Default Subtitle"
+
   return (
     <div class="page-header">
       <img src={`./${imageUrl}`} alt="Header Image" />
-      <h1>{fileData.frontmatter?.title}</h1>
-      <h2>{fileData.frontmatter?.subtitle}</h2>
+      <h1>{title}</h1>
+      <h2>{subtitle}</h2>
     </div>
   )
 }
@@ -30,6 +33,7 @@ HeaderImage.css = `
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0; /* Remove any margin */
 }
 
 .page-header img {
