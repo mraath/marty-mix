@@ -13,7 +13,7 @@ const HeaderImage: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) =
 
   return (
     <div class="page-header">
-      <img src={imageUrl} alt="Header Image" />
+      <img src={`./${imageUrl}`} alt="Header Image" />
       <h1>{fileData.frontmatter?.title}</h1>
       <h2>{fileData.frontmatter?.subtitle}</h2>
     </div>
@@ -25,6 +25,11 @@ HeaderImage.css = `
   position: relative;
   text-align: center;
   color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-header img {
