@@ -1,0 +1,8 @@
+
+Parent:: [[LOG]]
+
+## Log
+
+```txt
+https://app.logz.io/#/dashboard/osd/discover/?_a=(columns:!(message,AppName),filters:!(('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'logzioCustomerIndex*',key:Env,negate:!f,params:(query:DEV),type:phrase),query:(match_phrase:(Env:DEV))),('$state':(store:appState),meta:(alias:!n,disabled:!f,index:'logzioCustomerIndex*',key:message,negate:!f,params:!(oem,'Required%20parameter','All%20required%20parameters%20for%20this%20event%20have%20not%20been%20satisfied','Make%20Required%20Event%20Available%20for%20definition%20device','All%20required%20parameters%20for%20this%20event%20have%20not%20been%20satisfied%20-%20ParameterId'),type:phrases,value:'oem,%20Required%20parameter,%20All%20required%20parameters%20for%20this%20event%20have%20not%20been%20satisfied,%20Make%20Required%20Event%20Available%20for%20definition%20device,%20All%20required%20parameters%20for%20this%20event%20have%20not%20been%20satisfied%20-%20ParameterId'),query:(bool:(minimum_should_match:1,should:!((match_phrase:(message:oem)),(match_phrase:(message:'Required%20parameter')),(match_phrase:(message:'All%20required%20parameters%20for%20this%20event%20have%20not%20been%20satisfied')),(match_phrase:(message:'Make%20Required%20Event%20Available%20for%20definition%20device')),(match_phrase:(message:'All%20required%20parameters%20for%20this%20event%20have%20not%20been%20satisfied%20-%20ParameterId'))))))),index:'logzioCustomerIndex*',interval:auto,query:(language:lucene,query:''),sort:!(!('@timestamp',desc)))&_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:'2023-05-08T09:00:00.000Z',to:now))&accountIds=true&switchToAccountId=157279
+```
