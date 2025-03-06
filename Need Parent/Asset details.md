@@ -1,0 +1,1 @@
+When clicking on the Asset description link, on the [[Assets List]] list page, this opens.

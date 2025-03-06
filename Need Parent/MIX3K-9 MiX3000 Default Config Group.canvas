@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"83df1657228e4253","x":-698,"y":-376,"width":400,"height":400,"type":"file","file":"marty-mix/Need Parent/MIX3K-9 MiX3000 Default Config Group.md"},
+		{"id":"02b00193de74f20e","x":-225,"y":-516,"width":400,"height":281,"type":"file","file":"Excalidraw/MiX3K Default Templates.excalidraw.svg"},
+		{"id":"359f0685370092e3","x":-225,"y":-201,"width":400,"height":189,"type":"file","file":"Excalidraw/Make Device Available.excalidraw.svg"}
+	],
+	"edges":[
+		{"id":"c9b148864457aab0","fromNode":"83df1657228e4253","fromSide":"right","toNode":"02b00193de74f20e","toSide":"left"},
+		{"id":"c8523cac8486b31d","fromNode":"83df1657228e4253","fromSide":"right","toNode":"359f0685370092e3","toSide":"left"}
+	]
+}
