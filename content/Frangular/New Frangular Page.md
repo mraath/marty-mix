@@ -19,7 +19,7 @@ I will explain the BASIC parts we need below. Just have a look at this to get th
 
 ## Overview
 
-In the sections below I will walk through:
+In the sections below I will walk through the following:
 
 - OLD UI
 	- iFrame - HTML
