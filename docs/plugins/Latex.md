@@ -1,13 +1,15 @@
 ---
-title: "Latex"
+title: Latex
 tags:
   - plugin/transformer
+created: 2024-07-22T08:09
+updated: 2025-03-06T12:00
 ---
 
 This plugin adds LaTeX support to Quartz. See [[features/Latex|Latex]] for more information.
 
 > [!note]
-> For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
+> For information on how to add, remove or configure plugins, see the [[marty-mix/Need Parent/Configuration#Plugins|Configuration]] page.
 
 This plugin accepts the following configuration options:
 

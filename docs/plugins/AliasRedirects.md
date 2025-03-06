@@ -2,6 +2,8 @@
 title: AliasRedirects
 tags:
   - plugin/emitter
+created: 2024-07-22T08:09
+updated: 2025-03-06T12:00
 ---
 
 This plugin emits HTML redirect pages for aliases and permalinks defined in the frontmatter of content files.
@@ -26,7 +28,7 @@ The emitter supports the following aliases:
 - `alias`
 
 > [!note]
-> For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
+> For information on how to add, remove or configure plugins, see the [[marty-mix/Need Parent/Configuration#Plugins|Configuration]] page.
 
 This plugin has no configuration options.
 
