@@ -1,0 +1,51 @@
+
+## Assignment
+- **Prepare a two-minute report** by teaching us something related to your job that will be interesting for others to learn.  Bring this example to life by using an exhibit or visual.   **Use the LIONS formula** (page 4.10 in your Participant Manual). **Read and complete the “Make Our Ideas Clear Report Planning Sheet on pages 4.11-4.12.**
+
+## Idea: Your second brain
+- Let's ==imagine==
+	- Imagine a **smelly pile of rubbish** in front of you. It goes **high** and **wide** and you don't know where to start looking for your <mark class="hltr-grey">missing keys</mark> . The more you look the more **discouraged** and **smelly** you become.
+	- Suddenly there is a huge **space ship** with a **red laser** pointer.
+	- It starts **zapping** away at items on this garbage pile.
+	- Some go into this **weird** **time-warp**
+	- Others go into a **huge book**
+	- Some just **disappear**
+	- One thing you do know, is the pile is getting **smaller**
+	- And then you <mark class="hltr-grey">find your key</mark> 
+- Life is a ==mess==
+	- **Life** is like that smelly rubbish pile, life is sometimes a **mess**
+	- We live with **information overload**
+	- Esp in our line of **work**
+	- **Emails**, **Teams**, **WhatsApp**, **Phone calls**, **online articles**, **meetings**
+	- I **don't organise** things well and it becomes this pile of **rubbish**
+	- The more I **look** for something the more **discouraged** and **smelly** I become
+- Be ==intentional== to sort it out
+	- We need to be **intentional** with **organising** this pile
+	- **GTD** - but all I remember is to make **quick calls**
+	- Come in like a huge **space ship** and start **zapping** at this pile
+	- In the moment decide, this **information** I got, should I **do** something about it? Off to the time warp, add it to a **TODO** app
+	- The next part of information, should I **remember** it, off to a **note taking app**
+	- This **poor piece** of information, sorry for you, you just **disappear**
+	- Next minute the **pile is smaller** and 
+	- you quickly **find the "key"** you are looking for
+- Use a great ==todo== list
+	- **TODO-ist**
+	- **Short cuts** from any app
+	- **Language** understanding eg. **next sunday at 9**
+	- Integrates into **Calendars**
+- Make non linear ==notes==
+	- I use **non-linear** note taking apps
+	- **Obsidian**
+	- Small **atonamous** 
+	- **Photo**, **Text**, **Random** thought
+	- Link them with "**hyperlinks**"
+	- Start seeing **connection** you usually wont
+	- They don't call it your **second brain** for nothing
+- ==Rinse== and repeat
+	- **Rinse** and **repeat** this 
+	- When you have a **gap**
+	- When your day **starts**
+- ==Summary==
+	- You should be **intentional** in **organising** your life.
+	- The **stinky pile** will get **smaller** and 
+	- you will **find** the **keys** you are looking for.

@@ -1,0 +1,75 @@
+
+Jacques Cheatsheet: https://mixtelematics-my.sharepoint.com/:w:/p/jacques_vanwyk/EaTDpKABV0JMpdoBdoMoP2oBmPwDyJhlKCxNyfZBc3CYCQ?e=pqL8K9
+
+- Containers eventially
+- Controllers will go their
+- Cheatsheet
+	- COpy files
+	- Infrastructure set up new server
+	- Inetpub on D:
+	- Copy files in
+	- IIS Install
+		- Server Manager
+		- Add roles
+		- Add features
+		- Yes
+		- Web Server (IIS)
+		- .NET4.8
+		- Request MOnitor
+		- (follow JAcques' doc)
+	- Config IIS
+		- Delete Default (app pool and site)
+		- Add Website
+			- Sitename: like API name
+			- Select Physical path copied
+		- App pool setting
+			- Advanced
+			- Start mode - Always Running
+			- Worker processes: 3
+			- Identity
+				- Custom
+				- PRODUCTION\srvciis
+				- pwd - Zonika, Jacques, Infrastructure
+		- Refresh
+		- Open eg. API
+			- Swagger - System - Healthcheck
+			- Check Log on d (Aus)
+			- Can see things in there - so works
+	- Config MSDTC
+		- Component services
+			- DTC
+			- Properties
+			- Security
+			- Cheatsheet
+	- Restart server
+	- Reroute here from Load balancer
+	- Performance counters
+		- HSSYDIIS51
+			- EC2
+			- Load balancer
+			- Add server to target group 2
+			- Some manual check to see if healthy
+			- Performance monitor
+			- Early warning - request timeout count goes up
+			- Matrixes... etc
+	- Config AWS CodeDeploy
+		- Build > Package in Azure
+		- Artifact
+		- Server
+		- AWS
+		- Code Deploy
+		- DeviceConfig.API
+		- eg. HSSYD
+			- Listing
+			- Can add / remove
+			- Service Roles!!
+			- Permissions
+			- PS in link in cheat sheet
+			- Look for environment
+			- 
+		- AWS to SAML (syncs stuff)
+			- Can ask Zonika or Stefan or Jacques
+		- Add Agent on HOST
+			- Accepts requests
+			- Code Deploy
+			- 

@@ -1,0 +1,6 @@
+---
+created: 2024-10-11T08:06
+updated: 2024-10-11T08:07
+---
+He sends in an agent to get meeting notes 😄
+[2024/10/08 - PR Builds, Unit Tests and Code Coverage (cloud.microsoft)](https://loop.cloud.microsoft/p/eyJwIjp7InUiOiJodHRwczovL21peHRlbGVtYXRpY3Muc2hhcmVwb2ludC5jb20vY29udGVudHN0b3JhZ2UvQ1NQXzM0OWMwNzMzLWE5ZjItNDEyYi05ZTYxLWFlNjFiMTMwZDdhYj9uYXY9Y3owbE1rWmpiMjUwWlc1MGMzUnZjbUZuWlNVeVJrTlRVRjh6TkRsak1EY3pNeTFoT1dZeUxUUXhNbUl0T1dVMk1TMWhaVFl4WWpFek1HUTNZV0ltWkQxaUlVMTNaV05PVUV0d1N6QkhaVmxoTldoelZFUlljVFJGT0VNdFozSTNWa3BLYmpsYVFUbG9Wazl3YmkxRVptbEVlR0ZhVmxsUlMyNHllbGRCWkdwS1JuWW1aajB3TVVaS1VVNDJOelJGUWs5UFZ6WlRRalV6TlVKTVdrZzBVMFpOVUU1WlNVOU9KbU05Sm1ac2RXbGtQVEUlM0QiLCJyIjpmYWxzZX19)

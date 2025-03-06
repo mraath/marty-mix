@@ -1,0 +1,197 @@
+---
+
+excalidraw-plugin: parsed
+tags: [excalidraw]
+
+---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
+
+
+# Text Elements
+MiX ^6jxieZr0
+
+%%
+# Drawing
+```json
+{
+	"type": "excalidraw",
+	"version": 2,
+	"source": "https://excalidraw.com",
+	"elements": [
+		{
+			"id": "6jxieZr0",
+			"type": "text",
+			"x": -560.3876643413541,
+			"y": -890.1202955797617,
+			"width": 577.4426331226598,
+			"height": 424.5901714137203,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"jJCE3d5jaV2Mu_5Jg5MlV"
+			],
+			"strokeSharpness": "sharp",
+			"seed": 519962894,
+			"version": 783,
+			"versionNonce": 1476336270,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1674529909647,
+			"link": null,
+			"locked": false,
+			"text": "MiX",
+			"rawText": "MiX",
+			"fontSize": 339.6721371309763,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 296.5901714137203,
+			"containerId": null,
+			"originalText": "MiX"
+		},
+		{
+			"id": "5Jp2Q7oOSeqgOR9PiN0hd",
+			"type": "rectangle",
+			"x": -6668.385471794149,
+			"y": -1016.5686176083227,
+			"width": 12823.98060034537,
+			"height": 6794.161962446249,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [
+				"jJCE3d5jaV2Mu_5Jg5MlV"
+			],
+			"strokeSharpness": "sharp",
+			"seed": 1244900306,
+			"version": 869,
+			"versionNonce": 2130713938,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1674529909647,
+			"link": null,
+			"locked": false
+		},
+		{
+			"id": "yOa3DU8Pxt2ty_IVUIJqt",
+			"type": "rectangle",
+			"x": -4360.394805410527,
+			"y": 708.9073010171287,
+			"width": 2239.9996948242188,
+			"height": 1976.0002136230469,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"strokeSharpness": "sharp",
+			"seed": 1064608530,
+			"version": 123,
+			"versionNonce": 913870162,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1674529954232,
+			"link": null,
+			"locked": false
+		},
+		{
+			"id": "ZP01F46hUalBmIdw6PsA2",
+			"type": "ellipse",
+			"x": 243.68319894754467,
+			"y": -327.7350135616655,
+			"width": 54.38073921075727,
+			"height": 65.63194965583523,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"strokeSharpness": "sharp",
+			"seed": 1522533390,
+			"version": 17,
+			"versionNonce": 1526874446,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1674529865576,
+			"link": null,
+			"locked": false
+		},
+		{
+			"id": "5q2zVOnu",
+			"type": "text",
+			"x": -3504.3947443753705,
+			"y": 1091.9074230874412,
+			"width": 12,
+			"height": 25,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"strokeSharpness": "sharp",
+			"seed": 1964976334,
+			"version": 3,
+			"versionNonce": 421322510,
+			"isDeleted": true,
+			"boundElements": null,
+			"updated": 1674529965004,
+			"link": null,
+			"locked": false,
+			"text": "",
+			"rawText": "",
+			"fontSize": 20,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 18,
+			"containerId": null,
+			"originalText": ""
+		}
+	],
+	"appState": {
+		"theme": "light",
+		"viewBackgroundColor": "#ffffff",
+		"currentItemStrokeColor": "#000000",
+		"currentItemBackgroundColor": "transparent",
+		"currentItemFillStyle": "hachure",
+		"currentItemStrokeWidth": 1,
+		"currentItemStrokeStyle": "solid",
+		"currentItemRoughness": 1,
+		"currentItemOpacity": 100,
+		"currentItemFontFamily": 1,
+		"currentItemFontSize": 20,
+		"currentItemTextAlign": "left",
+		"currentItemStrokeSharpness": "sharp",
+		"currentItemStartArrowhead": null,
+		"currentItemEndArrowhead": "arrow",
+		"currentItemLinearStrokeSharpness": "round",
+		"gridSize": null,
+		"colorPalette": {}
+	},
+	"files": {}
+}
+```
+%%

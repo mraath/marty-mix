@@ -1,0 +1,87 @@
+## Description
+- Specific incident
+	- <mark class="hltr-red">Defining</mark> moment
+	- <mark class="hltr-grey">Significant</mark> impact
+	- <mark class="hltr-grey">Who</mark> you are today
+- <mark class="hltr-orange">Vivid</mark> experience
+	- Positive or negative
+	- Or mentor or something taught
+- 2 Mins
+	- How this <mark class="hltr-grey">shaped</mark> who you are today
+	- Questions
+		- <mark class="hltr-grey">When</mark> did it happen?
+		- <mark class="hltr-grey">Where</mark> were you?
+		- Who else <mark class="hltr-grey">involved</mark> ?
+		- "So what this <mark class="hltr-grey">says about me is</mark> :"
+			- <mark class="hltr-yellow">I once was lost, but now I'm found, was blind but now I see</mark> 
+	- Think about the topic
+	- Practice telling friends, family, colleagues
+	- Not need to write out or memorise
+	- Use planning sheet as outline
+	- <mark class="hltr-green">Relive</mark> this specific moment with us
+
+## Planning sheet
+- Points to remember
+- Defining moments
+	- OD
+	- Born Again
+	- Wedding day
+	- Kids birth
+- The one incident I will use
+	- Born again
+- Details I will cover
+	- The best gift I got
+		- I still remember it like it was **yesterday**
+		- I received this amazing **gift**
+		- I **immediately** knew that my whole **life** has changed
+		- I had **hope**
+		- I had **clarity**
+		- It was like I was a **brand new man**
+	- **Backtrack**
+		- About **3 months** before this I was your **typical student**
+		- **Drugs, sex, party**
+		- I was an exchange student in the **Netherlands**
+		- Took **shrooms** and smoked **hash**
+		- **Next moment** I woke up hearing: "**Call the ambulance** the South African is dying"
+		- I **experience** many things that night which I would still **love to talk** about
+		- Main point is **I ended** up in a place where 
+			- I knew I **didn't have** to be
+			- I fully **deserved** it, but knew it could have been different
+		- It was a place of complete **hopelessness** 
+		- I saw my mom crying at my **grave**
+		- **Agony**
+		- **Fear**
+		- **Pain**
+		- I **often tell people** I know it wasn't **hell**, 
+		- but I think **God** allowed me a **pre-taste** of  where I was **heading**
+		- Something to **wake me** up from my life choices
+	- Trying to fix things myself
+		- I tried to be a **good person**
+		- But this **didn't last** very long
+		- I tried making **better choices**
+		- This was also **not successful**
+		- But that episode brought me to my **knees**
+		- **Searching** for **answers**
+		- Searching for the **truth**
+	- This brings me **back to the gift**
+		- With this gift I **found forgiveness**
+		- I found that I was **loved**
+		- From this I could love **others**
+		- I found a **person who's footsteps** I wanted to walk in
+		- I learned to follow well
+		- Even to **lead** others
+		- I could see how this person **died for others**
+		- So I could learn to **put others first**
+		- I became **hopeful**
+		- Full of **joy**
+		- Someone who **didn't need other substances** anymore
+	- **This gift I found** was
+		- **Giving my sin** to **Jesus**
+		- **Receiving his payment** for **my wrongdoings**
+		- The **door** to that **terrible place closed**
+		- A door to **eternal life** opened
+- **What this says about me is**
+	- I once was **lost**, but now I'm found, 
+	- was **blind** but now I see
+
+![[2022_08_24 06_36 LifeChangingEvent.jpg]]
