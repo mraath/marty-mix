@@ -1,11 +1,11 @@
 ---
 created: 2025-03-06T08:46
-updated: 2025-03-06T10:26
+updated: 2025-03-07T07:18
 ---
 
 ## Moving parts
 
-This will just be the moving parts to get the basic components in place. 
+The moving parts to get the basic components in place. 
 Going forward you will need to add:
 - BE logic, eg. Permission based tab that comes from the back-end, displaying this tab
 - Styling, see [[STM-1074 Moving Shuans html to our component]]
