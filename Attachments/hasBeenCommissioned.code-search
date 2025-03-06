@@ -1,0 +1,19 @@
+# Query: hasBeenCommissioned
+# Flags: WordMatch
+# Including: *.cs, *.html, *.ts
+# Excluding: **/bin, **/pot, *.po, *.csv, **/18.17, **/Database_oops, **/TechDebt-190
+
+9 results - 2 files
+
+DynaMiX.Backend\API\DynaMiX.API\NancyModules\ConfigAdmin\AssetMaintenance\AssetMaintenanceModule.cs:
+  309: 			form.HasBeenCommissioned = mobileUnit.ConfigurationStatus != ConfigEnums.ConfigurationStatus.NotCommissioned;
+
+DynaMiX.Backend\API\DynaMiX.API\NancyModules\FleetAdmin\Assets\AssetCommissioningModule.cs:
+   772: 				form.HasBeenCommissioned = mobileUnit.ConfigurationStatus != ConfigEnums.ConfigurationStatus.NotCommissioned;
+   777: 				form.HasBeenCommissioned = false;
+   787: 						form.HasBeenCommissioned = true;
+   966: 			if (form.HasBeenCommissioned)
+  1048: 				configSummaryCarrier.ConfigStatusCanCompile = configSummaryCarrier.ConfigStatusCanCompile && form.HasBeenCommissioned;
+  1049: 				configSummaryCarrier.ConfigStatusCanUpload = configSummaryCarrier.ConfigStatusCanUpload && form.HasBeenCommissioned;
+  1051: 				configSummaryCarrier.CanChangeThresholds = form.HasBeenCommissioned;
+  1246: 			if (carrier.MobileDeviceId == ConfigConstants.MobileDevices.STREAMAX_STANDALONE.ToString() && !carrier.HasBeenCommissioned)

@@ -1,0 +1,2 @@
+- Show almost only what I need: -path:Hide  -path:Done -path:textgenerator  -path:Templates
+- 
