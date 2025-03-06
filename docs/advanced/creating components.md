@@ -1,5 +1,7 @@
 ---
 title: Creating your own Quartz components
+created: 2024-07-22T08:09
+updated: 2025-03-06T12:00
 ---
 
 > [!warning]
@@ -209,7 +211,7 @@ import YourComponent from "./YourComponent"
 export { ArticleTitle, Content, Darkmode, YourComponent }
 ```
 
-Then, you can use it like any other component in `quartz.layout.ts` via `Component.YourComponent()`. See the [[configuration#Layout|layout]] section for more details.
+Then, you can use it like any other component in `quartz.layout.ts` via `Component.YourComponent()`. See the [[marty-mix/Need Parent/Configuration#Layout|layout]] section for more details.
 
 As Quartz components are just functions that return React components, you can compositionally use them in other Quartz components.
 
