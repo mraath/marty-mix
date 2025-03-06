@@ -1,0 +1,1 @@
+![[DST Moving Parts.excalidraw]]

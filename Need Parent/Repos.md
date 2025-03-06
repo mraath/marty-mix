@@ -1,0 +1,1 @@
+- [MiX.Config.DeviceState - Repos (azure.com)](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.DeviceState)

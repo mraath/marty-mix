@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"9310115e3b719981","type":"link","url":"https://csojiramixtelematics.atlassian.net/jira/dashboards/10012","x":-420,"y":-370,"width":400,"height":500},
+		{"id":"59d367c37ed62d86","type":"link","url":"https://www.surfline.com/favorites?type=forecast","x":20,"y":-370,"width":400,"height":500},
+		{"id":"ffc9efe34a396388","type":"link","url":"https://app.todoist.com/app/today","x":460,"y":-370,"width":400,"height":500}
+	],
+	"edges":[]
+}
