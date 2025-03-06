@@ -1,0 +1,37 @@
+# Query: NotCommissioned
+# Including: *.cs
+# Excluding: **/bin, **/pot, *.po, *.csv, **/18.17, **/Database_oops
+# ContextLines: 1
+
+DynaMiX.Backend\API\DynaMiX.API\NancyModules\ConfigAdmin\TemplateLevel\ConfigurationGroupsModule.cs:
+  1345  					ConfigGroupId = "Unallocated",
+  1346: 					ConfigurationStatus = ConfigurationStatus.NotCommissioned.GetDescription(),
+  1347  					ConfigurationStatusTime = statusDate,
+
+DynaMiX.Backend\Logic\DynaMiX.Logic\FleetAdmin\AssetCommissioningManager.cs:
+  453  							MobileDeviceId = newTemplate.DefinitionDeviceId,
+  454: 							ConfigurationStatus = canAutoCommission ? ConfigurationStatus.ConfigurationChanged : ConfigurationStatus.NotCommissioned,
+  455  							ConfigurationGroupId = newConfigGroup.Id,
+
+DynaMiX.Backend\Logic\DynaMiX.Logic\Operations\IridiumManager.cs:
+  317  			{
+  318: 				return ConfigurationStatus.NotCommissioned;
+  319  			}
+
+DynaMiX.Backend\MiX.UnitConfiguration\MiX.UnitConfiguration.Data\MobileUnitConfiguration.cs:
+  288  																		mobileUnitId,
+  289: 																		configurationStatus = ConfigurationStatus.NotCommissioned,
+  290  																		generationNotes = "Generation complete with warning",
+
+DynaMiX.DeviceConfig\DynaMiX.DeviceConfig.Logic\Managers\AssetLevel\AssetManager.cs:
+  148  						MobileDeviceId = newTemplate.DefinitionDeviceId,
+  149: 						ConfigurationStatus = canAutoCommission ? MiX.DeviceIntegration.Common.Enums.ConfigurationStatus.ConfigurationChanged : MiX.DeviceIntegration.Common.Enums.ConfigurationStatus.NotCommissioned,
+
+DynaMiX.DeviceConfig\DynaMiX.DeviceConfig.Logic\Managers\DynamicCAN\DynamicCANManager.cs:
+  384  				{
+  385: 					deviceConfigRepo.AddMobileUnit(assetId, ConfigurationStatus.NotCommissioned, configGroupId, uniqueIdentifier, currentSession.FullName);
+
+DynaMiX.DeviceConfig\DynaMiX.DeviceConfig.Logic\Managers\MobileUnitLevel\MobileUnitManager.cs:
+  3550  					if (!canAutoCommission)
+  3551: 						configStatus = ConfigurationStatus.NotCommissioned;
+  3552  
