@@ -2,6 +2,8 @@
 title: Private Pages
 tags:
   - feature/filter
+created: 2024-07-22T08:09
+updated: 2025-03-06T12:00
 ---
 
 There may be some notes you want to avoid publishing as a website. Quartz supports this through two mechanisms which can be used in conjunction:
@@ -19,7 +21,7 @@ If you'd like to only publish a select number of notes, you can instead use [[Ex
 
 ## `ignorePatterns`
 
-This is a field in `quartz.config.ts` under the main [[configuration]] which allows you to specify a list of patterns to effectively exclude from parsing all together. Any valid [fast-glob](https://github.com/mrmlnc/fast-glob#pattern-syntax) pattern works here.
+This is a field in `quartz.config.ts` under the main [[marty-mix/Need Parent/Configuration]] which allows you to specify a list of patterns to effectively exclude from parsing all together. Any valid [fast-glob](https://github.com/mrmlnc/fast-glob#pattern-syntax) pattern works here.
 
 > [!note]
 > Bash's glob syntax is slightly different from fast-glob's and using bash's syntax may lead to unexpected results.

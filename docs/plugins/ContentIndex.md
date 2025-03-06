@@ -2,6 +2,8 @@
 title: ContentIndex
 tags:
   - plugin/emitter
+created: 2024-07-22T08:09
+updated: 2025-03-06T12:00
 ---
 
 This plugin emits both RSS and an XML sitemap for your site. The [[RSS Feed]] allows users to subscribe to content on your site and the sitemap allows search engines to better index your site. The plugin also emits a `contentIndex.json` file which is used by dynamic frontend components like search and graph.
@@ -9,7 +11,7 @@ This plugin emits both RSS and an XML sitemap for your site. The [[RSS Feed]] al
 This plugin emits a comprehensive index of the site's content, generating additional resources such as a sitemap, an RSS feed, and a
 
 > [!note]
-> For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
+> For information on how to add, remove or configure plugins, see the [[marty-mix/Need Parent/Configuration#Plugins|Configuration]] page.
 
 This plugin accepts the following configuration options:
 

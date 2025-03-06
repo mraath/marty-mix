@@ -2,15 +2,17 @@
 title: Static
 tags:
   - plugin/emitter
+created: 2024-07-22T08:09
+updated: 2025-03-06T12:00
 ---
 
-This plugin emits all static resources needed by Quartz. This is used, for example, for fonts and images that need a stable position, such as banners and icons. The plugin respects the `ignorePatterns` in the global [[configuration]].
+This plugin emits all static resources needed by Quartz. This is used, for example, for fonts and images that need a stable position, such as banners and icons. The plugin respects the `ignorePatterns` in the global [[marty-mix/Need Parent/Configuration]].
 
 > [!important]
 > This is different from [[Assets]]. The resources from the [[Static]] plugin are located under `quartz/static`, whereas [[Assets]] renders all static resources under `content` and is used for images, videos, audio, etc. that are directly referenced by your markdown content.
 
 > [!note]
-> For information on how to add, remove or configure plugins, see the [[configuration#Plugins|Configuration]] page.
+> For information on how to add, remove or configure plugins, see the [[marty-mix/Need Parent/Configuration#Plugins|Configuration]] page.
 
 This plugin has no configuration options.
 

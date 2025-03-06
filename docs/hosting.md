@@ -1,5 +1,7 @@
 ---
 title: Hosting
+created: 2024-07-22T08:09
+updated: 2025-03-06T12:00
 ---
 
 Quartz effectively turns your Markdown files and other resources into a bundle of HTML, JS, and CSS files (a website!).
@@ -10,7 +12,7 @@ However, if you'd like to publish your site to the world, you need a way to host
 > The rest of this guide assumes that you've already created your own GitHub repository for Quartz. If you haven't already, [[setting up your GitHub repository|make sure you do so]].
 
 > [!hint]
-> Some Quartz features (like [[RSS Feed]] and sitemap generation) require `baseUrl` to be configured properly in your [[configuration]] to work properly. Make sure you set this before deploying!
+> Some Quartz features (like [[RSS Feed]] and sitemap generation) require `baseUrl` to be configured properly in your [[marty-mix/Need Parent/Configuration]] to work properly. Make sure you set this before deploying!
 
 ## Cloudflare Pages
 
