@@ -1,6 +1,6 @@
 ---
 created: 2024-09-10T16:13
-updated: 2024-09-11T12:05
+updated: 2025-02-11T13:07
 ---
 ## Introduction
 
@@ -91,6 +91,8 @@ This calls the following route.
 	[mobileunit].[MobileUnit_GetMobileUnitPropertiesForAssetsList]
 
 ```sql
+DECLARE @UNIT_IMSI_KEY INT = (SELECT [PropertyKey]  FROM [definition].[Properties] dp WITH (NOLOCK)   WHERE dp.PropertyId  = 3870542574174346252);
+
 SELECT mu.[MobileUnitId], mup.[Value]
 FROM [mobileunit].[MobileUnitProperties] mup WITH (NOLOCK)
 INNER JOIN @MobileUnits mu ON mup.[MobileUnitKey] = mu.[MUKey]

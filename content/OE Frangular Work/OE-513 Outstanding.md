@@ -1,11 +1,24 @@
 ---
 created: 2024-07-09T14:25
-updated: 2024-12-10T08:06
+updated: 2025-02-07T10:02
 ---
+## Quick summary
+
+### Outstanding
+
+- Languaging - Nicole
+- Formatting / styling - Justus?
+- Bugs: Jako, 
+- Alerts - 99% (Marty)
+- Testing - Testers
+- Replace "BETA" menu - ONLY ONCE ALL DONE
 
 ### Overview
 
 ![[OE-20 Planning.excalidraw.png]]
+
+
+
 
 
 ### Story points

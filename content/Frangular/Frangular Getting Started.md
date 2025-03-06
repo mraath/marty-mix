@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2025-01-31T11:20
+updated: 2025-03-06T10:04
 ---
 ## Basic intro to Frangular (FR)
 
@@ -83,6 +83,12 @@ Herewith the API - it is more straight forward
 Is is also available as a [seperate pdf](https://mixtelematics-my.sharepoint.com/personal/marthinus_raath_mixtelematics_com/Documents/Microsoft%20Teams%20Chat%20Files/OE-501%20API%20Documentation.pdf)
 
 [[OE-501 API Documentation]]
+
+## Lets make a new Page
+
+We have looked into a case study of Pallavi's before.
+I will now add an example for the new Frangular page.
+[[New Frangular Page]]
 
 ## Helpful Code Snippets
 
