@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-07T08:01
+updated: 2025-03-07T10:19
 ---
 
 # OE-568 Default Column Width
@@ -63,4 +63,5 @@ save(query: SelectionCriteriaUpdate): Observable<SelectionCriteriaQueryCarrier> 
 	- [Swagger UI](https://selectioncriteria.intss.mixdevelopment.com/swagger/index.html)
 
 - I decided to follow Tim's way to override the col width: [[Overriding the Column Width]]
-- 
+
+- PR: [Pull request 120737: OE-568: Adjusted width of columns - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/120737)
