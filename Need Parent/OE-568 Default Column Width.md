@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-05T12:28
+updated: 2025-03-07T08:01
 ---
 
 # OE-568 Default Column Width
@@ -61,4 +61,6 @@ save(query: SelectionCriteriaUpdate): Observable<SelectionCriteriaQueryCarrier> 
 - api/selectioncriteria/update
 - Selection Criteria
 	- [Swagger UI](https://selectioncriteria.intss.mixdevelopment.com/swagger/index.html)
-	- 
+
+- I decided to follow Tim's way to override the col width: [[Overriding the Column Width]]
+- 
