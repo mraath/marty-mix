@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T15:11
+updated: 2025-03-10T15:16
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -69,7 +69,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
    - OLD BE: UPLOAD_ASSET_FIRMWARE
 	   - UploadAssetFirmware
 	   - configurationGroupManager.UploadAssetFirmware
-		   - DeviceConfigClient.MobileUnitCommands.AreMobileUnitsSupportedForUpdateFirmwareCommand
+		   - DeviceConfigClient.MobileUnitCommands.AreMobileUnitsSupportedForUpdateFirmwareCommand ✅
 		   - DeviceConfigClient.MobileUnitCommands.UpdateMobileUnitFirmware
 		   - UploadAssetFirmwareOldWay
 - New 
