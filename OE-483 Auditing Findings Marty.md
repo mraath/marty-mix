@@ -1,7 +1,26 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T12:47
+updated: 2025-03-10T12:49
 ---
+```dataviewjs
+function callout(text, type) {
+    const allText = `> [!${type}]\n` + text;
+    const lines = allText.split('\n');
+    return lines.join('\n> ') + '\n'
+}
+
+const query = `
+not done
+path includes ${dv.current().file.path}
+# you can add any number of extra Tasks instructions, for example:
+# group by heading
+`;
+
+dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
+```
+
+## My findings
+
 - 77:  getConfigurationGroupsMultiselect (GET shouldn't audit anything)
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
    - OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/config_groups
