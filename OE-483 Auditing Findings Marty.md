@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T15:10
+updated: 2025-03-10T15:11
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -76,6 +76,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- groupId/{groupId}/mobile-units/upload-firmware
 	- UploadMobileUnitsFirmware
 	- mum.UploadMobileUnitsFirmware
+		- disSupportedUnits
 		- 
 		- UploadAssetFirmwareOldWay
 
