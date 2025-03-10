@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T15:29
+updated: 2025-03-10T15:35
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -123,3 +123,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	   - [ ] New one doesnt
 		   - In new ResetAssetMobileUnits, just add... as a first line
 			   - _authorisationProxy.Authorise(authToken, Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP).ConfigureAwait(false).GetAwaiter().GetResult();
+
+
+
+We might need to revisit: [[OE-538 Authentication and Permissions]]
