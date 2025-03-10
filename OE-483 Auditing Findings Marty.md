@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T13:29
+updated: 2025-03-10T13:33
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -45,8 +45,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - 1510: getConfigurationGroupsMultiselectAssetsList (GET shouldn't audit anything)
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselectAssetsList
-   - OLD UI: xxxxx
-   - OLD BE: xxxxxx
+   - OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/config_groups/-1452809276394549164/assetlist
+   - OLD BE: GET_CONFIG_GROUP_ASSETS
+	   - GetConfigGroupAssetList
+	   - 
    - Was there Auditing?
    - Is the same Auditing still in tact?
    - Authorisation
