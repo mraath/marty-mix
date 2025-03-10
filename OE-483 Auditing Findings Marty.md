@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T12:42
+updated: 2025-03-10T12:47
 ---
 - 77:  getConfigurationGroupsMultiselect (GET shouldn't audit anything)
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
@@ -67,3 +67,5 @@ updated: 2025-03-10T12:42
    - Authorisation
 	   - OLD one has
 	   - [ ] New one doesnt
+		   - In new ResetAssetMobileUnits, just add... as a first line
+			   - _authorisationProxy.Authorise(authToken, Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP).ConfigureAwait(false).GetAwaiter().GetResult();
