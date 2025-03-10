@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T13:05
+updated: 2025-03-10T13:23
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -27,6 +27,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
    - OLD BE: GET_CONFIG_GROUPS_LIST
 	   - GetConfigGroupListPage
 		   - 216: ConfigurationGroups.GetConfigurationGroupSummaries(authToken
+		   - configuration-groups/groupId/{groupId}
 		   - 
    - Was there Auditing?
    - Is the same Auditing still in tact?
