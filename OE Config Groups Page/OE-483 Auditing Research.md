@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T10:47
-updated: 2025-03-10T11:49
+updated: 2025-03-10T14:54
 ---
 # Auditing
 
@@ -38,8 +38,15 @@ Please let me know if I something should be tested by someone else.
 1605: getConfigurationGroupsMultiselectAssetsListUnallocated
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselectAssetsListUnallocated
 
+2081: uploadMobileUnitsFirmware
+   - Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
+
+2148: uploadConfigGroupsFirmware
+   - Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
+
 2228: resetAssetMobileUnits
    - Client: ConfigInternalClient.MobileUnits.ResetAssetMobileUnits
+
 
 [[OE-483 Auditing Findings Marty]]
 
@@ -64,12 +71,6 @@ Please let me know if I something should be tested by someone else.
    - Client: ConfigInternalClient.InternalConfigurationGroupsRepository.GetConfigurationGroup
 
 ## Justus needs to check these (He might have already)
-
-2081: uploadMobileUnitsFirmware
-   - Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
-
-2148: uploadConfigGroupsFirmware
-   - Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
 
 2688: uploadConfiguration
    - Has this been Implemented. My codebase only seems to return a blank object.

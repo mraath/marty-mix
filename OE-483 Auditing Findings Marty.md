@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T14:05
+updated: 2025-03-10T14:55
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -62,6 +62,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
    - Was there Auditing?
    - Is the same Auditing still in tact?
    - Authorisation
+
+2081: uploadMobileUnitsFirmware
+   - Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
+
+2148: uploadConfigGroupsFirmware
+   - Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
 
 - 2228: resetAssetMobileUnits
 	- Client: ConfigInternalClient.MobileUnits.ResetAssetMobileUnits
