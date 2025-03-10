@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T13:33
+updated: 2025-03-10T14:05
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -48,6 +48,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
    - OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/config_groups/-1452809276394549164/assetlist
    - OLD BE: GET_CONFIG_GROUP_ASSETS
 	   - GetConfigGroupAssetList
+	- Client
+	   - groupId/{groupId}/configuration-group/{configurationGroupId}/mobile-units-summary
 	   - 
    - Was there Auditing?
    - Is the same Auditing still in tact?
