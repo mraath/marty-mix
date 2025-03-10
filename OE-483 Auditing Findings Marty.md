@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T13:23
+updated: 2025-03-10T13:26
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -28,26 +28,20 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	   - GetConfigGroupListPage
 		   - 216: ConfigurationGroups.GetConfigurationGroupSummaries(authToken
 		   - configuration-groups/groupId/{groupId}
-		   - 
-   - Was there Auditing?
-   - Is the same Auditing still in tact?
-   - Authorisation
+		   - [ ] await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_CONFIGURATION_GROUPS, groupId).ConfigureAwait(false);
+   - Was there Auditing? NO
+   - Authorisation? YES
+	   - [ ] Not sure it is in new
 
 - 702:  getConfigurationGroupsOtherColumns (GET shouldn't audit anything)
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsOtherColumns
-   - OLD UI: xxxxx
-   - OLD BE: xxxxxx
-   - Was there Auditing?
-   - Is the same Auditing still in tact?
-   - Authorisation
+   - Was there Auditing? NO - this is a new call
+   - [ ] Authorisation? Use as for GET_CONFIG_GROUPS_LIST
 
 - 723:  getConfigurationGroupsAlerts (GET shouldn't audit anything)
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsAlerts
-   - OLD UI: xxxxx
-   - OLD BE: xxxxxx
-   - Was there Auditing?
-   - Is the same Auditing still in tact?
-   - Authorisation
+   - Was there Auditing? NO - this is a new call
+   - [ ] Authorisation? Use as for GET_CONFIG_GROUPS_LIST
 
 - 1510: getConfigurationGroupsMultiselectAssetsList (GET shouldn't audit anything)
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselectAssetsList
