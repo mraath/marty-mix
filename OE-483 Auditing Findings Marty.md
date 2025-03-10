@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T12:11
+updated: 2025-03-10T12:14
 ---
 77:  getConfigurationGroupsMultiselect (GET shouldn't audit anything)
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
@@ -40,7 +40,7 @@ updated: 2025-03-10T12:11
 
 2228: resetAssetMobileUnits
    - Client: ConfigInternalClient.MobileUnits.ResetAssetMobileUnits
-   - OLD UI: xxxxx
+   - OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/assets/1466026638581260288/reset-device-to-config-group
    - OLD BE: xxxxxx
    - Was there Auditing?
    - Is the same Auditing still in tact?
