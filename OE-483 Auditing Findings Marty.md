@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T15:18
+updated: 2025-03-10T15:23
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -73,16 +73,23 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		   - DeviceConfigClient.MobileUnitCommands.UpdateMobileUnitFirmware
 			   - SendCommandToMobileUnit
 		   - UploadAssetFirmwareOldWay
-- New 
-	- groupId/{groupId}/mobile-units/upload-firmware
-	- UploadMobileUnitsFirmware
-	- mum.UploadMobileUnitsFirmware
-		- disSupportedUnits
-		- SendCommandToMobileUnit
-		- UploadAssetFirmwareOldWay
+	- New 
+		- groupId/{groupId}/mobile-units/upload-firmware
+		- UploadMobileUnitsFirmware
+		- mum.UploadMobileUnitsFirmware
+			- disSupportedUnits
+			- SendCommandToMobileUnit
+			- UploadAssetFirmwareOldWay
 
 - 2148: uploadConfigGroupsFirmware
-	- Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
+	- NEW
+		- Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
+	- OLD
+		- UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/-1983255592473789111/configuration_groups/-1452809276394549164/firmware
+		- BE: UPLOAD_CONFIGURATION_GROUP_FIRMWARE
+			- UploadConfigurationGroupFirmware
+			- configurationGroupManager.UploadConfigurationGroupFirmware
+			- 
 
 - 2228: resetAssetMobileUnits
 	- Client: ConfigInternalClient.MobileUnits.ResetAssetMobileUnits
