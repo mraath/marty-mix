@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T15:16
+updated: 2025-03-10T15:18
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -71,13 +71,14 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	   - configurationGroupManager.UploadAssetFirmware
 		   - DeviceConfigClient.MobileUnitCommands.AreMobileUnitsSupportedForUpdateFirmwareCommand ✅
 		   - DeviceConfigClient.MobileUnitCommands.UpdateMobileUnitFirmware
+			   - SendCommandToMobileUnit
 		   - UploadAssetFirmwareOldWay
 - New 
 	- groupId/{groupId}/mobile-units/upload-firmware
 	- UploadMobileUnitsFirmware
 	- mum.UploadMobileUnitsFirmware
 		- disSupportedUnits
-		- 
+		- SendCommandToMobileUnit
 		- UploadAssetFirmwareOldWay
 
 - 2148: uploadConfigGroupsFirmware
