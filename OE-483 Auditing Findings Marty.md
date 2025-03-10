@@ -1,11 +1,11 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T11:51
+updated: 2025-03-10T12:00
 ---
 77:  getConfigurationGroupsMultiselect
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
    - OLD UI: xxxxx
-   - OLD BE: xxxxxx
+   - OLD BE: https://integration.mixtelematics.com/DynaMiX.API/config-admin/config-groups-page
    - Was there Auditing?
    - Is the same Auditing still in tact?
 
