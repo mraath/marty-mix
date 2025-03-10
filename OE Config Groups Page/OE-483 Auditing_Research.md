@@ -1,3 +1,7 @@
+---
+created: 2025-03-10T10:47
+updated: 2025-03-10T11:42
+---
 # Auditing
 
 Nicole would like to know if we kept all current Auditing in place.
@@ -57,7 +61,7 @@ Please let me know if I something should be tested by someone else.
 3344: getConfigurationGroup
    - Client: ConfigInternalClient.InternalConfigurationGroupsRepository.GetConfigurationGroup
 
-## Justus needs to check these (He migh have already)
+## Justus needs to check these (He might have already)
 
 2081: uploadMobileUnitsFirmware
    - Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
