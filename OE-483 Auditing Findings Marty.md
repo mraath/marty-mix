@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T15:01
+updated: 2025-03-10T15:04
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -63,16 +63,19 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
    - Is the same Auditing still in tact?
    - Authorisation
 
-2081: uploadMobileUnitsFirmware
+- 2081: uploadMobileUnitsFirmware
    - Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
    - OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/-1983255592473789111/config_groups/asset/1469654901081403392/firmware
    - OLD BE: UPLOAD_ASSET_FIRMWARE
 	   - UploadAssetFirmware
 	   - configurationGroupManager.UploadAssetFirmware
-	   - 
+		   - DeviceConfigClient.MobileUnitCommands.AreMobileUnitsSupportedForUpdateFirmwareCommand
+		   - DeviceConfigClient.MobileUnitCommands.UpdateMobileUnitFirmware
+		   - UploadAssetFirmwareOldWay
+- New 
 
-2148: uploadConfigGroupsFirmware
-   - Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
+- 2148: uploadConfigGroupsFirmware
+	- Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
 
 - 2228: resetAssetMobileUnits
 	- Client: ConfigInternalClient.MobileUnits.ResetAssetMobileUnits
