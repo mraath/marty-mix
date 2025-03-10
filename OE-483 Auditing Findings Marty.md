@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T13:26
+updated: 2025-03-10T13:29
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -29,18 +29,18 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		   - 216: ConfigurationGroups.GetConfigurationGroupSummaries(authToken
 		   - configuration-groups/groupId/{groupId}
 		   - [ ] await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_CONFIGURATION_GROUPS, groupId).ConfigureAwait(false);
-   - Was there Auditing? NO
+   - Was there Auditing? <mark class="hltr-green">NO</mark>
    - Authorisation? YES
 	   - [ ] Not sure it is in new
 
 - 702:  getConfigurationGroupsOtherColumns (GET shouldn't audit anything)
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsOtherColumns
-   - Was there Auditing? NO - this is a new call
+   - Was there Auditing? <mark class="hltr-green">NO</mark> - this is a new call
    - [ ] Authorisation? Use as for GET_CONFIG_GROUPS_LIST
 
 - 723:  getConfigurationGroupsAlerts (GET shouldn't audit anything)
    - Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsAlerts
-   - Was there Auditing? NO - this is a new call
+   - Was there Auditing? <mark class="hltr-green">NO</mark> - this is a new call
    - [ ] Authorisation? Use as for GET_CONFIG_GROUPS_LIST
 
 - 1510: getConfigurationGroupsMultiselectAssetsList (GET shouldn't audit anything)
@@ -78,9 +78,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- [ ] authorisationProxy.Authorise(authToken, Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP).ConfigureAwait(false).GetAwaiter().GetResult();
 			- ResetAssetMobileUnit
 				- ResetAssetMobileUnit LOGIC IS THE SAME
-   - Was there Auditing?
+   - Was there Auditing? <mark class="hltr-green">NO</mark>
    - Is the same Auditing still in tact?
-   - Authorisation
+   - Authorisation <mark class="hltr-red">Outstanding</mark>
 	   - OLD one has
 	   - [ ] New one doesnt
 		   - In new ResetAssetMobileUnits, just add... as a first line
