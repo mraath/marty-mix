@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T15:23
+updated: 2025-03-10T15:25
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -89,6 +89,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- BE: UPLOAD_CONFIGURATION_GROUP_FIRMWARE
 			- UploadConfigurationGroupFirmware
 			- configurationGroupManager.UploadConfigurationGroupFirmware
+		- Client
+			- UpdateMobileUnitFirmware
 			- 
 
 - 2228: resetAssetMobileUnits
