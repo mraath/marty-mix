@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-10T15:34
+updated: 2025-03-10T16:57
 ---
 
 # OE-631 Column selector styling
@@ -39,3 +39,4 @@ Padding / margin missing
 
 ![[OE-631 Column selector styling Padding or Margin.png]]
 
+PR: [Pull request 121009: OE-631: Spacing or styling for the column choosers - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/121009)
