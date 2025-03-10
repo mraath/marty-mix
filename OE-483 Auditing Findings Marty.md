@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T15:25
+updated: 2025-03-10T15:29
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -84,6 +84,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - 2148: uploadConfigGroupsFirmware
 	- NEW
 		- Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
+		- groupId/{groupId}/config-groups/upload-firmware
+		- Config API: UploadConfigGroupsFirmware
+			- mum.UploadConfigGroupsFirmware
+			- UploadMobileUnitsFirmware
 	- OLD
 		- UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/-1983255592473789111/configuration_groups/-1452809276394549164/firmware
 		- BE: UPLOAD_CONFIGURATION_GROUP_FIRMWARE
