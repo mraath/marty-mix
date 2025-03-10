@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T14:55
+updated: 2025-03-10T14:58
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -65,6 +65,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 2081: uploadMobileUnitsFirmware
    - Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
+   - OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/-1983255592473789111/config_groups/asset/1469654901081403392/firmware
+   - OLD BE: 
 
 2148: uploadConfigGroupsFirmware
    - Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
