@@ -1,6 +1,6 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T13:02
+updated: 2025-03-10T13:05
 ---
 ```dataviewjs
 function callout(text, type) {
@@ -26,7 +26,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
    - OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/config_groups
    - OLD BE: GET_CONFIG_GROUPS_LIST
 	   - GetConfigGroupListPage
-	   - 
+		   - 216: ConfigurationGroups.GetConfigurationGroupSummaries(authToken
+		   - 
    - Was there Auditing?
    - Is the same Auditing still in tact?
    - Authorisation
