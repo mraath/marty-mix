@@ -3,13 +3,13 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-04T16:34
+updated: 2025-03-11T13:08
 ---
 
 # SR-19107 IMSI has incorrect value
 
 Date: 2024-09-10 Time: 15:47
-Parent:: ==xxxx==
+Parent:: [[Comms Log]]
 Friend:: [[2024-09-10]]
 JIRA:SR-19107 IMSI has incorrect value
 [SR-19107 Discrepancies in IMSI/IMEI Reporting Post 3G to 4G Upgrade Comparing Mix fleet manager to mobile device admin - Jira (atlassian.net)](https://csojiramixtelematics.atlassian.net/browse/SR-19107)
