@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-11T09:40
+updated: 2025-03-11T09:43
 ---
 
 ```dataviewjs
@@ -22,7 +22,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## My findings
 
-- 77:  getConfigurationGroupsMultiselect
+- [ ] 77:  getConfigurationGroupsMultiselect
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
 	- OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/config_groups
 	- OLD BE: GET_CONFIG_GROUPS_LIST
@@ -33,15 +33,15 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
    - Authorisation? YES
 	   - [ ] Not sure it is in new
 
-- 702:  getConfigurationGroupsOtherColumns (GET shouldn't audit anything)
+- [ ] 702:  getConfigurationGroupsOtherColumns (GET shouldn't audit anything)
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsOtherColumns
 	- [ ] Authorisation? Use as for GET_CONFIG_GROUPS_LIST
 
-- 723:  getConfigurationGroupsAlerts (GET shouldn't audit anything)
+- [ ] 723:  getConfigurationGroupsAlerts (GET shouldn't audit anything)
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsAlerts
 	- [ ] Authorisation? Use as for GET_CONFIG_GROUPS_LIST
 
-- 1510: getConfigurationGroupsMultiselectAssetsList (GET shouldn't audit anything)
+- [ ] 1510: getConfigurationGroupsMultiselectAssetsList (GET shouldn't audit anything)
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselectAssetsList
 	- OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/config_groups/-1452809276394549164/assetlist
 	- OLD BE: GET_CONFIG_GROUP_ASSETS
@@ -50,13 +50,13 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- groupId/{groupId}/configuration-group/{configurationGroupId}/mobile-units-summary
 	- [ ] Authorisation
 
-- 1605: getConfigurationGroupsMultiselectAssetsListUnallocated (GET shouldn't audit anything)
+- [ ] 1605: getConfigurationGroupsMultiselectAssetsListUnallocated (GET shouldn't audit anything)
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselectAssetsListUnallocated
 	- OLD UI: xxxxx
 	- OLD BE: xxxxxx
 	- [ ] Authorisation
 
-- 2081: uploadMobileUnitsFirmware
+- [ ] 2081: uploadMobileUnitsFirmware
 	- Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
 	- OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/-1983255592473789111/config_groups/asset/1469654901081403392/firmware
 	- OLD BE: UPLOAD_ASSET_FIRMWARE
@@ -75,7 +75,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- UploadAssetFirmwareOldWay
 	- [ ] Authorisation
 
-- 2148: uploadConfigGroupsFirmware
+- [ ] 2148: uploadConfigGroupsFirmware
 	- NEW
 		- Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
 		- groupId/{groupId}/config-groups/upload-firmware
@@ -91,7 +91,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- UpdateMobileUnitFirmware
 	- [ ] Authorisation
 
-- 2228: resetAssetMobileUnits
+- [ ] 2228: resetAssetMobileUnits
 	- Client: ConfigInternalClient.MobileUnits.ResetAssetMobileUnits
 		- {PostPutApiUrl}/groupId/{groupId}/mobile-units/reset/{resetType}?authToken={authToken}
 	- Config.Api
@@ -110,9 +110,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- [ ] authorisationProxy.Authorise(authToken, Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP).ConfigureAwait(false).GetAwaiter().GetResult();
 			- ResetAssetMobileUnit
 				- ResetAssetMobileUnit LOGIC IS THE SAME
-   - Authorisation <mark class="hltr-red">Outstanding</mark>
-	   - OLD one has
-	   - [ ] New one doesnt
-		   - In new ResetAssetMobileUnits, just add... as a first line
+	   - Authorisation <mark class="hltr-red">Outstanding</mark>
+		   - OLD one has
+		   - [ ] New one doesnt
+			   - In new ResetAssetMobileUnits, just add... as a first line
 			   - _authorisationProxy.Authorise(authToken, Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP).ConfigureAwait(false).GetAwaiter().GetResult();
 
