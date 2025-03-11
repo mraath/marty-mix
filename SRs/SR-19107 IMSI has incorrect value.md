@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-11T13:08
+updated: 2025-03-11T13:15
 ---
 
 # SR-19107 IMSI has incorrect value
@@ -202,4 +202,8 @@ AU....
 Brazil > sim > eie imsi verander
 
 - [ ] KYK UDP , elke 24 uur ook
+
+## Paul
+
+Hom gevra waar om UDP te kry en ook of hy aan nog iets kan dink
 
