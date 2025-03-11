@@ -1,25 +1,7 @@
 ---
-created: 2025-03-10T11:49
-updated: 2025-03-11T09:21
+created: 2025-03-11T09:20
+updated: 2025-03-11T09:20
 ---
-
-```dataviewjs
-function callout(text, type) {
-    const allText = `> [!${type}]\n` + text;
-    const lines = allText.split('\n');
-    return lines.join('\n> ') + '\n'
-}
-
-const query = `
-not done
-path includes ${dv.current().file.path}
-# you can add any number of extra Tasks instructions, for example:
-# group by heading
-`;
-
-dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
-```
-
 ## My findings
 
 - 77:  getConfigurationGroupsMultiselect (GET shouldn't audit anything)
@@ -124,7 +106,3 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	   - [ ] New one doesnt
 		   - In new ResetAssetMobileUnits, just add... as a first line
 			   - _authorisationProxy.Authorise(authToken, Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP).ConfigureAwait(false).GetAwaiter().GetResult();
-
-
-We might need to revisit: [[OE-538 Authentication and Permissions]]
-[[OE-483 OE-538 Authentication and  Permissions]]
