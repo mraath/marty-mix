@@ -1,7 +1,8 @@
 ---
 created: 2025-03-10T11:49
-updated: 2025-03-10T15:35
+updated: 2025-03-11T09:00
 ---
+
 ```dataviewjs
 function callout(text, type) {
     const allText = `> [!${type}]\n` + text;
