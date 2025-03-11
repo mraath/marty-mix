@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-11T08:59
+updated: 2025-03-11T17:28
 ---
 
 # OE-632 Kebab menu not visible
@@ -38,4 +38,5 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ![[OE-632 Kebab menu not visible Kebab menu missing.png]]
 
 - Checking up with Shawn
-- 
+- Shawn
+It's not a bug. The Kendo grids in the version we used didn't have the ability to lock a column to the right.. only to the left. In a later version they introduced sticky columns which achieves that functionality but it has limitations with other grid functions.
