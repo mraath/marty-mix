@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-11T09:45
+updated: 2025-03-11T14:27
 ---
 
 ```dataviewjs
@@ -93,7 +93,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- UpdateMobileUnitFirmware
 	- [ ] Authorisation
 
-- [ ] 2228: resetAssetMobileUnits
+- [x] 2228: resetAssetMobileUnits ✅ 2025-03-11
 	- Client: ConfigInternalClient.MobileUnits.ResetAssetMobileUnits
 		- {PostPutApiUrl}/groupId/{groupId}/mobile-units/reset/{resetType}?authToken={authToken}
 	- Config.Api
@@ -101,7 +101,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- mum.ResetAssetMobileUnits
 			- multiple: ResetAssetMobileUnit
 				- ResetAssetMobileUnit LOGIC IS THE SAME
-	- OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/assets/1466026638581260288/reset-device-to-config-group
+	- **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/assets/1466026638581260288/reset-device-to-config-group
 	- OLD BE: RESET_DEVICE_TO_CONFIG_GROUP > ResetDeviceToConfigGroup
 		- DeviceConfigClient.MobileUnits.ResetAssetMobileUnit
 	- OLD Client
@@ -109,12 +109,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- OLD API:
 		- ResetAssetMobileUnit
 		- man.ResetAssetMobileUnitConfigGroup
-			- [ ] authorisationProxy.Authorise(authToken, Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP).ConfigureAwait(false).GetAwaiter().GetResult();
+			- [x] authorisationProxy.Authorise(authToken, Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP).ConfigureAwait(false).GetAwaiter().GetResult(); ✅ 2025-03-11
 			- ResetAssetMobileUnit
 				- ResetAssetMobileUnit LOGIC IS THE SAME
 	   - Authorisation <mark class="hltr-red">Outstanding</mark>
 		   - OLD one has
-		   - [ ] New one doesnt
+		   - [x] New one doesnt ✅ 2025-03-11
 			   - In new ResetAssetMobileUnits, just add... as a first line
 			   - _authorisationProxy.Authorise(authToken, Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP).ConfigureAwait(false).GetAwaiter().GetResult();
 
