@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-11T14:27
+updated: 2025-03-11T14:37
 ---
 
 ```dataviewjs
@@ -26,7 +26,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - [ ] 77:  getConfigurationGroupsMultiselect
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
-	- OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/config_groups
+	- **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/config_groups
 	- OLD BE: GET_CONFIG_GROUPS_LIST
 	- GetConfigGroupListPage
 		- 216: ConfigurationGroups.GetConfigurationGroupSummaries(authToken
