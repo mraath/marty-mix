@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-12T14:22
+updated: 2025-03-12T14:27
 ---
 
 # SR-19107 IMSI has incorrect value
@@ -204,7 +204,9 @@ Brazil > sim > eie imsi verander
 - [ ] KYK [[UDP]] , elke 24 uur ook
 
 hi. ek dink dis op die status message. 
-message id 7, die status message, het parameter id 0x0205, die imsi
+message id 7, 
+die status message, het 
+parameter id 0x0205, die imsi
 
 ## Paul
 
