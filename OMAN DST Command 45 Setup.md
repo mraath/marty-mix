@@ -1,6 +1,6 @@
 ---
 created: 2025-03-12T08:09
-updated: 2025-03-12T08:30
+updated: 2025-03-12T08:36
 ---
 ## IIS
 
@@ -17,4 +17,6 @@ updated: 2025-03-12T08:30
 - After this the Api loaded successfully, green 404 monster
 ## Utils
 
-- 
+- On the jumpbox, run the OLD 18.17 compatible **FMTimeAdapter** app
+![[OMAN DST Command 45 Setup FMTimeAdapter App.png]]
+- Check for any errors in the log file... happy searching 😛
