@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T11:02
+updated: 2025-03-12T11:05
 ---
 
 ```dataviewjs
@@ -99,7 +99,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 				- UploadAssetFirmwareOldWay
 		- [x] Authorisation <mark class="hltr-green">Nope</mark> ✅ 2025-03-12
 	
-	- [ ] 2148: uploadConfigGroupsFirmware
+	- [x] 2148: uploadConfigGroupsFirmware ✅ 2025-03-12
 		- NEW
 			- Client:ConfigInternalClient.MobileUnits.UploadConfigGroupsFirmware
 			- groupId/{groupId}/config-groups/upload-firmware
@@ -115,8 +115,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 				- DeviceConfigClient.MobileUnitCommands.UpdateMobileUnitFirmware
 			- Client
 				- UpdateMobileUnitFirmware
-				- 
-		- [ ] Authorisation
+				- SendCommandToMobileUnit
+		- [x] Authorisation <mark class="hltr-green">Nope</mark> ✅ 2025-03-12
 	
 	- [x] 2228: resetAssetMobileUnits ✅ 2025-03-11
 		- Client: ConfigInternalClient.MobileUnits.ResetAssetMobileUnits
