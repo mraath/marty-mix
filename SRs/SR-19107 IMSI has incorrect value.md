@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-12T12:33
+updated: 2025-03-12T12:35
 ---
 
 # SR-19107 IMSI has incorrect value
@@ -217,4 +217,4 @@ Siende dat wat jy nou na kyk beide op die M4K en FM gebeur reken ek die UDP en D
 	- https://au.mixtelematics.com/#/fleet-admin/asset/details?id=2030626110269687202&orgId=-1930432671895131883
 	- Id: 2030626110269687202
 	- MiX4K
-- 
+- 863427061358397
