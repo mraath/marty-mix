@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:44
+updated: 2025-03-12T10:46
 ---
 
 ```dataviewjs
@@ -77,7 +77,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		
 	- [ ] 2081: uploadMobileUnitsFirmware
 		- Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
-		- OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/-1983255592473789111/config_groups/asset/1469654901081403392/firmware
+		- **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/-1983255592473789111/config_groups/asset/1469654901081403392/firmware
 		- OLD BE: UPLOAD_ASSET_FIRMWARE
 			- UploadAssetFirmware
 			- configurationGroupManager.UploadAssetFirmware
@@ -101,7 +101,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- Config API: UploadConfigGroupsFirmware
 				- mum.UploadConfigGroupsFirmware
 				- UploadMobileUnitsFirmware
-		- OLD
+		- **OLD**
 			- UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/-1983255592473789111/configuration_groups/-1452809276394549164/firmware
 			- BE: UPLOAD_CONFIGURATION_GROUP_FIRMWARE
 				- UploadConfigurationGroupFirmware
