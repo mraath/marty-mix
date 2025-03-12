@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-12T11:29
+updated: 2025-03-12T12:31
 ---
 
 # SR-19107 IMSI has incorrect value
@@ -210,3 +210,10 @@ Hom gevra waar om UDP te kry en ook of hy aan nog iets kan dink
 "Goeie môre, geen klagtes die kant nie, punt ini wind. Klink my hulle soek die rou data wat die units gee, (UDP en DAT) met dit sal jy by William moet hoor eerstens hoe mens te werk gaan om dit te doen met sy fancy nuwe tool - ek vermoed dit kan automagically die UDP en DAT in trek, in dien nie sal hy vir jou kan sê waar daardie files lê. 
 Siende dat wat jy nou na kyk beide op die M4K en FM gebeur reken ek die UDP en DAT files gaan reg wees en hierdie is 'n processing issue. Maar ek kan verkeerd wees - daar kan erens 'n lookup wees wat nie reg werk heel aan die begin en dan word units verkeerd gecomission. Ettienne se voorstel van UDP/DAT inspeksie sal kan bevestig wat dit is. So hoor maar daar by uncle Bill. (William)."
 
+## Testing
+
+- Got IMEI > Searched on AU
+- [MiX Telematics - Assets](https://au.mixtelematics.com/#/fleet-admin/asset/details?id=2030626110269687202&orgId=-1930432671895131883)
+	- https://au.mixtelematics.com/#/fleet-admin/asset/details?id=2030626110269687202&orgId=-1930432671895131883
+	- Id: 2030626110269687202
+- 
