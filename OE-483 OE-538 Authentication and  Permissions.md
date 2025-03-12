@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:14
+updated: 2025-03-12T10:19
 ---
 
 ```dataviewjs
@@ -23,6 +23,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## My findings
 
 
+- ConfigGroups: CAN_ACCESS_CONFIGURATION_GROUPS
 
 - [x] 77:  getConfigurationGroupsMultiselect ✅ 2025-03-12
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
@@ -39,17 +40,19 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
    - Authorisation? YES
 	   - [x] Not sure it is in new ✅ 2025-03-12
 
-- [ ] 702:  getConfigurationGroupsOtherColumns (GET shouldn't audit anything)
+- [x] 702:  getConfigurationGroupsOtherColumns (GET shouldn't audit anything) ✅ 2025-03-12
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsOtherColumns
-	- [ ] Authorisation? Use as for GET_CONFIG_GROUPS_LIST
+	- [x] Authorisation? Use as for GET_CONFIG_GROUPS_LIST ✅ 2025-03-12
 
-- [ ] 723:  getConfigurationGroupsAlerts (GET shouldn't audit anything)
+- [x] 723:  getConfigurationGroupsAlerts (GET shouldn't audit anything) ✅ 2025-03-12
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsAlerts
-	- [ ] Authorisation? Use as for GET_CONFIG_GROUPS_LIST
+	- GetConfigurationGroupsMultiselectAssetAlertsList
+	- CAN_ACCESS_CONFIGURATION_GROUPS
+	- [x] Authorisation? Use as for GET_CONFIG_GROUPS_LIST ✅ 2025-03-12
 
 - [ ] 1510: getConfigurationGroupsMultiselectAssetsList (GET shouldn't audit anything)
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselectAssetsList
-	- OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/config_groups/-1452809276394549164/assetlist
+	- **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/config_groups/-1452809276394549164/assetlist
 	- OLD BE: GET_CONFIG_GROUP_ASSETS
 		- GetConfigGroupAssetList
 	- Client
