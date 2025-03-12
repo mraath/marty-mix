@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-11T14:39
+updated: 2025-03-12T09:54
 ---
 
 ```dataviewjs
@@ -29,7 +29,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/config_groups
 	- OLD BE: GET_CONFIG_GROUPS_LIST
 	- GetConfigGroupListPage
-		- 216: ConfigurationGroups.GetConfigurationGroupSummaries(authToken
+		- DeviceConfigClient.ConfigurationGroups.GetConfigurationGroupSummaries
 		- configuration-groups/groupId/{groupId}
 		- [ ] await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_CONFIGURATION_GROUPS, groupId).ConfigureAwait(false);
    - Authorisation? YES
