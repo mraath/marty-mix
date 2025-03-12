@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-12T12:35
+updated: 2025-03-12T12:45
 ---
 
 # SR-19107 IMSI has incorrect value
@@ -218,3 +218,6 @@ Siende dat wat jy nou na kyk beide op die M4K en FM gebeur reken ek die UDP en D
 	- Id: 2030626110269687202
 	- MiX4K
 - 863427061358397
+- SEARCH IMSI: xxxxxxxxxxxxxxx
+	- WRONG Asset List: IMSI: 505013498049230
+	- CORRECT Diagnostics: IMSI: 
