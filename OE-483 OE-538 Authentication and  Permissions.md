@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:53
+updated: 2025-03-12T10:56
 ---
 
 ```dataviewjs
@@ -85,7 +85,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 				- DeviceConfigClient.MobileUnitCommands.UpdateMobileUnitFirmware
 				- SendCommandToMobileUnit
 				- groupIds/{groupId}/mobile-units/{mobileUnitId}/command/{commandId}
+					- Config.Api
 			- UploadAssetFirmwareOldWay
+		- Config.Api
+			- mucm.SendCommandToMobileUnit
+			- 
 		- New 
 			- groupId/{groupId}/mobile-units/upload-firmware
 			- UploadMobileUnitsFirmware
