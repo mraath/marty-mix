@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:23
+updated: 2025-03-12T10:25
 ---
 
 ```dataviewjs
@@ -52,12 +52,14 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - [ ] 1510: getConfigurationGroupsMultiselectAssetsList (GET shouldn't audit anything)
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselectAssetsList
+		- 
 	- **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/config_groups/-1452809276394549164/assetlist
 	- OLD BE: GET_CONFIG_GROUP_ASSETS
 		- GetConfigGroupAssetList
 		- DeviceConfigClient.MobileUnits.GetMobileUnitSummariesForConfigurationGroupMobileUnitSummary
 	- Client
 		- groupId/{groupId}/configuration-group/{configurationGroupId}/mobile-units-summary
+		- _deviceConfigRepo.GetMobileUnitSummariesForConfigurationGroup
 		- 
 	- [ ] Authorisation
 
