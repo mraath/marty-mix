@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:42
+updated: 2025-03-12T10:44
 ---
 
 ```dataviewjs
@@ -65,7 +65,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- _deviceConfigRepo.GetMobileUnitSummariesForConfigurationGroup
 		- [x] Authorisation: <mark class="hltr-green">NONE</mark> ✅ 2025-03-12
 	
-	- [ ] Also the Alerts , OtherColumns, etc
+	- [x] Also the Lines, Alerts ✅ 2025-03-12
+		- CAN_ACCESS_CONFIGURATION_GROUPS
 	
 	- [x] 1605: getConfigurationGroupsMultiselectAssetsListUnallocated (GET shouldn't audit anything) ✅ 2025-03-12
 		- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselectAssetsListUnallocated
@@ -73,8 +74,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- **OLD** UI: xxxxx
 		- OLD BE: xxxxxx
 		- [x] Authorisation <mark class="hltr-green">Doesmt seem like it</mark> ✅ 2025-03-12
-	
-	
+		
 	- [ ] 2081: uploadMobileUnitsFirmware
 		- Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
 		- OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/-1983255592473789111/config_groups/asset/1469654901081403392/firmware
