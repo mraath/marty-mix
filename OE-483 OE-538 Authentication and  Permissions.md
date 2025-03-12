@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T11:00
+updated: 2025-03-12T11:02
 ---
 
 ```dataviewjs
@@ -111,8 +111,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- BE: UPLOAD_CONFIGURATION_GROUP_FIRMWARE
 				- UploadConfigurationGroupFirmware
 				- configurationGroupManager.UploadConfigurationGroupFirmware
+				- [Authorise]
+				- DeviceConfigClient.MobileUnitCommands.UpdateMobileUnitFirmware
 			- Client
 				- UpdateMobileUnitFirmware
+				- 
 		- [ ] Authorisation
 	
 	- [x] 2228: resetAssetMobileUnits ✅ 2025-03-11
