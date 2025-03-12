@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:46
+updated: 2025-03-12T10:53
 ---
 
 ```dataviewjs
@@ -84,6 +84,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 				- DeviceConfigClient.MobileUnitCommands.AreMobileUnitsSupportedForUpdateFirmwareCommand ✅
 				- DeviceConfigClient.MobileUnitCommands.UpdateMobileUnitFirmware
 				- SendCommandToMobileUnit
+				- groupIds/{groupId}/mobile-units/{mobileUnitId}/command/{commandId}
 			- UploadAssetFirmwareOldWay
 		- New 
 			- groupId/{groupId}/mobile-units/upload-firmware
