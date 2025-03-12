@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:34
+updated: 2025-03-12T10:42
 ---
 
 ```dataviewjs
@@ -67,12 +67,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	
 	- [ ] Also the Alerts , OtherColumns, etc
 	
-	- [ ] 1605: getConfigurationGroupsMultiselectAssetsListUnallocated (GET shouldn't audit anything)
+	- [x] 1605: getConfigurationGroupsMultiselectAssetsListUnallocated (GET shouldn't audit anything) ✅ 2025-03-12
 		- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselectAssetsListUnallocated
 			- CAN_ACCESS_CONFIGURATION_GROUPS
 		- **OLD** UI: xxxxx
 		- OLD BE: xxxxxx
-		- [ ] Authorisation
+		- [x] Authorisation <mark class="hltr-green">Doesmt seem like it</mark> ✅ 2025-03-12
 	
 	
 	- [ ] 2081: uploadMobileUnitsFirmware
