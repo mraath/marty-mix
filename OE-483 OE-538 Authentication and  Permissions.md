@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:11
+updated: 2025-03-12T10:14
 ---
 
 ```dataviewjs
@@ -24,20 +24,20 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 
 
-- [ ] 77:  getConfigurationGroupsMultiselect
+- [x] 77:  getConfigurationGroupsMultiselect ✅ 2025-03-12
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
 		- configuration-groups-multiselect/groupId/{groupId}
 	- Config.Api
 		- GetConfigurationGroupsMultiselect
-		- 
+		- [x] Already has the same auth ✅ 2025-03-12
 	- **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/config_groups
 	- OLD BE: GET_CONFIG_GROUPS_LIST
 	- GetConfigGroupListPage
 		- DeviceConfigClient.ConfigurationGroups.GetConfigurationGroupSummaries
 		- configuration-groups/groupId/{groupId}
-		- [ ] await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_CONFIGURATION_GROUPS, groupId).ConfigureAwait(false);
+		- [x] await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_CONFIGURATION_GROUPS, groupId).ConfigureAwait(false); ✅ 2025-03-12
    - Authorisation? YES
-	   - [ ] Not sure it is in new
+	   - [x] Not sure it is in new ✅ 2025-03-12
 
 - [ ] 702:  getConfigurationGroupsOtherColumns (GET shouldn't audit anything)
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsOtherColumns
