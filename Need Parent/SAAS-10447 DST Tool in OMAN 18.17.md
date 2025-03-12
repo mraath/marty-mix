@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2024-11-19T12:58
+updated: 2025-03-12T08:09
 ---
 
 # SAAS-10447 DST Tool in OMAN 18.17
@@ -118,3 +118,7 @@ If I then copy the tool to this server and try to run it, I get this error:
 - Not yet tested
 - Had .Net framework issues
 - [ ] [Pull requests - Repos (azure.com)](https://dev.azure.com/MiXTelematics/Common/_git/DynaMiX.Backend/pullrequestcreate?sourceRef=Config/MR/Feature/SAAS-10447_DST_Tool_OMAN.18.17&targetRef=Release/18.17&sourceRepositoryId=0c9dafba-9e19-4319-886b-c0129c70b7d0&targetRepositoryId=0c9dafba-9e19-4319-886b-c0129c70b7d0)
+
+## Things we did to make it work
+
+[[OMAN DST Command 45 Setup]]
