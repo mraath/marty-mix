@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:19
+updated: 2025-03-12T10:23
 ---
 
 ```dataviewjs
@@ -55,8 +55,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/config_groups/-1452809276394549164/assetlist
 	- OLD BE: GET_CONFIG_GROUP_ASSETS
 		- GetConfigGroupAssetList
+		- DeviceConfigClient.MobileUnits.GetMobileUnitSummariesForConfigurationGroupMobileUnitSummary
 	- Client
 		- groupId/{groupId}/configuration-group/{configurationGroupId}/mobile-units-summary
+		- 
 	- [ ] Authorisation
 
 - [ ] Also the Alerts , OtherColumns, etc
