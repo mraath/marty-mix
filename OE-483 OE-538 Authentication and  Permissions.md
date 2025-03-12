@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:56
+updated: 2025-03-12T10:59
 ---
 
 ```dataviewjs
@@ -89,7 +89,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- UploadAssetFirmwareOldWay
 		- Config.Api
 			- mucm.SendCommandToMobileUnit
-			- 
+			- NOPE
 		- New 
 			- groupId/{groupId}/mobile-units/upload-firmware
 			- UploadMobileUnitsFirmware
@@ -97,7 +97,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 				- disSupportedUnits
 				- SendCommandToMobileUnit
 				- UploadAssetFirmwareOldWay
-		- [ ] Authorisation
+		- [ ] Authorisation <mark class="hltr-green">Nope</mark>
 	
 	- [ ] 2148: uploadConfigGroupsFirmware
 		- NEW
