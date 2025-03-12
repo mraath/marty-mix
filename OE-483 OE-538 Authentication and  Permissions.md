@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:08
+updated: 2025-03-12T10:10
 ---
 
 ```dataviewjs
@@ -26,6 +26,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - [ ] 77:  getConfigurationGroupsMultiselect
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
+		- configuration-groups-multiselect/groupId/{groupId}
+	- Config.Api
 		- 
 	- **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/config_groups
 	- OLD BE: GET_CONFIG_GROUPS_LIST
