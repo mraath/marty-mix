@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T11:05
+updated: 2025-03-12T11:08
 ---
 
 ```dataviewjs
@@ -143,3 +143,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 				   - In new ResetAssetMobileUnits, just add... as a first line
 				   - _authorisationProxy.Authorise(authToken, Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP).ConfigureAwait(false).GetAwaiter().GetResult();
 	
+PR: [Pull request 121174: OE-483: Added authentication for resetAssetMobileUnits. - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/121174)
