@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:05
+updated: 2025-03-12T10:08
 ---
 
 ```dataviewjs
@@ -53,11 +53,14 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- groupId/{groupId}/configuration-group/{configurationGroupId}/mobile-units-summary
 	- [ ] Authorisation
 
+- [ ] Also the Alerts , OtherColumns, etc
+
 - [ ] 1605: getConfigurationGroupsMultiselectAssetsListUnallocated (GET shouldn't audit anything)
 	- Client: InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselectAssetsListUnallocated
 	- OLD UI: xxxxx
 	- OLD BE: xxxxxx
 	- [ ] Authorisation
+
 
 - [ ] 2081: uploadMobileUnitsFirmware
 	- Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
