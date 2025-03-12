@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:25
+updated: 2025-03-12T10:28
 ---
 
 ```dataviewjs
@@ -60,8 +60,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- Client
 		- groupId/{groupId}/configuration-group/{configurationGroupId}/mobile-units-summary
 		- _deviceConfigRepo.GetMobileUnitSummariesForConfigurationGroup
-		- 
-	- [ ] Authorisation
+	- [x] Authorisation: <mark class="hltr-green">NONE</mark> ✅ 2025-03-12
 
 - [ ] Also the Alerts , OtherColumns, etc
 
