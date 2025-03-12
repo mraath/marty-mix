@@ -1,6 +1,6 @@
 ---
 created: 2025-03-11T09:20
-updated: 2025-03-12T10:59
+updated: 2025-03-12T11:00
 ---
 
 ```dataviewjs
@@ -75,7 +75,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- OLD BE: xxxxxx
 		- [x] Authorisation <mark class="hltr-green">Doesmt seem like it</mark> ✅ 2025-03-12
 		
-	- [ ] 2081: uploadMobileUnitsFirmware
+	- [x] 2081: uploadMobileUnitsFirmware ✅ 2025-03-12
 		- Client: ConfigInternalClient.MobileUnits.UploadMobileUnitsFirmware
 		- **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/-1983255592473789111/config_groups/asset/1469654901081403392/firmware
 		- OLD BE: UPLOAD_ASSET_FIRMWARE
@@ -97,7 +97,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 				- disSupportedUnits
 				- SendCommandToMobileUnit
 				- UploadAssetFirmwareOldWay
-		- [ ] Authorisation <mark class="hltr-green">Nope</mark>
+		- [x] Authorisation <mark class="hltr-green">Nope</mark> ✅ 2025-03-12
 	
 	- [ ] 2148: uploadConfigGroupsFirmware
 		- NEW
