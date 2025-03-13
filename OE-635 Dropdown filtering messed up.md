@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-13T11:54
+updated: 2025-03-13T11:56
 ---
 
 # OE-635 Dropdown filtering messed up
@@ -37,4 +37,5 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 
 - Filter by mobile device
+	- ![[OE-635 Dropdown filtering messed up.png]]
 	- 
