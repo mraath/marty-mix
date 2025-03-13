@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-13T16:30
+updated: 2025-03-13T16:36
 ---
 
 # OE-636 Column Selector not Alphabetical
@@ -49,3 +49,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 It as because of the Upper Case in the word.
 I have forced the sorting to ignore case.
 
+[Pull request 121281: OE-636: Column Chooser sorting fixed - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/121281)
