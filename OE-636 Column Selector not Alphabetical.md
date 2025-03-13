@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-13T15:45
+updated: 2025-03-13T15:58
 ---
 
 # OE-636 Column Selector not Alphabetical
@@ -41,4 +41,5 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Findings
 
-
+- onToggleGridConfigGroupColumns
+- onToggleGridConfigAssetsColumns
