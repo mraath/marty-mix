@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-13T11:56
+updated: 2025-03-13T13:44
 ---
 
 # OE-635 Dropdown filtering messed up
@@ -38,4 +38,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - Filter by mobile device
 	- ![[OE-635 Dropdown filtering messed up.png]]
-	- 
+- PR: [Pull request 121262: OE-635: Fixed text based filtering for 3 dropdown lists - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/121262)
