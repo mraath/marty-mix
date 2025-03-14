@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T11:05
+updated: 2025-03-14T11:13
 ---
 
 # OE-638 Reset Black Flag
@@ -16,6 +16,7 @@ JIRA:OE-638 Reset Black Flag
 
 
 ## TODO
+
 ```dataviewjs
 function callout(text, type) {
     const allText = `> [!${type}]\n` + text;
@@ -55,10 +56,25 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 						- resetEvents / resetDevices / reset
 		- DeviceConfigClient.MobileUnits.GetConfigChangedFlagForMobileUnits
 			- row.areConfigurationEventsDifferentToConfigGroup
-				- assetConfigFlags[mobileUnit.MobileUnitId].EventChanged
+				- [ ] assetConfigFlags[mobileUnit.MobileUnitId].EventChanged
 			- row.isConfigurationDeviceDifferentToConfigGroup
-				- assetConfigFlags[mobileUnit.MobileUnitId].DeviceChanged
-		- 
+				- [ ] assetConfigFlags[mobileUnit.MobileUnitId].DeviceChanged
+	- Old Client: 
+		- GetConfigChangedFlagForMobileUnits
+			- groupId/{groupId}/mobile-units-changed-flag
+	- Config.API"
+		- GetConfigChangedFlagForMobileUnits
+			- groupId/{groupId}/mobile-units-changed-flag
+		- man.GetConfigChangedFlagForMobileUnits
+		- [ ] Just call the above and send it down to FE for different Choices
+			- For now just do it for everything? NO CHOICE
+		- Permissions.CAN_ACCESS_CONFIGURATION_GROUPS
+		- _deviceConfigRepo.GetConfigChangedFlagForMobileUnits
+			- GetMobileUnitsWithOverwrittenEventsIds
+				- SQL: [mobileunit].[MobileUNit_GetMobileUnitsWithOverwrittenEventsIds]
+			- GetMobileUnitsWithOverwrittenDevicesIds
+				- SQL: [mobileunit].[MobileUnit_GetMobileUnitsWithOverwrittenDevicesIds]
+			- 
 - OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/assets/1450923827225116672/reset-events-to-config-group
 	- UI: **resetEvents**
 	- eventtype: 0
