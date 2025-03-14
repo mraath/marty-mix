@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T09:19
+updated: 2025-03-14T09:22
 ---
 
 # OE-638 Reset Black Flag
@@ -51,4 +51,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- Based on type.... 0 = events.... 
 - NEW UI: https://mixconfigfrangularapi.mixdevelopment.com/api/groupId/-7094567047859310012/mobile-units/reset/1
 	- SEEMS like the wrong type is being sent
-	- 
+	- FR API: ResetAssetMobileUnits
+		- _configurationGroupManager.ResetAssetMobileUnits
+		- 
