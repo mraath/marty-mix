@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T12:19
+updated: 2025-03-14T12:29
 ---
 
 # OE-638 Reset Black Flag
@@ -114,6 +114,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- mum.ResetAssetMobileUnits
 		- Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP
 		- for loop: ResetAssetMobileUnit
+
+
+## Current Steps
 
 PR: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/121337
 
