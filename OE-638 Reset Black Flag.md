@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T10:42
+updated: 2025-03-14T10:50
 ---
 
 # OE-638 Reset Black Flag
@@ -41,10 +41,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- this.resetConfigGroupClicked
 			- code
 				- whatToReset = 0
-				- events not device > 0
-				- device not events > 1
+				- If ONE changes
+					- events not device > 0
+					- device not events > 1
 					- resetOneConfigModalForm
-				- ELSE
+				- ELSE both
 					- resetBothConfigModalForm
 				- 
 		- 
