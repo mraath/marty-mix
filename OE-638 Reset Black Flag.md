@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T09:14
+updated: 2025-03-14T09:17
 ---
 
 # OE-638 Reset Black Flag
@@ -43,4 +43,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- OLD Client: 
 		- ResetAssetMobileUnit
 		- groupId/{groupId}/mobile-units/{mobileUnitId}/reset/{resetType}
+	- Config.Api:
+		- ResetAssetMobileUnit
+		- groupId/{groupId}/mobile-units/{mobileUnitId}/reset/{resetType}
+		- man.ResetAssetMobileUnitConfigGroup
+			- Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP
+			- 
 - NEW UI: https://mixconfigfrangularapi.mixdevelopment.com/api/groupId/-7094567047859310012/mobile-units/reset/1
