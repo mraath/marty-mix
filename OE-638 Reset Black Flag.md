@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T09:51
+updated: 2025-03-14T10:01
 ---
 
 # OE-638 Reset Black Flag
@@ -36,6 +36,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## Shorter Description
 
 - **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/assets/1450923827225116672/reset-events-to-config-group
+	- UI: resetEvents
 	- eventtype: 0
 	- RESET_EVENTS_TO_CONFIG_GROUP
 	- ResetEventsToConfigGroup
@@ -51,6 +52,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP
 			- Based on type.... 0 = events.... 
 	- https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/assets/963923937065295872/reset-device-to-config-group
+	- UI: resetEvents
 	- eventtype: 1
 		- RESET_DEVICE_TO_CONFIG_GROUP
 		- ResetDeviceToConfigGroup
