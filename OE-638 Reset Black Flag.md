@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T09:17
+updated: 2025-03-14T09:19
 ---
 
 # OE-638 Reset Black Flag
@@ -48,5 +48,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- groupId/{groupId}/mobile-units/{mobileUnitId}/reset/{resetType}
 		- man.ResetAssetMobileUnitConfigGroup
 			- Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP
-			- 
+			- Based on type.... 0 = events.... 
 - NEW UI: https://mixconfigfrangularapi.mixdevelopment.com/api/groupId/-7094567047859310012/mobile-units/reset/1
+	- SEEMS like the wrong type is being sent
+	- 
