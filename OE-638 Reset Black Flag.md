@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T10:08
+updated: 2025-03-14T10:28
 ---
 
 # OE-638 Reset Black Flag
@@ -37,6 +37,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - **OLD** UI
 	- whatToReset
+		- "Reset to group config"
+		- resetConfigGroupClicked
 		- 
 - OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/assets/1450923827225116672/reset-events-to-config-group
 	- UI: **resetEvents**
