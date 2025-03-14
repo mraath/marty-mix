@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T11:13
+updated: 2025-03-14T11:26
 ---
 
 # OE-638 Reset Black Flag
@@ -36,6 +36,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+- Permissions.**CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP**
 - **OLD** UI
 	- whatToReset
 		- "Reset to group config"
