@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T09:48
+updated: 2025-03-14T09:51
 ---
 
 # OE-638 Reset Black Flag
@@ -39,7 +39,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- eventtype: 0
 	- RESET_EVENTS_TO_CONFIG_GROUP
 	- ResetEventsToConfigGroup
-	- ResetAssetMobileUnit (event > 0)
+	- <mark class="hltr-yellow">ResetAssetMobileUnit (event > 0)</mark>
 	- DeviceConfigClient.MobileUnits.ResetAssetMobileUnit
 	- OLD Client: 
 		- ResetAssetMobileUnit
@@ -53,6 +53,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/assets/963923937065295872/reset-device-to-config-group
 	- eventtype: 1
 		- RESET_DEVICE_TO_CONFIG_GROUP
+		- ResetDeviceToConfigGroup
+		- <mark class="hltr-yellow">ResetAssetMobileUnit (type = 1)</mark>
 		- 
 	- ? MESA: WhatToReset : 1
 	- 
