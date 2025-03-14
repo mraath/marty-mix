@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T10:50
+updated: 2025-03-14T10:55
 ---
 
 # OE-638 Reset Black Flag
@@ -47,7 +47,14 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 					- resetOneConfigModalForm
 				- ELSE both
 					- resetBothConfigModalForm
-				- 
+					- Chose 0, 1, 2 (both)
+				- resetConfigurationModalButtons
+					- cancel OR
+					- modalButtonResetClicked
+						- this.resetAsset(this._currentRow);
+						- resetEvents / resetDevices / reset
+		- row.areConfigurationEventsDifferentToConfigGroup
+		- row.isConfigurationDeviceDifferentToConfigGroup
 		- 
 - OLD UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/assets/1450923827225116672/reset-events-to-config-group
 	- UI: **resetEvents**
