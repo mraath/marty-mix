@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T09:32
+updated: 2025-03-14T09:48
 ---
 
 # OE-638 Reset Black Flag
@@ -37,10 +37,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - **OLD** UI: https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/assets/1450923827225116672/reset-events-to-config-group
 	- eventtype: 0
-	- https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/assets/963923937065295872/reset-device-to-config-group
-	- eventtype: 1
-	- ? MESA: WhatToReset : 1
-	- 
 	- RESET_EVENTS_TO_CONFIG_GROUP
 	- ResetEventsToConfigGroup
 	- ResetAssetMobileUnit (event > 0)
@@ -54,6 +50,13 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- man.ResetAssetMobileUnitConfigGroup
 			- Permissions.CAN_RESET_ASSETS_TO_CONFIGURATION_GROUP
 			- Based on type.... 0 = events.... 
+	- https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/assets/963923937065295872/reset-device-to-config-group
+	- eventtype: 1
+		- RESET_DEVICE_TO_CONFIG_GROUP
+		- 
+	- ? MESA: WhatToReset : 1
+	- 
+	- 
 - NEW UI: https://mixconfigfrangularapi.mixdevelopment.com/api/groupId/-7094567047859310012/mobile-units/reset/1
 	- SEEMS like the wrong type is being sent
 	- FR API: ResetAssetMobileUnits
