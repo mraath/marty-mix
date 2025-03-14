@@ -7,95 +7,27 @@ tags: [excalidraw]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
+# Excalidraw Data
+
+## Text Elements
+## Element Links
+8rRYktKM: file:///C:/Users/MarthinusR/Downloads/Iridium%20System%20Integration.pdf
+
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.23",
-	"elements": [
-		{
-			"id": "8rRYktKM",
-			"type": "embeddable",
-			"x": -303.8499755859375,
-			"y": -311.86248779296875,
-			"width": 485.60003662109375,
-			"height": 740.0000305175781,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"roundness": null,
-			"seed": 7517,
-			"version": 255,
-			"versionNonce": 1418706458,
-			"updated": 1711525947228,
-			"isDeleted": false,
-			"groupIds": [],
-			"boundElements": [],
-			"link": "file:///C:/Users/MarthinusR/Downloads/Iridium%20System%20Integration.pdf",
-			"locked": false,
-			"scale": [
-				1,
-				1
-			],
-			"customData": {
-				"mdProps": {
-					"useObsidianDefaults": false,
-					"backgroundMatchCanvas": false,
-					"backgroundMatchElement": true,
-					"backgroundColor": "#fff",
-					"backgroundOpacity": 60,
-					"borderMatchElement": true,
-					"borderColor": "#fff",
-					"borderOpacity": 0,
-					"filenameVisible": false
-				}
-			}
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 20,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 601.25,
-		"scrollY": 379.38751220703125,
-		"zoom": {
-			"value": 1
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQAObQAGGjoghH0EDihmbgBtcDBQMBKIEm4IeNIAJQBNAGsoAGkAWVSSyFhECozNBGJiXE1g9tLMbmcAZiTJhIAWAE4FgHYA
+
+VlX41YXJtf5SmAnJgEYjhIA2Hjn45eWFngWz69W9yAoSdW4r1e0zpL/Js4XI5Jba7QqQSQIQjKaTcZZzJLJP4zJKrI5rZbxI4vCDWZQjNBJHHMKCkNj1BAAYTY+DYpAqpOszDguEC2VGkE0uGw9WUZKEHGI1Np9IkjI4zNZWSgHIgADNCPh8ABlWAE9CSbkaQKyklkikAdXekm42PBED15IQqpg6otNPKOP5MI44VyaDNHQgbBZ2DUBw9fydwkFr
+
+uY7tQHCESuJCH6cLRyxxjBY7C4aB4qzOyaYrE4ADlOGJuDx4vE5qWko8cUI4IMoPGPfCjgsK0cznNHnxzYRmAARdIN4jcOUEMI4vnCOAASWIEbyAF0cZoQ8QAKLBTLZedL81EDj1CoK4KKJSUxQAVTCLAULVZ6kIUeY1QUfbYFA4tNwc4U09IJEIIR9AAUh4JJlRgEkMlApJp2yBA+VwKA020Os5VlWkeUbVBR3wcdzWYdxxFQAoOjAT0OiOcFdy
+
+9bAhBJAw+yQ3BuGKL19GIAAFMk5FY8FSnohAAHl7AA6wB1HaMchHMcEBeUouR5ScBWIO8oGwSRKWsehQhkvC5P4zluV5flBTUjSNwyaVuFJIQDLIoylNMoUaTpCoAGI5S8jkFOM5TBSE31/W4X55M5OliCYczJEsrcZTQWz7LIiAV1ISLSGFNyJE87ywpSiKmEC7lgsJPLjyyXBMgANV7QhhmI3Cwn4gBfcFmpxR9IvGCRcBSHE5XITJZ24KMlUK
+
+VqwBo3E4DgVUkOItjoEhTIKiIGEZT2BhCAQCgACE/OczLRXQHKvNywoIDo0g2SgacG30VV9SpVzjogdyjgQD6PtGS6RBuu6Mn2pzVyOhlyAlFkbp+q7/vugAxRUVTVYj7Q8aG/ulAGHtJK0jWID4M02mHMfux6rRtO1BDRomMeyLHqmEF03VNGnrpJjIir9WBTSDC7ibp+HOCgOHKsVANUAo362YFjI4aF5VCCMYiwNZ2GMgAFSwKAAEE1vTdBgj
+
+lDa+dp27SaiUgdeu99IW/Ebo3wVX2f0NdBW162KFt4ceo99HpbNjJ3bJCh1fgFHnJ+wiySVAANbhVmObQeEmNFHiSFtpnuTao5pfBam4SZE8L35054R51gBTajDYAw+K9HTfGIxEViSeJW3Gp2Zf0BmVLDCMIAjza+RIBWlftmMLuH4hVQQOB46H/9VLYSLXaGYJvZw2SF5IUG0DYyBdppDeB+ULkAAoeHRaheCvm+k1QRFVgASllaoEOjVkKlIU
+
+/cAv6Zr+TkSXg/8H7aGfhADuJt/ZkwpIFZCnAIyjUdhdAalUEBv0FEwR8yg66lAqvVDeiUcTYCIHPBKpA7I4g4GgmyFCkqQGEFAfcxFEqQNKHYAAVggbAORlTULgC0ZeCBV4EL0vhUo3JkKMHVjXfAuDOhhwqGEYIPC0yyjogxfQoduhoCQTiTCFIN6NXoRAfAoQdaqOkbI8e+BxrgHanQcqEZgCtWakAA==
 ```
 %%
