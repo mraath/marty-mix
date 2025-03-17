@@ -3,13 +3,13 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-17T15:47
+updated: 2025-03-17T16:35
 ---
 
 # OE-623 Missing firmware upload expired alert
 
 Date: 2025-03-17 Time: 15:46
-Parent:: [[OE-513]]
+Parent:: [[OE-515 Alerts Column Assets Panel]]
 Friend:: [[2025-03-17]]
 JIRA:OE-623 Missing firmware upload expired alert
 [OE-623 Missing firmware upload expired alert - Jira](https://csojiramixtelematics.atlassian.net/browse/OE-623)
