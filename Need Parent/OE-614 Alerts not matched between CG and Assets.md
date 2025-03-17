@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-17T13:26
+updated: 2025-03-17T13:31
 ---
 
 # OE-614 Alerts not matched between CG and Assets
@@ -91,5 +91,7 @@ Where tcg.ConfigurationGroupId = 3744429100126254243
 Select * from library.Libraries ll WHERE ll.LibraryKey = 755
 ```
 
-Configuration Library of Regression Test Units (do not edit)
+Configuration Library of **Regression Test Units** (do not edit)
 mobileunitid: -3958977241595557833
+
+I got to fix one of the alerts issue.
