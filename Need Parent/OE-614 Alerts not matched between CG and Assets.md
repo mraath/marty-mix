@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-17T13:31
+updated: 2025-03-17T13:33
 ---
 
 # OE-614 Alerts not matched between CG and Assets
@@ -49,7 +49,7 @@ The MiX4000 has 1 alert on the left and 1 on the right
 ## Findings
 
 - I have found the same results
-- [ ] I will compare the two swagger calls
+- [x] I will compare the two swagger calls ✅ 2025-03-17
 	- OrgId: 2307906436721054420
 	- CG: 
 		- https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multiselect/groupId/2307906436721054420/alerts
