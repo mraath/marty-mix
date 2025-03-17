@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-02-26T14:37
+updated: 2025-03-17T11:14
 ---
 
 # OE-614 Alerts not matched between CG and Assets
@@ -79,3 +79,4 @@ Here is a screenshot
 ## Stored Proc
 
 > C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Alert issue assets for more than one cgId.sql
+
