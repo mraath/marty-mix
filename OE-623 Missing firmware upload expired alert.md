@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-18T08:29
+updated: 2025-03-18T09:14
 ---
 
 # OE-623 Missing firmware upload expired alert
@@ -39,3 +39,7 @@ Org: Amy Bench Units
 Rodger MiX3000
 CG: -5579545911740947113
 
+## Files
+
+- C:\Projects\_MiXTelematicsFiles\SQL\OE-623 Amy Units Test.sql
+- 
