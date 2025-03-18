@@ -3,13 +3,13 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-13T16:36
+updated: 2025-03-18T08:20
 ---
 
 # OE-636 Column Selector not Alphabetical
 
 Date: 2025-03-13 Time: 15:43
-Parent:: [[OE-513]]
+Parent:: [[OE-513 Configuration Groups - Frangularisation and enhancements]]
 Friend:: [[2025-03-13]]
 JIRA:OE-636 Column Selector not Alphabetical
 [[OE-636] Column selection list: alphabetical order revision - Jira](https://csojiramixtelematics.atlassian.net/browse/OE-636)

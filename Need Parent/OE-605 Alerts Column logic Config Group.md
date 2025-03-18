@@ -1,6 +1,6 @@
 ---
 created: 2023-03-27T07:35
-updated: 2025-02-07T08:44
+updated: 2025-03-18T08:17
 status: busy
 comment: 
 priority: 1
@@ -9,7 +9,7 @@ priority: 1
 # OE-605 Alerts Column logic Config Group
 
 Date: 2025-01-30 Time: 11:51
-Parent:: [[OE-513]]
+Parent:: [[OE-513 Configuration Groups - Frangularisation and enhancements]]
 Friend:: [[2025-01-30]]
 JIRA:OE-605 Alerts Column logic Config Group
 [[OE-605] [UI] [API] Alerts Column Configuration Groups - Jira](https://csojiramixtelematics.atlassian.net/browse/OE-605)

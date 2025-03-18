@@ -3,16 +3,16 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-13T13:44
+updated: 2025-03-18T08:18
 ---
 
 # OE-635 Dropdown filtering messed up
 
 Date: 2025-03-13 Time: 11:13
-Parent:: [[OE-513]]
+Parent:: [[OE-513 Configuration Groups - Frangularisation and enhancements]]
 Friend:: [[2025-03-13]]
 JIRA:OE-635 Dropdown filtering messed up
-[OE-635]Dropdown filtering does not correctly apply text input criteria - Jira](https://csojiramixtelematics.atlassian.net/browse/OE-635)
+[OE-635 Dropdown filtering does not correctly apply text input criteria - Jira](https://csojiramixtelematics.atlassian.net/browse/OE-635)
 
 
 ## TODO

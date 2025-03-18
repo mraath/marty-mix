@@ -3,13 +3,13 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-14T12:29
+updated: 2025-03-18T08:20
 ---
 
 # OE-638 Reset Black Flag
 
 Date: 2025-03-14 Time: 08:39
-Parent:: [[OE-513]]
+Parent:: [[OE-513 Configuration Groups - Frangularisation and enhancements]]
 Friend:: [[2025-03-14]]
 JIRA:OE-638 Reset Black Flag
 [OE-638 Reset config group is not successfully resetting the asset to the config group - Jira](https://csojiramixtelematics.atlassian.net/browse/OE-638)

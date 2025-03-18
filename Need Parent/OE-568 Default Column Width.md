@@ -3,13 +3,13 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-07T10:19
+updated: 2025-03-18T08:19
 ---
 
 # OE-568 Default Column Width
 
 Date: 2025-03-04 Time: 11:04
-Parent:: [[OE-513]]
+Parent:: [[OE-513 Configuration Groups - Frangularisation and enhancements]]
 Friend:: [[2025-03-04]]
 JIRA:OE-568 Default Column Width
 [OE-568 Default column width does not auto-fit to text/content - Jira](https://csojiramixtelematics.atlassian.net/browse/OE-568)

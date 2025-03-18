@@ -3,13 +3,13 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2024-11-01T16:45
+updated: 2025-03-18T08:19
 ---
 
 # OE-538
 
 Date: 2024-10-28 Time: 16:47
-Parent:: [[OE-513]]
+Parent:: [[OE-513 Configuration Groups - Frangularisation and enhancements]]
 Friend:: [[2024-10-28]]
 Friend:: [[OE-496 API Config Groups and columns]]
 Friend:: [[OE-497 API Load Assets]]

@@ -3,13 +3,13 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-10T16:57
+updated: 2025-03-18T08:18
 ---
 
 # OE-631 Column selector styling
 
 Date: 2025-03-10 Time: 15:33
-Parent:: [[OE-513]]
+Parent:: [[OE-513 Configuration Groups - Frangularisation and enhancements]]
 Friend:: [[2025-03-10]]
 JIRA:OE-631 Column selector styling
 [OE-631 UI: Column Selector Icon Misaligned - Jira](https://csojiramixtelematics.atlassian.net/browse/OE-631)

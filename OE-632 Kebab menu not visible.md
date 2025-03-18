@@ -3,13 +3,13 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-11T17:28
+updated: 2025-03-18T08:18
 ---
 
 # OE-632 Kebab menu not visible
 
 Date: 2025-03-11 Time: 07:23
-Parent:: [[OE-513]]
+Parent:: [[OE-513 Configuration Groups - Frangularisation and enhancements]]
 Friend:: [[2025-03-11]]
 JIRA:OE-632 Kebab menu not visible
 [OE-632 Kebab menu not visible upon loading - Jira](https://csojiramixtelematics.atlassian.net/browse/OE-632)

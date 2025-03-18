@@ -3,13 +3,13 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-03T08:29
+updated: 2025-03-18T08:19
 ---
 
 # OE-602 Timer going too fast
 
 Date: 2025-03-03 Time: 07:46
-Parent:: [[OE-513]]
+Parent:: [[OE-513 Configuration Groups - Frangularisation and enhancements]]
 Friend:: [[2025-03-03]]
 JIRA:OE-602 Timer going too fast
 [OE-602 BUG - "Last refresh" interval indicator is cycling too quickly - Jira](https://csojiramixtelematics.atlassian.net/browse/OE-602)
