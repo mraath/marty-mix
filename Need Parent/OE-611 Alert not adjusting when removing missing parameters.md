@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-17T14:25
+updated: 2025-03-18T12:16
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -35,3 +35,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+[MiX Telematics - Configuration groups](https://integration.mixtelematics.com/#/config-admin/configuration-groups/edit?id=-2440320943995442748)
