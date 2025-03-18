@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-17T13:41
+updated: 2025-03-18T08:47
 ---
 
 # OE-614 Alerts not matched between CG and Assets
@@ -82,7 +82,8 @@ Here is a screenshot
 
 @AllSupportedParameters
 
-PR: [Pull request 121410: OE-614: Added the DeviceKey to link on. - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/DynaMiX.DeviceConfig/pullrequest/121410?_a=files)
+- [ ] Zonika PR: [Pull request 121410: OE-614: Added the DeviceKey to link on. - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/DynaMiX.DeviceConfig/pullrequest/121410?_a=files)
+
 
 ```sql
 SELECT top 10 * FROM template.ConfigurationGroups tcg
