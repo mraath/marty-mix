@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-18T11:21
+updated: 2025-03-18T11:26
 ---
 
 # OE-623 Missing firmware upload expired alert
@@ -59,5 +59,8 @@ AND CreationDateUtc > '2025-03-10'
 AND mum.MobileUnitId = 1522731665984569344
 ORDER BY CreationDateUtc DESC
 ```
+
+![[OE-623 Missing firmware upload expired alert Proof Working.png]]
+
 
 - [ ] PR Zonika (Same): [Pull request 121410: OE-614: Added the DeviceKey to link on. - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/DynaMiX.DeviceConfig/pullrequest/121410?_a=files)
