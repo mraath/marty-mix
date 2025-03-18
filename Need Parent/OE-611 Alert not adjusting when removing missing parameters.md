@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-18T12:20
+updated: 2025-03-18T12:25
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -43,6 +43,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - Asset Id: [MiX Telematics - Configuration groups](https://integration.mixtelematics.com/#/config-admin/configuration-groups/asset/events?assetId=1631447698450665472)
 - 1631447698450665472
 
+![[OE-611 Alert not adjusting when removing missing parameters Not missing.png]]
 ## Files
 
 - C:\Projects\_MiXTelematicsFiles\SQL\OE-611 Missing Params Test.sql
