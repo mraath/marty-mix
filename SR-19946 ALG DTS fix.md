@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T10:09
+updated: 2025-03-19T10:12
 ---
 
 # SR-19946 ALG DTS fix
@@ -60,5 +60,6 @@ Now we just need to figure this out for ALG
 - Busy activating the API on the IIS
 - ON HSATSDMXIIS01, the API is running: http://localhost/DynaMiX.DeviceConfig.FMTimeAdjuster.Api
 ![[SR-19946 ALG DTS fix API Running.png]]
+- **Please note**: It could be that the config file still has some OMN settings. I had a quick look, but we will need to ensure this is in order when we test.
 - Now to run the TOOL
 	- 
