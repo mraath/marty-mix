@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T09:20
+updated: 2025-03-19T09:34
 ---
 
 # SR-19946 ALG DTS fix
@@ -54,5 +54,6 @@ Now we just need to figure this out for ALG
 	- HSATSAPP09
 - Aaaarrrggghhhh - check [[Production Servers]] for **ATS**
 	- HSATSDCSIIS01
-	- HSATSDMXIIS01,02
+	- **HSATSDMXIIS01**,02
+- Copying the FMTimeAdjuster api > zip > teams online > above ALG server
 - 
