@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T10:12
+updated: 2025-03-19T10:20
 ---
 
 # SR-19946 ALG DTS fix
@@ -58,8 +58,21 @@ Now we just need to figure this out for ALG
 - Copying the FMTimeAdjuster api > zip > teams online > above ALG server
 - Copied the FMTimeAdjuster app > zip > teams online > ALG Jumpbox
 - Busy activating the API on the IIS
+
+## Setting up in ALG
+
+### Setting up the API
+
+- I copied the FMTimeAdjuster API from OMN IIS to ALG HSATSDMXIIS01
 - ON HSATSDMXIIS01, the API is running: http://localhost/DynaMiX.DeviceConfig.FMTimeAdjuster.Api
+
 ![[SR-19946 ALG DTS fix API Running.png]]
 - **Please note**: It could be that the config file still has some OMN settings. I had a quick look, but we will need to ensure this is in order when we test.
-- Now to run the TOOL
-	- 
+
+### Setting up the APP
+
+- I copied the old 18.17 app from OMN Jumpbox to ALG Jumpbox.
+- It seems to be running there
+
+![[SR-19946 ALG DTS fix App Running.png]]
+- **Please note**: We just need to test this. I don't have logins for this server currently. I will speak to Russell re testing this.
