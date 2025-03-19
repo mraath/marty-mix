@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T09:13
+updated: 2025-03-19T09:20
 ---
 
 # SR-19946 ALG DTS fix
@@ -46,4 +46,13 @@ Now we just need to figure this out for ALG
 - ~~HSATSIIS07~~
 - ~~HSATSIIS11~~
 - ~~HSATSIIS12~~
+- Searched Jira:
+	- HSATSDMXIIS01
+	- HSATSDMXIIS02
+	- HSATSMCIIS04
+	- HSATSAPC04
+	- HSATSAPP09
+- Aaaarrrggghhhh - check [[Production Servers]] for **ATS**
+	- HSATSDCSIIS01
+	- HSATSDMXIIS01,02
 - 
