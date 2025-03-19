@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T12:18
+updated: 2025-03-19T16:11
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -35,6 +35,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+### This one should have NO missing parameters
+
 Config Groups Beta values
 
 ![[OE-611 Alert not adjusting when removing missing parameters.png]]
@@ -54,6 +56,12 @@ Looking at the original Template
 
 ![[OE-611 Alert not adjusting when removing missing parameters Original Template.png]]
 
+### This should have missing parameters
+
+![[OE-611 Alert not adjusting when removing missing parameters-1.png]]
+
+CG: -2440320943995442748
+Asset: 
 ## Files
 
 - C:\Projects\_MiXTelematicsFiles\SQL\OE-611 Missing Params Test.sql
