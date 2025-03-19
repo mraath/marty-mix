@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T16:11
+updated: 2025-03-19T16:14
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -56,12 +56,17 @@ Looking at the original Template
 
 ![[OE-611 Alert not adjusting when removing missing parameters Original Template.png]]
 
-### This should have missing parameters
+### This should NOT have missing parameters
 
 ![[OE-611 Alert not adjusting when removing missing parameters-1.png]]
 
 CG: -2440320943995442748
-Asset: 
+Asset: 1631447698450665472
+https://integration.mixtelematics.com/#/config-admin/configuration-groups/asset/events?assetId=1631447698450665472
+
+![[OE-611 Alert not adjusting when removing missing parameters All monitored.png]]
+
+
 ## Files
 
 - C:\Projects\_MiXTelematicsFiles\SQL\OE-611 Missing Params Test.sql
