@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-18T13:28
+updated: 2025-03-19T12:18
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -63,3 +63,7 @@ Looking at the original Template
 - Looking at the inner SELECT in @assetsMissingParameters, I can see none of the event have supported Params
 - Look at the supportive params next (@AllSupportedParameters)........ xxxxxxxxxxxxxxx
 
+## RETEST
+
+- OK - so this reverts some changes for OE-614
+- We need to retest OE-614
