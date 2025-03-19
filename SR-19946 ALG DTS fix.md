@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T09:00
+updated: 2025-03-19T09:11
 ---
 
 # SR-19946 ALG DTS fix
@@ -44,5 +44,6 @@ Now we just need to figure this out for ALG
 
 - ~~HSATSIIS06~~
 - ~~HSATSIIS07~~
-- HSATSIIS11
+- ~~HSATSIIS11~~
 - HSATSIIS12
+- 
