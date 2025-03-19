@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T08:47
+updated: 2025-03-19T08:50
 ---
 
 # SR-19946 ALG DTS fix
@@ -14,6 +14,7 @@ Friend:: [[2025-03-19]]
 JIRA:SR-19946 ALG DTS fix
 [SR-19946 Time Adjustment tool in OMAN - Jira](https://csojiramixtelematics.atlassian.net/browse/SR-19946)
 
+Similar to:: [[SAAS-10447 DST Tool in OMAN 18.17]]
 
 ## TODO
 ```dataviewjs

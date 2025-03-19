@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-12T08:09
+updated: 2025-03-19T08:50
 ---
 
 # SAAS-10447 DST Tool in OMAN 18.17
@@ -15,6 +15,8 @@ JIRA:SAAS-10447 DST Tool in OMAN 18.17
 [SAAS-10447 Time Adjustment tool in OMAN - Jira (atlassian.net)](https://csojiramixtelematics.atlassian.net/browse/SAAS-10447)
 
 - Oman servers: [[Oman]]
+
+Similar to:: [[SR-19946 ALG DTS fix]]
 
 ## TODO
 ```dataviewjs
