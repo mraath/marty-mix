@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-18T11:26
+updated: 2025-03-19T10:30
 ---
 
 # OE-623 Missing firmware upload expired alert
@@ -63,4 +63,4 @@ ORDER BY CreationDateUtc DESC
 ![[OE-623 Missing firmware upload expired alert Proof Working.png]]
 
 
-- [ ] PR Zonika (Same): [Pull request 121410: OE-614: Added the DeviceKey to link on. - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/DynaMiX.DeviceConfig/pullrequest/121410?_a=files)
+- [x] PR Zonika (Same): [Pull request 121410: OE-614: Added the DeviceKey to link on. - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/DynaMiX.DeviceConfig/pullrequest/121410?_a=files) ✅ 2025-03-19
