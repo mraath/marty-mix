@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T08:50
+updated: 2025-03-19T09:00
 ---
 
 # SR-19946 ALG DTS fix
@@ -39,3 +39,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 We got it sorted in OMAN
 - [[OMAN DST Command 45 Setup]]
 Now we just need to figure this out for ALG
+
+## Finding the server
+
+- ~~HSATSIIS06~~
+- ~~HSATSIIS07~~
+- HSATSIIS11
+- HSATSIIS12
