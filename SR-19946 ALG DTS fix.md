@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T10:05
+updated: 2025-03-19T10:07
 ---
 
 # SR-19946 ALG DTS fix
@@ -58,4 +58,5 @@ Now we just need to figure this out for ALG
 - Copying the FMTimeAdjuster api > zip > teams online > above ALG server
 - Copied the FMTimeAdjuster app > zip > teams online > ALG Jumpbox
 - Busy activating the API on the IIS
+- ON HSATSDMXIIS01, the API is running: http://localhost/DynaMiX.DeviceConfig.FMTimeAdjuster.Api
 - 
