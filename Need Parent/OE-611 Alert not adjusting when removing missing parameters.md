@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-20T10:54
+updated: 2025-03-20T10:55
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -76,7 +76,9 @@ module.getAssetEvents
 
 MobileUnitEventsModule.ModuleRoutes.GET_EVENTS
 GetEventTemplate
-mobileUnitManager.GetEffectiveConfig(mobileUnit, mobileDeviceTemplate, eventTemplate)
+	mobileUnitManager.GetEffectiveConfig(mobileUnit, mobileDeviceTemplate, eventTemplate)
+		resolvedMobileDevie = GetResolvedMobileDevice(mobileUnit, tempalteAggregate
+		GetEffectiveConfig(mobileUnit, eventTemplateAggregate, resolvedMobileDevie)
 
 
 ## Files
