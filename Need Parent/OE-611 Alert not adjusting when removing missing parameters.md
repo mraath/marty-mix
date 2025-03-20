@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-20T10:57
+updated: 2025-03-20T13:44
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -82,6 +82,9 @@ GetEventTemplate
 			eventTemplate = ConfigAdminRepository.GetEventTemplateWithChildrenById(configGroup.EventTemplateId)
 			GetEffectiveConfig(mobielUnitAggregate, eventTemplate, resolvedMobileDevice)
 
+[[Parameter]]
+
+![[SQL Schemas#Parameters]]
 
 ## Files
 
