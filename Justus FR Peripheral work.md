@@ -1,6 +1,6 @@
 ---
 created: 2025-03-24T08:21
-updated: 2025-03-24T08:25
+updated: 2025-03-24T09:01
 ---
 I think the issue is more relasted to the FR_UI side.. Its trying to get a profile and when it fails it looks like things just fall over.. When i and the configuration groups urls and channelname to my Controller in the old UI it does not give me that error and the IframeHost gets hit. Had another go at this today but still couldn't get that receivemessage registered. 
 
@@ -13,3 +13,6 @@ I think the issue is more relasted to the FR_UI side.. Its trying to get a profi
 
 Azure DevOps Services | Sign In You will still need the API to be running thou and logged in with saml2aws
 
+## References
+
+[[New Frangular Page]]
