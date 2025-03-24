@@ -1,6 +1,6 @@
 ---
 created: 2025-03-06T08:46
-updated: 2025-03-07T07:18
+updated: 2025-03-24T11:13
 ---
 
 ## Moving parts
@@ -326,6 +326,9 @@ editMobileDeviceTemplateClicked(dataItem: IConfigurationGroupsMultiselectCarrier
 }
 ```
 
+## Lets Try
+
+[[New Page]]
 
 ## Older reading - NA
 
