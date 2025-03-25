@@ -1,6 +1,6 @@
 ---
 created: 2025-03-25T07:11
-updated: 2025-03-25T14:22
+updated: 2025-03-25T15:33
 ---
 ## Setting up in ALG
 
@@ -30,8 +30,9 @@ Russell W: LOGS on HSATSDMXIIS01 L:\WebServices\DynaMiX.DeviceConfig.FMTimeAdjus
 I changed the FM Adjuster API's config file to reflect that of ALG's Dynamix Config file.
 I then tested it for the following Org, Asset:
 
-assetId=-5612607933938248877
 orgId=5142497371717118183
+assetId=-5612607933938248877
+
 
 
 It seems to be working well:
