@@ -1,6 +1,6 @@
 ---
 created: 2025-03-25T07:11
-updated: 2025-03-25T07:12
+updated: 2025-03-25T13:29
 ---
 ## Setting up in ALG
 
@@ -23,3 +23,9 @@ updated: 2025-03-25T07:12
 ## Logs
 
 Russell W: LOGS on HSATSDMXIIS01 L:\WebServices\DynaMiX.DeviceConfig.FMTimeAdjuster.Api
+
+## Testing
+
+assetId=-5612607933938248877
+orgId=5142497371717118183
+
