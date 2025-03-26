@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-19T10:32
+updated: 2025-03-26T16:01
 ---
 
 # OE-614 Alerts not matched between CG and Assets
@@ -101,3 +101,5 @@ Seems to be OK now.
 
 ![[OE-614 Alerts not matched between CG and Assets Amy fix.png]]
 ![[OE-614 Alerts not matched between CG and Assets Regression Fix.png]]
+
+- [[Alerts values fixing]]
