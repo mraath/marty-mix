@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-27T10:43
+updated: 2025-03-27T10:46
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -38,3 +38,5 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 Black flag not clickable
 
 - Version 25.6 beta
+- BRANCH: Config/MR/BUG/QA-7242_BlackFlagNotClickable25.6.UAT.ORI
+
