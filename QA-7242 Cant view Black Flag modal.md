@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-27T11:40
+updated: 2025-03-27T12:10
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -37,8 +37,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 Black flag not clickable
 
-- Version 25.6 beta
-- BRANCH: Config/MR/BUG/QA-7242_BlackFlagNotClickable25.6.UAT.ORI
+> Version 25.6 beta
+> BRANCH: Config/MR/BUG/QA-7242_BlackFlagNotClickable25.6.UAT.ORI
 
 - Path: C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Controllers\ConfigGroupsLandingController.ts
 	- Line 998
