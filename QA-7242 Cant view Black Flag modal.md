@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-27T11:04
+updated: 2025-03-27T11:11
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -40,9 +40,16 @@ Black flag not clickable
 - Version 25.6 beta
 - BRANCH: Config/MR/BUG/QA-7242_BlackFlagNotClickable25.6.UAT.ORI
 
+- Path: C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Controllers\ConfigGroupsLandingController.ts
+	- Line 998
 - Look for "Configuration differences from group" in the original HTML
 - FE: configDiff
-- BE: 
+- BE: GET_CONFIG_DIFFERENCE
+	- GetConfigDifference
+	- mobileUnitManager.GetConfigurationGroupDifferences
+		- ToConfigurationGroupDifferencesCarrier
+	- DeviceConfigClient.MobileUnits.GetOverriddenInformationForMobileUnit
+- OLD Client: 
 
 - [ ] Permission: canViewConfigDifference = allPermissions[ConfigConstants.Permissions.ASSET_LEVEL_BLACK_FLAG_REASON
 - [ ] 
