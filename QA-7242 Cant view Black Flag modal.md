@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-27T10:49
+updated: 2025-03-27T11:04
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -40,4 +40,9 @@ Black flag not clickable
 - Version 25.6 beta
 - BRANCH: Config/MR/BUG/QA-7242_BlackFlagNotClickable25.6.UAT.ORI
 
-Look for "Configuration differences from group" in the original HTML
+- Look for "Configuration differences from group" in the original HTML
+- FE: configDiff
+- BE: 
+
+- [ ] Permission: canViewConfigDifference = allPermissions[ConfigConstants.Permissions.ASSET_LEVEL_BLACK_FLAG_REASON
+- [ ] 
