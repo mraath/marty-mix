@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-27T12:10
+updated: 2025-03-27T12:19
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -60,3 +60,9 @@ Black flag not clickable
 - [ ] FR API: Add method to call New Client method
 - [ ] Call above from FR UI
 - [ ] Do UI logic
+
+## Implementation
+
+- GetOverriddenInformationForMobileUnit
+	- api/configuration-groups-multiselect/mobile-units/{mobileUnitId}/get-overridden-info
+- 
