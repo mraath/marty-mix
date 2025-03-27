@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-27T11:31
+updated: 2025-03-27T11:36
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -51,6 +51,7 @@ Black flag not clickable
 	- DeviceConfigClient.MobileUnits.GetOverriddenInformationForMobileUnit
 - OLD Client: GetOverriddenInformationForMobileUnit = "mobile-units/{mobileUnitId}/get-overridden-info"
 	- /get-overridden-info
+- New Client: /mobile-units/{mobileUnitId}/get-overridden-info
 - Config API: mum.GetOverriddenInformationForMobileUnit
 	- 
 
