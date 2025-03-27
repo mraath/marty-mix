@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-27T11:36
+updated: 2025-03-27T11:38
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -56,4 +56,5 @@ Black flag not clickable
 	- 
 
 - [ ] Permission: canViewConfigDifference = allPermissions[ConfigConstants.Permissions.ASSET_LEVEL_BLACK_FLAG_REASON
+- [ ] FR API: Add method to call New Client method
 - [ ] 
