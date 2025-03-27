@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-27T15:24
+updated: 2025-03-27T15:42
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -68,3 +68,6 @@ Black flag not clickable
 	- api/configuration-groups-multiselect/mobile-units/{mobileUnitId}/get-overridden-info
 - getOverriddenInformationForMobileUnit
 - MobileUnitDifference
+- FR API:
+	- 
+	- man: public async Task<List<MobileUnitDifference>> GetOverriddenInformationForMobileUnit(long mobileUnitId, long? correlationId = null)
