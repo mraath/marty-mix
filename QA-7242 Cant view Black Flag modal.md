@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-28T10:23
+updated: 2025-03-28T10:27
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -80,3 +80,4 @@ Black flag not clickable
 
 - id=-8798513244981487643
 - orgId=-7094567047859310012
+- Auth: bab5800f-2c61-4635-9284-2147ef7d3968
