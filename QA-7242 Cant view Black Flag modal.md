@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-28T14:25
+updated: 2025-03-28T15:17
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -99,7 +99,7 @@ Black flag not clickable
 
 - FR UI
 	- getOverriddenInformationForMobileUnit
-	- 
+	- EG: getAssetDisplayTimeZone
 
 
 
