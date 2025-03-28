@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-28T13:35
+updated: 2025-03-28T14:25
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -75,6 +75,27 @@ Black flag not clickable
 
 - FR API
 	- api/configuration-groups-multiselect/groupId/{groupId}/mobile-units/{mobileUnitId}/get-overridden-info
+
+```json
+"groupDifferences": [
+    {
+      "definitionId": "string",
+      "configType": "string",
+      "configObjectSetting": "string",
+      "configObject": "string",
+      "templateValue": "string",
+      "assetValue": "string",
+      "userName": "string",
+      "dateTime": {
+        "dateTime": "2025-03-28T06:23:26.047Z",
+        "isoDateTimeString": "string",
+        "timeZoneName": "string",
+        "timeZoneShortCode": "string",
+        "localName": "string"
+      }
+    }
+  ]
+```
 
 - FR UI
 	- getOverriddenInformationForMobileUnit
