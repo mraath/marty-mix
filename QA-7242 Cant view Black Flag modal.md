@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-31T10:47
+updated: 2025-03-31T14:01
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -110,3 +110,14 @@ Black flag not clickable
 - id=-8798513244981487643
 - orgId=-7094567047859310012
 - Auth: bab5800f-2c61-4635-9284-2147ef7d3968
+
+## Languaging to be done
+
+- [ ] Configuration differences from group
+- [ ] Config type
+- [ ] Config object setting
+- [ ] Config object
+- [ ] Template value
+- [ ] Asset value
+- [ ] User name
+- [ ] Date/time
