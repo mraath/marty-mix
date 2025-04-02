@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-02T11:40
+updated: 2025-04-02T11:44
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -58,8 +58,8 @@ Black flag not clickable
 
 - NA - Nicole: Permission: canViewConfigDifference = allPermissions[ConfigConstants.Permissions.ASSET_LEVEL_BLACK_FLAG_REASON
 	- await _authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_BLACK_FLAG_REASON, groupId).ConfigureAwait(false);
-- [ ] FR API: Add method to call New Client method
-	- [ ] PR: 
+- [x] FR API: Add method to call New Client method ✅ 2025-04-02
+	- [x] PR: [Pull request 122350: QA-7242_GettingBlackFlagDiffs - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/122350) ✅ 2025-04-02
 - [x] Call above from FR UI ✅ 2025-04-02
 - [x] Do UI logic ✅ 2025-04-02
 
