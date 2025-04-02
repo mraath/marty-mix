@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-31T14:01
+updated: 2025-04-02T11:32
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -121,3 +121,8 @@ Black flag not clickable
 - [ ] Asset value
 - [ ] User name
 - [ ] Date/time
+
+
+
+- PR: [Pull request 122349: QA-7242: Added the Black Flags Modal - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/122349)
+- 
