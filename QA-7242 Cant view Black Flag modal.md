@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-02T11:32
+updated: 2025-04-02T11:36
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -121,6 +121,7 @@ Black flag not clickable
 - [ ] Asset value
 - [ ] User name
 - [ ] Date/time
+- [ ] No records available.
 
 
 
