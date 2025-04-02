@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-02T11:36
+updated: 2025-04-02T11:40
 ---
 
 # QA-7242 Cant view Black Flag modal
@@ -56,11 +56,12 @@ Black flag not clickable
 - Config API: mum.GetOverriddenInformationForMobileUnit
 	- 
 
-- [ ] Permission: canViewConfigDifference = allPermissions[ConfigConstants.Permissions.ASSET_LEVEL_BLACK_FLAG_REASON
+- NA - Nicole: Permission: canViewConfigDifference = allPermissions[ConfigConstants.Permissions.ASSET_LEVEL_BLACK_FLAG_REASON
 	- await _authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_BLACK_FLAG_REASON, groupId).ConfigureAwait(false);
 - [ ] FR API: Add method to call New Client method
-- [ ] Call above from FR UI
-- [ ] Do UI logic
+	- [ ] PR: 
+- [x] Call above from FR UI ✅ 2025-04-02
+- [x] Do UI logic ✅ 2025-04-02
 
 ## Implementation
 
@@ -113,17 +114,17 @@ Black flag not clickable
 
 ## Languaging to be done
 
-- [ ] Configuration differences from group
-- [ ] Config type
-- [ ] Config object setting
-- [ ] Config object
-- [ ] Template value
-- [ ] Asset value
-- [ ] User name
-- [ ] Date/time
-- [ ] No records available.
+- [x] Configuration differences from group ✅ 2025-04-02
+- [x] Config type ✅ 2025-04-02
+- [x] Config object setting ✅ 2025-04-02
+- [x] Config object ✅ 2025-04-02
+- [x] Template value ✅ 2025-04-02
+- [x] Asset value ✅ 2025-04-02
+- [x] User name ✅ 2025-04-02
+- [x] Date/time ✅ 2025-04-02
+- [x] No records available. ✅ 2025-04-02
 
 
 
-- PR: [Pull request 122349: QA-7242: Added the Black Flags Modal - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/122349)
+- [ ] PR: [Pull request 122349: QA-7242: Added the Black Flags Modal - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/122349)
 - 
