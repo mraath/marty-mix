@@ -1,6 +1,6 @@
 ---
 created: 2025-04-03T11:53
-updated: 2025-04-03T12:00
+updated: 2025-04-03T15:16
 ---
 ## Cline with gemini 2.5 pro
 
@@ -98,4 +98,20 @@ What are your thoughts on this approach? Specifically:
 3. How should we handle the numerous constants defined at the start? Pass them into each function, define them within each, or use another method?
 4. Can you clarify the intended logic for the `CommsLog` column in the final output?
 
-xxxxxxxxxx
+## AI Completed this
+
+I have successfully refactored the stored procedure `MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups.sql` into smaller, more manageable, and testable units.
+
+The following files have been created:
+
+- **Functions (iTVFs):**
+    - `DeviceConfiguration.DataProcessing/Schemas/state/Functions/udfGetMobileUnitBasicInfoForConfigGroups.sql`: Retrieves basic mobile unit information.
+    - `DeviceConfiguration.DataProcessing/Schemas/state/Functions/udfGetMobileUnitMessageAlerts.sql`: Calculates alerts based on outdated messages.
+    - `DeviceConfiguration.DataProcessing/Schemas/state/Functions/udfIsMobileUnitMissingParameters.sql`: Checks for missing required event parameters.
+    - `DeviceConfiguration.DataProcessing/Schemas/state/Functions/udfGetMobileUnitLastMessageDate.sql`: Gets the timestamp of the last relevant message.
+- **Stored Procedures:**
+    - `DeviceConfiguration.DataProcessing/Schemas/state/Stored Procedures/uspGetMobileUnitFirmwareInfo.sql`: Handles the complex logic for determining firmware status (installed, preferred, outdated).
+    - `DeviceConfiguration.DataProcessing/Schemas/state/Stored Procedures/MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups_Refactored.sql`: The main refactored procedure that orchestrates calls to the functions and the firmware SP to produce the final result.
+
+This new structure separates the concerns, making each part independently testable and easier to maintain while aiming to produce the same output as the original procedure. You can now deploy these new SQL objects to your database. The main procedure to call is `[state].[MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups_Refactored]`.
+
