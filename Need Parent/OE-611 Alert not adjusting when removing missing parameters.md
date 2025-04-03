@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-20T13:44
+updated: 2025-04-03T11:53
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -99,3 +99,7 @@ GetEventTemplate
 
 - OK - so this reverts some changes for OE-614
 - We need to retest OE-614
+
+## Reworking all of this
+
+[[Alerts with AI]]
