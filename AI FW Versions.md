@@ -1,6 +1,6 @@
 ---
 created: 2025-04-04T11:13
-updated: 2025-04-04T14:19
+updated: 2025-04-04T14:37
 ---
 Now that the message alerts (digits 1 and 2) are aligned, let's move to the next potential source of difference: the **firmware outdated alert (digit 3)**.
 
@@ -57,4 +57,20 @@ Let's first focus on the **Version Ordering**. Do you know if the firmware versi
 Knowing the intended ordering logic is key to aligning this calculation. What is the correct way to determine the sequence of firmware versions for the "latest vs. installed" comparison?
 
 1) ==Yes, it relies on the firmware name== 2) I will need to get back to you on your second question 3) Will have to get back to you on this
+
+Okay, thank you for confirming that the firmware version ordering relies on the `Name`. That's a crucial piece of information.
+
+Given this, the difference in the `ROW_NUMBER()` ordering between the original procedure (which used `ORDER BY (SELECT NULL)`, potentially relying on implicit name sorting or insertion order) and the refactored `uspGetMobileUnitFirmwareInfo` (which explicitly used `ORDER BY dfw.FirmwareVersionKey`) is very likely the cause of the discrepancies in the third alert digit.
+
+Let's modify the `uspGetMobileUnitFirmwareInfo` procedure to order by `dfw.Name` when assigning the `VersionNumber`.
+
+Here's the specific section within the SP that needs changing:
+
+xxxxxxxxxxxxxxxxx (applied)
+
+_(Note: If firmware names include non-standard characters or require specific collation for correct sorting, the `ORDER BY dfw.Name` might need further refinement, but it's the logical first step based on your confirmation.)_
+
+Could you please apply this change (modifying the `ORDER BY` clause within the `ROW_NUMBER` function inside the `uspGetMobileUnitFirmwareInfo` procedure) and then re-run your comparison test? Check the third digit for the example `MobileUnitId`s (1113953193286172672, etc.) again.
+
+Let me know if this resolves the differences for the firmware outdated alert. We can address the other potential factors (FMBas/CAN filtering, Logical Device ID) if needed after this.
 
