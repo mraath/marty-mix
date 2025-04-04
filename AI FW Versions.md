@@ -1,6 +1,6 @@
 ---
 created: 2025-04-04T11:13
-updated: 2025-04-04T14:08
+updated: 2025-04-04T14:19
 ---
 Now that the message alerts (digits 1 and 2) are aligned, let's move to the next potential source of difference: the **firmware outdated alert (digit 3)**.
 
@@ -55,4 +55,6 @@ Let's first focus on the **Version Ordering**. Do you know if the firmware versi
 - If ordering _should_ be by `FirmwareVersionKey`, then the refactored SP is likely correct in its ordering, and the discrepancy might lie elsewhere (like the FMBas/CAN filtering).
 
 Knowing the intended ordering logic is key to aligning this calculation. What is the correct way to determine the sequence of firmware versions for the "latest vs. installed" comparison?
+
+1) ==Yes, it relies on the firmware name== 2) I will need to get back to you on your second question 3) Will have to get back to you on this
 
