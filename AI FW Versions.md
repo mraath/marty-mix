@@ -1,6 +1,6 @@
 ---
 created: 2025-04-04T11:13
-updated: 2025-04-04T11:17
+updated: 2025-04-04T11:26
 ---
 Now that the message alerts (digits 1 and 2) are aligned, let's move to the next potential source of difference: the **firmware outdated alert (digit 3)**.
 
@@ -34,4 +34,8 @@ This was significantly more complex and interwoven in the original:
 - **Data Type Conversions:** Both use `TRY_CAST` for firmware IDs from properties/overrides, which should be consistent.
 
 Do you see differences in the third digit of the `Alerts` code in your comparison results? If so, could you provide one or two `MobileUnitId` examples where this digit differs?
+
+Let's get back to comparing the results. Now that the first two digits (message alerts) are aligned, have you noticed any differences in the **third digit** of the `Alerts` code between the original and refactored procedures in your test results? This digit represents the firmware outdated status calculated by `uspGetMobileUnitFirmwareInfo`.
+
+If you are seeing differences, could you please provide one or two `MobileUnitId` examples where the third digit differs? Knowing the specific examples will help us trace the logic within the original SP and the new `uspGetMobileUnitFirmwareInfo` to find the discrepancy.
 
