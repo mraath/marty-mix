@@ -1,0 +1,37 @@
+---
+created: 2025-04-04T11:13
+updated: 2025-04-04T11:17
+---
+Now that the message alerts (digits 1 and 2) are aligned, let's move to the next potential source of difference: the **firmware outdated alert (digit 3)**.
+
+**Refactored Logic (`uspGetMobileUnitFirmwareInfo`):**
+
+1. Gets the installed firmware name/ID from `state.MobileUnitState`.
+2. Determines the preferred firmware name/ID by checking `template.DeviceProperties` and looking for overrides in `mobileunit.OverridenDeviceProperties`.
+3. Identifies the _type_ of the installed firmware.
+4. Determines the correct "anchor" device ID based on the firmware type.
+5. Checks device capabilities (FMBas, CAN incompatibility) based on the main `MobileDeviceKey`.
+6. Filters the available firmware versions (`definition.FirmwareVersions` joined with `library.FirmwareVersions`) based on the firmware type, library, and applies FMBas/CAN incompatibility filters.
+7. Assigns a sequential `VersionNumber` to the filtered, available versions.
+8. Finds the `VersionNumber` for the _installed_ firmware and the `MAX(VersionNumber)` (latest available).
+9. Sets the `IsFirmwareOutdated` output parameter to 1 if the difference between latest and installed version numbers is greater than 2.
+
+**Original Stored Procedure Logic (Firmware Part):**
+
+This was significantly more complex and interwoven in the original:
+
+1. It gathered template/preferred firmware info into `@ConfigGroupsFWVersions` and overrides into `@AssetPreferredFWVersions`.
+2. It got installed firmware from `state.MobileUnitState` into `@FWVersionInstalled`.
+3. It built a complex `@filteredVersions` table containing available firmware versions per type/anchor, assigning version numbers.
+4. It calculated the max version number per type/anchor into `@maxFirmwareVersion`.
+5. It combined all this in `@MobileUnitFWVersions` and finally calculated the outdated flag (`OutdatedFW`) in `@MobileUnitFWOutdated` by comparing the installed version number (`ffw.VersionNumber`) against the max (`mfw.VersionNumber`).
+
+**Potential Differences & Areas to Investigate:**
+
+- **Determining "Latest" Version:** The method of assigning `ROW_NUMBER()` in the SP vs. the original might differ if the ordering isn't precisely the same (e.g., if version names aren't perfectly sequential). The original used `ROW_NUMBER() OVER (ORDER BY (SELECT NULL))` within many separate inserts into `@filteredVersions`, while the SP uses `ROW_NUMBER() OVER (ORDER BY dfw.FirmwareVersionKey)`. This ordering difference could affect the comparison if the > 2 check lands differently.
+- **FMBas/CAN Filtering Logic:** While I tried to replicate the logic (checking `@FM3XXX_MOBILE_DEVICE_RANGE` dependency for FMBas, checking specific `DeviceIds` for CAN incompatibility), any subtle difference in how these checks are applied could lead to different sets of "available" firmware being considered. For example, the original checked `fw.MobileDeviceKey IN (SELECT DeviceKey FROM @FMBasDevices)`, while the SP checks dependencies based on the passed `@MobileDeviceKey`.
+- **Logical Device Identification:** The SP attempts to find the relevant logical device (`@LogicalDeviceId`) to determine the firmware type anchor. The original SP derived this through joins in the `@ConfigGroupsFWVersions` CTE. Any mismatch here could lead to comparing against the wrong set of latest firmware.
+- **Data Type Conversions:** Both use `TRY_CAST` for firmware IDs from properties/overrides, which should be consistent.
+
+Do you see differences in the third digit of the `Alerts` code in your comparison results? If so, could you provide one or two `MobileUnitId` examples where this digit differs?
+
