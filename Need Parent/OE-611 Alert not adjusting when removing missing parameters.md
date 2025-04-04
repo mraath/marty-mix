@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-03T11:53
+updated: 2025-04-04T10:31
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -103,3 +103,10 @@ GetEventTemplate
 ## Reworking all of this
 
 [[Alerts with AI]]
+
+## Comparing the refactored work
+
+> C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare.sql
+
+### Fixing up: First Alerts
+
