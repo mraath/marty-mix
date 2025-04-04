@@ -1,6 +1,6 @@
 ---
 created: 2025-04-04T11:13
-updated: 2025-04-04T14:43
+updated: 2025-04-04T14:57
 ---
 Now that the message alerts (digits 1 and 2) are aligned, let's move to the next potential source of difference: the **firmware outdated alert (digit 3)**.
 
@@ -101,3 +101,4 @@ To proceed effectively, we need clarification on these two points based on the i
 Answering these will tell us how to adjust the filtering logic within `uspGetMobileUnitFirmwareInfo`.
 
 
+1) ==IF the devicekey was== overwritten in the overridden tables for the mobileunit, then use that, else use the one found in the template. 2) For now keep it to what it was, but maybe just leave a comment to include it going forward, for now I just want to RESULTS the same before fixing logic. I think filtering out the E was something I still needed to do, but didnt. I cant remember. I think lets get it return the same things and then enhance or add in logic.
