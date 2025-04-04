@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-04T10:31
+updated: 2025-04-04T11:13
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -110,3 +110,7 @@ GetEventTemplate
 
 ### Fixing up: First Alerts
 
+[[ AI Alerts Feedback 1]]
+- [ ] We'll remember to add the correct status filtering back later once you provide the list.
+
+[[AI FW Versions]]
