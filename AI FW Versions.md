@@ -1,6 +1,6 @@
 ---
 created: 2025-04-04T11:13
-updated: 2025-04-04T14:37
+updated: 2025-04-04T14:43
 ---
 Now that the message alerts (digits 1 and 2) are aligned, let's move to the next potential source of difference: the **firmware outdated alert (digit 3)**.
 
@@ -73,4 +73,31 @@ _(Note: If firmware names include non-standard characters or require specific co
 Could you please apply this change (modifying the `ORDER BY` clause within the `ROW_NUMBER` function inside the `uspGetMobileUnitFirmwareInfo` procedure) and then re-run your comparison test? Check the third digit for the example `MobileUnitId`s (1113953193286172672, etc.) again.
 
 Let me know if this resolves the differences for the firmware outdated alert. We can address the other potential factors (FMBas/CAN filtering, Logical Device ID) if needed after this.
+
+Okay, it seems changing the version ordering wasn't the complete solution. Since 80% are still incorrect for the firmware alert (third digit), we need to dig deeper into the other potential differences, primarily how the FMBas/CAN filtering is applied and how the relevant logical device is identified.
+
+Let's re-examine the logic flow:
+
+**Original SP:**
+
+- Calculated FMBas/CAN incompatibility flags in `@MobileUnitFWVersions` based on the `MobileDeviceKey` originating from `template.MobileDeviceTemplates`.
+- Used the `FMBas` flag (but apparently _not_ the `CanBasIncompatible` flag) when joining with `@filteredVersions` / `@maxFirmwareVersion` inside the `@MobileUnitFWOutdated` CTE to determine the correct set of versions to compare against.
+
+**Refactored SP (`uspGetMobileUnitFirmwareInfo`):**
+
+- Calculates `@FMBasDevice` and `@IsCanBasIncompatible` based on the `@MobileDeviceKey` passed as input (which comes from `mobileunit.MobileUnits` via the main refactored SP).
+- Uses _both_ the `@FMBasDevice` and `@IsCanBasIncompatible` flags to filter the `@FilteredVersions` table _before_ calculating the latest version number and performing the comparison.
+
+**Key Questions Arising:**
+
+1. **Which `MobileDeviceKey` is correct for FMBas/CAN checks?** Should these checks be based on the device assigned to the specific mobile unit instance (`mobileunit.MobileUnits.MobileDeviceKey`) or the base device defined in the template (`template.MobileDeviceTemplates.MobileDeviceKey`)? The original SP used the template's key. The refactored SP uses the instance's key. This could be a major source of difference if these keys can diverge.
+2. **Is the CAN Incompatibility filter actually used?** The original SP calculated the flag but didn't seem to apply it when determining the latest version for the outdated check. The refactored SP _does_ apply this filter. Should it?
+
+To proceed effectively, we need clarification on these two points based on the intended business logic:
+
+- **Point 1:** When checking if a device requires FMBas firmware or is incompatible with certain CAN firmware, should we look at the specific device model assigned to the _mobile unit instance_ or the base device model defined in the _template_ it uses?
+- **Point 2:** Should the check for CAN incompatibility (removing firmware names starting with 'E' for certain devices) be applied when determining the "latest available" firmware for the outdated comparison?
+
+Answering these will tell us how to adjust the filtering logic within `uspGetMobileUnitFirmwareInfo`.
+
 
