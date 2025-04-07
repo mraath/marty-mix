@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T11:00
+updated: 2025-04-07T11:03
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -140,3 +140,7 @@ GetEventTemplate
 - TEST 1: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2.sql
 - Test Many: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2 BULK.sql
 
+### Alert 3
+
+- uspGetMobileUnitFirmwareInfo
+- 
