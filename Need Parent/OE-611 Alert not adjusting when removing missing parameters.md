@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T09:37
+updated: 2025-04-07T10:02
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -130,4 +130,11 @@ GetEventTemplate
 	- Assets in config Upload requested state for more than 5 days
 	- Assets in FW upload requested state for more than 3 days
 	- [[SQL Message Statuses]]
-	- 
+- Function: C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\udfGetMobileUnitMessageAlerts.sql
+- Test cases:
+	- **Scenario A (Config Alert):** A unit whose _latest_ message of type 254 or 255 is older than 5 days AND has a status NOT IN (10, 12, 13, 25, 28). (Expected output: '10' or '11')
+	- **Scenario B (Firmware Alert):** A unit whose _latest_ message of type 103 is older than 3 days AND has a status NOT IN (10, 12, 13, 25, 28). (Expected output: '01' or '11')
+	- **Scenario C (Both Alerts):** A unit meeting conditions for both Scenario A and Scenario B. (Expected output: '11')
+	- **Scenario D (Old but Good Status):** A unit whose latest relevant message(s) are older than the thresholds BUT have a status IN (10, 12, 13, 25, 28). (Expected output: '00')
+	- **Scenario E (Recent / No Relevant Messages):** A unit whose latest relevant messages are recent OR has no relevant messages at all. (Expected output: '00')
+- 
