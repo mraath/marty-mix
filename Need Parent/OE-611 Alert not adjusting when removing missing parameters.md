@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T12:07
+updated: 2025-04-07T12:13
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -172,6 +172,8 @@ Since this is a stored procedure with output parameters, testing involves:
 	- It shows an installed version which isnt even in the list shown in the test stored proc
 	- one of them will be wrong
 - [ ] business logic question: If a unit reports having a firmware version installed that is _not recognized_ or _not available_ within its current library/configuration context, should it be flagged as outdated?
+- [ ] Should we test against PREFERRED or INSTALLED being outdated
+- [ ] ARE WE?
 
 ### Alert 4
 
