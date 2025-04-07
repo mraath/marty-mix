@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T12:13
+updated: 2025-04-07T12:27
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -202,3 +202,4 @@ We need to verify if this function correctly identifies situations where an enab
 5. **Compare:** Compare the function's output (`IsMissingParameters`) with your manually determined expected value.
 
 To help with Step 3 (Manual Verification), here's a query that breaks down the logic for a specific test case:
+
