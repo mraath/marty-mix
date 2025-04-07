@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T16:09
+updated: 2025-04-07T16:14
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -214,6 +214,7 @@ Putting this alert into words.
 - if there is not requiredConditionParameterMissing && eventEnabled && (atLeastOneParameterMonitored OR peripheralBasedEvent)) then it is monitored
 - TESTED: Bench units and AMy Bench Units
 	- NEed more info....
+- [ ] MiX Vision > Event types seems to be missing from sql call
 - Should have missing parameter: 
 	- 1403102293298126848
 	- 1450923827225116672
@@ -228,6 +229,6 @@ Putting this alert into words.
 - Shouldnt have: 
 	- 1626018637366906880
 	- 1596635336800804864
-	- 1626018637366906880 <<<<<
+	- 1626018637366906880
 	- 1631447698450665472
 	- 
