@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T11:41
+updated: 2025-04-07T11:50
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -168,3 +168,7 @@ Since this is a stored procedure with output parameters, testing involves:
 - Toets: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
 - [ ] Look at results for assets and double check version number order with Zonika or Nicole
 
+- [ ] Test to be resolved: 1519091697465741312
+	- It shows an installed version which isnt even in the list shown in the test stored proc
+	- one of them will be wrong
+- 
