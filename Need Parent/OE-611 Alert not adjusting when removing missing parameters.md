@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T16:01
+updated: 2025-04-07T16:09
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -212,12 +212,22 @@ Putting this alert into words.
 - If there is no supported Parameter, but the eventcondition requires it, the the required condition parameter is missing and the "not monitored" should happen.
 - If there is a supported parameter, and at least one parameter is monitored, then is is OK
 - if there is not requiredConditionParameterMissing && eventEnabled && (atLeastOneParameterMonitored OR peripheralBasedEvent)) then it is monitored
+- TESTED: Bench units and AMy Bench Units
+	- NEed more info....
 - Should have missing parameter: 
 	- 1403102293298126848
 	- 1450923827225116672
 	- 1415760817642536960
 	- 1450923827225116672
+	- ?? 1606749708247756800
+		- End of trip state of charge Not monitored - Missing parameters
+		- Start of trip state of charge Not monitored - Missing parameters
+	- ?? 1522731665984569344
+	- 1444029372907753472
+	- 1606679698413109248
 - Shouldnt have: 
 	- 1626018637366906880
 	- 1596635336800804864
+	- 1626018637366906880 <<<<<
+	- 1631447698450665472
 	- 
