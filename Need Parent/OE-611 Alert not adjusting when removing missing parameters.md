@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-04T11:13
+updated: 2025-04-07T09:27
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -114,3 +114,15 @@ GetEventTemplate
 - [ ] We'll remember to add the correct status filtering back later once you provide the list.
 
 [[AI FW Versions]]
+
+## Broke it up in sections to test rather
+
+### Base Info
+
+- New Function: C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\udfGetMobileUnitBasicInfoForConfigGroups.sql
+- Test: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare BASICS.sql
+
+### Alerts 1 and 2
+
+- First train what it should be looking at...
+- Then test the two results
