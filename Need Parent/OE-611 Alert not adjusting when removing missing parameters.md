@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T09:27
+updated: 2025-04-07T09:32
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -126,3 +126,7 @@ GetEventTemplate
 
 - First train what it should be looking at...
 - Then test the two results
+- Story:
+	- Assets in config Upload requested state for more than 5 days
+	- Assets in FW upload requested state for more than 3 days
+	- 
