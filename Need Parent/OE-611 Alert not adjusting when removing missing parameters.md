@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T12:05
+updated: 2025-04-07T12:07
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -174,6 +174,9 @@ Since this is a stored procedure with output parameters, testing involves:
 - [ ] business logic question: If a unit reports having a firmware version installed that is _not recognized_ or _not available_ within its current library/configuration context, should it be flagged as outdated?
 
 ### Alert 4
+
+- udfIsMobileUnitMissingParameters
+- ==Toets==: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 4 Missing Params.sql
 
 **Alert Digit 4 (Missing Parameters)**, calculated by `[state].[udfIsMobileUnitMissingParameters]`.
 
