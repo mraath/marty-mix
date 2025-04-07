@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T12:03
+updated: 2025-04-07T12:05
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -120,7 +120,7 @@ GetEventTemplate
 ### Base Info
 
 - New Function: C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\udfGetMobileUnitBasicInfoForConfigGroups.sql
-- Test: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare BASICS.sql
+- ==Test==: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare BASICS.sql
 
 ### Alerts 1 and 2
 
@@ -137,8 +137,8 @@ GetEventTemplate
 	- **Scenario C (Both Alerts):** A unit meeting conditions for both Scenario A and Scenario B. (Expected output: '11')
 	- **Scenario D (Old but Good Status):** A unit whose latest relevant message(s) are older than the thresholds BUT have a status IN (10, 12, 13, 25, 28). (Expected output: '00')
 	- **Scenario E (Recent / No Relevant Messages):** A unit whose latest relevant messages are recent OR has no relevant messages at all. (Expected output: '00')
-- TEST 1: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2.sql
-- Test Many: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2 BULK.sql
+- ==TEST 1==: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2.sql
+- ==Test Many==: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2 BULK.sql
 
 ### Alert 3
 
@@ -165,7 +165,7 @@ Since this is a stored procedure with output parameters, testing involves:
 4. **Executing the Stored Procedure:** Run the SP with the inputs gathered in step 2.
 5. **Comparing Results:** Compare the values returned in the SP's output parameters (`@InstalledFirmwareName`, `@PreferredFirmwareName`, `@IsFirmwareOutdated`) with the expected values calculated in step 3.
 
-- Toets: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
+- ==Toets==: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
 - [ ] Look at results for assets and double check version number order with Zonika or Nicole
 
 - [ ] Test to be resolved: 1519091697465741312
@@ -175,3 +175,25 @@ Since this is a stored procedure with output parameters, testing involves:
 
 ### Alert 4
 
+**Alert Digit 4 (Missing Parameters)**, calculated by `[state].[udfIsMobileUnitMissingParameters]`.
+
+We need to verify if this function correctly identifies situations where an enabled event requires a parameter that is not supported by the mobile unit's configured devices.
+
+**Testing Approach:**
+
+1. **Choose Test Cases:** Select `MobileUnitId`s representing:
+    - A unit where all required event parameters _are_ supported (Expected output: `IsMissingParameters = 0`).
+    - A unit where at least one _required_ parameter for an _enabled_ event is _not_ supported by the configured devices (Expected output: `IsMissingParameters = 1`).
+    - Consider edge cases like peripheral-based events (EventType = 10) or events with overrides.
+2. **Gather Inputs:** For each test `MobileUnitId`, find its `MobileUnitKey`, `MobileDeviceKey`, `LibraryKey`, and `EventTemplateKey` (using `udfGetMobileUnitBasicInfoForConfigGroups` is easiest).
+3. **Manually Verify Expected Output:** This involves replicating the function's logic:
+    - Identify all enabled devices for the unit's template (`TemplateDevices` CTE).
+    - Identify all parameters supported by those devices in the library context (`AllSupportedParameters` CTE).
+    - Identify all enabled events for the unit's template/overrides.
+    - For each enabled event, check its required condition parameters (`template.EventConditions` where `IsRequired = 1`).
+    - Determine if any required parameter is _not_ in the `AllSupportedParameters` list. Also check if at least one parameter _is_ supported and if it's a peripheral event.
+    - Apply the final logic: flag '1' if `RequiredConditionParameterMissing = 1 AND AtLeastOneParameterMonitored = 0 AND IsPeripheralBasedEvent = 0` for any event.
+4. **Execute the Function:** Call `udfIsMobileUnitMissingParameters` with the inputs.
+5. **Compare:** Compare the function's output (`IsMissingParameters`) with your manually determined expected value.
+
+To help with Step 3 (Manual Verification), here's a query that breaks down the logic for a specific test case:
