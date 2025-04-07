@@ -1,88 +1,40 @@
 ---
 created: 2025-04-07T09:37
-updated: 2025-04-07T09:37
+updated: 2025-04-07T09:49
 ---
-INSERT INTO @status
-VALUES
-  (0, 'Unknown');
-INSERT INTO @status
-VALUES
-  (1, 'New');
-INSERT INTO @status
-VALUES
-  (2, 'Pending');
-INSERT INTO @status
-VALUES
-  (3, 'Queued');
-INSERT INTO @status
-VALUES
-  (4, 'Sent');
-INSERT INTO @status
-VALUES
-  (5, 'Postponed');
-INSERT INTO @status
-VALUES
-  (6, 'SendFai1ed');
-INSERT INTO @status
-VALUES
-  (7, 'Aborted');
-INSERT INTO @status
-VALUES
-  (8, 'Deleted');
-INSERT INTO @status
-VALUES
-  (9, 'Received');
-INSERT INTO @status
-VALUES
-  (10, 'Accepted');
-INSERT INTO @status
-VALUES
-  (11, 'Rejected');
-INSERT INTO @status
-VALUES
-  (12, 'Completed');
-INSERT INTO @status
-VALUES
-  (13, 'Acknowledged');
-INSERT INTO @status
-VALUES
-  (14, 'Expired');
-INSERT INTO @status
-VALUES
-  (15, 'DeleteRequested');
-INSERT INTO @status
-VALUES
-  (16, 'DeleteQueued');
-INSERT INTO @status
-VALUES
-  (17, 'ETAChanged');
-INSERT INTO @status
-VALUES
-  (18, 'Read');
-INSERT INTO @status
-VALUES
-  (19, 'Close');
-INSERT INTO @status
-VALUES
-  (20, 'Arrived');
-INSERT INTO @status
-VALUES
-  (21, 'KMETAChanged');
-INSERT INTO @status
-VALUES
-  (22, 'Created');
-INSERT INTO @status
-VALUES
-  (23, 'SentAwaitingResponse');
-INSERT INTO @status
-VALUES
-  (25, 'Complete');
-INSERT INTO @status
-VALUES
-  (26, 'Failed');
-INSERT INTO @status
-VALUES
-  (27, 'Cancelled');
-INSERT INTO @status
-VALUES
-  (28, 'Confirmed');
+0, 'Unknown'
+1, 'New'
+2, 'Pending'
+3, 'Queued'
+4, 'Sent'
+5, 'Postponed'
+6, 'SendFailed'
+7, 'Aborted'
+8, 'Deleted'
+9, 'Received'
+10, 'Accepted'
+11, 'Rejected'
+12, 'Completed'
+13, 'Acknowledged'
+14, 'Expired'
+15, 'DeleteRequested'
+16, 'DeleteQueued'
+17, 'ETAChanged'
+18, 'Read'
+19, 'Close'
+20, 'Arrived'
+21, 'KMETAChanged'
+22, 'Created'
+23, 'SentAwaitingResponse'
+25, 'Complete'
+26, 'Failed'
+27, 'Cancelled'
+28, 'Confirmed'
+
+-- Success
+10, 'Accepted'
+28, 'Confirmed'
+-- Maybe success (message life cycle complete)
+12, 'Completed'
+13, 'Acknowledged'
+25, 'Complete'
