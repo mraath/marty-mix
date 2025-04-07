@@ -1,6 +1,6 @@
 ---
 created: 2025-04-07T16:22
-updated: 2025-04-07T16:43
+updated: 2025-04-07T16:47
 ---
 Herewith the code I am trying to consider when writing the alert for missing parameters
 
@@ -43,5 +43,11 @@ IEffectiveConfig config = mobileUnitManager.GetEffectiveConfig(mobileUnit, mobil
 
 ```c#
 //CLINE: GetEffectiveConfig logic (It is mostly entity frameworks)
+public IEffectiveConfig GetEffectiveConfig(MobileUnit mobileUnit, MobileDeviceTemplate tempalteAggregate, EventTemplate eventTemplateAggregate)
+{
+		IMobileDevice resolvedMobileDevie = GetResolvedMobileDevice(mobileUnit, tempalteAggregate);
+		return GetEffectiveConfig(mobileUnit, eventTemplateAggregate, resolvedMobileDevie);
+}
+
 
 ```
