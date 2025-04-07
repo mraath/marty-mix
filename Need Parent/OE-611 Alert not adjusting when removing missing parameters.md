@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T13:09
+updated: 2025-04-07T13:11
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -211,4 +211,5 @@ Putting this alert into words.
     --  (!requiredConditionParameterMissing && eventEnabled && (atLeastOneParameterMonitored || peripheralBasedEvent)) > MonitoredEvents       [FINE]
 - If there is no supported Parameter, but the eventcondition requires it, the the required condition parameter is missing and the "not monitored" should happen.
 - If there is a supported parameter, and at least one parameter is monitored, then is is OK
+- if there is not requiredConditionParameterMissing && eventEnabled && (atLeastOneParameterMonitored OR peripheralBasedEvent)) then it is monitored
 - 
