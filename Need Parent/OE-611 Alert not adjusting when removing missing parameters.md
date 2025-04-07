@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T15:14
+updated: 2025-04-07T15:16
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -214,5 +214,6 @@ Putting this alert into words.
 - if there is not requiredConditionParameterMissing && eventEnabled && (atLeastOneParameterMonitored OR peripheralBasedEvent)) then it is monitored
 - Should have missing parameter: 
 	- 1403102293298126848
+	- 1450923827225116672
 	- 
 - Shouldnt habe: xxxxxxxxxxxxxx
