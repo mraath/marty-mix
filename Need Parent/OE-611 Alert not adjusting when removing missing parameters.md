@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-07T11:06
+updated: 2025-04-07T11:09
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -143,4 +143,26 @@ GetEventTemplate
 ### Alert 3
 
 - uspGetMobileUnitFirmwareInfo
+
+Since this is a stored procedure with output parameters, testing involves:
+
+1. **Choosing Test Cases:** Select `MobileUnitId`s that represent different firmware scenarios (e.g., up-to-date, outdated, overridden preferred version, different device types like FMBas/non-FMBas, CAN incompatible/compatible).
+	- [ ] up-to-date, 
+	- [ ] outdated, 
+	- [ ] overridden preferred version, 
+	- [ ] different device types like FMBas
+	- [ ] /non-FMBas, 
+	- [ ] CAN incompatible
+	- [ ] /compatible
+2. **Gathering Inputs:** For each test `MobileUnitId`, you need to find its corresponding `MobileUnitKey`, `MobileDeviceKey`, `LibraryKey`, and `MobileDeviceTemplateKey`. You can get these from the `udfGetMobileUnitBasicInfoForConfigGroups` function or by querying the base tables directly.
+3. **Manually Calculating Expected Output:** This is the most involved part. For a given test case, you would need to manually trace the logic within `uspGetMobileUnitFirmwareInfo`:
+    - [ ] Find the installed firmware name (`state.MobileUnitState`).
+    - [ ] Find the preferred firmware name (checking template properties and overrides).
+    - [ ] Determine the device's FMBas/CAN status based on the template's `MobileDeviceKey`.
+    - [ ] Identify the relevant set of available firmware versions based on type and library, applying filters.
+    - [ ] Order the available versions by name, assign sequence numbers.
+    - [ ] Compare the installed version's sequence number to the latest available sequence number to determine the expected `IsFirmwareOutdated` flag (0 or 1).
+4. **Executing the Stored Procedure:** Run the SP with the inputs gathered in step 2.
+5. **Comparing Results:** Compare the values returned in the SP's output parameters (`@InstalledFirmwareName`, `@PreferredFirmwareName`, `@IsFirmwareOutdated`) with the expected values calculated in step 3.
+
 - Toets: 
