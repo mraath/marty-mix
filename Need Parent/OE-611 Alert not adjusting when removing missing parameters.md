@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-08T16:56
+updated: 2025-04-09T07:49
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -254,3 +254,7 @@ Putting this alert into words.
 - Does disabling a peripheral via `OverridenPeripheralDevice` prevent its parameters from being included in `config.AllSupportedParameters`? I am actually not sure. Let's keep it as is for now.
 - Is an event excluded from `config.MonitoredEvents` if _any_ required parameter is missing, or only if _all_ parameters are effectively unsupported (matching the SQL's `AtLeastOneParameterMonitored = 0`)? It should be if ANY paramaters are missing, if I understand the code correctly.
 - Is the exclusion of `EventType = 10` in the SQL correct for the "Missing Parameters" alert's definition? I think this is OK, we can change this at a later stage. 
+
+## MORE TESTING
+
+- [[Amy Alerts Test Cases]]
