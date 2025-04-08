@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-08T14:33
+updated: 2025-04-08T14:51
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -244,8 +244,8 @@ Putting this alert into words.
 		- [ ] Is an event excluded from `config.MonitoredEvents` if _any_ required parameter is missing, or only if _all_ parameters are effectively unsupported (matching the SQL's `AtLeastOneParameterMonitored = 0`)?
 		- [ ] Is the exclusion of `EventType = 10` in the SQL correct for the "Missing Parameters" alert's definition?
 	- Gave it the links to logic... came up with a good assessment and gameplan...
-		- [ ] Are we sure about the eventType 10 being excluded when looking at the code? You mentioned: "1. **Set Final Flag:** If _any_ enabled event (excluding `EventType = 10` as previously decided) was found in step 4 to have a missing required parameter, set `@IsMissingParameters = 1`. Otherwise, set it to `0`."
-		- 
+		- [x] Are we sure about the eventType 10 being excluded when looking at the code? You mentioned: "1. **Set Final Flag:** If _any_ enabled event (excluding `EventType = 10` as previously decided) was found in step 4 to have a missing required parameter, set `@IsMissingParameters = 1`. Otherwise, set it to `0`." ✅ 2025-04-08
+		- [[uspGetMobileUnitMissingParameters_Analysis]]
 
 #### Answers to Roo
 
