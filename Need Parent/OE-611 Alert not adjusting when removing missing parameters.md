@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-08T11:09
+updated: 2025-04-08T13:43
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -234,6 +234,7 @@ Putting this alert into words.
 	- 1631447698450665472
 
 [[Missing Parameters Logic]]
+[[Missing Parameters Logic Links to Logic]]
 
 - Ran out of credits... think Cline > gemini
 - Moved over to Roo
