@@ -1,6 +1,6 @@
 ---
 created: 2025-04-08T16:04
-updated: 2025-04-08T16:12
+updated: 2025-04-08T16:17
 ---
 # C# Logic Flow for Determining "Missing Parameters" Status
 
@@ -124,4 +124,8 @@ graph TD
 
     *   It processes events from the template, applies event-specific overrides (`OverridenEvents`), and checks if all *required* parameters for each enabled event are present in `AllSupportedParameters`. This implicitly defines the `MonitoredEvents` collection.
 
-3.  **Status Determination:** Back in `GetEventTemplate`, the code iterates through all events. If an event is enabled but was *not* deemed "Monitored" during configuration resolution (because a required parameter was missing), its status is set to `NoParameters`.
+1.  **Status Determination:** Back in `GetEventTemplate`, the code iterates through all events. If an event is enabled but was *not* deemed "Monitored" during configuration resolution (because a required parameter was missing), its status is set to `NoParameters`.
+
+
+
+![[MissingParametersLogicFlow PNG versuib.png]]
