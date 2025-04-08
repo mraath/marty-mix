@@ -1,3 +1,7 @@
+---
+created: 2025-04-08T14:44
+updated: 2025-04-08T15:51
+---
 # Analysis and Plan for `uspGetMobileUnitMissingParameters` Logic
 
 ## Objective
