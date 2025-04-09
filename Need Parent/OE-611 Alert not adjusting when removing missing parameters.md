@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T15:09
+updated: 2025-04-09T15:17
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -270,16 +270,17 @@ Putting this alert into words.
 	- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups_Refactored.sql
 	- [x] Basic Info: [state].[MobileUnit_GetMobileUnitBasicInfoForConfigGroups] ✅ 2025-04-09
 		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\ MobileUnit_GetMobileUnitBasicInfoForConfigGroups.sql
-	- [ ] Last Message: [state].[udfGetMobileUnitLastMessageDate]
-		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\ udfGetMobileUnitLastMessageDate.sql
-	- [ ] Alert 1 & 2: [state].[MobileUnit_GetMobileUnitMessageAlerts]
+	- [x] Last Message: [state].[MobileUnit_GetMobileUnitLastMessageDate] ✅ 2025-04-09
+		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\ MobileUnit_GetMobileUnitLastMessageDate.sql
+	- [x] Alert 1 & 2: [state].[MobileUnit_GetMobileUnitMessageAlerts] ✅ 2025-04-09
 		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\ MobileUnit_GetMobileUnitMessageAlerts.sql
 	- [x] Alert 3: [state].[MobileUnit_GetMobileUnitFirmwareInfo] ✅ 2025-04-09
 		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetMobileUnitFirmwareInfo.sql
 	- [x] Alert 4: [state].[MobileUnit_GetMobileUnitMissingParameters] ✅ 2025-04-09
 		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetMobileUnitMissingParameters.sql
 
-- [ ] Rename all the above
+- [x] Rename all the above ✅ 2025-04-09
+- [ ] ENSURE deployment to eg. DEV works, seeing above files might not be in .proj file
 
 [[OE-611 Script to remove all stored procs and functions]]
 
