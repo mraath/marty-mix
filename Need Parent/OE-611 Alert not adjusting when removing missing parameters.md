@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T13:25
+updated: 2025-04-09T13:27
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -298,8 +298,10 @@ Putting this alert into words.
 
 ## Busy changing over 
 
+- I get the following error, I think the way it returns this date is different from the original...
 - **ERROR**: CorrelationId:1646553197155127296|/api/configuration-groups-multiselect/groupId/-5401647754082838271/alerts|04/09/2025 05:13:04|Error:MiX.Core.Clients.HttpRetries+HttpInvalidRequestException: Response status code does not indicate success: 500 ({"ExceptionMessage":"Error parsing column 5 (MessageStatusDateUtc=03/20/2025 12:12:23 \u002B00:00 - Object
 - How can I fix the above error... the new code looks like this file, but seems to fail on : MessageStatusDateUtc
 - C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups.sql
-- The OLD code use to look like this:
+- The OLD code use to look like this: (The last few lines should explain it)
+- C:\Projects\_MiXTelematicsFiles\SQL\OE-611 OLD FULL MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups.sql
 - 
