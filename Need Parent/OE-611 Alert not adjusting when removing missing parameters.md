@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T15:47
+updated: 2025-04-09T15:54
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -215,7 +215,7 @@ Putting this alert into words.
 - if there is not requiredConditionParameterMissing && eventEnabled && (atLeastOneParameterMonitored OR peripheralBasedEvent)) then it is monitored
 - TESTED: Bench units and AMy Bench Units
 	- NEed more info....
-- [ ] MiX Vision > Event types seems to be missing from sql call
+- NA: MiX Vision > Event types seems to be missing from sql call
 - Should have missing parameter: 
 	- 1403102293298126848
 	- 1450923827225116672
@@ -261,7 +261,21 @@ Putting this alert into words.
 - Alert 1
 - Alert 2
 - Alert 3
-- Alert 4
+- Alert 4: Missing parameters
+	- Should have missing parameter: 
+		- 1403102293298126848
+		- 1450923827225116672
+		- 1415760817642536960
+		- 1450923827225116672
+		- 1606749708247756800
+		- 1522731665984569344
+		- 1444029372907753472
+		- 1606679698413109248
+	- Shouldnt have: 
+		- 1626018637366906880
+		- 1596635336800804864
+		- 1626018637366906880
+		- 1631447698450665472
 	- https://integration.mixtelematics.com/#/config-admin/configuration-groups/asset/events?assetId=1606749708247756800
 
 ## Moving parts
