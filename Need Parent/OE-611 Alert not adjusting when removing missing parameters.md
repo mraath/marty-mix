@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T12:25
+updated: 2025-04-09T12:27
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -290,4 +290,5 @@ Putting this alert into words.
 - Basic Info: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare BASICS.sql
 - Alert 1,2: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2.sql
 - Alert 3: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
-- 
+- Alert 4: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 4 Missing Params.sql
+
