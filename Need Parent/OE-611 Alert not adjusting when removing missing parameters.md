@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T12:40
+updated: 2025-04-09T13:14
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -296,3 +296,7 @@ Putting this alert into words.
 - Alert 3: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
 - Alert 4: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 4 Missing Params.sql
 
+## Busy changing over 
+
+- **ERROR**: CorrelationId:1646553197155127296|/api/configuration-groups-multiselect/groupId/-5401647754082838271/alerts|04/09/2025 05:13:04|Error:MiX.Core.Clients.HttpRetries+HttpInvalidRequestException: Response status code does not indicate success: 500 ({"ExceptionMessage":"Error parsing column 5 (MessageStatusDateUtc=03/20/2025 12:12:23 \u002B00:00 - Object
+- 
