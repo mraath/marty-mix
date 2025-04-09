@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T12:03
+updated: 2025-04-09T12:12
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -278,6 +278,11 @@ Putting this alert into words.
 		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\uspGetMobileUnitFirmwareInfo.sql
 	- Alert 4: [state].[uspGetMobileUnitMissingParameters_FromCSharpLogic]
 		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\uspGetMobileUnitMissingParameters_FromCSharpLogic.sql
+
+### No longer needed
+
+- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\udfIsMobileUnitMissingParameters.sql
+- 
 
 ## Testing moving parts
 
