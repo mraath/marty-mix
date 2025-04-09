@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T15:03
+updated: 2025-04-09T15:05
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -276,7 +276,7 @@ Putting this alert into words.
 		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\ udfGetMobileUnitMessageAlerts.sql
 	- [x] Alert 3: [state].[MobileUnit_GetMobileUnitFirmwareInfo] ✅ 2025-04-09
 		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetMobileUnitFirmwareInfo.sql
-	- [ ] Alert 4: [state].[MobileUnit_GetMobileUnitMissingParameters]
+	- [x] Alert 4: [state].[MobileUnit_GetMobileUnitMissingParameters] ✅ 2025-04-09
 		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetMobileUnitMissingParameters.sql
 
 - [ ] Rename all the above
