@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T12:33
+updated: 2025-04-09T12:40
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -280,6 +280,8 @@ Putting this alert into words.
 		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\uspGetMobileUnitMissingParameters_FromCSharpLogic.sql
 
 - [ ] Rename all the above
+
+[[OE-611 Script to remove all stored procs and functions]]
 
 ### No longer needed (DELETED)
 
