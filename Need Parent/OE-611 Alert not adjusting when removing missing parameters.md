@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T15:54
+updated: 2025-04-09T15:58
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -258,8 +258,7 @@ Putting this alert into words.
 ## MORE TESTING
 
 - [[Amy Alerts Test Cases]]
-- Alert 1
-- Alert 2
+- Alert 1, 2
 - Alert 3
 - Alert 4: Missing parameters
 	- Should have missing parameter: 
