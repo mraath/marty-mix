@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T07:49
+updated: 2025-04-09T11:57
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -258,3 +258,25 @@ Putting this alert into words.
 ## MORE TESTING
 
 - [[Amy Alerts Test Cases]]
+- Alert 1
+- Alert 2
+- Alert 3
+- Alert 4
+	- https://integration.mixtelematics.com/#/config-admin/configuration-groups/asset/events?assetId=1606749708247756800
+
+## Moving parts
+
+- Putting it all together
+	- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups_Refactored.sql
+	- Alert 1: 
+		- 
+	- Alert 2:
+		- 
+	- Alert 3:
+		- 
+	- Alert 4: [state].[uspGetMobileUnitMissingParameters_FromCSharpLogic]
+		- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\uspGetMobileUnitMissingParameters_FromCSharpLogic.sql
+
+## Testing moving parts
+
+- x
