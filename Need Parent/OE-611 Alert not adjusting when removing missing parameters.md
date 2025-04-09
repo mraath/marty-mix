@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T12:12
+updated: 2025-04-09T12:14
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -282,8 +282,8 @@ Putting this alert into words.
 ### No longer needed
 
 - C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\udfIsMobileUnitMissingParameters.sql
-- 
+- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\uspIsMobileUnitMissingParameters.sql
 
 ## Testing moving parts
 
-- x
+- ALL: 
