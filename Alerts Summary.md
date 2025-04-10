@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-10T12:28
+updated: 2025-04-10T12:37
 ---
 
 ## Four main Alerts
@@ -23,7 +23,11 @@ TEST Ideas:
 	- **Single more explained**: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2.sql
 	- **Multiple Compare**: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2 BULK.sql
 
-- [ ] Some questions in OE-623 from Amy regarding Comms log expiring at a different amount of days - ==have asked Nicole== 3 (spec) 5 (comms)
+- [x] Some questions in OE-623 from Amy regarding Comms log expiring at a different amount of days - have asked Nicole 
+	- 3 (spec) 5 (comms) ✅ 2025-04-10
+	- **3 DAYS**
+	- ![[Alerts Summary FW Outdated 3 days.png]]
+	- [[MiX4000 Technical Information V5 1.pdf]]
 - https://csojiramixtelematics.atlassian.net/browse/OE-623?focusedCommentId=657100
 - AssetId: 1596635336800804864 (FW Expired)
 
