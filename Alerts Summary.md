@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-10T12:27
+updated: 2025-04-10T12:28
 ---
 
 ## Four main Alerts
@@ -19,9 +19,9 @@ TEST Ideas:
 - [ ] **Scenario E (Recent / No Relevant Messages):** A unit whose latest relevant messages are recent OR has no relevant messages at all. (Expected output: '00')
 - [ ] **Scenario D (Old but Good Status):** A unit whose latest relevant message(s) are older than the thresholds BUT have a status IN (10, 12, 13, 25, 28). (Expected output: '00')
 
-- [ ] Try these, but change them going forward:
-	- Single more explained: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2.sql
-	- Multiple Compare: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2 BULK.sql
+- [x] Try these, but change them going forward: ✅ 2025-04-10
+	- **Single more explained**: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2.sql
+	- **Multiple Compare**: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2 BULK.sql
 
 - [ ] Some questions in OE-623 from Amy regarding Comms log expiring at a different amount of days - ==have asked Nicole== 3 (spec) 5 (comms)
 - https://csojiramixtelematics.atlassian.net/browse/OE-623?focusedCommentId=657100
