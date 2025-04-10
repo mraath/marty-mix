@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-10T12:54
+updated: 2025-04-10T13:00
 ---
 
 ## Four main Alerts
@@ -42,6 +42,8 @@ TEST Ideas:
 	- [ ] CAN incompatible
 	- [ ] /compatible
 - I personally don't know if we need to test it so intensely, but it might help
+- This one nicely shows the versions, installed and latest
+- [ ] CHECK if it should work with the installed or preferred...
 - Test case: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
 - [ ] Double check version number order with Zonika or Nicole
 ### Alert 4: Missing Parameters
