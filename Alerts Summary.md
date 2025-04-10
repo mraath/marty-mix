@@ -1,11 +1,13 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-10T13:42
+updated: 2025-04-10T13:45
 ---
 
 ## Four main Alerts
 
 ### Alert 1: Assets in config Upload requested state for more than 5 days
+
+[state].[MobileUnit_GetMobileUnitMessageAlerts]
 
 TEST Ideas:
 
@@ -13,6 +15,8 @@ TEST Ideas:
 - [ ] **Scenario D (Old but Good Status):** A unit whose latest relevant message(s) are older than the thresholds BUT have a status IN (10, 12, 13, 25, 28). (Expected output: '00')
 
 ### Alert 2: Assets in FW upload requested state for more than 3 days
+
+[state].[MobileUnit_GetMobileUnitMessageAlerts]
 
 - [ ] **Scenario B (Firmware Alert):** A unit whose _latest_ message of type 103 is older than 3 days AND has a status NOT IN (10, 12, 13, 25, 28). (Expected output: '01' or '11')
 - [ ] **Scenario C (Both Alerts):** A unit meeting conditions for both Scenario A and Scenario B. (Expected output: '11')
@@ -33,6 +37,8 @@ TEST Ideas:
 
 ### Alert 3: Preferred FW More than 2 versions old
 
+[state].[MobileUnit_GetMobileUnitFirmwareInfo]
+
 - Select `MobileUnitId`s that represent different firmware scenarios:
 	- [ ] up-to-date, 
 	- [ ] outdated, 
@@ -50,6 +56,8 @@ TEST Ideas:
 ### Alert 4: Missing Parameters
 
 <mark class="hltr-green">SEEMS GREAT</mark>
+
+[state].[MobileUnit_GetMobileUnitMissingParameters]
 
 Have a lot to test already:
 ```sql
