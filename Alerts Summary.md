@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-10T12:37
+updated: 2025-04-10T12:54
 ---
 
 ## Four main Alerts
@@ -33,8 +33,17 @@ TEST Ideas:
 
 ### Alert 3: FW More than 2 versions old
 
-- 
-
+- Select `MobileUnitId`s that represent different firmware scenarios:
+	- [ ] up-to-date, 
+	- [ ] outdated, 
+	- [ ] overridden preferred version, 
+	- [ ] different device types like FMBas
+	- [ ] /non-FMBas, 
+	- [ ] CAN incompatible
+	- [ ] /compatible
+- I personally don't know if we need to test it so intensely, but it might help
+- Test case: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
+- [ ] Double check version number order with Zonika or Nicole
 ### Alert 4: Missing Parameters
 
 Have a lot to test already:

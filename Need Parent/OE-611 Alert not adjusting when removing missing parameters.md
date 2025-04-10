@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-09T16:21
+updated: 2025-04-10T12:54
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -148,13 +148,13 @@ GetEventTemplate
 Since this is a stored procedure with output parameters, testing involves:
 
 1. **Choosing Test Cases:** Select `MobileUnitId`s that represent different firmware scenarios (e.g., up-to-date, outdated, overridden preferred version, different device types like FMBas/non-FMBas, CAN incompatible/compatible).
-	- [ ] up-to-date, 
-	- [ ] outdated, 
-	- [ ] overridden preferred version, 
-	- [ ] different device types like FMBas
-	- [ ] /non-FMBas, 
-	- [ ] CAN incompatible
-	- [ ] /compatible
+	- [x] up-to-date, ✅ 2025-04-10
+	- [x] outdated, ✅ 2025-04-10
+	- [x] overridden preferred version, ✅ 2025-04-10
+	- [x] different device types like FMBas ✅ 2025-04-10
+	- [x] /non-FMBas, ✅ 2025-04-10
+	- [x] CAN incompatible ✅ 2025-04-10
+	- [x] /compatible ✅ 2025-04-10
 2. **Gathering Inputs:** For each test `MobileUnitId`, you need to find its corresponding `MobileUnitKey`, `MobileDeviceKey`, `LibraryKey`, and `MobileDeviceTemplateKey`. You can get these from the `udfGetMobileUnitBasicInfoForConfigGroups` function or by querying the base tables directly.
 3. **Manually Calculating Expected Output:** This is the most involved part. For a given test case, you would need to manually trace the logic within `uspGetMobileUnitFirmwareInfo`:
     - [ ] Find the installed firmware name (`state.MobileUnitState`).
