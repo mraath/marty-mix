@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-10T13:00
+updated: 2025-04-10T13:39
 ---
 
 ## Four main Alerts
@@ -31,7 +31,7 @@ TEST Ideas:
 - https://csojiramixtelematics.atlassian.net/browse/OE-623?focusedCommentId=657100
 - AssetId: 1596635336800804864 (FW Expired)
 
-### Alert 3: FW More than 2 versions old
+### Alert 3: Preferred FW More than 2 versions old
 
 - Select `MobileUnitId`s that represent different firmware scenarios:
 	- [ ] up-to-date, 
