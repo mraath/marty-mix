@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-11T10:43
+updated: 2025-04-11T10:50
 ---
 
 ## Four main Alerts
@@ -37,6 +37,8 @@ TEST Ideas:
 
 ### Alert 3: Preferred FW More than 2 versions old
 
+<mark class="hltr-orange">SOME QUESTIONS</mark>
+
 [state].[MobileUnit_GetMobileUnitFirmwareInfo]
 
 - Select `MobileUnitId`s that represent different firmware scenarios:
@@ -55,7 +57,10 @@ TEST Ideas:
 		- FIRST above this, set it to true, then
 		- IF it is not null... default to false...
 		- This should fix it
-- Test case: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
+- GET DATA to work with:
+	- C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Alerts 3 Get DATA to test with.sql
+- Test case: 
+	- C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
 - [ ] Double check version number order with Zonika or Nicole
 
 ### Alert 4: Missing Parameters
