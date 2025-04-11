@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-11T11:30
+updated: 2025-04-11T14:42
 ---
 
 ## Four main Alerts
@@ -8,7 +8,8 @@ updated: 2025-04-11T11:30
 ### Alert 1: Assets in config Upload requested state for more than 5 days - Alert 2: Assets in FW upload requested state for more than 3 days
 
 - Get DATA: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Alerts 1_2 Get DATA.sql
-- TEST:
+- TEST BULK: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2 BULK.sql
+- Test Single - More info: xxxxxxxxxxxxxxx
 
 [state].[MobileUnit_GetMobileUnitMessageAlerts]
 
