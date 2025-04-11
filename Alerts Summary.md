@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-10T13:45
+updated: 2025-04-11T10:43
 ---
 
 ## Four main Alerts
@@ -50,6 +50,11 @@ TEST Ideas:
 - I personally don't know if we need to test it so intensely, but it might help
 - This one nicely shows the versions, installed and latest
 - [ ] CHECK if it should work with the installed or preferred...
+- [ ] CHECK if no preferred, should the Alert be 1
+	- IF SO, in that section where we test IF it is not nulll...
+		- FIRST above this, set it to true, then
+		- IF it is not null... default to false...
+		- This should fix it
 - Test case: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
 - [ ] Double check version number order with Zonika or Nicole
 
