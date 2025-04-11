@@ -1,27 +1,26 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-11T10:50
+updated: 2025-04-11T11:30
 ---
 
 ## Four main Alerts
 
-### Alert 1: Assets in config Upload requested state for more than 5 days
+### Alert 1: Assets in config Upload requested state for more than 5 days - Alert 2: Assets in FW upload requested state for more than 3 days
+
+- Get DATA: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Alerts 1_2 Get DATA.sql
+- TEST:
 
 [state].[MobileUnit_GetMobileUnitMessageAlerts]
 
-TEST Ideas:
+- TEST Ideas For Alert 1:
+	- [ ] **Scenario A (Config Alert):** A unit whose _latest_ message of type 254 or 255 is older than 5 days AND has a status NOT IN (10, 12, 13, 25, 28). (Expected output: '10' or '11')
+	- [ ] **Scenario D (Old but Good Status):** A unit whose latest relevant message(s) are older than the thresholds BUT have a status IN (10, 12, 13, 25, 28). (Expected output: '00')
 
-- [ ] **Scenario A (Config Alert):** A unit whose _latest_ message of type 254 or 255 is older than 5 days AND has a status NOT IN (10, 12, 13, 25, 28). (Expected output: '10' or '11')
-- [ ] **Scenario D (Old but Good Status):** A unit whose latest relevant message(s) are older than the thresholds BUT have a status IN (10, 12, 13, 25, 28). (Expected output: '00')
-
-### Alert 2: Assets in FW upload requested state for more than 3 days
-
-[state].[MobileUnit_GetMobileUnitMessageAlerts]
-
-- [ ] **Scenario B (Firmware Alert):** A unit whose _latest_ message of type 103 is older than 3 days AND has a status NOT IN (10, 12, 13, 25, 28). (Expected output: '01' or '11')
-- [ ] **Scenario C (Both Alerts):** A unit meeting conditions for both Scenario A and Scenario B. (Expected output: '11')
-- [ ] **Scenario E (Recent / No Relevant Messages):** A unit whose latest relevant messages are recent OR has no relevant messages at all. (Expected output: '00')
-- [ ] **Scenario D (Old but Good Status):** A unit whose latest relevant message(s) are older than the thresholds BUT have a status IN (10, 12, 13, 25, 28). (Expected output: '00')
+- Test Ideas for Alert 2:
+	- [ ] **Scenario B (Firmware Alert):** A unit whose _latest_ message of type 103 is older than 3 days AND has a status NOT IN (10, 12, 13, 25, 28). (Expected output: '01' or '11')
+	- [ ] **Scenario C (Both Alerts):** A unit meeting conditions for both Scenario A and Scenario B. (Expected output: '11')
+	- [ ] **Scenario E (Recent / No Relevant Messages):** A unit whose latest relevant messages are recent OR has no relevant messages at all. (Expected output: '00')
+	- [ ] **Scenario D (Old but Good Status):** A unit whose latest relevant message(s) are older than the thresholds BUT have a status IN (10, 12, 13, 25, 28). (Expected output: '00')
 
 - [x] Try these, but change them going forward: ✅ 2025-04-10
 	- **Single more explained**: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2.sql
