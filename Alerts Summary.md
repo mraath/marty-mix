@@ -1,15 +1,18 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-11T14:42
+updated: 2025-04-11T15:18
 ---
 
 ## Four main Alerts
 
 ### Alert 1: Assets in config Upload requested state for more than 5 days - Alert 2: Assets in FW upload requested state for more than 3 days
 
+<mark class="hltr-green">SEEMS GREAT</mark>
+
 - Get DATA: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Alerts 1_2 Get DATA.sql
+- Get DATA ALL: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Alerts 1_2 Get DATA ALL.sql
 - TEST BULK: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2 BULK.sql
-- Test Single - More info: xxxxxxxxxxxxxxx
+- Test Single - More info: C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 1_2.sql
 
 [state].[MobileUnit_GetMobileUnitMessageAlerts]
 
@@ -62,6 +65,9 @@ updated: 2025-04-11T14:42
 - Test case: 
 	- C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
 - [ ] Double check version number order with Zonika or Nicole
+
+- Three questions about Alert 3, FW Preferred Version is more than 2 versions behind:
+  1) Am I correct in assuming the 
 
 ### Alert 4: Missing Parameters
 
