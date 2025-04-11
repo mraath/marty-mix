@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-11T15:22
+updated: 2025-04-11T15:27
 ---
 
 ## Four main Alerts
@@ -64,10 +64,11 @@ updated: 2025-04-11T15:22
 	- C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Alerts 3 Get DATA to test with.sql
 - Test case: 
 	- C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
-- [ ] Double check version number order with Zonika or Nicole
-
-- Three questions about Alert 3, FW Preferred Version is more than 2 versions behind:
-  1) Am I correct in assuming the VersionNumber
+- [ ] Double check below with Zonika or Nicole
+	- Three questions about Alert 3, FW Preferred Version is more than 2 versions behind:
+	  1) Am I correct in assuming the VersionNumber order is correct to determine if it is 2 versions behind.
+	  2) Based on the spec I am checking if the Preferred version is outdated, not the installed version.
+	  3) Question: IF the preferred FW is blank, should the Alert be raised? Is seems like it should be.
 
 ### Alert 4: Missing Parameters
 
