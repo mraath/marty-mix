@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-11T15:27
+updated: 2025-04-14T08:58
 ---
 
 ## Four main Alerts
@@ -60,7 +60,7 @@ updated: 2025-04-11T15:27
 		- FIRST above this, set it to true, then
 		- IF it is not null... default to false...
 		- This should fix it
-- GET DATA to work with:
+- GET **DATA** to work with:
 	- C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Alerts 3 Get DATA to test with.sql
 - Test case: 
 	- C:\Projects\_MiXTelematicsFiles\SQL\OE-614 Original and Refactor compare Alerts 3.sql
