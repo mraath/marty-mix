@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-14T08:58
+updated: 2025-04-14T09:33
 ---
 
 ## Four main Alerts
@@ -43,6 +43,7 @@ updated: 2025-04-14T08:58
 <mark class="hltr-orange">SOME QUESTIONS</mark>
 
 [state].[MobileUnit_GetMobileUnitFirmwareInfo]
+Path: C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetMobileUnitFirmwareInfo.sql
 
 - Select `MobileUnitId`s that represent different firmware scenarios:
 	- [ ] up-to-date, 
