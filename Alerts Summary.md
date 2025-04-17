@@ -1,6 +1,6 @@
 ---
 created: 2025-04-10T08:43
-updated: 2025-04-14T09:33
+updated: 2025-04-17T10:24
 ---
 
 ## Four main Alerts
@@ -136,3 +136,7 @@ END
 SELECT * FROM @YourResultsTable;
 ```
 
+
+## Final PR
+
+- [ ] [Pull request 123282: OE-611: Alerts, attempt 1 of.... hopefully 1 - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/DynaMiX.DeviceConfig/pullrequest/123282?path=/DeviceConfiguration.DataProcessing/DeviceConfiguration.DataProcessing.sqlproj)
