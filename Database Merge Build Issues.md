@@ -1,6 +1,6 @@
 ---
 created: 2025-04-17T07:59
-updated: 2025-04-17T07:59
+updated: 2025-04-17T08:49
 ---
 ## Errors
 
@@ -21,3 +21,12 @@ updated: 2025-04-17T07:59
     274 Warning(s)
     10 Error(s)
 ```
+
+## AS BIGINT
+
+Was due to SQL not being 2012 when TRY_CAST was introduced
+
+## DeviceConfiguration not found
+
+[[Creating a Database Name SQL Command Variable]]
+For now I will just convert the function to a stored proc - will be LITTLE bit slower
