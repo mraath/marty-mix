@@ -1,3 +1,17 @@
+---
+created: 2025-03-06T16:42
+updated: 2025-04-17T10:31
+---
+
+## Newer
+
+
+- Usually on the server hosting on L$ as .log files
+- Logz.io (discontinued)
+- [Axiom](https://app.axiom.co/ "https://app.axiom.co/")
+	- Sign in and then select "Continue with SAML" and the "slug" to enter is "powerfleet" -- all lowercase
+
+## OLDER
 
 When setting up a log I usually go to:
 [[Logz.io]] to something already set up like this:
