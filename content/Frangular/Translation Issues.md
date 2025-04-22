@@ -1,6 +1,6 @@
 ---
 created: 2025-04-22T09:14
-updated: 2025-04-22T09:31
+updated: 2025-04-22T10:20
 ---
 > Sometimes we have ==issues== with languaging. Usually if we have something dynamic in the language string. Eg. "You have selected 5 asset(s) to be moved..." it might cause issues. Herewith how you can resolve this.
 
@@ -56,3 +56,7 @@ onAssetSelectionChange(selection: any) {
 
 - Test locally
 - Test on INT
+
+## Example PR
+
+[Pull request 123523: OE-562: Language issue with asset(s) - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/123523?_a=files)
