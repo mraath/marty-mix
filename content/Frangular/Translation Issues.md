@@ -1,6 +1,6 @@
 ---
 created: 2025-04-22T09:14
-updated: 2025-04-22T09:26
+updated: 2025-04-22T09:31
 ---
 > Sometimes we have ==issues== with languaging. Usually if we have something dynamic in the language string. Eg. "You have selected 5 asset(s) to be moved..." it might cause issues. Herewith how you can resolve this.
 
@@ -11,13 +11,13 @@ Do the normal languaging as per [[Frangular Languaging]]
 
 ## HTML
 
+Introduce a new variable which will be used to translate the text in the .ts file.
+
 ```html
 <div class="well">
   <p innerHtml="{{resetModalTranslatedText}}"></p>
 </div>
 ```
-
-Introduce a new variable which will be used to translate the text in the .ts file.
 
 ## TS file
 
