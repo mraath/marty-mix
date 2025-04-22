@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2025-03-06T10:04
+updated: 2025-04-22T09:15
 ---
 ## Basic intro to Frangular (FR)
 
@@ -106,6 +106,7 @@ I will now add an example for the new Frangular page.
 	- [[Frangular Error Messages]]
 - **Languaging**: 
 	- [[Frangular Languaging]]
+	- [[Translation Issues]]
 - Grid:
 	- [[Grid Sorting]]
 	- [[Grid Column Chooser Fix]]

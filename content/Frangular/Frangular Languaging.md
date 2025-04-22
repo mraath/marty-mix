@@ -1,7 +1,8 @@
 ---
 created: 2024-07-25T16:51
-updated: 2024-09-06T14:09
+updated: 2025-04-22T09:16
 ---
+
 ## Intro
 
 Herewith some notes from the original video.
