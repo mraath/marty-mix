@@ -1,6 +1,6 @@
 ---
 created: 2025-04-25T08:04
-updated: 2025-04-25T10:01
+updated: 2025-04-25T10:08
 ---
 
 >[!Question] I am looking into rewriting the templates I have in this solution. Basically whereever you see *template*.html, most of those files will need to be rewritten. Please bring up a list of templates and how they are used within other templates. Please start on the open tabs.
@@ -404,4 +404,11 @@ Based on this assessment derived from the plan document:
 Once we agree on the target and the high-level approach, I can finalize the plan details.
 
 ---
+
+> [!Question]  
+Yes, that assessment is correct. Please refine the plan for rewriting "Locations".
+Before we start though: 
+>1) earlier you had issues finding *template*.html files. I am just scared this will influence our plan. So let's first fix this
+>2) You mentioned things like: getCalibrationTemplate(parameter), Peripherals, Parameters, dynamically determined calibration template via `controller.getCalibrationTemplate(parameter)`, property.templateUrl. I just want to ensure we also include these while planning.
+>3) Then please do continue refining the rewrite of the locations, first the Library, then the Template, then the Asset part.
 
