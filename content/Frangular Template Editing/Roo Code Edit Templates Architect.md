@@ -1,6 +1,6 @@
 ---
 created: 2025-04-25T08:04
-updated: 2025-04-25T08:55
+updated: 2025-04-25T10:00
 ---
 
 >[!Question] I am looking into rewriting the templates I have in this solution. Basically whereever you see *template*.html, most of those files will need to be rewritten. Please bring up a list of templates and how they are used within other templates. Please start on the open tabs.
@@ -364,4 +364,4 @@ The next logical step is to begin implementing this plan. I recommend switching 
 
 ---
 
-xxxxxxx
+I ask
