@@ -1,6 +1,6 @@
 ---
 created: 2025-04-25T08:04
-updated: 2025-04-25T10:08
+updated: 2025-04-25T14:41
 ---
 
 >[!Question] I am looking into rewriting the templates I have in this solution. Basically whereever you see *template*.html, most of those files will need to be rewritten. Please bring up a list of templates and how they are used within other templates. Please start on the open tabs.
@@ -225,6 +225,9 @@ Based on the search results and our earlier analysis of the open files, we can i
 **Proposed Rewrite Plan:**
 
 [[Roo Code Edit Templates.svg]]
+
+![[Roo Edit Templates.excalidraw.svg]]
+
 
 Given the heavy reliance on shared templates, rewriting them effectively requires a structured approach, likely starting from the most fundamental shared components.
 
