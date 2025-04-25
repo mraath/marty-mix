@@ -1,7 +1,7 @@
 ---
 title: Welcome to Marty's Vault
 created: 2024-07-22T08:09
-updated: 2025-03-26T09:31
+updated: 2025-04-24T16:59
 ---
 
 > [!note]
@@ -13,6 +13,7 @@ updated: 2025-03-26T09:31
 ### Help files
 
 - [[Frangular Getting Started]]
+- [[Frangular Edit Templates]]
 - [[PMU Overview]]
 
 ### Boomerang SRs
