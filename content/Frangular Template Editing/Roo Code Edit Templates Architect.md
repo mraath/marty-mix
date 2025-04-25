@@ -1,6 +1,6 @@
 ---
 created: 2025-04-25T08:04
-updated: 2025-04-25T10:00
+updated: 2025-04-25T10:01
 ---
 
 >[!Question] I am looking into rewriting the templates I have in this solution. Basically whereever you see *template*.html, most of those files will need to be rewritten. Please bring up a list of templates and how they are used within other templates. Please start on the open tabs.
@@ -364,4 +364,41 @@ The next logical step is to begin implementing this plan. I recommend switching 
 
 ---
 
-I ask
+> [!Question] I asked which would be the easiest and the most complexed to implement
+
+Okay, I have read the `template_rewrite_plan.md` file. It provides an excellent breakdown of the templates within the `ConfigAdmin` module and their dependencies. Based on this plan, here's my assessment of the complexity for rewriting the "Locations", "Mobile Devices", and "Events" areas:
+
+**Analysis based on `template_rewrite_plan.md`:**
+
+1.  **Shared Dependencies:** All three areas (Locations, Mobile Devices, Events) rely on a common set of shared templates for navigation, layout, and basic functions (like loading modals, tabs, grids). Rewriting these shared components (`_cdn/Templates/ConfigAdmin/...`) is a prerequisite or concurrent task for any of the three areas.
+2.  **Locations:**
+    *   Has specific templates for the main template screen, library, list, edit, and asset edit views.
+    *   Relies on a dedicated shared content template (`LocationEditContentTemplate.html`).
+    *   Depends on the common shared layout/navigation templates.
+    *   *Complexity:* Appears relatively self-contained compared to Mobile Devices.
+3.  **Events:**
+    *   Has specific templates for the main template screen (including duplication), library, list, create, edit, and asset edit views.
+    *   Relies on a dedicated shared content template (`EventEditContentTemplate.html`).
+    *   Depends on the common shared layout/navigation templates.
+    *   *Complexity:* Similar in scope to Locations, perhaps slightly more templates due to create/duplicate variations mentioned.
+4.  **Mobile Devices:**
+    *   Has specific templates for the main template screen, library, list, edit, peripheral management within templates, and asset edit views.
+    *   Crucially, it relies heavily on complex shared templates like `DeviceSettingsTemplate.html`, `LogicalDeviceSettingsTemplate.html`, and `LogicalCameraDeviceSettings.html`. These, in turn, rely on dynamically included templates for properties and calibration, adding significant complexity.
+    *   The plan also indicates strong ties to Peripherals, Parameters, Firmware, and CAN libraries, suggesting a rewrite of "Mobile Devices" would likely need to encompass these related areas as well.
+    *   *Complexity:* Appears significantly higher due to the intricate shared device setting dependencies and the broader scope including peripherals and related libraries.
+
+**Conclusion:**
+
+*   **Simplest:** **Locations**. While similar in the number of *primary* templates to Events, it seems less entangled with the highly complex and dynamic shared device setting templates that Mobile Devices depend on.
+*   **Most Complex:** **Mobile Devices**. This area has the most dependencies on complex, potentially dynamic shared templates and appears interconnected with several other library sections (Peripherals, Parameters, etc.), making its rewrite scope the largest and most intricate.
+
+**Next Steps:**
+
+Based on this assessment derived from the plan document:
+
+1.  Does this analysis of Locations being the simplest and Mobile Devices the most complex align with your understanding?
+2.  Would you like me to refine the plan further, perhaps focusing specifically on the steps to rewrite the "Locations" templates as the simplest starting point?
+
+Once we agree on the target and the high-level approach, I can finalize the plan details.
+
+---
