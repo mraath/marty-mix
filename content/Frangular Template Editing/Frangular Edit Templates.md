@@ -1,6 +1,6 @@
 ---
 created: 2025-04-23T16:09
-updated: 2025-04-25T08:53
+updated: 2025-04-25T16:35
 ---
 
 ## Questions:
@@ -44,6 +44,7 @@ updated: 2025-04-25T08:53
 				- Line: Connection Click: <mark class="hltr-orange">(iii)</mark> https://integration.mixtelematics.com/#/config-admin/configuration-groups/asset/mobile-device/edit?assetId=1634286684147179520&lineId=401558247868188484
 					- ... Select peripheral device (Parameter) (Features and settings)
 					- [ ] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\AssetMobileDevicePeripheralEditTemplate.html
+
 	- Event Template Click: <mark class="hltr-pink">(A)</mark> https://integration.mixtelematics.com/#/config-admin/templates/events/edit?id=245193282188643425&duplicate=0
 		- Event template name
 		- [ ] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\EventTemplateTemplate.html
