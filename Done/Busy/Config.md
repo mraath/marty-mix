@@ -1,7 +1,14 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-03-06T12:00
+updated: 2025-05-05T11:58
 ---
+
+## Related
+
+[[Operations Tools]]
+
+## High level
+
 Our [[Team]] is mostly involved in:
 - Setting Device Configuration
 - Reading Configuration
