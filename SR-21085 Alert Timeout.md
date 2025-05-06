@@ -1,6 +1,6 @@
 ---
 created: 2023-03-27T07:35
-updated: 2025-05-06T14:06
+updated: 2025-05-06T16:22
 status: busy
 comment: 
 priority: 1
@@ -69,6 +69,7 @@ GetConfigurationGroupsAlerts: MiX.Config.Frangular.API.Controllers.Configuration
 ## Code
 
 - 25.6
+- Branch: Config/MR/Bug/SR_21085_Alerts_Timeout_25_6
 - [ ] PR PROD: xxxxxxx
 - [ ] PR UAT: xxxxxxx
 - [ ] PR INT: [Pull request 124122: SR-21085: Alerts potentially takes long. Timeout set higher. - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/124122?_a=files)
