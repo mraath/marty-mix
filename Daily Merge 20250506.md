@@ -1,6 +1,6 @@
 ---
 created: 2023-04-18T07:58
-updated: 2025-05-06T16:17
+updated: 2025-05-06T16:18
 ---
 Branch: (Config/MR/DailyMerge/2025-05-06)
 
@@ -15,15 +15,6 @@ Daily Merge to Dev 2025-05-06
 
 ## Try running these and see if it works, might need refining in the template:
 
-### Core
-
-``` cmd
-git checkout integration; git fetch origin; git pull
-git checkout development; git fetch origin; git pull
-git checkout -b Config/MR/DailyMerge/2025-05-06 development
-git merge --no-ff  integration
-```
-https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequestcreate?sourceRef=Config/MR/DailyMerge/2025-05-06&targetRef=development&sourceRepositoryId=40eeca32-3a77-4551-91a0-402d4c96d679&targetRepositoryId=40eeca32-3a77-4551-91a0-402d4c96d679
 
 ### API
 
