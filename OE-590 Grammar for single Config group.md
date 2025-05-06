@@ -45,7 +45,9 @@ When only one config group is selected, the plural form appears in the dialog
 - [ ] FR UI: SEEMS to be done - Pallavi
 - [ ] Languaging
 
-String: Select when to upload configuration to x configuration groups once the compile has successfully completed
+Image String: Select when to upload configuration to x configuration groups once the compile has successfully completed
+New: Select when to upload configuration to {{selectedConfigurationCount}} configuration group(s) once the compile has successfully completed
+
 Seems like Pallavi Already did this:
 - compileUploadConfigurationGroupModalText
 - compileUploadTranslatedText
