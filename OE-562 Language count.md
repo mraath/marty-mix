@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-22T09:48
+updated: 2025-05-06T13:06
 ---
 
 # OE-562 Language count
@@ -38,7 +38,7 @@ Issue string:
 
 {{incompatibleAssets}} asset(s) have associated mobile devices that do not match the mobile device in the selected configuration group. Proceeding with this move will remove the mobile devices, and they will be decommissioned.
 
-- Followed [[Translation Issues]]
+- Followed [[Languaging Translation Issues]]
 
 Testing this locally:
 Eng:
