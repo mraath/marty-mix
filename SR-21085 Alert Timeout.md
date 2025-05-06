@@ -1,6 +1,6 @@
 ---
 created: 2023-03-27T07:35
-updated: 2025-05-06T12:09
+updated: 2025-05-06T14:06
 status: busy
 comment: 
 priority: 1
@@ -72,4 +72,6 @@ GetConfigurationGroupsAlerts: MiX.Config.Frangular.API.Controllers.Configuration
 - [ ] PR PROD: xxxxxxx
 - [ ] PR UAT: xxxxxxx
 - [ ] PR INT: [Pull request 124122: SR-21085: Alerts potentially takes long. Timeout set higher. - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/124122?_a=files)
+
+- Jako: [Pull request 124040: SR-21109 - Increase Timeout for ConfigInternalClient, DeviceConfigClient Repositories - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/124040)
 - 
