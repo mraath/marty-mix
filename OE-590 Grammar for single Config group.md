@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-06T12:59
+updated: 2025-05-06T13:03
 ---
 
 # OE-590 Grammar for single Config group
@@ -34,4 +34,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
 ## Shorter Description
+
+When only one config group is selected, the plural form appears in the dialog
+![[OE-590 Grammar for single Config group.png]]
 
