@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-06T16:53
+updated: 2025-05-06T16:55
 ---
 
 # OE-590 Grammar for single Config group
@@ -42,7 +42,7 @@ When only one config group is selected, the plural form appears in the dialog
 
 ## Fixes
 
-- [ ] FR UI: xxxxxxxx
+- [ ] FR UI: SEEMS to be done - Pallavi
 - [ ] Languaging
 
 String: Select when to upload configuration to x configuration groups once the compile has successfully completed
