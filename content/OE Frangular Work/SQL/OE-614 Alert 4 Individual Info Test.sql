@@ -1,7 +1,7 @@
 USE [DeviceConfiguration.Dataprocessing];
 
 -- 1. Define Inputs
-DECLARE @TestMobileUnitId BIGINT = 1606749708247756800; -- **** USer input NEEDED *****
+DECLARE @TestMobileUnitId BIGINT = -8798513244981487643; -- **** USer input NEEDED *****
 
 -- 2. Declare variables for fetched keys
 DECLARE @TestMobileUnitKey INT;
