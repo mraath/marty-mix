@@ -1,6 +1,6 @@
 ---
 created: 2025-05-07T08:45
-updated: 2025-05-07T10:52
+updated: 2025-05-07T16:34
 ---
 ## Introduction
 
@@ -43,6 +43,10 @@ Eg. of results
 ![[OE-605 Alerts 3 Data eg.png]]
 
 
-- **Alert 4** script: 
+- **Alert 4** script: [[OE-614 Alert 4 Get DATA.sql]]
 
+Eg. of results
+![[OE-605 Alerts Test Cases Alert 4 Get Data.png]]
+
+You could then test the above for the **individual MobileUnit** with this script: 
 
