@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-04-11T07:23
+updated: 2025-05-07T12:21
 ---
 
 # OE-611 Alert not adjusting when removing missing parameters
@@ -319,4 +319,8 @@ Putting this alert into words.
 	- C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups.sql
 	- The OLD code use to look like this: (The last few lines should explain it)
 	- C:\Projects\_MiXTelematicsFiles\SQL\OE-611 OLD FULL MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups.sql
+
+## All of a sudden this no longer works... investigating
+
+- [state].[MobileUnit_GetMobileUnitMissingParameters]
 - 
