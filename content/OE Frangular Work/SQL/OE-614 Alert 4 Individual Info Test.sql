@@ -1,18 +1,7 @@
 USE [DeviceConfiguration.Dataprocessing];
 
-/*
-- Should have missing parameter: 
-1403102293298126848,1415760817642536960,1450923827225116672,?? 1606749708247756800,?? 1522731665984569344,1444029372907753472,1606679698413109248
-- Shouldnt have missing params: 
-1596635336800804864,1626018637366906880,1631447698450665472
-*/
-
-
--- Enhanced Script to analyze parameter support for udfIsMobileUnitMissingParameters verification
--- Automatically fetches required keys and uses correct description columns
-
 -- 1. Define Inputs
-DECLARE @TestMobileUnitId BIGINT = 1606749708247756800; -- Replace with MobileUnitId to test 1606749708247756800, 1522731665984569344, 1444029372907753472, 1606679698413109248
+DECLARE @TestMobileUnitId BIGINT = 1606749708247756800; -- **** USer input NEEDED *****
 
 -- 2. Declare variables for fetched keys
 DECLARE @TestMobileUnitKey INT;
@@ -112,36 +101,3 @@ BEGIN CATCH
     PRINT 'Error during verification logic:';
     PRINT ERROR_MESSAGE();
 END CATCH
-
-/* OLD Function no longer needed
--- Also show the function's final output for direct comparison
-PRINT '';
-PRINT '--- Function Output (IsMissingParameters Flag) ---';
-SELECT * FROM [state].[udfIsMobileUnitMissingParameters](@TestMobileUnitId, @TestMobileUnitKey, @TestMobileDeviceKey, @TestLibraryKey, @TestEventTemplateKey);
-*/
-
---DECLARE @IsMissingParameters BIT;
---SELECT * FROM [state].[uspIsMobileUnitMissingParameters](@TestMobileUnitId, @TestMobileUnitKey, @TestMobileDeviceKey, @TestLibraryKey, @MobileDeviceTemplateKey,  @TestEventTemplateKey, @IsMissingParameters)
---SELECT * FROM @IsMissingParameters
-
-/* OLDER STORED PROC
-DECLARE @RC int
-EXECUTE @RC = [state].[uspIsMobileUnitMissingParameters] 
-   @TestMobileUnitId, @TestMobileUnitKey, @TestMobileDeviceKey, @TestLibraryKey, @MobileDeviceTemplateKey,  @TestEventTemplateKey, @IsMissingParameters OUTPUT
-SELECT @RC
-*/
-
-
-/*
--- Execute the Missing Parameters SP (new version based on C# logic) for the current unit
--- Declare the variable to hold the output
-DECLARE @IsMissingParams BIT;
-EXEC [state].[uspGetMobileUnitMissingParameters_FromCSharpLogic]
-    @MobileUnitId = @TestMobileUnitId,
-    @IsMissingParameters = @IsMissingParams OUTPUT;
--- Optional: Select the output value to see the result
-SELECT @IsMissingParams AS MissingParametersResult;
-*/
-
-
-	
