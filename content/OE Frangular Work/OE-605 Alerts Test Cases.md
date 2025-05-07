@@ -1,6 +1,6 @@
 ---
 created: 2025-05-07T08:45
-updated: 2025-05-07T09:46
+updated: 2025-05-07T09:54
 ---
 ## Introduction
 
@@ -27,5 +27,6 @@ I think I would take the following steps to use this as test data:
 3) Test the Asset Alert for this
 4) Test this Asset's Config Group for this
 
-## Scripts
+## Scripts to get Test Data
 
+Please adjust these scripts for your situation. These are the scripts I used.
