@@ -1,7 +1,7 @@
 ---
 title: Welcome to Marty's Vault
 created: 2024-07-22T08:09
-updated: 2025-05-07T09:56
+updated: 2025-05-07T10:27
 ---
 
 > [!note]
@@ -18,7 +18,7 @@ updated: 2025-05-07T09:56
 
 ### Test Cases
 
-- [[Amy Alerts Test Cases]]
+- [[OE-605 Alerts Test Cases]]
 
 ### Boomerang SRs
 
