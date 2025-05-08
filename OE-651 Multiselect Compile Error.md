@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-08T15:04
+updated: 2025-05-08T15:19
 ---
 
 # OE-651 Multiselect Compile Error
@@ -53,4 +53,5 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
   }
 }
 - Compile Failed
+- https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multiselect/groupId/-5401647754082838271/upload-configuration
 - 
