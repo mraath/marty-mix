@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-08T13:48
+updated: 2025-05-08T14:43
 ---
 
 # OE-651 Multiselect Compile Error
@@ -35,3 +35,5 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+- I believe the behaviour here should be to request the compile for the ones that can and perhaps just notify that some of the assets cannot request compile (need some wording here) perhaps it can be an orange warning toast message I dont think we need to say which ones as the ones that failed would all stay in config changed status
+- “it also doesn’t action the compile for the other…” - this is a bug as the original spec said it should not crash on error but continue with the rest
