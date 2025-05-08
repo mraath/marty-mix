@@ -1,6 +1,6 @@
 ---
 created: 2023-04-18T07:58
-updated: 2025-05-08T12:27
+updated: 2025-05-08T12:41
 ---
 Branch: (Config/MR/DailyMerge/2025-05-08)
 
@@ -15,16 +15,6 @@ Daily Merge to Dev 2025-05-08
 
 ## Try running these and see if it works, might need refining in the template:
 
-### API
-
-```cmd
-git checkout Integration; git fetch origin; git pull
-git checkout Development; git fetch origin; git pull
-git checkout -b Config/MR/DailyMerge/2025-05-08 Development
-git merge --no-ff  Integration
-
-```
-https://dev.azure.com/MiXTelematics/DeviceIntegration/DeviceIntegration%20Team/_git/DynaMiX.DeviceConfig/pullrequestcreate?sourceRef=Config%2fMR%2fDailyMerge%2f2025-05-08&targetRef=
 
 ### Client
 
