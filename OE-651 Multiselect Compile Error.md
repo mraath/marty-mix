@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-08T14:57
+updated: 2025-05-08T15:04
 ---
 
 # OE-651 Multiselect Compile Error
@@ -40,3 +40,17 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ![[OE-651 Multiselect Compile Error Eg.png|650]]
 
+- Payload: {
+  "ids": [
+    "1596635336800804864",
+    "1606679698413109248",
+    "1631447698450665472",
+    "1647399904357085184"
+  ],
+  "idType": 1,
+  "whenToUploadDateTime": {
+    "isoDateTimeString": "2025-05-08T14:58:54"
+  }
+}
+- Compile Failed
+- 
