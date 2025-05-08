@@ -1,6 +1,6 @@
 ---
 created: 2023-04-18T07:58
-updated: 2025-05-08T12:26
+updated: 2025-05-08T12:33
 ---
 Branch: (Config/MR/DailyMerge/{{date}})
 
@@ -37,7 +37,7 @@ git merge --no-ff  integration
 ```
 https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequestcreate?sourceRef=Config/MR/DailyMerge/{{date}}&targetRef=development&sourceRepositoryId=40eeca32-3a77-4551-91a0-402d4c96d679&targetRepositoryId=40eeca32-3a77-4551-91a0-402d4c96d679
 
-### API
+### API (OLD and NEW)
 
 ```cmd
 git checkout Integration; git fetch origin; git pull
