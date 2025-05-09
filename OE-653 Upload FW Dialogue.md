@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-09T16:37
+updated: 2025-05-09T16:41
 ---
 
 # OE-653 Upload FW Dialogue
@@ -37,4 +37,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - CG > Upload FW
 - Use [[Languaging Translation Issues]]
-- 
+- uploadFirmwareTranslatedText
+- uploadFirmware
+- Are you sure you want to upload firmware to {{configGroupSelectedKeys.length}} configuration group(s)?
