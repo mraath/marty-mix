@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-09T11:40
+updated: 2025-05-09T13:06
 ---
 
 # OE-654 Not Languaged firmware upload request successful
@@ -36,5 +36,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## Shorter Description
 
 - Firmware upload request successful
-- IT is in POT
+	- IT is in new FR UI POT
+	- NOT IN: older one
+- popAlert... languaged?
 - 
