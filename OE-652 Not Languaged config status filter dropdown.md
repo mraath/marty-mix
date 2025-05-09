@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-09T13:42
+updated: 2025-05-09T15:13
 ---
 
 # OE-652 Not Languaged config status filter dropdown
@@ -39,3 +39,6 @@ Check these:
 Configuration accepted
 Configuration changed
 Not commissioned
+
+- It is in FR UI Pot
+- 
