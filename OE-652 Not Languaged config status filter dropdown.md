@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-09T15:13
+updated: 2025-05-09T15:30
 ---
 
 # OE-652 Not Languaged config status filter dropdown
@@ -41,4 +41,5 @@ Configuration changed
 Not commissioned
 
 - It is in FR UI Pot
-- 
+- FR UI DD didnt have lang service
+
