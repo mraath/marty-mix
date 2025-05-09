@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-09T13:40
+updated: 2025-05-09T13:42
 ---
 
 # OE-652 Not Languaged config status filter dropdown
@@ -35,3 +35,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+Check these:
+Configuration accepted
+Configuration changed
+Not commissioned
