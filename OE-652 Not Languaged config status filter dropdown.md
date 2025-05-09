@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-09T15:34
+updated: 2025-05-09T15:37
 ---
 
 # OE-652 Not Languaged config status filter dropdown
@@ -44,4 +44,5 @@ Not commissioned
 - FR UI DD didnt have lang service
 
 - BRANCH: 
+- PR INT: [Pull request 124383: OE-652: Added languaging to the dropdown values - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/124383)
 - 
