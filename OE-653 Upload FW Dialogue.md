@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-09T16:49
+updated: 2025-05-12T09:28
 ---
 
 # OE-653 Upload FW Dialogue
@@ -41,3 +41,5 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - uploadFirmware
 - Are you sure you want to upload firmware to {{configGroupSelectedKeys.length}} configuration group(s)?
 
+- PR INT: [Pull request 124419: OE-653: Added enhanced translation logic. - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/124419)
+- 
