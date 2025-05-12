@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-12T10:29
+updated: 2025-05-12T10:49
 ---
 
 # OE-651 Multiselect Compile Error
@@ -58,4 +58,20 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 }
 - Compile Failed
 - https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multiselect/groupId/-5401647754082838271/upload-configuration
+
+## Languaging
+
+### This  one
+
+- [ ] xxxxxxxxxxxxxx
+
+### Non Related
+
+- Compile failed
+- Compile requested
+- Firmware upload request successful
+- Request submitted successfully
+- Upload failed
+- Upload request submitted successfully
+- Upload requested
 - 
