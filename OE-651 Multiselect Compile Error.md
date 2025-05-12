@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-12T11:00
+updated: 2025-05-12T11:37
 ---
 
 # OE-651 Multiselect Compile Error
@@ -45,6 +45,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ![[OE-651 Multiselect Compile Error Eg.png|650]]
 
 - 3,7,12,20
+- SEND
 - Payload: {
   "ids": [
     "1596635336800804864",
@@ -59,6 +60,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 }
 - Compile Failed
 - https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multiselect/groupId/-5401647754082838271/upload-configuration
+- REPLY
+- {
+  "id": null,
+  "value": false,
+  "resultMessage": "System.Collections.Generic.List`1[System.String]"
+}
 
 ## Languaging
 
