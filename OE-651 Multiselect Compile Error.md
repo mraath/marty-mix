@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-12T12:26
+updated: 2025-05-12T12:32
 ---
 
 # OE-651 Multiselect Compile Error
@@ -92,6 +92,15 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 						- 
 					- Upload
 		- 
+
+## Current Status
+
+Part **one**: Languaging string. I know where we can change this. We need to decide what this string should be.  
+Part **two**: Cleanly failing per unit. I have looked at the code. The loop that tries to schedule each individual mobile unit doesn’t have a try-catch. Therefore, it will not cleanly fail for one mobile unit and continue to the next. This code will need to change.  
+Currently, this code is referenced in many places.  
+Our team will just quickly need to discuss the best way forward.
+
+
 
 ## Languaging
 
