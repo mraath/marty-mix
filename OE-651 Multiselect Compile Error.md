@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-12T11:42
+updated: 2025-05-12T11:46
 ---
 
 # OE-651 Multiselect Compile Error
@@ -71,7 +71,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - C:\Projects\MiX.Config.Frangular.API\MiX.Config.Frangular.Logic\ConfigurationGroupManager\ConfigurationGroupManager.cs
 	- CompileAndUploadConfiguration
-- 
+	- ConfigurationGroups.CompileAndUploadConfiguration
+- Client: CompileAndUploadConfiguration: groupId/{groupId}/compile-upload-configuration
+	- 
 
 ## Languaging
 
