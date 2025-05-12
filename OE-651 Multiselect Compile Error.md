@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-12T11:37
+updated: 2025-05-12T11:42
 ---
 
 # OE-651 Multiselect Compile Error
@@ -66,6 +66,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
   "value": false,
   "resultMessage": "System.Collections.Generic.List`1[System.String]"
 }
+
+## Coding
+
+- C:\Projects\MiX.Config.Frangular.API\MiX.Config.Frangular.Logic\ConfigurationGroupManager\ConfigurationGroupManager.cs
+	- CompileAndUploadConfiguration
+- 
 
 ## Languaging
 
