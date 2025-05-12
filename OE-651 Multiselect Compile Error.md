@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-12T11:53
+updated: 2025-05-12T12:24
 ---
 
 # OE-651 Multiselect Compile Error
@@ -78,7 +78,15 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - Config.Api
 	- CompileAndUploadConfiguration
 	- man.CompileAndUploadConfiguration
-	- 
+		- split
+			- config
+				- split
+					- Compile
+						- await CompileConfigurationGroups
+						- 
+					- Upload
+			- asset
+		- 
 
 ## Languaging
 
