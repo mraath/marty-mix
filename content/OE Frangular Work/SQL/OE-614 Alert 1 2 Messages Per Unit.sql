@@ -18,7 +18,7 @@ SELECT
     LEFT OUTER JOIN @status s ON s.MessageStatus = msh.MessageStatus
 WHERE mum.MessageSubType in (103, 254, 255)
 AND CreationDateUtc > DATEADD(DAY, -6, GETDATE())
-AND mum.MobileUnitId = 1656766446900490240
+AND mum.MobileUnitId = 1522731665984569344
 ORDER BY mum.MessageKey Desc, msh.MessageStateHistoryKey DESC, mum.CreationDateUtc DESC
 
 /*
