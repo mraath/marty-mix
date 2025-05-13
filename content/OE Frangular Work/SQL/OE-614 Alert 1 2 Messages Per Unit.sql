@@ -17,6 +17,6 @@ SELECT
     INNER JOIN [state].[MobileUnitMessageStateHistory] msh ON mum.MessageKey = msh.MessageKey
     LEFT OUTER JOIN @status s ON s.MessageStatus = msh.MessageStatus
 WHERE mum.MessageSubType in (103, 254, 255)
-AND CreationDateUtc > '2025-04-10'
+AND CreationDateUtc > DATEADD(DAY, -6, GETDATE())
 AND mum.MobileUnitId = 1522731665984569344
 ORDER BY mum.MessageKey Desc, msh.MessageStateHistoryKey DESC, mum.CreationDateUtc DESC
