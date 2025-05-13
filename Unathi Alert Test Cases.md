@@ -1,6 +1,6 @@
 ---
 created: 2025-05-13T09:21
-updated: 2025-05-13T11:03
+updated: 2025-05-13T11:11
 ---
 
 - Amy Bench 25.4
@@ -11,4 +11,8 @@ updated: 2025-05-13T11:03
 ## Amy Bench Units 20250512
 
 ![[Unathi Alert Test Cases Alert 2.png]]
+
+## TEST SQL
+
+- C:\Projects\marty-mix\content\OE Frangular Work\SQL\OE-614 Alert 1 2 Messages Per Unit.sql
 

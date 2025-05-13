@@ -18,5 +18,23 @@ SELECT
     LEFT OUTER JOIN @status s ON s.MessageStatus = msh.MessageStatus
 WHERE mum.MessageSubType in (103, 254, 255)
 AND CreationDateUtc > DATEADD(DAY, -6, GETDATE())
-AND mum.MobileUnitId = 1522731665984569344
+AND mum.MobileUnitId = 1656766446900490240
 ORDER BY mum.MessageKey Desc, msh.MessageStateHistoryKey DESC, mum.CreationDateUtc DESC
+
+/*
+AMY BENCH UNITS
+
+FW Upload expired:
+1596635336800804864 (003 MiX4000)               > SQL, Firmware package loaded from database (2025/05/09), Configuration file loaded from database (2025/05/09)
+1631447698450665472 (002 MiX4000)               > Firmware package loaded from database (2025/03/28), Configuration file loaded from database (2025/05/12)
+1646589414582132736 (001 MiX4000 + STM 2.0)     > Firmware package loaded from database (2025/04/09), Configuration file loaded from database (2025/05/12)
+
+ALERT 1
+
+na
+
+ALERT 2
+
+1656766446900490240 (alert_2 check...)          > Config Alert 1: Configuration file loaded from database (2025/05/07)
+
+*/
