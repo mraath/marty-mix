@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-13T14:03
+updated: 2025-05-13T15:51
 ---
 
 # OE-651 Multiselect Compile Error
@@ -65,6 +65,27 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
   "id": null,
   "value": false,
   "resultMessage": "System.Collections.Generic.List`1[System.String]"
+}
+
+## Swagger TEST
+
+{
+  "Ids": [
+    "1596635336800804864",
+    "1606679698413109248",
+    "1631447698450665472",
+    "1647399904357085184"
+  ],
+  "IdType": "1",
+  "Action": "Compile",
+  "WhenToUpload": 0,
+  "WhenToUploadDateTime": {
+    "DateTime": "2025-05-08T14:58:54",
+    "IsoDateTimeString": "2025-05-08T14:58:54",
+    "TimeZoneName": "string",
+    "TimeZoneShortCode": "string",
+    "LocalName": "string"
+  }
 }
 
 ## Coding
