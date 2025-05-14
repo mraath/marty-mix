@@ -1,6 +1,6 @@
 ---
 created: 2025-05-14T10:03
-updated: 2025-05-14T10:10
+updated: 2025-05-14T10:11
 ---
 
 ```dataview
@@ -8,7 +8,7 @@ TABLE WITHOUT ID file.name AS "File", filter(file.tasks, (t) => !t.completed).te
 FROM ""
 WHERE file.tasks
 WHERE contains(file.tasks.completed, false)
-WHERE !contains(file.folder, "templates") AND !contains(file.folder, "daily")
+WHERE !contains(file.folder, "[templates") AND !contains(file.folder, "daily](<Templates") AND !contains(file.folder, "Templater>)")
 SORT file.mtime DESC
 LIMIT 20
 ```
