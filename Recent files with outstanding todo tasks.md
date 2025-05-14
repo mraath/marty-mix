@@ -1,13 +1,16 @@
 ---
 created: 2025-05-14T10:03
-updated: 2025-05-14T10:03
+updated: 2025-05-14T10:08
 ---
 
 ```dataview
-TABLE file.name AS "File", T.text AS "Todo Item"
+TABLE WITHOUT ID file.name AS "File", tasks.text AS "Todo Items"
 FROM ""
-FLATTEN file.tasks AS T
-WHERE T.completed = false
+WHERE file.tasks
+FLATTEN file.tasks AS tasks
+WHERE !tasks.completed
+WHERE !contains(file.folder, "Templates") AND !contains(file.folder, "Templater")
+GROUP BY file
 SORT file.mtime DESC
 LIMIT 20
 ```
