@@ -1,10 +1,10 @@
 ---
 created: 2025-05-14T10:03
-updated: 2025-05-14T10:30
+updated: 2025-05-14T10:31
 ---
 
 ```dataview
-TABLE WITHOUT ID file.name AS "File", filter(file.tasks, (t) => !t.completed).link AS "Todo Items"
+TABLE WITHOUT ID file.name AS "File", map(filter(file.tasks, (t) => !t.completed), (t) => t.link + " - " + t.text) AS "Todo Items"
 FROM ""
 WHERE file.tasks
 WHERE contains(file.tasks.completed, false)
