@@ -155,4 +155,6 @@ Our team will just quickly need to discuss the best way forward.
 ## Deploy
 
 - [ ] PR INT UI: xxxxxxxxxxx
-- [ ] PR DEV: Xxxxxxxxxx
+- [ ] PR INT API: xxxxxxxxxxx
+- [ ] PR DEV UI: Xxxxxxxxxx
+- [ ] PR DEV API: Xxxxxxxxxx
