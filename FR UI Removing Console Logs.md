@@ -1,6 +1,6 @@
 ---
 created: 2025-05-15T12:35
-updated: 2025-05-16T08:36
+updated: 2025-05-16T09:46
 ---
 ## Keep for Justus
 
@@ -11,7 +11,7 @@ updated: 2025-05-16T08:36
 - console.log("updateHiddenColumns session is set");
 
 - Branch INT: Config/MR/HouseCleaning/Console_Log_Commented_Out
-	- PR INT: xxxxxxxxxxx
+	- [ ] PR INT: xxxxxxxxxxx
 - Branch DEV: Config/MR/HouseCleaning/Console_Log_Commented_Out_DEV
 	- PR DEV: [Pull request 124686: Cleanup DEV - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/124686)
 - 
