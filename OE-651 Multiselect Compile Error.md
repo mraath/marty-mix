@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-19T14:00
+updated: 2025-05-19T14:03
 ---
 
 # OE-651 Multiselect Compile Error
@@ -160,6 +160,6 @@ Our team will just quickly need to discuss the best way forward.
 - [ ] PR INT FR AI: xxxxxxxxxxxxxxxx
 - [x] PR **DEV** UI: [Pull request 124558: OE-651: Added a better toast message - Repos](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/124558) ✅ 2025-05-14
 - [x] PR DEV API: [Pull request 124559: OE-651: Added Try catch to fail nicely for a list of units - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/124559) ✅ 2025-05-14
-- [ ] PR DEV FR AI: xxxxxxxxxxxxxxxx
+- [x] PR DEV FR AI: [Pull request 124774: OE-651: Trying to fail over nicely - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/124774) ✅ 2025-05-19
 
 ![[OE-651 Multiselect Compile Error Info POC.png]]
