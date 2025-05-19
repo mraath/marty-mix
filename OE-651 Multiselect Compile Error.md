@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-14T16:31
+updated: 2025-05-19T09:00
 ---
 
 # OE-651 Multiselect Compile Error
@@ -100,9 +100,9 @@ curl -X 'POST' \ 'https://localhost:7116/api/configuration-groups/groupId/-54016
 - Client
 	- CompileAndUploadConfiguration
 	- groupId/{groupId}/compile-upload-configuration
-- Config.Api
+- **Config.Api**
 	- CompileAndUploadConfiguration
-	- man.CompileAndUploadConfiguration
+	- man.**CompileAndUploadConfiguration**
 		- split
 			- config
 				- split
@@ -110,9 +110,9 @@ curl -X 'POST' \ 'https://localhost:7116/api/configuration-groups/groupId/-54016
 						- await CompileConfigurationGroups
 						- 
 					- Upload
-			- asset
+			- **asset**
 				- split
-					- Compile
+					- **Compile**
 						- await **xxxxxxxxxxxxx**
 						- 
 					- Upload
