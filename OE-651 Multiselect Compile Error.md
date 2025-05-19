@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-19T14:03
+updated: 2025-05-19T15:49
 ---
 
 # OE-651 Multiselect Compile Error
@@ -136,6 +136,7 @@ Our team will just quickly need to discuss the best way forward.
 ### This  one
 
 - [ ] Some assets could not request compile <<<<< ???????
+- [ ] Some assets were unable to compile
 
 ### Non Related
 
