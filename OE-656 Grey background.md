@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-20T10:37
+updated: 2025-05-20T10:55
 ---
 
 # OE-656 Grey background
@@ -35,8 +35,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
-- [ ] Unable to upload firmware
-- [ ] Reset to group config
+- [x] Unable to upload firmware ✅ 2025-05-20
+- [x] Reset to group config ✅ 2025-05-20
 
 - Correct eg: Compile and upload configuration
 	- compileUploadHeader
