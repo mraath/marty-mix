@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-03-18T08:20
+updated: 2025-05-20T11:53
 ---
 
 # OE-638 Reset Black Flag
@@ -55,15 +55,15 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 					- modalButtonResetClicked
 						- this.resetAsset(this._currentRow);
 						- resetEvents / resetDevices / reset
-		- DeviceConfigClient.MobileUnits.GetConfigChangedFlagForMobileUnits
+		- DeviceConfig**Client**.MobileUnits.GetConfigChangedFlagForMobileUnits
 			- row.areConfigurationEventsDifferentToConfigGroup
 				- [ ] assetConfigFlags[mobileUnit.MobileUnitId].EventChanged
 			- row.isConfigurationDeviceDifferentToConfigGroup
 				- [ ] assetConfigFlags[mobileUnit.MobileUnitId].DeviceChanged
-	- Old Client: 
+	- **Old Client**: 
 		- GetConfigChangedFlagForMobileUnits
 			- groupId/{groupId}/mobile-units-changed-flag
-	- Config.API"
+	- Config.**API**"
 		- GetConfigChangedFlagForMobileUnits
 			- groupId/{groupId}/mobile-units-changed-flag
 		- man.GetConfigChangedFlagForMobileUnits
