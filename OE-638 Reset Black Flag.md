@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-20T11:57
+updated: 2025-05-20T12:00
 ---
 
 # OE-638 Reset Black Flag
@@ -127,4 +127,6 @@ STEPS
 - Lazy load: GetConfigChangedFlagForMobileUnits
 	- Show lazy load indication
 	- FR UI: Enable the reset and show the icon
-- Clicked: 
+- Clicked: show modal to allow user to select
+- Send through the correct thing to change
+- TEST
