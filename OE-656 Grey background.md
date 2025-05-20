@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-20T08:59
+updated: 2025-05-20T09:07
 ---
 
 # OE-656 Grey background
@@ -44,4 +44,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Duplicate
 
+- 
+
+## Code
+
+- Branch: FR UI: Config/MR/Bug/OE-656_GreyBackground
 - 
