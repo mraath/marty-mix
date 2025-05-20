@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-20T08:54
+updated: 2025-05-20T08:57
 ---
 
 # OE-656 Grey background
@@ -35,8 +35,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
-- [ ] Reset to config group
 - [ ] Unable to upload firmware
+- [ ] Reset to config group
+
 Correct eg: Compile and upload configuration
 
 ## Duplicate
