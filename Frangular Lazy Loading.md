@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-21T16:58
+updated: 2025-05-21T16:59
 ---
 > [!Info]
 We have a Grid for the Config Groups BETA page that took a LONG time to load.
@@ -56,16 +56,11 @@ This needs to be one for both the CG Grid and Assets Grid, as both implement the
     //.. REST follow, CG has no lines call lazy loading
   }
   private configAssetColumnLazy: Record<string, string> = {
-    "alerts": "alerts", //Eg. These load with 
-    "fwVersion": "alerts",
-    "preferredFWVersion": "alerts",
-    "serialnumber": "alerts",
-    "commsLog": "alerts",
-    "speed": "lines",
+    "alerts": "alerts", //Eg. These load with alerts call (will be an Additional Variable)
+    "fwVersion": "alerts", //...same
+    "speed": "lines", //Eg. OUR case study, this loads with the lines call (see Additional Vairables above)
     "hos": "lines",
-    "miXVisionSerialnumber": "lines",
-    "sp": "lines",
-    "fuel": "lines",
-    "rpm": "lines",
+    //..etc
   }
 ```
+
