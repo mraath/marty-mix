@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-21T16:53
+updated: 2025-05-21T16:56
 ---
 > [!Info]
 We have a Grid for the Config Groups BETA page that took a LONG time to load.
@@ -45,3 +45,34 @@ lazyLoadingLines: boolean = false;
 lazyLoadingLinesUnits: string = '';
 ```
 
+Next setting the actual columns that Lazy Loads
+This needs to be one for both the CG Grid and Assets Grid, as both implement the IColumn
+
+```ts
+// Columns that lazy loads
+  private configGroupColumnLazy: Record<string, string> = {
+    "alerts": "cgalerts",
+    "flagged": "other",
+    "assetsCount": "other",
+    "fwVersion": "other",
+    "canScript": "other",
+    "speed": "other",
+    "hos": "other",
+    "sp": "other",
+    "fuel": "other",
+    "rpm": "other",
+  }
+  private configAssetColumnLazy: Record<string, string> = {
+    "alerts": "alerts",
+    "fwVersion": "alerts",
+    "preferredFWVersion": "alerts",
+    "serialnumber": "alerts",
+    "commsLog": "alerts",
+    "speed": "lines",
+    "hos": "lines",
+    "miXVisionSerialnumber": "lines",
+    "sp": "lines",
+    "fuel": "lines",
+    "rpm": "lines",
+  }
+```

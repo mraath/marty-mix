@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T10:41
-updated: 2025-05-21T11:09
+updated: 2025-05-21T16:55
 ---
 In our code, if the column needs to behave differently, we create a special column type.
 
@@ -108,3 +108,7 @@ Within the ng-template (make sure you have added the let-dataItem)
 ```html
 <div>{{callMethodInTSToFormat(dataItem[col?.field])}}</div>
 ```
+
+## EG
+
+- [[Frangular Lazy Loading]]
