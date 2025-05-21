@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2025-05-06T13:06
+updated: 2025-05-21T11:01
 ---
 ## Basic intro to Frangular (FR)
 
@@ -110,6 +110,7 @@ I will now add an example for the new Frangular page.
 - Grid:
 	- [[Grid Sorting]]
 	- [[Grid Column Chooser Fix]]
+	- [[Kendo Column Customised display]]
 - Styles:
 	- [[Update MiXTel Styles]]
 
