@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-21T16:56
+updated: 2025-05-21T16:57
 ---
 > [!Info]
 We have a Grid for the Config Groups BETA page that took a LONG time to load.
@@ -35,7 +35,7 @@ export interface IColumn {
 }
 ```
 
-Some other variables that indicates state... there are many, but usually per field you only need one.
+Some other **Additional Variables** that indicates state... there are many, but usually per field you only need one.
 For instance, when lazy loading line info, we use these two.
 One just to indicate it is busy lazy loading.
 Two to indicate which ones.
@@ -49,9 +49,9 @@ Next setting the actual columns that Lazy Loads
 This needs to be one for both the CG Grid and Assets Grid, as both implement the IColumn
 
 ```ts
-// Columns that lazy loads
+  // Columns that lazy loads
   private configGroupColumnLazy: Record<string, string> = {
-    "alerts": "cgalerts",
+    "alerts": "cgalerts", //These load with CGAlerts call (will be an Additional Variable)
     "flagged": "other",
     "assetsCount": "other",
     "fwVersion": "other",
