@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T10:41
-updated: 2025-05-21T11:07
+updated: 2025-05-21T11:09
 ---
 In our code, if the column needs to behave differently, we create a special column type.
 
@@ -102,4 +102,9 @@ Next we also have to add in a new template to display this column type, as per p
 
 ## Further idea
 
-If you would like to, for instance, format text, you could do something like this
+If you would like to, for instance, format text, you could do something like this.
+Within the ng-template (make sure you have added the let-dataItem)
+
+```html
+<div>{{callCodeInTSToFormat()}}</div>
+```
