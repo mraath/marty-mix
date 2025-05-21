@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T10:41
-updated: 2025-05-21T10:58
+updated: 2025-05-21T11:07
 ---
 In our code, if the column needs to behave differently, we create a special column type.
 
@@ -99,3 +99,7 @@ Next we also have to add in a new template to display this column type, as per p
 </div>
 </ng-template>
 ```
+
+## Further idea
+
+If you would like to, for instance, format text, you could do something like this
