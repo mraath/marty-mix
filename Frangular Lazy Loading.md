@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-21T16:57
+updated: 2025-05-21T16:58
 ---
 > [!Info]
 We have a Grid for the Config Groups BETA page that took a LONG time to load.
@@ -51,19 +51,12 @@ This needs to be one for both the CG Grid and Assets Grid, as both implement the
 ```ts
   // Columns that lazy loads
   private configGroupColumnLazy: Record<string, string> = {
-    "alerts": "cgalerts", //These load with CGAlerts call (will be an Additional Variable)
-    "flagged": "other",
-    "assetsCount": "other",
-    "fwVersion": "other",
-    "canScript": "other",
-    "speed": "other",
-    "hos": "other",
-    "sp": "other",
-    "fuel": "other",
-    "rpm": "other",
+    "alerts": "cgalerts", //Eg. These load with CGAlerts call (will be an Additional Variable)
+    "flagged": "other", //Eg. These load with other call (will be an Additional Variable)
+    //.. REST follow, CG has no lines call lazy loading
   }
   private configAssetColumnLazy: Record<string, string> = {
-    "alerts": "alerts",
+    "alerts": "alerts", //Eg. These load with 
     "fwVersion": "alerts",
     "preferredFWVersion": "alerts",
     "serialnumber": "alerts",
