@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-21T14:14
+updated: 2025-05-21T16:37
 ---
 
 # OE-638 Reset Black Flag
@@ -152,3 +152,5 @@ Dictionary<long, MobileUnitConfigFlag> dictMobileUnitsConfigFlags = mucf.ToDicti
 carrier.AreConfigurationEventsDifferentToConfigGroup = assetConfigFlags.ContainsKey(mobileUnit.MobileUnitId) && assetConfigFlags[mobileUnit.MobileUnitId].EventChanged;
 carrier.IsConfigurationDeviceDifferentToConfigGroup = assetConfigFlags.ContainsKey(mobileUnit.MobileUnitId) && assetConfigFlags[mobileUnit.MobileUnitId].DeviceChanged;
 ```
+
+- [Frangular Lazy Loading]
