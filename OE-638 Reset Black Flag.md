@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-21T13:45
+updated: 2025-05-21T14:12
 ---
 
 # OE-638 Reset Black Flag
@@ -127,6 +127,7 @@ STEPS
 - [ ] Lazy load: GetConfigChangedFlagForMobileUnits
 	- [mobileunit].[MobileUNit_GetMobileUnitsWithOverwrittenEventsIds] (libraryId)
 	- [mobileunit].[MobileUnit_GetMobileUnitsWithOverwrittenDevicesIds] (libraryId)
+	- 
 	- [ ] Show lazy load indication
 	- [ ] FR UI: Enable the reset and show the icon
 - [ ] Clicked: show modal to allow user to select
@@ -136,3 +137,11 @@ STEPS
 - [ ] Send through the correct thing to change
 	- Seems to be ready
 - [ ] TEST
+
+```c#
+List<MobileUnitConfigFlag> mucf = DeviceConfigClient.MobileUnits.GetConfigChangedFlagForMobileUnits(authToken, organisationId).ConfigureAwait(false).GetAwaiter().GetResult();
+Dictionary<long, MobileUnitConfigFlag> dictMobileUnitsConfigFlags = mucf.ToDictionary(x => x.MobileUnitId, y => y);
+//ConvertToCarrier
+carrier.AreConfigurationEventsDifferentToConfigGroup = assetConfigFlags.ContainsKey(mobileUnit.MobileUnitId) && assetConfigFlags[mobileUnit.MobileUnitId].EventChanged;
+carrier.IsConfigurationDeviceDifferentToConfigGroup = assetConfigFlags.ContainsKey(mobileUnit.MobileUnitId) && assetConfigFlags[mobileUnit.MobileUnitId].DeviceChanged;
+```
