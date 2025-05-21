@@ -106,5 +106,5 @@ If you would like to, for instance, format text, you could do something like thi
 Within the ng-template (make sure you have added the let-dataItem)
 
 ```html
-<div>{{callCodeInTSToFormat()}}</div>
+<div>{{callMethodInTSToFormat(dataItem[col?.field])}}</div>
 ```
