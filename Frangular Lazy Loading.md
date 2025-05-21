@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-21T16:46
+updated: 2025-05-21T16:53
 ---
 > [!Info]
 We have a Grid for the Config Groups BETA page that took a LONG time to load.
@@ -22,4 +22,26 @@ Usually this will call some sort of DB Stored Proc, which will hopefully be opti
 
 ## FR UI TS file
 
+In the code, the IColumn is used to specify specific column behaviours.
+Also see: [[Kendo Column Customised display]]
+One of these would be to set a column for Lazy loading.
+
+The IColumn
+
+```ts
+export interface IColumn {
+  //...,
+  lazy: string,
+}
+```
+
+Some other variables that indicates state... there are many, but usually per field you only need one.
+For instance, when lazy loading line info, we use these two.
+One just to indicate it is busy lazy loading.
+Two to indicate which ones.
+
+```ts
+lazyLoadingLines: boolean = false;
+lazyLoadingLinesUnits: string = '';
+```
 
