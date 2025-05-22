@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-21T16:59
+updated: 2025-05-22T12:37
 ---
 > [!Info]
 We have a Grid for the Config Groups BETA page that took a LONG time to load.
@@ -62,5 +62,41 @@ This needs to be one for both the CG Grid and Assets Grid, as both implement the
     "hos": "lines",
     //..etc
   }
+```
+
+Kick off the lazy loading, where you need it. For our example with lazy loading the lines, we do the following.
+
+```ts
+//Method to get the asset grid info
+getConfigAssets() {
+	//...
+	this.module.getConfigurationGroupsMultiselectAssetsList //...
+	.pipe //...
+	.subscribe //.. THIS is what gets git once data gets received from the initial data load
+		//... Handle init data
+		
+		//Lazy Load lines - Call its own backend logic to get SP data
+          this.lazyLoadingLines = true;
+          this.lazyLoadingLinesUnits = configGroupIds;
+          this.module.getConfigurationGroupsMultiselectAssetLinesList({ groupId: this.organisationId }, { configurationGroupIds: configGroupIds })
+            .pipe(takeWhile(() => this.alive))
+            .subscribe((carrierLines: ConfigurationGroupsMultiselectAssetLinesCarrierList) => {
+              if (carrierLines && carrierLines.items) {
+                this.UpdateLinesRows(
+                  this.allAssets,
+                  carrierLines.items,
+                  this.filteredAssets,
+                  Grid.assets
+                );
+              }
+              this.lazyLoadingLines = false;
+              this.lazyLoadingLinesUnits = '';
+            }, (carrier: ConfigurationGroupsMultiselectAssetLinesCarrierList) => {
+              console.log("ERROR: Asset Lines");
+              this.lazyLoadingLines = false;
+              this.lazyLoadingLinesUnits = '';
+            });
+            
+            //...
 ```
 
