@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-22T12:41
+updated: 2025-05-22T13:00
 ---
 > [!Info]
 We have a Grid for the Config Groups BETA page that took a LONG time to load.
@@ -116,5 +116,13 @@ For our eg. we are looking into the Asset Grid...
 ```ts
 private setupConfigAssetsGrid() {
 	//...
-	
+	this.assetsColumns = Array(this.assetsHiddenColumnSettings.length);
+    for (let i = 0, len = this.assetsHiddenColumnSettings.length; i < len; i++) {
+	    //...
+		this.assetsColumns[columnSetting.index - 1] = {
+	        field: column.field, 
+	        //...
+	        lazy: this.configAssetColumnLazy[column.field],
+	      };
 ```
+
