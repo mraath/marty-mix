@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-22T16:58
+updated: 2025-05-22T17:00
 ---
 
 # OE-638 Reset Black Flag
@@ -167,3 +167,5 @@ BRANCH: Config/MR/Bug/OE-638_Reset_Black_Flag
 
 public const string GetConfigChangedFlagForMobileUnits = "groupId/{groupId}/mobile-units-changed-flag";
 DeviceConfigClient.MobileUnits.GetConfigChangedFlagForMobileUnits
+
+- [ ] API to call client...
