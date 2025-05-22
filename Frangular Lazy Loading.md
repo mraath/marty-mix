@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-22T12:37
+updated: 2025-05-22T12:41
 ---
 > [!Info]
 We have a Grid for the Config Groups BETA page that took a LONG time to load.
@@ -100,3 +100,21 @@ getConfigAssets() {
             //...
 ```
 
+We also need a method, which we will call from the FE, to test if the individual asset row is still being loaded for lines.
+We will test for this in the HTML in order to know if we should show the loading indicator
+
+```ts
+unitIsLazyLoading(unit: string, units: string): boolean {
+	var listUnits = units.split(',');
+	return listUnits.includes(unit);
+}
+```
+
+OK, now, where you setup your Grid, you need to indicate which column is a lazy loading column.
+For our eg. we are looking into the Asset Grid...
+
+```ts
+private setupConfigAssetsGrid() {
+	//...
+	
+```
