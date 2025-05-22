@@ -1,6 +1,6 @@
 ---
 created: 2024-05-17T11:19
-updated: 2025-05-21T11:01
+updated: 2025-05-22T13:27
 ---
 ## Basic intro to Frangular (FR)
 
@@ -92,27 +92,21 @@ I will now add an example for the new Frangular page.
 
 ## Helpful Code Snippets
 
-- Show or hide **menu item**
-	- [[Frangular Show and Hide Menu items]]
-- Kendo controls help:
-	  - eg. [Angular Data Grid](https://www.telerik.com/kendo-angular-ui/components/grid/)
-- **Sending and receiving** INFO between the OLD and the NEW UI pages: 
-	- [[Frangular Messaging OLD UI to FR-UI]]
-- Toaster **Notifications**: 
-	- [[Frangular Notifications]]
-- Spinners
-	- [[Frangular Spinner]]
-- Errors
-	- [[Frangular Error Messages]]
+- **Menu** items: [[Frangular Show and Hide Menu items]]
+- **Kendo** controls help: [Angular Data Grid](https://www.telerik.com/kendo-angular-ui/components/grid/)
+- **Sending and receiving** INFO between the OLD and the NEW UI pages:  [[Frangular Messaging OLD UI to FR-UI]]
+- Toaster **Notifications**:  [[Frangular Notifications]]
+- **Spinners**: [[Frangular Spinner]]
+- **Errors**: [[Frangular Error Messages]]
 - **Languaging**: 
 	- [[Frangular Languaging]]
 	- [[Languaging Translation Issues]]
-- Grid:
+- **Grid**:
 	- [[Grid Sorting]]
 	- [[Grid Column Chooser Fix]]
 	- [[Kendo Column Customised display]]
-- Styles:
-	- [[Update MiXTel Styles]]
+	- [[Frangular Lazy Loading]]
+- **Styles**: [[Update MiXTel Styles]]
 
 ## Pipeline and Deployment (WIP)
 

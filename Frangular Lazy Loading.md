@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-22T13:15
+updated: 2025-05-22T13:25
 ---
 > [!Info]
 We have a Grid for the Config Groups BETA page that took a LONG time to load.
@@ -125,3 +125,32 @@ private setupConfigAssetsGrid() {
 ## FR UI HTML file
 
 Next we will add the lazy logic into the HTML.
+Basically we will add in some checks in the HTML to determine if the lazy loading should be shown.
+We will add this into the column templates as needed (Please remember for special column behaviour we will add special templates).
+Once again we will focus on the lines example, but leave in another lazy loading, just to show you could have more than one on the same column
+
+```html
+<!-- ASSETS PANEL GRID -->
+<div class="row flex-grow-1 position-relative">
+<kendo-grid #assetsGrid [data]="filteredAssets"                       >
+	<!-- Columns -->
+	<kendo-grid-column *ngFor="let col of assetsColumns;"             >
+	
+		<!--cell: multi lines-->
+		<ng-template                              >
+			<!-- ... -->
+			<div>
+				<div *ngIf="                      >
+				(col?.lazy === 'alerts' && lazyLoadingAlerts && unitIsLazyLoading(dataItem.configurationGroupId, lazyLoadingAlertsUnits)) ||
+				(col?.lazy === 'lines' && lazyLoadingLines && unitIsLazyLoading(dataItem.configurationGroupId, lazyLoadingLinesUnits))">
+					<kendo-skeleton
+					  shape="text"
+					  animation="pulse"
+					  width="100%"
+					</kendo-skeleton>
+				</div>
+				<!-- ... -->
+			</div>
+```
+
+Now you can apply this to something you would need to lazy load.
