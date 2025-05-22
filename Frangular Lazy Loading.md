@@ -1,6 +1,6 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-22T13:00
+updated: 2025-05-22T13:15
 ---
 > [!Info]
 We have a Grid for the Config Groups BETA page that took a LONG time to load.
@@ -15,10 +15,6 @@ In order to do this we need a few things
 
 A client method of sorts to get the data async, from the BE, for the UI to be displayed.
 Usually this will call some sort of DB Stored Proc, which will hopefully be optimised.
-
-## FR UI HTML file
-
-
 
 ## FR UI TS file
 
@@ -126,3 +122,6 @@ private setupConfigAssetsGrid() {
 	      };
 ```
 
+## FR UI HTML file
+
+Next we will add the lazy logic into the HTML.
