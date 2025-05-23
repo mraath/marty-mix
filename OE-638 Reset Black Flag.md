@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-23T15:26
+updated: 2025-05-23T15:29
 ---
 
 # OE-638 Reset Black Flag
@@ -180,6 +180,15 @@ DeviceConfigClient.MobileUnits.GetConfigChangedFlagForMobileUnits
 List MobileUnitConfigFlag mucf = DeviceConfigClient.MobileUnits.GetConfigChangedFlagForMobileUnits(authToken, organisationId).ConfigureAwait(false).GetAwaiter().GetResult();
 
 - [x] API to call client... ✅ 2025-05-23
+
+```cs
+public class MobileUnitConfigFlag
+{
+	public long MobileUnitId { get; set; }
+	public bool EventChanged { get; set; }
+	public bool DeviceChanged { get; set; }
+}
+```
 
 ## Code
 
