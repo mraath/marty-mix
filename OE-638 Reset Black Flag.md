@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-23T15:25
+updated: 2025-05-23T15:26
 ---
 
 # OE-638 Reset Black Flag
@@ -188,3 +188,4 @@ List MobileUnitConfigFlag mucf = DeviceConfigClient.MobileUnits.GetConfigChanged
 
 - [x] PR **DEV** FR API: [Pull request 125111: OE-638: Merge new end point to DEV - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125111) ✅ 2025-05-23
 - [ ] PR DEV FR UI: xxxxxxxxxxx
+
