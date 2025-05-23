@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-23T15:29
+updated: 2025-05-23T15:31
 ---
 
 # OE-638 Reset Black Flag
@@ -189,6 +189,9 @@ public class MobileUnitConfigFlag
 	public bool DeviceChanged { get; set; }
 }
 ```
+
+mobile-unit-config-flag-carrier
+
 
 ## Code
 
