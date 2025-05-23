@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-23T12:04
+updated: 2025-05-23T12:07
 ---
 
 # OE-638 Reset Black Flag
@@ -182,8 +182,8 @@ List MobileUnitConfigFlag mucf = DeviceConfigClient.MobileUnits.GetConfigChanged
 
 ## Code
 
-- [ ] PR **INT** FR API: xxxxxxxxxxxxxxxxx
+- [x] PR **INT** FR API: [Pull request 125109: OE-638: Added GetConfigChangedFlagForMobileUnits FR API end point to get specific area of black flag - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125109?_a=files) ✅ 2025-05-23
 - [ ] PR INT FR UI: xxxxxxxxxxx
 
-- [ ] PR **DEV** FR API: [Pull request 125109: OE-638: Added GetConfigChangedFlagForMobileUnits FR API end point to get specific area of black flag - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125109?_a=files)
+- [ ] PR **DEV** FR API: 
 - [ ] PR DEV FR UI: xxxxxxxxxxx
