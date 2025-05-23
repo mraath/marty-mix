@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-22T17:00
+updated: 2025-05-23T09:21
 ---
 
 # OE-638 Reset Black Flag
@@ -166,6 +166,8 @@ lazyLoadingFlagsUnits: string = '';
 BRANCH: Config/MR/Bug/OE-638_Reset_Black_Flag
 
 public const string GetConfigChangedFlagForMobileUnits = "groupId/{groupId}/mobile-units-changed-flag";
+FR API: public const string GetConfigChangedFlagForMobileUnits = "api/configuration-groups-multiselect/groupId/{groupId}/mobile-units-changed-flag";
+
 DeviceConfigClient.MobileUnits.GetConfigChangedFlagForMobileUnits
 
 - [ ] API to call client...
