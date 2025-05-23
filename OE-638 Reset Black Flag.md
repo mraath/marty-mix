@@ -120,7 +120,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 PR: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/121337
 
-- [ ] TODO: MUST allow the user going forward to select based on Above findings.
+- [x] TODO: MUST allow the user going forward to select based on Above findings. ✅ 2025-05-23
 
 STEPS
 
@@ -184,5 +184,6 @@ List MobileUnitConfigFlag mucf = DeviceConfigClient.MobileUnits.GetConfigChanged
 
 - [ ] PR **INT** FR API: xxxxxxxxxxxxxxxxx
 - [ ] PR INT FR UI: xxxxxxxxxxx
+
 - [ ] PR **DEV** FR API: [Pull request 125109: OE-638: Added GetConfigChangedFlagForMobileUnits FR API end point to get specific area of black flag - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125109?_a=files)
 - [ ] PR DEV FR UI: xxxxxxxxxxx
