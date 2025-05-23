@@ -1,6 +1,6 @@
 ---
 created: 2023-04-18T07:58
-updated: 2025-05-23T08:18
+updated: 2025-05-23T08:20
 ---
 Branch: (Config/MR/DailyMerge/2025-05-23)
 
@@ -17,15 +17,6 @@ Daily Merge: DB, BE, UI: NA
 Daily Merge: Core, Api, Client: NA
 
 ## Try running these and see if it works, might need refining in the template:
-
-### DB, BE, UI
-
-``` cmd
-git checkout Integration; git fetch origin; git pull
-git checkout Config/Development; git fetch origin; git pull
-git checkout -b Config/MR/DailyMerge/2025-05-23 Config/Development
-git merge --no-ff  Integration
-```
 
 ### Core
 
