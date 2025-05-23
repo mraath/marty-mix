@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-23T15:31
+updated: 2025-05-23T15:34
 ---
 
 # OE-638 Reset Black Flag
@@ -191,7 +191,7 @@ public class MobileUnitConfigFlag
 ```
 
 mobile-unit-config-flag-carrier
-
+mobile-unit-config-flag-carrier-list
 
 ## Code
 
