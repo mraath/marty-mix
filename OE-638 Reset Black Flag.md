@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-23T12:02
+updated: 2025-05-23T12:04
 ---
 
 # OE-638 Reset Black Flag
@@ -57,9 +57,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 						- resetEvents / resetDevices / reset
 		- DeviceConfig**Client**.MobileUnits.GetConfigChangedFlagForMobileUnits
 			- row.areConfigurationEventsDifferentToConfigGroup
-				- [ ] assetConfigFlags[mobileUnit.MobileUnitId].EventChanged
+				- [x] assetConfigFlags[mobileUnit.MobileUnitId].EventChanged ✅ 2025-05-23
 			- row.isConfigurationDeviceDifferentToConfigGroup
-				- [ ] assetConfigFlags[mobileUnit.MobileUnitId].DeviceChanged
+				- [x] assetConfigFlags[mobileUnit.MobileUnitId].DeviceChanged ✅ 2025-05-23
 	- **Old Client**: 
 		- GetConfigChangedFlagForMobileUnits
 			- groupId/{groupId}/mobile-units-changed-flag
@@ -67,7 +67,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- GetConfigChangedFlagForMobileUnits
 			- groupId/{groupId}/mobile-units-changed-flag
 		- man.GetConfigChangedFlagForMobileUnits
-		- [ ] Just call the above and send it down to FE for different Choices
+		- [x] Just call the above and send it down to FE for different Choices ✅ 2025-05-23
 			- For now just do it for everything? NO CHOICE
 		- Permissions.CAN_ACCESS_CONFIGURATION_GROUPS
 		- _deviceConfigRepo.GetConfigChangedFlagForMobileUnits
@@ -184,5 +184,5 @@ List MobileUnitConfigFlag mucf = DeviceConfigClient.MobileUnits.GetConfigChanged
 
 - [ ] PR **INT** FR API: xxxxxxxxxxxxxxxxx
 - [ ] PR INT FR UI: xxxxxxxxxxx
-- [ ] PR **DEV** FR API: xxxxxxxxxxxxxxxxx
+- [ ] PR **DEV** FR API: [Pull request 125109: OE-638: Added GetConfigChangedFlagForMobileUnits FR API end point to get specific area of black flag - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125109?_a=files)
 - [ ] PR DEV FR UI: xxxxxxxxxxx
