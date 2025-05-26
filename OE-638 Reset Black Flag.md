@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-26T12:20
+updated: 2025-05-26T12:22
 ---
 
 # OE-638 Reset Black Flag
@@ -128,7 +128,7 @@ STEPS
 	- [mobileunit].[MobileUNit_GetMobileUnitsWithOverwrittenEventsIds] (libraryId)
 	- [mobileunit].[MobileUnit_GetMobileUnitsWithOverwrittenDevicesIds] (libraryId)
 	- 
-	- [ ] Show lazy load indication
+	- [x] Show lazy load indication ✅ 2025-05-26
 	- [ ] FR UI: Enable the reset and show the icon
 - [ ] Clicked: show modal to allow user to select
 	- ResetType.Events == 0
