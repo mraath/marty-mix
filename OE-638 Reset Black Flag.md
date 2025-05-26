@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-26T11:33
+updated: 2025-05-26T12:20
 ---
 
 # OE-638 Reset Black Flag
@@ -161,7 +161,8 @@ carrier.IsConfigurationDeviceDifferentToConfigGroup = assetConfigFlags.ContainsK
 lazyLoadingFlags: boolean = false;
 lazyLoadingFlagsUnits: string = '';
 
-"flagged": "flags",
+"flagged": "other" << CG
+"flagged": "flags", << Asset
 
 
 
