@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-26T11:04
+updated: 2025-05-26T11:10
 ---
 
 # OE-638 Reset Black Flag
@@ -214,7 +214,7 @@ Config/MR/Bug/OE-638_Reset_Black_Flag_DEV
 ### FR API
 
 - [x] PR **INT** FR API: [Pull request 125109: OE-638: Added GetConfigChangedFlagForMobileUnits FR API end point to get specific area of black flag - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125109?_a=files) ✅ 2025-05-23
-	- [ ] Add in new core - replace my current temp one
+	- [ ] NEW PR for new CORE nuget: xxxxxxxxxxxxxxxxxxxxxxx
 - [x] PR DEV FR API: [Pull request 125111: OE-638: Merge new end point to DEV - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125111) ✅ 2025-05-23
 
 ### FR UI
