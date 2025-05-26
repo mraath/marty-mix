@@ -1,13 +1,13 @@
 ---
 created: 2025-05-21T16:39
-updated: 2025-05-22T13:25
+updated: 2025-05-26T12:16
 ---
 > [!Info]
-We have a Grid for the Config Groups BETA page that took a LONG time to load.
-We then broke things up to first load the basic info that would take like a second.
-After this we make more async calls to the BE to get the other, longer taking, columns' values.
-We also need to visually indicate that this is happening to the user.
-Once done we should display a value.
+> We have a Grid for the Config Groups BETA page that took a LONG time to load.
+> We then broke things up to first load the basic info that would take like a second.
+> After this we make more async calls to the BE to get the other, longer taking, columns' values.
+> We also need to visually indicate that this is happening to the user.
+> Once done we should display a value.
 
 In order to do this we need a few things
 
