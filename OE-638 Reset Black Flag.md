@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-26T12:22
+updated: 2025-05-26T12:24
 ---
 
 # OE-638 Reset Black Flag
@@ -130,6 +130,7 @@ STEPS
 	- 
 	- [x] Show lazy load indication ✅ 2025-05-26
 	- [ ] FR UI: Enable the reset and show the icon
+		- configAssetsActionsEnabled
 - [ ] Clicked: show modal to allow user to select
 	- ResetType.Events == 0
 	- ResetType.Devices == 1
