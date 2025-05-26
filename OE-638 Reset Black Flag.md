@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-26T08:59
+updated: 2025-05-26T09:01
 ---
 
 # OE-638 Reset Black Flag
@@ -163,8 +163,7 @@ lazyLoadingFlagsUnits: string = '';
 
 "flagged": "flags",
 
-**BRANCH**: Config/MR/Bug/OE-638_Reset_Black_Flag
-Config/MR/Bug/OE-638_Reset_Black_Flag_DEV
+
 
 public const string GetConfigChangedFlagForMobileUnits = "groupId/{groupId}/mobile-units-changed-flag";
 
@@ -199,6 +198,11 @@ blackFlagsSources: IMobileUnitConfigFlagCarrier[] = [];
 - [ ] New Carrier - id to STRING!!!!!
 
 Core Class: MobileUnitConfigFlagCarrier
+
+## Branch
+
+**BRANCH**: Config/MR/Bug/OE-638_Reset_Black_Flag
+Config/MR/Bug/OE-638_Reset_Black_Flag_DEV
 
 ## Code
 
