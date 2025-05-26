@@ -1,0 +1,610 @@
+Date: Mon, 21 Aug 2023 13:28:02 +0100 (IST)
+Message-ID: <1572700511.15579.1692620882612@localhost>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_15578_551365374.1692620882606"
+
+------=_Part_15578_551365374.1692620882606
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Environment Setup</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Environment Setup</h1>
+    <div class=3D"Section1">
+        <p><strong>ISOs are on &nbsp;\\dsstbsoftware\Software\</strong></p>
+<p><br></p>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><strong>OS Setup for <span style=3D"color: rgb(2=
+55,0,0);">AWS Workspaces</span>:</strong></th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><p><strong><br>First take note tha=
+t AWS Workspaces are expensive to run and will therefor hibernate automatic=
+ally after 1hr of inactivity.<br><br></strong>1) Download and install the a=
+ppropriate AWS Workspaces client on your personal PC or laptop here :&nbsp;=
+<a href=3D"https://clients.amazonworkspaces.com/" class=3D"external-link" r=
+el=3D"nofollow">https://clients.amazonworkspaces.com/</a><br>2) Register th=
+e workspace using the registration code you received via email or Teams.<br=
+>3) Login using your username without the domain. So instead of MIX\BobM, j=
+ust uses BobM. The password is your MIX domain password provided via email =
+or Teams.<br>4) When using an AWS Workspace, you do not need to install any=
+ VPN software to connect to the MiX network. You will automatically have ac=
+cess to the Development and Integration environments (not UAT or production=
+ though, that is on a different domain).<br>5)&nbsp;<span>Install Office. D=
+o this by opening a browser window to <a href=3D"http://portal.office365.co=
+m" class=3D"external-link" rel=3D"nofollow">portal.office365.com</a> and lo=
+gin with your email address and domain account password. You can choose to =
+install the Office desktop app by clicking on the "Install Office" dropdown=
+ and following the options.<br>6) Open the Server Manager. Click on "Local =
+Server" on the left. Turn IE Enhanced Security Configuration OFF for both U=
+sers and Administrators (otherwise you will have trouble signing into Visua=
+l Studio later).<br><strong>It is recommended to set up 2 factor authentica=
+tion by installing the Microsoft Authenticator app on your phone.</strong><=
+br></span></p><p><strong><span style=3D"color: rgb(64,64,64);">Add Windows =
+Features:</span></strong></p><p><span>1) Go to Turn Windows Features On or =
+Off (in Programs and Features). The Server Manager will open. Click next un=
+til you get to Server Roles.<br>2) Check Web Server and add the IIS Managem=
+ent Console.<br></span><span>3) If you are installing SQL 2014 specifically=
+, check .NET Framework 3.5. Not required for SQL 2016 and up. Local SQL is =
+not required for general full stack development. Generally only if you are =
+in a reporting/data systems team.<br></span><span>4) Check </span><span>Mes=
+sage Queuing.<br>5) Expand the Message Queuing tree view and check Director=
+y Service Integration.<br>6) Click next to configure the Web Server Role Se=
+rvices.<br>7) Expand Application Development and check&nbsp;.NET Extensibil=
+ity 4.7 and click Add Features.<br>8) Check ASP.NET4.7 and click Add Featur=
+es.<br>9) Check the WebSocket Protocol.<br>10) Click Next and Install.<br><=
+/span>11) Skip the next section for standalone desktops and continue with "=
+IIS Setup"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class=3D"table-wrap">
+<table class=3D"wrapped confluenceTable">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><strong><span style=3D"color: rgb(64,64,64);">OS=
+ Setup for <span style=3D"color: rgb(255,0,0);">Desktops</span>:</span></st=
+rong></th>
+</tr>
+<tr>
+<td colspan=3D"1" class=3D"confluenceTd"><p><span>1) If your desktop did no=
+t come pre-installed with Windows, install the latest Enterprise flavour of=
+ Windows.<br></span><span>2) At the first sign in screen, there is no need =
+to sign in with a Microsoft account. Select create a new account and then "=
+Sign in without a Microsoft account".&nbsp;</span><span>Don't bother enteri=
+ng your real name as the user account, you will get a new one when you are =
+added to the domain.<br></span><span>3) Depending on your version of Window=
+s, disable the Windows Media Network Sharing Service (unless you want to sh=
+are your music with everyone)<br></span><span>4) Unless you are already on =
+the MiX domain and have a valid username and password, don't bother customi=
+sing the OS, your PC must be added to the domain which means you will get a=
+ new user profile.<br></span><span>5) If you are not on the MiX domain yet,=
+ get MiX IT or Stephan Visagie to add you to the MIX domain.<br></span><spa=
+n>6) Log in with your MIX credentials. Now you can customise your OS.<br></=
+span><span>7) If you have a Dell, go to <a href=3D"http://support.dell.com"=
+ class=3D"external-link" rel=3D"nofollow">support.dell.com</a> and search f=
+or your service tag (label on the PC/laptop). Download and install any driv=
+ers you think you will need. In general,&nbsp;</span><span>download the Chi=
+pset and graphics drivers.<br></span><span>8)&nbsp;Install Office. Do this =
+by opening a browser window to <a href=3D"http://portal.office365.com" clas=
+s=3D"external-link" rel=3D"nofollow">portal.office365.com</a> and login wit=
+h your email address and domain account password. You can choose to install=
+ the Office desktop app by clicking on the "Install Office" dropdown and fo=
+llowing the options.<br><strong>It is recommended to set up 2 factor authen=
+tication by installing the Microsoft Authenticator app on your phone.</stro=
+ng></span><span><br></span></p><p><strong><span style=3D"color: rgb(64,64,6=
+4);">Add Windows Features:</span></strong></p><p><span>In addition to what =
+is already checked:<br>1) Go to Turn Windows Features On or Off (in Program=
+s and Features).<br>2) If you are installing SQL 2014 specifically, check .=
+NET Framework 3.5. Not required for SQL 2016 and up.&nbsp; Local SQL is not=
+ required for general full stack development. Generally only if you are in =
+a reporting/data systems team.<br></span><span>3) Check Internet Informatio=
+n Services. Keep the default settings. Don't use IIS Express because VS mod=
+ifies the project files.<br></span><span>4) Check IIS Management Console. U=
+nder Application Development Features, check .NET Extensibility 4.7, ASP.NE=
+T 4.7, ISAPI Extensions, ISAPI Filters.<br>5) Check IIS Management Console.=
+ Under Common HTTP Features, check Static Content<br>6) Check </span><span>=
+Microsoft Message Queue (MSMQ).<br>7) Expand the MSMQ tree view and check M=
+SMQ Active Directory Domain Services integration.</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong style=3D"line-height: 1.4285715;"><span style=3D"color: rgb(64,6=
+4,64);"><br><br>IIS Setup:</span></strong></p>
+<p><span style=3D"line-height: 1.4285715;">1) Once the features have been a=
+dded, o</span><span style=3D"line-height: 1.4285715;">pen the IIS Manager.<=
+br>2) Go to the DefaultAppPool properties and add development\srvciis accou=
+nt details under "Identity". The password is "P4ssw0rd". You can also use y=
+our own domain account, but you must then remember to change the App pool p=
+assword every time you change your domain password - otherwise the App pool=
+ will always be in a stopped state to prevent your account being locked.<br=
+></span></p>
+<p><br><strong>GIT Setup:</strong></p>
+<ol>
+<li>&nbsp;Download and install the latest Git for Windows here :&nbsp;<a hr=
+ef=3D"https://git-scm.com/download/win" class=3D"external-link" rel=3D"nofo=
+llow">https://git-scm.com/download/win</a>
+<ol>
+<li>NOTE: Make sure "Check out Windows, Commit Unix" line endings is checke=
+d.</li>
+<li>Keep the rest of the default settings checked (i.e. caching and git cre=
+dential manager etc).</li>
+</ol></li>
+<li>OPTIONAL: Download and install a Git GUI interface if you don't want to=
+ use the command line tools. Consider&nbsp;Tortoise Git :<a href=3D"https:/=
+/tortoisegit.org/download/" class=3D"external-link" rel=3D"nofollow">https:=
+//tortoisegit.org/download/</a>&nbsp;or use SourceTree or Visual Studio's b=
+uilt-in Git tools.<br>Whichever Git client you use, make sure your Name and=
+ Email address is properly configured so that the commits you do are format=
+ted correctly.</li>
+</ol>
+<p><strong><span style=3D"color: rgb(64,64,64);"><br>IDE Setup:<br></span><=
+/strong></p>
+<ol>
+<li><span style=3D"line-height: 1.4285715;">You can decide to use Visual St=
+udio Code if you want, depending on the team you are in and their requireme=
+nts.<br><a href=3D"https://code.visualstudio.com/download" class=3D"externa=
+l-link" rel=3D"nofollow">https://code.visualstudio.com/download</a><br><br>=
+For full framework development it is recommended to install Visual Studio. =
+At the time of writing that is VS 2022.<br><a href=3D"https://visualstudio.=
+microsoft.com/vs/professional" class=3D"external-link" rel=3D"nofollow">htt=
+ps://visualstudio.microsoft.com/vs/professional</a><br>Choose "Enterprise" =
+if you have an Enterprise level VS subscription. Most likely it will be Pro=
+fessional.<br><br>Run the downloaded installer. Confirm that you are instal=
+ling the correct version for your license. It should read "Installing - Vis=
+ual Studio Professional"</span></li>
+<li><span style=3D"line-height: 1.4285715;">For most common installations, =
+choose <span> "ASP.NET and web development",&nbsp;</span>"Universal Windows=
+ Platform development", ".NET desktop development", "Data storage and proce=
+ssing"<br>Under "Individual Components" tab check all the .NET Framework <s=
+trong>4.8</strong>&nbsp;items and also&nbsp;<span>".NET Portable Library ta=
+rgeting pack" as well as TypeScript SDK</span><br>Under Data Storage And Pr=
+ocessing, make sure SQL Server Data Tools is selected (SSDT).<br></span></l=
+i>
+<li><span style=3D"line-height: 1.4285715;">Click Install and make coffee</=
+span></li>
+<li><span style=3D"line-height: 1.4285715;">Set the VS shortcut to always s=
+tart as Administrator, otherwise you will run into build issues <strong>OR =
+(thanks to Ross for this), just browse to C:\Windows\System32\inetsrv\confi=
+g and click on the button to confirm permissions.<br></strong></span><span =
+style=3D"line-height: 1.4285715;">To achieve that, do this:</span>
+<ol>
+<li>Browse to devenv.exe (C:\Program Files\Microsoft Visual Studio\2022\Pro=
+fessional\Common7\IDE), right-click and select "Troubleshoot compatibility"=
+. Select "Troubleshoot program"</li>
+<li>Check "The program requires additional permissions"</li>
+<li>Click "Next", click "Test the program..."</li>
+<li>Wait for VS to launch.</li>
+<li>If it is the first time you are running VS, click sign-in and enter you=
+r email address (e.g. bob.morgan@mixtelematics.com) and your domain passwor=
+d.</li>
+<li>Close VS and click "Next"</li>
+<li>Select "Yes, save these settings for this program"</li>
+<li>Click "Close"</li>
+</ol></li>
+<li>Once VS is open, look for any updates by clicking on the yellow flag to=
+p right.</li>
+<li>Set tab spaces:
+<ol>
+<li>Tools &gt; Options &gt; Text Editor &gt; All Languages &gt; Tabs</li>
+<li>Select Smart indenting. Set Tab size to 2, indenting to 2, and KEEP tab=
+s.</li>
+<li>Tools &gt; Options &gt; Text Editor &gt; T-SQL90 &gt; Tabs</li>
+<li>Select Block indenting. Set Tab size to 2, indenting to 2, and INSERT S=
+PACES.</li>
+</ol></li>
+<li>Install Redis x64 (<a href=3D"https://github.com/MSOpenTech/redis/relea=
+ses/" class=3D"external-link" rel=3D"nofollow">https://github.com/MSOpenTec=
+h/redis/releases/</a>) &lt;&lt;&lt; <strong>This should not be needed anymo=
+re even for local development. Install only if you really need this</strong=
+></li>
+<li>Setup NuGet.
+<ol>
+<li>Open Visual Studio under TOOLS &gt; NuGet Package Manager &gt; Package =
+Manager Settings set NuGet to automatically download packages.</li>
+<li>Under "Package Sources", add the MiX NuGet package source: Name: MiX Az=
+ure Path:&nbsp;<a href=3D"https://pkgs.dev.azure.com/MiXTelematics/Common/_=
+packaging/Common/nuget/v3/index.json" class=3D"external-link" rel=3D"nofoll=
+ow">https://pkgs.dev.azure.com/MiXTelematics/Common/_packaging/Common/nuget=
+/v3/index.json</a></li>
+</ol></li>
+<li>Install AjaxMinifier. It is used by the Angular UI build process. (<a h=
+ref=3D"https://github.com/microsoft/ajaxmin/releases/download/v5.14/Microso=
+ft.Ajax.Minifier.v5.14.zip" class=3D"external-link" rel=3D"nofollow">https:=
+//github.com/microsoft/ajaxmin/releases/download/v5.14/Microsoft.Ajax.Minif=
+ier.v5.14.zip</a>), otherwise you won't be able to build the UI Framework. =
+Extract and run AjaxMinSetup.</li>
+<li><p>Install PostSharp:</p>
+<ol>
+<li><p>Previously PostSharp was installed automatically when you build the =
+DynaMiX.Backend project via NuGet. This does not seem to be the case with V=
+S 2015+.</p></li>
+<li>Download the PostSharp EXE here, <strong>THIS SPECIFIC VERSION</strong>=
+ (4.3.48): <a href=3D"https://www.postsharp.net/downloads/postsharp-4.3/v4.=
+3.38" class=3D"external-link" rel=3D"nofollow">https://www.postsharp.net/do=
+wnloads/postsharp-4.3/v4.3.48</a></li>
+<li>Don't select the trial or pro license, select <strong>PostSharp Express=
+</strong>. When asked if you don't want to try PostSharp Ultimate, select <=
+strong>No, thanks.</strong></li>
+</ol></li>
+<li>Install the Powershell Tools for Visual Studio extension to support the=
+ automated deployment project types. Do this by going to the Extensions men=
+u option and searching online for "powershell tools for VS 2022".</li>
+<li>If you will be building the DynaMiX Backend, you <strong>MUST</strong> =
+install the 2012 Visual C++ Redistributable Update 4 (64 bit version) - dow=
+nloadable here:&nbsp;<a rel=3D"nofollow" href=3D"http://www.microsoft.com/e=
+n-us/download/details.aspx?id=3D30679" class=3D"external-link">http://www.m=
+icrosoft.com/en-us/download/details.aspx?id=3D30679</a>&nbsp;(<span style=
+=3D"color: rgb(255,0,0);">it HAS to be this version, not something newer or=
+ older</span>)</li>
+<li>Download and install the TypeScript 3.8 SDK :&nbsp;<a href=3D"https://m=
+arketplace.visualstudio.com/items?itemName=3DTypeScriptTeam.typescript-38rc=
+" class=3D"external-link" rel=3D"nofollow">https://marketplace.visualstudio=
+.com/items?itemName=3DTypeScriptTeam.typescript-38rc</a></li>
+<li>BUILD ORDER (Clone these projects in D:\Projects or C:\Projects):
+<ol>
+<li>Clone the DynaMiX.UI.Framework GIT repo, switch to the master branch, o=
+pen in Visual Studio and build.</li>
+<li>Clone the MiXFleet GIT repo, switch to the Integration branch, open in =
+Visual Studio and build.</li>
+<li>Clone the DynaMiX.Backend GIT repo, switch to the Integration branch, o=
+pen in Visual Studio and build.</li>
+</ol></li>
+<li>OPTIONAL:
+<ol>
+<li>ReSharper (<a style=3D"line-height: 1.4285715;" href=3D"https://www.jet=
+brains.com/resharper/download/" class=3D"external-link" rel=3D"nofollow">ht=
+tps://www.jetbrains.com/resharper/download/</a>) (get a key from Russell Si=
+mmonds)</li>
+<li>For those that had a perpetual key for ReSharper 8, you can install the=
+ first version of ReSharper 9 only (9.0.0.0), filename:&nbsp;ReSharperAndTo=
+olsPacked01Update1_checked.exe</li>
+</ol></li>
+</ol>
+<p><br></p>
+<p><strong><span style=3D"color: rgb(64,64,64);">ENVIRONMENT VARIABLES:<br>=
+</span></strong><span style=3D"line-height: 1.4285715;">1) Add MSBUILD to y=
+our path. Open Advanced System Settings and edit the PATH variable. Add ;C:=
+\Windows\Microsoft.NET\Framework64\v4.0.30319\<br></span><span style=3D"lin=
+e-height: 1.4285715;">2) If you have Visual Studio 2010 installed as well, =
+add the following environment variable: "VisualStudioVersion" with value "1=
+1.0"</span></p>
+<p><strong><br></strong></p>
+<p><strong>CLONE REPOSITORIES:<br></strong>The repositories to clone depend=
+s which team you are in. Your Team Lead should provide you with the reposit=
+ories you need to clone.<br>1) You can clone from within VS by clicking on =
+Azure DevOps and signing in. Or if you prefer TortoiseGit or SourceTree, cl=
+one repositories using that instead.<br>2) Clone the repository into C:\Pro=
+jects\ (so you end up with C:\Projects\MiXFleet or C:\Projects\DynaMiX.Back=
+end for example).<br>3) If you are prompted for a username and password, en=
+ter your MiX email address and domain password.</p>
+<p><br></p>
+<p><strong>NODEJS (for UI unit tests) - THIS WILL CHANGE SOON BECAUSE OF AN=
+GULAR 4:</strong><br>1) Download and install NodeJS 64bit msi from <a href=
+=3D"https://nodejs.org/download/" class=3D"external-link" rel=3D"nofollow">=
+https://nodejs.org/download/</a><br>2) Install Karma. Open a command prompt=
+ and navigate to C:\Program Files\nodejs\<br>3)&nbsp;npm install -g karma@0=
+.12.31 -msvs_version=3D2015 &nbsp;(-msvs_version=3D2015 is only required if=
+ you only have VS2015 installed)<br>4)&nbsp;npm install -g karma-jasmine@0.=
+1.5 karma-cli@0.0.4 karma-chrome-launcher@0.1.7&nbsp;karma-sourcemap-loader=
+</p>
+<p>The versions above has to be used. Using a version above 0.1.5 of karma-=
+jasmine will result in all unit tests failing due to version incompatibilit=
+ies between jasmine and Angular 1.0.6/8 which we are using.</p>
+<p><br></p>
+<p><strong>Local SQL Setup &lt;&lt;&lt;&lt; Just do steps 2 and 13. The ful=
+l SQL installation is not needed anymore for general development:<br></stro=
+ng><s><span style=3D"line-height: 1.4285715;">1) Install SQL Server 2016 De=
+veloper Edition<br></span></s></p>
+<ul style=3D"list-style-type: square;">
+<li><s><span style=3D"line-height: 1.4285715;">Choose New SQL Server stand-=
+alone installation</span></s></li>
+<li><s><span style=3D"line-height: 1.4285715;">Select Database Engine Servi=
+ces</span></s></li>
+<li><s><span style=3D"line-height: 1.4285715;">In SQL 2016 SQL management s=
+tudio is no longer available and you have to install SQL Management Tools s=
+eparately (SMSS-Setup-ENU.exe).</span></s></li>
+<li><s><span style=3D"line-height: 1.4285715;">Check Windows AND SQL authen=
+tication modes (Mixed Mode authentication). Enter an "sa" password. Under S=
+pecify SQL administrators,&nbsp;</span></s></li>
+<li><s><span style=3D"line-height: 1.4285715;">Click "Add Current User" to =
+add your domain account.</span></s></li>
+<li><s><span style=3D"line-height: 1.4285715;">If you like, click on the "D=
+ata Directories" tab and change the location of where the databases are cre=
+ated, i.e. D:\MSSQLDbs\</span></s></li>
+</ul>
+<p>2) After installation, in Windows Services, set Distributed Transaction =
+Coordinator to start automatically (delayed)<br><s>3) Open SQL Management S=
+tudio. Connect to db (local). Right-click local DB, select properties. Clic=
+k Memory tab and make max mem usage 1024MB.</s><br><s>4) Expand "Security &=
+gt; Logins" and make sure your your domain user account is listed and that =
+it has sysadmin rights.</s><br><s>5) If you used DEVELOPMENT\SRVCIIS for th=
+e IIS DefaultAppPool login, add the DEVELOPMENT\SRVCIIS account as well and=
+ assign sysadmin rights.</s><br><s>6) Get the DB backups and scripts (from =
+\\dsstbisql01\Backups\DynaMiX\). If you don't have access, please ask Steph=
+an Visagie.</s><br><s>7) Edit the "Restore all.sql" file and change the Sql=
+Backup path (where the .bak files are) and the target Data and Log path (wh=
+ere you want your databases to be restored to - your SQL data path).</s><br=
+><s><span style=3D"line-height: 1.4285715;">8) Open SQL management studio o=
+pen the "Restore all.sql" script.<br>9) Enter SQLCMD mode. Query -&gt; SQLC=
+MD Mode<br>10) Execute the restore script.<br></span></s><span style=3D"lin=
+e-height: 1.4285715;"><s>11) Open and execute Logins.sql.</s><br><s>12) Ope=
+n and execute Set CLR Enabled.sql.</s><br></span><span style=3D"line-height=
+: 1.4285715;">13) Setup MSDTC in Component services<br></span></p>
+<ul style=3D"list-style-type: square;">
+<li><span style=3D"line-height: 1.4285715;">Go to cmd and enter services.ms=
+c and right click on "Distributed Transaction Coordinator" and set startup =
+type to Automatic (Delayed Start) and press start</span></li>
+<li><span style=3D"line-height: 1.4285715;">Go to Control panel -&gt; Admin=
+istrative Tools -&gt;Component Services -&gt; Component Services -&gt; Open=
+ Computers -&gt; My Computer -&gt; Distributed Transaction Coordinator -&gt=
+; Right click on Local DTC -&gt;Select properties</span></li>
+<li><span style=3D"line-height: 1.4285715;">Select Security tab</span></li>
+<li><span style=3D"line-height: 1.4285715;">Click on Allow Remote Clients a=
+nd Allow inbound and Allow Outbound</span></li>
+<li><span style=3D"line-height: 1.4285715;">Select No Authentication Requir=
+ed</span></li>
+<li><span style=3D"line-height: 1.4285715;">Apply</span></li>
+</ul>
+<p><br><strong><span style=3D"color: rgb(64,64,64);">DACPACS: &lt;&lt;&lt;&=
+lt; Not needed anymore<br></span></strong><span style=3D"line-height: 1.428=
+5715;">1) You need to run the dacpacs to update your local databases to the=
+ latest schema. To do that, navigate to&nbsp;C:\Projects\Database\.build\<b=
+r></span><span style=3D"line-height: 1.4285715;">2) Open a command prompt a=
+t that location as Administrator and run app.all.full. Watch out for red er=
+rors.<br></span><span style=3D"line-height: 1.4285715;">3) Run tests.all.fu=
+ll</span></p>
+<p><br></p>
+<p><strong>SKYPE:</strong><br>1) If you are installing Skype, add this to y=
+our hosts file to remove the annoying ads: 127.0.0.1&nbsp;&nbsp;&nbsp;&nbsp=
+; <a href=3D"http://apps.skype.com" class=3D"external-link" rel=3D"nofollow=
+">apps.skype.com</a> # Skype Ads Blocker<br><br><strong>ZOOM:</strong><br>1=
+) Management prefers to use Zoom for company-wide meetings. Download and in=
+stall. You will be provided with a meeting room link if you are required to=
+ join a Zoom meeting. You can then sign in using SSO.<br><br></p>
+<p><strong>DYNAMIX STANDARD TIME</strong></p>
+<p>You might get the exception "The time zone ID 'DynaMiX Standard Time' wa=
+s not found on the local computer." To resolve this you should run "DynaMiX=
+ Standard Time v11.reg". At time of writing, this can be found here:&nbsp;<=
+/p>
+<p>\\DSSTBSOFTWARE\Software\Dev Tools</p>
+<p><br></p>
+<p><br></p>
+<p><strong style=3D"line-height: 1.4285715;"><span style=3D"color: rgb(64,6=
+4,64);"><br></span></strong></p>
+    </div>
+</body>
+</html>
+------=_Part_15578_551365374.1692620882606--

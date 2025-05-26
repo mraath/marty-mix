@@ -1,7 +1,12 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-05-27T06:44
+updated: 2025-05-27T07:00
 ---
+
+## New Team Members
+
+- Setup: [[DynaMiX-EnvironmentSetup-031022-1311-12.pdf]]
+- 
 
 ## Related
 
