@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-27T14:13
+updated: 2025-05-27T14:43
 ---
 
 # OE-638 Reset Black Flag
@@ -165,6 +165,12 @@ carrier.IsConfigurationDeviceDifferentToConfigGroup = assetConfigFlags.ContainsK
 	<label class="radio"><input type="radio" ng-model="resetConfigTemplate.whatToReset" value="2"> <span dmx-translate>Reset both</span></label>
 </form>
 ```
+
+- [ ] Translations
+	- Please select one of the following options:
+	- Reset events
+	- Reset mobile device settings
+	- Reset both
 
 ## Implementation
 
