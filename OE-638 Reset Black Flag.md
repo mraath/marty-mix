@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-27T14:07
+updated: 2025-05-27T14:13
 ---
 
 # OE-638 Reset Black Flag
@@ -157,6 +157,14 @@ carrier.IsConfigurationDeviceDifferentToConfigGroup = assetConfigFlags.ContainsK
 
 - [[Frangular Lazy Loading]]
 
+```html
+<form name="resetBothConfigModalForm">
+	<strong dmx-translate>Please select one of the following options:</strong>
+	<label class="radio mt-10"><input type="radio" ng-model="resetConfigTemplate.whatToReset" value="0"> <span dmx-translate>Reset events</span></label>
+	<label class="radio"><input type="radio" ng-model="resetConfigTemplate.whatToReset" value="1"> <span dmx-translate>Reset mobile device settings</span></label>
+	<label class="radio"><input type="radio" ng-model="resetConfigTemplate.whatToReset" value="2"> <span dmx-translate>Reset both</span></label>
+</form>
+```
 
 ## Implementation
 
