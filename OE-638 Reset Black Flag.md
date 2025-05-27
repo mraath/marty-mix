@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-26T12:35
+updated: 2025-05-27T14:06
 ---
 
 # OE-638 Reset Black Flag
@@ -124,12 +124,12 @@ PR: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangu
 
 STEPS
 
-- [ ] Lazy load: GetConfigChangedFlagForMobileUnits
+- [x] Lazy load: GetConfigChangedFlagForMobileUnits ✅ 2025-05-27
 	- [mobileunit].[MobileUNit_GetMobileUnitsWithOverwrittenEventsIds] (libraryId)
 	- [mobileunit].[MobileUnit_GetMobileUnitsWithOverwrittenDevicesIds] (libraryId)
 	- 
 	- [x] Show lazy load indication ✅ 2025-05-26
-	- [ ] FR UI: Enable the reset and show the icon
+	- [x] FR UI: Enable the reset and show the icon ✅ 2025-05-27
 		- ddAssetsActions
 		- configAssetsActionsEnabled
 - [ ] Clicked: show modal to allow user to select
