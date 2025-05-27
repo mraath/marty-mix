@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-27T14:06
+updated: 2025-05-27T14:07
 ---
 
 # OE-638 Reset Black Flag
@@ -198,7 +198,7 @@ MobileUnitConfigFlagCarrierList
 
 blackFlagsSources: IMobileUnitConfigFlagCarrier[] = [];
 
-- [ ] New Carrier - id to STRING!!!!!
+- [x] New Carrier - id to STRING!!!!! ✅ 2025-05-27
 
 Core Class: MobileUnitConfigFlagCarrier
 MiX.DeviceIntegration.Common.2025.9.20250526.1.nupkg
