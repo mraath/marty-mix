@@ -1,6 +1,6 @@
 ---
 created: 2025-05-15T12:35
-updated: 2025-05-27T08:10
+updated: 2025-05-27T13:33
 ---
 ## Keep for Justus
 
@@ -15,7 +15,7 @@ updated: 2025-05-27T08:10
 ### FR UI
 
 - Branch **INT**: Config/MR/HouseCleaning/Console_Log_Commented_Out
-	- [ ] PR INT: xxxxxxxxxxx
+	- [ ] PR INT: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/125303
 - Branch DEV: Config/MR/HouseCleaning/Console_Log_Commented_Out_DEV
 	- PR DEV: [Pull request 124686: Cleanup DEV - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/124686)
 
