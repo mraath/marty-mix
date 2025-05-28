@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-20T10:55
+updated: 2025-05-28T09:45
 ---
 
 # OE-656 Grey background
@@ -51,7 +51,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - Branch: FR UI: Config/MR/Bug/OE-656_GreyBackground
 - Removed all "alert" references
 
-- [ ] PR FR UI **INT**: xxxxxxxxxxxxxxx
+- [ ] PR FR UI **INT**: [Merge fix to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/125353)
 - [x] PR FR UI **DEV**: xxxxxxxxxxxxxxx ✅ 2025-05-20
 
 ## DEV TEST
