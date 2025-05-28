@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-28T10:03
+updated: 2025-05-28T10:12
 ---
 
 # OE-651 Multiselect Compile Error
@@ -156,7 +156,7 @@ Our team will just quickly need to discuss the best way forward.
 ## Deploy
 
 - [ ] PR **INT** OLD UI: [Merge to OLD UI](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/125354)
-- [ ] PR INT Config API: xxxxxxxxxxx
+- [ ] PR INT Config API: [Merge to Config API](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/125355)
 - [ ] PR INT FR UI: xxxxxxxxxxxxxxxx
 
 - [x] PR **DEV** UI: [Pull request 124558: OE-651: Added a better toast message - Repos](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/124558) ✅ 2025-05-14
