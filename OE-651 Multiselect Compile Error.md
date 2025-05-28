@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-19T16:22
+updated: 2025-05-28T09:54
 ---
 
 # OE-651 Multiselect Compile Error
@@ -155,12 +155,13 @@ Our team will just quickly need to discuss the best way forward.
 
 ## Deploy
 
-- [ ] PR **INT** UI: xxxxxxxxxxx
-- [ ] PR INT API: xxxxxxxxxxx
-- [ ] PR INT FR AI: xxxxxxxxxxxxxxxx
+- [ ] PR **INT** OLD UI: xxxxxxxxxxx
+- [ ] PR INT Config API: xxxxxxxxxxx
+- [ ] PR INT FR UI: xxxxxxxxxxxxxxxx
+
 - [x] PR **DEV** UI: [Pull request 124558: OE-651: Added a better toast message - Repos](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/124558) ✅ 2025-05-14
 	- [x] [Pull request 124791: OE-651: Changed the wording after talking to Lauren - Repos](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/124791) ✅ 2025-05-19
 - [x] PR DEV API: [Pull request 124559: OE-651: Added Try catch to fail nicely for a list of units - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/124559) ✅ 2025-05-14
-- [x] PR DEV FR AI: [Pull request 124774: OE-651: Trying to fail over nicely - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/124774) ✅ 2025-05-19
+- [x] PR DEV FR UI: [Pull request 124774: OE-651: Trying to fail over nicely - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/124774) ✅ 2025-05-19
 
 ![[OE-651 Multiselect Compile Error New Error.png]]
