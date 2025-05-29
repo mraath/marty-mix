@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-29T12:30
+updated: 2025-05-29T15:23
 ---
 
 # OE-638 Reset Black Flag
@@ -240,6 +240,7 @@ Config/MR/Bug/OE-638_Reset_Black_Flag_DEV
 	- [x] NEW PR for new CORE nuget: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125237 ✅ 2025-05-26
 - [x] PR DEV FR API: [Pull request 125111: OE-638: Merge new end point to DEV - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125111) ✅ 2025-05-23
 	- [ ] NEW PR for Core: 
+	- MiX.DeviceIntegration.Common.2025.10.20250528.1
 
 ### FR UI
 
