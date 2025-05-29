@@ -1,6 +1,6 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-05-28T09:05
+updated: 2025-05-29T12:14
 ---
 
 ## New Team Members
@@ -9,7 +9,7 @@ updated: 2025-05-28T09:05
 - Nicole [videos](https://mixtelematics-my.sharepoint.com/personal/zeshan_khan_mixtelematics_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzeshan%5Fkhan%5Fmixtelematics%5Fcom%2FDocuments%2FRecordings%2FConfig%20Admin%20and%20DynaMiX%20Overview%2D20220209%5F133450%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E08912a44%2D4871%2D486b%2D8f11%2Da36244108db7)
 - Zonika walking them through Hi-Level concepts.
 - VPN (docx in folder)
-	- FortiGate
+	- [Forticlient](https://www.fortinet.com/support/product-downloads#vpn): 
 	- ![[Config Modal Setup.png|400]]
 	- Logged a ticket
 - AZURE Access: Zonika/Jacques
