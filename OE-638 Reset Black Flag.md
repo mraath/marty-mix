@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-29T15:44
+updated: 2025-05-29T15:46
 ---
 
 # OE-638 Reset Black Flag
@@ -240,7 +240,7 @@ Config/MR/Bug/OE-638_Reset_Black_Flag_DEV
 	- [x] NEW PR for new CORE nuget: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125237 ✅ 2025-05-26
 	- [ ] BROKEN FROM Jako DateTime vs Nuget (will try to fix on dev)
 - [x] PR DEV FR API: [Pull request 125111: OE-638: Merge new end point to DEV - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125111) ✅ 2025-05-23
-	- [ ] NEW PR for Core: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125433
+	- [x] NEW PR for Core: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125433 ✅ 2025-05-29
 	- MiX.DeviceIntegration.Common.2025.10.20250528.1
 
 ### FR UI
