@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-27T14:43
+updated: 2025-05-29T12:30
 ---
 
 # OE-638 Reset Black Flag
@@ -132,13 +132,13 @@ STEPS
 	- [x] FR UI: Enable the reset and show the icon ✅ 2025-05-27
 		- ddAssetsActions
 		- configAssetsActionsEnabled
-- [ ] Clicked: show modal to allow user to select
+- [x] Clicked: show modal to allow user to select ✅ 2025-05-29
 	- ResetType.Events == 0
 	- ResetType.Devices == 1
 	- ResetType.EventsAndDevices == 2
-- [ ] Send through the correct thing to change
+- [x] Send through the correct thing to change ✅ 2025-05-29
 	- Seems to be ready
-- [ ] TEST
+- [x] TEST ✅ 2025-05-29
 
 ```c#
 public class MobileUnitConfigFlag
@@ -239,6 +239,7 @@ Config/MR/Bug/OE-638_Reset_Black_Flag_DEV
 - [x] PR **INT** FR API: [Pull request 125109: OE-638: Added GetConfigChangedFlagForMobileUnits FR API end point to get specific area of black flag - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125109?_a=files) ✅ 2025-05-23
 	- [x] NEW PR for new CORE nuget: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125237 ✅ 2025-05-26
 - [x] PR DEV FR API: [Pull request 125111: OE-638: Merge new end point to DEV - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125111) ✅ 2025-05-23
+	- [ ] NEW PR for Core: 
 
 ### FR UI
 
