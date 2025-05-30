@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-30T10:29
+updated: 2025-05-30T11:55
 ---
 
 # OE-638 Reset Black Flag
@@ -166,7 +166,7 @@ carrier.IsConfigurationDeviceDifferentToConfigGroup = assetConfigFlags.ContainsK
 </form>
 ```
 
-- [ ] Translations
+- [x] Translations ✅ 2025-05-30
 	- Please select one of the following options:
 	- Reset events
 	- Reset mobile device settings
