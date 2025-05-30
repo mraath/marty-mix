@@ -1,6 +1,6 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-05-29T12:14
+updated: 2025-05-30T14:16
 ---
 
 ## New Team Members
@@ -17,7 +17,9 @@ updated: 2025-05-29T12:14
 - High level:
 	- FE > BE > Client > API > Repo (Asset DB, Deviceconfig DB, DP DB)
 	- FE > FR UI > FR API > Client > API > Repo (Deviceconfig, DP)
-- 
+- DOC x for Time Tracking in Jira
+
+
 
 ## Related
 
