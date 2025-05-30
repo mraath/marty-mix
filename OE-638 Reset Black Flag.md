@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-05-29T15:54
+updated: 2025-05-30T10:29
 ---
 
 # OE-638 Reset Black Flag
@@ -246,5 +246,5 @@ Config/MR/Bug/OE-638_Reset_Black_Flag_DEV
 ### FR UI
 
 - [ ] PR **INT** FR UI: xxxxxxxxxxx
-- [ ] PR DEV FR UI: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/125434
+- [x] PR DEV FR UI: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/125434 ✅ 2025-05-30
 
