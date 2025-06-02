@@ -1,6 +1,6 @@
 ---
 created: 2025-04-23T16:09
-updated: 2025-06-02T10:45
+updated: 2025-06-02T10:48
 ---
 
 ## Questions:
@@ -81,3 +81,6 @@ updated: 2025-06-02T10:45
 [[LocationEditPlan]]
 
 [[EventEditPlan]]
+
+[[EditMobileDevicePlan]]
+
