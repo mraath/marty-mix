@@ -1,6 +1,6 @@
 ---
 created: 2025-04-23T16:09
-updated: 2025-06-02T13:09
+updated: 2025-06-02T14:27
 ---
 This comes from [[xxxxxxxxxxxxxxxxx]]
 
@@ -84,4 +84,12 @@ This comes from [[xxxxxxxxxxxxxxxxx]]
 [[EventEditPlan]]
 
 [[EditMobileDevicePlan]]
+
+## Trying to get to a solution
+
+I have a question. Will it not be better to do the following. Start the rewrite from the bottom up. So first rewrite the smaller components, eg, parameters, conditions, etc. (like calibration templates and property-specific templates) Then maybe go up one level, the smaller templates being re-used by many, like the Peripherals, Parameters, Firmware, and CAN libraries. Then maybe work on specific areas... like first Locations (library, template, edit, asset edit) Then Events (library, template, edit, asset edit) The Mobile Device (library, template, edit, asset edit)
+
+This is what I think we should do?
+
+Maybe let me know what you think about this, but then also first show me a diagram how everything includes everything else
 
