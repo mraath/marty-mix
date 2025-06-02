@@ -1,6 +1,6 @@
 ---
 created: 2025-04-23T16:09
-updated: 2025-06-02T10:23
+updated: 2025-06-02T10:29
 ---
 
 ## Questions:
@@ -75,3 +75,6 @@ updated: 2025-06-02T10:23
 [[ROO Prompt to get Rewrite Edit Templates]]
 
 [[RooPlan2]]
+
+[[RooPlan3]]
+
