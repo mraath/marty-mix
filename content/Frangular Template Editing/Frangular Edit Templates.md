@@ -1,6 +1,6 @@
 ---
 created: 2025-04-23T16:09
-updated: 2025-06-02T10:37
+updated: 2025-06-02T10:45
 ---
 
 ## Questions:
@@ -80,3 +80,4 @@ updated: 2025-06-02T10:37
 
 [[LocationEditPlan]]
 
+[[EventEditPlan]]
