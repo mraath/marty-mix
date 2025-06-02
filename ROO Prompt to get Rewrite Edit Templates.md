@@ -1,21 +1,10 @@
 ---
-created: 2025-04-23T16:09
+created: 2025-06-02T09:54
 updated: 2025-06-02T09:54
 ---
+OK, please look at the previuos history. In short, I am busy rewriting the edit templates. I need to look at all the templates, how they are integrated into each other. If you basically look at the *template*.html files, you will get a good idea.
 
-## Questions:
-
-- [ ] What about the libraries?
-	- [ ] Should they not come first?
-	- [ ] ALL
-		- [ ] No edit / Basic
-- [ ] Config Templates?
-- [ ] Asset Templates? << ALL THESE (investigation below)
-	- [ ] 
-- [ ] Then specifically
-	- [ ] Events
-	- [ ] Locations
-	- [ ] Mobile Devices
+Here is a high level investigation I did.
 
 ## Investigating
 
@@ -67,9 +56,18 @@ updated: 2025-06-02T09:54
 		- [ ] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\LocationTemplateTemplate.html
 			- xxxxxxxxxxxxxxxx
 
+My main focus would be on rewriting:
+- Events
+- Locations
+- Mobile Devices
 
-## Use Roo Code
+Basically each of them has:
+- Libraries
+- Templates
+- Asset overrides
 
-[[Roo Code Edit Templates Architect]]
+Here is a basic summary of what I previously got from you:
 
-[[ROO Prompt to get Rewrite Edit Templates]]
+C:\Projects\marty-mix\content\Frangular Template Editing\Roo Code Edit Templates Architect.md
+
+Please architect this so I can see all the templates, how they use each other, maybe a basic plan of how I can start rewriting these. Please also note that there are eg. under events, there are actions, parameters, etc.
