@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T10:14
+updated: 2025-06-03T10:15
 ---
 ## Introduction
 
@@ -53,7 +53,7 @@ After this we should go up another level and see if it needs any eg. Peripherals
 
 ## Important considerations
 
-
+- Dynamic Calibration Templates: Templates dynamically included via controller.getCalibrationTemplate(parameter). They are included in 
 
 
 
