@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T09:54
+updated: 2025-06-03T10:08
 ---
 ## Introduction
 
@@ -34,6 +34,8 @@ It also re-uses eg. parameters, conditions, properties.
 It furthermore re-uses higher up templates like: Peripherals, Parameters, Firmware, and CAN libraries
 Finally it will reach the top level templates: Locations, Events and Mobile Devices.
 These are found in (library, template, edit, asset edit)
+
+**Note**: I mostly focussed on the ConfigAdmin/Templates directory.
 
 ## Potential way forward
 

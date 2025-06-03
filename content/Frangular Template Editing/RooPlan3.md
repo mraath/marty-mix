@@ -1,3 +1,7 @@
+---
+created: 2025-06-02T10:28
+updated: 2025-06-03T10:08
+---
 # Architectural Review and Refactoring Plan for ConfigAdmin/Templates
 
 ## 1. Introduction
