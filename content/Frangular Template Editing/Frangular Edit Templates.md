@@ -1,6 +1,6 @@
 ---
 created: 2025-04-23T16:09
-updated: 2025-06-03T09:20
+updated: 2025-06-03T10:12
 ---
 This comes from [[xxxxxxxxxxxxxxxxx]]
 
@@ -95,3 +95,4 @@ Maybe let me know what you think about this, but then also first show me a diagr
 
 - [NotebookLM](https://notebooklm.google.com/notebook/7162b180-f31e-4d7e-931a-b1a5fa2d60a3?_gl=1*siu74d*_ga*MjQ5MjU0NTYzLjE3NDg0OTgyODU.*_ga_W0LDH41ZCB*czE3NDg4NDA2MTYkbzMkZzAkdDE3NDg4NDA2MTYkajYwJGwwJGgw)
 - [[Redefined Frangular Editing SPIKE]]
+- 
