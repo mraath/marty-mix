@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T11:40
+updated: 2025-06-03T11:41
 ---
 ## Introduction
 
@@ -58,7 +58,7 @@ After this we should go up another level and see if it needs any eg. Peripherals
 
 - Dynamic Calibration Templates: Templates dynamically included via **controller.getCalibrationTemplate**(parameter). They are included in: MobileDeviceTemplatePeripheralTemplate.html, AssetMobileDevicePeripheralEditTemplate.html
 - Dynamic Property Templates: Templates dynamically included via **property.templateUrl**. They render specific input controls for parameters. Included by: LogicalDeviceSettingsTemplate.html, LogicalCameraDeviceSettings.html
-- Certain templates re 
+- Certain templates are being reused a LOT: MobileDeviceTemplatePeripheralTemplate.html, AssetMobileDevicePeripheralEditTemplate.html
 
 ## Attempted diagram (might have missed some dynamic templates)
 
