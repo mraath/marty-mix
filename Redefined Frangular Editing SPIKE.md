@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T10:08
+updated: 2025-06-03T10:14
 ---
 ## Introduction
 
@@ -52,6 +52,13 @@ We should then go up one level and see if it needs any eg. parameters, condition
 After this we should go up another level and see if it needs any eg. Peripherals, Parameters, Firmware, and CAN libraries, then rewrite those.
 
 ## Important considerations
+
+
+
+
+
+
+
 
 
 
