@@ -1,12 +1,10 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T09:30
+updated: 2025-06-03T09:42
 ---
 ## Introduction
 
-While working with 
-
-Part of this work was the Assets Panel. This panel (found on the right) usually has 4 links of interest to this spike:
+The 4 links of interest to this spike:
     1) Asset Description
     2) Mobile Device Template
     3) Event Template
@@ -14,7 +12,38 @@ Part of this work was the Assets Panel. This panel (found on the right) usually 
 
 ![[Untitled.png]]
 
-We want to add the editing of the Templates to the new Frangular way of doing things.  
+In order to rewrite the editing Templates into the new Frangular way, there is a lot to consider.
+Although in the screenshot above we see 4 distinct templates, in reality there are a lot more.
+
+## Initial findings
+
+We have the top level templates:
+- Location
+- Events
+- Mobile Devices
+
+Each of these are available in:
+- Libraries
+- Templates
+- Editing Templates
+- Asset Templates
+
+All of these templates also include other templates being used. 
+This drill down all the way to types, eg. Boolean (to handle the display of Boolean values). 
+It also re-uses eg. parameters, conditions, properties. 
+It furthermore re-uses higher up templates like: Peripherals, Parameters, Firmware, and CAN libraries
+Finally it will reach the top level templates: Locations, Events and Mobile Devices.
+These are found in (library, template, edit, asset edit)
+
+## Potential way forward
+
+I would suggest we start with the Templates with the least amount of 
+
+
+
+
+
+
 There is a lot to consider when working with the templates. There are shared templates, shared components, and some of these templates even reuse other templates.
 
 The main areas to consider would be the above-mentioned 4. These might link with the library templates and will have shared templates.
