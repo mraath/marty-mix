@@ -1,8 +1,18 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T09:27
+updated: 2025-06-03T09:30
 ---
 ## Introduction
+
+While working with 
+
+Part of this work was the Assets Panel. This panel (found on the right) usually has 4 links of interest to this spike:
+    1) Asset Description
+    2) Mobile Device Template
+    3) Event Template
+    4) Location Template
+
+![[Untitled.png]]
 
 We want to add the editing of the Templates to the new Frangular way of doing things.  
 There is a lot to consider when working with the templates. There are shared templates, shared components, and some of these templates even reuse other templates.
