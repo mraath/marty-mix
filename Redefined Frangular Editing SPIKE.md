@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T09:42
+updated: 2025-06-03T09:54
 ---
 ## Introduction
 
@@ -37,9 +37,19 @@ These are found in (library, template, edit, asset edit)
 
 ## Potential way forward
 
-I would suggest we start with the Templates with the least amount of 
+I would suggest we start with the simplest Template. Herewith my proposed order:
+- Locations
+- Events
+- Mobile Device
 
+For each of these we need to create a main story with many sub-stories.
+There is a LOT to do here.
 
+I would suggest... if we start with Locations, that we work all the way down to the bottom "templates" mentioned earlier. Then rewrite those first, eg. Boolean Templates. 
+We should then go up one level and see if it needs any eg. parameters, conditions, properties, then rewrite those.
+After this we should go up another level and see if it needs any eg. Peripherals, Parameters, Firmware, and CAN libraries, then rewrite those.
+
+## Important considerations
 
 
 
