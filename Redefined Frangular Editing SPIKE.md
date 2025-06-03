@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T10:17
+updated: 2025-06-03T10:22
 ---
 ## Introduction
 
@@ -35,7 +35,11 @@ It furthermore re-uses higher up templates like: Peripherals, Parameters, Firmwa
 Finally it will reach the top level templates: Locations, Events and Mobile Devices.
 These are found in (library, template, edit, asset edit)
 
-**Note**: I mostly focussed on the ConfigAdmin/Templates directory.
+> [!Important] I mostly focussed on the ConfigAdmin/Templates directory.
+> In order to find dependencies the following were searched for: ng:include, 
+
+
+
 
 ## Potential way forward
 
