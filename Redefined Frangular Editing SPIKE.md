@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T10:40
+updated: 2025-06-03T10:42
 ---
 ## Introduction
 
@@ -61,12 +61,7 @@ After this we should go up another level and see if it needs any eg. Peripherals
 
 ## Attempted diagram (might have missed some dynamic templates)
 
-![[Redefined Frangular Editing SPIKE 2025-06-03 10.40.19.excalidraw.svg]]
-%%[[Redefined Frangular Editing SPIKE 2025-06-03 10.40.19.excalidraw.md|🖋 Edit in Excalidraw]]%%
-
-
-
-
+![[Frangular Editing Templates Diagram.excalidraw.png]]
 
 
 
