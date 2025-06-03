@@ -1,7 +1,18 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T09:21
+updated: 2025-06-03T09:27
 ---
+## Introduction
+
+We want to add the editing of the Templates to the new Frangular way of doing things.  
+There is a lot to consider when working with the templates. There are shared templates, shared components, and some of these templates even reuse other templates.
+
+The main areas to consider would be the above-mentioned 4. These might link with the library templates and will have shared templates.
+
+We will have to break up the stories into small enough sections to handle, as there is a lot to do here, which will result in a lot of testing. Also, seeing that certain sections are shared, we will need to ensure that they all work well within all the templates that use them.
+
+
+
 
 
 Okay, I'm working on refactoring AngularJS templates in the UI/Js/ConfigAdmin/Templates/ directory of my project. I've previously had some difficulty ensuring I've identified all relevant template files and understood their dependencies, especially nested or dynamically included ones.  
