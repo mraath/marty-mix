@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-03T11:41
+updated: 2025-06-04T10:33
 ---
 ## Introduction
 
@@ -65,6 +65,7 @@ After this we should go up another level and see if it needs any eg. Peripherals
 ![[Frangular Editing Templates Diagram.excalidraw.png]]
 
 
+[[Frangular Editing Spike ]]
 
 
 
