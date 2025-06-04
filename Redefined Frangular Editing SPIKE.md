@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-04T11:10
+updated: 2025-06-04T12:41
 ---
 ## Introduction
 
@@ -29,7 +29,7 @@ Each of these are available in:
 - Asset Templates
 
 All of these templates also include other templates being used. 
-This drill down all the way to types, eg. Boolean (to handle the display of Boolean values). 
+This drill down all the way to types / components, eg. Boolean (to handle the display of Boolean values). 
 It also re-uses eg. parameters, conditions, properties. 
 It furthermore re-uses higher up templates like: Peripherals, Parameters, Firmware, and CAN libraries
 Finally it will reach the top level templates: Locations, Events and Mobile Devices.
@@ -103,7 +103,6 @@ From the previous fully inclusive chart, generate a Mermaid chart for the templa
 
 There is a lot to consider when working with the templates. There are shared templates, shared components, and some of these templates even reuse other templates.
 
-The main areas to consider would be the above-mentioned 4. These might link with the library templates and will have shared templates.
 
 We will have to break up the stories into small enough sections to handle, as there is a lot to do here, which will result in a lot of testing. Also, seeing that certain sections are shared, we will need to ensure that they all work well within all the templates that use them.
 
