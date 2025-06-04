@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-04T11:07
+updated: 2025-06-04T11:10
 ---
 ## Introduction
 
@@ -94,7 +94,7 @@ From the previous fully inclusive chart, generate a Mermaid chart for the templa
 
 [[Frangular Editing Spike Mobile Devices]]
 
-- 
+- [[EditTemplatesMobileDevices.png]]
 
 ---
 
