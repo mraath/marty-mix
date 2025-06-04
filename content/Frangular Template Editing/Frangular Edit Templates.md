@@ -1,6 +1,6 @@
 ---
 created: 2025-04-23T16:09
-updated: 2025-06-03T10:48
+updated: 2025-06-04T12:57
 ---
 This comes from [[xxxxxxxxxxxxxxxxx]]
 
@@ -94,5 +94,14 @@ This is what I think we should do?
 Maybe let me know what you think about this, but then also first show me a diagram how everything includes everything else
 
 - [NotebookLM](https://notebooklm.google.com/notebook/7162b180-f31e-4d7e-931a-b1a5fa2d60a3?_gl=1*siu74d*_ga*MjQ5MjU0NTYzLjE3NDg0OTgyODU.*_ga_W0LDH41ZCB*czE3NDg4NDA2MTYkbzMkZzAkdDE3NDg4NDA2MTYkajYwJGwwJGgw)
-- [[Redefined Frangular Editing SPIKE]]
-- 
+- Most important to show: [[Redefined Frangular Editing SPIKE]]
+- [[Frangular Editing Templates CoPilot Prompt]]
+- [[Frangular Edit Templates Grok Mirmaid prompts]]
+
+Personal notes
+
+UI/Js/ConfigAdmin/Templates
+ng:include
+ng-include
+property.templateUrl
+controller.getCalibrationTemplate

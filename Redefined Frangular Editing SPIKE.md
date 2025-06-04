@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-04T12:50
+updated: 2025-06-04T12:59
 ---
 ## Introduction
 
@@ -54,6 +54,8 @@ I would suggest... if we start with Locations, that we work all the way down to 
 We should then go up one level and see if it needs any eg. parameters, conditions, properties, then rewrite those.
 After this we should go up another level and see if it needs any eg. Peripherals, Parameters, Firmware, and CAN libraries, then rewrite those.
 
+There are also potential Validation to consider to be re-written.
+
 The testing would be huge, seeing so many of these components are shares and we need to ensure it works everywhere.
 Further more Justus already did some work on 
 
@@ -68,43 +70,10 @@ Further more Justus already did some work on
 ![[Frangular Editing Templates Diagram.excalidraw.png]]
 
 
----
-From Grok I got the following:
+## Summary
 
-[Grok to Mermaid Charts](https://grok.com/chat/916279c0-6836-4fe0-bc52-0a7b1c574e96)
-
-
-[[Frangular Editing Spike ALL]]
-
-I then uploaded it to the online Mermaid and converted to a HUGE png
-- [[EditTemplatesAll.png]]
-
----
-From this chart, generate a Mermaid chart for the template dependencies in the Locations area, including all related templates and their inclusions.
-
-[[Frangular Editing Spike Locations]]
-
-- [[EditTemplatesLocations.png]]
----
-From the previous fully inclusive chart, generate a Mermaid chart for the template dependencies in the Events area, including all related templates and their inclusions.
-
-[[Frangular Editing Spike Events]]
-
-- [[EditTemplatesEvents.png]]
-
----
-From the previous fully inclusive chart, generate a Mermaid chart for the template dependencies in the Mobile Devices area, including all related templates and their inclusions.
-
-[[Frangular Editing Spike Mobile Devices]]
-
-- [[EditTemplatesMobileDevices.png]]
-
----
-
-
-
-
-
-
-[[Frangular Editing Templates CoPilot Prompt]]
+I have a few more Mermaid charts that COULD be helpful when we finally start with this.
+I would definitely break it up into the main 3 template types.
+Working from the bottom up could be a good idea.
+Justus could be helpful, for the work he has already done on 
 

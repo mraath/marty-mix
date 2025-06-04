@@ -1,6 +1,6 @@
 ---
 created: 2025-06-04T12:50
-updated: 2025-06-04T12:52
+updated: 2025-06-04T12:56
 ---
 Okay, I'm working on refactoring AngularJS templates in the UI/Js/ConfigAdmin/Templates/ directory of my project. I've previously had some difficulty ensuring I've identified all relevant template files and understood their dependencies, especially nested or dynamically included ones.  
 Could you please help me perform a deep scan and analysis?  
@@ -37,13 +37,3 @@ This reinforces the need to consider the JavaScript side during the rewrite.
 Report Structure: Present the findings clearly, perhaps starting with the list of all files, and then detailing the dependencies found for each file. Highlight any dynamic inclusions or dependencies that point outside the immediate template file.
 
 
-
----
-
-Personal notes
-
-UI/Js/ConfigAdmin/Templates
-ng:include
-ng-include
-property.templateUrl
-controller.getCalibrationTemplate
