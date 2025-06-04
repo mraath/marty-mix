@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-04T10:54
+updated: 2025-06-04T10:59
 ---
 ## Introduction
 
@@ -67,19 +67,22 @@ After this we should go up another level and see if it needs any eg. Peripherals
 ---
 From Grok I got the following:
 
-[[Frangular Editing Spike ]]
+[[Frangular Editing Spike ALL]]
 
 I then uploaded it to the online Mermaid and converted to a HUGE png
-- ALL
+- [[EditTemplatesAll.png]]
 
 ---
 From this chart, generate a Mermaid chart for the template dependencies in the Locations area, including all related templates and their inclusions.
 
+[[Frangular Editing Spike Locations]]
+
+- [[EditTemplatesLocations.png]]
 ---
-From this chart, generate a Mermaid chart for the template dependencies in the Events area, including all related templates and their inclusions.
+From the previous fully inclusive chart, generate a Mermaid chart for the template dependencies in the Events area, including all related templates and their inclusions.
 
 ---
-From this chart, generate a Mermaid chart for the template dependencies in the Mobile Devices area, including all related templates and their inclusions.
+From the previous fully inclusive chart, generate a Mermaid chart for the template dependencies in the Mobile Devices area, including all related templates and their inclusions.
 
 ---
 
