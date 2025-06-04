@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-04T10:59
+updated: 2025-06-04T11:03
 ---
 ## Introduction
 
@@ -81,8 +81,14 @@ From this chart, generate a Mermaid chart for the template dependencies in the L
 ---
 From the previous fully inclusive chart, generate a Mermaid chart for the template dependencies in the Events area, including all related templates and their inclusions.
 
+[[Frangular Editing Spike Events]]
+
+- xxxxxxxxx
+
 ---
 From the previous fully inclusive chart, generate a Mermaid chart for the template dependencies in the Mobile Devices area, including all related templates and their inclusions.
+
+
 
 ---
 
