@@ -40,3 +40,4 @@ graph TD
     V -->|main template screen| U
 ```
 
+Scope: The chart includes all templates directly related to the Mobile Devices area (MobileDeviceEditTemplate.html, MobileDeviceTemplatePeripheralTemplate.html, AssetMobileDevicePeripheralEditTemplate.html, MobileDeviceTemplateListTemplate.html, MobileDeviceLibraryTemplate.html, MobileDeviceTemplateTemplate.html) and their dependencies (PleaseBePatientModal.html, DeviceSettingsTemplate.html, LogicalDeviceSettingsTemplate.html, LogicalCameraDeviceSettings.html, TemplateListTabsTemplate.html, TemplateListGridTemplate.html, LibraryTabsTemplate.html, DynamicCalibrationTemplates, DynamicPropertyTemplates), as specified in the original input.
