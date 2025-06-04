@@ -1,6 +1,6 @@
 ---
 created: 2025-04-25T08:04
-updated: 2025-04-25T14:41
+updated: 2025-06-04T14:45
 ---
 
 >[!Question] I am looking into rewriting the templates I have in this solution. Basically whereever you see *template*.html, most of those files will need to be rewritten. Please bring up a list of templates and how they are used within other templates. Please start on the open tabs.
@@ -355,7 +355,7 @@ Before we proceed to the implementation phase, would you like me to save this pl
 
 ---
 
-- [[template_rewrite_plan]]
+- [[WIP/Frangular Edit Templates/template_rewrite_plan]]
 
 ---
 
