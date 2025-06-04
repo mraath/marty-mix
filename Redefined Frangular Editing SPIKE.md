@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-04T12:59
+updated: 2025-06-04T13:27
 ---
 ## Introduction
 
@@ -38,7 +38,6 @@ These are found in (library, template, edit, asset edit)
 > [!Important] Please note:
 > I mostly focussed on the **ConfigAdmin/Templates** directory.
 > In order to find dependencies this search was used mostly: **ng:include** / ng-include
-
 
 ## Potential way forward
 
