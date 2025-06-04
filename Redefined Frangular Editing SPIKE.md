@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-04T12:42
+updated: 2025-06-04T12:45
 ---
 ## Introduction
 
@@ -54,6 +54,9 @@ I would suggest... if we start with Locations, that we work all the way down to 
 We should then go up one level and see if it needs any eg. parameters, conditions, properties, then rewrite those.
 After this we should go up another level and see if it needs any eg. Peripherals, Parameters, Firmware, and CAN libraries, then rewrite those.
 
+The testing would be huge, seeing so many of these components are shares and we need to ensure it works everywhere.
+Further more Justus already did some work on 
+
 ## Important considerations
 
 - Dynamic Calibration Templates: Templates dynamically included via **controller.getCalibrationTemplate**(parameter). They are included in: MobileDeviceTemplatePeripheralTemplate.html, AssetMobileDevicePeripheralEditTemplate.html
@@ -100,11 +103,6 @@ From the previous fully inclusive chart, generate a Mermaid chart for the templa
 
 
 
-
-There is a lot to consider when working with the templates. There are shared templates, shared components, and some of these templates even reuse other templates.
-
-
-We will have to break up the stories into small enough sections to handle, as there is a lot to do here, which will result in a lot of testing. Also, seeing that certain sections are shared, we will need to ensure that they all work well within all the templates that use them.
 
 
 
