@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-05T12:29
+updated: 2025-06-05T13:14
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -34,6 +34,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
 ## Shorter Description
+
+ORG: Amy Bench Units
+Asset: Oyster (IMEI: 353323081190745)
+ORG: Regression Test Units
+Asset: Remora (IMEI: 358014099129974)
+When I remove the mobile device, the spinner appears for (ever)
 
 - Remove mobile device
 - manually refreshing page
