@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-04T13:27
+updated: 2025-06-05T08:56
 ---
 ## Introduction
 
@@ -56,7 +56,7 @@ After this we should go up another level and see if it needs any eg. Peripherals
 There are also potential Validation to consider to be re-written.
 
 The testing would be huge, seeing so many of these components are shares and we need to ensure it works everywhere.
-Further more Justus already did some work on 
+Further more Justus already did some work on CAN.
 
 ## Important considerations
 

@@ -1,6 +1,6 @@
 ---
 created: 2025-06-02T09:54
-updated: 2025-06-02T09:54
+updated: 2025-06-05T08:58
 ---
 OK, please look at the previuos history. In short, I am busy rewriting the edit templates. I need to look at all the templates, how they are integrated into each other. If you basically look at the *template*.html files, you will get a good idea.
 
@@ -32,17 +32,17 @@ Here is a high level investigation I did.
 					- Features and settings
 				- Line: Connection Click: <mark class="hltr-orange">(iii)</mark> https://integration.mixtelematics.com/#/config-admin/configuration-groups/asset/mobile-device/edit?assetId=1634286684147179520&lineId=401558247868188484
 					- ... Select peripheral device (Parameter) (Features and settings)
-					- [ ] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\AssetMobileDevicePeripheralEditTemplate.html
+					- [x] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\AssetMobileDevicePeripheralEditTemplate.html ✅ 2025-06-05
 
 	- Event Template Click: <mark class="hltr-pink">(A)</mark> https://integration.mixtelematics.com/#/config-admin/templates/events/edit?id=245193282188643425&duplicate=0
 		- Event template name
-		- [ ] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\EventTemplateTemplate.html
+		- [x] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\EventTemplateTemplate.html ✅ 2025-06-05
 			- Event Click: xxxxxxxxxxxx
-		- [ ] ?? C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\EventDuplicateTemplateTemplate.html
+		- [x] ?? C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\EventDuplicateTemplateTemplate.html ✅ 2025-06-05
 			- Event Click: xxxxxxxxxxxx
 	- Mobile Device Template Click: <mark class="hltr-blue">(B)</mark> https://integration.mixtelematics.com/#/config-admin/templates/mobile-devices/edit?id=-836221839103952129
 		- Edit mobile device template
-		- [ ] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\MobileDeviceTemplateTemplate.html
+		- [x] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\MobileDeviceTemplateTemplate.html ✅ 2025-06-05
 			- Mobile Device Name Click: https://integration.mixtelematics.com/#/config-admin/templates/mobile-devices/peripherals?templateId=-836221839103952129
 				- Features and settings
 				- Templates/ConfigAdmin/MobileDeviceTemplatePeripheralTemplate.html
@@ -50,10 +50,10 @@ Here is a high level investigation I did.
 				- C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\MobileDeviceTemplateTemplate.html
 			- Line: Connection Click: (B2) https://integration.mixtelematics.com/#/config-admin/templates/mobile-devices/peripherals?templateId=-836221839103952129&lineId=5045108991270747233
 				- ... Select peripheral device (Parameter) (Features and settings)
-				- [ ] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\MobileDeviceTemplatePeripheralTemplate.html
+				- [x] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\MobileDeviceTemplatePeripheralTemplate.html ✅ 2025-06-05
 	- Location Template Click: <mark class="hltr-green">(C)</mark> https://integration.mixtelematics.com/#/config-admin/templates/locations/edit?id=2650549531491560536&duplicate=0
 		- Location template name
-		- [ ] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\LocationTemplateTemplate.html
+		- [x] C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\LocationTemplateTemplate.html ✅ 2025-06-05
 			- xxxxxxxxxxxxxxxx
 
 My main focus would be on rewriting:
