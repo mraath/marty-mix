@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-05T13:14
+updated: 2025-06-05T14:20
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -91,3 +91,10 @@ A new ticket will be opened to address this issue in a future sprint.
 	- Error on save
 	- Specified argument was out of the range of valid values. (Parameter 'Unique Identifier already used on MobileUnit: {"AssetId":1451687716841263104,"MobileUnitId":1451687716841263104,"UniqueIdentifier":"358014098040867","OrganisationId":-9139758428361458025,"LegacyVehicleId":25,"LegacyOrganisationId":9596,"MobileDeviceType":4,"MobileUnitType":5646852502041998355}
 	- [ ] separate bug
+
+## Idea
+
+- Amy needs to create a new one for the above mentioned bug
+- Debug locally against INT - old BE in  
+	- C:\Projects\DynaMiX.Backend\API\DynaMiX.API\NancyModules\FleetAdmin\Assets\AssetCommissioningModule.cs
+- 
