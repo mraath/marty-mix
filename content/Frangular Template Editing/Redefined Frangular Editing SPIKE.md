@@ -1,6 +1,6 @@
 ---
 created: 2025-06-03T09:20
-updated: 2025-06-05T08:56
+updated: 2025-06-05T08:59
 ---
 ## Introduction
 
@@ -63,6 +63,7 @@ Further more Justus already did some work on CAN.
 - Dynamic Calibration Templates: Templates dynamically included via **controller.getCalibrationTemplate**(parameter). They are included in: MobileDeviceTemplatePeripheralTemplate.html, AssetMobileDevicePeripheralEditTemplate.html
 - Dynamic Property Templates: Templates dynamically included via **property.templateUrl**. They render specific input controls for parameters. Included by: LogicalDeviceSettingsTemplate.html, LogicalCameraDeviceSettings.html
 - Certain templates are being reused a LOT: MobileDeviceTemplatePeripheralTemplate.html, AssetMobileDevicePeripheralEditTemplate.html
+- Also, the user can click on Lines to do Connections. There will also need more work.
 
 ## Attempted diagram (might have missed some dynamic templates)
 
