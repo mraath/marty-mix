@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-05T12:09
+updated: 2025-06-05T12:29
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -60,3 +60,28 @@ at DynaMiX.Core.Http.Nancy.ModuleBase.<>c__DisplayClass46_01.<RegisterRoute>b__0
 at DynaMiX.Core.Http.Nancy.ModuleBase.ProcessTypedResponse[T](Func1 method) in D:\\b\\2\\_work\\1603\\s\\Core\\DynaMiX.Core.Http\\Nancy\\ModuleBase.cs:line 215 at DynaMiX.Core.Http.Nancy.ModuleBase.HandledTypedResponse[T](Func1 method) in D:\b\2\_work\1603\s\Core\DynaMiX.Core.Http\Nancy\ModuleBase.cs:line 149
 ```
 
+## JAKO
+
+Root cause:
+
+In the old method of commissioning, we always used to return “success” even if the call to the DME API returned an error. All other decommissioning tasks were completed.
+
+In the new method of commissioning, we return a “failure” if the call to the DME API returns and error. The Fleet.UI Page isn’t setup to handle failure results in this scenario, to the spinner spins perpetually.
+
+Solution:
+
+We will not be implementing the new method of commissioning in UAT or Release, so we have switched it off. Please repeat regression testing with this setting disabled.
+
+A new ticket will be opened to address this issue in a future sprint.
+
+## Amy
+
+- New - IMEI was _not_ decommissioned - 
+	- Data centre administration | Asset search, the IMEI still appeared on his org
+	- (after waiting many mins)
+- DME specific?
+	- Could assign the IMEI
+	- didn’t give me the usual “This IMEI is already in use“ message
+	- Error on save
+	- Specified argument was out of the range of valid values. (Parameter 'Unique Identifier already used on MobileUnit: {"AssetId":1451687716841263104,"MobileUnitId":1451687716841263104,"UniqueIdentifier":"358014098040867","OrganisationId":-9139758428361458025,"LegacyVehicleId":25,"LegacyOrganisationId":9596,"MobileDeviceType":4,"MobileUnitType":5646852502041998355}
+	- [ ] separate bug
