@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-06T10:51
+updated: 2025-06-06T12:26
 ---
 
 # OPEN-236 config group panel shows 2 assets but only 1 asset appears in the asset panel
@@ -40,3 +40,9 @@ Config group panel shows 2 assets but only 1 asset appears in the asset panel:
 - Amy Bench Units
 - Default configuration group for MiX4000
 
+## Code
+
+- getConfigGroups
+	- getConfigurationGroupsMultiselect
+- getConfigAssets
+	- getConfigurationGroupsMultiselectAssetsList
