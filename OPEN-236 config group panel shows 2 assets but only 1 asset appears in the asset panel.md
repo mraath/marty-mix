@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-06T14:04
+updated: 2025-06-06T16:19
 ---
 
 # OPEN-236 config group panel shows 2 assets but only 1 asset appears in the asset panel
@@ -70,4 +70,4 @@ Except if other delete data happens, but for this is should work
 
 REPO: OLD DB
 Branch: Confg/MR/Bug/OPEN_236_AssetCountWrong_DATA
-- [ ] PR INT: https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/125803
+- [x] PR INT: https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/125803 ✅ 2025-06-06
