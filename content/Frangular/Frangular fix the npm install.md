@@ -1,7 +1,23 @@
 ---
 created: 2024-11-26T15:41
-updated: 2024-11-28T15:27
+updated: 2025-06-06T10:46
 ---
+>[!Important] Quick fix from Olga
+
+```txt
+my .npmrc looks like that
+ 
+registry=https://mixtelematics.pkgs.visualstudio.com/_packaging/NPMPackages/npm/registry/
+//mixtelematics.pkgs.visualstudio.com/_packaging/NPMPackages/npm/registry/:_authToken=your-token
+//mixtelematics.pkgs.visualstudio.com/_packaging/NPMPackages/npm/registry/:always-auth=true
+ 
+and "your-token" is token generated in https://dev.azure.com/MiXTelematics/_usersSettings/tokens
+```
+
+## Longer solution
+
+Id Olga's fix doesn't work, please try the above.
+
 If the npm install doesn't run, try the following.
 (I spoke to Tim from Fleet)
 
