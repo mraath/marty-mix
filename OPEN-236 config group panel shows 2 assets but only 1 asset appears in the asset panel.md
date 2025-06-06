@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-06T12:31
+updated: 2025-06-06T12:33
 ---
 
 # OPEN-236 config group panel shows 2 assets but only 1 asset appears in the asset panel
@@ -47,7 +47,9 @@ Config group panel shows 2 assets but only 1 asset appears in the asset panel:
 		- _configurationGroupManager.GetConfigurationGroupsMultiselect
 		- ConfigInternalClient.InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
 			- configuration-groups-multiselect/groupId/{groupId}?authToken={authToken}
-			- 
+				- man.GetConfigurationGroupsMultiselect
+				- [template].[Template_GetConfigurationGroupsMultiselect]
+					- @groupId
 - getConfigAssets
 	- getConfigurationGroupsMultiselectAssetsList
 		- _configurationGroupManager.GetConfigurationGroupsMultiselectAssetsList
