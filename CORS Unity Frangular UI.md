@@ -1,6 +1,6 @@
 ---
 created: 2025-06-06T10:05
-updated: 2025-06-06T10:08
+updated: 2025-06-06T10:09
 ---
 ## Paul 
 
@@ -29,7 +29,13 @@ We also dont have any wildcards in our appsettings file..
 
 ![[CORS Unity Frangular UI Justus 2.png]]
 
-## Zeshan
+## PRs to fix this
+
+Zeshan:
 
 Some trials: [Pull request 125792: Update for UK URL - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/125792 "https://dev.azure.com/mixtelematics/deviceintegration/_git/mix.config.frangular.ui/pullrequest/125792")
 Some more trials : [Pull request 125797: Additional allowed origins added - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125797 "https://dev.azure.com/mixtelematics/deviceintegration/_git/mix.config.frangular.api/pullrequest/125797")
+
+Zonika:
+
+[https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/125800](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/125800 "https://dev.azure.com/mixtelematics/deviceintegration/_git/mix.config.frangular.ui/pullrequest/125800")  hopefully the last one
