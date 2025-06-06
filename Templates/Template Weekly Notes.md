@@ -1,10 +1,13 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-02-04T07:10
+updated: 2025-06-06T14:12
 ---
 {{date:gggg [Week] ww}}
 {{date}} {{time}}
 Child:: [[weekly]]
+
+> [!note] Unallocated: https://powerfleet.atlassian.net/browse/PFI-887
+
 
 [https://timesheets.mixdevelopment.com/](https://timesheets.mixdevelopment.com/ "https://timesheets.mixdevelopment.com/")
 - OLD: [Powerfleet Timesheets](http://timesheets.int.priv/MixTimesheetsUI/app/index.html#Login)
