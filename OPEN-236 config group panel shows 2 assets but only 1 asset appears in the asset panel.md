@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-06T12:34
+updated: 2025-06-06T13:00
 ---
 
 # OPEN-236 config group panel shows 2 assets but only 1 asset appears in the asset panel
@@ -43,13 +43,15 @@ Config group panel shows 2 assets but only 1 asset appears in the asset panel:
 ## Code
 
 - getConfigGroups
-	- getConfigurationGroupsMultiselect
+	- getConfigurationGroupsMultiselect (THIS DOESNT get the AssetCount - it is lazy loaded)
 		- _configurationGroupManager.GetConfigurationGroupsMultiselect
 		- ConfigInternalClient.InternalConfigurationGroupsRepository.GetConfigurationGroupsMultiselect
 			- configuration-groups-multiselect/groupId/{groupId}?authToken={authToken}
 				- man.GetConfigurationGroupsMultiselect
 				- [template].[Template_GetConfigurationGroupsMultiselect]
 					- @groupId
+	- Lazy loaded: Xxxxxxxxxxxxxxxxxxxxxxxxxx
+		- 
 - getConfigAssets
 	- getConfigurationGroupsMultiselectAssetsList
 		- _configurationGroupManager.GetConfigurationGroupsMultiselectAssetsList
