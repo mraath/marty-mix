@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-06T13:07
+updated: 2025-06-06T13:49
 ---
 
 # OPEN-236 config group panel shows 2 assets but only 1 asset appears in the asset panel
@@ -61,3 +61,9 @@ Config group panel shows 2 assets but only 1 asset appears in the asset panel:
 				- man.GetConfigurationGroupsMultiselectAssetsList
 				- [mobileunit].[MobileUnit_GetAllMobileUnitsForConfigurationGroups]
 					- configGroupIds
+
+## Findings
+
+It was data related... in the mu table there are 2 units. In the amu there is only one.
+INNER JOIN will fix this
+Except if other delete data happens, but for this is should work
