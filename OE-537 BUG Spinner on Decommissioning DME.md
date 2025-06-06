@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-05T14:20
+updated: 2025-06-06T14:32
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -13,6 +13,9 @@ Parent:: [[Remove Mobile Device]]
 Friend:: [[2025-06-05]]
 JIRA:OE-537 BUG Spinner on Decommissioning DME
 https://powerfleet.atlassian.net/browse/OE-537
+
+
+> [!Important] Renamed to: OPEN-239
 
 
 ## TODO
