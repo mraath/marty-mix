@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-06T10:12
+updated: 2025-06-06T10:37
 ---
 
 # OPEN-235 Error when moving Unallocated to Config Group
@@ -35,3 +35,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+![[OPEN-235 Error when moving Unallocated to Config Group.png|300]]
+
+## Next Step
+
+- Check Jako's fix and PR...
+- Compare when it was removed
+- Speak to dev about this
+- 
