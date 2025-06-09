@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-09T10:33
+updated: 2025-06-09T10:49
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -114,5 +114,5 @@ A new ticket will be opened to address this issue in a future sprint.
 		- GatewayResultStatus.GeneralFailure
 		- [ ] NOT HANDLES?????????
 		- IF the user the refreshes....
-			- 
+			- mobileUnit.ConfigurationGroupId is null, this the error after refresh
 - 358014099129974
