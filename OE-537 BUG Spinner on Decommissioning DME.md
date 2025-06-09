@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-09T10:28
+updated: 2025-06-09T10:31
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -110,4 +110,7 @@ A new ticket will be opened to address this issue in a future sprint.
 	- Digital Matter: Device
 	- Name: Oyster 3G
 	- Default configuration group for Digital Matter
+	- When decommissiong it reaches an error and returns
+		- GatewayResultStatus.GeneralFailure
+		- 
 - 358014099129974
