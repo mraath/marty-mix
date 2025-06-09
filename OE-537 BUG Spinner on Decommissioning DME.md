@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-09T10:58
+updated: 2025-06-09T11:09
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -112,6 +112,7 @@ A new ticket will be opened to address this issue in a future sprint.
 	- Default configuration group for Digital Matter
 	- When decommissiong it reaches an error and returns
 		- RemoveMobileDevice > GatewayResultStatus.GeneralFailure
+		- 11 months ago - Zeshan
 		- [ ] NOT HANDLES?????????
 			- It isn't handled in the UI
 				- $dynamicScope.removeMobileDeviceTemplate.save().then(() => {
