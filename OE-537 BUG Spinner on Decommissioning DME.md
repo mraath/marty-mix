@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-09T10:49
+updated: 2025-06-09T10:51
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -111,7 +111,7 @@ A new ticket will be opened to address this issue in a future sprint.
 	- Name: Oyster 3G
 	- Default configuration group for Digital Matter
 	- When decommissiong it reaches an error and returns
-		- GatewayResultStatus.GeneralFailure
+		- RemoveMobileDevice > GatewayResultStatus.GeneralFailure
 		- [ ] NOT HANDLES?????????
 		- IF the user the refreshes....
 			- mobileUnit.ConfigurationGroupId is null, this the error after refresh
