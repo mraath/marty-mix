@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-09T09:26
+updated: 2025-06-09T10:28
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -109,5 +109,5 @@ A new ticket will be opened to address this issue in a future sprint.
 - 353323081190745 <<
 	- Digital Matter: Device
 	- Name: Oyster 3G
-	- 
+	- Default configuration group for Digital Matter
 - 358014099129974
