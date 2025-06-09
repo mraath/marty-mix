@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-06T14:32
+updated: 2025-06-09T09:22
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -100,4 +100,4 @@ A new ticket will be opened to address this issue in a future sprint.
 - Amy needs to create a new one for the above mentioned bug
 - Debug locally against INT - old BE in  
 	- C:\Projects\DynaMiX.Backend\API\DynaMiX.API\NancyModules\FleetAdmin\Assets\AssetCommissioningModule.cs
-- 
+- I think the spinner and the bug are two se[erate]
