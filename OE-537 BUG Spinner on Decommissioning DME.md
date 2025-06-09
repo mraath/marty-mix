@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-09T10:51
+updated: 2025-06-09T10:58
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -113,6 +113,13 @@ A new ticket will be opened to address this issue in a future sprint.
 	- When decommissiong it reaches an error and returns
 		- RemoveMobileDevice > GatewayResultStatus.GeneralFailure
 		- [ ] NOT HANDLES?????????
+			- It isn't handled in the UI
+				- $dynamicScope.removeMobileDeviceTemplate.save().then(() => {
+							$dynamicScope.contentLoadingStack.pop();
+							$dynamicScope.$popAlert('success', 'Asset updated successfully');
+							$dynamicScope.$resetUnsavedChanges();
+							$dynamicScope.$setPath('/fleet-admin/assets');
+					});
 		- IF the user the refreshes....
 			- mobileUnit.ConfigurationGroupId is null, this the error after refresh
 - 358014099129974
