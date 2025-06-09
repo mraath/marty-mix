@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-10T07:18
+updated: 2025-06-10T07:23
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -111,7 +111,9 @@ I just removed the "D"
 
 ## Code
 
-Branch: 
+Branch: Config/MR/Bug/OE-537_Spinner_Bug
+- [ ] PR: DEV: xxxxxxxxxxx
+- [ ] PR: INT: xxxxxxxxxxxxx
 
 ## Local
 
