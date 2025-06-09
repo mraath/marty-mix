@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-09T15:33
+updated: 2025-06-09T16:42
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -103,6 +103,7 @@ A new ticket will be opened to address this issue in a future sprint.
 - I think the spinner and the bug are two seperate issues
 	- The bug happens because of the user refreshing the page after the decommissioning
 	- [ ] It would make sense that there could then be a NULL object as we are loading a page which has lost data
+	- [ ] LANGUAGE: Error updating asset
 
 ## Testing
 
