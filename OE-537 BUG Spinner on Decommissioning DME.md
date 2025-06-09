@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-09T16:53
+updated: 2025-06-10T07:18
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -93,7 +93,7 @@ A new ticket will be opened to address this issue in a future sprint.
 	- didn’t give me the usual “This IMEI is already in use“ message
 	- Error on save
 	- Specified argument was out of the range of valid values. (Parameter 'Unique Identifier already used on MobileUnit: {"AssetId":1451687716841263104,"MobileUnitId":1451687716841263104,"UniqueIdentifier":"358014098040867","OrganisationId":-9139758428361458025,"LegacyVehicleId":25,"LegacyOrganisationId":9596,"MobileDeviceType":4,"MobileUnitType":5646852502041998355}
-	- [ ] separate bug
+	- [x] separate bug ✅ 2025-06-10
 
 ## Idea
 
@@ -102,8 +102,16 @@ A new ticket will be opened to address this issue in a future sprint.
 	- C:\Projects\DynaMiX.Backend\API\DynaMiX.API\NancyModules\FleetAdmin\Assets\AssetCommissioningModule.cs
 - I think the spinner and the bug are two seperate issues
 	- The bug happens because of the user refreshing the page after the decommissioning
-	- [ ] It would make sense that there could then be a NULL object as we are loading a page which has lost data
-	- [ ] LANGUAGE: Error updating asset
+	- [x] It would make sense that there could then be a NULL object as we are loading a page which has lost data ✅ 2025-06-10
+	- [x] LANGUAGE: Remove mobile device failed. ✅ 2025-06-10
+
+Peter: I checked with UX and Lauren asked that we make the wording a bit more specific, maybe something like: "Removed mobile device failed." or "Error removing mobile device. Updating asset failed."
+I just removed the "D"
+
+
+## Code
+
+Branch: 
 
 ## Local
 
@@ -118,7 +126,7 @@ A new ticket will be opened to address this issue in a future sprint.
 	- When decommissiong it reaches an error and returns
 		- RemoveMobileDevice > GatewayResultStatus.GeneralFailure
 		- 11 months ago - Zeshan
-		- [ ] NOT HANDLES?????????
+		- [x] NOT HANDLES????????? ✅ 2025-06-10
 			- It isn't handled in the UI
 				- $dynamicScope.removeMobileDeviceTemplate.save().then(() => {
 							$dynamicScope.contentLoadingStack.pop();
