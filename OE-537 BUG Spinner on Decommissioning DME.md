@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-10T07:23
+updated: 2025-06-10T08:47
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -112,8 +112,8 @@ I just removed the "D"
 ## Code
 
 Branch: Config/MR/Bug/OE-537_Spinner_Bug
-- [ ] PR: DEV: xxxxxxxxxxx
-- [ ] PR: INT: xxxxxxxxxxxxx
+- [ ] DEV: [OE-537 Bug Spinner fix](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/126010)
+- [ ] PR: INT: https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequestcreate?sourceRef=Config/MR/Bug/OE-537_Spinner_Bug&targetRef=Integration&sourceRepositoryId=50990761-1b3a-4829-ada1-584fd7f03033&targetRepositoryId=50990761-1b3a-4829-ada1-584fd7f03033
 
 ## Local
 
