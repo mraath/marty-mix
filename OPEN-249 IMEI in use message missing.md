@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-11T11:29
+updated: 2025-06-11T11:41
 ---
 
 # OPEN-249 IMEI in use message missing
@@ -97,3 +97,24 @@ COMPARE TO?
 	 fleet:mobile-unit-unique-identifier-async-params="{ assetId: assetId, source: 'MiXTalk' }"
 	 fleet:mobile-unit-unique-identifier-async fleet:mobile-unit-unique-identifier-async-message="'IMEI already in use'" />
 ```
+
+## Network
+
+### Broken one
+
+PUT
+	https://integration.mixtelematics.com/DynaMiX.API/validate
+
+REQUEST JSON
+	parameters	{…}
+		assetId	"1669358986114039808"
+	sequence	5
+	validator	"DynaMiX.Logic.ConfigAdmin.Validation.MobileUnitUniqueIdentifierAsyncAttribute"
+	value	"353323081190745"
+
+RESPONSE JSON
+	Result	true
+	Sequence	5
+
+### Correct one
+
