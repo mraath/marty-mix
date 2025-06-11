@@ -1,7 +1,10 @@
 ---
 created: 2025-06-11T14:58
-updated: 2025-06-11T15:13
+updated: 2025-06-11T16:53
 ---
+[JIRA](https://powerfleet.atlassian.net/browse/OPEN-258)
+
+
 - [ ] Ask Peter!!
 
 Hi there. We are looking into a wording issue.
