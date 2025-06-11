@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-11T11:00
+updated: 2025-06-11T11:46
 ---
 
 # OE-537 BUG Spinner on Decommissioning DME
@@ -139,3 +139,6 @@ Branch: Config/MR/Bug/OE-537_Spinner_Bug
 		- IF the user the refreshes....
 			- mobileUnit.ConfigurationGroupId is null, this the error after refresh
 - 358014099129974
+
+- On clicking outside, seems to show it though!
+- 
