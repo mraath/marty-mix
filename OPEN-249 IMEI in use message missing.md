@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-11T11:58
+updated: 2025-06-11T12:01
 ---
 
 # OPEN-249 IMEI in use message missing
@@ -122,6 +122,9 @@ Same as Serial Number for streamax
 
 ![[OPEN-249 IMEI in use message missing STM.png|500]]
 
+- MiX4000: 354762110254171
+	- Rodger MiX4000 + STM CG
+	- 
 
 ### Correct one
 
