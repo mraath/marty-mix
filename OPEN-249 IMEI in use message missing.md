@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-11T11:41
+updated: 2025-06-11T11:55
 ---
 
 # OPEN-249 IMEI in use message missing
@@ -115,6 +115,8 @@ REQUEST JSON
 RESPONSE JSON
 	Result	true
 	Sequence	5
+
+![[OPEN-249 IMEI in use message missing Works when move off.png|500]]
 
 ### Correct one
 
