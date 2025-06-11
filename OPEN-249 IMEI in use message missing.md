@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-11T11:55
+updated: 2025-06-11T11:58
 ---
 
 # OPEN-249 IMEI in use message missing
@@ -117,6 +117,11 @@ RESPONSE JSON
 	Sequence	5
 
 ![[OPEN-249 IMEI in use message missing Works when move off.png|500]]
+
+Same as Serial Number for streamax
+
+![[OPEN-249 IMEI in use message missing STM.png|500]]
+
 
 ### Correct one
 
