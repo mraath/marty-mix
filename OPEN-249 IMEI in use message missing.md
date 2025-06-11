@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-11T09:42
+updated: 2025-06-11T09:43
 ---
 
 # OPEN-249 IMEI in use message missing
@@ -40,9 +40,14 @@ no “This IMEI is already in use“ message appears for DME, instead an error p
 ## Amy
 
 This morning I **decommissioned** my Oyster 2G from Brandon’s org 
-(since I have the hardware here with me on my bench)… obviously the decommissioning took place as per this bug… but the thing is that the IMEI was _not_ decommissioned… when I checked it in Data centre administration | Asset search, the IMEI still appeared on his org (FYI I had the decommissioning spinner loading for a good couple of minutes before refreshing and the IMEI remained commissioned to that asset).
+	(since I have the hardware here with me on my bench)… 
+	obviously the decommissioning took place as per this bug… 
+	but the thing is that the **IMEI** was _not_ decommissioned… 
+	when I checked it in Data centre administration | Asset search, the IMEI still appeared on his org 
+	(FYI I had the decommissioning spinner loading for a good couple of minutes before refreshing and the IMEI remained commissioned to that asset).
 
-However I took a chance and tried commissioning the IMEI on my device and what was interesting was that it didn’t give me the usual “This IMEI is already in use“ message… BUT it did give me an error when trying to save the changes… I am guessing that this is DME specific, but still it should probably give the warning text like the other devices rather than an error?
+However I took a chance and **tried commissioning** the IMEI on my device 
+and what was interesting was that it ==didn’t give me== the usual “This IMEI is already in use“ message… BUT it did give me an error when trying to save the changes… I am guessing that this is DME specific, but still it should probably give the warning text like the other devices rather than an error?
 
 Should this be logged as a separate bug or can I leave it here as an extension of this one?
 
@@ -59,4 +64,4 @@ Ok. There is quite a bit happening in this bug.
 3) The new IMEI issue, where it doesn’t show that it is already in use. I would say, yes, please log a new bug for this. It could be related to the decommissioning which didn’t complete, but I think it should be separated out.  
   
 @Amy Rodger, would you please log the new IMEI issue as a separate bug.  
-I will look at the spinner UI handling
+I will look at the spinner UI handling.
