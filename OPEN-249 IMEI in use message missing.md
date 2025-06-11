@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-11T09:46
+updated: 2025-06-11T11:08
 ---
 
 # OPEN-249 IMEI in use message missing
@@ -61,3 +61,12 @@ Specified argument was out of the range of valid values. (Parameter 'Unique Iden
 - I think the DME is not using the same validation as other types
 - [ ] Check validation in Code
 - Once we know FIX
+
+```html
+<input type="text" ng-hide="assetConfigSummary.isTDI || assetConfigSummary.isStreamaxStandAlone"
+	 ng-disabled="!changeMobileDeviceTemplate.identifierTitle || !form.hasDeviceTypeIdentifier || form.hasBeenCommissioned || assetConfigSummary.isTDI || assetConfigSummary.isScaniaOem || assetConfigSummary.isAEMP || assetConfigSummary.isGeotab"
+	 ng-model="form.deviceTypeIdentifierValue" name="deviceTypeIdentifierValue" dmx-validate="deviceTypeIdentifierValue" class="span12"
+	 dmx-required fleet:mobile-unit-unique-identifier-async-params="{ assetId: assetId }"
+	 fleet:mobile-unit-unique-identifier-async fleet:mobile-unit-unique-identifier-async-message="'Unique identifier already in use'" />
+```
+
