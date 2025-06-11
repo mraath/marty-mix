@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-11T09:43
+updated: 2025-06-11T09:45
 ---
 
 # OPEN-249 IMEI in use message missing
@@ -47,13 +47,14 @@ This morning I **decommissioned** my Oyster 2G from Brandon’s org
 	(FYI I had the decommissioning spinner loading for a good couple of minutes before refreshing and the IMEI remained commissioned to that asset).
 
 However I took a chance and **tried commissioning** the IMEI on my device 
-and what was interesting was that it ==didn’t give me== the usual “This IMEI is already in use“ message… BUT it did give me an error when trying to save the changes… I am guessing that this is DME specific, but still it should probably give the warning text like the other devices rather than an error?
+	and what was interesting was that it ==didn’t give me== the usual 
+	“This IMEI is already in use“ 
+	message… BUT it did give me an **error** when trying to save the changes… 
+	I am guessing that this is DME specific, but still it should probably give the warning text like the other devices rather than an error?
 
-Should this be logged as a separate bug or can I leave it here as an extension of this one?
-
-![image-20250407-050053.png](blob:https://powerfleet.atlassian.net/0b77cac5-dfdc-4de9-a85b-8b6399a0b3b2#media-blob-url=true&id=8c31fb78-0071-4349-8e36-64252497c2a9&collection=&contextId=238175&width=389&height=240&alt=image-20250407-050053.png)
-
+```txt
 Specified argument was out of the range of valid values. (Parameter 'Unique Identifier already used on MobileUnit: {"AssetId":1451687716841263104,"MobileUnitId":1451687716841263104,"UniqueIdentifier":"358014098040867","OrganisationId":-9139758428361458025,"LegacyVehicleId":25,"LegacyOrganisationId":9596,"MobileDeviceType":4,"MobileUnitType":5646852502041998355}')
+```
 
 ## Marty
 
