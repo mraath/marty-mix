@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-11T09:45
+updated: 2025-06-11T09:46
 ---
 
 # OPEN-249 IMEI in use message missing
@@ -35,7 +35,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
-no “This IMEI is already in use“ message appears for DME, instead an error popup is displayed
+no “This IMEI is already in use“ message appears for **DME**, instead an error popup is displayed
 
 ## Amy
 
@@ -56,13 +56,8 @@ However I took a chance and **tried commissioning** the IMEI on my device
 Specified argument was out of the range of valid values. (Parameter 'Unique Identifier already used on MobileUnit: {"AssetId":1451687716841263104,"MobileUnitId":1451687716841263104,"UniqueIdentifier":"358014098040867","OrganisationId":-9139758428361458025,"LegacyVehicleId":25,"LegacyOrganisationId":9596,"MobileDeviceType":4,"MobileUnitType":5646852502041998355}')
 ```
 
-## Marty
+## Looking into the code
 
-Ok. There is quite a bit happening in this bug.  
-  
-1) The spinner. I can confirm what Jako said. About 11 months ago a new failure state was added in code to be returned. This is not handled by the UI. We need to add in the logic and decide what should be displayed.  
-2) When the user refreshes the page, yes, there will be an error as this page can usually only be seen when the mobile unit is connected to a config group. In this instance it assumes there is a config group (as the user is on the page) but the config group is will be null, as it started the decommissioning. This all makes perfect sense.  
-3) The new IMEI issue, where it doesn’t show that it is already in use. I would say, yes, please log a new bug for this. It could be related to the decommissioning which didn’t complete, but I think it should be separated out.  
-  
-@Amy Rodger, would you please log the new IMEI issue as a separate bug.  
-I will look at the spinner UI handling.
+- I think the DME is not using the same validation as other types
+- [ ] Check validation in Code
+- Once we know FIX
