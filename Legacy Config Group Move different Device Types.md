@@ -1,7 +1,9 @@
 ---
 created: 2025-06-12T15:17
-updated: 2025-06-12T15:17
+updated: 2025-06-12T15:18
 ---
+# Legacy Config Group Move different Device Types
+
 Herewith the legacy system's behaviour.
 
 We selected a 3000 and a 4000
