@@ -1,6 +1,6 @@
 ---
 created: 2023-09-22T09:26
-updated: 2025-01-27T09:46
+updated: 2025-06-12T10:50
 ---
 
 ## Intro
@@ -71,6 +71,14 @@ Usually:
 ## AWS
 
 - [[CodeWisperer]]
+
+## Nuget packages
+
+![[Code Nuget packages needed for FR API.png]]
+
+In VS Code: https://code.visualstudio.com/docs/csharp/package-management
+
+
 
 ## Adding aspire orchestrator support to existing projects
 
