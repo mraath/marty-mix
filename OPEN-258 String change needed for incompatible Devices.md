@@ -1,6 +1,6 @@
 ---
 created: 2025-06-11T14:58
-updated: 2025-06-12T15:55
+updated: 2025-06-12T15:59
 ---
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-258)
 
@@ -31,7 +31,7 @@ I am quickly looking to send you the current screenshot....
 
 I will change it to:
 
-The mobile device type in this configuration group differs from the mobile device type installed in 1 of these asset(s). To move the asset(s) to this configuration group, please use the 'Change mobile device' function on the mobile device settings screen in Fleet Admin.
+The mobile device type in this configuration group differs from the mobile device type installed in 1 of these asset(s). To move the asset(s) to this configuration group, please use the 'Change mobile device' function on the mobile device settings screen on the Assets page.
 
 
 
