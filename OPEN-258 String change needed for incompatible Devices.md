@@ -1,6 +1,6 @@
 ---
 created: 2025-06-11T14:58
-updated: 2025-06-12T15:23
+updated: 2025-06-12T15:53
 ---
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-258)
 
@@ -25,5 +25,13 @@ I am quickly looking to send you the current screenshot....
 ![[String change needed for incompatible Devices Message Eg.png|500]]
 
 
-![[Legacy Config Group Move different Device Types]]
+[[Legacy Config Group Move different Device Types]]
+
+## Decision
+
+I will change it to:
+
+The mobile device type in this configuration group differs from the mobile device type installed in 1 of these asset(s). To move this asset to this configuration group, please perform the 'Change mobile device' function on the mobile device settings screen in Fleet Admin.
+
+
 
