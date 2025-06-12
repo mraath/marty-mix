@@ -1,6 +1,6 @@
 ---
 created: 2025-06-11T14:58
-updated: 2025-06-12T15:17
+updated: 2025-06-12T15:23
 ---
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-258)
 
@@ -26,6 +26,4 @@ I am quickly looking to send you the current screenshot....
 
 
 ![[Legacy Config Group Move different Device Types]]
-
-
 
