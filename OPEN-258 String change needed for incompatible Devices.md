@@ -1,6 +1,6 @@
 ---
 created: 2025-06-11T14:58
-updated: 2025-06-13T10:32
+updated: 2025-06-13T10:42
 ---
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-258)
 
@@ -54,6 +54,8 @@ The mobile device type in this configuration group differs from the mobile devic
 - [x] Language ✅ 2025-06-13
 
 ## Merge
+
+Branch: 
 
 - [ ] PR DEV
 - [ ] PR INT
