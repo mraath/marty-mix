@@ -1,6 +1,6 @@
 ---
 created: 2025-06-11T14:58
-updated: 2025-06-13T10:43
+updated: 2025-06-13T14:12
 ---
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-258)
 
@@ -59,3 +59,7 @@ Branch: Config/MR/Feature/OPEN-258_AddingNewIncompatibleDevicesString
 
 - [ ] PR DEV
 - [ ] PR INT
+
+## Locally tested
+
+![[OPEN-258 String change needed for incompatible Devices New String Local.png|400]]
