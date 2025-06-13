@@ -1,11 +1,27 @@
 ---
 created: 2025-06-11T14:58
-updated: 2025-06-12T15:59
+updated: 2025-06-13T10:28
 ---
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-258)
 
+```dataviewjs
+function callout(text, type) {
+    const allText = `> [!${type}]\n` + text;
+    const lines = allText.split('\n');
+    return lines.join('\n> ') + '\n'
+}
 
-- [ ] Ask Peter!!
+const query = `
+not done
+path includes ${dv.current().file.path}
+# you can add any number of extra Tasks instructions, for example:
+# group by heading
+`;
+
+dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
+```
+
+- [x] Ask Peter!! ✅ 2025-06-13
 
 Hi there. We are looking into a wording issue.
 Basically in the new BETA page... if you were to select a few assets, but they are of different Device Types...
@@ -34,5 +50,10 @@ I will change it to:
 The mobile device type in this configuration group differs from the mobile device type installed in 1 of these asset(s). To move the asset(s) to this configuration group, please use the 'Change mobile device' function on the mobile device settings screen on the Assets page.
 
 
+- [ ] Add it in
+- [ ] Language
 
+## Merge
 
+- [ ] PR DEV
+- [ ] PR INT
