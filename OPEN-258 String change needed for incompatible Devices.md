@@ -1,6 +1,6 @@
 ---
 created: 2025-06-11T14:58
-updated: 2025-06-13T10:42
+updated: 2025-06-13T10:43
 ---
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-258)
 
@@ -55,7 +55,7 @@ The mobile device type in this configuration group differs from the mobile devic
 
 ## Merge
 
-Branch: 
+Branch: Config/MR/Feature/OPEN-258_AddingNewIncompatibleDevicesString
 
 - [ ] PR DEV
 - [ ] PR INT
