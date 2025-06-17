@@ -1,6 +1,6 @@
 ---
 created: 2023-04-18T07:58
-updated: 2025-06-17T14:06
+updated: 2025-06-17T14:44
 ---
 Branch: (Config/MR/DailyMerge/2025-06-17)
 
@@ -26,3 +26,9 @@ git checkout Config/Development; git fetch origin; git pull
 git checkout -b Config/MR/DailyMerge/2025-06-17 Config/Development
 git merge --no-ff  Integration
 ```
+
+From the BE, what I can see.... 
+
+I kept the following, assuming a DEV needs this and the latter one was just nice to have.
+
+- ⁠MiX.ConfigInternal.Api.Client.2025.11.20250611.1-beta
