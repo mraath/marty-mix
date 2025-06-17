@@ -1,6 +1,6 @@
 ---
 created: 2023-04-18T07:58
-updated: 2025-06-17T15:58
+updated: 2025-06-17T16:08
 ---
 Branch: (Config/MR/DailyMerge/2025-06-17)
 
@@ -17,7 +17,6 @@ MiX.ConfigInternal.Api.Client.2025.11.20250611.1-beta
 
 
 Daily Merge: DB, BE, UI: NA
-Daily Merge: Core, Api, Client: NA
 
 ## Try running these and see if it works, might need refining in the template:
 
