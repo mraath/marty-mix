@@ -1,6 +1,6 @@
 ---
 created: 2025-06-18T08:01
-updated: 2025-06-18T11:54
+updated: 2025-06-18T15:18
 ---
 Hello!
 
@@ -23,7 +23,7 @@ OK
 
 
 ```json
-```
+
 {
   "otherData": {
     "CorrelationId64": "1671621250691637248"
@@ -37,4 +37,9 @@ OK
   "team": "Common"
 }
 ```
-```
+
+## Issues
+
+- [Jira issues](https://powerfleet.atlassian.net/issues/?jql=text%20~%20%22Unable%20to%20decommission%20the%20Streamax%20device%22&quickSearchQuery=Unable%20to%20decommission%20the%20Streamax%20device)
+- [Axiom](https://app.axiom.co/powerfleet-cpve/query?qid=0Kxg7aLYUg3-sy19al&relative=1)
+
