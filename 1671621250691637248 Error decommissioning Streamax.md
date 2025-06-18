@@ -1,6 +1,6 @@
 ---
 created: 2025-06-18T08:01
-updated: 2025-06-18T15:50
+updated: 2025-06-18T15:55
 ---
 Hello!
 
@@ -44,4 +44,9 @@ OK
 - [Axiom](https://app.axiom.co/powerfleet-cpve/query?qid=0Kxg7aLYUg3-sy19al&relative=1)
 
 "UnitSerailNo cannot be null"
+
+
+Maybe more:
+https://powerfleet.atlassian.net/issues/CONFIG-4062?jql=text%20~%20%22Unable%20to%20decommission%20the%20Streamax%20device%22&quickSearchQuery=Unable%20to%20decommission%20the%20Streamax%20device
+
 COULD be related to: https://powerfleet.atlassian.net/issues/QA-5954?jql=text%20~%20%22Unable%20to%20decommission%20the%20Streamax%20device%22&quickSearchQuery=Unable%20to%20decommission%20the%20Streamax%20device
