@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-17T16:44
+updated: 2025-06-19T07:56
 ---
 
 # OE-638 Reset Black Flag
@@ -238,13 +238,13 @@ Config/MR/Bug/OE-638_Reset_Black_Flag_DEV
 
 - [x] PR **INT** FR API: [Pull request 125109: OE-638: Added GetConfigChangedFlagForMobileUnits FR API end point to get specific area of black flag - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125109?_a=files) ✅ 2025-05-23
 	- [x] NEW PR for new CORE nuget: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125237 ✅ 2025-05-26
-	- [ ] BROKEN FROM Jako DateTime vs Nuget (will try to fix on dev)
+	- [x] BROKEN FROM Jako DateTime vs Nuget (will try to fix on dev) ✅ 2025-06-19
 - [x] PR DEV FR API: [Pull request 125111: OE-638: Merge new end point to DEV - Repos](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125111) ✅ 2025-05-23
 	- [x] NEW PR for Core: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/125433 ✅ 2025-05-29
 	- MiX.DeviceIntegration.Common.2025.10.20250528.1
 
 ### FR UI
 
-- [ ] PR **INT** FR UI: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/126238
+- [x] PR **INT** FR UI: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/126238 ✅ 2025-06-19
 - [x] PR DEV FR UI: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/125434 ✅ 2025-05-30
 

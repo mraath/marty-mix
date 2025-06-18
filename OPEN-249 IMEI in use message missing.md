@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-11T12:13
+updated: 2025-06-19T07:57
 ---
 
 # OPEN-249 IMEI in use message missing
@@ -59,7 +59,7 @@ Specified argument was out of the range of valid values. (Parameter 'Unique Iden
 ## Looking into the code
 
 - I think the DME is not using the same validation as other types
-- [ ] Check validation in Code
+- [x] Check validation in Code ✅ 2025-06-19
 - Once we know FIX
 
 ```html
@@ -126,7 +126,7 @@ Same as Serial Number for streamax
 	- Rodger MiX4000 + STM CG
 	- 
 
-- [ ] MAYBE add 
+- [x] MAYBE add ✅ 2025-06-19
 <!--Manual validation message-->
 
 ### Correct one
