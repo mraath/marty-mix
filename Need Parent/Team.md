@@ -1,6 +1,6 @@
 ---
 created: 2023-10-03T07:45
-updated: 2023-12-11T07:56
+updated: 2025-06-19T07:18
 ---
 At [[MiX]] the codebase is huge, so we have different teams
 
@@ -18,4 +18,10 @@ At [[MiX]] the codebase is huge, so we have different teams
 
 - [Marty Unassigned SR and REG](https://csojiramixtelematics.atlassian.net/issues/?filter=12852)
 - [Marty Team Issues](https://csojiramixtelematics.atlassian.net/issues/?filter=12814)
-- 
+
+## Jira Assign to Teams
+
+From Zeshan: some info with regards to incomming data for the issues that are sometimes incorrectly logged against Config tmo get them to the correct "incomming" team
+
+- FM Active = Data Processor -> IOT Ingestion
+- Mesa, FM Passive -> IOT Processing
