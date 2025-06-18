@@ -1,6 +1,6 @@
 ---
 created: 2025-06-18T08:01
-updated: 2025-06-18T15:55
+updated: 2025-06-18T16:01
 ---
 Hello!
 
@@ -50,3 +50,8 @@ Maybe more:
 https://powerfleet.atlassian.net/issues/CONFIG-4062?jql=text%20~%20%22Unable%20to%20decommission%20the%20Streamax%20device%22&quickSearchQuery=Unable%20to%20decommission%20the%20Streamax%20device
 
 COULD be related to: https://powerfleet.atlassian.net/issues/QA-5954?jql=text%20~%20%22Unable%20to%20decommission%20the%20Streamax%20device%22&quickSearchQuery=Unable%20to%20decommission%20the%20Streamax%20device
+
+
+## INT
+
+![[1671621250691637248 Error decommissioning Streamax No Serial Number.png]]
