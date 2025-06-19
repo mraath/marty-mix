@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-18T14:57
+updated: 2025-06-19T10:24
 ---
 
 # OPEN-306
@@ -35,6 +35,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+
+## Code
+
+- UI: removeMobileDeviceTemplate.save
+- 
 
 ## What next
 
