@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-23T15:44
+updated: 2025-06-23T15:47
 ---
 
 # ETS-142
@@ -41,7 +41,7 @@ ENV: UK
 DATABASE: Schlumberger - OPG - OMAN
 Module : Configuration Groups (BETA)
 
-Location Template field not available when trying to edit Configation group even though a location Template is associated to the config Group.
+Location Template field not available when trying to edit Configuration group even though a location Template is associated to the config Group.
 
 ![[Attachments/Untitled.png]]
 
@@ -50,4 +50,6 @@ Normal Config Groups Module:
 ![[ETS-2017 Location Template Missing.png]]
 
 **Example Config Group:** FM36x7i - LV - VSS & RPM - SB NC - PS>6V - VTS>6V - No SAT - 12V - ArmDelay 20s_3axis_PDO
+
+## Replicate on DEV
 
