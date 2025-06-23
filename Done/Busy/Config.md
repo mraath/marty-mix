@@ -1,6 +1,6 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-06-02T16:16
+updated: 2025-06-23T09:40
 ---
 
 ## New Team Members
@@ -34,6 +34,10 @@ Our [[Team]] is mostly involved in:
 - Reading Events, etc
 - [Ingestion Graph](https://lucid.app/lucidchart/a4d1f22c-0658-47a6-ae77-690b9fbd63f5/edit?viewport_loc=-2009%2C-741%2C7114%2C3468%2C0_0&invitationId=inv_90396901-5ba6-4538-b587-53419fb016e7) (Zeshan)
 - 
+
+## Handy Stored Procs
+
+[[Paul Stored Proc to see configuration for mobileunit]]
 
 ## Image overview WIP
 
