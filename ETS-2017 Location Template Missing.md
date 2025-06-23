@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-23T15:34
+updated: 2025-06-23T15:36
 ---
 
 # ETS-142
@@ -35,3 +35,16 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+Platform UntityAIOT.com
+
+ENV: UK
+
+DATABASE: Schlumberger - OPG - OMAN
+
+Module : Configuration Groups (BETA)
+
+Location Template field not available when trying to edit Configation group even though a location Template is associated to the config Group.
+
+Normal Config Groups Module:
+
+**Example Config Group:** FM36x7i - LV - VSS & RPM - SB NC - PS>6V - VTS>6V - No SAT - 12V - ArmDelay 20s_3axis_PDO
