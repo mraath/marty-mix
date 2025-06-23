@@ -1,6 +1,6 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-06-23T09:40
+updated: 2025-06-24T06:39
 ---
 
 ## New Team Members
@@ -38,6 +38,20 @@ Our [[Team]] is mostly involved in:
 ## Handy Stored Procs
 
 [[Paul Stored Proc to see configuration for mobileunit]]
+
+## Getting the config files
+
+eg. UAT-2129
+
+jumpbox, along with all the other SaveConfig instances
+
+![[Untitled 1.png]]
+
+The events in question are triggered from an external mnemonic “FLT_Checklist_Status“ which is set by Script.Serial.KN02_V5_FORKLIFT_EternitRJ_170000_7FF_DC_RF_V1.0.0.0_ALPHA - I have pulled the script from the database
+
+![[Untitled 2.png]]
+
+
 
 ## Image overview WIP
 
@@ -93,7 +107,7 @@ Process of testing and workflow
 - [Deployment Rotation Config](https://teams.microsoft.com/l/entity/0d820ecd-def2-4297-adad-78056cde7c78/_djb2_msteams_prefix_987693413?context=%7B%22channelId%22%3A%2219%3Ab5c45f4bc39c4bdfaf82ac1bef07f4a0%40thread.skype%22%7D&groupId=8b12a01e-f9e1-4afa-8f3b-14710a475838&tenantId=d19b542a-1500-4712-a713-be8d79882cb5)
 
 
-![[Copied Rotation]]
+
 ## Members
 
 Maybe here is a good place to add you own notes in a separate file:
