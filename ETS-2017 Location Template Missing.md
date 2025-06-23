@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-23T19:20
+updated: 2025-06-23T19:22
 ---
 
 # ETS-142
@@ -60,6 +60,6 @@ Normal Config Groups Module:
 
 ## Code
 
-- Branch: xxxxxxx
+- Branch: Config/MR/Bug/ETS-142_LocationInvisible
 - [ ] PR DEV
 - [ ] PR INT
