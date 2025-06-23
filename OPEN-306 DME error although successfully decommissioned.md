@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-20T16:30
+updated: 2025-06-23T11:43
 ---
 
 # OPEN-306
@@ -48,6 +48,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- ConfigInternalClient.MobileUnitCommissioning.MobileUnitDecommissioning
 		- SuccessFailWithMessage decommissionResult = ConfigInternalClient.MobileUnitCommissioning.MobileUnitDecommissioning(authToken, assetDecommRequest).ConfigureAwait(false).GetAwaiter().GetResult();
 		- /mobile-units/decommissioning?authToken
+	- Config.API
+		- AnyMobileUnitDecommission
 		- 
 
 ![[OPEN-302 Unallocated Asset Description link click errpr.png]]
