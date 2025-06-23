@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-23T20:05
+updated: 2025-06-23T20:17
 ---
 
 # ETS-142
@@ -55,7 +55,7 @@ Normal Config Groups Module:
 
 - Easy - look for Location Template value in CG Panel and edit
 - showLocationTemplate is surely false
-- [ ] HOW to get it to show as true...
+- [x] HOW to get it to show as true... ✅ 2025-06-23
 - The values are there - the subscribe dinge is dalk out of sync
 
 ## Code
