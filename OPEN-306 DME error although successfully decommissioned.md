@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-23T11:59
+updated: 2025-06-23T12:06
 ---
 
 # OPEN-306
@@ -55,6 +55,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ![[OPEN-302 Unallocated Asset Description link click errpr.png]]
 
 AssetId: 1647399904357085184
+https://integration.mixtelematics.com/#/fleet-admin/asset/details?id=1647399904357085184&orgId=-5401647754082838271
 
 ```json
 {
@@ -74,6 +75,8 @@ AssetId: 1647399904357085184
 
 
 ERROR: "The mobile unit you are trying to delete, could not be found"
+- This was because I have decommissioned it... set CG to Digital matter, trying again
+- 
 
 
 ## What next
