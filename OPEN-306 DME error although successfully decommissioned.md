@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-23T11:56
+updated: 2025-06-23T11:59
 ---
 
 # OPEN-306
@@ -71,6 +71,10 @@ AssetId: 1647399904357085184
 ```
 
 ![[OPEN-306 DME error although successfully decommissioned My SWAGGER.png|300]]
+
+
+ERROR: "The mobile unit you are trying to delete, could not be found"
+
 
 ## What next
 
