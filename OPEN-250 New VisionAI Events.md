@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-24T16:14
+updated: 2025-06-24T16:39
 ---
 
 # OPEN-250 New VisionAI Events
@@ -54,13 +54,13 @@ on-Road IoT
 **Requirements**
 
 1. Create the following VisionAI 360 events in On-road IoT:  
-    MiX Vision: Safeguard extremely high risk  
-    MiX Vision: Safeguard high risk  
-    MiX Vision: Safeguard medium risk  
-    MiX Vision: Safeguard low risk   
-2. The events should display as **default** event type.
-3. The events must **not record video** as users will navigate to the VisionAI 360 module to view videos.
-4. The events must **not be configurable** as configuration is done on the VisionAI 360 platform.
+    - [ ] MiX Vision: Safeguard extremely high risk  
+    - [ ] MiX Vision: Safeguard high risk  
+    - [ ] MiX Vision: Safeguard medium risk  
+    - [ ] MiX Vision: Safeguard low risk   
+2. [ ]  The events should display as **default** event type.
+3. [ ] The events must **not record video** as users will navigate to the VisionAI 360 module to view videos.
+4. [ ] The events must **not be configurable** as configuration is done on the VisionAI 360 platform.
 
 **Acceptance criteria**
 
