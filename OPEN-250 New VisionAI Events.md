@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-24T16:39
+updated: 2025-06-24T16:48
 ---
 
 # OPEN-250 New VisionAI Events
@@ -72,6 +72,9 @@ on-Road IoT
 Config team do dev and testing to do Verification on this ticket.
 
 End to end will be with the AI Vision team.
+
+Branch: Config/MR/Feature/OPEN-250_SafegaurdEvents
+
 
 ## SP 2
 
