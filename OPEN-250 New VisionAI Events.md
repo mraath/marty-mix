@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-24T16:54
+updated: 2025-06-24T16:55
 ---
 
 # OPEN-250 New VisionAI Events
@@ -78,7 +78,7 @@ Branch: Config/MR/Feature/OPEN-250_SafegaurdEvents
 
 ## SP 2
 
-- [ ] PR DEV
+- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/126568?_a=files)
 - [ ] [PR INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/126567?_a=files)
 
 ## Branch
