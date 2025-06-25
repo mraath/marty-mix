@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-25T14:51
+updated: 2025-06-25T16:29
 ---
 
 # OPEN-250 New VisionAI Events
@@ -58,22 +58,21 @@ on-Road IoT
     - [x] MiX Vision: Safeguard high risk ✅ 2025-06-25
     - [x] MiX Vision: Safeguard medium risk ✅ 2025-06-25
     - [x] MiX Vision: Safeguard low risk ✅ 2025-06-25
-2. [ ]  The events should display as **default** event type.
-3. [ ] The events must **not record video** as users will navigate to the VisionAI 360 module to view videos.
-4. [ ] The events must **not be configurable** as configuration is done on the VisionAI 360 platform.
+2. [x] The events should display as **default** event type. ✅ 2025-06-25
+3. [x] The events must **not record video** as users will navigate to the VisionAI 360 module to view videos. ✅ 2025-06-25
+4. [x] The events must **not be configurable** as configuration is done on the VisionAI 360 platform. ✅ 2025-06-25
 
 **Acceptance criteria**
 
 1. The risk events display as default events in the library. The events are not configurable.
 2. The events are **visible on Trip timeline**.
 
-**Testing notes:** In order to test, **enable Safeguard** for an asset and trigger risk events from the platform.
-
+**Testing notes:** 
+- [ ] In order to test, **enable Safeguard** for an asset and trigger risk events from the platform.
 Config team do dev and testing to do Verification on this ticket.
-
 End to end will be with the AI Vision team.
 
-Branch: Config/MR/Feature/OPEN-250_SafegaurdEvents
+**Branch**: Config/MR/Feature/OPEN-250_SafegaurdEvents
 
 
 ## SP 2
