@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-24T16:55
+updated: 2025-06-25T14:51
 ---
 
 # OPEN-250 New VisionAI Events
@@ -54,10 +54,10 @@ on-Road IoT
 **Requirements**
 
 1. Create the following VisionAI 360 events in On-road IoT:  
-    - [ ] MiX Vision: Safeguard extremely high risk  
-    - [ ] MiX Vision: Safeguard high risk  
-    - [ ] MiX Vision: Safeguard medium risk  
-    - [ ] MiX Vision: Safeguard low risk   
+    - [x] MiX Vision: Safeguard extremely high risk ✅ 2025-06-25
+    - [x] MiX Vision: Safeguard high risk ✅ 2025-06-25
+    - [x] MiX Vision: Safeguard medium risk ✅ 2025-06-25
+    - [x] MiX Vision: Safeguard low risk ✅ 2025-06-25
 2. [ ]  The events should display as **default** event type.
 3. [ ] The events must **not record video** as users will navigate to the VisionAI 360 module to view videos.
 4. [ ] The events must **not be configurable** as configuration is done on the VisionAI 360 platform.
@@ -78,7 +78,7 @@ Branch: Config/MR/Feature/OPEN-250_SafegaurdEvents
 
 ## SP 2
 
-- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/126568?_a=files)
+- [x] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/126568?_a=files) ✅ 2025-06-25
 - [ ] [PR INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/126567?_a=files)
 
 ## Branch
