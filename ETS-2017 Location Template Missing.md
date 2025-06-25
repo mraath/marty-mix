@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-24T06:11
+updated: 2025-06-25T15:41
 ---
 
 # ETS-2017
@@ -63,4 +63,4 @@ Normal Config Groups Module:
 - Branch: Config/MR/Bug/ETS-142_LocationInvisible
 	- DEV: Config/MR/Bug/ETS-142_LocationInvisible_DEV
 - [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/126518) ✅ 2025-06-23
-- [ ] PR INT
+- [ ] [PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/126625)
