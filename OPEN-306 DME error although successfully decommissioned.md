@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-26T11:22
+updated: 2025-06-26T11:25
 ---
 
 # OPEN-306
@@ -80,9 +80,14 @@ ERROR: "The mobile unit you are trying to delete, could not be found"
 
 ## WITH IMEI TEST
 
-|   |   |
-|---|---|
-|PUT|http://localhost/DynaMiX.API/fleet-admin/assets/commissioning/-5401647754082838271/1647399904357085184/remove-mobile-device|
+filename
+	/DynaMiX.API/fleet-admin/assets/commissioning/-5401647754082838271/1647399904357085184/remove-mobile-device
+
+PUT
+	http://localhost/DynaMiX.API/fleet-admin/assets/commissioning/-5401647754082838271/1647399904357085184/remove-mobile-device
+
+{"MoveToDecommissionedSite":false,"SiteId":null,"MakeAssetInactive":false,"Sites":[],"Notes":null,"WasStreamax":false,"WasStreamaxPeripheral":false,"IsUniqueIdentifierVIN":false}
+
 
 
 ## What next
