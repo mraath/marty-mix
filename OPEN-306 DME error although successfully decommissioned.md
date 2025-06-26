@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-26T11:25
+updated: 2025-06-26T11:40
 ---
 
 # OPEN-306
@@ -89,6 +89,10 @@ PUT
 {"MoveToDecommissionedSite":false,"SiteId":null,"MakeAssetInactive":false,"Sites":[],"Notes":null,"WasStreamax":false,"WasStreamaxPeripheral":false,"IsUniqueIdentifierVIN":false}
 
 
+## QUICK LINKS
+
+- [CG](http://localhost/MiXFleet.UI/#/config-admin/configuration-groups)
+- [Mobile Device Settings](http://localhost/MiXFleet.UI/#/fleet-admin/asset/commissioning?id=1647399904357085184&orgId=-5401647754082838271)
 
 ## What next
 
