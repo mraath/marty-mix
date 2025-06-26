@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-25T16:29
+updated: 2025-06-26T09:24
 ---
 
 # OPEN-250 New VisionAI Events
@@ -74,6 +74,14 @@ End to end will be with the AI Vision team.
 
 **Branch**: Config/MR/Feature/OPEN-250_SafegaurdEvents
 
+
+## Testing
+
+Spoke to Zonika. The "extra things" like "linking" is not something we will do. We just need these events as defaults in the library.
+It must be possible to make them available. After this there is an API call on which the available events will be listed for another team to be used.
+
+Zonika will ask Stephan if there are any Safeguard assets on INT to test with.
+ 
 
 ## SP 2
 
