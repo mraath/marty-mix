@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-26T11:40
+updated: 2025-06-26T13:48
 ---
 
 # OPEN-306
@@ -91,8 +91,12 @@ PUT
 
 ## QUICK LINKS
 
+UI
 - [CG](http://localhost/MiXFleet.UI/#/config-admin/configuration-groups)
 - [Mobile Device Settings](http://localhost/MiXFleet.UI/#/fleet-admin/asset/commissioning?id=1647399904357085184&orgId=-5401647754082838271)
+
+Config.API
+- 
 
 ## What next
 
