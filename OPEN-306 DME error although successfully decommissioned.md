@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-23T12:06
+updated: 2025-06-26T11:22
 ---
 
 # OPEN-306
@@ -77,6 +77,12 @@ https://integration.mixtelematics.com/#/fleet-admin/asset/details?id=16473999043
 ERROR: "The mobile unit you are trying to delete, could not be found"
 - This was because I have decommissioned it... set CG to Digital matter, trying again
 - 
+
+## WITH IMEI TEST
+
+|   |   |
+|---|---|
+|PUT|http://localhost/DynaMiX.API/fleet-admin/assets/commissioning/-5401647754082838271/1647399904357085184/remove-mobile-device|
 
 
 ## What next
