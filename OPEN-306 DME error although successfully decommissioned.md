@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-27T16:57
+updated: 2025-06-27T16:59
 ---
 
 # OPEN-306
@@ -53,6 +53,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 						- CONFIG API
 							- assetDecommRequest = PopulateDecommissioningRequestObject.... FAILS
 							- Console: "Attempt to use MobileUnitCommissioningRequestor to decommission AssetId".......
+							- DeRegisterImeiDigitalMatter - "Digital Matter: Deregister command failed for IMEI"...
 							- 
 				- 
 		- NO IMEI
@@ -61,8 +62,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 					- ConfigInternalClient.MobileUnitCommissioning.MobileUnitDecommissioning (assetId = 1647399904357085184)
 						- CONFIG API
 							- SUCCESS
-								- DeRegisterImeiDigitalMatter
-								- DeVin both
+								- DeRegisterImeiDigitalMatter - PASS
+								- DeVin - PASS
 
 
 
