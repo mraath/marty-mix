@@ -1,6 +1,6 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-06-27T08:18
+updated: 2025-06-27T08:36
 ---
 {{date:gggg [Week] ww}}
 {{date}} {{time}}
@@ -20,9 +20,9 @@ Child:: [[weekly]]
 
 ## Table for Jira
 
-| Item | Mo  | Tue | Wed | Thu | Fri |
-| ---- | --- | --- | --- | --- | --- |
-| xxx  |     |     |     |     |     |
+| Item | Mo  | Tue | Wed | Thu | Fri | Total |
+| ---- | --- | --- | --- | --- | --- | ----- |
+| xxx  |     |     |     |     |     |       |
 
 
 ## Week at a Glance
