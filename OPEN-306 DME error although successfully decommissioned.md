@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-27T15:01
+updated: 2025-06-27T15:11
 ---
 
 # OPEN-306
@@ -46,6 +46,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - BE
 	- REMOVE_MOBILE_DEVICE
 	- RemoveMobileDevice
+		- WITH IMEI
+			- xxxxxxxxxx
+		- NO IMEI
+			- xxxxxxxxxxxxx
 		- useCommReq
 			- xxx
 		- else
