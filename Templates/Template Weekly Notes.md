@@ -1,6 +1,6 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-06-06T14:12
+updated: 2025-06-27T08:18
 ---
 {{date:gggg [Week] ww}}
 {{date}} {{time}}
@@ -17,6 +17,13 @@ Child:: [[weekly]]
 - [Timesheets](http://timesheets.mixtelematics.com/MixTimesheetsUI/app/index.html#/TimeSheet)
 - [MiX Timesheets (int.priv)](http://timesheets.int.priv/MixTimesheetsUI/app/index.html#/Login)
 - mix.local\marthinusr
+
+## Table for Jira
+
+| Item | Mo  | Tue | Wed | Thu | Fri |
+| ---- | --- | --- | --- | --- | --- |
+| xxx  |     |     |     |     |     |
+
 
 ## Week at a Glance
 
