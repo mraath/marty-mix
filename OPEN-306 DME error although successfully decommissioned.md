@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-27T15:26
+updated: 2025-06-27T15:40
 ---
 
 # OPEN-306
@@ -50,11 +50,15 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- useCommReq = TRUE
 				- decommissionResult = failed
 					- ConfigInternalClient.MobileUnitCommissioning.MobileUnitDecommissioning (assetId = 1647399904357085184)
+						- CONFIG API
+							- assetDecommRequest = PopulateDecommissioningRequestObject.... FAILS
 				- 
 		- NO IMEI
 			- useCommReq = TRUE
 				- decommissionResult = true
 					- ConfigInternalClient.MobileUnitCommissioning.MobileUnitDecommissioning (assetId = 1647399904357085184)
+						- CONFIG API
+							- FAILS....
 
 
 
