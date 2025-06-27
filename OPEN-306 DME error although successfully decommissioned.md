@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-27T14:42
+updated: 2025-06-27T14:44
 ---
 
 # OPEN-306
@@ -45,6 +45,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- removeMobileDeviceTemplate.save
 - BE
 	- REMOVE_MOBILE_DEVICE
+	- RemoveMobileDevice
 	- /assets/commissioning/{orgId}/{assetId}/remove-mobile-device
 	- RemoveMobileDevice
 	- ==BREAKS==
