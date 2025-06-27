@@ -1,3 +1,7 @@
+---
+created: 2025-03-06T16:42
+updated: 2025-06-27T09:30
+---
 Date: 2022-03-08 Time: 15:45
 Status: #done 
 Friend: 
@@ -11,7 +15,11 @@ Let's go back to [[Code]]
   System.Text.RegularExpressions
   System.Security.Cryptography.Algorithms
 
+Point BE to local Config api:
+
   ConfigServicesApiServerUrl="http://localhost/DynaMiX.DeviceConfig.Services.API"
+  **THIS HAS CHANGED**: Config.Api is now:
+	  
   ConfigServicesApiServerUrl="http://api.deviceconfig.int.development.domain.local"
 
   replace DSINTSQL01 with 10.105.1.234
