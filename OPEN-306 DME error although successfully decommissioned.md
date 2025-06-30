@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-27T16:59
+updated: 2025-06-30T09:24
 ---
 
 # OPEN-306
@@ -55,7 +55,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 							- Console: "Attempt to use MobileUnitCommissioningRequestor to decommission AssetId".......
 								- assetDecommRequest.UniqueIdentifier = "353323081190745"
 								- DeRegisterImeiDigitalMatter - "Digital Matter: Deregister command failed for IMEI"...
-								- ........
+								- DMTCommsClient.Device.DeleteAsync
+								- 
 				- 
 		- NO IMEI
 			- useCommReq = TRUE
