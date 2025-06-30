@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-06-30T10:02
+updated: 2025-06-30T14:33
 ---
 
 # OPEN-306
@@ -57,7 +57,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 								- DeRegisterImeiDigitalMatter - "Digital Matter: Deregister command failed for IMEI"...
 								- DMTCommsClient.Device.DeleteAsync
 								- [Axiom Log](https://app.axiom.co/powerfleet-cpve/query?sid=qCMayHihtBz2QgZXHi)
-								- 
+								- Comms: https://app.axiom.co/powerfleet-cpve/query?qid=8G5xka7o9qO-synoma
 				- 
 		- NO IMEI
 			- useCommReq = TRUE
