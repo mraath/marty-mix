@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-02T09:44
+updated: 2025-07-02T09:50
 ---
 
 # ETS-2199 Cannot delete Location
@@ -63,3 +63,9 @@ Can the config team help us to remove the locations like in [SR-16816 UK: Unable
 ## SR-16816
 
 Paul: ![[Untitled 4.png]]
+```sql
+SELECT * FROM [DeviceConfiguration].[library].[EventConditions] where value like '-2377262399866316915%'
+SELECT * FROM [DeviceConfiguration].[library].[Events] where Eventkey 36121
+SELECT * FROM [DeviceConfiguration].[library].[Events] where EventKey - 36121
+SELECT * FROM [DeviceConfiguration].[library].[EventTemplates] where EventTemplateKey = 29292
+```
