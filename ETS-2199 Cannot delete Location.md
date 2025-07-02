@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-02T09:52
+updated: 2025-07-02T11:05
 ---
 
 # ETS-2199 Cannot delete Location
@@ -76,9 +76,10 @@ Location to be removed: **TCO 30 Zone 9 :: Tengiz :: Plant, IB,DB, Etc :: Rev 2*
 Location ID: **-2377262399866316915**
 
 Paul: ![[Untitled 4.png]]
+
 ```sql
 SELECT * FROM [DeviceConfiguration].[library].[EventConditions] where value like '-2377262399866316915%'
 SELECT * FROM [DeviceConfiguration].[library].[Events] where Eventkey = 36121
-SELECT * FROM [DeviceConfiguration].[library].[Events] where EventKey = 36121
-SELECT * FROM [DeviceConfiguration].[library].[EventTemplates] where EventTemplateKey = 29292
+SELECT * FROM [DeviceConfiguration].[template].[Events] where EventKey = 36121
+SELECT * FROM [DeviceConfiguration].[template].[EventTemplates] where EventTemplateKey = 29292
 ```
