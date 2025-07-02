@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-02T14:23
+updated: 2025-07-02T14:28
 ---
 
 # ETS-2199 Cannot delete Location
@@ -89,3 +89,7 @@ SELECT * FROM [DeviceConfiguration].[template].[EventTemplates] where EventTempl
 ![[ETS-2199 Cannot delete Location.png]]
 
 ![[ETS-2199 Cannot delete Location-1.png]]
+
+NOT there
+
+![[ETS-2199 Cannot delete Location-2.png]]
