@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-02T11:05
+updated: 2025-07-02T12:42
 ---
 
 # ETS-2199 Cannot delete Location
@@ -37,15 +37,15 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 Org details:  
 
-|   |   |
-|---|---|
-|Environment|US|
-|Org Name|MIXTEL BR - LINDE URUGUAY|
-|AssetDB name|MIXTELBR_LINDECOLOMBIA_2014|
-|OrgId (Legacy)|428|
-|Company ID|2630|
-|Org id|-5722240546621579774|
-|Library key|114|
+|                |                             |
+| -------------- | --------------------------- |
+| Environment    | US                          |
+| Org Name       | MIXTEL BR - LINDE URUGUAY   |
+| AssetDB name   | MIXTELBR_LINDECOLOMBIA_2014 |
+| OrgId (Legacy) | 428                         |
+| Company ID     | 2630                        |
+| Org id         | -5722240546621579774        |
+| Library key    | 114                         |
 
 Locations  
 Baliza Calle Jose Llupes - Location ID 1672836313996447744  
