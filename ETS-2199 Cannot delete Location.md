@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-02T12:42
+updated: 2025-07-02T14:21
 ---
 
 # ETS-2199 Cannot delete Location
@@ -83,3 +83,7 @@ SELECT * FROM [DeviceConfiguration].[library].[Events] where Eventkey = 36121
 SELECT * FROM [DeviceConfiguration].[template].[Events] where EventKey = 36121
 SELECT * FROM [DeviceConfiguration].[template].[EventTemplates] where EventTemplateKey = 29292
 ```
+
+## My results... in CG
+
+![[ETS-2199 Cannot delete Location.png]]
