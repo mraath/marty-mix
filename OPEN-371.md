@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-14T09:08
+updated: 2025-07-14T09:10
 ---
 
 # OPEN-371
@@ -36,3 +36,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## Shorter Description
 
 Column selection and column order settings reset when reloading
+
+- Should keep column order
+- Should more easily select columns
