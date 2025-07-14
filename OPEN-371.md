@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-14T09:02
+updated: 2025-07-14T09:08
 ---
 
 # OPEN-371
@@ -35,3 +35,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+Column selection and column order settings reset when reloading
