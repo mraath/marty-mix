@@ -1,6 +1,6 @@
 ---
 created: 2025-07-15T07:53
-updated: 2025-07-15T08:37
+updated: 2025-07-15T08:38
 ---
 - Was: 660MB
 - Delete
@@ -15,6 +15,7 @@ updated: 2025-07-15T08:37
 		- git gc --aggressive && git repack -a -d --depth=250 --window=250
 	- Use Shallow Clones for Rarely Used Repos
 		- after ensuring it’s backed up on a remote
+		- get repo-url: 
 		- rm -rf repo-dir
 		- git clone --depth 1 repo-url
 	- 
