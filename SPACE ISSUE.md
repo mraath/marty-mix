@@ -1,6 +1,6 @@
 ---
 created: 2025-07-15T07:53
-updated: 2025-07-15T08:15
+updated: 2025-07-15T08:36
 ---
 - Was: 660MB
 - Delete
@@ -10,4 +10,4 @@ updated: 2025-07-15T08:15
 	- Get largest repo - run in git bash
 		- du -sh * | sort -h
 		- HANGS
-	- 
+	- Cleanup - ot 
