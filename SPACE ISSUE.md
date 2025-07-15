@@ -1,6 +1,6 @@
 ---
 created: 2025-07-15T07:53
-updated: 2025-07-15T09:10
+updated: 2025-07-15T09:14
 ---
 - Was: 660MB
 
@@ -22,7 +22,7 @@ git gc --aggressive && git repack -a -d --depth=250 --window=250 && git gc --pru
 	- rm -rf repo-dir
 
 ```gitbash
-git clone --depth 1 xxxxx && git gc --prune=now
+git clone --depth 1 https://MiXTelematics@dev.azure.com/MiXTelematics/DynaMiX/_git/DynaMiX.UI.Framework && git gc --prune=now
 ```
 
 - now: xxxxxxxxxxxxx
@@ -31,4 +31,4 @@ git clone --depth 1 xxxxx && git gc --prune=now
 
 Not often used:
 - https://MiXTelematics@dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.EventAnalyserSettings
-- 
+- https://MiXTelematics@dev.azure.com/MiXTelematics/DynaMiX/_git/DynaMiX.UI.Framework
