@@ -1,6 +1,6 @@
 ---
 created: 2025-07-15T07:53
-updated: 2025-07-15T09:17
+updated: 2025-07-15T09:21
 ---
 - Was: 660MB
 
@@ -22,7 +22,7 @@ git gc --aggressive && git repack -a -d --depth=250 --window=250 && git gc --pru
 	- rm -rf repo-dir
 
 ```gitbash
-git clone --depth 1 https://mixtelematics.visualstudio.com/Fleet/_git/Fleet.Services && git gc --prune=now
+git clone --depth 1 https://mixtelematics.visualstudio.com/Fleet/_git/Fleet.Services.FleetAdmin.API && git gc --prune=now
 ```
 
 - now: xxxxxxxxxxxxx
@@ -32,3 +32,5 @@ git clone --depth 1 https://mixtelematics.visualstudio.com/Fleet/_git/Fleet.Serv
 Not often used:
 - https://MiXTelematics@dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.EventAnalyserSettings
 - https://MiXTelematics@dev.azure.com/MiXTelematics/DynaMiX/_git/DynaMiX.UI.Framework
+- https://mixtelematics.visualstudio.com/Fleet/_git/Fleet.Services
+- 
