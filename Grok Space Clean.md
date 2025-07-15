@@ -1,6 +1,6 @@
 ---
 created: 2025-07-15T08:40
-updated: 2025-07-15T08:40
+updated: 2025-07-15T08:47
 ---
 Running out of space on your work laptop due to numerous Git repositories is a common issue for developers. Let’s explore solutions, including quick wins and longer-term strategies, to free up space while keeping your repos accessible. I’ll also address your idea of removing local branches and provide practical steps.
 
@@ -207,3 +207,5 @@ done
 - **Monitor Space**: Use `df -h` to track free disk space before and after.
 
 If you share more details (e.g., repo sizes, OS, or specific constraints), I can tailor the solution further. Would you like me to analyze anything specific or guide you through one of these steps in detail?
+
+SOURCE: https://grok.com/chat/862d0a4f-2863-42e0-ac49-f8ce0825d0e0
