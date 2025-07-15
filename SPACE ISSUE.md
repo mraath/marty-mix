@@ -1,6 +1,6 @@
 ---
 created: 2025-07-15T07:53
-updated: 2025-07-15T08:55
+updated: 2025-07-15T08:57
 ---
 - Was: 660MB
 - Delete TMP
@@ -15,7 +15,7 @@ updated: 2025-07-15T08:55
 		- after ensuring it’s backed up on a remote
 		- get repo-url: xxxxxxxx
 		- rm -rf repo-dir
-		- git clone --depth 1 xxxxxxxx
+		- git clone --depth 1 https://MiXTelematics@dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.EventAnalyserSettings
 		-    git gc --prune=now
 - [[Grok Space Clean]]
 
