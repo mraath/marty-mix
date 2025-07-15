@@ -3,10 +3,10 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-14T09:10
+updated: 2025-07-15T09:57
 ---
 
-# OPEN-371
+# OPEN-371 Column Order Lost
 
 Date: 2025-07-14 Time: 09:01
 Parent:: ==xxxx==
