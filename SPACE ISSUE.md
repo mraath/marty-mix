@@ -1,6 +1,6 @@
 ---
 created: 2025-07-15T07:53
-updated: 2025-07-15T08:36
+updated: 2025-07-15T08:37
 ---
 - Was: 660MB
 - Delete
@@ -10,4 +10,11 @@ updated: 2025-07-15T08:36
 	- Get largest repo - run in git bash
 		- du -sh * | sort -h
 		- HANGS
-	- Cleanup - ot 
+	- Cleanup - not sure
+		- Ensure each dir checked in > INT
+		- git gc --aggressive && git repack -a -d --depth=250 --window=250
+	- Use Shallow Clones for Rarely Used Repos
+		- after ensuring it’s backed up on a remote
+		- rm -rf repo-dir
+		- git clone --depth 1 repo-url
+	- 
