@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-16T16:10
+updated: 2025-07-16T16:39
 ---
 
 # OPEN-371 Column Order Lost
@@ -48,7 +48,4 @@ Check if these are hit
 They do
 
 ## Testing order logging
-
->alerts|flagged|assetsCount|configurationGroupName|fwVersion|mobileDevice|speed|hos|mobileDeviceTemplateName|eventTemplateName|canScript|rpm|fuel|locationTemplateName|sp
->alerts|assetDescription|assetId|legacyVehicleId|flagged|registration|sitename|fleetNumber|lastposition|imei|serialnumber|mobileDevice|configCompileStatus|configurationStatus|configurationStatusDate|commsLog|configurationGroupName|mobileDeviceTemplateName|eventTemplateName|locationTemplateName|fwVersion|preferredFWVersion|canScript|speed|rpm|fuel|sp|miXVisionSerialnumber|hos
 
