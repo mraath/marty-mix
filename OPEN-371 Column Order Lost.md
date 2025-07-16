@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-16T16:44
+updated: 2025-07-16T16:46
 ---
 
 # OPEN-371 Column Order Lost
@@ -54,3 +54,4 @@ alerts|sitename|assetDescription|legacyVehicleId|flagged|registration|assetId|fl
 alerts|legacyVehicleId|sitename|assetDescription|flagged|registration|assetId|fleetNumber|lastposition|imei|serialnumber|mobileDevice|configCompileStatus|configurationStatus|configurationStatusDate|commsLog|configurationGroupName|mobileDeviceTemplateName|eventTemplateName|locationTemplateName|fwVersion|preferredFWVersion|canScript|speed|rpm|fuel|sp|miXVisionSerialnumber|hos
 
 alerts|registration|legacyVehicleId|sitename|assetDescription|flagged|assetId|fleetNumber|lastposition|imei|serialnumber|mobileDevice|configCompileStatus|configurationStatus|configurationStatusDate|commsLog|configurationGroupName|mobileDeviceTemplateName|eventTemplateName|locationTemplateName|fwVersion|preferredFWVersion|canScript|speed|rpm|fuel|sp|miXVisionSerialnumber|hos
+
