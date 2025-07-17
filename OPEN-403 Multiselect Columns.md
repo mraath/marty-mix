@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-17T09:15
+updated: 2025-07-17T09:17
 ---
 
 # OPEN-403 Multiselect Columns
@@ -34,4 +34,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
 ## Shorter Description
+
+The following was stated by @Shawn Hancock in a Teams discussion with me:
+
+“…**ensure the popup remains open while selecting and deselecting checkboxes**. The rest is all good.
+
+There's documentation they can follow on Kendo's website:
+
+[https://www.telerik.com/kendo-angular-ui/components/popup/closing](https://www.telerik.com/kendo-angular-ui/components/popup/closing)”
 
