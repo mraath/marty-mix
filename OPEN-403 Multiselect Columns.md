@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-17T13:30
+updated: 2025-07-17T14:17
 ---
 
 # OPEN-403 Multiselect Columns
@@ -44,7 +44,7 @@ There's documentation they can follow on Kendo's website:
 [https://www.telerik.com/kendo-angular-ui/components/popup/closing](https://www.telerik.com/kendo-angular-ui/components/popup/closing)”
 
 
-## Code
+## Code - NONE of this or the above link worked... I just set two places from true to false :-)
 
 ### HTML
 
@@ -60,3 +60,6 @@ Added: @HostListener("document:keydown" - as per example
 Changed: @HostListener("document:click - as per example
 Changed: public onToggleGridConfigAssetsColumns(show - as per example
 Changed: private contains(target - as per their example
+
+## PR
+
