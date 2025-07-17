@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-17T10:00
+updated: 2025-07-17T10:03
 ---
 
 # OPEN-403 Multiselect Columns
@@ -56,5 +56,7 @@ popup: kendo-popup #popup class="popup-column-chooser" [anchor]="assetsColumnCho
 @ViewChild("assetsColumnChooserButton") public assetsColumnChooserButton: ElementRef; (already there)
 @ViewChild("popup", { read: ElementRef }) public popup: ElementRef; (missing)
 
+xxxxxxxxxxx
+Changed: @HostListener("document:click - as per example
 Changed: public onToggleGridConfigAssetsColumns(show - as per example
 Changed: private contains(target - as per their example
