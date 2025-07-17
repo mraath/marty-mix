@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-17T10:06
+updated: 2025-07-17T10:12
 ---
 
 # OPEN-403 Multiselect Columns
@@ -54,7 +54,7 @@ popup: kendo-popup #popup class="popup-column-chooser" [anchor]="assetsColumnCho
 ### TS
 
 @ViewChild("assetsColumnChooserButton") public assetsColumnChooserButton: ElementRef; (already there)
-@ViewChild("popup", { read: ElementRef }) public popup: ElementRef; (missing)
+@ViewChild("popup", { read: ElementRef }) public popup: ElementRef; (ALREADY)
 
 Added: @HostListener("document:keydown" - as per example
 Changed: @HostListener("document:click - as per example
