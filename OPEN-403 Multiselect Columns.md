@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-17T14:30
+updated: 2025-07-17T14:41
 ---
 
 # OPEN-403 Multiselect Columns
@@ -64,5 +64,5 @@ Changed: private contains(target - as per their example
 ## PR
 
 - BRANCH: Config/MR/OPEN-403_Multiselect_Columns_INT
-- [ ] [OPEN-403: PR to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/127540?_a=files)
+- [x] [OPEN-403: PR to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/127540?_a=files) ✅ 2025-07-17
 - [ ] OPEN-403: PR to INT
