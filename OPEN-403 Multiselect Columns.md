@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-17T10:12
+updated: 2025-07-17T13:30
 ---
 
 # OPEN-403 Multiselect Columns
@@ -49,7 +49,7 @@ There's documentation they can follow on Kendo's website:
 ### HTML
 
 assetsColumnChooserButton: button #assetsColumnChooserButton (anchor) (click)="onToggleGridConfigAssetsColumns()" 
-popup: kendo-popup #popup class="popup-column-chooser" [anchor]="assetsColumnChooserButton" **(missing .element)**
+popup: kendo-popup #popup class="popup-column-chooser" [anchor]="assetsColumnChooserButton" **(missing .element)** SHOULD HAVE!!!!!
  
 ### TS
 
