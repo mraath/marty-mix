@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-17T09:17
+updated: 2025-07-17T09:40
 ---
 
 # OPEN-403 Multiselect Columns
@@ -43,3 +43,7 @@ There's documentation they can follow on Kendo's website:
 
 [https://www.telerik.com/kendo-angular-ui/components/popup/closing](https://www.telerik.com/kendo-angular-ui/components/popup/closing)”
 
+
+## Code
+
+popup-column-chooser
