@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-18T08:44
+updated: 2025-07-18T11:17
 ---
 
 # OPEN-403 Multiselect Columns
