@@ -76,10 +76,13 @@ Reordered: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription
 - html: (click)="columnVisibilityChanged(item)"
 - ts
 	- columnVisibilityChanged
+	- 
 
 ### Ordered Cols
 
 - html: kendo-grid class="grid" #eventsGrid [data]="gridView" [resizable]="false" [sortable]="false" [reorderable]="true" (columnReorder)="columnReordered($event)">
 - ts
+	- columnReordered
+	- 
 
 xxxxxxxxxxxxxxxxxxx
