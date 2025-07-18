@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-18T14:15
+updated: 2025-07-18T14:16
 ---
 
 # OPEN-371 Column Order Lost
@@ -68,6 +68,8 @@ Reordered: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription
 
 ## Test BETA
 
-- 
+- First try **vars**
+- Then try **SelectionCriteria** Logic for grid
 
-xxxxxxxxxxxxxxx
+
+xxxxxxxxxxxxxxxxxxx
