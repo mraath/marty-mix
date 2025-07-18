@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-17T09:14
+updated: 2025-07-18T14:11
 ---
 
 # OPEN-371 Column Order Lost
@@ -55,3 +55,12 @@ changeColumnOrdering: alerts|registration|sitename|legacyVehicleId|assetDescript
 Reordered: alerts|registration|sitename|legacyVehicleId|assetDescription|flagged|assetId|fleetNumber|lastposition|imei|serialnumber|mobileDevice|configCompileStatus|configurationStatus|configurationStatusDate|commsLog|configurationGroupName|mobileDeviceTemplateName|eventTemplateName|locationTemplateName|fwVersion|preferredFWVersion|canScript|speed|rpm|fuel|sp|miXVisionSerialnumber|hos
 changeColumnOrdering: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription|flagged|fleetNumber|lastposition|imei|serialnumber|mobileDevice|configCompileStatus|configurationStatus|configurationStatusDate|commsLog|configurationGroupName|mobileDeviceTemplateName|eventTemplateName|locationTemplateName|fwVersion|preferredFWVersion|canScript|speed|rpm|fuel|sp|miXVisionSerialnumber|hos
 Reordered: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription|flagged|fleetNumber|lastposition|imei|serialnumber|mobileDevice|configCompileStatus|configurationStatus|configurationStatusDate|commsLog|configurationGroupName|mobileDeviceTemplateName|eventTemplateName|locationTemplateName|fwVersion|preferredFWVersion|canScript|speed|rpm|fuel|sp|miXVisionSerialnumber|hos
+
+
+
+--------------- IMEI
+123456789033322
+
+![[OPEN-371 Column Order Lost.png]]
+
+![[OPEN-371 Column Order Lost-1.png]]
