@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-18T14:21
+updated: 2025-07-18T16:47
 ---
 
 # OPEN-371 Column Order Lost
@@ -76,7 +76,10 @@ Reordered: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription
 - html: (click)="columnVisibilityChanged(item)"
 - ts
 	- columnVisibilityChanged
-	- 
+		- columnVisibilityChanged
+			- 
+		- assetsColumnVisibilityChanged
+			- 
 
 ### Ordered Cols
 
