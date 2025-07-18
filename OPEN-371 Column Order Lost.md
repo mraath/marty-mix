@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-18T14:16
+updated: 2025-07-18T14:18
 ---
 
 # OPEN-371 Column Order Lost
@@ -70,6 +70,14 @@ Reordered: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription
 
 - First try **vars**
 - Then try **SelectionCriteria** Logic for grid
+
+### Selected Cols
+
+- html: (click)="columnVisibilityChanged(item)"
+- 
+
+### Ordered Cols
+
 
 
 xxxxxxxxxxxxxxxxxxx
