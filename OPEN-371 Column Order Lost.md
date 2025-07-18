@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-18T14:18
+updated: 2025-07-18T14:20
 ---
 
 # OPEN-371 Column Order Lost
@@ -73,11 +73,12 @@ Reordered: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription
 
 ### Selected Cols
 
+- html: 
 - html: (click)="columnVisibilityChanged(item)"
 - 
 
 ### Ordered Cols
 
-
+- html: <kendo-grid class="grid" #eventsGrid [data]="gridView" [resizable]="false" [sortable]="false" [reorderable]="true"         (columnReorder)="columnReordered($event)">
 
 xxxxxxxxxxxxxxxxxxx
