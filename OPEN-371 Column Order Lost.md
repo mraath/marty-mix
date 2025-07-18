@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-18T16:58
+updated: 2025-07-18T17:00
 ---
 
 # OPEN-371 Column Order Lost
@@ -93,11 +93,17 @@ Reordered: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription
 	- columnReordered
 		- this.columns
 		- this.hiddenColumns
+		- this.gridSelectionCriteriaService.changeColumnOrdering
+			- SelectionCriteriaKeys.assetSearchColumnSettings
+			- this.columnSettings
+			- this.columns
 	- columnReordered
 		- cccc
 	- assetsColumnReordered
 		- this.assetsColumns
 		- configAssetsHiddenColumns
-		- 
+		- this.gridSelectionCriteriaService.changeColumnOrdering
+			- SelectionCriteriaKeys.assetsColumnSettings
+			- 
 
 xxxxxxxxxxxxxxxxxxx
