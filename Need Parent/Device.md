@@ -1,6 +1,6 @@
 ---
 created: 2023-09-21T21:25
-updated: 2025-03-06T12:00
+updated: 2025-07-22T07:47
 aliases:
   - Unit
 ---
@@ -10,6 +10,10 @@ Here are some devices.
 Some devices are part of groups.
 
 - [ ] This needs to be fleshed out a bit better
+
+## Adding new devices
+
+[[Adding new devices]]
 
 ## Ranges
 
