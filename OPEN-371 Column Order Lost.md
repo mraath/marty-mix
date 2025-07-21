@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-21T16:34
+updated: 2025-07-21T16:39
 ---
 
 # OPEN-371 Column Order Lost
@@ -109,6 +109,14 @@ Reordered: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription
 
 ## TEST
 
+### CG
+
 ![[Pasted image 20250721163425.png]]
 ![[Pasted image 20250721163403.png]]
 ![[Pasted image 20250721163237.png]]
+
+### Asset
+
+![[OPEN-371 Column Order Lost-2.png]]
+![[OPEN-371 Column Order Lost-3.png]]
+![[OPEN-371 Column Order Lost-4.png]]
