@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-22T09:56
+updated: 2025-07-22T09:59
 ---
 
 # ETS-2241 Event Video Intermittent
@@ -54,3 +54,23 @@ MVR2214 017226 Installed
 ## More
 
 majority of the issues seen are with vehicles installed with MVR (**Cathexis**) units
+
+### Paul
+
+The event itself looks good to me. Looking at the size of the respective files in the extended config there does not seem to be any sizing constraints on the number of drivers present. That only leaves us with the action being request and that it is not always responding when triggers. I suspect the issue is that the Cathexis unit is not recording the video clips as expected.
+
+Please check what values are recorded from the following events when the Driver Logged On event is not recording.
+
+<!-- ΩMix Vision Error: Camera Fault -->  
+<!-- ΩMix Vision Error: Not Awake -->  
+<!-- ΩMix Vision Error: SD Card Error -->  
+<!-- ΩMix Vision Error: Other -->
+
+Ons of the above should record with an error number which we can then use to establish the MVR issue.
+
+### Riaan
+
+Doing some testing by changing the event logic. No MVR errors on the system, which was confirmed with the Cathexis team.
+Hi @William King the video request are returned with not being available. I am doing test on a device in AU and will update the ticket tomorrow
+
+
