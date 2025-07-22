@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-22T10:02
+updated: 2025-07-22T14:53
 ---
 
 # ETS-2241 Event Video Intermittent
@@ -104,5 +104,5 @@ The EventTypeId for this is `-7507675202538861248` I can see that this unit has 
 
 I think this is assigned to the wrong team. Comms hasn’t worked with Cathexis at all.
 
-
+### PAUL added more
 
