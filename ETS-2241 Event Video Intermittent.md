@@ -100,5 +100,9 @@ I can see that the request event, Driver Logged On, was created in ResourceData.
 We never received a video request for this event. Lightning will have to investigate as to why they are not sending requests for these EventTypes.  
 The EventTypeId for this is `-7507675202538861248` I can see that this unit has never received a video request for this EventType.
 
-### Martin Lotter
+### Martin Lottering
+
+I think this is assigned to the wrong team. Comms hasn’t worked with Cathexis at all.
+
+
 
