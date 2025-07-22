@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-22T09:40
+updated: 2025-07-22T09:41
 ---
 
 # ETS-2241 Event Video Intermittent
@@ -34,4 +34,20 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
 ## Shorter Description
+
+The dealer uses the Driver Logged On event to determine if the camera solution is working, however this event seems to trigger intermittently. The event was previously set to look at the Current Driver ID > 0, however I noticed that a few trips are done without Drivers being Identified therefore I suggested they change the event to look at Current Driver ID >= 0  
+The event also has a record delay of 2min to allow the video device to properly boot up and then record the event. The below example had it’s config change on 12/5, but the issue remains.  
+  
+AU  
+Borg Manufacturing  
+XQ64TG - P410 Prime Mover - PM4177 - 0458 817 349  
+Vehicle ID: 493  
+Mix4000  
+IMEI: 354724643738666  
+Firmware 4.16.3  
+AssetId=1129801036349165568  
+Event Name: Driver Logged On  
+Event ID: -64  
+EventId=8744388737109092687  
+MVR2214 017226 Installed
 
