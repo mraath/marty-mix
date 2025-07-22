@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-22T14:54
+updated: 2025-07-22T16:54
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -53,3 +53,20 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 > Branch: Config/MR/Feature/OPEN-437 Default Config Group not editable.INT
 
+- Config.Api
+	- ConfigurationGroupAddEdit : class ConfigurationGroup (MiX.DeviceIntegration.Common, Version=2025.7.11.1)
+		- public bool IsDefault { get; set; }
+- Client
+	- OLDER Class - not has above...
+	- [ ] UPgrade the common class
+- FR API
+	- [ ] ensure it gets pulled through
+- FR UI
+	- [ ] enure it gets pulled through
+	- [ ] BLOCK Edit and delete
+
+- OLD BE
+	- [ ] Ensure you make use of new common
+- OLD FE
+	- [ ] Ensure pulled through
+	- [ ] BLOCK Edit and delete
