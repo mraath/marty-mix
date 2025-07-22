@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-22T09:41
+updated: 2025-07-22T09:56
 ---
 
 # ETS-2241 Event Video Intermittent
@@ -51,3 +51,6 @@ Event ID: -64
 EventId=8744388737109092687  
 MVR2214 017226 Installed
 
+## More
+
+majority of the issues seen are with vehicles installed with MVR (**Cathexis**) units
