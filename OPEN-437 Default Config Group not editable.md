@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-23T09:41
+updated: 2025-07-23T10:17
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -48,6 +48,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- GET_CONFIG_GROUPS_LIST
 		- GetConfigGroupListPage
 			- In class ConfigGroup add IsDefault
+			- MiX.DeviceConfig.Api.Client, Version=25.13.0.0: GetConfigurationGroupSummaries
 			- 
       PR: xxxxxxxxxx
 
