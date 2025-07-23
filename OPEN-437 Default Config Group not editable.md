@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-23T14:43
+updated: 2025-07-23T14:45
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -38,7 +38,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## SP 2
 
 ### FE
-- [ ] Task 1
+	- [ ] Task 1 
       PR: xxxxxxxxxx
 
 ### BE
