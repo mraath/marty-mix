@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-23T16:40
+updated: 2025-07-23T16:43
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -129,7 +129,7 @@ OPEN-437: Disable edit and remove for default groups
 - Config.Api
 	- ConfigurationGroupAddEdit : class ConfigurationGroup (MiX.DeviceIntegration.Common, Version=2025.7.11.1)
 		- public bool IsDefault { get; set; }
-		- "[template].[Template_GetConfigurationGroupsMultiselect]
+		- "[template].[Template_GetConfigurationGroupsMultiselect]"
 - Client
 	- OLDER Class - not has above...
 	- [ ] UPgrade the common class
