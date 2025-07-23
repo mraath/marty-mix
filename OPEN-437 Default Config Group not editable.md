@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-23T16:43
+updated: 2025-07-23T16:54
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -120,6 +120,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 OPEN-437: Disable edit and remove for default groups
 
+TEST: https://integration.mixtelematics.com/#/fleet-admin/asset/commissioning?id=1466026638581260288&orgId=-1983255592473789111
 
 
 - DB
