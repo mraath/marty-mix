@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-23T10:38
+updated: 2025-07-23T10:40
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -69,7 +69,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - OLD Page
 	- UI > BE > Client > API > Common > EF
 - BETA Page
-	- FR UI > FR API > 
+	- FR UI > FR API > Client > API > Common > DB
 
 ## Branch
 
