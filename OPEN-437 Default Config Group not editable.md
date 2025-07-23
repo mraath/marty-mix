@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-23T09:28
+updated: 2025-07-23T09:34
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -43,14 +43,15 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ### BE
 - [ ] Task 1
-	- https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multiselect/groupId/-1983255592473789111
-	- Request Method: GET
+	- https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/config_groups
+	- Request Method: POST
 	- 
       PR: xxxxxxxxxx
 
 ### FR UI
 - [ ] https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multiselect/groupId/-1983255592473789111
 	- Request Method: GET
+	- 
       PR: xxxxxxxxxx
 
 ### FR API
