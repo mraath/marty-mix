@@ -47,7 +47,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- Request Method: POST
 		- GET_CONFIG_GROUPS_LIST
 		- GetConfigGroupListPage
-			- In
+			- In class ConfigGroup add IsDefault
+			- 
       PR: xxxxxxxxxx
 
 ### FR UI
