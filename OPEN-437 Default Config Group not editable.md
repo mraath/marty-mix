@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-23T14:45
+updated: 2025-07-23T15:06
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -64,7 +64,45 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
       PR: xxxxxxxxxx
 
 
+- OLD Page
+	- [ ] UI > 
+		- [ ] PR INT
+		- [ ] PR DEV
+	- [ ] BE > 
+		- [ ] PR INT
+		- [ ] PR DEV
+	- [ ] Client > 
+		- [ ] PR INT
+		- [ ] PR DEV
+	- [ ] API > 
+		- [ ] PR INT
+		- [ ] PR DEV
+	- [ ] Common > 
+		- [ ] PR INT
+		- [ ] PR DEV
+	- [ ] EF
+		- [ ] PR INT
+		- [ ] PR DEV
 
+- BETA Page
+	- [ ] FR UI > 
+		- [ ] PR INT
+		- [ ] PR DEV
+	- [ ] FR API > 
+		- [ ] PR INT
+		- [ ] PR DEV
+	- [ ] Client > 
+		- [ ] PR INT
+		- [ ] PR DEV
+	- [ ] API > 
+		- [ ] PR INT
+		- [ ] PR DEV
+	- [ ] Common > 
+		- [ ] PR INT
+		- [ ] PR DEV
+	- [ ] DB
+		- [ ] PR INT
+		- [ ] PR DEV
 
 ## Gameplan
 
@@ -76,6 +114,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## Branch
 
 > Branch: Config/MR/Feature/OPEN-437 Default Config Group not editable.INT
+
+- DB
+	- g.LocationTemplateName,
+	- g.IsDefault, <<<<<<<<<<<<<
 
 - Config.Api
 	- ConfigurationGroupAddEdit : class ConfigurationGroup (MiX.DeviceIntegration.Common, Version=2025.7.11.1)
