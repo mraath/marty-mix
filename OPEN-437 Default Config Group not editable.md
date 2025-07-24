@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-24T11:53
+updated: 2025-07-24T11:55
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -116,7 +116,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Branch
 
-> **Branch**: Config/MR/Feature/OPEN-437-Default-Config-Group-not-editable.INT
+> **Branch**: 
+> Config/MR/Feature/OPEN-437-Default-Config-Group-not-editable.INT
 
 OPEN-437: Disable edit and remove for default groups
 
