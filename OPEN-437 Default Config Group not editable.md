@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-24T11:57
+updated: 2025-07-24T11:58
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -116,6 +116,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 
 GetConfigurationGroupsMultiselect
+MiX.DeviceIntegration.Common.2025.14.20250723.2
 
 ## Branch
 
