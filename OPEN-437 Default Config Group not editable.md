@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-24T12:39
+updated: 2025-07-24T12:45
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -91,8 +91,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- [x] **FR API** > ✅ 2025-07-24
 		- [ ] PR INT
 			- [ ] MUST pull new INT client
-		- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/127853)
-	- [ ] **Client** > 
+		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/127853) ✅ 2025-07-24
+		- [x] [PR DEV with new client](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/127854) ✅ 2025-07-24
+	- [x] **Client** > ✅ 2025-07-24
 		- [ ] PR INT
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/127852) ✅ 2025-07-24
 			- MiX.ConfigInternal.Api.Client.2025.14.20250724.1-beta
@@ -105,9 +106,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/127810
 			- MiX.DeviceIntegration.Common.2025.14.20250723.2.nupkg
 		- ~~PR DEV~~
-	- [ ] **DB**
+	- [x] **DB** ✅ 2025-07-24
 		- [ ] PR INT
-		- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/127850) Manually put on DEV
+		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/127850) Manually put on DEV ✅ 2025-07-24
 
 ## Gameplan
 
