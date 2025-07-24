@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-24T12:25
+updated: 2025-07-24T12:39
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -90,10 +90,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [ ] PR DEV
 	- [x] **FR API** > ✅ 2025-07-24
 		- [ ] PR INT
+			- [ ] MUST pull new INT client
 		- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/127853)
 	- [ ] **Client** > 
 		- [ ] PR INT
-		- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/127852)
+		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/127852) ✅ 2025-07-24
+			- MiX.ConfigInternal.Api.Client.2025.14.20250724.1-beta
 	- [ ] **API** > 
 		- [ ] PR INT
 		- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/127851)
@@ -122,10 +124,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 > **Branch**: 
 > Config/MR/Feature/OPEN-437-Default-Config-Group-not-editable.INT
 
-GetConfigurationGroupsMultiselect
+==GetConfigurationGroupsMultiselect==
 MiX.DeviceIntegration.Common.2025.14.20250723.2
 OPEN-437: Disable edit and remove for default groups
 public bool IsDefault { get; set; }
+MiX.ConfigInternal.Api.Client.2025.14.20250724.1
 
 
 
