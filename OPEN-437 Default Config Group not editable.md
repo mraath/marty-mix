@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-24T12:08
+updated: 2025-07-24T12:12
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -115,15 +115,19 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- FR UI > FR API > Client > API > Common > DB
 
 
-GetConfigurationGroupsMultiselect
-MiX.DeviceIntegration.Common.2025.14.20250723.2
+
 
 ## Branch
 
 > **Branch**: 
 > Config/MR/Feature/OPEN-437-Default-Config-Group-not-editable.INT
 
+GetConfigurationGroupsMultiselect
+MiX.DeviceIntegration.Common.2025.14.20250723.2
 OPEN-437: Disable edit and remove for default groups
+
+
+
 
 TEST DEV: 
 	https://config.dev.mixtelematics.com/#/fleet-admin/driver/details?id=-8383490494337834621&orgId=5373602768183155046
