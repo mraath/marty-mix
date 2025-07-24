@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-24T10:41
+updated: 2025-07-24T11:10
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -122,6 +122,9 @@ OPEN-437: Disable edit and remove for default groups
 
 TEST DEV: https://config.dev.mixtelematics.com/#/fleet-admin/driver/details?id=-8383490494337834621&orgId=5373602768183155046
 TEST INT: https://integration.mixtelematics.com/#/fleet-admin/asset/commissioning?id=1466026638581260288&orgId=-1983255592473789111
+
+> [!warning] Some Default groups are not set as IsDefault = 1
+
 
 
 - DB
