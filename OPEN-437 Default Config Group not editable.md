@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-24T13:05
+updated: 2025-07-25T10:06
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -62,6 +62,14 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] Need IsDefault on the Carrier For Single Edits
 - [ ] ALSO need IsDefault on the Carrier for lists, this will be a much longer one....
       PR: xxxxxxxxxx
+
+
+
+
+GetConfigGroupListPage
+
+
+
 
 
 - **OLD Page**
