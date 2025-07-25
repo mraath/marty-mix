@@ -1,6 +1,6 @@
 ---
 created: 2023-06-08T12:27
-updated: 2025-02-06T10:25
+updated: 2025-07-25T15:03
 ---
 
 Local: http://localhost/DynaMiX.DeviceConfig.Services.Api
@@ -14,6 +14,11 @@ ENT: http://api.deviceconfig.ent.dub.production.local
 ZA: http://api.deviceconfig.za.dub.production.local
 OMN: http://api.deviceconfig.omn.production.local
 ALG: http://api.deviceconfig.ats.domain.local
+
+
+
+
+Config Api on Dev, we want: [http://api.deviceconfig.dev.priv/swagger/index.html](http://api.deviceconfig.dev.priv/swagger/index.html "http://api.deviceconfig.dev.priv/swagger/index.html")
 
 
 ## Issues
