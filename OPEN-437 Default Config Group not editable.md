@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-28T08:45
+updated: 2025-07-28T08:49
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -134,6 +134,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] UI
 - [ ] FR API
 - [x] API ✅ 2025-07-28
+	- http://api.deviceconfig.dev.priv/api/configuration-groups-multiselect/groupId/5474499515462821884?authToken=ef003406-0f9f-4642-8b54-7aeef3c8c1b9
 - [x] DB ✅ 2025-07-28
 
 ### INT
