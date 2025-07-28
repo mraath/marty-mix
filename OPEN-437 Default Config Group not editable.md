@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-25T10:55
+updated: 2025-07-28T08:45
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -127,6 +127,16 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- FR UI > FR API > Client > API > Common > DB
 
 
+## Testing
+
+### DEV
+
+- [ ] UI
+- [ ] FR API
+- [x] API ✅ 2025-07-28
+- [x] DB ✅ 2025-07-28
+
+### INT
 
 
 ## Branch
