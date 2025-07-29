@@ -81,6 +81,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [ ] PR INT
 			- Get Latest Client
 			- xxxxxxxxxxxx
+			- Pull in latest common
+			- xxxxxxxxxxxx
 		- [ ] PR DEV
 			- Pull in latest client
 			- Pull in latest common
@@ -99,9 +101,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- [ ] AND MiX.DeviceIntegration.Core
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/128018) ✅ 2025-07-28
 			- MiX.DeviceIntegration.Common.2025.14.20250728.1-beta.nupkg
-	- [ ] EF
-		- [ ] PR INT
-		- [ ] PR DEV
+	- [x] EF ✅ 2025-07-29
+		- [x] PR INT ✅ 2025-07-29
+		- [x] PR DEV ✅ 2025-07-29
 
 - **BETA Page**
 	- [ ] **FR UI** > 
