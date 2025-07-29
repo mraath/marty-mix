@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-28T13:53
+updated: 2025-07-29T08:13
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -85,7 +85,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [ ] PR DEV
 	- [ ] API > 
 		- [ ] PR INT
-		- [ ] PR DEV
+		- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128086)
 	- [x] Common > ✅ 2025-07-28
 		- [ ] PR INT
 			- [ ] Need Latest MiX.DeviceIntegration.COMMON
