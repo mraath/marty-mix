@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-29T12:50
+updated: 2025-07-29T13:14
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -84,14 +84,14 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- Pull in latest common
 			- xxxxxxxxxxxx
 		- [ ] PR DEV
-			- Pull in latest client
+			- Pull in latest client: MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
 			- Pull in latest common
 	- [ ] Client > 
 		- [ ] PR INT
 			- Need Latest MiX.DeviceIntegration.COMMON
 			- xxxxxxxxxxxxxxx
-		- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/128087)
-			- xxxxxxxxxx
+		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/128087) ✅ 2025-07-29
+			- MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
 	- [ ] API > 
 		- [ ] PR INT
 		- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128086)
