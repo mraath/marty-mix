@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-29T12:47
+updated: 2025-07-29T12:50
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -83,6 +83,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- xxxxxxxxxxxx
 		- [ ] PR DEV
 			- Pull in latest client
+			- Pull in latest common
 	- [ ] Client > 
 		- [ ] PR INT
 			- Need Latest MiX.DeviceIntegration.COMMON
