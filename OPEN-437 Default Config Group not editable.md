@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-31T07:09
+updated: 2025-07-31T07:11
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -86,6 +86,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [ ] PR DEV
 			- Pull in latest client: MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
 			- Pull in latest common: MiX.DeviceIntegration.Common
+			- MANY merge issue: [[Accept All Incoming Files Command Line]]
 	- [ ] Client > 
 		- [ ] PR INT
 			- Need Latest MiX.DeviceIntegration.COMMON
