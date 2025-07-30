@@ -1,6 +1,6 @@
 ---
 created: 2023-06-08T12:27
-updated: 2025-07-25T15:53
+updated: 2025-07-30T15:39
 ---
 
 Local: http://localhost/DynaMiX.DeviceConfig.Services.Api
@@ -29,7 +29,7 @@ If you are getting issues trying to get access swagger to the old Api on Integra
 please use the following URL: [**http://dsintiis09/**](http://dsintiis09/ "http://dsintiis09/") instead.
 
 DEV:
-api.deviceconfig.dev.priv/swagger/indexhtml
+http://api.deviceconfig.dev.priv/swagger/index.html
 
 ## The Urls for the new Api are:
 
