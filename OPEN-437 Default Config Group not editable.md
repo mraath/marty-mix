@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-30T15:55
+updated: 2025-07-31T07:09
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -111,6 +111,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- [ ] **FR UI** > 
 		- [ ] PR INT
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/127855) ✅ 2025-07-24
+		- [x] https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128252 ✅ 2025-07-31
 	- [x] **FR API** > ✅ 2025-07-24
 		- [ ] PR INT
 			- [ ] MUST pull new INT client
