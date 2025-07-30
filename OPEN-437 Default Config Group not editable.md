@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-30T15:00
+updated: 2025-07-30T15:55
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -92,7 +92,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- xxxxxxxxxxxxxxx
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/128087) ✅ 2025-07-29
 			- MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
-			- SWAGGER TEST: http://api.deviceconfig.dev.priv/api/
+			- [SWAGGER TEST](http://api.deviceconfig.dev.priv/api/configuration-groups/groupId/5474499515462821884?authToken=c1bed22f-670d-4cc1-b1c6-96a64c13f7fd&includeMobileUnitCounts=true)
+			- 
 	- [ ] API > 
 		- [ ] PR INT
 		- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128086)
