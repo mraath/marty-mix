@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-31T08:36
+updated: 2025-07-31T08:55
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -97,11 +97,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- 
 	- [x] API > ✅ 2025-07-31
 		- [ ] PR INT
-			- [ ] Need Latest MiX.DeviceIntegration.Common
+			- [ ] Need Latest MiX.DeviceIntegration.Common: MiX.DeviceIntegration.Common.2025.14.20250731.1.nupkg
 			- [ ] AND MiX.DeviceIntegration.Core
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128086) ✅ 2025-07-31
 	- [x] Common > ✅ 2025-07-28
-		- [ ] [PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/128253)
+		- [x] [PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/128253) ✅ 2025-07-31
+			- MiX.DeviceIntegration.Common.2025.14.20250731.1.nupkg
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/128018) ✅ 2025-07-28
 			- MiX.DeviceIntegration.Common.2025.14.20250728.1-beta.nupkg
 	- [x] EF ✅ 2025-07-29
