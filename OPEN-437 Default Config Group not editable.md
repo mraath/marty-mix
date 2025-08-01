@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T11:16
+updated: 2025-08-01T11:27
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -73,8 +73,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - **OLD Page**
 	- [ ] BE > 
 		- [ ] BE PR INT
-			- [ ] Get Latest **Client**
-			- [ ] Pull in latest **common**
+			- [ ] Get Latest **MiX.ConfigInternal.Api.Client**
+			- [ ] Pull in latest **MiX.DeviceIntegration.COMMON**
 		- [x] PR DEV ✅ 2025-08-01
 			- Pull in latest **client**: MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
 			- Pull in latest **common**: MiX.DeviceIntegration.Common
@@ -108,8 +108,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [x] https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128252 ✅ 2025-07-31
 	- [ ] **FR API** >
 		- [ ] FR API PR INT
-			- [ ] MUST pull new INT **client**
-			- [ ] **common**
+			- [ ] Get Latest **MiX.ConfigInternal.Api.Client**
+			- [ ] Pull in latest **MiX.DeviceIntegration.COMMON**
+		- [x] PR DEV ✅ 2025-08-01
+			- Pull in latest **client**: MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
+			- Pull in latest **common**: MiX.DeviceIntegration.Common
+			- MANY merge issue: [[Accept All Incoming Files Command Line]]
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/127853) ✅ 2025-07-24
 		- [x] [PR DEV with new client](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/127854) ✅ 2025-07-24
 	- [x] **Client** > ✅ 2025-08-01
