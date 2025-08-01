@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T14:25
+updated: 2025-08-01T14:35
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -105,9 +105,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [FR UI PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128322)
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/127855) ✅ 2025-07-24
 		- [x] https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128252 ✅ 2025-07-31
-	- [ ] **FR API** >
-		- [ ] FR API PR INT
-			- [ ] Get Latest **MiX.ConfigInternal.Api.Client** MiX.ConfigInternal.Api.Client.2025.14.20250801.1.nupkg
+	- [x] **FR API** > ✅ 2025-08-01
+		- [FR API PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/128324)
+			- [x] Get Latest **MiX.ConfigInternal.Api.Client** MiX.ConfigInternal.Api.Client.2025.14.20250801.1.nupkg ✅ 2025-08-01
 			- [x] Pull in latest **MiX.DeviceIntegration.COMMON** ✅ 2025-08-01
 		- [x] PR DEV ✅ 2025-08-01
 			- Pull in latest **client**: MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
@@ -141,7 +141,7 @@ Zonika - if you are happy let me know to complete them.
 - [ ] [API PR INT](<[Client PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128319)>)
 - [ ] [Client PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/128321)
 	- [ ] Need Client for BE and FR API: xxxxxxxx
-- [ ] FR API
+- [ ] [FR API PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/128324)
 - [ ] [FR UI PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128322)
 - [ ] BE
 
