@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T11:42
+updated: 2025-08-01T14:25
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -73,7 +73,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - **OLD Page**
 	- [ ] BE > 
 		- [ ] BE PR INT
-			- [ ] Get Latest **MiX.ConfigInternal.Api.Client**
+			- [ ] Get Latest **MiX.ConfigInternal.Api.Client** MiX.ConfigInternal.Api.Client.2025.14.20250801.1.nupkg
 			- [x] Pull in latest **MiX.DeviceIntegration.COMMON** ??? ✅ 2025-08-01
 		- [x] PR DEV ✅ 2025-08-01
 			- Pull in latest **client**: MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
@@ -107,7 +107,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [x] https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128252 ✅ 2025-07-31
 	- [ ] **FR API** >
 		- [ ] FR API PR INT
-			- [ ] Get Latest **MiX.ConfigInternal.Api.Client**
+			- [ ] Get Latest **MiX.ConfigInternal.Api.Client** MiX.ConfigInternal.Api.Client.2025.14.20250801.1.nupkg
 			- [x] Pull in latest **MiX.DeviceIntegration.COMMON** ✅ 2025-08-01
 		- [x] PR DEV ✅ 2025-08-01
 			- Pull in latest **client**: MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
