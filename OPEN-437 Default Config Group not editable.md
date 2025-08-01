@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T11:15
+updated: 2025-08-01T11:16
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -138,7 +138,9 @@ Zonika - if you are happy let me know to complete them.
 - [ ] [API PR INT](<[Client PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128319)>)
 - [ ] [Client PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/128321)
 	- [ ] Need Client for BE and FR API: xxxxxxxx
-- [ ] 
+- [ ] FR API
+- [ ] FR UI
+- [ ] BE
 
 ## Gameplan
 
