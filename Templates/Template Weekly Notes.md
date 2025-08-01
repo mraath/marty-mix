@@ -1,6 +1,6 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-06-27T08:36
+updated: 2025-08-01T10:02
 ---
 {{date:gggg [Week] ww}}
 {{date}} {{time}}
@@ -10,19 +10,19 @@ Child:: [[weekly]]
 
 
 [https://timesheets.mixdevelopment.com/](https://timesheets.mixdevelopment.com/ "https://timesheets.mixdevelopment.com/")
-- OLD: [Powerfleet Timesheets](http://timesheets.int.priv/MixTimesheetsUI/app/index.html#Login)
-
-## OLDER
-
-- [Timesheets](http://timesheets.mixtelematics.com/MixTimesheetsUI/app/index.html#/TimeSheet)
-- [MiX Timesheets (int.priv)](http://timesheets.int.priv/MixTimesheetsUI/app/index.html#/Login)
-- mix.local\marthinusr
 
 ## Table for Jira
 
 | Item | Mo  | Tue | Wed | Thu | Fri | Total |
 | ---- | --- | --- | --- | --- | --- | ----- |
 | xxx  |     |     |     |     |     |       |
+
+## OLDER
+
+- OLD: [Powerfleet Timesheets](http://timesheets.int.priv/MixTimesheetsUI/app/index.html#Login)
+- [Timesheets](http://timesheets.mixtelematics.com/MixTimesheetsUI/app/index.html#/TimeSheet)
+- [MiX Timesheets (int.priv)](http://timesheets.int.priv/MixTimesheetsUI/app/index.html#/Login)
+- mix.local\marthinusr
 
 
 ## Week at a Glance
