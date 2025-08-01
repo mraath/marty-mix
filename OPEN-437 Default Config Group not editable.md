@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T10:10
+updated: 2025-08-01T10:11
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -72,7 +72,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - **OLD Page**
 	- [ ] BE > 
-		- [ ] PR INT
+		- [ ] BE PR INT
 			- Get Latest Client
 			- xxxxxxxxxxxx
 			- Pull in latest common
@@ -82,7 +82,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- Pull in latest common: MiX.DeviceIntegration.Common
 			- MANY merge issue: [[Accept All Incoming Files Command Line]]
 	- [ ] Client >
-		- [ ] PR INT
+		- [ ] Client PR INT
 			- [ ] Need Latest MiX.DeviceIntegration.COMMON
 			- xxxxxxxxxxxxxxx
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/128087) ✅ 2025-07-29
@@ -133,7 +133,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Outstanding PRs
 
--
+- [ ] xxx
 
 ## Gameplan
 
