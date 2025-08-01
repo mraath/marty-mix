@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T11:32
+updated: 2025-08-01T11:36
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -108,7 +108,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- [ ] **FR API** >
 		- [ ] FR API PR INT
 			- [ ] Get Latest **MiX.ConfigInternal.Api.Client**
-			- [ ] Pull in latest **MiX.DeviceIntegration.COMMON**
+			- [x] Pull in latest **MiX.DeviceIntegration.COMMON** ✅ 2025-08-01
 		- [x] PR DEV ✅ 2025-08-01
 			- Pull in latest **client**: MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
 			- Pull in latest **common**: MiX.DeviceIntegration.Common
