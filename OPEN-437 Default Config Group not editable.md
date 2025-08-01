@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T10:07
+updated: 2025-08-01T10:10
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -90,45 +90,50 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- [SWAGGER TEST](http://api.deviceconfig.dev.priv/api/configuration-groups/groupId/5474499515462821884?authToken=c1bed22f-670d-4cc1-b1c6-96a64c13f7fd&includeMobileUnitCounts=true)
 			- 
 	- [ ] API >
-		- [ ] PR INT
+		- [ ] API PR INT
 			- [ ] Need Latest MiX.DeviceIntegration.Common: MiX.DeviceIntegration.Common.2025.14.20250731.1.nupkg
 			- [ ] AND MiX.DeviceIntegration.Core
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128086) ✅ 2025-07-31
-	- [ ] Common >
+	- [x] Common > ✅ 2025-08-01
 		- [x] [PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/128253) ✅ 2025-07-31
 			- MiX.DeviceIntegration.Common.2025.14.20250731.1.nupkg
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/128018) ✅ 2025-07-28
 			- MiX.DeviceIntegration.Common.2025.14.20250728.1-beta.nupkg
 	- [ ] EF
-		- [ ] PR INT
+		- [ ] EF PR INT
 		- [x] PR DEV ✅ 2025-07-29
 
 - **BETA Page**
 	- [ ] **FR UI** >
-		- [ ] PR INT
+		- [ ] FR UI PR INT
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/127855) ✅ 2025-07-24
 		- [x] https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128252 ✅ 2025-07-31
 	- [ ] **FR API** >
-		- [ ] PR INT
+		- [ ] FR API PR INT
 			- [ ] MUST pull new INT client
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/127853) ✅ 2025-07-24
 		- [x] [PR DEV with new client](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/127854) ✅ 2025-07-24
 	- [ ] **Client** >
-		- [ ] PR INT
+		- [ ] Client PR INT
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/127852) ✅ 2025-07-24
 			- MiX.ConfigInternal.Api.Client.2025.14.20250724.1-beta
 	- [ ] **API** >
-		- [ ] PR INT
+		- [ ] API PR INT
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/127851) ✅ 2025-07-24
-	- [ ] **Common** >
+	- [x] **Common** > ✅ 2025-08-01
 		- [x] [PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/127808) ✅ 2025-07-23
 			- MiX.DeviceIntegration.Common.2025.7.23.1.nuspec
 			- https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/127810
 			- MiX.DeviceIntegration.Common.2025.14.20250723.2.nupkg
 		- ~~PR DEV~~
 	- [ ] **DB**
-		- [ ] PR INT
+		- [ ] DB PR INT
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/127850) Manually put on DEV ✅ 2025-07-24
+
+
+## Outstanding PRs
+
+-
 
 ## Gameplan
 
