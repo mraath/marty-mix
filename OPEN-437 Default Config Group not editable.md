@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T09:05
+updated: 2025-08-01T09:20
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -100,7 +100,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/128018) ✅ 2025-07-28
 			- MiX.DeviceIntegration.Common.2025.14.20250728.1-beta.nupkg
 	- [x] EF ✅ 2025-07-29
-		- [x] PR INT ✅ 2025-07-29
+		- [ ] PR INT
 		- [x] PR DEV ✅ 2025-07-29
 
 - **BETA Page**
@@ -142,9 +142,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ### DEV
 
-- [ ] UI
+- [x] UI ✅ 2025-08-01
 	- Data shows TRUE for 2, after testing the API on DEV
-- [ ] FR API
+- [x] FR API ✅ 2025-08-01
 - [x] API ✅ 2025-07-28
 	- http://api.deviceconfig.dev.priv/api/configuration-groups-multiselect/groupId/5474499515462821884?authToken=ef003406-0f9f-4642-8b54-7aeef3c8c1b9
 - [x] DB ✅ 2025-07-28
@@ -188,15 +188,15 @@ TEST INT: https://integration.mixtelematics.com/#/fleet-admin/asset/commissionin
 		- "[template].[Template_GetConfigurationGroupsMultiselect]"
 - Client
 	- OLDER Class - not has above...
-	- [ ] UPgrade the common class
+	- [x] UPgrade the common class ✅ 2025-08-01
 - FR API
-	- [ ] ensure it gets pulled through
+	- [x] ensure it gets pulled through ✅ 2025-08-01
 - FR UI
-	- [ ] enure it gets pulled through
-	- [ ] BLOCK Edit and delete
+	- [x] enure it gets pulled through ✅ 2025-08-01
+	- [x] BLOCK Edit and delete ✅ 2025-08-01
 
 - OLD BE
-	- [ ] Ensure you make use of new common
+	- [x] Ensure you make use of new common ✅ 2025-08-01
 - OLD FE
-	- [ ] Ensure pulled through
-	- [ ] BLOCK Edit and delete
+	- [x] Ensure pulled through ✅ 2025-08-01
+	- [x] BLOCK Edit and delete ✅ 2025-08-01
