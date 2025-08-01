@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T10:13
+updated: 2025-08-01T10:45
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -89,10 +89,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
 			- [SWAGGER TEST](http://api.deviceconfig.dev.priv/api/configuration-groups/groupId/5474499515462821884?authToken=c1bed22f-670d-4cc1-b1c6-96a64c13f7fd&includeMobileUnitCounts=true)
 			- 
-	- [ ] API >
-		- [ ] API PR INT
-			- [ ] Need Latest MiX.DeviceIntegration.Common: MiX.DeviceIntegration.Common.2025.14.20250731.1.nupkg
-			- [ ] AND MiX.DeviceIntegration.Core
+	- [x] API > ✅ 2025-08-01
+		- [x] API PR INT ✅ 2025-08-01
+			- [x] Need Latest MiX.DeviceIntegration.Common: MiX.DeviceIntegration.Common.2025.14.20250731.1.nupkg ✅ 2025-08-01
+			- [x] AND MiX.DeviceIntegration.Core ✅ 2025-08-01
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128086) ✅ 2025-07-31
 	- [x] Common > ✅ 2025-08-01
 		- [x] [PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/128253) ✅ 2025-07-31
@@ -117,8 +117,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [ ] Client PR INT
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/127852) ✅ 2025-07-24
 			- MiX.ConfigInternal.Api.Client.2025.14.20250724.1-beta
-	- [ ] **API** >
-		- [ ] API PR INT
+	- [x] **API** > ✅ 2025-08-01
+		- [x] [API PR INT](<[Client PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128319)>) ✅ 2025-08-01
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/127851) ✅ 2025-07-24
 	- [x] **Common** > ✅ 2025-08-01
 		- [x] [PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/127808) ✅ 2025-07-23
@@ -136,6 +136,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 None of these are auto-completed.
 Zonika - if you are happy let me know to complete them.
 - [ ] [DB PR INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/128318)
+- [ ] [API PR INT](<[Client PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128319)>)
 - [ ] 
 
 ## Gameplan
