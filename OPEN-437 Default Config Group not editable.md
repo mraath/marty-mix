@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T10:12
+updated: 2025-08-01T10:13
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -126,14 +126,17 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/127810
 			- MiX.DeviceIntegration.Common.2025.14.20250723.2.nupkg
 		- ~~PR DEV~~
-	- [ ] **DB**
-		- [ ] [DB PR INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/128318)
+	- [x] **DB** ✅ 2025-08-01
+		- [DB PR INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/128318)
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/127850) Manually put on DEV ✅ 2025-07-24
 
 
 ## Outstanding PRs
 
-- [ ] xxx
+None of these are auto-completed.
+Zonika - if you are happy let me know to complete them.
+- [ ] [DB PR INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/128318)
+- [ ] 
 
 ## Gameplan
 
