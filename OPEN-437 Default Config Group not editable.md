@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T14:49
+updated: 2025-08-01T16:26
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -143,7 +143,7 @@ Zonika - if you are happy let me know to complete them.
 	- [ ] Need Client for BE and FR API: xxxxxxxx
 - [ ] [FR API PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/128324)
 - [ ] [FR UI PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128322)
-- [ ] BE
+- [ ] BE >> MESSED UP
 
 ## Gameplan
 
