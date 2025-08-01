@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T11:27
+updated: 2025-08-01T11:30
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -74,7 +74,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- [ ] BE > 
 		- [ ] BE PR INT
 			- [ ] Get Latest **MiX.ConfigInternal.Api.Client**
-			- [ ] Pull in latest **MiX.DeviceIntegration.COMMON**
+			- [ ] Pull in latest **MiX.DeviceIntegration.COMMON** ???
 		- [x] PR DEV ✅ 2025-08-01
 			- Pull in latest **client**: MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
 			- Pull in latest **common**: MiX.DeviceIntegration.Common
@@ -86,7 +86,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/128087) ✅ 2025-07-29
 			- MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
 			- [SWAGGER TEST](http://api.deviceconfig.dev.priv/api/configuration-groups/groupId/5474499515462821884?authToken=c1bed22f-670d-4cc1-b1c6-96a64c13f7fd&includeMobileUnitCounts=true)
-			- 
 	- [x] API > ✅ 2025-08-01
 		- [x] API PR INT ✅ 2025-08-01
 			- [x] Need Latest MiX.DeviceIntegration.Common: MiX.DeviceIntegration.Common.2025.14.20250731.1.nupkg ✅ 2025-08-01
