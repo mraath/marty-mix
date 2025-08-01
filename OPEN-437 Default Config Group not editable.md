@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T07:41
+updated: 2025-08-01T09:05
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -37,12 +37,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## SP 2
 
-### FE
-- [ ] Task 1 
-  PR: xxxxxxxxxx
 
 ### BE
-- [ ] Task 1
+- [x] Task 1 ✅ 2025-08-01
 	- https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-1983255592473789111/config_groups
 	- Request Method: POST
 		- GET_CONFIG_GROUPS_LIST
@@ -54,14 +51,14 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
       PR: xxxxxxxxxx
 
 ### FR UI
-- [ ] https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multiselect/groupId/-1983255592473789111
+- [x] https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multiselect/groupId/-1983255592473789111 ✅ 2025-08-01
 	- Request Method: GET
 	- getConfigurationGroupsMultiselect
       PR: xxxxxxxxxx
 
 ### FR API
-- [ ] Need IsDefault on the Carrier For Single Edits
-- [ ] ALSO need IsDefault on the Carrier for lists, this will be a much longer one....
+- [x] Need IsDefault on the Carrier For Single Edits ✅ 2025-08-01
+- [x] ALSO need IsDefault on the Carrier for lists, this will be a much longer one.... ✅ 2025-08-01
       PR: xxxxxxxxxx
 
 
@@ -74,16 +71,13 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 
 - **OLD Page**
-	- [ ] UI > 
-		- [ ] PR INT
-		- [ ] PR DEV
 	- [ ] BE > 
 		- [ ] PR INT
 			- Get Latest Client
 			- xxxxxxxxxxxx
 			- Pull in latest common
 			- xxxxxxxxxxxx
-		- [ ] PR DEV
+		- [x] PR DEV ✅ 2025-08-01
 			- Pull in latest client: MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
 			- Pull in latest common: MiX.DeviceIntegration.Common
 			- MANY merge issue: [[Accept All Incoming Files Command Line]]
