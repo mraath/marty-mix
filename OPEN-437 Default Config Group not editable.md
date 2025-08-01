@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-01T11:36
+updated: 2025-08-01T11:42
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -82,7 +82,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- [x] Client > ✅ 2025-08-01
 		- Client PR INT
 			- [x] Need Latest MiX.DeviceIntegration.COMMON ✅ 2025-08-01
-			- [ ] xxxxxxxxxxxxxxx
+			- [x] xxxxxxxxxxxxxxx ✅ 2025-08-01
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/128087) ✅ 2025-07-29
 			- MiX.ConfigInternal.Api.Client.2025.14.20250729.1-beta.nupkg
 			- [SWAGGER TEST](http://api.deviceconfig.dev.priv/api/configuration-groups/groupId/5474499515462821884?authToken=c1bed22f-670d-4cc1-b1c6-96a64c13f7fd&includeMobileUnitCounts=true)
@@ -101,8 +101,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		- [x] PR DEV ✅ 2025-07-29
 
 - **BETA Page**
-	- [ ] **FR UI** >
-		- [ ] FR UI PR INT
+	- [x] **FR UI** > ✅ 2025-08-01
+		- [FR UI PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128322)
 		- [x] [PR DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/127855) ✅ 2025-07-24
 		- [x] https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128252 ✅ 2025-07-31
 	- [ ] **FR API** >
@@ -142,7 +142,7 @@ Zonika - if you are happy let me know to complete them.
 - [ ] [Client PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/128321)
 	- [ ] Need Client for BE and FR API: xxxxxxxx
 - [ ] FR API
-- [ ] FR UI
+- [ ] [FR UI PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128322)
 - [ ] BE
 
 ## Gameplan
