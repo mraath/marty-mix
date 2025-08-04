@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-04T14:47
+updated: 2025-08-04T14:49
 ---
 
 # OPEN-371 Column Order Lost
@@ -129,6 +129,6 @@ Jy kan sien in die network tab as die requests om die criteria te fetch/update. 
 
 ![[OPEN-371 Column Order Lost-5.png]]
 
-Daarna het ek net die get request ge-replay om response te sien en te verseker dit match teenoor wat ek sopas persist het (jy kan page ook reload maar dis meer effort ![🙂](https://statics.teams.cdn.office.net/evergreen-assets/personal-expressions/v2/assets/emoticons/smile/default/30_f.png?v=v83)). Hier kan jy sien die response van die volgende request het al die columns in wat ek net voor dit gaan persist het
+Daarna het ek net die get request ge-==replay== om response te sien en te verseker dit match teenoor wat ek sopas persist het (jy kan page ook reload maar dis meer effort ![🙂](https://statics.teams.cdn.office.net/evergreen-assets/personal-expressions/v2/assets/emoticons/smile/default/30_f.png?v=v83)). Hier kan jy sien die response van die volgende request het al die columns in wat ek net voor dit gaan persist het
 
 ![[OPEN-371 Column Order Lost 2.png]]
