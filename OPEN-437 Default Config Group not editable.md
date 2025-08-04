@@ -141,8 +141,8 @@ None of these are auto-completed.
 - DB PR INT:  https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/128318)
 - API PR INT: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128319)
 - Client PR INT: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/128321
-- FR API PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/128324
-- FR UI PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128322
+- FR API PR INT: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/128324
+- FR UI PR INT: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128322
 - BE PR INT: https://dev.azure.com/MiXTelematics/Common/_git/DynaMiX.Backend/pullrequest/128328
 
 ## Gameplan
