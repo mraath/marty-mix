@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-07-21T16:39
+updated: 2025-08-04T12:00
 ---
 
 # OPEN-371 Column Order Lost
@@ -120,3 +120,15 @@ Reordered: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription
 ![[OPEN-371 Column Order Lost-2.png]]
 ![[OPEN-371 Column Order Lost-3.png]]
 ![[OPEN-371 Column Order Lost-4.png]]
+
+## Timothy
+
+Ek dink daar is niks fout met selection criteria nie. Ek het wel 1 keer gesien 'n error wat gebeur het voor selection criteria laai wat maak dat dit lyk asof dit nie laai nie.
+
+Jy kan sien in die network tab as die requests om die criteria te fetch/update. Ek het 'n column gekies, wat deselected was. Jy kan sien in die image hier onder die 3 columns wat nou deselected is, is deel van die network request om te persist.
+
+![[OPEN-371 Column Order Lost-5.png]]
+
+Daarna het ek net die get request ge-replay om response te sien en te verseker dit match teenoor wat ek sopas persist het (jy kan page ook reload maar dis meer effort ![🙂](https://statics.teams.cdn.office.net/evergreen-assets/personal-expressions/v2/assets/emoticons/smile/default/30_f.png?v=v83)). Hier kan jy sien die response van die volgende request het al die columns in wat ek net voor dit gaan persist het
+
+![[OPEN-371 Column Order Lost 2.png]]
