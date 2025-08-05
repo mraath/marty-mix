@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-04T14:49
+updated: 2025-08-05T10:46
 ---
 
 # OPEN-371 Column Order Lost
@@ -125,7 +125,7 @@ Reordered: alerts|registration|sitename|legacyVehicleId|assetId|assetDescription
 
 Ek dink daar is niks fout met selection criteria nie. Ek het wel 1 keer gesien 'n ==error== wat gebeur het voor selection criteria laai wat maak dat dit lyk asof dit nie laai nie.
 
-Jy kan sien in die network tab as die requests om die criteria te fetch/update. Ek het 'n column gekies, wat deselected was. Jy kan sien in die image hier onder die 3 columns wat nou deselected is, is deel van die network request om te persist.
+Jy kan sien in die network tab as die requests om die criteria te fetch/==update==. Ek het 'n column gekies, wat deselected was. Jy kan sien in die image hier onder die 3 columns wat nou deselected is, is deel van die network request om te persist.
 
 ![[OPEN-371 Column Order Lost-5.png]]
 
