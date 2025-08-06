@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-04T11:39
+updated: 2025-08-07T07:32
 ---
 
 # OPEN-437 Default Config Group not editable
@@ -136,7 +136,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## Outstanding PRs
 
 None of these are auto-completed.
-- [ ] Zonika - if you are happy let me know to complete them.
+- [x] Zonika - if you are happy let me know to complete them. ✅ 2025-08-07
 
 - DB PR INT:  https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/128318)
 - API PR INT: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/128319)
