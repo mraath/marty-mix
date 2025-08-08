@@ -1,6 +1,6 @@
 ---
 created: 2024-01-26T08:49
-updated: 2024-07-22T10:24
+updated: 2025-08-08T14:17
 ---
 ## Overview
 
@@ -23,6 +23,9 @@ The repo can be found here, I think for now the best would be to work off of the
 - Run the Project.API directly
 - ![[Seed app - HELLO WORLD Important Frangular API Selection.png]]
 - A command window and swagger page will open
+
+==Could look something like this....==
+![[OE-501 API Documentation.png]]
 
 ## Future work needed
 
