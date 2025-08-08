@@ -1,6 +1,6 @@
 ---
 created: 2025-08-07T10:31
-updated: 2025-08-07T10:31
+updated: 2025-08-08T09:43
 ---
 Here's the detailed comparison of the variables and their handling:
 
@@ -90,4 +90,12 @@ Would you like me to:
 Please let me know how you'd like to proceed with addressing the lazy loading impact on column persistence.
 
 ---
+
+Based on this new information, here are the most likely new areas to investigate:
+
+- [ ] grid-selection-criteria.service.ts: Check the persistence logic within the changeColumnOrdering method of this service. It's possible the service is not correctly saving the data it receives for assets. The logic may have a bug or a different variable name in its internal state that is causing the failure.
+  - [ ] CHECK what goes in
+  - [ ] CHECK what goes out
+- [ ] The Component Initialization: Another possibility is that the assetsColumnSettings are not being correctly loaded when the component initializes. Check the ngOnInit method and related functions to ensure the persisted data is correctly retrieved and used to set the initial column order.
+- [ ] The Persistence Mechanism Itself: The issue may not be in the front-end code at all. There could be a problem with the API call or database persistence on the backend that handles saving the column order for assets.
 
