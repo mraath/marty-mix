@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-05T10:46
+updated: 2025-08-11T08:54
 ---
 
 # OPEN-371 Column Order Lost
@@ -41,6 +41,9 @@ Column selection and column order settings reset when reloading
 - [ ] Should save columns selected
 - Should more easily select columns
 
+## Flow Diagram
+
+![[OPEN-371 Column Order Lost.excalidraw.png]]
 ## NEXT
 
 Check if these are hit
