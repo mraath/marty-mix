@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-12T15:58
+updated: 2025-08-12T16:03
 ---
 
 # OPEN-371 Column Order Lost
@@ -45,7 +45,7 @@ Column selection and column order settings reset when reloading
 ## Branch
 
 Config/MR/Bug/OPEN-371ColumnOrderLost.INT
-- [ ] PR to DEV
+- [ ] [PR to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128833)
 - [ ] PR to INT
 
 ## Flow Diagram
