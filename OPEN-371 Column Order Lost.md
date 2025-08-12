@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-12T15:54
+updated: 2025-08-12T15:58
 ---
 
 # OPEN-371 Column Order Lost
@@ -45,7 +45,8 @@ Column selection and column order settings reset when reloading
 ## Branch
 
 Config/MR/Bug/OPEN-371ColumnOrderLost.INT
-
+- [ ] PR to DEV
+- [ ] PR to INT
 
 ## Flow Diagram
 
