@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-11T08:54
+updated: 2025-08-12T15:54
 ---
 
 # OPEN-371 Column Order Lost
@@ -38,8 +38,14 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 Column selection and column order settings reset when reloading
 
 - [ ] Should keep column order
-- [ ] Should save columns selected
+- [x] Should save columns selected ✅ 2025-08-12
 - Should more easily select columns
+
+
+## Branch
+
+Config/MR/Bug/OPEN-371ColumnOrderLost.INT
+
 
 ## Flow Diagram
 
