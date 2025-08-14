@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-14T10:23
+updated: 2025-08-14T15:05
 ---
 
 # OPEN-371 Column Order Lost
@@ -37,7 +37,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 Column selection and column order settings reset when reloading
 
-- [ ] Should keep column order
+- [x] Should keep column order ✅ 2025-08-14
 - [x] Should save columns selected ✅ 2025-08-12
 - Should more easily select columns
 
@@ -47,7 +47,7 @@ Column selection and column order settings reset when reloading
 Config/MR/Bug/OPEN-371ColumnOrderLost.INT
 - [x] [PR to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128833) ✅ 2025-08-14
 	- [x] [PR to DEV 2](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128984) ✅ 2025-08-14
-- [ ] PR to INT
+- [ ] [PR to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/128988)
 
 ## Flow Diagram
 
