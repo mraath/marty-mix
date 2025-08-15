@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-15T16:21
+updated: 2025-08-15T16:23
 ---
 
 # ETS-2976 Config Beta page - compile status not displayed
@@ -62,3 +62,5 @@ INT: Regression Testing Units (do not edit)
 
 configCompileStatus	FROM 
 POST: 	https://mixconfigfrangularapi.dev.mixtelematics.com/api/configuration-groups-multiselect/groupId/2330833568360483679/assets-list
+GetConfigurationGroupsMultiselectAssetsList
+[mobileunit].[MobileUnit_GetAllMobileUnitsForConfigurationGroups]
