@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-15T14:54
+updated: 2025-08-15T14:57
 ---
 
 # ETS-2976 Config Beta page - compile status not displayed
@@ -37,4 +37,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Findings
 
-As far as I can tell this is an FM 3607i/3617i. The compile status 
+As far as I can tell this is an FM 3607i/3617i. The config compile status 
