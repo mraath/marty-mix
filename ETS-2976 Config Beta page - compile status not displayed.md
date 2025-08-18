@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T11:31
+updated: 2025-08-18T12:27
 ---
 
 # ETS-2976 Config Beta page - compile status not displayed
@@ -144,3 +144,8 @@ configurationGenerationNotesShort
 configurationGenerationWarningShort
 
 ==Click on it modal==
+
+## Repo
+
+- Config/MR/Bug/ETS-2976_Config_Beta_compile_status_not_displayed.INT
+- 
