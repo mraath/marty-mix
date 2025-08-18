@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T16:50
+updated: 2025-08-18T16:54
 ---
 
 # OPEN-597 Expose camera direction in a service
@@ -36,6 +36,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 The purpose of this story is to expose the camera direction data in a service/API as developed in https://powerfleet.atlassian.net/browse/OPEN-505 
 The Data Science team will use the camera direction to apply blurring to specific channels
+
+- [ ] Add camera name
+- [ ] Edit camera name
 
 ## Branch
 
