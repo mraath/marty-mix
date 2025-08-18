@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T09:54
+updated: 2025-08-18T10:00
 ---
 
 # ETS-2976 Config Beta page - compile status not displayed
@@ -85,6 +85,18 @@ ConfigurationGenerationNotes
 <MiXFleet.UI.Grid.IClickableColumnDefintion>{ title: 'Config compile status', field: 'configurationGenerationNotesShort', fieldAlt: 'configurationGenerationWarningShort', translate: true, cellType: MiXFleet.UI.Grid.ClickableColumn, clickFn: (row) => this.viewConfigCompileStatus(row) },
 ```
 
+```ts
+if (mobileUnit.MobileUnitConfigurationStatus == MiX.DeviceIntegration.Common.Enums.ConfigurationStatus.CompileFailed)
+	{
+		carrier.ConfigurationGenerationNotes = mobileUnit.MobileUnitConfigurationGenerationNotes;
+		var shortNote = (mobileUnit.MobileUnitConfigurationGenerationNotes != null && mobileUnit.MobileUnitConfigurationGenerationNotes.Length > 50) ? mobileUnit.MobileUnitConfigurationGenerationNotes.Substring(0, 46) + "..." : "" + mobileUnit.MobileUnitConfigurationGenerationNotes;
+		carrier.ConfigurationGenerationNotesShort = new ActiveCell { Title = shortNote, Disabled = false };
+	}
+	else
+	{
+		carrier.ConfigurationGenerationNotesShort = new ActiveCell { Title = "", Disabled = true };
+	}
+```
 ## Notes Beta
 
 configurationGenerationNotesShort || configurationGenerationWarningShort
