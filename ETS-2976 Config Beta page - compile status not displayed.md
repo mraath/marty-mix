@@ -3,9 +3,9 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T13:55
+updated: 2025-08-18T14:01
 ---
-
+You will now see that it populates for more config statuses. It used to only populate for failed, but now it will also populate for failed.
 # ETS-2976 Config Beta page - compile status not displayed
 
 Date: 2025-08-15 Time: 14:05
@@ -145,6 +145,9 @@ configurationGenerationWarningShort
 
 ==Click on it modal==
 
+## Testing on DEV
+
+![[ETS-2976 Config Beta page - compile status not displayed-2.png]]
 ## Repo
 
 - Config/MR/Bug/ETS-2976_Config_Beta_compile_status_not_displayed.INT
