@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T10:03
+updated: 2025-08-18T10:18
 ---
 
 # ETS-2976 Config Beta page - compile status not displayed
@@ -86,7 +86,7 @@ ConfigurationGenerationNotes
 ```
 
 ```ts
-if (mobileUnit.MobileUnitConfigurationStatus == MiX.DeviceIntegration.Common.Enums.ConfigurationStatus.CompileFailed)
+if (mobileUnit.MobileUnitConfigurationStatus == MiX.DeviceIntegration.Common.Enums.ConfigurationStatus.CompileFailed) //4
 {
 	carrier.ConfigurationGenerationNotes = mobileUnit.MobileUnitConfigurationGenerationNotes;
 	var shortNote = (mobileUnit.MobileUnitConfigurationGenerationNotes != null && mobileUnit.MobileUnitConfigurationGenerationNotes.Length > 50) ? mobileUnit.MobileUnitConfigurationGenerationNotes.Substring(0, 46) + "..." : "" + mobileUnit.MobileUnitConfigurationGenerationNotes;
@@ -97,6 +97,7 @@ else
 	carrier.ConfigurationGenerationNotesShort = new ActiveCell { Title = "", Disabled = true };
 }
 
+//14 || (0 && MobileUnitConfigurationGenerationWarning)
 if (mobileUnit.MobileUnitConfigurationStatus == MiX.DeviceIntegration.Common.Enums.ConfigurationStatus.ConfigurationWarning ||
 					(mobileUnit.MobileUnitConfigurationStatus == MiX.DeviceIntegration.Common.Enums.ConfigurationStatus.NotCommissioned && string.IsNullOrEmpty(mobileUnit.MobileUnitConfigurationGenerationWarning) == false))
 {
