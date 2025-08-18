@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T09:52
+updated: 2025-08-18T09:54
 ---
 
 # ETS-2976 Config Beta page - compile status not displayed
@@ -81,7 +81,9 @@ FM 3607i
 configurationGenerationNotesShort
 ConfigurationGenerationNotes
 
-
+```html
+<MiXFleet.UI.Grid.IClickableColumnDefintion>{ title: 'Config compile status', field: 'configurationGenerationNotesShort', fieldAlt: 'configurationGenerationWarningShort', translate: true, cellType: MiXFleet.UI.Grid.ClickableColumn, clickFn: (row) => this.viewConfigCompileStatus(row) },
+```
 
 ## Notes Beta
 
