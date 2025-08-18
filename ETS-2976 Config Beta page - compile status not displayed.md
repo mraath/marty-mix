@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T10:00
+updated: 2025-08-18T10:03
 ---
 
 # ETS-2976 Config Beta page - compile status not displayed
@@ -87,15 +87,27 @@ ConfigurationGenerationNotes
 
 ```ts
 if (mobileUnit.MobileUnitConfigurationStatus == MiX.DeviceIntegration.Common.Enums.ConfigurationStatus.CompileFailed)
-	{
-		carrier.ConfigurationGenerationNotes = mobileUnit.MobileUnitConfigurationGenerationNotes;
-		var shortNote = (mobileUnit.MobileUnitConfigurationGenerationNotes != null && mobileUnit.MobileUnitConfigurationGenerationNotes.Length > 50) ? mobileUnit.MobileUnitConfigurationGenerationNotes.Substring(0, 46) + "..." : "" + mobileUnit.MobileUnitConfigurationGenerationNotes;
-		carrier.ConfigurationGenerationNotesShort = new ActiveCell { Title = shortNote, Disabled = false };
-	}
-	else
-	{
-		carrier.ConfigurationGenerationNotesShort = new ActiveCell { Title = "", Disabled = true };
-	}
+{
+	carrier.ConfigurationGenerationNotes = mobileUnit.MobileUnitConfigurationGenerationNotes;
+	var shortNote = (mobileUnit.MobileUnitConfigurationGenerationNotes != null && mobileUnit.MobileUnitConfigurationGenerationNotes.Length > 50) ? mobileUnit.MobileUnitConfigurationGenerationNotes.Substring(0, 46) + "..." : "" + mobileUnit.MobileUnitConfigurationGenerationNotes;
+	carrier.ConfigurationGenerationNotesShort = new ActiveCell { Title = shortNote, Disabled = false };
+}
+else
+{
+	carrier.ConfigurationGenerationNotesShort = new ActiveCell { Title = "", Disabled = true };
+}
+
+if (mobileUnit.MobileUnitConfigurationStatus == MiX.DeviceIntegration.Common.Enums.ConfigurationStatus.ConfigurationWarning ||
+					(mobileUnit.MobileUnitConfigurationStatus == MiX.DeviceIntegration.Common.Enums.ConfigurationStatus.NotCommissioned && string.IsNullOrEmpty(mobileUnit.MobileUnitConfigurationGenerationWarning) == false))
+{
+	carrier.ConfigurationGenerationWarning = mobileUnit.MobileUnitConfigurationGenerationWarning;
+	var shortNote = (mobileUnit.MobileUnitConfigurationGenerationWarning != null && mobileUnit.MobileUnitConfigurationGenerationWarning.Length > 50) ? mobileUnit.MobileUnitConfigurationGenerationWarning.Substring(0, 46) + "..." : "" + mobileUnit.MobileUnitConfigurationGenerationWarning;
+	carrier.ConfigurationGenerationWarningShort = new ActiveCell { Title = shortNote, Disabled = false };
+}
+else
+{
+	carrier.ConfigurationGenerationWarningShort = new ActiveCell { Title = "", Disabled = true };
+}
 ```
 ## Notes Beta
 
