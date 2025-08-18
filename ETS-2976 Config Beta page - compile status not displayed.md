@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T08:49
+updated: 2025-08-18T08:54
 ---
 
 # ETS-2976 Config Beta page - compile status not displayed
@@ -67,3 +67,6 @@ GetConfigurationGroupsMultiselectAssetsList
 
 
 FR UI - FR API - Client - API (==convert==):  controller, man (convert), Repo: GetConfigurationGroupsMultiselectAssetsList - [mobileunit].[MobileUnit_GetAllMobileUnitsForConfigurationGroups]
+
+## OLD CG?
+
