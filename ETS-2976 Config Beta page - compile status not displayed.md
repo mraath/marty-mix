@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T09:39
+updated: 2025-08-18T09:45
 ---
 
 # ETS-2976 Config Beta page - compile status not displayed
@@ -65,6 +65,13 @@ POST: 	https://mixconfigfrangularapi.dev.mixtelematics.com/api/configuration-gro
 GetConfigurationGroupsMultiselectAssetsList
 [mobileunit].[MobileUnit_GetAllMobileUnitsForConfigurationGroups]
 
+```sql
+CASE 
+      WHEN mu.ConfigurationStatusId = @CompileFailed THEN
+        ISNULL(mu.ConfigurationGenerationNotes, mu.ConfigurationGenerationWarning)
+      ELSE '' 
+    END AS ConfigCompileStatus,
+```
 
 FR UI - FR API - Client - API (==convert==):  controller, man (convert), Repo: GetConfigurationGroupsMultiselectAssetsList - [mobileunit].[MobileUnit_GetAllMobileUnitsForConfigurationGroups]
 
