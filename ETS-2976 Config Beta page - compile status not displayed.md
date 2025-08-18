@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T09:37
+updated: 2025-08-18T09:39
 ---
 
 # ETS-2976 Config Beta page - compile status not displayed
@@ -81,3 +81,8 @@ ConfigurationGenerationNotes
 configurationGenerationNotesShort || configurationGenerationWarningShort
 ConfigurationGenerationNotes
 ConfigurationGenerationWarning
+
+configurationGenerationNotesShort
+configurationGenerationWarningShort
+
+==Click on it modal==
