@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T14:01
+updated: 2025-08-19T14:40
 ---
 You will now see that it populates for more config statuses. It used to only populate for failed, but now it will also populate for failed.
 # ETS-2976 Config Beta page - compile status not displayed
@@ -152,4 +152,4 @@ configurationGenerationWarningShort
 
 - Config/MR/Bug/ETS-2976_Config_Beta_compile_status_not_displayed.INT
 - [PR TO DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129172)
-- [ ] [PR TO INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequestcreate?sourceRef=Config/MR/Bug/ETS-2976_Config_Beta_compile_status_not_displayed.INT&targetRef=Integration&sourceRepositoryId=72660fef-f082-49a7-b7c0-8648450cd291&targetRepositoryId=72660fef-f082-49a7-b7c0-8648450cd291)
+- [x] [PR TO INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequestcreate?sourceRef=Config/MR/Bug/ETS-2976_Config_Beta_compile_status_not_displayed.INT&targetRef=Integration&sourceRepositoryId=72660fef-f082-49a7-b7c0-8648450cd291&targetRepositoryId=72660fef-f082-49a7-b7c0-8648450cd291) ✅ 2025-08-19
