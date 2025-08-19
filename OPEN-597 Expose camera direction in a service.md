@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-19T10:23
+updated: 2025-08-19T10:24
 ---
 
 # OPEN-597 Expose camera direction in a service
@@ -61,7 +61,7 @@ The purpose of this story is to update the existing “Add camera name” modal 
 
 ![[Untitled 6.png|500]]
 
-- [ ] Change display text to “Add camera name”.
+- [x] Change display text to “Add camera name”. ✅ 2025-08-19
 
 ![[Untitled 7.png|300]]
 
