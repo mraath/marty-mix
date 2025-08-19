@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-19T10:52
+updated: 2025-08-19T11:00
 ---
 
 # OPEN-597 Expose camera direction in a service
@@ -33,6 +33,36 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
 ## Description
+
+![[OPEN-597 Expose camera direction in a service Overview.png]]
+
+```html
+<div class="well no-margin">
+	<div class="row-fluid input">
+		<label>
+			<span>Camera direction</span>
+			<span class="field-mandatory">*</span>
+		</label>
+		<select class="span12">
+			<option selected disabled>Select</option>
+			<option value="">Road-facing</option>
+			<option value="">In-cab</option>
+			<option value="">Driver-facing</option>
+			<option value="">Left-side-facing</option>
+			<option value="">Right-side-facing</option>
+			<option value="">Rear-facing</option>
+			<option value="">Other</option>
+		</select>
+	</div>
+	<div class="row-fluid input mt-10">
+		<label>
+			<span>Camera name</span>
+			<span class="field-mandatory">*</span>
+		</label>
+		<input type="text" class="span12">
+	</div>
+</div>
+```
 
 **Overview**
 
