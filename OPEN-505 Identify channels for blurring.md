@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-19T11:00
+updated: 2025-08-19T11:05
 ---
 
 # OPEN-597 Expose camera direction in a service
@@ -64,7 +64,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 </div>
 ```
 
-**Overview**
+## **Overview**
 
 We need the ability to accurately identify camera channels when custom camera names are captured on the UI, this is especially needed when video blurring is enabled for an organisation.
 
