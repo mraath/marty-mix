@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-19T10:26
+updated: 2025-08-19T10:28
 ---
 
 # OPEN-597 Expose camera direction in a service
@@ -55,7 +55,7 @@ The purpose of this story is to update the existing “Add camera name” modal 
 7. [ ] When “Other” is selected in the dropdown, display the Add camera name field as blank.
 8. [ ] Note the above changes must also be applied to the Edit camera name flow.
 
-**Screen wording updates:**
+## **Screen wording updates:**
 
 - [x] Remove the “s” in the text underlined in red below. It should read “Camera name” as it refers to the Camera name tab. ✅ 2025-08-19
 
@@ -66,6 +66,8 @@ The purpose of this story is to update the existing “Add camera name” modal 
 ![[Untitled 7.png|300]]
 
 ---
+
+## OPEN-597
 
 The purpose of this story is to expose the camera direction data in a service/API as developed in https://powerfleet.atlassian.net/browse/OPEN-505 
 The Data Science team will use the camera direction to apply blurring to specific channels
