@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-19T12:07
+updated: 2025-08-19T15:12
 ---
 
 # OPEN-597 Expose camera direction in a service
@@ -62,6 +62,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 		<input type="text" class="span12">
 	</div>
 </div>
+
+<select type="text" class="span12" ng-model="form.deviceTypeId" ng-options="p.deviceTypeId as (p.description | translate) for p in data.peripheralTypes" ng-change="$emit('peripheralTypeChanged', form.deviceTypeId)" dmx-validate="deviceTypeId" name="deviceTypeId">
+	<option style="display: none" value="">{{ 'Select peripheral type' | translate }}</option>
+</select>
 ```
 
 
