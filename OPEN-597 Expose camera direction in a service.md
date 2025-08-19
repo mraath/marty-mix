@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-19T10:28
+updated: 2025-08-19T10:52
 ---
 
 # OPEN-597 Expose camera direction in a service
@@ -54,6 +54,9 @@ The purpose of this story is to update the existing “Add camera name” modal 
 6. [ ] The “Add camera name” field is editable and mandatory as per current process, and functionality to close, save and cancel must be retained.
 7. [ ] When “Other” is selected in the dropdown, display the Add camera name field as blank.
 8. [ ] Note the above changes must also be applied to the Edit camera name flow.
+
+
+Road facing|In-cab|Driver facing|Left side facing|Right side facing|Rear facing
 
 ## **Screen wording updates:**
 
