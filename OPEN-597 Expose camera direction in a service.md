@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-19T10:24
+updated: 2025-08-19T10:26
 ---
 
 # OPEN-597 Expose camera direction in a service
@@ -82,7 +82,7 @@ Assign to channels|Camera name|Camera names tab|Add.*camera.*name|assign to chan
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-597 Expose camera direction in a service.INT
+> Branch: Config/MR/Feature/OPEN-597_Expose_camera_direction_in_a_service.INT
 
 ## Repo
 
