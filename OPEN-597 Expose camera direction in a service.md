@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-18T16:54
+updated: 2025-08-19T09:50
 ---
 
 # OPEN-597 Expose camera direction in a service
@@ -39,6 +39,15 @@ The Data Science team will use the camera direction to apply blurring to specifi
 
 - [ ] Add camera name
 - [ ] Edit camera name
+
+
+## Searches
+
+regex:
+Add.*camera.*name|assign to channels|camera names tab|add cameras name
+
+Assign to channels
+
 
 ## Branch
 
