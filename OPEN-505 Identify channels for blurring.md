@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-19T15:12
+updated: 2025-08-19T16:20
 ---
 
 # OPEN-597 Expose camera direction in a service
@@ -68,6 +68,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 </select>
 ```
 
+getMobileDeviceTemplateDevice
 
 ## UI
 
