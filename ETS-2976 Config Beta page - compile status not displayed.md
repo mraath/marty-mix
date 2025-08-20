@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-20T08:12
+updated: 2025-08-20T10:47
 ---
 You will now see that it populates for more config statuses. It used to only populate for failed, but now it will also populate for failed.
 # ETS-2976 Config Beta page - compile status not displayed
@@ -158,4 +158,17 @@ configurationGenerationWarningShort
 
 - “Compile failed” hyperlink appears
 	- example and what data does it show
-	- 
+
+```ts
+//Modal loads Notes, then Warn
+if (row && row.configurationGenerationNotes) {
+		headerModal = "Failed";
+		messageModal = row.configurationGenerationNotes;
+}
+if (row && row.configurationGenerationWarning) {
+		headerModal = "Warning";
+		messageModal = row.configurationGenerationWarning;
+}
+```
+
+``
