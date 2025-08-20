@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-20T10:47
+updated: 2025-08-20T10:48
 ---
 You will now see that it populates for more config statuses. It used to only populate for failed, but now it will also populate for failed.
 # ETS-2976 Config Beta page - compile status not displayed
@@ -171,4 +171,13 @@ if (row && row.configurationGenerationWarning) {
 }
 ```
 
-``
+```sql
+  DECLARE @CompileFailed INT = 4;
+  DECLARE @ConfigurationWarning INT = 14;
+  DECLARE @NotCommissioned INT = 0;
+  --
+	CASE 
+      WHEN mu.ConfigurationStatusId IN (@CompileFailed, @ConfigurationWarning, @NotCommissioned) THEN
+        ISNULL(mu.ConfigurationGenerationNotes, mu.ConfigurationGenerationWarning)
+      ELSE '' 
+```
