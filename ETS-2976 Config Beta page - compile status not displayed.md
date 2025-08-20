@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-20T11:37
+updated: 2025-08-20T11:38
 ---
 You will now see that it populates for more config statuses. It used to only populate for failed, but now it will also populate for failed.
 # ETS-2976 Config Beta page - compile status not displayed
@@ -212,6 +212,7 @@ AND MobileDeviceKey IN (
 */
 ```
 
+## Reason for the thing Amy is seeing
 
 The problem Amy showed happens when the asset's Configuration Status is: **Not commissioned**
 Further more this asset has both a Generation Note AND a Warning as seen below.
