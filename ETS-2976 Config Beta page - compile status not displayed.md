@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-20T11:15
+updated: 2025-08-20T11:18
 ---
 You will now see that it populates for more config statuses. It used to only populate for failed, but now it will also populate for failed.
 # ETS-2976 Config Beta page - compile status not displayed
@@ -192,7 +192,7 @@ Use [DeviceConfiguration];
 -- DEV
 -- assetId=4412900873233944263
 -- INT
-
+--assetId=1328778456133091328
 SELECT 
 --top 10 *
 DISTINCT TOP 100 Notes, Name
