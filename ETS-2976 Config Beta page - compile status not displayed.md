@@ -3,7 +3,7 @@ status: busy
 comment: 
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-20T11:38
+updated: 2025-08-20T12:20
 ---
 You will now see that it populates for more config statuses. It used to only populate for failed, but now it will also populate for failed.
 # ETS-2976 Config Beta page - compile status not displayed
@@ -222,3 +222,11 @@ Currently we show the Generation note, if this is null, then show the Warning no
 In order to have the same behaviour, I just need to reverse the two.
 BEFORE I do this, I will just confirm with our team.
 ![[ETS-2976 Config Beta page - compile status not displayed Wrong Note.png]]
+
+Basic fix
+moved u.ConfigurationGenerationNotes to end
+
+ETS-2976: Swopped the order of notes to display.
+
+- [ ] [PR to DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129343)
+- [ ] PR to INT
