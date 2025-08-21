@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-21T10:36
+updated: 2025-08-21T16:57
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -132,6 +132,7 @@ Assign to channels|Camera name|Camera names tab|Add.*camera.*name|assign to chan
 ## Branch
 
 > Branch: Config/MR/Feature/OPEN-597_Expose_camera_direction_in_a_service.INT
+
 
 ## Repo
 
