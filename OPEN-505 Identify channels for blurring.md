@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-21T08:45
+updated: 2025-08-21T10:32
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -72,8 +72,8 @@ getMobileDeviceTemplateDevice - MobileDeviceTemplateCrudModule.ModuleRoutes.GET_
 
 ## UI
 
-http://localhost/MiXFleet.UI/#/config-admin/peripherals/edit?id=-565349616809011552
-
+[LOCAL](http://localhost/MiXFleet.UI/#/config-admin/peripherals/edit?id=-565349616809011552)
+[INT](https://integration.mixtelematics.com/#/config-admin/peripherals/edit?id=-565349616809011552)
 ## **Overview**
 
 We need the ability to accurately identify camera channels when custom camera names are captured on the UI, this is especially needed when video blurring is enabled for an organisation.
