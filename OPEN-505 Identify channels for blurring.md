@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-21T10:32
+updated: 2025-08-21T10:33
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -96,7 +96,8 @@ The purpose of this story is to update the existing “Add camera name” modal 
 8. [ ] Note the above changes must also be applied to the Edit camera name flow.
 
 
-Road facing|In-cab|Driver facing|Left side facing|Right side facing|Rear facing
+NA: Road facing|In-cab|Driver facing|Left side facing|Right side facing|Rear facing
+LOT: Assign to channels|Camera name|Camera name tab|Add.*camera.*name|assign to channels|camera names tab|add cameras name|LogicalCameraDeviceSettings
 
 ## **Screen wording updates:**
 
