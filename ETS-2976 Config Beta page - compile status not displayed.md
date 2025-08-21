@@ -1,9 +1,9 @@
 ---
 status: busy
-comment: 
+comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-20T12:24
+updated: 2025-08-21T08:44
 ---
 You will now see that it populates for more config statuses. It used to only populate for failed, but now it will also populate for failed.
 # ETS-2976 Config Beta page - compile status not displayed
@@ -228,6 +228,7 @@ moved u.ConfigurationGenerationNotes to end
 
 ETS-2976: Swopped the order of notes to display.
 
-- [ ] [PR to DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129343)
-- [ ] [PR to INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129344?_a=files)
+- [x] [PR to DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129343) ✅ 2025-08-21
+- [x] [PR to INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129344?_a=files) ✅ 2025-08-21
 
+TEST: [mobileunit].[MobileUnit_GetAllMobileUnitsForConfigurationGroups] has latest
