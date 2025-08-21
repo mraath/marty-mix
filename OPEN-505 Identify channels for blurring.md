@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-21T10:35
+updated: 2025-08-21T10:36
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -111,6 +111,8 @@ LOT: Assign to channels|Camera name|Camera name tab|Add.*camera.*name|assign to 
 
 ---
 
+![[OPEN-505 Identify channels for blurring 2025-08-21 10.36.00.excalidraw.svg]]
+%%[[OPEN-505 Identify channels for blurring 2025-08-21 10.36.00.excalidraw.md|🖋 Edit in Excalidraw]]%%
 
 ## OPEN-597
 
