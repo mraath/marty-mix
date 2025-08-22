@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-22T08:46
+updated: 2025-08-22T10:21
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -128,6 +128,16 @@ Do this for:
 
 regex:
 Assign to channels|Camera name|Camera names tab|Add.*camera.*name|assign to channels|camera names tab|add cameras name
+
+---
+
+DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.AddLibraryCameraName
+	API?
+		DB?
+DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
+	API?
+		DB?
+
 
 ## Branch
 
