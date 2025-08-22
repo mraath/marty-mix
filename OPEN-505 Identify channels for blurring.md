@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-22T15:41
+updated: 2025-08-22T15:48
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -169,7 +169,7 @@ And then you go down a rabbit trail of code using this....
 	- [ ] Update calling SP2
 - 
 - Client
-	- [ ] Update common
+	- [x] Update common ✅ 2025-08-22
 - BE
 	- [ ] Update common
 - FE
@@ -183,4 +183,6 @@ And then you go down a rabbit trail of code using this....
 
 - [ ] PR FE to DEV
 - [ ] PR FE to INT
+- [ ] PR Client to DEV
+- [ ] PR Client to INT
 
