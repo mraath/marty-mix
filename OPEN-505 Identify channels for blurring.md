@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-22T14:38
+updated: 2025-08-22T15:31
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -153,6 +153,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	- [ ] Update 2 Stored Procs
 		- [ ] [Library].[LibraryCameraName_Add]
 		- [ ] [Library].[LibraryCameraName_Update]
+		- [ ] [library].[CameraNames]
 - API
 	- [ ] Update common
 	- [ ] Update calling SP1
