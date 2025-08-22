@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-21T16:57
+updated: 2025-08-22T08:40
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -133,7 +133,8 @@ Assign to channels|Camera name|Camera names tab|Add.*camera.*name|assign to chan
 
 > Branch: Config/MR/Feature/OPEN-597_Expose_camera_direction_in_a_service.INT
 
-
+- [PR COMMON to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/129443)
+- 
 ## Repo
 
 - [ ] PR FE to DEV
