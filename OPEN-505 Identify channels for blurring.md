@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-22T10:33
+updated: 2025-08-22T10:34
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -134,10 +134,12 @@ Assign to channels|Camera name|Camera names tab|Add.*camera.*name|assign to chan
 DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.AddLibraryCameraName
 	string url = $"{PostPutApiUrl}/groupIds/{groupId}/devices/camera-names?authToken={authToken}";
 	API?
+		[Library].[LibraryCameraName_Add]
 		DB?
 DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	string url = $"{PostPutApiUrl}/groupIds/{groupId}/devices/camera-names/{cameraNameId}?authToken={authToken}";
 	API?
+		[Library].[LibraryCameraName_Update]
 		DB?
 
 
