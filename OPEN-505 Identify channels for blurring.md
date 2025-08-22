@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-22T15:31
+updated: 2025-08-22T15:37
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -154,6 +154,15 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 		- [ ] [Library].[LibraryCameraName_Add]
 		- [ ] [Library].[LibraryCameraName_Update]
 		- [ ] [library].[CameraNames]
+
+I was very close to make the changed needed to these two stored procs:
+[Library].[LibraryCameraName_Add]
+[Library].[LibraryCameraName_Update]
+Both of them in turn potentially write to:
+[library].[CameraNames]
+And then you go down a rabbit trail of code using this....
+
+
 - API
 	- [ ] Update common
 	- [ ] Update calling SP1
