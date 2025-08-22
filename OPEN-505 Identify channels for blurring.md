@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-22T08:42
+updated: 2025-08-22T08:46
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -135,7 +135,11 @@ Assign to channels|Camera name|Camera names tab|Add.*camera.*name|assign to chan
 
 - [ ] [PR COMMON to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/129443)
 	- MiX.DeviceIntegration.Common.2025.16.20250822.1.nupkg
-- 
+- API
+- Client
+- BE
+- FE
+
 ## Repo
 
 - [ ] PR FE to DEV
