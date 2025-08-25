@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-25T10:36
+updated: 2025-08-25T11:12
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -166,12 +166,6 @@ And then you go down a rabbit trail of code using this....
 ==REGEX==: library.*CameraNames
 library.*CameraName|UpdateCameraName|GetLibraryCameraNames
 
-
-```txt
-STEPS:
-TABLE [library].[CameraNames]
-
-```
 
 
 - API
