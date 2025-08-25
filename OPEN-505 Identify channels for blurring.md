@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-22T15:48
+updated: 2025-08-22T16:56
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -149,7 +149,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 
 - [x] [PR COMMON to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/129443) ✅ 2025-08-22
 	- MiX.DeviceIntegration.Common.2025.16.20250822.1.nupkg
-- DB
+- **DB**
 	- [ ] Update 2 Stored Procs
 		- [ ] [Library].[LibraryCameraName_Add]
 		- [ ] [Library].[LibraryCameraName_Update]
@@ -161,6 +161,8 @@ I was very close to make the changed needed to these two stored procs:
 Both of them in turn potentially write to:
 [library].[CameraNames]
 And then you go down a rabbit trail of code using this....
+
+==REGEX==: library.*CameraNames
 
 
 - API
