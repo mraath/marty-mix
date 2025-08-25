@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-25T11:12
+updated: 2025-08-26T06:26
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -172,7 +172,8 @@ library.*CameraName|UpdateCameraName|GetLibraryCameraNames
 	- [ ] Update common
 	- [ ] Update calling SP1
 	- [ ] Update calling SP2
-- 
+	- LibraryCameraName
+
 - Client
 	- [x] Update common ✅ 2025-08-22
 - BE
