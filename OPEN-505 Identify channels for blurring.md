@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-26T07:53
+updated: 2025-08-26T07:56
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -169,8 +169,8 @@ And then you go down a rabbit trail of code using this....
 
 - API
 	- [x] Update common ✅ 2025-08-26
-	- [ ] Update calling SP1
-	- [ ] Update calling SP2
+	- [x] Update calling [Library].[LibraryCameraName_Add] ✅ 2025-08-26
+	- [x] Update calling [Library].[LibraryCameraName_Update] ✅ 2025-08-26
 	- LibraryCameraName
 		- ? GetLibraryCameraNames
 
