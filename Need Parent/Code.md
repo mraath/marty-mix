@@ -1,6 +1,6 @@
 ---
 created: 2023-09-22T09:26
-updated: 2025-06-12T10:50
+updated: 2025-08-26T16:30
 ---
 
 ## Intro
@@ -29,6 +29,10 @@ Usually:
 ## DEV Process
 
 - [[DEV Process]]
+
+## Branching
+
+![[Code Branching.png|500]]
 
 ## Deployments
 
