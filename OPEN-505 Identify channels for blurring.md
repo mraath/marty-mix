@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-26T07:56
+updated: 2025-08-26T14:09
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -151,10 +151,10 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	- UpdateCameraName
 	- MiX.DeviceIntegration.Common.2025.16.20250822.1.nupkg
 - **DB**
-	- [ ] Update 2 Stored Procs
+	- [x] Update 2 Stored Procs ✅ 2025-08-26
 		- [x] [Library].[LibraryCameraName_Add] ✅ 2025-08-26
 		- [x] [Library].[LibraryCameraName_Update] ✅ 2025-08-26
-		- [ ] [library].[CameraNames]
+		- [x] [library].[CameraNames] ✅ 2025-08-26
 
 I was very close to make the changed needed to these two stored procs:
 [Library].[LibraryCameraName_Add]
