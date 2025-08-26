@@ -1,6 +1,6 @@
 ---
 created: 2023-09-22T09:26
-updated: 2025-08-26T16:30
+updated: 2025-08-26T19:41
 ---
 
 ## Intro
@@ -32,7 +32,7 @@ Usually:
 
 ## Branching
 
-![[Code Branching.png|500]]
+![[Code Branching-1.png|500]]
 
 ## Deployments
 
