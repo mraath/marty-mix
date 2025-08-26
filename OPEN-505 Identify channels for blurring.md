@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-26T15:34
+updated: 2025-08-26T15:39
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -151,7 +151,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	- UpdateCameraName
 	- MiX.DeviceIntegration.Common.2025.16.20250822.1.nupkg
 - [ ] [PR COMMON to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/129687)
-	- 
+	- MiX.DeviceIntegration.Common.2025.16.20250826.2.nupkg
 - **DB**
 	- [x] Update 2 Stored Procs ✅ 2025-08-26
 		- [x] [Library].[LibraryCameraName_Add] ✅ 2025-08-26
