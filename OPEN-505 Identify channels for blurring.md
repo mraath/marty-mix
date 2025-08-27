@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-27T09:51
+updated: 2025-08-27T13:52
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -185,6 +185,8 @@ And then you go down a rabbit trail of code using this....
 	- [x] Update common ✅ 2025-08-27
 	- [ ] Update LOCAL Client
 		- MiX.ConfigInternal.Api.Client.2025.16.20250826.1-alpha
+		- GET 	http://localhost/DynaMiX.API/config-admin/organisations/7174429418516644767/peripherals/-565349616809011552
+			- Form.LogicalDevices.CameraNames.
 	- [ ] Update DEV Client
 	- [ ] Update INT Client
 
