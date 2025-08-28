@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-28T10:26
+updated: 2025-08-28T16:27
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -207,3 +207,4 @@ And then you go down a rabbit trail of code using this....
 - [ ] PR Client to DEV
 - [ ] PR Client to INT
 
+[[BUILD Point to CFG fix]]
