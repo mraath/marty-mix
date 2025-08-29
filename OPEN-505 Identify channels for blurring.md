@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-28T16:27
+updated: 2025-08-29T10:37
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -208,3 +208,16 @@ And then you go down a rabbit trail of code using this....
 - [ ] PR Client to INT
 
 [[BUILD Point to CFG fix]]
+
+==BUG==
+
+Activating the Streamax Camera on DEV gives me the following error:
+
+![[OPEN-505 Identify channels for blurring.png]]
+
+```txt
+Cannot insert the value NULL into column 'LibraryKey', table 'DeviceConfiguration.library.CameraNames'; column does not allow nulls. INSERT fails. Cannot insert the value NULL into column 'LibraryKey', table 'DeviceConfiguration.library.DeviceChannels'; column does not allow nulls. INSERT fails. The statement has been terminated. The statement has been terminated.  
+**Error no: 1697970944858427392**
+```
+
+This is something non-related to my work, so if someone wants to pick this up - yeah 😄
