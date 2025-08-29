@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-29T10:44
+updated: 2025-08-29T16:56
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -80,9 +80,9 @@ We need the ability to accurately identify camera channels when custom camera na
 
 The purpose of this story is to update the existing “Add camera name” modal to allow users to select the direction a camera is pointing to. For the screen design refer to [https://powerfleet.atlassian.net/browse/VA-1228](https://powerfleet.atlassian.net/browse/VA-1228)  
 1. [x] Add a dropdown feature on the “Add camera name” modal to allow users to select the direction a camera is pointing to. ✅ 2025-08-29
-2. [ ] The default state of the dropdown is blank, and selecting an option is mandatory.
-3. [ ] The user must be prompted to select the camera direction first, then followed by the camera name.
-4. [ ] Display the following options in the “Select camera direction” dropdown list:
+2. [x] The default state of the dropdown is blank, and selecting an option is mandatory. ✅ 2025-08-29
+3. [x] The user must be prompted to select the camera direction first, then followed by the camera name. ✅ 2025-08-29
+4. [x] Display the following options in the “Select camera direction” dropdown list: ✅ 2025-08-29
     1. Road facing
     2. In-cab
     3. Driver facing
