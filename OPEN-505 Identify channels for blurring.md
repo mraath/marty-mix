@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-01T14:53
+updated: 2025-09-01T14:58
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -159,7 +159,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 		- [x] [Library].[LibraryCameraName_Update] ✅ 2025-08-26
 		- [x] [library].[CameraNames] ✅ 2025-08-26
 		- [x] [PR TO DEV 1](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129678) ✅ 2025-08-26
-		- [ ] [PR TO DEV 2](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129846)
+		- [x] [PR TO DEV 2](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129846) ✅ 2025-09-01
 			- Allow NULL explicitly
 		- [ ] PR to INT
 
@@ -173,6 +173,12 @@ And then you go down a rabbit trail of code using this....
 ==REGEX==: library.*CameraName|UpdateCameraName|GetLibraryCameraNames
 
 
+- Client
+	- [x] Update common ✅ 2025-08-22
+	- MiX.ConfigInternal.Api.Client
+	- [ ] PR Client to DEV
+	- [ ] PR Client to INT
+
 
 - API
 	- [x] Update common ✅ 2025-08-26
@@ -183,11 +189,7 @@ And then you go down a rabbit trail of code using this....
 	- [ ] PR Client to DEV
 	- [ ] PR Client to INT
 
-- Client
-	- [x] Update common ✅ 2025-08-22
-	- MiX.ConfigInternal.Api.Client
-	- [ ] PR Client to DEV
-	- [ ] PR Client to INT
+
 - BE
 	- [x] Update common ✅ 2025-08-27
 	- [ ] Update LOCAL Client
