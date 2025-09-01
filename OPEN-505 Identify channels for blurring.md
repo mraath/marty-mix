@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-01T12:00
+updated: 2025-09-01T14:42
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -203,8 +203,8 @@ And then you go down a rabbit trail of code using this....
 
 
 Template
-- [ ] Add Camera Name
-- [ ] Edit Camera Name
+- [x] Add Camera Name ✅ 2025-09-01
+- [x] Edit Camera Name ✅ 2025-09-01
 
 
 ## Repo
