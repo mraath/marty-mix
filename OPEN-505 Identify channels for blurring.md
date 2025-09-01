@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-01T09:02
+updated: 2025-09-01T11:37
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -90,10 +90,10 @@ The purpose of this story is to update the existing “Add camera name” modal 
     5. Right side facing
     6. Rear facing
     7. Other
-5. [ ] When the camera direction is selected, pre-fill the “Add camera name” field with the camera direction selected in the dropdown.
+5. [x] When the camera direction is selected, pre-fill the “Add camera name” field with the camera direction selected in the dropdown. ✅ 2025-09-01
 6. [x] The “Add camera name” field is editable and mandatory as per current process, and functionality to close, save and cancel must be retained. ✅ 2025-09-01
-7. [ ] When “Other” is selected in the dropdown, display the Add camera name field as blank.
-8. [ ] Note the above changes must also be applied to the Edit camera name flow.
+7. [x] When “Other” is selected in the dropdown, display the Add camera name field as blank. ✅ 2025-09-01
+8. [x] Note the above changes must also be applied to the Edit camera name flow. ✅ 2025-09-01
 
 
 NA: Road facing|In-cab|Driver facing|Left side facing|Right side facing|Rear facing
@@ -120,8 +120,8 @@ The purpose of this story is to expose the camera direction data in a service/AP
 The Data Science team will use the camera direction to apply blurring to specific channels
 
 Do this for:
-- [ ] Add camera name
-- [ ] Edit camera name
+- [x] Add camera name ✅ 2025-09-01
+- [x] Edit camera name ✅ 2025-09-01
 
 
 ## Searches
