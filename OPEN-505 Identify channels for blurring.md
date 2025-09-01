@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-01T11:37
+updated: 2025-09-01T12:00
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -200,6 +200,13 @@ And then you go down a rabbit trail of code using this....
 		- [ ] Get LOAD new field
 	- [ ] Update UI
 	- addCameraText > UPDATE_PERIPHERAL_CAMERA_NAME > UpdatePeripheralCameraName
+
+
+Template
+- [ ] Add Camera Name
+- [ ] Edit Camera Name
+
+
 ## Repo
 
 - [ ] PR FE to DEV
