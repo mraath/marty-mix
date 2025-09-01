@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-01T14:42
+updated: 2025-09-01T14:43
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -183,6 +183,8 @@ And then you go down a rabbit trail of code using this....
 
 - Client
 	- [x] Update common ✅ 2025-08-22
+	- MiX.ConfigInternal.Api.Client
+	- 
 - BE
 	- [x] Update common ✅ 2025-08-27
 	- [ ] Update LOCAL Client
