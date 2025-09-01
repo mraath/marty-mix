@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-01T15:27
+updated: 2025-09-01T15:43
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -176,7 +176,8 @@ And then you go down a rabbit trail of code using this....
 - Client
 	- [x] Update common ✅ 2025-08-22
 	- MiX.ConfigInternal.Api.Client
-	- [ ] PR Client to DEV
+	- [x] [PR Client to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/129994) ✅ 2025-09-01
+		- MiX.ConfigInternal.Api.Client.2025.16.20250901.1-beta
 	- [ ] PR Client to INT
 
 
@@ -186,7 +187,7 @@ And then you go down a rabbit trail of code using this....
 	- [x] Update calling [Library].[LibraryCameraName_Update] ✅ 2025-08-26
 	- LibraryCameraName
 		- ? GetLibraryCameraNames
-	- [ ] [PR Client to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/129994)
+	- [ ] PR Client to DEV
 	- [ ] PR Client to INT
 
 
