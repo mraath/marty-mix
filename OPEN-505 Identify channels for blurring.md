@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-08-29T16:56
+updated: 2025-09-01T09:02
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -91,7 +91,7 @@ The purpose of this story is to update the existing “Add camera name” modal 
     6. Rear facing
     7. Other
 5. [ ] When the camera direction is selected, pre-fill the “Add camera name” field with the camera direction selected in the dropdown.
-6. [ ] The “Add camera name” field is editable and mandatory as per current process, and functionality to close, save and cancel must be retained.
+6. [x] The “Add camera name” field is editable and mandatory as per current process, and functionality to close, save and cancel must be retained. ✅ 2025-09-01
 7. [ ] When “Other” is selected in the dropdown, display the Add camera name field as blank.
 8. [ ] Note the above changes must also be applied to the Edit camera name flow.
 
