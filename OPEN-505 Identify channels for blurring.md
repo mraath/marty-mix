@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-01T14:43
+updated: 2025-09-01T14:53
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -147,7 +147,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 
 > Branch: Config/MR/Feature/OPEN-597_Expose_camera_direction_in_a_service.INT
 
-- Common
+- **Common**
 	- [x] [PR COMMON to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceIntegration.Core/pullrequest/129443) ✅ 2025-08-22
 		- UpdateCameraName
 		- MiX.DeviceIntegration.Common.2025.16.20250822.1.nupkg
@@ -180,11 +180,14 @@ And then you go down a rabbit trail of code using this....
 	- [x] Update calling [Library].[LibraryCameraName_Update] ✅ 2025-08-26
 	- LibraryCameraName
 		- ? GetLibraryCameraNames
+	- [ ] PR Client to DEV
+	- [ ] PR Client to INT
 
 - Client
 	- [x] Update common ✅ 2025-08-22
 	- MiX.ConfigInternal.Api.Client
-	- 
+	- [ ] PR Client to DEV
+	- [ ] PR Client to INT
 - BE
 	- [x] Update common ✅ 2025-08-27
 	- [ ] Update LOCAL Client
@@ -193,7 +196,9 @@ And then you go down a rabbit trail of code using this....
 			- Form.LogicalDevices.CameraNames.
 		- CameraNameCarrier
 	- [ ] Update DEV Client
+	- [ ] PR DEV
 	- [ ] Update INT Client
+	- [ ] PR INT
 
 - FE
 	- [ ] Update Carrier
@@ -202,6 +207,8 @@ And then you go down a rabbit trail of code using this....
 		- [ ] Get LOAD new field
 	- [ ] Update UI
 	- addCameraText > UPDATE_PERIPHERAL_CAMERA_NAME > UpdatePeripheralCameraName
+	- [ ] PR FE to DEV
+	- [ ] PR FE to INT
 
 
 Template
@@ -210,11 +217,6 @@ Template
 
 
 ## Repo
-
-- [ ] PR FE to DEV
-- [ ] PR FE to INT
-- [ ] PR Client to DEV
-- [ ] PR Client to INT
 
 [[BUILD Point to CFG fix]]
 
