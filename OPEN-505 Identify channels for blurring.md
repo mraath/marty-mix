@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-02T11:24
+updated: 2025-09-02T14:06
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -205,7 +205,7 @@ And then you go down a rabbit trail of code using this....
 	- [ ] Update INT Client
 	- [ ] PR INT
 
-> SO MANY ISSUES:
+> SO MANY ISSUES: USE ==INT2==
 > - Take ONLY the actual file changes
 > - THEN NUGETS
 > 	- MiX.ConfigInternal.Api.Client
