@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-02T07:59
+updated: 2025-09-02T10:18
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -237,3 +237,8 @@ Cannot insert the value NULL into column 'LibraryKey', table 'DeviceConfiguratio
 ```
 
 This is something non-related to my work, so if someone wants to pick this up - yeah 😄
+
+
+## Files to roll back
+
+/DriverPortal/MiX.DriverPortal.Api/Web.config
