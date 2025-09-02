@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-02T15:39
+updated: 2025-09-02T16:02
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -211,7 +211,7 @@ And then you go down a rabbit trail of code using this....
 > 	- MiX.ConfigInternal.Api.Client
 > 	- MiX.DeviceConfig.Api.Client
 > 	- MiX.DeviceIntegration.Common
-> 	- 
+> - INT3 has nugets mentioned above
 
 - FE
 	- [ ] Update Carrier
