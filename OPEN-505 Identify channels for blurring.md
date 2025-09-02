@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-02T16:02
+updated: 2025-09-02T16:10
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -200,8 +200,8 @@ And then you go down a rabbit trail of code using this....
 		- CameraNameCarrier
 	- MiX.DeviceIntegration.Common
 	- MiX.ConfigInternal.Api.Client
-	- [ ] Update DEV Client
-	- [ ] PR DEV
+	- [x] Update DEV Client ✅ 2025-09-02
+	- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/DynaMiX.Backend/pullrequest/130057)
 	- [ ] Update INT Client
 	- [ ] PR INT
 
@@ -214,11 +214,11 @@ And then you go down a rabbit trail of code using this....
 > - INT3 has nugets mentioned above
 
 - FE
-	- [ ] Update Carrier
-		- [ ] Send ADD new field
-		- [ ] Send UPDATE new field
-		- [ ] Get LOAD new field
-	- [ ] Update UI
+	- [x] Update Carrier ✅ 2025-09-02
+		- [x] Send ADD new field ✅ 2025-09-02
+		- [x] Send UPDATE new field ✅ 2025-09-02
+		- [x] Get LOAD new field ✅ 2025-09-02
+	- [x] Update UI ✅ 2025-09-02
 	- addCameraText > UPDATE_PERIPHERAL_CAMERA_NAME > UpdatePeripheralCameraName
 	- [ ] PR FE to DEV
 	- [ ] PR FE to INT
