@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T11:47
+updated: 2025-09-03T11:54
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -177,25 +177,33 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 Hi Zonika,
 (Justus, I am copying you in as you were part of this initial investigation)
 
-As Jacques mentioned on Monday, I have been busy for a while on this story (OPEN-505).
+As Jacques mentioned on Monday, I have been busy on this issue for a while (OPEN-505).
 He asked if I should maybe split the story. I think it will be helpful. 
+
 The reason is, there are two sections to this story.
 1) The one I already did and is ready for testing on Dev. The UI Camers Directions part.
-2) The DB part which will be tested in different places (which I am starting now.) Eg. 
-	- [dynamix].[CopyLibraryForNewDatabase]
-	- [dynamix].[InitializeLibraryForNewBlankDatabase]
-	- [library].[CopyCameraNamesAndChannels]
-	- C:\Projects\Database\DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql
+2) The DB part for more operational issues. (Which will be tested in different places)
 
-I have already changed the following in the DB for the UI to Add, Edit, Read:
+For #1 mentioned above, which directly related to the story and ready for testing I made these DB changes:
+(Add, Edit, Read)
 - [Library].[LibraryCameraName_Add] (LibraryCameraName_Add)
 - [Library].[LibraryCameraName_Update] (LibraryCameraName_Update)
 - [library].[CameraNames] (CameraNames)
 - [audit].[library_CameraNames_CT]
 - [library].[GetLibraryCameraNames]
 
-For now I added nothing new under... eg... Events, Channels... peripherals
-?UpdatePeripheralCameraName
+For #2 above, I think we will need to change these. 
+I will start on this but also need to double check with both of you:
+	- [dynamix].[CopyLibraryForNewDatabase]
+	- [dynamix].[InitializeLibraryForNewBlankDatabase]
+	- [library].[CopyCameraNamesAndChannels]
+	- C:\Projects\Database\DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql
+
+
+
+
+
+For now I added nothing new under... eg... Events, Channels... 
 
 ?GetLibraryCameraNamesLookup
 
