@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T10:17
+updated: 2025-09-03T10:18
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -175,9 +175,11 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 
 
 	Zonika: Ek het die volgende reeds verander:
-	- [Library].[LibraryCameraName_Add]
-	- [Library].[LibraryCameraName_Update]
-	- 
+	- [Library].[LibraryCameraName_Add] (LibraryCameraName_Add)
+	- [Library].[LibraryCameraName_Update] (LibraryCameraName_Update)
+	- [library].[CameraNames] (CameraNames)
+	- library_CameraNames_CT
+	- GetLibraryCameraNames
 
 
 - Client
