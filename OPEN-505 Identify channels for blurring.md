@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T10:19
+updated: 2025-09-03T10:20
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -176,14 +176,18 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 
 Hi Zonika (Justus, I am copying you in as you were part of this initial investigation)
 
-I have already
+As Jacques mentioned on Monday, I have been busy for a while on this story (OPEN-505).
+He 
+
+I have already changed the following in the DB for the UI to Add, Edit, Read:
 - [Library].[LibraryCameraName_Add] (LibraryCameraName_Add)
 - [Library].[LibraryCameraName_Update] (LibraryCameraName_Update)
 - [library].[CameraNames] (CameraNames)
 - library_CameraNames_CT
 - GetLibraryCameraNames
 
-When Talking to Justus, it was confirmed that there are some important 
+When Talking to Justus, it was confirmed that there are some important. Here are some that I am currently busy with:
+- xxxxxxxxxxx
 
 
 - Client
