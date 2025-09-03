@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T10:12
+updated: 2025-09-03T10:15
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -164,15 +164,14 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 		- [x] [PR TO DEV 2](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129846) ✅ 2025-09-01
 			- Allow NULL explicitly
 		- [ ] PR to INT
-
-I was very close to make the changed needed to these two stored procs:
-[Library].[LibraryCameraName_Add]
-[Library].[LibraryCameraName_Update]
-Both of them in turn potentially write to:
-[library].[CameraNames]
-And then you go down a rabbit trail of code using this....
-
-==REGEX==: library.*CameraName|UpdateCameraName|GetLibraryCameraNames
+	I was very close to make the changed needed to these two stored procs:
+	[Library].[LibraryCameraName_Add]
+	[Library].[LibraryCameraName_Update]
+	Both of them in turn potentially write to:
+	[library].[CameraNames]
+	And then you go down a rabbit trail of code using this....
+	
+	==REGEX==: library.*CameraName|UpdateCameraName|GetLibraryCameraNames
 
 
 - Client
@@ -225,11 +224,9 @@ And then you go down a rabbit trail of code using this....
 	- [x] [PR FE to DEV](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130058) ✅ 2025-09-03
 	- [ ] [PR FE to DEV fixing span](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130100)
 	- [ ] PR FE to INT
-
-
-Template
-- [x] Add Camera Name ✅ 2025-09-01
-- [x] Edit Camera Name ✅ 2025-09-01
+	Template
+	- [x] Add Camera Name ✅ 2025-09-01
+	- [x] Edit Camera Name ✅ 2025-09-01
 
 
 ## Repo
