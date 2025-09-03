@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T09:57
+updated: 2025-09-03T10:12
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -108,6 +108,8 @@ LOT: Assign to channels|Camera name|Camera name tab|Add.*camera.*name|assign to 
 - [x] Change display text to “Add camera name”. ✅ 2025-08-19
 
 ![[Untitled 7.png|300]]
+
+## Investigated image
 
 ---
 
