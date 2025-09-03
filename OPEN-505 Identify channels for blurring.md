@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T10:22
+updated: 2025-09-03T10:23
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -180,7 +180,10 @@ As Jacques mentioned on Monday, I have been busy for a while on this story (OPEN
 He asked if I should maybe split the story. I think it will be helpful. 
 The reason is, there are two sections to this story.
 1) The one I already did and is ready for testing on Dev. The UI Camers Directions part.
-2) The DB part which will be tested in different places ()
+2) The DB part which will be tested in different places (which I am starting now.) Eg. 
+	- [library].[CopyCameraNamesAndChannels]
+	- [dynamix].[CopyLibraryForNewDatabase]
+	- 
 
 I have already changed the following in the DB for the UI to Add, Edit, Read:
 - [Library].[LibraryCameraName_Add] (LibraryCameraName_Add)
