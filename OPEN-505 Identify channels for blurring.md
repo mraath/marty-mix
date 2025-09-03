@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T11:37
+updated: 2025-09-03T11:43
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -202,6 +202,11 @@ For now I added nothing new under... eg... Events, Channels... peripherals
 ?UpdatePeripheralCameraName
 
 ?GetLibraryCameraNamesLookup
+
+
+These seems not needed:
+- [template].[Template_CloneEventTemplate]
+- [template].[Template_CopyTemplateDeviceChannelsCameraData]
 
 When Talking to Justus, it was confirmed that there are some important. Here are some that I am currently busy with:
 - xxxxxxxxxxx
