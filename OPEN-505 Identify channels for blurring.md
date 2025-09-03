@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T16:55
+updated: 2025-09-03T16:57
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -308,3 +308,4 @@ Where are these being called from:
 	- CopyAndSaveCameraNamesAndChannels
 		- Make available... Dependencies... helper
 - C:\Projects\Database\DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql
+	- DeploymentTasks.xml
