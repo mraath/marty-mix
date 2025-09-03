@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T10:54
+updated: 2025-09-03T10:56
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -186,6 +186,8 @@ The reason is, there are two sections to this story.
 	- [dynamix].[CopyLibraryForNewDatabase]
 	- [dynamix].[InitializeLibraryForNewBlankDatabase]
 	- (I have a few others on my list which COULD be needed)
+		- BE calls SQL repo: AddDefaultLibraryEventCameras
+		- 
 
 I have already changed the following in the DB for the UI to Add, Edit, Read:
 - [Library].[LibraryCameraName_Add] (LibraryCameraName_Add)
