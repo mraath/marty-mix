@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T12:24
+updated: 2025-09-03T12:25
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -203,7 +203,7 @@ Another question.... **Caching**... I will also look into this to ensure there i
 	- eg. CameraCache
 	- MobileDeviceTemplateCameraCacheDto
 	- In Config.API, method GetLibraryCameraNamesLookup
-	- GetSelectedEventCamerasV2
+	- GetSelectedEventCamerasV2 ... GetSelectedEventCamerasCacheV2
 
 
 - Client
