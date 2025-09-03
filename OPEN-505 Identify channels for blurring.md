@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T10:15
+updated: 2025-09-03T10:17
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -172,6 +172,12 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	And then you go down a rabbit trail of code using this....
 	
 	==REGEX==: library.*CameraName|UpdateCameraName|GetLibraryCameraNames
+
+
+	Zonika: Ek het die volgende reeds verander:
+	- [Library].[LibraryCameraName_Add]
+	- [Library].[LibraryCameraName_Update]
+	- 
 
 
 - Client
