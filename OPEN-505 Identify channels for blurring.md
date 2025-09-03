@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T16:36
+updated: 2025-09-03T16:44
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -298,3 +298,8 @@ Another question.... **Caching**... I will also look into this to ensure there i
 	- GetSelectedEventCamerasV2 ... GetSelectedEventCamerasCacheV2
 ```
 
+Where are these being called from:
+- [dynamix].[CopyLibraryForNewDatabase]
+- [dynamix].[InitializeLibraryForNewBlankDatabase]
+- [library].[CopyCameraNamesAndChannels]
+- C:\Projects\Database\DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql
