@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T12:28
+updated: 2025-09-03T14:59
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -172,49 +172,12 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	And then you go down a rabbit trail of code using this....
 	
 	==REGEX==: library.*CameraName|UpdateCameraName|GetLibraryCameraNames
-
-
-Hi Zonika,
-(Justus, I am copying you in as you were part of this initial investigation)
-
-As Jacques mentioned on Monday, I have been busy on this issue for a while (OPEN-505).
-He asked if I should maybe split the story. I think it will be helpful. 
-
-The reason is, there are two main sections to this story.
-1) The one I already did and is ready for testing on Dev. The UI Camers Directions part.
-2) The DB part for more operational issues. (Which will be tested in different places)
-
-For #1 mentioned above, which directly related to the story and is ready for testing, I made these DB changes:
-(Add, Edit, Read)
-- [Library].[LibraryCameraName_Add] (LibraryCameraName_Add)
-- [Library].[LibraryCameraName_Update] (LibraryCameraName_Update)
-- [library].[CameraNames] (CameraNames)
-- [audit].[library_CameraNames_CT]
-- [library].[GetLibraryCameraNames]
-
-For #2 above, I think we will need to change these. 
-I will start on this but also need to double check with both of you:
-	- [dynamix].[CopyLibraryForNewDatabase]
-	- [dynamix].[InitializeLibraryForNewBlankDatabase]
-	- [library].[CopyCameraNamesAndChannels]
-	- C:\Projects\Database\DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql
-
-Another question.... **Caching**... I will also look into this to ensure there is nothing to do be done there.
-(But here are some potential words that might trigger your memories 😄)
-	- eg. CameraCache
-	- MobileDeviceTemplateCameraCacheDto
-	- In Config.API, method GetLibraryCameraNamesLookup
-	- GetSelectedEventCamerasV2 ... GetSelectedEventCamerasCacheV2
-
-
 - Client
 	- [x] Update common ✅ 2025-08-22
 	- MiX.ConfigInternal.Api.Client
 	- [x] [PR Client to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/129994) ✅ 2025-09-01
 		- MiX.ConfigInternal.Api.Client.2025.16.20250901.1-beta
 	- [ ] PR Client to INT
-
-
 - API
 	- [x] Update common ✅ 2025-08-26
 	- [x] Update calling [Library].[LibraryCameraName_Add] ✅ 2025-08-26
@@ -223,8 +186,6 @@ Another question.... **Caching**... I will also look into this to ensure there i
 		- ? GetLibraryCameraNames
 	- [x] [PR Client to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/130000) ✅ 2025-09-02
 	- [ ] PR Client to INT
-
-
 - BE
 	- [x] Update common ✅ 2025-08-27
 	- [ ] Update LOCAL Client
@@ -238,7 +199,6 @@ Another question.... **Caching**... I will also look into this to ensure there i
 	- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/DynaMiX.Backend/pullrequest/130057)
 	- [ ] Update INT Client
 	- [ ] PR INT
-
 > SO MANY ISSUES: USE ==INT2==
 > - Take ONLY the actual file changes
 > - THEN NUGETS
@@ -246,7 +206,6 @@ Another question.... **Caching**... I will also look into this to ensure there i
 > 	- MiX.DeviceConfig.Api.Client
 > 	- MiX.DeviceIntegration.Common
 > - INT3 has nugets mentioned above
-
 - FE
 	- [x] Update Carrier ✅ 2025-09-02
 		- [x] Send ADD new field ✅ 2025-09-02
@@ -298,3 +257,43 @@ This is something non-related to my work, so if someone wants to pick this up - 
 ![[OPEN-505 Identify channels for blurring New Template.png|300]]
 
 ![[OPEN-505 Identify channels for blurring Edit Template.png|300]]
+
+
+
+## Splitting up the story
+
+
+```
+Hi Zonika,
+(Justus, I am copying you in as you were part of this initial investigation)
+
+As Jacques mentioned on Monday, I have been busy on this issue for a while (OPEN-505).
+He asked if I should maybe split the story. I think it will be helpful. 
+
+The reason is, there are two main sections to this story.
+1) The one I already did and is ready for testing on Dev. The UI Camers Directions part.
+2) The DB part for more operational issues. (Which will be tested in different places)
+
+For #1 mentioned above, which directly related to the story and is ready for testing, I made these DB changes:
+(Add, Edit, Read)
+- [Library].[LibraryCameraName_Add] (LibraryCameraName_Add)
+- [Library].[LibraryCameraName_Update] (LibraryCameraName_Update)
+- [library].[CameraNames] (CameraNames)
+- [audit].[library_CameraNames_CT]
+- [library].[GetLibraryCameraNames]
+
+For #2 above, I think we will need to change these. 
+I will start on this but also need to double check with both of you:
+	- [dynamix].[CopyLibraryForNewDatabase]
+	- [dynamix].[InitializeLibraryForNewBlankDatabase]
+	- [library].[CopyCameraNamesAndChannels]
+	- C:\Projects\Database\DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql
+
+Another question.... **Caching**... I will also look into this to ensure there is nothing to do be done there.
+(But here are some potential words that might trigger your memories 😄)
+	- eg. CameraCache
+	- MobileDeviceTemplateCameraCacheDto
+	- In Config.API, method GetLibraryCameraNamesLookup
+	- GetSelectedEventCamerasV2 ... GetSelectedEventCamerasCacheV2
+```
+
