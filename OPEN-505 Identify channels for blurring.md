@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-02T16:10
+updated: 2025-09-03T09:14
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -220,7 +220,7 @@ And then you go down a rabbit trail of code using this....
 		- [x] Get LOAD new field ✅ 2025-09-02
 	- [x] Update UI ✅ 2025-09-02
 	- addCameraText > UPDATE_PERIPHERAL_CAMERA_NAME > UpdatePeripheralCameraName
-	- [ ] PR FE to DEV
+	- [ ] [PR FE to DEV](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130058)
 	- [ ] PR FE to INT
 
 
@@ -250,3 +250,15 @@ This is something non-related to my work, so if someone wants to pick this up - 
 ## Files to roll back
 
 /DriverPortal/MiX.DriverPortal.Api/Web.config
+
+
+## Testing on DEV
+
+### Libraries
+
+![[OPEN-505 Identify channels for blurring Add Dev.png|300]]
+
+![[OPEN-505 Identify channels for blurring Edit DEV.png|300]]
+
+### Templates
+
