@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T11:33
+updated: 2025-09-03T11:36
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -196,7 +196,7 @@ I have already changed the following in the DB for the UI to Add, Edit, Read:
 - [Library].[LibraryCameraName_Update] (LibraryCameraName_Update)
 - [library].[CameraNames] (CameraNames)
 - [audit].[library_CameraNames_CT]
-- GetLibraryCameraNames
+- [library].[GetLibraryCameraNames]
 
 For now I added nothing new under... eg... Events, Channels... peripherals
 ?UpdatePeripheralCameraName
