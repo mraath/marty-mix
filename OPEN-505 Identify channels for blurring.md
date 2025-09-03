@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T12:02
+updated: 2025-09-03T12:06
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -205,7 +205,7 @@ I will start on this but also need to double check with both of you:
 
 For now I added nothing new under... eg... Events, Channels... 
 
-
+GetSelectedEventCamerasV2
 
 
 
