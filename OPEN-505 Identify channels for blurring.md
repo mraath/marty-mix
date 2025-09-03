@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T12:25
+updated: 2025-09-03T12:28
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -180,11 +180,11 @@ Hi Zonika,
 As Jacques mentioned on Monday, I have been busy on this issue for a while (OPEN-505).
 He asked if I should maybe split the story. I think it will be helpful. 
 
-The reason is, there are two sections to this story.
+The reason is, there are two main sections to this story.
 1) The one I already did and is ready for testing on Dev. The UI Camers Directions part.
 2) The DB part for more operational issues. (Which will be tested in different places)
 
-For #1 mentioned above, which directly related to the story and ready for testing I made these DB changes:
+For #1 mentioned above, which directly related to the story and is ready for testing, I made these DB changes:
 (Add, Edit, Read)
 - [Library].[LibraryCameraName_Add] (LibraryCameraName_Add)
 - [Library].[LibraryCameraName_Update] (LibraryCameraName_Update)
@@ -200,6 +200,7 @@ I will start on this but also need to double check with both of you:
 	- C:\Projects\Database\DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql
 
 Another question.... **Caching**... I will also look into this to ensure there is nothing to do be done there.
+(But here are some potential words that might trigger your memories 😄)
 	- eg. CameraCache
 	- MobileDeviceTemplateCameraCacheDto
 	- In Config.API, method GetLibraryCameraNamesLookup
