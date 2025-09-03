@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T10:52
+updated: 2025-09-03T10:54
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -199,6 +199,7 @@ When Talking to Justus, it was confirmed that there are some important. Here are
 
 Another question.... **Caching**... I will also look into this to ensure there is nothing to do be done there.
 	- eg. CameraCache
+	- MobileDeviceTemplateCameraCacheDto
 
 
 - Client
