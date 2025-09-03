@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T09:14
+updated: 2025-09-03T09:18
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -262,3 +262,6 @@ This is something non-related to my work, so if someone wants to pick this up - 
 
 ### Templates
 
+![[OPEN-505 Identify channels for blurring New Template.png|300]]
+
+![[OPEN-505 Identify channels for blurring Edit Template.png|300]]
