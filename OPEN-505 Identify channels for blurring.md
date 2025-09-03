@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T12:06
+updated: 2025-09-03T12:24
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -199,23 +199,11 @@ I will start on this but also need to double check with both of you:
 	- [library].[CopyCameraNamesAndChannels]
 	- C:\Projects\Database\DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql
 
-
-
-
-
-For now I added nothing new under... eg... Events, Channels... 
-
-GetSelectedEventCamerasV2
-
-
-
-When Talking to Justus, it was confirmed that there are some important. Here are some that I am currently busy with:
-- xxxxxxxxxxx
-
 Another question.... **Caching**... I will also look into this to ensure there is nothing to do be done there.
 	- eg. CameraCache
 	- MobileDeviceTemplateCameraCacheDto
 	- In Config.API, method GetLibraryCameraNamesLookup
+	- GetSelectedEventCamerasV2
 
 
 - Client
