@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-03T14:59
+updated: 2025-09-03T16:36
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -163,6 +163,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 		- [x] [PR TO DEV 1](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129678) ✅ 2025-08-26
 		- [x] [PR TO DEV 2](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/129846) ✅ 2025-09-01
 			- Allow NULL explicitly
+		- [ ] [PR to DEV with Operational things](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/130127)
 		- [ ] PR to INT
 	I was very close to make the changed needed to these two stored procs:
 	[Library].[LibraryCameraName_Add]
