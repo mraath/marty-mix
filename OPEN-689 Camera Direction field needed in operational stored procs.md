@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-04T15:00
+updated: 2025-09-04T16:04
 ---
 
 # OPEN-689 Camera Direction field needed in operational stored procs
@@ -35,21 +35,15 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## Description
 
 
-## SP 2
-
-### FE
-- [ ] Task 1
-      PR: xxxxxxxxxx
-
-### BE
-- [ ] Task 1
-      PR: xxxxxxxxxx
-
-### DB
-- [ ] Task 1
-      PR: xxxxxxxxxx
+I have identified the following files to be handled.
+- [dynamix].[CopyLibraryForNewDatabase]
+- [dynamix].[InitializeLibraryForNewBlankDatabase]
+- [library].[CopyCameraNamesAndChannels]
+- C:\\Projects\\Database\\DeviceConfiguration\\Scripts\\DeploymentScripts\\MergeCameraData.sql
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-689 Camera Direction field needed in operational stored procs.INT
+Handled as part of OPEN-597
 
+- [ ] PR to DEV
+- [ ] 
