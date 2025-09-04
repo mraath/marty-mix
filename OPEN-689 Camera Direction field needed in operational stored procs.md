@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-04T16:07
+updated: 2025-09-04T16:15
 ---
 
 # OPEN-689 Camera Direction field needed in operational stored procs
@@ -46,4 +46,8 @@ I have identified the following files to be handled.
 Handled as part of OPEN-597
 
 - [x] [PR to DEV with Operational things](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/130127) ✅ 2025-09-04
-- [ ] 
+- [ ] PR to INT
+
+## Testing notes
+
+
