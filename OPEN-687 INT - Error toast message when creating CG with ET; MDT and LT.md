@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-05T14:19
+updated: 2025-09-05T14:30
 ---
 
 # OPEN-687
@@ -38,21 +38,7 @@ click: saveConfigurationGroup
 disableSaveButton
 
 
-## SP 2
-
-### FE
-- [ ] Task 1
-      PR: xxxxxxxxxx
-
-### BE
-- [ ] Task 1
-      PR: xxxxxxxxxx
-
-### DB
-- [ ] Task 1
-      PR: xxxxxxxxxx
-
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-687.INT
+> Branch: Config/MR/Feature/OPEN-687_Disable_Save_on_Click.INT
 
