@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-05T16:27
+updated: 2025-09-05T16:39
 ---
 
 # OPEN-687
@@ -46,3 +46,5 @@ disableSaveButton
 
 > Branch: Config/MR/Feature/OPEN-687_Disable_Save_on_Click.INT2
 
+- [ ] PR to DEV
+- [ ] PR to INT
