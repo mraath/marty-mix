@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-05T16:45
+updated: 2025-09-08T09:52
 ---
 
 # OPEN-687
@@ -44,6 +44,7 @@ disableSaveButton
 
 ## Branch
 
+==INT2==
 > Branch: Config/MR/Feature/OPEN-687_Disable_Save_on_Click.INT2
 
 - [ ] [PR to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/130285)
