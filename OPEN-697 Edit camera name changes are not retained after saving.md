@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-09T15:11
+updated: 2025-09-09T15:14
 ---
 
 # OPEN-697 Edit camera name changes are not retained after saving
@@ -35,7 +35,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
-xxxxxxxxxxxxxxx
+CHECK: [library].[LibraryCameraName_Update
+
 
 ---
 ## Styling issue - move there
