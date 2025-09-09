@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-09T15:14
+updated: 2025-09-09T15:53
 ---
 
 # OPEN-697 Edit camera name changes are not retained after saving
@@ -37,6 +37,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 CHECK: [library].[LibraryCameraName_Update
 
+- [PR to DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/130433)
+- PR to INT will be handled with OPEN-505
 
 ---
 ## Styling issue - move there
