@@ -3,13 +3,13 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-08T16:28
+updated: 2025-09-09T15:11
 ---
 
 # OPEN-697 Edit camera name changes are not retained after saving
 
 Date: 2025-09-08 Time: 16:15
-Parent:: ==xxxx==
+Parent:: [[OPEN-505 Identify channels for blurring]]
 Friend:: [[2025-09-08]]
 JIRA:OPEN-697 Edit camera name changes are not retained after saving
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-697)
