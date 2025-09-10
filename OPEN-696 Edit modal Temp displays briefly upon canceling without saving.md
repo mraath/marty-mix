@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-10T09:09
+updated: 2025-09-10T10:14
 ---
 
 # OPEN-696 Edit modal Temp displays briefly upon canceling without saving
@@ -35,3 +35,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+- Fixed in OPEN-505: https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130482
