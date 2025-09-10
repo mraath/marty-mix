@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-10T12:05
+updated: 2025-09-10T12:09
 ---
 
 # OPEN-698 Languaging
@@ -51,16 +51,15 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] Add Camera Name
 - [ ] Camera direction
 - [ ] Select camera direction
+- [ ] Duplicate Camera Name
 
 ### TODO
 
--
-	- [ ] Road facing
-	- [ ] In-cab
-	- [ ] Driver facing
-	- [ ] Left side facing
-	- [ ] Right side facing
-	- [ ] Rear facing
-	- [ ] Other
-- [ ] Duplicate Camera Name
+- [ ] Road facing
+- [ ] In-cab
+- [ ] Driver facing
+- [ ] Left side facing
+- [ ] Right side facing
+- [ ] Rear facing
+- [ ] Other
 - [ ] Camera name already exists.
