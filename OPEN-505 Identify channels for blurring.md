@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-10T10:14
+updated: 2025-09-10T11:08
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -218,7 +218,8 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	- [x] [PR FE to DEV](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130058) ✅ 2025-09-03
 	- [x] [PR FE to DEV fixing span](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130100) ✅ 2025-09-08
 	- [x] [PR FE to DEV languaging](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130340) ✅ 2025-09-10
-	- [ ] [PR to DEV fixing TEMP string](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130482)
+	- [x] [PR to DEV fixing TEMP string](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130482) ✅ 2025-09-10
+	- [ ] [PR to DEV always change Camera Name](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130483)
 	- [ ] PR FE to INT
 	Template
 	- [x] Add Camera Name ✅ 2025-09-01
