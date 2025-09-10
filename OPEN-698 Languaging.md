@@ -50,11 +50,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] Camera direction
 - [ ] Select camera direction
 - [ ] Road facing
-In-cab
-Driver facing
-Left side facing
-Right side facing
-Rear facing
-Other
+- [ ] In-cab
+- [ ] Driver facing
+- [ ] Left side facing
+- [ ] Right side facing
+- [ ] Rear facing
+- [ ] Other
 - [ ] Duplicate Camera Name
 - [ ] Camera name already exists.
