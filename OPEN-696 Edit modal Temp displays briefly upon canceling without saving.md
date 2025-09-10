@@ -3,13 +3,13 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-10T09:08
+updated: 2025-09-10T09:09
 ---
 
 # OPEN-696 Edit modal Temp displays briefly upon canceling without saving
 
 Date: 2025-09-10 Time: 09:08
-Parent:: [[O]]
+Parent:: [[OPEN-505 Identify channels for blurring]]
 Friend:: [[2025-09-10]]
 JIRA:OPEN-696 Edit modal Temp displays briefly upon canceling without saving
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-696)
