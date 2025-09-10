@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-10T12:09
+updated: 2025-09-10T12:13
 ---
 
 # OPEN-698 Languaging
@@ -35,7 +35,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+### Descr 1
+
 ![[OPEN-698 Languaging 1.png | 400]]
+
+### Descr 2
 
 ![[OPEN-698 Languaging 2.png|400]]
 
@@ -52,6 +56,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] Camera direction
 - [ ] Select camera direction
 - [ ] Duplicate Camera Name
+- [ ] Camera name already exists.
 
 ### TODO
 
@@ -62,4 +67,3 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] Right side facing
 - [ ] Rear facing
 - [ ] Other
-- [ ] Camera name already exists.
