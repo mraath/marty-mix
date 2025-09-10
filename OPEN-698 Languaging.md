@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-11T06:30
+updated: 2025-09-11T06:50
 ---
 
 # OPEN-698 Languaging
@@ -62,9 +62,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] Select camera direction
 - [ ] Duplicate Camera Name
 - [ ] Camera name already exists.
-
-### TODO - UI
-
 - [ ] Road facing
 - [ ] In-cab
 - [ ] Driver facing
