@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-10T12:13
+updated: 2025-09-10T12:16
 ---
 
 # OPEN-698 Languaging
@@ -50,6 +50,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ### Descr 4
 
 ![[OPEN-698 Languaging 4.png|400]]
+
 
 ## Language strings
 
