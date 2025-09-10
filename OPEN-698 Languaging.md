@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-10T12:00
+updated: 2025-09-10T12:04
 ---
 
 # OPEN-698 Languaging
@@ -49,10 +49,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - [ ] Select the camera names from the dropdown to assign to the camera  channels. Custom names can be added on the Camera name tab. It is not possible to assign the same camera name to more than one channel.
 - [ ] Add Camera Name
+- [ ] Camera direction
 
 ### TODO
 
-- [ ] Camera direction
 - [ ] Select camera direction
 	- [ ] Road facing
 	- [ ] In-cab
