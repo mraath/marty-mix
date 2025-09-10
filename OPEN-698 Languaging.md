@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-10T12:20
+updated: 2025-09-11T06:17
 ---
 
 # OPEN-698 Languaging
@@ -72,3 +72,5 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] Right side facing
 - [ ] Rear facing
 - [ ] Other
+
+> p.id as (p.title | translate) for p in deviceList
