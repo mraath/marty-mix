@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-11T06:50
+updated: 2025-09-11T10:30
 ---
 
 # OPEN-698 Languaging
@@ -58,8 +58,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - [ ] Select the camera names from the dropdown to assign to the camera  channels. Custom names can be added on the Camera name tab. It is not possible to assign the same camera name to more than one channel.
 - [ ] Add Camera Name
-- [ ] Camera direction
-- [ ] Select camera direction
+- [x] Camera direction ✅ 2025-09-11
+- [x] Select camera direction ✅ 2025-09-11
 - [ ] Duplicate Camera Name
 - [ ] Camera name already exists.
 - [ ] Road facing
@@ -68,7 +68,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] Left side facing
 - [ ] Right side facing
 - [ ] Rear facing
-- [ ] Other
+- [x] Other ✅ 2025-09-11
 
 > p.id as (p.title | translate) for p in deviceList
 
