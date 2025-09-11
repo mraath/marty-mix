@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-11T12:01
+updated: 2025-09-11T12:03
 ---
 
 # OPEN-698 Languaging
@@ -72,6 +72,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 > p.id as (p.title | translate) for p in deviceList
 
+> this.languageService.translate("Config group successfully created")
+
 - Handled in OPEN-505: [PR TO DEV dropdown languaging](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130564)
 
 ## DEV TEST
@@ -85,4 +87,3 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ![[OPEN-698 Languaging Test 4.png|400]]
 
 
-this.languageService.translate("Config group successfully created")
