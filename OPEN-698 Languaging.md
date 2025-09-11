@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-11T11:38
+updated: 2025-09-11T12:01
 ---
 
 # OPEN-698 Languaging
@@ -83,3 +83,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ![[OPEN-698 Languaging Test 3.png|400]]
 
 ![[OPEN-698 Languaging Test 4.png|400]]
+
+
+this.languageService.translate("Config group successfully created")
