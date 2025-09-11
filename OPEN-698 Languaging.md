@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-11T11:36
+updated: 2025-09-11T11:38
 ---
 
 # OPEN-698 Languaging
@@ -60,8 +60,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [x] Add Camera Name ✅ 2025-09-11
 - [x] Camera direction ✅ 2025-09-11
 - [x] Select camera direction ✅ 2025-09-11
-- [ ] Duplicate Camera Name
-- [ ] Camera name already exists.
+- [x] Duplicate Camera Name ✅ 2025-09-11
+- [x] Camera name already exists. ✅ 2025-09-11
 - [x] Road facing ✅ 2025-09-11
 - [x] In-cab ✅ 2025-09-11
 - [x] Driver facing ✅ 2025-09-11
@@ -81,3 +81,5 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ![[OPEN-698 Languaging Test 2.png|400]]
 
 ![[OPEN-698 Languaging Test 3.png|400]]
+
+![[OPEN-698 Languaging Test 4.png|400]]
