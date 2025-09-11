@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-11T10:30
+updated: 2025-09-11T11:29
 ---
 
 # OPEN-698 Languaging
@@ -56,8 +56,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ### TEST
 
-- [ ] Select the camera names from the dropdown to assign to the camera  channels. Custom names can be added on the Camera name tab. It is not possible to assign the same camera name to more than one channel.
-- [ ] Add Camera Name
+- [x] Select the camera names from the dropdown to assign to the camera  channels. Custom names can be added on the Camera name tab. It is not possible to assign the same camera name to more than one channel. ✅ 2025-09-11
+- [x] Add Camera Name ✅ 2025-09-11
 - [x] Camera direction ✅ 2025-09-11
 - [x] Select camera direction ✅ 2025-09-11
 - [ ] Duplicate Camera Name
@@ -73,3 +73,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 > p.id as (p.title | translate) for p in deviceList
 
 - Handled in OPEN-505: [PR TO DEV dropdown languaging](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130564)
+
+## DEV TEST
+
+![[OPEN-698 Languaging Test 1.png | 400]]
+
+![[OPEN-698 Languaging Test 2.png|400]]
+
