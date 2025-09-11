@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-11T12:03
+updated: 2025-09-11T14:05
 ---
 
 # OPEN-698 Languaging
@@ -70,7 +70,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [x] Rear facing ✅ 2025-09-11
 - [x] Other ✅ 2025-09-11
 
-> p.id as (p.title | translate) for p in deviceList
+> p as (p | translate) for p in deviceList
 
 > this.languageService.translate("Config group successfully created")
 
