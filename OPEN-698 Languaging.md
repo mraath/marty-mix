@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-11T11:32
+updated: 2025-09-11T11:36
 ---
 
 # OPEN-698 Languaging
@@ -62,12 +62,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [x] Select camera direction ✅ 2025-09-11
 - [ ] Duplicate Camera Name
 - [ ] Camera name already exists.
-- [ ] Road facing
-- [ ] In-cab
-- [ ] Driver facing
-- [ ] Left side facing
-- [ ] Right side facing
-- [ ] Rear facing
+- [x] Road facing ✅ 2025-09-11
+- [x] In-cab ✅ 2025-09-11
+- [x] Driver facing ✅ 2025-09-11
+- [x] Left side facing ✅ 2025-09-11
+- [x] Right side facing ✅ 2025-09-11
+- [x] Rear facing ✅ 2025-09-11
 - [x] Other ✅ 2025-09-11
 
 > p.id as (p.title | translate) for p in deviceList
