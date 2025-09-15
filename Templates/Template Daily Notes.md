@@ -1,6 +1,6 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-09-05T15:00
+updated: 2025-09-15T16:28
 ---
 {{date}} {{time}}
 Parent:: [[Daily]] 
@@ -20,5 +20,16 @@ Parent:: [[Daily]]
 - xxx
 
 ![[Helpful Dashboards Links]]
+
+### Notes created today
+```dataview
+List FROM "" WHERE file.cday = date("2025-09-15") SORT file.ctime asc
+```
+
+### Notes last touched today
+```dataview
+List FROM "" WHERE file.mday = date("2025-09-15") SORT file.mtime asc
+```
+
 
 ![[Daily]]
