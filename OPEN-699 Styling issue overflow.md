@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-15T08:26
+updated: 2025-09-15T10:04
 ---
 
 # OPEN-699 Styling issue overflow
@@ -36,3 +36,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## Shorter Description
 
 ![[OPEN-699 Styling issue overflow 1.png|400]]
+
+CSS Line 2159
+.strong-grid.fleet-grid-container{overflow-y:scroll}
+
