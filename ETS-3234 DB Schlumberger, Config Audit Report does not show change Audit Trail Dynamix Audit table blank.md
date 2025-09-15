@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-15T11:20
+updated: 2025-09-15T11:21
 ---
 
 # ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
@@ -64,4 +64,13 @@ SELECT TOP (1000) [AssetsAuditKey]
 3929166784807882648)
 
 From Resource data it was determined that one asset had been moved to another site and the other had been De & Re commissioned.
+
+![[Pasted image 20250915112013.png]]
+
+Please can you investigate why there is no information in the Audit records/Audit report?
+
+## date ranges
+
+2037 - Changes made 27/07/2025  
+6003 - Changes made 06/08/2025
 
