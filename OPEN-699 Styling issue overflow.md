@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-15T10:08
+updated: 2025-09-15T16:30
 ---
 
 # OPEN-699 Styling issue overflow
@@ -12,7 +12,7 @@ Date: 2025-09-15 Time: 08:25
 Parent:: [[OPEN-505 Identify channels for blurring]]
 Friend:: [[2025-09-15]]
 JIRA:OPEN-699 Styling issue overflow
-JIRA
+[JIRA](https://powerfleet.atlassian.net/browse/OPEN-699)
 
 
 ## TODO
