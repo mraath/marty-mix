@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-16T16:56
+updated: 2025-09-17T07:50
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -100,6 +100,7 @@ NA: Road facing|In-cab|Driver facing|Left side facing|Right side facing|Rear fac
 LOT: Assign to channels|Camera name|Camera name tab|Add.*camera.*name|assign to channels|camera names tab|add cameras name|LogicalCameraDeviceSettings
 
 
+## Outstanding
 
 ==NEW NEED:==
 9) When the camera direction is captured and the user click Save, display the standard toast messages to indicate when changes have been successfully or when it fails to save.
