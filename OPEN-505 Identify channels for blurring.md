@@ -105,6 +105,7 @@ LOT: Assign to channels|Camera name|Camera name tab|Add.*camera.*name|assign to 
 9) When the camera direction is captured and the user click Save, display the standard toast messages to indicate when changes have been successfully or when it fails to save.
 
 this.alert.show(MiXFleet.Services.AlertType.Success, "Template successfully removed")
+> $dynamicScope.$popAlert("success", "Asset updated successfully");
 
 , (error) => {		
 	console.log("Error getting streamax compatibility")
