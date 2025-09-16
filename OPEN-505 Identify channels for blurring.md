@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-16T16:49
+updated: 2025-09-16T16:51
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -105,6 +105,10 @@ LOT: Assign to channels|Camera name|Camera name tab|Add.*camera.*name|assign to 
 9) When the camera direction is captured and the user click Save, display the standard toast messages to indicate when changes have been successfully or when it fails to save.
 
 this.alert.show(MiXFleet.Services.AlertType.Success, "Template successfully removed")
+
+, (error) => {		
+	console.log("Error getting streamax compatibility")
+});
 
 
 
