@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-16T11:49
+updated: 2025-09-16T15:39
 ---
 
 # OPEN-743 new entry name is cleared
@@ -35,3 +35,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+- PR in OPEN-505
