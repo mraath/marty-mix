@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-17T16:21
+updated: 2025-09-17T16:24
 ---
 
 # ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
@@ -88,3 +88,6 @@ Please can you investigate why there is no information in the Audit records/Audi
 	- 
 2) and if De & Re commissioned logs
 
+```sql
+SELECT * FROM [DynaMiX].[DynaMiX_Audit].[Assets] where assetid in (1704944410111602688)
+```
