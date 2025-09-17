@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-17T16:10
+updated: 2025-09-17T16:21
 ---
 
 # ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
@@ -65,7 +65,7 @@ SELECT TOP (1000) [AssetsAuditKey]
 
 From Resource data it was determined that one asset had been moved to another site and the other had been De & Re commissioned.
 
-![[Pasted image 20250915112013.png]]
+![[ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank Asset Rows.png]]
 
 Please can you investigate why there is no information in the Audit records/Audit report?
 
@@ -81,5 +81,10 @@ Please can you investigate why there is no information in the Audit records/Audi
 ## TESTS
 
 1) Test if site changes - if moved to another site gets logged 
+	- https://config.dev.mixtelematics.com/#/fleet-admin/asset/commissioning?id=1704944410111602688&orgId=4036779219063094058
+	- 1704944410111602688
+	- After Init only 3 rows
+	- After unique key - still only 3
+	- 
 2) and if De & Re commissioned logs
 
