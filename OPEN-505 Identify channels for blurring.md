@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-17T10:04
+updated: 2025-09-17T10:06
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -111,7 +111,7 @@ if (response) {
 	this.alert.show(MiXFleet.Services.AlertType.Error, 'Failed to assign hours to driver');
 }
 
-- [ ] Language whatever I add above
+- [x] Language whatever I add above ✅ 2025-09-17
 
 
 this.alert.show(MiXFleet.Services.AlertType.Success, "Template successfully removed")
@@ -132,8 +132,9 @@ this.scope["$indexScope"].$broadcast("showModal", "globalErrorModal", failureMod
 
 ## Languaging
 
-Added Camera Name
-Edited Camera Name
+- [x] Added Camera Name ✅ 2025-09-17
+- [x] Edited Camera Name ✅ 2025-09-17
+- [ ] DEPLOY BE
 
 
 ## **Screen wording updates:**
