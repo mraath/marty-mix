@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-17T10:24
+updated: 2025-09-17T10:45
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -205,7 +205,6 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 			- Allow NULL explicitly
 		- [x] [PR to DEV with Operational things](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/130127) ✅ 2025-09-04
 		- [x] [PR to DEV to allow for camera name staying the same](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/130433) ✅ 2025-09-09
-		- [ ] [PR Pop Alerts to DEV](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130880)
 		- [ ] PR to INT
 	I was very close to make the changed needed to these two stored procs:
 	[Library].[LibraryCameraName_Add]
@@ -264,6 +263,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	- [x] [PR TO DEV dropdown languaging](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130564) ✅ 2025-09-11
 	- [x] ~~[PR to DEV auto Camera Name Languaged](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130566)~~ ✅ 2025-09-16
 	- [x] [PR to DEV OPEN-743](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130819) ✅ 2025-09-16
+	- [ ] [PR Pop Alerts to DEV](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130880)
 	- [ ] PR FE to INT
 	Template
 	- [x] Add Camera Name ✅ 2025-09-01
