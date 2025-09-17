@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-17T16:40
+updated: 2025-09-17T16:45
 ---
 
 # ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
@@ -95,8 +95,10 @@ Please can you investigate why there is no information in the Audit records/Audi
 
 - [ ] I will first check if I can test this on the same database.  
 	- Schlumberger-KZU
-	- 
+	- https://uk.mixtelematics.com/#/fleet-admin/asset/commissioning?id=1704950877146279936&orgId=-9141529759028177209
+	- 1704950877146279936
 - [ ] After this I will try to find where these rows went.
+- [ ] Mobile Device Type mabe?
 
 ```sql
 SELECT * FROM [DynaMiX].[DynaMiX_Audit].[Assets] where assetid in (1704944410111602688)
