@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-17T16:30
+updated: 2025-09-17T16:34
 ---
 
 # ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
@@ -80,7 +80,7 @@ Please can you investigate why there is no information in the Audit records/Audi
 
 ## TESTS
 
-1) Test if site changes - if moved to another site gets logged 
+1) [x] Test if site changes - if moved to another site gets logged ✅ 2025-09-17
 	- https://config.dev.mixtelematics.com/#/fleet-admin/asset/commissioning?id=1704944410111602688&orgId=4036779219063094058
 	- 1704944410111602688
 	- After Init only 3 rows
@@ -89,7 +89,12 @@ Please can you investigate why there is no information in the Audit records/Audi
 	- MR Site > Default Site - 7 !!! Check mask.... 750780416, 1241507888
 	- Remove mobile device - 11
 	- Move to CG - 14
-2) and if De & Re commissioned logs
+2) [x] and if De & Re commissioned logs ✅ 2025-09-17
+	- Remove mobile device - 11
+	- Move to CG - 14
+
+- [ ] I will first check if I can test this on the same database.  
+- [ ] After this I will try to find where these rows went.
 
 ```sql
 SELECT * FROM [DynaMiX].[DynaMiX_Audit].[Assets] where assetid in (1704944410111602688)
