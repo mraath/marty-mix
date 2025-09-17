@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-17T16:24
+updated: 2025-09-17T16:30
 ---
 
 # ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
@@ -85,7 +85,10 @@ Please can you investigate why there is no information in the Audit records/Audi
 	- 1704944410111602688
 	- After Init only 3 rows
 	- After unique key - still only 3
-	- 
+	- Default Site > MR Site - 5 !!! Check mask....  750780416, 1241507888
+	- MR Site > Default Site - 7 !!! Check mask.... 750780416, 1241507888
+	- Remove mobile device - 11
+	- Move to CG - 14
 2) and if De & Re commissioned logs
 
 ```sql
