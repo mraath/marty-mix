@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-17T16:45
+updated: 2025-09-18T07:57
 ---
 
 # ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
@@ -103,4 +103,20 @@ Please can you investigate why there is no information in the Audit records/Audi
 ```sql
 SELECT * FROM [DynaMiX].[DynaMiX_Audit].[Assets] where assetid in (1704944410111602688)
 ```
+
+## More info from files added
+
+1686122227738537984
+
+Configuration Group: BTS - KAZ - Tengiz OFS / TCO - FM 36x7, CAN: J1939.250KBPS.ACK_ENBL.v1.24.0.4_MG, No RPM, I3 HL >6+Mix Vision AI
+Mobile Device: FM 3607i/3617i
+FM device Id: 5532222609168997
+IMEI Number: 355544065478586
+
+3929166784807882648
+
+Configuration Group: BTS KAZ - Tengiz OFS/TCO FM 35x7i F1 VSS, F2 RPM, I1 DSB >6, I2 PSB >6, I3 HL >6, LV
+FM device Id: 1631200312137626
+IMEI Number: 356496043536341
+
 
