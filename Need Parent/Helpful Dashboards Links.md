@@ -1,10 +1,12 @@
 ---
 created: 2022-08-18T11:47
-updated: 2025-08-06T14:40
+updated: 2025-09-18T08:48
 ---
 # Helpful Dashboards Links
 
 Sprint Tasks: [Tasks Notes](https://mixtelematics.sharepoint.com/:o:/s/TeamDIConfig/EgQqCUiVOaVOpmVkY1TOYdEBiT63msYB-pTqzDzfae0Y3Q?e=7FObkb)
+Config Sprint: [Sprint and Backlog](https://powerfleet.atlassian.net/jira/software/c/projects/OPEN/boards/4397?assignee=557058%3A456930fd-5aba-4785-9fea-2811fca22597)
+
 Config Dashboard: [DI Config - MiX Telematics JIRA](https://jira.mixtelematics.com/secure/Dashboard.jspa?selectPageId=14029)
 Config SRs: [Team Device Integration SR's - Agile Board - MiX Telematics JIRA](https://jira.mixtelematics.com/secure/RapidBoard.jspa?rapidView=306&quickFilter=942)
 Standup: [Team DI Config - Agile Board - MiX Telematics JIRA](https://jira.mixtelematics.com/secure/RapidBoard.jspa?rapidView=121&quickFilter=2435)
