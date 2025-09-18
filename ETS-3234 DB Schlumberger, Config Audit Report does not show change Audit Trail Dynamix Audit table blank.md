@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-18T07:57
+updated: 2025-09-18T09:18
 ---
 
 # ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
@@ -119,4 +119,12 @@ Configuration Group: BTS KAZ - Tengiz OFS/TCO FM 35x7i F1 VSS, F2 RPM, I1 DSB >6
 FM device Id: 1631200312137626
 IMEI Number: 356496043536341
 
+### Now adding on DEV for FM 3607
 
+https://config.dev.mixtelematics.com/#/fleet-admin/asset/details?id=1705200145348530176&orgId=4036779219063094058&mobileNumber=
+1705200145348530176
+Init: 3
+Site > MR: 5
+Site > Default: 7
+Remove: 11
+Move CG: 
