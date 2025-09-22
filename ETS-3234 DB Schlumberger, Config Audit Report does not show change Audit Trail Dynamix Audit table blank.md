@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-18T09:20
+updated: 2025-09-22T12:00
 ---
 
 # ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
@@ -75,6 +75,8 @@ Please can you investigate why there is no information in the Audit records/Audi
 6003 - Changes made 06/08/2025
 
 470143	9148237898469913400	1686122227738537984	492848	925	2037
+	IF UPDATE(liSiteID          ) SET @updateMask |= 0x20000000;
+	
 470865	2528765721212179261	3929166784807882648	493571	925	6003
 
 
