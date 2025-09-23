@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-18T16:16
+updated: 2025-09-23T14:51
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -265,6 +265,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	- [x] [PR to DEV OPEN-743](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130819) ✅ 2025-09-16
 	- [x] [PR Pop Alerts to DEV](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130880) ✅ 2025-09-17
 	- [x] [PR for OPEN-756 Deleted and Languaged](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/130974) ✅ 2025-09-18
+	- [ ] [PR Disable Edit Save DEV](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/131180)
 	- [ ] PR FE to INT
 	Template
 	- [x] Add Camera Name ✅ 2025-09-01

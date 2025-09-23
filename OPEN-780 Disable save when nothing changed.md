@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-23T14:12
+updated: 2025-09-23T14:51
 ---
 
 # OPEN-780 Disable save when nothing changed
@@ -35,3 +35,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+Deployed as OPEN-505
