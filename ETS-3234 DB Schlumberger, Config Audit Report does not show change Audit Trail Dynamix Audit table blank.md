@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-22T12:00
+updated: 2025-09-23T15:20
 ---
 
 # ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
@@ -130,3 +130,5 @@ Site > MR: 5
 Site > Default: 7
 Remove: 11
 Move CG: 14
+
+- [ ] From what we can see our report doesn't pull information from this table. Please reach out to Core Features team.
