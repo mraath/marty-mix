@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-23T15:49
+updated: 2025-09-24T11:59
 ---
 
 # OPEN-699 Styling issue overflow
@@ -111,4 +111,6 @@ If you can share the relevant HTML/CSS or React code, I can tailor the exact sol
 
 ![[OPEN-699 Styling issue overflow.png]]
 
-- [ ] Remove the <div class="clear">&nbsp;</div>
+- [x] Remove the <div class="clear">&nbsp;</div> ✅ 2025-09-24
+
+Fixing this in OPEN-505
