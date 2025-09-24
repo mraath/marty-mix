@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-23T14:13
+updated: 2025-09-24T13:07
 ---
 
 # OPEN-714 Persisting Column Sizes
@@ -48,6 +48,32 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ### DB
 - [ ] Task 1
       PR: xxxxxxxxxx
+
+
+## Notes
+
+https://selectioncriteria.intss.mixdevelopment.com/api/selectioncriteria/query?datacentre=DEV
+	dictionaries
+		configGroupsColumnWidths
+			  0: {key: "sp", value: "200"}
+		configGroupsColumnOrder
+			0: {key: "sp", value: "14"}
+
+https://selectioncriteria.intss.mixdevelopment.com/api/selectioncriteria/query?datacentre=DEV
+	configAssetsColumnWidths
+		0: {key: "sp", value: "200"}
+	configAssetsColumnOrder
+		0: {key: "sp", value: "27"}
+
+https://selectioncriteria.intss.mixdevelopment.com/api/selectioncriteria/update?datacentre=DEV
+	Payload: configAssetsColumnWidths, configAssetsColumnOrder
+
+Upbove is the update.... so width is on the payload - so SHOULD save it.... so just add the persisting part....
+CALLING update on column width change
+
+- [ ] Add an OnColumnWidthChanged (something like that)
+
+
 
 ## Branch
 
