@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-25T15:10
+updated: 2025-09-25T15:21
 ---
 
 # OPEN-714 Persisting Column Sizes
@@ -113,6 +113,8 @@ We will need to understand what theyâ€™re currently doing and how the width getâ
                            [hidden]="col?.hidden" [width]="getColumWidth(col?.field, 'configGroups') || 150">
 ```
 
+
+configGroupsColumnSettings
 
 ## Branch
 
