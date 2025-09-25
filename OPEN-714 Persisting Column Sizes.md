@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-25T15:05
+updated: 2025-09-25T15:10
 ---
 
 # OPEN-714 Persisting Column Sizes
@@ -101,8 +101,16 @@ Local CG
 
 ### According to Shawn
 
-```
+@Richard Hobson They are using some logic to set column widths, i.e. `[width]="getColumWidth(col?.field, ‘assets') || 150"`  
+  
+We will need to understand what they’re currently doing and how the width get’s calculated as to see what happens when columns are added/hidden. The 150px looks like a fallback but I’m not sure what has been done in terms of dynamic widths. Will need to setup a call with a developer.
 
+```
+<kendo-grid-column *ngFor="let col of assetsColumns;" [field]="col?.field" title="{{col?.title|dmxTranslate}}"
+                       [hidden]="col?.hidden" [width]="getColumWidth(col?.field, 'assets') || 150">
+                       
+<kendo-grid-column *ngFor="let col of configGroupsColumns;" [field]="col?.field" title="{{col?.title|dmxTranslate}}"
+                           [hidden]="col?.hidden" [width]="getColumWidth(col?.field, 'configGroups') || 150">
 ```
 
 
