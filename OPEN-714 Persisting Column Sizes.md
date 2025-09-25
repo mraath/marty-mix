@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-25T13:02
+updated: 2025-09-25T14:44
 ---
 
 # OPEN-714 Persisting Column Sizes
@@ -80,6 +80,11 @@ CALLING update on column width change
 ![[OPEN-714 Persisting Column Sizes Widths.png]]
 
 
+## Testing
+
+Local CG
+	https://selectioncriteria.intss.mixdevelopment.com/api/selectioncriteria/update?datacentre=DEV
+	
 
 
 ## Branch
