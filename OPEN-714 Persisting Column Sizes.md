@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-24T13:07
+updated: 2025-09-25T13:02
 ---
 
 # OPEN-714 Persisting Column Sizes
@@ -72,6 +72,13 @@ Upbove is the update.... so width is on the payload - so SHOULD save it.... so j
 CALLING update on column width change
 
 - [ ] Add an OnColumnWidthChanged (something like that)
+
+
+## Local Test
+
+![[OPEN-714 Persisting Column Sizes Result1.png]]
+![[OPEN-714 Persisting Column Sizes Widths.png]]
+
 
 
 
