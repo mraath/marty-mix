@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-25T14:44
+updated: 2025-09-25T15:05
 ---
 
 # OPEN-714 Persisting Column Sizes
@@ -73,6 +73,17 @@ CALLING update on column width change
 
 - [ ] Add an OnColumnWidthChanged (something like that)
 
+## Adding Column Resize Event
+
+```
+<kendo-grid (columnResize)="columnResize($event)">
+
+import { ColumnResizeArgs } from "@progress/kendo-angular-grid";
+
+columnResize(columnResizeEvent: ColumnResizeArgs[]) {
+	this.gridSelectionCriteriaService.changeColumnWidth(SelectionCriteriaKeys.configGroupsColumnSettings, this.configGroupsColumnSettings, columnResizeEvent);
+}
+```
 
 ## Local Test
 
@@ -84,7 +95,15 @@ CALLING update on column width change
 
 Local CG
 	https://selectioncriteria.intss.mixdevelopment.com/api/selectioncriteria/update?datacentre=DEV
-	
+	It is persisting, now just to read it....
+
+## Reading the column width
+
+### According to Shawn
+
+```
+
+```
 
 
 ## Branch
