@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-04T16:15
+updated: 2025-09-30T07:09
 ---
 
 # OPEN-689 Camera Direction field needed in operational stored procs
@@ -50,4 +50,5 @@ Handled as part of OPEN-597
 
 ## Testing notes
 
-
+- [ ] Don't break anything
+	- It was deployed on DEV the 
