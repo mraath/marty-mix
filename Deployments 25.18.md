@@ -1,8 +1,8 @@
 ---
 created: 2025-09-29T07:50
-updated: 2025-09-29T07:55
+updated: 2025-09-30T14:44
 ---
-
+![[Deployments 25.18-2.png]]
 
 
 [Zonika Smit: Config R25.18 UAT release pipelines:  Config.Api: Pipelines - Run ... | Team Config (Device Integration) (UAT) | Microsoft Teams](https://teams.microsoft.com/l/message/19:e4580a88f5824999975a7d02294adab4@thread.v2/1759074622155?context=%7B%22contextType%22%3A%22chat%22%7D)
