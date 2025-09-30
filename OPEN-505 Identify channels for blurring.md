@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-24T12:00
+updated: 2025-09-30T14:31
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -136,7 +136,7 @@ this.scope["$indexScope"].$broadcast("showModal", "globalErrorModal", failureMod
 - [x] Edited Camera Name ✅ 2025-09-17
 - [x] Failed to add Camera Name ✅ 2025-09-17
 - [x] Failed to edit Camera Name ✅ 2025-09-17
-- [ ] DEPLOY BE
+- [x] DEPLOY BE ✅ 2025-09-30
 
 
 ## **Screen wording updates:**
