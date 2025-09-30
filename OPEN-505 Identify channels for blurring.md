@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-30T16:10
+updated: 2025-09-30T16:19
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -230,8 +230,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 		- ? GetLibraryCameraNames
 	- [x] [PR Client to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/130000) ✅ 2025-09-02
 	- [ ] PR Client to INT
-		- [ ] MiX.DeviceIntegration.Common
-		- [ ] MiX.ConfigInternal.Api.Client.2025.19.20250930.1.nupkg
+		- [x] MiX.DeviceIntegration.Common ✅ 2025-09-30
 - BE
 	- [x] Update common ✅ 2025-08-27
 	- [ ] Update LOCAL Client
@@ -245,6 +244,8 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	- [ ] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/DynaMiX.Backend/pullrequest/130057)
 	- [ ] Update INT Client
 	- [ ] PR INT
+		- MiX.DeviceIntegration.Common
+		- MiX.ConfigInternal.Api.Client.2025.19.20250930.1.nupkg
 > SO MANY ISSUES: USE ==INT2==
 > - Take ONLY the actual file changes
 > - THEN NUGETS
