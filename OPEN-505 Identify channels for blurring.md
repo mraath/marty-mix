@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-30T16:00
+updated: 2025-09-30T16:10
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -220,8 +220,8 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	- [x] [PR Client to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/129994) ✅ 2025-09-01
 		- MiX.ConfigInternal.Api.Client.2025.16.20250901.1-beta
 		- MiX.DeviceIntegration.Common >= 2025.16.20250826.2
-	- [ ] [PR Client to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/131545)
-		- 
+	- [x] [PR Client to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/131545) ✅ 2025-09-30
+		- MiX.ConfigInternal.Api.Client.2025.19.20250930.1.nupkg
 - API
 	- [x] Update common ✅ 2025-08-26
 	- [x] Update calling [Library].[LibraryCameraName_Add] ✅ 2025-08-26
@@ -230,6 +230,8 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 		- ? GetLibraryCameraNames
 	- [x] [PR Client to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/130000) ✅ 2025-09-02
 	- [ ] PR Client to INT
+		- [ ] MiX.DeviceIntegration.Common
+		- [ ] MiX.ConfigInternal.Api.Client.2025.19.20250930.1.nupkg
 - BE
 	- [x] Update common ✅ 2025-08-27
 	- [ ] Update LOCAL Client
