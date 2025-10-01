@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-29T15:59
+updated: 2025-10-01T13:29
 ---
 
 # OPEN-714 Persisting Column Sizes
@@ -34,20 +34,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Description
 
-
-## SP 2
-
-### FE
-- [ ] Task 1
-      PR: xxxxxxxxxx
-
-### BE
-- [ ] Task 1
-      PR: xxxxxxxxxx
-
-### DB
-- [ ] Task 1
-      PR: xxxxxxxxxx
 
 
 ## Notes
