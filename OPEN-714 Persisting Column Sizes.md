@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-01T13:29
+updated: 2025-10-01T13:40
 ---
 
 # OPEN-714 Persisting Column Sizes
@@ -57,7 +57,7 @@ https://selectioncriteria.intss.mixdevelopment.com/api/selectioncriteria/update?
 Upbove is the update.... so width is on the payload - so SHOULD save it.... so just add the persisting part....
 CALLING update on column width change
 
-- [ ] Add an OnColumnWidthChanged (something like that)
+- [x] Add an OnColumnWidthChanged (something like that) ✅ 2025-10-01
 
 ## Adding Column Resize Event
 
