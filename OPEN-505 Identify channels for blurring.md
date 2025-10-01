@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-01T08:04
+updated: 2025-10-01T08:23
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -246,6 +246,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	- [ ] PR INT
 		- MiX.DeviceIntegration.Common
 		- MiX.ConfigInternal.Api.Client.2025.19.20250930.1.nupkg
+		- MiX.DeviceConfig.Api.Client
 > SO MANY ISSUES: USE ==INT2==
 > - Take ONLY the actual file changes
 > - THEN NUGETS
