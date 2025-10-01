@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-01T08:23
+updated: 2025-10-01T10:13
 ---
 
 # OPEN-505 Identify channels for blurring
@@ -243,7 +243,7 @@ DeviceConfigApi.DeviceConfigClient.LibraryPeripherals.UpdateLibraryCameraName
 	- [x] Update DEV Client ✅ 2025-09-02
 	- [x] [PR DEV](https://dev.azure.com/MiXTelematics/Common/_git/DynaMiX.Backend/pullrequest/130057) ✅ 2025-09-30
 	- [x] Update INT Client ✅ 2025-09-30
-	- [ ] PR INT
+	- [ ] [PR INT](https://dev.azure.com/MiXTelematics/Common/_git/DynaMiX.Backend/pullrequest/131623?_a=files)
 		- MiX.DeviceIntegration.Common
 		- MiX.ConfigInternal.Api.Client.2025.19.20250930.1.nupkg
 		- MiX.DeviceConfig.Api.Client
