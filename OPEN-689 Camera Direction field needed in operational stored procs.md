@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-02T10:54
+updated: 2025-10-02T11:08
 ---
 
 # OPEN-689 Camera Direction field needed in operational stored procs
@@ -58,9 +58,9 @@ Handled as part of OPEN-597
 	- No errors
 - [x] Making dependencies available & some other places > [library].[CopyCameraNamesAndChannels] ✅ 2025-10-02
 	- Made available both Peripheral and Can without problems.
-- [ ] Running the deployment tasks > DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql  
+- [x] Running the deployment tasks > DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql ✅ 2025-10-02
 	- Not really testable by a tester, could be done by a dev if needed
-	- 
+	- Deployments run daily? So I think this is OK 😄
   
 The best test would definitely be on INT, once OPEN-505 has been deployed there. On INT we can properly create databases, however, the above was a good general test on DEV.
 
