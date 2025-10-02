@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-02T10:30
+updated: 2025-10-02T10:54
 ---
 
 # OPEN-689 Camera Direction field needed in operational stored procs
@@ -56,8 +56,8 @@ Handled as part of OPEN-597
 	- No errors
 - [x] Create database (copying from another group) > [dynamix].[InitializeLibraryForNewBlankDatabase] ✅ 2025-10-02
 	- No errors
-- [ ] Making dependencies available & some other places > [library].[CopyCameraNamesAndChannels]  
-	- 
+- [x] Making dependencies available & some other places > [library].[CopyCameraNamesAndChannels] ✅ 2025-10-02
+	- Made available both Peripheral and Can without problems.
 - [ ] Running the deployment tasks > DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql  
 	- Not really testable by a tester, could be done by a dev if needed
 	- 
