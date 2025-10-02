@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-09-30T15:41
+updated: 2025-10-02T09:32
 ---
 
 # OPEN-689 Camera Direction field needed in operational stored procs
@@ -52,11 +52,15 @@ Handled as part of OPEN-597
 
 - [x] Don't break anything ✅ 2025-09-30
 	- It was deployed on DEV the 3rd of September
-- [ ]  Create database (not copying from another group) > [dynamix].[CopyLibraryForNewDatabase]  
+- [x] Create database (not copying from another group) > [dynamix].[CopyLibraryForNewDatabase] ✅ 2025-10-02
+	- No errors
 - [ ] Create database (copying from another group) > [dynamix].[InitializeLibraryForNewBlankDatabase]  
+	- 
 - [ ] Making dependencies available & some other places > [library].[CopyCameraNamesAndChannels]  
+	- 
 - [ ] Running the deployment tasks > DeviceConfiguration\Scripts\DeploymentScripts\MergeCameraData.sql  
 	- Not really testable by a tester, could be done by a dev if needed
+	- 
   
 The best test would definitely be on INT, once OPEN-505 has been deployed there. On INT we can properly create databases, however, the above was a good general test on DEV.
 
