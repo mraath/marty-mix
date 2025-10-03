@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-03T12:02
+updated: 2025-10-03T12:46
 ---
 
 # ETS-6021 CG Template change but Asset remains Ready to upload
@@ -87,3 +87,4 @@ NEW: Modal: https://integration.mixtelematics.com/#/config-admin/configuration-g
 
 ## Compare the two
 
+[[ETS-3021 Gemini Prompts]]
