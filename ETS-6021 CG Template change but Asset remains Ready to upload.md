@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-03T12:46
+updated: 2025-10-03T16:50
 ---
 
 # ETS-6021 CG Template change but Asset remains Ready to upload
@@ -88,3 +88,12 @@ NEW: Modal: https://integration.mixtelematics.com/#/config-admin/configuration-g
 ## Compare the two
 
 [[ETS-3021 Gemini Prompts]]
+
+## Jako
+
+https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/131791
+
+GetMobileUnitsForConfigurationGroup(...) is 'n lightweight call wat nie al die properties terug bring nie
+ 
+mu.Id is 0 op lyn 1284, mens moet AssetId gebruik
+ 
