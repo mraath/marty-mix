@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-03T11:44
+updated: 2025-10-03T11:46
 ---
 
 # ETS-6021 CG Template change but Asset remains Ready to upload
@@ -63,7 +63,9 @@ OLD: https://integration.mixtelematics.com/#/config-admin/configuration-groups/e
 				UpdateConfigurationGroup (MAN)
 				** DynaMiX.Backend\Logic\DynaMiX.Logic\ConfigAdmin\TemplateLevel\ConfigurationGroupManager.cs
 				ConfigurationStatus SET!!!!!!!!! <<<<<<<<<
-	
+
+> Edit configuration group|saveConfigurationGroup|updateConfigurationGroup
+
 NEW: Modal: https://integration.mixtelematics.com/#/config-admin/configuration-groups-multiselect
 	FR UI
 		HTML: saveConfigurationGroup
