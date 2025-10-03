@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-03T10:34
+updated: 2025-10-03T10:36
 ---
 
 # ETS-6021 CG Template change but Asset remains Ready to upload
@@ -52,8 +52,8 @@ YEs - I got it to happen on MR ORg Copy....
 
 OLD: https://integration.mixtelematics.com/#/config-admin/configuration-groups/edit?id=7796608306776466722
 	BE
-		MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\ConfigGroupsCreateTemplate.html: event="onSave"
-		TS: 
+		HTML: MiX.Fleet.UI\UI\Js\ConfigAdmin\Templates\ConfigGroupsCreateTemplate.html: event="onSave"
+		TS: MiX.Fleet.UI\UI\Js\ConfigAdmin\Controllers\ConfigGroupsEditController.ts: SaveEvent > this.onSaveClicked > this.save() > 
 	
 NEW: Modal: https://integration.mixtelematics.com/#/config-admin/configuration-groups-multiselect
 	FR UI
