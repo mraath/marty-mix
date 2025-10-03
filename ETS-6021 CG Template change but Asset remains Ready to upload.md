@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-03T11:07
+updated: 2025-10-03T11:10
 ---
 
 # ETS-6021 CG Template change but Asset remains Ready to upload
@@ -58,7 +58,7 @@ OLD: https://integration.mixtelematics.com/#/config-admin/configuration-groups/e
 		BE: GET_CONFIGURATION_GROUP > GetConfigurationGroup > man > 
 			DynaMiX.Backend\API\DynaMiX.API\NancyModules\ConfigAdmin\TemplateLevel\ConfigurationGroupCrudModule.cs
 			form.HyperMedia.Links.Add(ModuleRoutes.UPDATE_CONFIGURATION_GROUP.ToLinkCarrier("save"
-				UpdateConfigurationGroup
+				UpdateConfigurationGroup (MAN)
 				
 	
 NEW: Modal: https://integration.mixtelematics.com/#/config-admin/configuration-groups-multiselect
