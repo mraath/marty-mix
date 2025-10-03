@@ -83,4 +83,6 @@ NEW: Modal: https://integration.mixtelematics.com/#/config-admin/configuration-g
 		UpdateConfigurationGroup (route name)
 		Route > Controller > Man > !!!!
 		Config.Api\Config.Api.Logic\Managers\TemplateLevel\ConfigurationGroupManager.cs
-			
+
+
+## Compare the two
