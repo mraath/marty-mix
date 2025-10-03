@@ -74,3 +74,5 @@ NEW: Modal: https://integration.mixtelematics.com/#/config-admin/configuration-g
 	Client
 		ConfigInternalClient.InternalConfigurationGroupsRepository.UpdateConfigurationGroup
 		string url = $"{PostPutApiUrl}/configuration-groups/groupId/{groupId}/config-group-update?authToken={authToken}";
+	API
+		
