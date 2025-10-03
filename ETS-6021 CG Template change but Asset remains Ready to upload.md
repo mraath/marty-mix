@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-03T11:41
+updated: 2025-10-03T11:44
 ---
 
 # ETS-6021 CG Template change but Asset remains Ready to upload
@@ -71,4 +71,6 @@ NEW: Modal: https://integration.mixtelematics.com/#/config-admin/configuration-g
 			module.updateConfigurationGroup
 	FR API
 		UpdateConfigurationGroup
-		
+	Client
+		ConfigInternalClient.InternalConfigurationGroupsRepository.UpdateConfigurationGroup
+		string url = $"{PostPutApiUrl}/configuration-groups/groupId/{groupId}/config-group-update?authToken={authToken}";
