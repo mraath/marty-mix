@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-06T12:50
+updated: 2025-10-06T14:31
 ---
 
 # ETS-6168 Error message appearing when trying to edit asset on  Mobile Device Settings
@@ -77,3 +77,37 @@ at DynaMiX.Api.NancyModules.FleetAdmin.Assets.AssetCommissioningModule.GetAssetC
 at DynaMiX.Core.Http.Nancy.ModuleBase.c__DisplayClass46_0`1.RegisterRouteb__0(Object args) in D:\\b\\1\\_work\\499\\s\\Core\\DynaMiX.Core.Http\\Nancy\\ModuleBase.cs:line 499 at DynaMiX.Core.Http.Nancy.ModuleBase.c__DisplayClass27_1`1.HandleTypedb__1() in D:\b\1\_work\499\s\Core\DynaMiX.Core.Http\Nancy\ModuleBase.cs:line 288  
 at DynaMiX.Core.Http.Nancy.ModuleBase.ProcessTypedResponse[T](Func`1 method) in D:\\b\\1\\_work\\499\\s\\Core\\DynaMiX.Core.Http\\Nancy\\ModuleBase.cs:line 215 at DynaMiX.Core.Http.Nancy.ModuleBase.HandledTypedResponse[T](Func`1 method) in D:\b\1\_work\499\s\Core\DynaMiX.Core.Http\Nancy\ModuleBase.cs:line 149  
 ", "otherData":{"CorrelationId64":"1710761460204969984"}, "severity":"info", "team":"Common"}
+
+
+## Code
+
+IProperty gprsContextProperty = gprsDevice.Properties.FirstOrDefault(p => p.DefinitionPropertyId == ConfigConstants.Properties.GPRS_CONTEXT);
+GPRS_CONTEXT = 3931884001975002043L
+
+IPeripheralDevice speedInput = resolvedMobileDevice.AllPeripheralDevices.FirstOrDefault(x => x.DefinitionDeviceId == ConfigConstants.PeripheralDevices.SPEED_SENDER)
+SPEED_SENDER = 4772957056880862604L
+
+MobileUnitProperty speedCalibrationDateProperty = mobileUnit.MobileUnitProperties.FirstOrDefault(x => x.DefinitionDeviceId == ConfigConstants.PeripheralDevices.SPEED_SENDER && x.DefinitionPropertyId == ConfigConstants.Properties.CALIBRATION_DATE)
+SPEED_SENDER = 4772957056880862604L
+CALIBRATION_DATE = 1858632875970657593L
+
+MobileUnitProperty speedCalibrationPulsesProperty = mobileUnit.MobileUnitProperties.FirstOrDefault(x => x.DefinitionDeviceId == ConfigConstants.PeripheralDevices.SPEED_SENDER && x.DefinitionPropertyId == ConfigConstants.Properties.CALIBRATION_PULSES)
+SPEED_SENDER = 4772957056880862604L
+CALIBRATION_PULSES = -1839190682764262989L
+
+
+IPeripheralDevice rpmInput = resolvedMobileDevice.AllPeripheralDevices.FirstOrDefault(x => x.DefinitionDeviceId == ConfigConstants.PeripheralDevices.RPM_SIGNAL
+RPM_SIGNAL = -8257517697897011867L
+
+MobileUnitProperty rpmCalibrationDateProperty = mobileUnit.MobileUnitProperties.FirstOrDefault(x => x.DefinitionDeviceId == ConfigConstants.PeripheralDevices.RPM_SIGNAL && x.DefinitionPropertyId == ConfigConstants.Properties.CALIBRATION_DATE)
+RPM_SIGNAL = -8257517697897011867L
+CALIBRATION_DATE = 1858632875970657593L
+
+MobileUnitProperty rpmCalibrationPulsesProperty = mobileUnit.MobileUnitProperties.FirstOrDefault(x => x.DefinitionDeviceId == ConfigConstants.PeripheralDevices.RPM_SIGNAL && x.DefinitionPropertyId == ConfigConstants.Properties.CALIBRATION_PULSES
+RPM_SIGNAL = -8257517697897011867L
+CALIBRATION_PULSES = -1839190682764262989L
+
+
+
+
+
