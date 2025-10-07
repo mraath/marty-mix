@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-03T16:07
+updated: 2025-10-07T07:59
 ---
 
 # OE-513 Configuration Groups - Frangularisation and enhancements
@@ -373,15 +373,5 @@ We won’t manage the schedule from config groups but should be able to send the
 ## DONE
 
 
-## All SQL involved
-
-Config Groups Panel
-- (init) [template].[Template_GetConfigurationGroupsMultiselect]
-- (lazy) [template].[Template_GetConfigurationGroupsOtherColumns]
-
-Assets List Panel
-- (init unallocated) [mobileunit].[MobileUnit_GetUnallocatedAssets]
-- (init normal) [mobileunit].[MobileUnit_GetAllMobileUnitsForConfigurationGroups]
-- (lazy) [mobileunit].[MobileUnit_GetAllMobileUnitLinesForConfigurationGroups]
-- (lazy) [state].[MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups]
-
+## See all the sql involved
+- [[OE-513 All SQL involved]]
