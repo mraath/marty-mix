@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T07:49
+updated: 2025-10-08T07:50
 ---
 
 ## Introduction
@@ -10,7 +10,13 @@ I will explain the basics of doing this in this article.
 
 ## Example: persisting column width
 
+Column widths is not the most simple example, however, this is the last one I worked on and I should be able to remember what I did :-)
 
+This example can therefore be simplified to your needs, but here it goes.
+
+### Need
+
+When the user changes 
 
 If the User makes a changes to the widths of Panels, and navigates away from the page and then returns, the widths should be retained for each user.
 
