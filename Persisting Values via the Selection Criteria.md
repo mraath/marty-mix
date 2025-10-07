@@ -1,7 +1,11 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T07:29
+updated: 2025-10-08T07:47
 ---
+
+## Introduction
+
+
 
 If the User makes a changes to the widths of Panels, and navigates away from the page and then returns, the widths should be retained for each user.
 
