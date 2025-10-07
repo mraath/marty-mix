@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T07:50
+updated: 2025-10-08T07:51
 ---
 
 ## Introduction
@@ -16,7 +16,10 @@ This example can therefore be simplified to your needs, but here it goes.
 
 ### Need
 
-When the user changes 
+When the user changes column widths for the Config Groups Panel within the Configuration Groups (BETA) page.  This needs to be persisted between sessions and page changes.
+
+## Mechanism
+
 
 If the User makes a changes to the widths of Panels, and navigates away from the page and then returns, the widths should be retained for each user.
 
