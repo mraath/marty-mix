@@ -1,6 +1,6 @@
 ---
 created: 2025-10-07T07:59
-updated: 2025-10-07T08:32
+updated: 2025-10-07T10:15
 ---
 ## OE-513 All SQL involved
 
@@ -14,3 +14,7 @@ Assets List Panel
 - (lazy) [mobileunit].[MobileUnit_GetAllMobileUnitLinesForConfigurationGroups]
 - (lazy) [state].[MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups]
 	- CALLS: [state].[MobileUnit_GetMobileUnitMissingParameters]
+	- [state].[MobileUnit_GetMobileUnitBasicInfoForConfigGroups]
+	- [state].[MobileUnit_GetMobileUnitFirmwareInfo]
+	- [state].[MobileUnit_GetMobileUnitMessageAlerts]
+	- [state].[MobileUnit_GetMobileUnitLastMessageDate]
