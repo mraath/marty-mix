@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T07:53
+updated: 2025-10-08T07:54
 ---
 
 ## Introduction
@@ -25,11 +25,12 @@ The selection criteria will need a **key** to persist these values, it will also
 
 ### HTML
 
+![[Persisting Values via the Selection Criteria Column Resize Example.png]]
 
 ### TS file
 
 Whenever the width changes save that to Selectioncriteria by using the Settings you specified.
 
 
-![[Persisting Values via the Selection Criteria Column Resize Example.png]]
+
 
