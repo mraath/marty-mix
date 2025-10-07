@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T07:51
+updated: 2025-10-08T07:52
 ---
 
 ## Introduction
@@ -18,10 +18,13 @@ This example can therefore be simplified to your needs, but here it goes.
 
 When the user changes column widths for the Config Groups Panel within the Configuration Groups (BETA) page.  This needs to be persisted between sessions and page changes.
 
-## Mechanism
+### Mechanism
 
+We make use of the Selection Criteria. 
+The selection criteria will need a **key** to persist these values, it will also need a **class** which will specify eg. column names and widths.
 
-If the User makes a changes to the widths of Panels, and navigates away from the page and then returns, the widths should be retained for each user.
+### HTML
+
 
 You can look at how the column widths were persisted - however - there is a LOT happening there....
 This should be more straight forward
