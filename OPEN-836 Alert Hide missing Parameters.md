@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-07T09:30
+updated: 2025-10-07T09:37
 ---
 
 # OPEN-836 Alert Hide missing Parameters
@@ -46,6 +46,9 @@ The alert “Event not monitored – missing parameters” need to be disabled
 BOTH CG and Assets calls: [state].[MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups]
 	This in affect calls the Stored Proc, in which it calls [state].[MobileUnit_GetMobileUnitMissingParameters]
 	So, in this last mentioned stored proc we can just comment out the logic and return nothing.
+
+
+## Get some testing data
 
 ## Branch
 
