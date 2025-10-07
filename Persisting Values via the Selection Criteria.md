@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T07:52
+updated: 2025-10-08T07:53
 ---
 
 ## Introduction
@@ -26,15 +26,10 @@ The selection criteria will need a **key** to persist these values, it will also
 ### HTML
 
 
-You can look at how the column widths were persisted - however - there is a LOT happening there....
-This should be more straight forward
-I think you will need an eg. SplitterSettings
-And then whenever the width changes save that to Selectioncriteria by using SplitterSettings
+### TS file
 
-For now you can look at the columnResize
-You should be able to simplify this a lot for you need
-Also adapt to the splitter
-If I find a simpler eg. I will send it on to you 
+Whenever the width changes save that to Selectioncriteria by using the Settings you specified.
+
 
 ![[Persisting Values via the Selection Criteria Column Resize Example.png]]
 
