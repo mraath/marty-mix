@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T09:17
-updated: 2025-10-08T10:52
+updated: 2025-10-08T10:53
 ---
 ## Introduction
 
@@ -83,9 +83,9 @@ fwVersionsClosed() {
 }
 ```
 
-
-[textField]="'text'" 
-[valueField]="'value'" 
+Other settings for the drop down....
+[textField]="'text'"  > shows which part of ddFilterFirmwareVersion will be displayed (this can be translated)
+[valueField]="'value'" > shows the 
 [clearButton]="true" 
 [autoClose]="false" 
 [filterable]="true" 
