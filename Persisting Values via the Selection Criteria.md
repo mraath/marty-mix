@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T08:31
+updated: 2025-10-08T08:32
 ---
 
 ## Introduction
@@ -28,7 +28,7 @@ The selection criteria will need:
 
 ### HTML
 
-In the below H
+In the below HTML, the (columnResize) event will be used. This will call the ts file's method: columnResize
 
 ```html
 <!-- CONFIGURATION GROUPS GRID -->
