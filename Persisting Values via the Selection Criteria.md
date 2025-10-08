@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T07:54
+updated: 2025-10-08T08:02
 ---
 
 ## Introduction
@@ -29,7 +29,7 @@ The selection criteria will need a **key** to persist these values, it will also
 
 ### TS file
 
-Whenever the width changes save that to Selectioncriteria by using the Settings you specified.
+Whenever the width changes save that to Selection Criteria by using the Settings you specified.
 
 
 
