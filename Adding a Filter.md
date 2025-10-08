@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T09:17
-updated: 2025-10-08T10:54
+updated: 2025-10-08T10:55
 ---
 ## Introduction
 
@@ -84,12 +84,12 @@ fwVersionsClosed() {
 ```
 
 Other settings for the drop down....
+
 [textField]="'text'"  > shows which part of ddFilterFirmwareVersion will be displayed (this can be translated)
 [valueField]="'value'" > shows the value used
 [clearButton]="true" > should there be a clear button on the selection
 [autoClose]="false" > shouldn't autoclose (I think on selection)
 [filterable]="true" > allow the used to filter the dropdown values by what they type in
 [tagMapper]="tagMapper"  > not sure yet
-[placeholder]="'Filter by firmware version'|dmxTranslate" 
-
-class="filter">
+[placeholder]="'Filter by firmware version'|dmxTranslate" > A message to call the user to action
+class="filter"> the css class used
