@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T08:02
+updated: 2025-10-08T08:09
 ---
 
 ## Introduction
@@ -31,6 +31,21 @@ The selection criteria will need a **key** to persist these values, it will also
 
 Whenever the width changes save that to Selection Criteria by using the Settings you specified.
 
+In this instance there is a method on the Selection Criteria service. You will need to see if this is something you can re-use or (highly unlikely) you will need to write a new method.
+
+For persisting you will need: 
+- a method to **get** your values and 
+- a method to **update** the values
 
 
+#### Updating the vaues
+
+```ts
+columnResize(columnResizeEvent: ColumnResizeArgs[]) {
+	this.gridSelectionCriteriaService.changeColumnWidth(SelectionCriteriaKeys.configGroupsColumnSettings, this.configGroupsColumnSettings, columnResizeEvent);
+}
+```
+
+Above you can see the two 
+#### Getting the values
 
