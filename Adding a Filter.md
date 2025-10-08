@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T09:17
-updated: 2025-10-08T09:22
+updated: 2025-10-08T10:41
 ---
 ## Introduction
 
@@ -24,7 +24,30 @@ I will walk through a filter example here.... I will make use of the Firmware Ve
 
 ## TS
 
-[data]="ddFilterFirmwareVersion" 
+### Fields and methods
+
+ddFilterFirmwareVersion > Stores the drop down list (data)
+
+```ts
+ddFilterFirmwareVersion: Array<{ text: string; value: string }> = [];
+
+//Whenever the data changes (comes in from the backend) I update the dropdown (if needed)... We call this method
+UpdateFilters
+```
+
+onFWVersionsChange($event) > Called when filter Changes
+
+```ts
+//This method will set the Filters
+//It will also then filter the dropdown based on what the user entered
+```
+
+on clearPage > when clearing all elements on the page
+
+```ts
+this.ddFilterFirmwareVersion.clear();
+```
+
 [(ngModel)]="selectedFWVersions" 
 (closed)="fwVersionsClosed()" 
 (valueChange)="fwVersionsChanged()" 
@@ -35,5 +58,5 @@ I will walk through a filter example here.... I will make use of the Firmware Ve
 [filterable]="true" 
 [tagMapper]="tagMapper" 
 [placeholder]="'Filter by firmware version'|dmxTranslate" 
-(filterChange)="onFWVersionsChange($event)" 
+
 class="filter">
