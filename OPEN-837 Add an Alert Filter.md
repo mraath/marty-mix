@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-09T07:11
+updated: 2025-10-09T07:12
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -43,7 +43,7 @@ filter.alerts
 
 ## Language these
 
-- [ ] 
+- [ ] Filter by alert
 
 
 ## Branch
