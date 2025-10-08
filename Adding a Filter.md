@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T09:17
-updated: 2025-10-08T10:51
+updated: 2025-10-08T10:52
 ---
 ## Introduction
 
@@ -67,7 +67,6 @@ if (this.selectedFWVersions.length > 0) {
 }
 ```
 
-
 on clearPage > when clearing all elements on the page
 
 ```ts
@@ -75,8 +74,15 @@ this.ddFilterFirmwareVersion.clear();
 this.selectedFWVersions.clear();
 ```
 
+fwVersionsClosed > when the dropdown closes (closed)
 
-(closed)="fwVersionsClosed()" 
+```ts
+fwVersionsClosed() {
+	this.FilterAssets();
+	this.loadAssetsGridSortItems();
+}
+```
+
 
 [textField]="'text'" 
 [valueField]="'value'" 
