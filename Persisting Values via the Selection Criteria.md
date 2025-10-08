@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T08:23
+updated: 2025-10-08T08:26
 ---
 
 ## Introduction
@@ -101,7 +101,10 @@ Data is read from the Selection Criteria, making use of the **key**
 
 ```ts
 // Snippets
+// ngOnInit...
 this.configGroupsColumnSettings = this.gridSelectionCriteriaService.getDefaultColumnSettings(SelectionCriteriaKeys.configGroupsColumnSettings);
+
+// 
 ```
 
 ### Other selection criteria method
