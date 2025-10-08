@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T08:33
+updated: 2025-10-08T08:34
 ---
 
 ## Introduction
@@ -119,7 +119,9 @@ private fetchGroupsSelectionCriteriaGrid() {
         if (gridColumnData && gridColumnData.columnSettings && gridColumnData.columnSettings.length > 0)
           this.configGroupsColumnSettings = gridColumnData.columnSettings;
 
-		// Im just leaving the below in for 
+
+
+		// Im just leaving the below in for context, but the above is all you need to read in the values...
         if (gridColumnData && gridColumnData.allowedHiddenColumns && gridColumnData.allowedHiddenColumns.length > 0)
           this.configGroupsHiddenColumnSettings = gridColumnData.allowedHiddenColumns;
 
@@ -130,7 +132,8 @@ private fetchGroupsSelectionCriteriaGrid() {
   }
 ```
 
-### Other selection criteria method
+
+## Other selection criteria method
 
 Other methods might help you figure out your needs even more.
 Here is one relate to the above, to persist column ordering...
