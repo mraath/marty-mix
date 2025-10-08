@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T09:17
-updated: 2025-10-08T10:41
+updated: 2025-10-08T10:44
 ---
 ## Introduction
 
@@ -48,7 +48,16 @@ on clearPage > when clearing all elements on the page
 this.ddFilterFirmwareVersion.clear();
 ```
 
-[(ngModel)]="selectedFWVersions" 
+selectedFWVersions > Keeps the currently selected fw version (ngModel)
+
+```ts
+selectedFWVersions: any[] = [];
+
+```
+
+fwVersionsChanged
+
+
 (closed)="fwVersionsClosed()" 
 (valueChange)="fwVersionsChanged()" 
 [textField]="'text'" 
