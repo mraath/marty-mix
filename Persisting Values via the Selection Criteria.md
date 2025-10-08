@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T08:32
+updated: 2025-10-08T08:33
 ---
 
 ## Introduction
@@ -119,6 +119,7 @@ private fetchGroupsSelectionCriteriaGrid() {
         if (gridColumnData && gridColumnData.columnSettings && gridColumnData.columnSettings.length > 0)
           this.configGroupsColumnSettings = gridColumnData.columnSettings;
 
+		// Im just leaving the below in for 
         if (gridColumnData && gridColumnData.allowedHiddenColumns && gridColumnData.allowedHiddenColumns.length > 0)
           this.configGroupsHiddenColumnSettings = gridColumnData.allowedHiddenColumns;
 
