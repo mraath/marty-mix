@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T08:28
+updated: 2025-10-08T08:31
 ---
 
 ## Introduction
@@ -28,8 +28,13 @@ The selection criteria will need:
 
 ### HTML
 
-![[Persisting Values via the Selection Criteria Column Resize Example.png]]
+In the below H
 
+```html
+<!-- CONFIGURATION GROUPS GRID -->
+    <div class="row flex-grow-1 position-relative mr-overflow">
+      <kendo-grid [data]="filteredConfigGroups" [skip]="skip"  [selectable]="{enabled: true, checkboxOnly: true}" [resizable]="true" [reorderable]="true" [sortable]="{mode: 'single',initialDirection: 'asc',allowUnsort: false}" [sort]="sortConfigGroups" (sortChange)="sortConfigGroupsChange($event)" class="grid-full-height" (selectionChange)="onConfigGroupSelectionChange($event)" (columnReorder)="columnReordered($event)" kendoGridSelectBy="configurationGroupId" [(selectedKeys)]="configGroupSelectedKeys" (columnResize)="columnResize($event)">
+```
 ### TS file
 
 Whenever the width changes save that to Selection Criteria by using the Settings you specified.
@@ -127,7 +132,7 @@ private fetchGroupsSelectionCriteriaGrid() {
 ### Other selection criteria method
 
 Other methods might help you figure out your needs even more.
-Here are a few...
+Here is one relate to the above, to persist column ordering...
 
 - gridSelectionCriteriaService.changeColumnOrdering
-- 
+
