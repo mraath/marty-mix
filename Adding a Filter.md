@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T09:17
-updated: 2025-10-08T10:48
+updated: 2025-10-08T10:50
 ---
 ## Introduction
 
@@ -40,12 +40,15 @@ onFWVersionsChange($event) > Called when filter Changes
 ```ts
 //This method will set the Filters
 //It will also then filter the dropdown based on what the user entered
+
+//clearPage
+this.ddFilterFirmwareVersion.clear();
 ```
 
 on clearPage > when clearing all elements on the page
 
 ```ts
-this.ddFilterFirmwareVersion.clear();
+
 ```
 
 selectedFWVersions > Keeps the currently selected fw version (ngModel)
@@ -66,7 +69,13 @@ fwVersionsChanged() {
 }
 
 //Inside FilterAssets
+if (this.selectedFWVersions.length > 0) {
+  var selected = this.selectedFWVersions.select(x => x.value); //Strip out value only
+  data = data.filter(x => selected.includes(x.fwVersion));
+}
 
+//ClearPage
+this.selectedFWVersions.clear();
 ```
 
 (closed)="fwVersionsClosed()" 
