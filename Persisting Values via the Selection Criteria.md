@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T08:26
+updated: 2025-10-08T08:28
 ---
 
 ## Introduction
@@ -104,7 +104,24 @@ Data is read from the Selection Criteria, making use of the **key**
 // ngOnInit...
 this.configGroupsColumnSettings = this.gridSelectionCriteriaService.getDefaultColumnSettings(SelectionCriteriaKeys.configGroupsColumnSettings);
 
-// 
+// Getting all the grid + column values
+private fetchGroupsSelectionCriteriaGrid() {
+    //console.log("Fetching config groups selection criteria");
+    this.loadSpinnerConfigGroups = true;
+    this.gridSelectionCriteriaService.getColumnSettings(SelectionCriteriaKeys.configGroupsColumnSettings, SelectionCriteriaKeys.configGroupsSelectedColumns)
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((gridColumnData: GridColumnDataModel) => {
+        if (gridColumnData && gridColumnData.columnSettings && gridColumnData.columnSettings.length > 0)
+          this.configGroupsColumnSettings = gridColumnData.columnSettings;
+
+        if (gridColumnData && gridColumnData.allowedHiddenColumns && gridColumnData.allowedHiddenColumns.length > 0)
+          this.configGroupsHiddenColumnSettings = gridColumnData.allowedHiddenColumns;
+
+        this.configGroupsHiddenColumns = gridColumnData.hiddenColumns;
+        this.setupConfigGroupsGrid();
+
+      }, () => this.setupConfigGroupsGrid());
+  }
 ```
 
 ### Other selection criteria method
