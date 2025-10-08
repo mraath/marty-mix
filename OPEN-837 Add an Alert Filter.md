@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-08T15:10
+updated: 2025-10-08T16:21
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -45,5 +45,5 @@ filter.alerts
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-837 Add an Alert Filter.INT
+> Branch: Config/MR/Feature/OPEN-837AddAnAlertFilter.INT
 
