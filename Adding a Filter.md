@@ -1,6 +1,6 @@
 ---
 created: 2025-10-08T09:17
-updated: 2025-10-08T10:44
+updated: 2025-10-08T10:48
 ---
 ## Introduction
 
@@ -55,11 +55,22 @@ selectedFWVersions: any[] = [];
 
 ```
 
-fwVersionsChanged
+fwVersionsChanged > when the value changes (valueChange)
 
+```ts
+fwVersionsChanged() {
+    if (this.selectedFWVersions.length === 0) {
+      this.FilterAssets();
+      this.loadAssetsGridSortItems();
+    }
+}
+
+//Inside FilterAssets
+
+```
 
 (closed)="fwVersionsClosed()" 
-(valueChange)="fwVersionsChanged()" 
+
 [textField]="'text'" 
 [valueField]="'value'" 
 [clearButton]="true" 
