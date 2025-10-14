@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-09T09:20
+updated: 2025-10-14T11:02
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -60,3 +60,7 @@ filter.alerts
 
 > Branch: Config/MR/Feature/OPEN-837AddAnAlertFilter.INT
 
+## PRs
+
+- [x] [PR to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/132292) ✅ 2025-10-14
+- [ ] PR to INT
