@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-15T09:15
+updated: 2025-10-15T10:09
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -68,6 +68,10 @@ filter.alerts
 ## Notes
 
 ```css
+.col-auto {
+	padding-left: 0px;
+}
+
 .paged-grid .columns .column.actions {
     position: absolute;
     float: right;
