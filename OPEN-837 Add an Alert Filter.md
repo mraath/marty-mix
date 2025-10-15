@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-15T10:09
+updated: 2025-10-15T10:11
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -70,6 +70,10 @@ filter.alerts
 ```css
 .col-auto {
 	padding-left: 0px;
+}
+
+kendo-grid .k-alt .k-grid-content-sticky, kendo-grid .k-grid-row-sticky.k-alt td {
+    background-color: #fff !important;
 }
 
 .paged-grid .columns .column.actions {
