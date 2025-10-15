@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-07T10:39
+updated: 2025-10-15T15:16
 ---
 
 # OPEN-836 Alert Hide missing Parameters
@@ -36,8 +36,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 
 The alert “Event not monitored – missing parameters” need to be disabled
-- [ ] CG panel
-- [ ] Assets Panel
+- [x] CG panel ✅ 2025-10-15
+- [x] Assets Panel ✅ 2025-10-15
 
 ## Code
 
