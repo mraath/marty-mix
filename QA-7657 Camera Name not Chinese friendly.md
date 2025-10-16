@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T09:51
+updated: 2025-10-16T09:54
 ---
 
 # QA-7657 Camera Name not Chinese friendly
@@ -51,4 +51,4 @@ Inputs:
 
 Result:
 
-![[QA-7657 Camera Name not Chinese friendly.png]]
+![[QA-7657 Camera Name not Chinese friendly.png|500]]
