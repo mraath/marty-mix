@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T09:32
+updated: 2025-10-16T09:36
 ---
 
 # QA-7654 Edit Camera Name Case
@@ -33,6 +33,11 @@ path includes ${dv.current().file.path}
 dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
+
+
+> Config/MR/Bug/QA-7654EditCameraNameCase.25.19
+
+
 ## Shorter Description
 
 **Steps used to replicate the issue:**
@@ -44,7 +49,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 5. Inspect the modal descriptions
 
 **BUG**: The modal description heading as well as the ‘**Edit camera name**’ free text heading is not sentenced capitalized as seen on the screen shot below…
-
+Edit camera name
 
 
 While looking into QA-7654, I saw there, should they also become sentence case:
@@ -52,6 +57,7 @@ Edited Camera Name
 Failed to edit Camera Name
 (there are a few more)
 - [ ] this.alert.show
+
 
 
 ## Languaging
