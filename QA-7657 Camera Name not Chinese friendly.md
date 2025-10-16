@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T10:24
+updated: 2025-10-16T11:24
 ---
 
 # QA-7657 Camera Name not Chinese friendly
@@ -67,6 +67,9 @@ Order by DateUpdated DESC
 ## BE
 
 ✅ Inspecting the payload, it is there. I will now check the Client and API 
+
+http://localhost/mixFleet.UI/#/config-admin/peripherals/edit?id=-565349616809011552
+orgId=-7094567047859310012
 
 ## API
 
