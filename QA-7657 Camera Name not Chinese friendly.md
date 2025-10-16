@@ -3,13 +3,13 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T09:54
+updated: 2025-10-16T10:05
 ---
 
 # QA-7657 Camera Name not Chinese friendly
 
 Date: 2025-10-16 Time: 09:49
-Parent:: ==xxxx==
+Parent:: [[OPEN-505 Identify channels for blurring]]
 Friend:: [[2025-10-16]]
 JIRA:QA-7657 Camera Name not Chinese friendly
 [JIRA](https://powerfleet.atlassian.net/browse/QA-7657)
