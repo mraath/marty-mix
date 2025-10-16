@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T09:00
+updated: 2025-10-16T09:32
 ---
 
 # QA-7654 Edit Camera Name Case
@@ -51,3 +51,9 @@ While looking into QA-7654, I saw there, should they also become sentence case:
 Edited Camera Name
 Failed to edit Camera Name
 (there are a few more)
+- [ ] this.alert.show
+
+
+## Languaging
+
+- [ ] Done
