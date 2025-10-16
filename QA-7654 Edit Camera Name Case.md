@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-15T16:23
+updated: 2025-10-16T09:00
 ---
 
 # QA-7654 Edit Camera Name Case
@@ -43,4 +43,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 4. Click on the 3 dots Actions button next to any Camera name and select the Edit option…An Edit camera name modal displays on-screen
 5. Inspect the modal descriptions
 
-**BUG**: The modal description heading as well as the ‘Edit camera name’ free text heading is not sentenced capitalized as seen on the screen shot below…
+**BUG**: The modal description heading as well as the ‘**Edit camera name**’ free text heading is not sentenced capitalized as seen on the screen shot below…
+
+
+
+While looking into QA-7654, I saw there, should they also become sentence case:
+Edited Camera Name
+Failed to edit Camera Name
+(there are a few more)
