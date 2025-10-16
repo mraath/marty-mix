@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T10:05
+updated: 2025-10-16T10:20
 ---
 
 # QA-7657 Camera Name not Chinese friendly
@@ -52,3 +52,21 @@ Inputs:
 Result:
 
 ![[QA-7657 Camera Name not Chinese friendly.png|500]]
+
+## Investigation
+
+```sql
+USE DeviceConfiguration;
+
+SELECT TOP 10 * FROM [library].[CameraNames]
+Order by DateUpdated DESC
+```
+
+The above returns ???, this points to the characters being displaced somewhere - I will work it back.... API.... etc...
+
+## API
+
+
+
+
+
