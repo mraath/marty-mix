@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T09:36
+updated: 2025-10-16T09:47
 ---
 
 # QA-7654 Edit Camera Name Case
@@ -62,4 +62,4 @@ Failed to edit Camera Name
 
 ## Languaging
 
-- [ ] Done
+- [x] Done ✅ 2025-10-16
