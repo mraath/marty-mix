@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T09:50
+updated: 2025-10-16T09:51
 ---
 
 # QA-7657 Camera Name not Chinese friendly
@@ -34,5 +34,21 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
 ## Shorter Description
+
+
+While performing some additional text support testing for Special characters, Case, Numbers, Special letters etc I discovered that Arabic and Mandarin are not supported.
+
+The following ORG and inputs were used to test:
+
+orgId=-7845718844570610389
+/peripherals/edit?id=-565349616809011552
+
+Inputs:
+
+预告片 垃圾车
+
+على الطريق
+
+Result:
 
 ![[QA-7657 Camera Name not Chinese friendly.png]]
