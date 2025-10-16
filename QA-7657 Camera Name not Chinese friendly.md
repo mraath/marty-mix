@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T11:24
+updated: 2025-10-16T11:43
 ---
 
 # QA-7657 Camera Name not Chinese friendly
@@ -43,6 +43,11 @@ The following ORG and inputs were used to test:
 orgId=-7845718844570610389
 /peripherals/edit?id=-565349616809011552
 
+https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-7094567047859310012/cameras/-565349616809011552
+
+organisations: -7094567047859310012
+cameras: -565349616809011552
+
 Inputs:
 
 预告片 垃圾车
@@ -73,7 +78,7 @@ orgId=-7094567047859310012
 
 ## API
 
-
+![[QA-7657 Camera Name not Chinese friendly Gets into API correctly.png]]
 
 
 
