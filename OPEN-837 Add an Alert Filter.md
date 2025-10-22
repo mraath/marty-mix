@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-22T11:46
+updated: 2025-10-22T11:47
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -93,6 +93,12 @@ kendo-grid .k-alt .k-grid-content-sticky, kendo-grid .k-grid-row-sticky.k-alt td
 
 ## Further chat with Shawn
 
+### Filter text too long
+
+
+
+### Sticky Column issues
+
 Hey, so I'm looking at the **sticky columns** now and I remember why we didn't try integrate it at some point.
  
 I ran into this issue when we designed Unity MX... the sticky columns use a z-index and overflow. Child elements inherit that z-index and you can't overwrite it. So because the actions popup sits within the grid cell itself, you can't set the z-index higher and you end up with this:
@@ -121,8 +127,4 @@ Obviously extra work had to be done on the positioning of the **popup** on MX wh
 So at this stage short of changing the actions popup, you won't be able to properly style the sticky column. 
  
 I mean it's your call, if you feel like trying to change how the actions popup is anchored from outside the grid you will be able to then properly style the sticky column. I don't know how much effort it will be.
- 
-Yeah, OK, I also saw that... thanks -
-Let me have a look what I can do 
-Thanks a lot for all the effort
  
