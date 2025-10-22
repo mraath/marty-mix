@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-22T11:48
+updated: 2025-10-22T11:49
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -103,6 +103,12 @@ Thanks man - herewith the screenshot.
 ## Further chat with Shawn
 
 ### Filter text too long
+
+To solve the issue with the filters, you will need to use a summary tag on the MultiSelect. The documentation is below but it's pretty easy to implement. I'd just make it summarise from the 1st selection, i.e. 1 Selected, etc. Here's an example of it being used in the platform:
+
+![[OPEN-837 Add an Alert Filter-7.png|400]]
+
+https://www.telerik.com/kendo-angular-ui/components/dropdowns/multiselect/summary-tag-mode
 
 
 
