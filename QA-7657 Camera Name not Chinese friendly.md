@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T11:43
+updated: 2025-10-22T07:56
 ---
 
 # QA-7657 Camera Name not Chinese friendly
@@ -32,6 +32,8 @@ path includes ${dv.current().file.path}
 
 dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
+
+> Config/MR/Bug/QA-7657CameraNameNotChineseFriendly.25.19
 
 ## Shorter Description
 
@@ -76,9 +78,20 @@ Order by DateUpdated DESC
 http://localhost/mixFleet.UI/#/config-admin/peripherals/edit?id=-565349616809011552
 orgId=-7094567047859310012
 
+DEV: https://config.dev.mixtelematics.com/#/config-admin/peripherals/edit?id=-565349616809011552
+
+
 ## API
 
 ![[QA-7657 Camera Name not Chinese friendly Gets into API correctly.png]]
 
 
+## INT
+
+![[QA-7657 Camera Name not Chinese friendly int works.png]]
+
+## PRS
+
+- [x] [TO INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/132433) ✅ 2025-10-17
+- [ ] [TO QA (20.19)](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/132738)
 

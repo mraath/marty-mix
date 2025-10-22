@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-16T09:47
+updated: 2025-10-17T13:38
 ---
 
 # QA-7654 Edit Camera Name Case
@@ -56,10 +56,26 @@ While looking into QA-7654, I saw there, should they also become sentence case:
 Edited Camera Name
 Failed to edit Camera Name
 (there are a few more)
-- [ ] this.alert.show
+- [x] this.alert.show ✅ 2025-10-17
 
 
 
 ## Languaging
 
 - [x] Done ✅ 2025-10-16
+
+## PR
+
+- [x] [TO INT](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/132428) ✅ 2025-10-17
+- [ ] TO QA
+
+## Additional
+
+Added camera name
+Failed to add camera name
+Edited camera name
+Failed to edit camera name
+Deleted camera name
+
+https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/132523
+- [x] Languaged ✅ 2025-10-17

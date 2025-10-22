@@ -1,12 +1,14 @@
 ---
 created: 2025-10-08T07:28
-updated: 2025-10-08T08:34
+updated: 2025-10-21T15:58
 ---
 
 ## Introduction
 
 We sometimes need a method to persist user selections between sessions. The mechanism we use is the **selection criteria**. Examples would be persisting selected columns, column widths, etc. 
 I will explain the basics of doing this in this article.
+
+> Here is a QUICK simple example: [[Selection Criteria Example]]
 
 ## Example: persisting column width
 
