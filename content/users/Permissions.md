@@ -1,6 +1,6 @@
 ---
 created: 2025-10-21T16:37
-updated: 2025-10-22T16:44
+updated: 2025-10-22T16:50
 ---
 ## Introduction
 
@@ -81,7 +81,6 @@ If you search for this long within the XML file mentioned above, you will see al
 
 Long to search for: **1700000013**
 
-> It does feel like I might miss something. Maybe not, hopefully not, but I might miss something. If I think of that, I will let you know, but please feel free to ask me any questions you might have.
 
 ## Which ID to use
 
@@ -113,6 +112,14 @@ Herewith the example as per above:
 <permission id="1700000013" name="Access Support Tools Error Logs" description="" />
 ```
 
+## Required By
+
+Sometimes we give permission to eg. View error logs, however, within the error log it might call assets in which case the user needs access to Access Assets
+This is where **requiredby** comes in which is visible within the sql above.
+This logic sometimes feels the wrong way around, so when it is late, make sure you focus when doing this :-D
+
 ## Testing
 
 There is a lot that will go into testing this the first time you try it. Maybe the quickest would be to ask one of the testers like Donny or Amy. Please shout if you need any help.
+
+> It does feel like I might miss something. Maybe not, hopefully not, but I might miss something. If I think of that, I will let you know, but please feel free to ask me any questions you might have.
