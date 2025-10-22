@@ -1,6 +1,6 @@
 ---
 created: 2025-10-21T16:37
-updated: 2025-10-22T14:18
+updated: 2025-10-22T14:22
 ---
 ## Introduction
 
@@ -88,6 +88,14 @@ Long to search for: **1700000013**
 In the above eg. they used 1700000013
 Usually they are grouped together and eg. Read, Write, etc would just have some difference in the back.
 From this eg. I think a save id to use would be: xxxxxxxxxxxxxxx
+
+### Reasoning
+
+You will notice that for this example, they have grouped all the Support Tools together....
+C:\Projects\DynaMiX.Backend\Common\DynaMiX.Common\SupportTools\Permissions.cs
+
+The base one (found at the top) is 1700000000
+From there they just counted down... the last on
 ## Testing
 
-There is a lot that will go into testing this the first time you try it. Maybe the quickest would be to ask one of the testers like Donny or Amy. Please shout if you need any help.
+There is a lot that will go into testing this the first time you try it. Maybe the quickest would be to ask one of the testers like Donny or Amy. Please shout if you nee
