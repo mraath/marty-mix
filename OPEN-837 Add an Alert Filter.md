@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-22T11:44
+updated: 2025-10-22T11:45
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -97,12 +97,12 @@ Hey, so I'm looking at the **sticky columns** now and I remember why we didn't t
  
 I ran into this issue when we designed Unity MX... the sticky columns use a z-index and overflow. Child elements inherit that z-index and you can't overwrite it. So because the actions popup sits within the grid cell itself, you can't set the z-index higher and you end up with this:
 
-![[OPEN-837 Add an Alert Filter.png]]
+![[OPEN-837 Add an Alert Filter.png|300]]
  
  
 With Unity MX, we changed that so that the actions popup sits outside the grid component.
 
-![[OPEN-837 Add an Alert Filter-4.png]]
+![[OPEN-837 Add an Alert Filter-4.png|300]]
 
  
 MX
