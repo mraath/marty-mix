@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-22T11:45
+updated: 2025-10-22T11:46
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -107,17 +107,16 @@ With Unity MX, we changed that so that the actions popup sits outside the grid c
  
 MX
 
-![[Pasted image 20251022114136.png]]
-![[OPEN-837 Add an Alert Filter-3.png]]
+![[OPEN-837 Add an Alert Filter-3.png|900]]
 
 
  
 MFM
 
-![[OPEN-837 Add an Alert Filter-5.png]]
+![[OPEN-837 Add an Alert Filter-5.png|900]]
 
  
-Obviously extra work had to be done on the positioning of the popup on MX when it's outside the grid.  
+Obviously extra work had to be done on the positioning of the **popup** on MX when it's outside the grid.  
  
 So at this stage short of changing the actions popup, you won't be able to properly style the sticky column. 
  
