@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-22T11:41
+updated: 2025-10-22T11:43
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -108,6 +108,7 @@ With Unity MX, we changed that so that the actions popup sits outside the grid c
 MX
 
 ![[Pasted image 20251022114136.png]]
+![[OPEN-837 Add an Alert Filter-3.png]]
 
 
  
