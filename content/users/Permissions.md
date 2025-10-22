@@ -1,6 +1,6 @@
 ---
 created: 2025-10-21T16:37
-updated: 2025-10-21T16:57
+updated: 2025-10-22T14:18
 ---
 ## Introduction
 
@@ -83,6 +83,11 @@ Long to search for: **1700000013**
 
 > It does feel like I might miss something. Maybe not, hopefully not, but I might miss something. If I think of that, I will let you know, but please feel free to ask me any questions you might have.
 
+## Which ID to use
+
+In the above eg. they used 1700000013
+Usually they are grouped together and eg. Read, Write, etc would just have some difference in the back.
+From this eg. I think a save id to use would be: xxxxxxxxxxxxxxx
 ## Testing
 
 There is a lot that will go into testing this the first time you try it. Maybe the quickest would be to ask one of the testers like Donny or Amy. Please shout if you need any help.
