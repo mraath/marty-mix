@@ -1,6 +1,6 @@
 ---
 created: 2025-10-21T16:37
-updated: 2025-10-22T14:25
+updated: 2025-10-22T16:44
 ---
 ## Introduction
 
@@ -99,6 +99,19 @@ From there they just counted down... the last one I can see for this group (Supp
 
 So I would pick: 1700000023
 And if I search for it in the mentioned XML, it isn't yet defined, which is good
+
+## LoadPermissions
+
+We also need to add it into:
+C:\Projects\Database\DynaMiX\Scripts\Post-Deployment\LoadPermissions.sql
+
+In this instance we shouldn't need the "requiredby"
+
+Herewith the example as per above:
+
+```sql
+<permission id="1700000013" name="Access Support Tools Error Logs" description="" />
+```
 
 ## Testing
 
