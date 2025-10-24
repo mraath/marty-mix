@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-24T13:13
+updated: 2025-10-24T15:28
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -54,7 +54,7 @@ filter.alerts
 
 ## CSS
 
-- [ ] Styling to fit dropdown and selected text better
+- [NA] Styling to fit dropdown and selected text better
 
 ## Branch
 
