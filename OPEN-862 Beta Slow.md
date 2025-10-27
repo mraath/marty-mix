@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T06:51
+updated: 2025-10-28T07:17
 ---
 
 # OPEN-862 Beta Slow
@@ -34,4 +34,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
 ## Shorter Description
+
+There are noticeable loading delays on the Config Groups Page (_Beta_). The service that retrieves the CAN scripts from each vehicle in the chosen organisation might be the main source of the bottleneck. Before implementing further optimizations or architectural changes, it is essential to confirm the root cause of the slowness.
+
+This Spike aims to:
+- Profile and analyze the page load process to identify where the most time is spent.   
+- Determine if the **CAN Scripts** fetching is the main contributor to the slow load times, or if other factors are involved.
+- Document findings
 
