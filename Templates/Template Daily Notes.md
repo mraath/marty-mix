@@ -1,6 +1,6 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-09-15T16:28
+updated: 2025-10-28T07:08
 ---
 {{date}} {{time}}
 Parent:: [[Daily]] 
@@ -10,6 +10,10 @@ Parent:: [[Daily]]
 
 >[!Important] Note your time spend on the JIRA tickets
 > [Unallocated times](https://powerfleet.atlassian.net/browse/PFI-887)
+
+## Outstanding this month
+
+![[Template Todo Month]]
 
 ## Worked on
 

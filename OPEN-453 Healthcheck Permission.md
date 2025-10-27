@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-21T16:37
+updated: 2025-10-28T07:09
 ---
 
 # OPEN-453 Healthcheck Permission
@@ -45,20 +45,6 @@ ACCESS_SUPPORT_TOOLS_ERROR_LOGS
 
 
 [[Permissions]]
-
-## SP 2
-
-### FE
-- [ ] Task 1
-      PR: xxxxxxxxxx
-
-### BE
-- [ ] Task 1
-      PR: xxxxxxxxxx
-
-### DB
-- [ ] Task 1
-      PR: xxxxxxxxxx
 
 ## Branch
 
