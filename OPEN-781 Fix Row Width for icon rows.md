@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-27T10:06
+updated: 2025-10-27T12:47
 ---
 
 # OPEN-781 Fix Row Width for icon rows
@@ -51,4 +51,11 @@ element.style {
     padding-bottom: 0px !important;
 }
 ```
+
+## Branch
+
+Config/MR/OPEN-781_FixRowWidthForIconRows.INT
+
+- [x] [PR to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/133022) ✅ 2025-10-27
+- [ ] PR to INT
 
