@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-17T13:38
+updated: 2025-10-28T07:12
 ---
 
 # QA-7654 Edit Camera Name Case
@@ -67,7 +67,7 @@ Failed to edit Camera Name
 ## PR
 
 - [x] [TO INT](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/132428) ✅ 2025-10-17
-- [ ] TO QA
+- [x] TO QA ✅ 2025-10-28
 
 ## Additional
 

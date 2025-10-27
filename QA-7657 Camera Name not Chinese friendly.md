@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-22T07:56
+updated: 2025-10-28T07:13
 ---
 
 # QA-7657 Camera Name not Chinese friendly
@@ -93,5 +93,5 @@ DEV: https://config.dev.mixtelematics.com/#/config-admin/peripherals/edit?id=-56
 ## PRS
 
 - [x] [TO INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/132433) ✅ 2025-10-17
-- [ ] [TO QA (20.19)](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/132738)
+- [x] [TO QA (20.19)](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/132738) ✅ 2025-10-28
 
