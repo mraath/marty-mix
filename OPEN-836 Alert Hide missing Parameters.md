@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-17T11:26
+updated: 2025-10-28T07:11
 ---
 
 # OPEN-836 Alert Hide missing Parameters
@@ -57,4 +57,4 @@ MobileUnit_GetMobileUnitMissingParameters
 > Branch: Config/MR/Feature/OPEN-836AlertHideMissingParameters.INT
 
 - PR DEV
-- [ ] [PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/DynaMiX.DeviceConfig/pullrequest/131955)
+- [x] [PR INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/DynaMiX.DeviceConfig/pullrequest/131955) ✅ 2025-10-28
