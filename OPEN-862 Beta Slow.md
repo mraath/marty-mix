@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T07:32
+updated: 2025-10-28T13:28
 ---
 
 # OPEN-862 Beta Slow
@@ -42,4 +42,27 @@ This Spike aims to:
 - Determine if the **CAN Scripts** fetching is the main contributor to the slow load times, or if other factors are involved.
 - Document findings
 
+## Investigation
+
 [[OPEN-862 Beta Slow AI]]
+
+## Code
+
+| Call                                                          | Notes |
+| ------------------------------------------------------------- | ----- |
+| module.getHypermedia                                          |       |
+| module.getUxDeviceCapabilities                                |       |
+| module.getQueryOptionsAsync                                   |       |
+| module.getConfigurationGroupsMultiselect                      |       |
+| module.getConfigurationGroupsOtherColumns                     |       |
+| module.getConfigurationGroupsAlerts                           |       |
+| module.getConfigChangedFlagForMobileUnits                     |       |
+| module.getConfigurationGroupsMultiselectAssetsList            |       |
+| module.getConfigurationGroupsMultiselectAssetLinesList        |       |
+| module.getConfigurationGroupsMultiselectAssetAlertsList       |       |
+| module.getConfigurationGroupsMultiselectAssetsListUnallocated |       |
+| module.getOverriddenInformationForMobileUnit                  |       |
+| module.getOrgDisplayTimeZone                                  |       |
+| module.getAssetDisplayTimeZone                                |       |
+| module.getConfigurationGroupTemplate                          |       |
+| module.getConfigurationGroup                                  |       |
