@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T13:57
+updated: 2025-10-28T14:19
 ---
 
 # OPEN-862 Beta Slow
@@ -68,3 +68,8 @@ Dev Tools Filter: -.js, -.html, -en_, -
 | module.getAssetDisplayTimeZone                                |      |       |       |          |
 | module.getConfigurationGroupTemplate                          |      | X     |       |          |
 | module.getConfigurationGroup                                  |      | X     |       |          |
+
+## SQL to find big orgs
+
+xxxxxxxxxxx
+
