@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T14:19
+updated: 2025-10-28T14:29
 ---
 
 # OPEN-862 Beta Slow
@@ -71,5 +71,22 @@ Dev Tools Filter: -.js, -.html, -en_, -
 
 ## SQL to find big orgs
 
-xxxxxxxxxxx
+```sql
+USE DeviceConfiguration;
+
+SELECT ll.LibraryKey, count(mu.MobileUnitKey), ll.Notes
+FROM mobileunit.Mobileunits mu
+INNER JOIN template.ConfigurationGroups tcg ON tcg.ConfigurationGroupKey = mu.ConfigurationGroupKey
+INNER JOIN library.Libraries ll ON ll.LibraryKey = tcg.LibraryKey
+GROUP BY ll.LibraryKey, ll.Notes
+ORDER BY count(mu.MobileUnitKey) DESC
+```
+
+LibraryKey	(No column name)	     Notes
+3524	         7458		         	         Configuration Library of TQL
+45		         1459		         	         Configuration Library of BES - PBU - Central
+2463		     1034		         	         Configuration Library of LightningTesting2
+1242		     1010		         	         Configuration Library of GTS
+1132		     1001		         	         Configuration Library of Jeremy's test Organsiation
+2475		     1000		         	         Configuration Library of PageLoadTesting
 
