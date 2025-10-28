@@ -1,6 +1,6 @@
 ---
 created: 2025-10-20T08:51
-updated: 2025-10-21T15:52
+updated: 2025-10-28T16:29
 ---
 
 ## Selection Criteria
@@ -21,6 +21,12 @@ static myValSetting = "myVal";
 ## Selection Criteria Logic
 
 eg. grid-selection-criteria.service.ts
+
+### Import
+
+**Add**: SelectionCriteriaStringItemToSaveCarrier as per the below:
+
+import { Dictionary, ISelectionCriteriaService, ISessionService, SelectionCriteriaDictionaryItemToSaveCarrier, SelectionCriteriaItemCarrier, SelectionCriteriaListItemToSaveCarrier, SelectionCriteriaQueryCarrier, SelectionCriteriaResult, SelectionCriteriaUpdate, tokenSelectionCriteriaService, tokenSessionService, **SelectionCriteriaStringItemToSaveCarrier** } from "@mixtel/dynamixframework";
 
 ### Saving
 ```ts
