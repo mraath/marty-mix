@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T13:42
+updated: 2025-10-28T13:43
 ---
 
 # OPEN-862 Beta Slow
@@ -52,7 +52,7 @@ This Spike aims to:
 | ------------------------------------------------------------- | ---- | ----- | ----- | ----- |
 | module.getHypermedia                                          |      |       |       | 1.6s  |
 | module.getUxDeviceCapabilities                                |      |       |       |       |
-| module.getQueryOptionsAsync                                   |      |       |       |       |
+| module.getQueryOptionsAsync                                   |      |       |       | .13s  |
 | module.getConfigurationGroupsMultiselect                      |      |       |       | .16s  |
 | module.getConfigurationGroupsOtherColumns                     | X    |       |       | .28s  |
 | module.getConfigurationGroupsAlerts                           | X    |       |       | 3.3s  |
