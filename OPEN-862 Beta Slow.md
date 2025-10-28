@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T13:43
+updated: 2025-10-28T13:55
 ---
 
 # OPEN-862 Beta Slow
@@ -47,6 +47,8 @@ This Spike aims to:
 [[OPEN-862 Beta Slow AI]]
 
 ## Code
+
+Dev Tools Filter: -.js, -.html, -en_, -
 
 | Call                                                          | Lazy | Click | Notes | UI AU |
 | ------------------------------------------------------------- | ---- | ----- | ----- | ----- |
