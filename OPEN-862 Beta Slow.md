@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T14:29
+updated: 2025-10-28T14:35
 ---
 
 # OPEN-862 Beta Slow
@@ -50,24 +50,24 @@ This Spike aims to:
 
 Dev Tools Filter: -.js, -.html, -en_, -
 
-| Call                                                          | Lazy | Click | Notes | UI AU    |
-| ------------------------------------------------------------- | ---- | ----- | ----- | -------- |
-| module.getHypermedia                                          |      |       |       | 1.6s     |
-| module.getUxDeviceCapabilities                                |      |       |       |          |
-| module.getQueryOptionsAsync                                   |      |       |       | .13s     |
-| module.getConfigurationGroupsMultiselect                      |      |       |       | .16s     |
-| module.getConfigurationGroupsOtherColumns                     | X    |       |       | .28s     |
-| module.getConfigurationGroupsAlerts                           | X    |       |       | 3.3s     |
-| module.getConfigChangedFlagForMobileUnits                     | X    |       |       | .17s     |
-| module.getConfigurationGroupsMultiselectAssetsList            |      |       |       | 1s       |
-| module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       |       | 6.8s-12s |
-| module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       |       | 2.5s     |
-| module.getConfigurationGroupsMultiselectAssetsListUnallocated |      | X     |       |          |
-| module.getOverriddenInformationForMobileUnit                  |      | X     |       |          |
-| module.getOrgDisplayTimeZone                                  |      |       |       |          |
-| module.getAssetDisplayTimeZone                                |      |       |       |          |
-| module.getConfigurationGroupTemplate                          |      | X     |       |          |
-| module.getConfigurationGroup                                  |      | X     |       |          |
+| Call                                                          | Lazy | Click | Notes | UI AU 1499 | TQL 6852 |
+| ------------------------------------------------------------- | ---- | ----- | ----- | ---------- | -------- |
+| module.getHypermedia                                          |      |       |       | 1.6s       |          |
+| module.getUxDeviceCapabilities                                |      |       |       |            |          |
+| module.getQueryOptionsAsync                                   |      |       |       | .13s       |          |
+| module.getConfigurationGroupsMultiselect                      |      |       |       | .16s       |          |
+| module.getConfigurationGroupsOtherColumns                     | X    |       |       | .28s       |          |
+| module.getConfigurationGroupsAlerts                           | X    |       |       | 3.3s       |          |
+| module.getConfigChangedFlagForMobileUnits                     | X    |       |       | .17s       |          |
+| module.getConfigurationGroupsMultiselectAssetsList            |      |       |       | 1s         |          |
+| module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       |       | 6.8s-12s   |          |
+| module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       |       | 2.5s       |          |
+| module.getConfigurationGroupsMultiselectAssetsListUnallocated |      | X     |       |            |          |
+| module.getOverriddenInformationForMobileUnit                  |      | X     |       |            |          |
+| module.getOrgDisplayTimeZone                                  |      |       |       |            |          |
+| module.getAssetDisplayTimeZone                                |      |       |       |            |          |
+| module.getConfigurationGroupTemplate                          |      | X     |       |            |          |
+| module.getConfigurationGroup                                  |      | X     |       |            |          |
 
 ## SQL to find big orgs
 
