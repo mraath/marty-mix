@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T15:47
+updated: 2025-10-28T16:03
 ---
 
 # OPEN-714 Persisting Column Sizes
@@ -117,4 +117,4 @@ NO
 
 - [x] [PR to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/131447) ✅ 2025-09-29
 	- Config/MR/Feature/OPEN-714_Column_width_persist.DEV
-- [ ] [PR to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/133113)
+- [x] [PR to INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/133113) ✅ 2025-10-28
