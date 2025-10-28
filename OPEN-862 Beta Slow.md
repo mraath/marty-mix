@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T13:28
+updated: 2025-10-28T13:31
 ---
 
 # OPEN-862 Beta Slow
@@ -48,21 +48,21 @@ This Spike aims to:
 
 ## Code
 
-| Call                                                          | Notes |
-| ------------------------------------------------------------- | ----- |
-| module.getHypermedia                                          |       |
-| module.getUxDeviceCapabilities                                |       |
-| module.getQueryOptionsAsync                                   |       |
-| module.getConfigurationGroupsMultiselect                      |       |
-| module.getConfigurationGroupsOtherColumns                     |       |
-| module.getConfigurationGroupsAlerts                           |       |
-| module.getConfigChangedFlagForMobileUnits                     |       |
-| module.getConfigurationGroupsMultiselectAssetsList            |       |
-| module.getConfigurationGroupsMultiselectAssetLinesList        |       |
-| module.getConfigurationGroupsMultiselectAssetAlertsList       |       |
-| module.getConfigurationGroupsMultiselectAssetsListUnallocated |       |
-| module.getOverriddenInformationForMobileUnit                  |       |
-| module.getOrgDisplayTimeZone                                  |       |
-| module.getAssetDisplayTimeZone                                |       |
-| module.getConfigurationGroupTemplate                          |       |
-| module.getConfigurationGroup                                  |       |
+| Call                                                          | Lazy | Click | Notes |
+| ------------------------------------------------------------- | ---- | ----- | ----- |
+| module.getHypermedia                                          |      |       |       |
+| module.getUxDeviceCapabilities                                |      |       |       |
+| module.getQueryOptionsAsync                                   |      |       |       |
+| module.getConfigurationGroupsMultiselect                      |      |       |       |
+| module.getConfigurationGroupsOtherColumns                     | X    |       |       |
+| module.getConfigurationGroupsAlerts                           | X    |       |       |
+| module.getConfigChangedFlagForMobileUnits                     | X    |       |       |
+| module.getConfigurationGroupsMultiselectAssetsList            |      |       |       |
+| module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       |       |
+| module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       |       |
+| module.getConfigurationGroupsMultiselectAssetsListUnallocated |      |       |       |
+| module.getOverriddenInformationForMobileUnit                  |      |       |       |
+| module.getOrgDisplayTimeZone                                  |      |       |       |
+| module.getAssetDisplayTimeZone                                |      |       |       |
+| module.getConfigurationGroupTemplate                          |      |       |       |
+| module.getConfigurationGroup                                  |      |       |       |
