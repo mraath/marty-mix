@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T13:31
+updated: 2025-10-28T13:32
 ---
 
 # OPEN-862 Beta Slow
@@ -60,9 +60,9 @@ This Spike aims to:
 | module.getConfigurationGroupsMultiselectAssetsList            |      |       |       |
 | module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       |       |
 | module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       |       |
-| module.getConfigurationGroupsMultiselectAssetsListUnallocated |      |       |       |
-| module.getOverriddenInformationForMobileUnit                  |      |       |       |
+| module.getConfigurationGroupsMultiselectAssetsListUnallocated |      | X     |       |
+| module.getOverriddenInformationForMobileUnit                  |      | X     |       |
 | module.getOrgDisplayTimeZone                                  |      |       |       |
 | module.getAssetDisplayTimeZone                                |      |       |       |
-| module.getConfigurationGroupTemplate                          |      |       |       |
-| module.getConfigurationGroup                                  |      |       |       |
+| module.getConfigurationGroupTemplate                          |      | X     |       |
+| module.getConfigurationGroup                                  |      | X     |       |
