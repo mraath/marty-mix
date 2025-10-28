@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T14:35
+updated: 2025-10-28T14:37
 ---
 
 # OPEN-862 Beta Slow
@@ -56,12 +56,12 @@ Dev Tools Filter: -.js, -.html, -en_, -
 | module.getUxDeviceCapabilities                                |      |       |       |            |          |
 | module.getQueryOptionsAsync                                   |      |       |       | .13s       |          |
 | module.getConfigurationGroupsMultiselect                      |      |       |       | .16s       |          |
-| module.getConfigurationGroupsOtherColumns                     | X    |       |       | .28s       |          |
-| module.getConfigurationGroupsAlerts                           | X    |       |       | 3.3s       |          |
-| module.getConfigChangedFlagForMobileUnits                     | X    |       |       | .17s       |          |
-| module.getConfigurationGroupsMultiselectAssetsList            |      |       |       | 1s         |          |
-| module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       |       | 6.8s-12s   |          |
-| module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       |       | 2.5s       |          |
+| module.getConfigurationGroupsOtherColumns                     | X    |       |       | .28s       | .2       |
+| module.getConfigurationGroupsAlerts                           | X    |       |       | 3.3s       | 2.9      |
+| module.getConfigChangedFlagForMobileUnits                     | X    |       |       | .17s       | .2       |
+| module.getConfigurationGroupsMultiselectAssetsList            |      |       |       | 1s         | 3        |
+| module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       |       | 6.8s-12s   | 12.9     |
+| module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       |       | 2.5s       | 3        |
 | module.getConfigurationGroupsMultiselectAssetsListUnallocated |      | X     |       |            |          |
 | module.getOverriddenInformationForMobileUnit                  |      | X     |       |            |          |
 | module.getOrgDisplayTimeZone                                  |      |       |       |            |          |
