@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-28T13:32
+updated: 2025-10-28T13:40
 ---
 
 # OPEN-862 Beta Slow
@@ -48,21 +48,21 @@ This Spike aims to:
 
 ## Code
 
-| Call                                                          | Lazy | Click | Notes |
-| ------------------------------------------------------------- | ---- | ----- | ----- |
-| module.getHypermedia                                          |      |       |       |
-| module.getUxDeviceCapabilities                                |      |       |       |
-| module.getQueryOptionsAsync                                   |      |       |       |
-| module.getConfigurationGroupsMultiselect                      |      |       |       |
-| module.getConfigurationGroupsOtherColumns                     | X    |       |       |
-| module.getConfigurationGroupsAlerts                           | X    |       |       |
-| module.getConfigChangedFlagForMobileUnits                     | X    |       |       |
-| module.getConfigurationGroupsMultiselectAssetsList            |      |       |       |
-| module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       |       |
-| module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       |       |
-| module.getConfigurationGroupsMultiselectAssetsListUnallocated |      | X     |       |
-| module.getOverriddenInformationForMobileUnit                  |      | X     |       |
-| module.getOrgDisplayTimeZone                                  |      |       |       |
-| module.getAssetDisplayTimeZone                                |      |       |       |
-| module.getConfigurationGroupTemplate                          |      | X     |       |
-| module.getConfigurationGroup                                  |      | X     |       |
+| Call                                                          | Lazy | Click | Notes | UI AU |
+| ------------------------------------------------------------- | ---- | ----- | ----- | ----- |
+| module.getHypermedia                                          |      |       |       | 1.6s  |
+| module.getUxDeviceCapabilities                                |      |       |       |       |
+| module.getQueryOptionsAsync                                   |      |       |       |       |
+| module.getConfigurationGroupsMultiselect                      |      |       |       |       |
+| module.getConfigurationGroupsOtherColumns                     | X    |       |       |       |
+| module.getConfigurationGroupsAlerts                           | X    |       |       | 3.3s  |
+| module.getConfigChangedFlagForMobileUnits                     | X    |       |       |       |
+| module.getConfigurationGroupsMultiselectAssetsList            |      |       |       | 1s    |
+| module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       |       | 6.8s  |
+| module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       |       | 2.5s  |
+| module.getConfigurationGroupsMultiselectAssetsListUnallocated |      | X     |       |       |
+| module.getOverriddenInformationForMobileUnit                  |      | X     |       |       |
+| module.getOrgDisplayTimeZone                                  |      |       |       |       |
+| module.getAssetDisplayTimeZone                                |      |       |       |       |
+| module.getConfigurationGroupTemplate                          |      | X     |       |       |
+| module.getConfigurationGroup                                  |      | X     |       |       |
