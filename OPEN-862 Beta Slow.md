@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-29T16:42
+updated: 2025-10-29T16:47
 ---
 
 # OPEN-862 Beta Slow
@@ -60,8 +60,8 @@ Dev Tools Filter: -.js, -.html, -en_, -
 | module.getConfigurationGroupsAlerts                           | X    |       | Alerts | 3.3s       | 2.9      | 6.4            | 36        | 2min  |
 | module.getConfigChangedFlagForMobileUnits                     | X    |       | Flag   | .17s       | .2       | .7             | .3        | .4    |
 | module.getConfigurationGroupsMultiselectAssetsList            |      |       | Assets | 1s         | 3        | 4              | 4.6       | 4     |
-| module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       | Lines  | 6.8s-12s   | 12.9     | 3              | pending   | 16    |
-| module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       | Alerts | 2.5s       | 3        | 7.3            | pending   | 36    |
+| module.**getConfigurationGroupsMultiselectAssetLinesList**    | X    |       | Lines  | 6.8s-12s   | 12.9     | 3              | pending   | 16    |
+| module.**getConfigurationGroupsMultiselectAssetAlertsList**   | X    |       | Alerts | 2.5s       | 3        | 7.3            | pending   | 36    |
 | module.getConfigurationGroupsMultiselectAssetsListUnallocated |      | X     |        |            |          |                |           |       |
 | module.getOverriddenInformationForMobileUnit                  |      | X     |        |            |          |                |           |       |
 | module.getOrgDisplayTimeZone                                  |      |       |        |            |          |                |           |       |
