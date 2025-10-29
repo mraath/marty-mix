@@ -1,6 +1,6 @@
 ---
 created: 2025-10-07T07:59
-updated: 2025-10-29T12:16
+updated: 2025-10-29T12:19
 ---
 ## OE-513 All SQL involved
 
@@ -8,7 +8,7 @@ Config Groups Panel
 - (init) [template].[Template_GetConfigurationGroupsMultiselect]
 - (lazy) [template].[Template_GetConfigurationGroupsOtherColumns]
 - (lazy) [state].[MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups]
-- (lazy) 
+- (lazy) BLACK FLAGS
 
 Assets List Panel
 - (init unallocated) [mobileunit].[MobileUnit_GetUnallocatedAssets]

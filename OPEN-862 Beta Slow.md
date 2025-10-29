@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-29T12:05
+updated: 2025-10-29T12:20
 ---
 
 # OPEN-862 Beta Slow
@@ -57,7 +57,7 @@ Dev Tools Filter: -.js, -.html, -en_, -
 | module.getQueryOptionsAsync                                   |      |       |        | .13s       |          |                |           |
 | module.getConfigurationGroupsMultiselect                      |      |       | CG     | .16s       | .2       | .6             |           |
 | module.getConfigurationGroupsOtherColumns                     | X    |       | Other  | .28s       | .2       | .9             |           |
-| module.getConfigurationGroupsAlerts                           | X    |       | Alerts | 3.3s       | 2.9      | 6.4            |           |
+| module.getConfigurationGroupsAlerts                           | X    |       | Alerts | 3.3s       | 2.9      | 6.4            | 56        |
 | module.getConfigChangedFlagForMobileUnits                     | X    |       | Flag   | .17s       | .2       | .7             |           |
 | module.getConfigurationGroupsMultiselectAssetsList            |      |       | Assets | 1s         | 3        | 4              |           |
 | module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       | Lines  | 6.8s-12s   | 12.9     | 3              |           |
