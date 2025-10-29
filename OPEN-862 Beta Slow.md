@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-29T10:17
+updated: 2025-10-29T11:48
 ---
 
 # OPEN-862 Beta Slow
@@ -68,6 +68,11 @@ Dev Tools Filter: -.js, -.html, -en_, -
 | module.getAssetDisplayTimeZone                                |      |       |        |            |          |                |
 | module.getConfigurationGroupTemplate                          |      | X     |        |            |          |                |
 | module.getConfigurationGroup                                  |      | X     |        |            |          |                |
+
+## Thoughts
+
+- [ ] On AU seems like the asset lists returns quickly, however, it seems to wait for a lazy loading call before displaying, this could be an issue
+- [ ] 
 
 ## SQL to find big orgs
 
