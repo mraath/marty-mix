@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-29T11:48
+updated: 2025-10-29T12:00
 ---
 
 # OPEN-862 Beta Slow
@@ -50,24 +50,24 @@ This Spike aims to:
 
 Dev Tools Filter: -.js, -.html, -en_, -
 
-| Call                                                          | Lazy | Click | Notes  | UI AU 1499 | TQL 6852 | Lightning 1034 |
-| ------------------------------------------------------------- | ---- | ----- | ------ | ---------- | -------- | -------------- |
-| module.getHypermedia                                          |      |       |        | 1.6s       |          |                |
-| module.getUxDeviceCapabilities                                |      |       |        |            |          |                |
-| module.getQueryOptionsAsync                                   |      |       |        | .13s       |          |                |
-| module.getConfigurationGroupsMultiselect                      |      |       | CG     | .16s       | .2       | .6             |
-| module.getConfigurationGroupsOtherColumns                     | X    |       | Other  | .28s       | .2       | .9             |
-| module.getConfigurationGroupsAlerts                           | X    |       | Alerts | 3.3s       | 2.9      | 6.4            |
-| module.getConfigChangedFlagForMobileUnits                     | X    |       | Flag   | .17s       | .2       | .7             |
-| module.getConfigurationGroupsMultiselectAssetsList            |      |       | Assets | 1s         | 3        | 4              |
-| module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       | Lines  | 6.8s-12s   | 12.9     | 3              |
-| module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       | Alerts | 2.5s       | 3        | 7.3            |
-| module.getConfigurationGroupsMultiselectAssetsListUnallocated |      | X     |        |            |          |                |
-| module.getOverriddenInformationForMobileUnit                  |      | X     |        |            |          |                |
-| module.getOrgDisplayTimeZone                                  |      |       |        |            |          |                |
-| module.getAssetDisplayTimeZone                                |      |       |        |            |          |                |
-| module.getConfigurationGroupTemplate                          |      | X     |        |            |          |                |
-| module.getConfigurationGroup                                  |      | X     |        |            |          |                |
+| Call                                                          | Lazy | Click | Notes  | UI AU 1499 | TQL 6852 | Lightning 1034 | Rio Tinto  |
+| ------------------------------------------------------------- | ---- | ----- | ------ | ---------- | -------- | -------------- | ---------- |
+| module.getHypermedia                                          |      |       |        | 1.6s       |          |                |            |
+| module.getUxDeviceCapabilities                                |      |       |        |            |          |                |            |
+| module.getQueryOptionsAsync                                   |      |       |        | .13s       |          |                |            |
+| module.getConfigurationGroupsMultiselect                      |      |       | CG     | .16s       | .2       | .6             |            |
+| module.getConfigurationGroupsOtherColumns                     | X    |       | Other  | .28s       | .2       | .9             |            |
+| module.getConfigurationGroupsAlerts                           | X    |       | Alerts | 3.3s       | 2.9      | 6.4            |            |
+| module.getConfigChangedFlagForMobileUnits                     | X    |       | Flag   | .17s       | .2       | .7             |            |
+| module.getConfigurationGroupsMultiselectAssetsList            |      |       | Assets | 1s         | 3        | 4              |            |
+| module.getConfigurationGroupsMultiselectAssetLinesList        | X    |       | Lines  | 6.8s-12s   | 12.9     | 3              |            |
+| module.getConfigurationGroupsMultiselectAssetAlertsList       | X    |       | Alerts | 2.5s       | 3        | 7.3            |            |
+| module.getConfigurationGroupsMultiselectAssetsListUnallocated |      | X     |        |            |          |                |            |
+| module.getOverriddenInformationForMobileUnit                  |      | X     |        |            |          |                |            |
+| module.getOrgDisplayTimeZone                                  |      |       |        |            |          |                |            |
+| module.getAssetDisplayTimeZone                                |      |       |        |            |          |                |            |
+| module.getConfigurationGroupTemplate                          |      | X     |        |            |          |                |            |
+| module.getConfigurationGroup                                  |      | X     |        |            |          |                |            |
 
 ## Thoughts
 
@@ -87,6 +87,9 @@ GROUP BY ll.LibraryKey, ll.Notes
 ORDER BY count(mu.MobileUnitKey) DESC
 ```
 
+
+### INT
+
 LibraryKey	(No column name)	     Notes
 3524	         7458		         	         Configuration Library of TQL
 45		         1459		         	         Configuration Library of BES - PBU - Central
@@ -95,6 +98,22 @@ LibraryKey	(No column name)	     Notes
 1132		     1001		         	         Configuration Library of Jeremy's test Organsiation
 2475		     1000		         	         Configuration Library of PageLoadTesting
 
+### AUS
+
+LibraryKey	(No column name)	Notes
+340	    6976	                            Configuration Library of Rio Tinto - Australia migrated with script 20150723.01
+422	    5063	                            Configuration Library of GRAINCORP migrated with script 20151203.01
+307	    3503	                            Configuration Library of RIO TINTO - AUSTRALIA migrated with script 20150723.01
+1452	2385	                            Configuration Library of Service Stream
+828	    1937	                            Configuration Library of Demo - Veolia ANZ
+599	    1876	                            Configuration Library of Landmark
+152	    1512	                            Configuration Library of Borg Manufacturing migrated with script 20150325.01
+893	    1499	                            Configuration Library of Water Corporation Test
+1219	1415	                            Configuration Library of Landpower New Zealand
+833	    1410	                            Configuration Library of Mader
+795	    1121	                            Configuration Library of Fleet Integrations - AU Projects
+123	    1071	                            Configuration Library of TOLL GLOBAL LOGISTICS migrated with script 20150219.01
+866	    1002	                            Configuration Library of CBH
 
 ## Stored procs to investigate
 
