@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-29T10:05
+updated: 2025-10-29T10:14
 ---
 
 # OPEN-862 Beta Slow
@@ -93,3 +93,4 @@ LibraryKey	(No column name)	     Notes
 
 ## Stored procs to investigate
 
+[[OE-513 All SQL involved]]
