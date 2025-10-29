@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-29T16:47
+updated: 2025-10-29T16:57
 ---
 
 # OPEN-862 Beta Slow
@@ -74,7 +74,10 @@ Dev Tools Filter: -.js, -.html, -en_, -
 ## Thoughts
 
 - [ ] On AU seems like the asset lists returns quickly, however, it seems to wait for a lazy loading call before displaying, this could be an issue
+	- [ ] Maybe for both CG and Assets check lazy load after init has been populated in grid.... boolean?
 - [ ] Could load assets a few cgs at a time
+- [ ] DB - to check load time of asset-lines..... test in AU DB. Check time. NULL can and dont work out logic. Check time again.
+- [ ] DB - do similar things for other lines, etc...
 
 ## SQL to find big orgs
 
