@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-29T15:34
+updated: 2025-10-29T15:36
 ---
 
 # OPEN-862 Beta Slow
@@ -74,7 +74,7 @@ Dev Tools Filter: -.js, -.html, -en_, -
 ## Thoughts
 
 - [ ] On AU seems like the asset lists returns quickly, however, it seems to wait for a lazy loading call before displaying, this could be an issue
-- [ ] 
+- [ ] Could load assets a few cgs at a time
 
 ## SQL to find big orgs
 
