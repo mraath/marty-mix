@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-29T12:20
+updated: 2025-10-29T12:33
 ---
 
 # OPEN-862 Beta Slow
@@ -68,6 +68,8 @@ Dev Tools Filter: -.js, -.html, -en_, -
 | module.getAssetDisplayTimeZone                                |      |       |        |            |          |                |           |
 | module.getConfigurationGroupTemplate                          |      | X     |        |            |          |                |           |
 | module.getConfigurationGroup                                  |      | X     |        |            |          |                |           |
+
+![[OPEN-862 Beta Slow.png]]
 
 ## Thoughts
 
