@@ -53,7 +53,7 @@ Enhance Config Group List: [[OPEN-862 Enhance Config Group List SQL]]
 
 Gemini for above: https://gemini.google.com/app/4f87817d0e4ad2e0?hl=en_GB
 
-Testing template:
+Testing template: [[OPEN-862 Testing template]]
 
 ## Code
 
