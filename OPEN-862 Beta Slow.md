@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-30T11:22
+updated: 2025-10-30T11:26
 ---
 
 # OPEN-862 Beta Slow
@@ -45,7 +45,8 @@ This Spike aims to:
 ## Investigation
 
 Init questions: [[OPEN-862 Beta Slow AI]]
-Enhance Aset Lines: [[OPEN-862 Enhance Asset lines SQL]]
+Enhance Assets Lines: [[OPEN-862 Enhance Asset lines SQL]]
+Enhance Assets Alerts: [[OPEN-862 Enhance Asset alerts SQL]]
 
 ## Code
 
