@@ -1,6 +1,6 @@
 ---
 created: 2025-10-20T08:51
-updated: 2025-10-28T16:29
+updated: 2025-10-30T08:38
 ---
 
 ## Selection Criteria
@@ -118,3 +118,6 @@ When we **query** the correct key, we can see that the selection criteria return
 
 ![[Selection Criteria Example Testing Dev Tools.png]]
 
+## Examples
+
+Pallavi: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/133258?_a=files
