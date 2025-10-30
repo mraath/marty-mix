@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-30T09:44
+updated: 2025-10-30T09:48
 ---
 
 # OPEN-862 Beta Slow
@@ -125,3 +125,4 @@ LibraryKey	(No column name)	Notes
 ![[OE-513 All SQL involved]]
 
 
+- Template_GetConfigurationGroupsMultiselect|Template_GetConfigurationGroupsOtherColumns|MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups|MobileUnit_GetUnallocatedAssets|MobileUnit_GetAllMobileUnitsForConfigurationGroups|MobileUnit_GetAllMobileUnitLinesForConfigurationGroups|MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups|MobileUnit_GetMobileUnitMissingParameters|MobileUnit_GetMobileUnitBasicInfoForConfigGroups|MobileUnit_GetMobileUnitFirmwareInfo|MobileUnit_GetMobileUnitMessageAlerts|MobileUnit_GetMobileUnitLastMessageDate
