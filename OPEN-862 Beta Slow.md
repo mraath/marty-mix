@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-30T14:45
+updated: 2025-10-30T15:19
 ---
 
 # OPEN-862 Beta Slow
@@ -49,7 +49,7 @@ Enhance Assets Lines: [[OPEN-862 Enhance Asset lines SQL]]
 Enhance Assets Alerts: [[OPEN-862 Enhance Asset alerts SQL]]
 Enhance Assets List: [[OPEN-862 Enhance Asset List SQL]]
 Enhance Config Group Other: [[OPEN-862 Enhance Config Group Other SQL]]
-
+Enhance Config Group List: [[OPEN-862 Enhance Config Group List SQL]]
 ## Code
 
 Dev Tools Filter: -.js, -.html, -en_, -
@@ -59,7 +59,7 @@ Dev Tools Filter: -.js, -.html, -en_, -
 | module.getHypermedia                                          |                                                         |                       |      |       |        | 1.6s       |          |                |           |       |
 | module.getUxDeviceCapabilities                                |                                                         |                       |      |       |        |            |          |                |           |       |
 | module.getQueryOptionsAsync                                   |                                                         |                       |      |       |        | .13s       |          |                |           |       |
-| module.getConfigurationGroupsMultiselect                      | Template_GetConfigurationGroupsMultiselect              |                       |      |       | CG     | .16s       | .2       | .6             | .2        | .7    |
+| module.getConfigurationGroupsMultiselect                      | Template_GetConfigurationGroupsMultiselect              | 5                     |      |       | CG     | .16s       | .2       | .6             | .2        | .7    |
 | module.getConfigurationGroupsOtherColumns                     | Template_GetConfigurationGroupsOtherColumns             | 4                     | X    |       | Other  | .28s       | .2       | .9             | .8        | 1     |
 | module.getConfigurationGroupsAlerts                           | MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups | 1                     | X    |       | Alerts | 3.3s       | 2.9      | 6.4            | 36        | 2min  |
 | module.getConfigChangedFlagForMobileUnits                     |                                                         |                       | X    |       | Flag   | .17s       | .2       | .7             | .3        | .4    |
