@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-30T15:19
+updated: 2025-10-30T15:32
 ---
 
 # OPEN-862 Beta Slow
@@ -50,11 +50,14 @@ Enhance Assets Alerts: [[OPEN-862 Enhance Asset alerts SQL]]
 Enhance Assets List: [[OPEN-862 Enhance Asset List SQL]]
 Enhance Config Group Other: [[OPEN-862 Enhance Config Group Other SQL]]
 Enhance Config Group List: [[OPEN-862 Enhance Config Group List SQL]]
+
+Gemini for above: https://gemini.google.com/app/4f87817d0e4ad2e0?hl=en_GB
+
 ## Code
 
 Dev Tools Filter: -.js, -.html, -en_, -
 
-| Call                                                          | Stored Proc                                             | Potential Enhancement | Lazy | Click | Notes  | UI AU 1499 | TQL 6852 | Lightning 1034 | Rio Tinto | Rio 2 |
+| Network Calls                                                 | Stored Proc                                             | Potential Enhancement | Lazy | Click | Notes  | UI AU 1499 | TQL 6852 | Lightning 1034 | Rio Tinto | Rio 2 |
 | ------------------------------------------------------------- | ------------------------------------------------------- | --------------------- | ---- | ----- | ------ | ---------- | -------- | -------------- | --------- | ----- |
 | module.getHypermedia                                          |                                                         |                       |      |       |        | 1.6s       |          |                |           |       |
 | module.getUxDeviceCapabilities                                |                                                         |                       |      |       |        |            |          |                |           |       |
