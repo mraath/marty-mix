@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-30T14:25
+updated: 2025-10-30T14:29
 ---
 
 # OPEN-862 Beta Slow
@@ -60,9 +60,9 @@ Dev Tools Filter: -.js, -.html, -en_, -
 | module.getQueryOptionsAsync                                   |                                                         |                       |      |       |        | .13s       |          |                |           |       |
 | module.getConfigurationGroupsMultiselect                      | Template_GetConfigurationGroupsMultiselect              |                       |      |       | CG     | .16s       | .2       | .6             | .2        | .7    |
 | module.getConfigurationGroupsOtherColumns                     | Template_GetConfigurationGroupsOtherColumns             |                       | X    |       | Other  | .28s       | .2       | .9             | .8        | 1     |
-| module.getConfigurationGroupsAlerts                           | MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups |                       | X    |       | Alerts | 3.3s       | 2.9      | 6.4            | 36        | 2min  |
+| module.getConfigurationGroupsAlerts                           | MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups | ~                     | X    |       | Alerts | 3.3s       | 2.9      | 6.4            | 36        | 2min  |
 | module.getConfigChangedFlagForMobileUnits                     |                                                         |                       | X    |       | Flag   | .17s       | .2       | .7             | .3        | .4    |
-| module.getConfigurationGroupsMultiselectAssetsList            | MobileUnit_GetAllMobileUnitsForConfigurationGroups      |                       |      |       | Assets | 1s         | 3        | 4              | 4.6       | 4     |
+| module.getConfigurationGroupsMultiselectAssetsList            | MobileUnit_GetAllMobileUnitsForConfigurationGroups      | X                     |      |       | Assets | 1s         | 3        | 4              | 4.6       | 4     |
 | module.**getConfigurationGroupsMultiselectAssetLinesList**    | MobileUnit_GetAllMobileUnitLinesForConfigurationGroups  | X                     | X    |       | Lines  | 6.8s-12s   | 12.9     | 3              | pending   | 16    |
 | module.**getConfigurationGroupsMultiselectAssetAlertsList**   | MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups | X                     | X    |       | Alerts | 2.5s       | 3        | 7.3            | pending   | 36    |
 | module.getConfigurationGroupsMultiselectAssetsListUnallocated |                                                         |                       |      | X     |        |            |          |                |           |       |
