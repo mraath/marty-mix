@@ -1,6 +1,6 @@
 ---
 created: 2025-10-28T07:32
-updated: 2025-10-28T07:33
+updated: 2025-10-30T10:10
 ---
 Perplexity 1
 
@@ -156,11 +156,11 @@ Perplexity 2:
 
 - **Build a table or log file per page load:**
     
-    |Step|API Endpoint|Stored Proc|Time (ms)|Notes|
-    |---|---|---|---|---|
-    |Frontend Request 1|/api/getA|dbo.procA|350|Normal|
-    |Frontend Request 2|/api/getB|dbo.procB|1200|Slow|
-    |Frontend Request 3|/api/getC|dbo.procC|800|Moderate|
+|Step|API Endpoint|Stored Proc|Time (ms)|Notes|
+|---|---|---|---|---|
+|Frontend Request 1|/api/getA|dbo.procA|350|Normal|
+|Frontend Request 2|/api/getB|dbo.procB|1200|Slow|
+|Frontend Request 3|/api/getC|dbo.procC|800|Moderate|
     
 - **Highlight bottlenecks:**
     
