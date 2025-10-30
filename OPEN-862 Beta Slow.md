@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-29T16:57
+updated: 2025-10-30T09:44
 ---
 
 # OPEN-862 Beta Slow
@@ -50,24 +50,24 @@ This Spike aims to:
 
 Dev Tools Filter: -.js, -.html, -en_, -
 
-| Call                                                          | Lazy | Click | Notes  | UI AU 1499 | TQL 6852 | Lightning 1034 | Rio Tinto | Rio 2 |
-| ------------------------------------------------------------- | ---- | ----- | ------ | ---------- | -------- | -------------- | --------- | ----- |
-| module.getHypermedia                                          |      |       |        | 1.6s       |          |                |           |       |
-| module.getUxDeviceCapabilities                                |      |       |        |            |          |                |           |       |
-| module.getQueryOptionsAsync                                   |      |       |        | .13s       |          |                |           |       |
-| module.getConfigurationGroupsMultiselect                      |      |       | CG     | .16s       | .2       | .6             | .2        | .7    |
-| module.getConfigurationGroupsOtherColumns                     | X    |       | Other  | .28s       | .2       | .9             | .8        | 1     |
-| module.getConfigurationGroupsAlerts                           | X    |       | Alerts | 3.3s       | 2.9      | 6.4            | 36        | 2min  |
-| module.getConfigChangedFlagForMobileUnits                     | X    |       | Flag   | .17s       | .2       | .7             | .3        | .4    |
-| module.getConfigurationGroupsMultiselectAssetsList            |      |       | Assets | 1s         | 3        | 4              | 4.6       | 4     |
-| module.**getConfigurationGroupsMultiselectAssetLinesList**    | X    |       | Lines  | 6.8s-12s   | 12.9     | 3              | pending   | 16    |
-| module.**getConfigurationGroupsMultiselectAssetAlertsList**   | X    |       | Alerts | 2.5s       | 3        | 7.3            | pending   | 36    |
-| module.getConfigurationGroupsMultiselectAssetsListUnallocated |      | X     |        |            |          |                |           |       |
-| module.getOverriddenInformationForMobileUnit                  |      | X     |        |            |          |                |           |       |
-| module.getOrgDisplayTimeZone                                  |      |       |        |            |          |                |           |       |
-| module.getAssetDisplayTimeZone                                |      |       |        |            |          |                |           |       |
-| module.getConfigurationGroupTemplate                          |      | X     |        |            |          |                |           |       |
-| module.getConfigurationGroup                                  |      | X     |        |            |          |                |           |       |
+| Call                                                          | Stored Proc                                             | Lazy | Click | Notes  | UI AU 1499 | TQL 6852 | Lightning 1034 | Rio Tinto | Rio 2 |
+| ------------------------------------------------------------- | ------------------------------------------------------- | ---- | ----- | ------ | ---------- | -------- | -------------- | --------- | ----- |
+| module.getHypermedia                                          |                                                         |      |       |        | 1.6s       |          |                |           |       |
+| module.getUxDeviceCapabilities                                |                                                         |      |       |        |            |          |                |           |       |
+| module.getQueryOptionsAsync                                   |                                                         |      |       |        | .13s       |          |                |           |       |
+| module.getConfigurationGroupsMultiselect                      | Template_GetConfigurationGroupsMultiselect              |      |       | CG     | .16s       | .2       | .6             | .2        | .7    |
+| module.getConfigurationGroupsOtherColumns                     | Template_GetConfigurationGroupsOtherColumns             | X    |       | Other  | .28s       | .2       | .9             | .8        | 1     |
+| module.getConfigurationGroupsAlerts                           | MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups | X    |       | Alerts | 3.3s       | 2.9      | 6.4            | 36        | 2min  |
+| module.getConfigChangedFlagForMobileUnits                     |                                                         | X    |       | Flag   | .17s       | .2       | .7             | .3        | .4    |
+| module.getConfigurationGroupsMultiselectAssetsList            | MobileUnit_GetAllMobileUnitsForConfigurationGroups      |      |       | Assets | 1s         | 3        | 4              | 4.6       | 4     |
+| module.**getConfigurationGroupsMultiselectAssetLinesList**    | MobileUnit_GetAllMobileUnitLinesForConfigurationGroups  | X    |       | Lines  | 6.8s-12s   | 12.9     | 3              | pending   | 16    |
+| module.**getConfigurationGroupsMultiselectAssetAlertsList**   | MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups | X    |       | Alerts | 2.5s       | 3        | 7.3            | pending   | 36    |
+| module.getConfigurationGroupsMultiselectAssetsListUnallocated |                                                         |      | X     |        |            |          |                |           |       |
+| module.getOverriddenInformationForMobileUnit                  |                                                         |      | X     |        |            |          |                |           |       |
+| module.getOrgDisplayTimeZone                                  |                                                         |      |       |        |            |          |                |           |       |
+| module.getAssetDisplayTimeZone                                |                                                         |      |       |        |            |          |                |           |       |
+| module.getConfigurationGroupTemplate                          |                                                         |      | X     |        |            |          |                |           |       |
+| module.getConfigurationGroup                                  |                                                         |      | X     |        |            |          |                |           |       |
 
 
 
