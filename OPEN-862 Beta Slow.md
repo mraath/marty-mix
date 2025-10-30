@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-30T15:32
+updated: 2025-10-30T15:46
 ---
 
 # OPEN-862 Beta Slow
@@ -52,6 +52,8 @@ Enhance Config Group Other: [[OPEN-862 Enhance Config Group Other SQL]]
 Enhance Config Group List: [[OPEN-862 Enhance Config Group List SQL]]
 
 Gemini for above: https://gemini.google.com/app/4f87817d0e4ad2e0?hl=en_GB
+
+Testing template:
 
 ## Code
 
