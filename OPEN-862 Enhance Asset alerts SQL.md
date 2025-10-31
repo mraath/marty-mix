@@ -1,6 +1,6 @@
 ---
 created: 2025-10-30T11:26
-updated: 2025-10-31T08:31
+updated: 2025-10-31T08:33
 ---
 You're running into classic performance killers: **cursors** and **row-by-row SP execution** on a result set, combined with the use of suboptimal **Table Variables**.
 
@@ -733,7 +733,7 @@ This modular structure allows for easy, set-based activation of the logic.
 Would you like to review any specific part of the integrated Missing Parameters logic, or would you like to move on to testing this procedure?
 
 
-```Question
+```txt
 OK - I will give you the Original and new below, please use that to write me a complete comparison harness...
 
 NEW CODE:
