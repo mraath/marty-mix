@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-31T15:35
+updated: 2025-10-31T15:43
 ---
 
 # OPEN-862 Beta Slow
@@ -78,6 +78,12 @@ Dev Tools Filter: -.js, -.html, -en_, -
 | module.getConfigurationGroupTemplate                          |                                                                   |                       |      | X     |        |            |          |                |           |       |
 | module.getConfigurationGroup                                  |                                                                   |                       |      | X     |        |            |          |                |           |       |
 
+
+## More thoughts
+
+
+Alerts:
+C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups.sql
 
 
 ## Thoughts
