@@ -1,6 +1,6 @@
 ---
 created: 2025-10-30T11:26
-updated: 2025-10-31T08:53
+updated: 2025-10-31T09:11
 ---
 You're running into classic performance killers: **cursors** and **row-by-row SP execution** on a result set, combined with the use of suboptimal **Table Variables**.
 
@@ -738,3 +738,5 @@ OK - I will give you the Original and new below, please use that to write me a c
 Could you please copy and paste the correct sections between the begin and end.
 Please adjust the original and optimized results tables.
 ```
+
+[[OPEN-862 TEST ALERT SQL]]
