@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-31T15:53
+updated: 2025-10-31T15:54
 ---
 
 # OPEN-862 Beta Slow
@@ -86,6 +86,11 @@ Alerts:
 C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups.sql
 [state].[MobileUnit_GetMobileUnitLastMessageDate]
 C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\MobileUnit_GetMobileUnitLastMessageDate.sql
+
+
+- **`[state].[MobileUnit_GetMobileUnitFirmwareInfo]`** - The stored procedure that's called in the cursor
+- **`[state].[MobileUnit_GetMobileUnitMissingParameters]`** - The stored procedure for missing parameters
+- **`[state].[MobileUnit_GetMobileUnitBasicInfoForConfigGroups]`** - The stored procedure that gets basic info
 
 ## Thoughts
 
