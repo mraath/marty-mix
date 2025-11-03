@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T13:13
+updated: 2025-11-03T13:14
 ---
 ## Initial findings
 
@@ -49,7 +49,7 @@ Personally I think making stored proc changes would have the most significant ef
 ### Performance issues
 
 1) Table variables
-	- Has poor execution plans for joins as sql assumes very few rows
+	- Has poor execution plans for joins as SQL assumes very few rows
 	- Results in slow nested loops joins and complex queries
 	- USE: Temporary Tables or CTEs (for smaller datasets)
 2) Correlated Subqueries
@@ -73,4 +73,9 @@ As a proof of concept, I took the alerts, stored proc, I added some enhancements
 
 ## Steps
 
-I would suggest to start with the three mentioned stored props. Fix the performance issues mentioned above. Start with alerts, then asset lines, then the assets list. Last, Ensure, Lazy, Loading, Correct, Time,
+I would suggest to start with the three mentioned stored props. Fix the performance issues mentioned above. 
+1) Start with alerts, 
+2) then asset lines, 
+3) then the assets list. 
+4) Last, ensure, Lazy loading happens at the correct time,
+
