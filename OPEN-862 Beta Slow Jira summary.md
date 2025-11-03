@@ -1,8 +1,8 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T12:45
+updated: 2025-11-03T12:46
 ---
-## Introduction
+## Initial findings
 
 While looking into the spike, I did quite a few tests. I did a few tests on integration, a few locally, and then also on production. In the table below you can see some of my findings.
 
@@ -31,5 +31,10 @@ The next stored proc to look at is the one returning all the assets within the c
 
 When looking into the table above, we can see that Rio Tinto, within that column, that the alerts and the asset lines sometimes would time out. It would remain pending. This confirms my above statements. The configgroupsAlerts was also quite high, but it shares the stored proc as previously mentioned. So if we fix up the assets alerts, this will also be resolved.
 
-In addition to the above three stored procs, we could enhance reading the other columns for config groups. getMobi1eunitAliensForонаionXBQJyi5 , getMobi1eunitWitldZ1,,gif, Mobi1eunitะ3, getMobi1eunitGl, getMobi1eunitFentimeZ3, x celular1ulan, x extendeddial, getMobi1euninVa9, x',,x411, x2le southern, x3 softwarecastx, getMobi1eunitRedequezZa, x411 serverные axiom Booft, $220$209, $220$209, $220$209, $940$209, $ tener$ハальным til0, $880$280, $6.99$, $9.99$, $9.99$", $9.99$, $6.99$, $ulanB泰 DimStorm, $9.99$ $4.9$$126, $2
+In addition to the above three stored procs, we could enhance reading the other columns for config groups. I would not prioritize this though because as we can see in the result, it usually gets done within a second.
+Lastly, we could also look into getting the config groups. However, this also usually takes less than a second. So I would also not prioritize this.
+
+
+## More findings
+
 
