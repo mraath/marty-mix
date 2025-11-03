@@ -91,6 +91,7 @@ Alerts:
 C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups.sql
 
 C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetMobileUnitBasicInfoForConfigGroups.sql
+C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetMobileUnitFirmwareInfo.sql
 
 
 
