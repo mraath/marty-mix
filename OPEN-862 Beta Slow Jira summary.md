@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T13:18
+updated: 2025-11-03T13:19
 ---
 ## Initial findings
 
@@ -69,7 +69,7 @@ Summary: Switch from Table Variables + Cursors + correlated subqueries to tempor
 
 ## POC
 
-As a proof of concept, I took the alerts, stored proc, I added some enhancements. It seemed to load much faster. I just need to ensure that it still returns the same data. However, from my initial proof of concept, it seemed to have worked. However, we just need to make sure about this.
+As a proof of concept, I took the alerts stored proc, I added some enhancements. It seemed to load much faster. I just need to ensure that it still returns the same data. However, from my initial proof of concept, it seemed to have worked. However, we just need to make sure about this.
 
 ## Steps
 
