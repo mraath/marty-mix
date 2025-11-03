@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T13:14
+updated: 2025-11-03T13:15
 ---
 ## Initial findings
 
@@ -25,11 +25,11 @@ While looking into the spike, I did quite a few tests. I did a few tests on inte
 |module.getConfigurationGroupTemplate||||X|||||||
 |module.getConfigurationGroup||||X|||||||
 
-In the table above, we can clearly see that the main point of concern is the alerts for both assets and config groups as the stored proc between these two are shared. 
-Then after that, asset lines is also a potential issue. Asset Lines also contains the CAN logic, which currently I can't really see is the main reason for all of this happening.
-The next stored proc to look at is the one returning all the assets within the config groups.
+In the table above, we can clearly see that the main point of concern is the **alerts** for both assets and config groups as the stored proc between these two are shared. 
+Then after that, **asset lines** is also a potential issue. Asset Lines also contains the CAN logic, which currently I can't really see is the main reason for all of this happening.
+The next stored proc to look at is the one returning all the **assets list** within the config groups.
 
-When looking into the table above, we can see that Rio Tinto, within that column, that the alerts and the asset lines sometimes would time out. It would remain pending. This confirms my above statements. The configgroupsAlerts was also quite high, but it shares the stored proc as previously mentioned. So if we fix up the assets alerts, this will also be resolved.
+When looking into the table above, we can see that within Rio Tinto, within that column, that the alerts and the asset lines sometimes would time out. It would remain pending. This confirms my above statements. The configgroupsAlerts was also quite high, but it shares the stored proc as previously mentioned. So if we fix up the assets alerts, this will also be resolved.
 
 In addition to the above three stored procs, we could enhance reading the other columns for config groups. I would not prioritize this though because as we can see in the result, it usually gets done within a second.
 Lastly, we could also look into getting the config groups. However, this also usually takes less than a second. So I would also not prioritize this.
