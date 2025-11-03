@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T12:46
+updated: 2025-11-03T12:47
 ---
 ## Initial findings
 
@@ -36,5 +36,8 @@ Lastly, we could also look into getting the config groups. However, this also us
 
 
 ## More findings
+
+From the above table we can also see that the three stored procs mentioned above are lazy loaded. However, sometimes it seemed to still have an influence on the initial data being loaded. This could be another thing we could change to ensure that lazy loading happens only after the initial data has populated the grid.
+We can do this for both the ConfigGroupsGrid and the AssetListsGrid.
 
 
