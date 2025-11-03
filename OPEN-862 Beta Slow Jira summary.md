@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T12:48
+updated: 2025-11-03T12:50
 ---
 ## Initial findings
 
@@ -42,6 +42,12 @@ We can do this for both the ConfigGroupsGrid and the AssetListsGrid.
 
 Once we have enhanced the stored procs and we have also ensured that the lazy loading happens at the correct time, we could look into loading only a few config groups assets at a time. However, for now, I think we should just focus on the above-mentioned enhancements.
 
+## Database Changes
+
+
+
 ## POC
+
+As a proof of concept, I took the alerts, stored proc, I added some enhancements. It seemed to load much faster. I just need to ensure that it still returns the same data. However, from my initial proof of concept, it seemed to have worked. However, we just need to make sure about this.
 
 
