@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T13:19
+updated: 2025-11-03T13:21
 ---
 ## Initial findings
 
@@ -79,3 +79,4 @@ I would suggest to start with the three mentioned stored props. Fix the performa
 3) then the assets list. 
 4) Last, ensure, Lazy loading happens at the correct time,
 
+I think we should create four separate stories for this. Some of the stored procs rewriting could take a few days. Most likely, most time would go into testing as we would need to ensure it returns the correct results after changing these stored procs.
