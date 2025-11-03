@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T13:08
+updated: 2025-11-03T13:10
 ---
 ## Initial findings
 
@@ -65,8 +65,12 @@ Personally I think making stored proc changes would have the most significant ef
 	- Multi-join queries over table variables
 	- FW version outdated calculated inside a subquery per mobile unit
 
+Summary: Switch from Table Variables + Cursors + correlated subqueries to temporary tables / CTEs + set-based joins. This will reduce runtime significantly.
+
 ## POC
 
 As a proof of concept, I took the alerts, stored proc, I added some enhancements. It seemed to load much faster. I just need to ensure that it still returns the same data. However, from my initial proof of concept, it seemed to have worked. However, we just need to make sure about this.
+
+## Steps
 
 
