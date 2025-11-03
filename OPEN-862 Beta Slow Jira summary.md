@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T12:50
+updated: 2025-11-03T12:51
 ---
 ## Initial findings
 
@@ -43,6 +43,8 @@ We can do this for both the ConfigGroupsGrid and the AssetListsGrid.
 Once we have enhanced the stored procs and we have also ensured that the lazy loading happens at the correct time, we could look into loading only a few config groups assets at a time. However, for now, I think we should just focus on the above-mentioned enhancements.
 
 ## Database Changes
+
+Personally I think making stored proc changes would have the most significant effect on these slow pages. After this I would look into the lazy loading in the front end to ensure it loads after the initial grid data has been been populated.
 
 
 
