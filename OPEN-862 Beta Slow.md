@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-11-03T15:48
+updated: 2025-11-03T15:49
 ---
 
 # OPEN-862 Beta Slow
@@ -92,7 +92,7 @@ C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\stat
 
 C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetMobileUnitBasicInfoForConfigGroups.sql
 C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetMobileUnitFirmwareInfo.sql
-
+C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetMobileUnitMissingParameters.sql
 
 
 
