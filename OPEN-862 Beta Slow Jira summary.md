@@ -44,7 +44,7 @@ Once we have enhanced the stored procs and we have also ensured that the lazy lo
 
 ## Database Changes
 
-Personally I think making stored proc changes would have the most significant effect on these slow pages. After this I would look into the lazy loading in the front end to ensure it loads after the initial grid data has been been populated.
+Personally I think making stored proc changes would have the most significant effect on these slow page loads. After this I would look into the lazy loading in the front end to ensure it loads after the initial grid data has been been populated.
 
 ### Performance issues
 
