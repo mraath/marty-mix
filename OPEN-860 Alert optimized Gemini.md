@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T15:56
-updated: 2025-11-03T15:58
+updated: 2025-11-03T16:16
 ---
 
 ```sql
@@ -632,3 +632,350 @@ The crucial part was converting the iterative calls to `MobileUnit_GetMobileUni
     
 
 Would you like me to focus on optimizing the `[state].[MobileUnit_GetMobileUnitFirmwareInfo]` stored procedure next, which could be fully set-based on its own if needed?
+
+---
+
+## MORE OPTIMIZED
+
+```
+CREATE PROCEDURE [state].[MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups]
+    @configGroupIds [dbo].[SelectionIds] READONLY
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- 1. Get Basic Info (Execution of first SP remains as it uses a READONLY table)
+    DECLARE @BasicInfo TABLE
+    (
+        MobileUnitId BIGINT,
+        AssetId BIGINT,
+        ConfigurationGroupId BIGINT,
+        ConfigurationGroupKey INT,
+        MobileDeviceKey INT,
+        MobileUnitKey INT,
+        ConfigurationStatusId INT,
+        ConfigurationStatus NVARCHAR(50),
+        ConfigurationStatusDate DATETIME,
+        LegacyOrgId INT,
+        LegacyVehicleId INT,
+        [UniqueIdentifier] NVARCHAR(250),
+        Serialnumber NVARCHAR(250),
+        StreamaxSerialNumber NVARCHAR(250),
+        ConfigurationGenerationNotes NVARCHAR(MAX),
+        ConfigurationGenerationWarning NVARCHAR(MAX),
+        LibraryKey INT,
+        EventTemplateKey INT,
+        LocationTemplateKey INT,
+        MobileDeviceTemplateKey INT
+    );
+    INSERT INTO @BasicInfo
+    EXEC [state].[MobileUnit_GetMobileUnitBasicInfoForConfigGroups] @configGroupIds;
+
+
+    -- 2. Basic Unit Results Table (Updated to include temporary FW keys for set-based logic)
+    CREATE TABLE #UnitResults
+    (
+        MobileUnitId BIGINT PRIMARY KEY CLUSTERED,
+        AssetId BIGINT,
+        ConfigurationGroupId BIGINT,
+        ConfigurationGroupKey INT,
+        MobileDeviceKey INT,
+        MobileUnitKey INT,
+        ConfigurationStatusId INT,
+        ConfigurationStatus NVARCHAR(50),
+        ConfigurationStatusDate DATETIME,
+        LegacyOrgId INT,
+        LegacyVehicleId INT,
+        [UniqueIdentifier] NVARCHAR(250),
+        Serialnumber NVARCHAR(250),
+        StreamaxSerialNumber NVARCHAR(250),
+        ConfigurationGenerationNotes NVARCHAR(MAX),
+        ConfigurationGenerationWarning NVARCHAR(MAX),
+        LibraryKey INT,
+        EventTemplateKey INT,
+        LocationTemplateKey INT,
+        MobileDeviceTemplateKey INT,
+        -- New columns to support set-based firmware calculation:
+        PreferredFirmwareVersionId BIGINT,
+        FirmwareType INT,
+        -- Final output columns:
+        InstalledFirmwareName NVARCHAR(50),
+        PreferredFirmwareName NVARCHAR(50),
+        IsFirmwareOutdated BIT,
+        IsMissingParameters BIT -- Defaults to 0 since the SP logic is commented out
+    );
+
+    -- Insert basic info with defaults
+    INSERT INTO #UnitResults
+    SELECT 
+        bi.*,
+        NULL AS PreferredFirmwareVersionId,
+        NULL AS FirmwareType,
+        CAST(NULL AS NVARCHAR(50)) AS InstalledFirmwareName,
+        CAST(NULL AS NVARCHAR(50)) AS PreferredFirmwareName,
+        CAST(0 AS BIT) AS IsFirmwareOutdated,
+        CAST(0 AS BIT) AS IsMissingParameters
+    FROM @BasicInfo bi;
+    
+    
+    -- 3. SET-BASED FIRMWARE INFORMATION POPULATION (Replacing Cursor/MobileUnit_GetMobileUnitFirmwareInfo)
+    
+    -- Constants for Firmware Logic
+    DECLARE @FIRMWARE_VERSION BIGINT = 642299852142387816;
+    DECLARE @PreferedFirmwareVersionPropId BIGINT = 4015466679217121645;
+    DECLARE @FM3xBASDDR INT = 2;
+    DECLARE @FMCANDDMs INT = 3;
+    DECLARE @FM3XXX_MOBILE_DEVICE_RANGE BIGINT = 6773205951411395052;
+
+    -- Step 3a: Get Installed FW Name and ID
+    WITH InstalledFW AS (
+        SELECT
+            mus.MobileUnitId,
+            mus.[Value] AS InstalledFirmwareName
+        FROM [state].[MobileUnitState] mus WITH (NOLOCK)
+        INNER JOIN #UnitResults ur ON ur.MobileUnitId = mus.MobileUnitId
+        WHERE mus.[PropertyId] = @FIRMWARE_VERSION
+    )
+    UPDATE ur
+    SET 
+        InstalledFirmwareName = ifw.InstalledFirmwareName
+    FROM #UnitResults ur
+    INNER JOIN InstalledFW ifw ON ur.MobileUnitId = ifw.MobileUnitId;
+
+
+    -- Step 3b: Get Preferred FW ID, Name, and Type (Populates new helper columns)
+    WITH FWPropKey AS (
+        SELECT TOP 1 PropertyKey
+        FROM [DeviceConfiguration].[definition].[Properties] WITH (NOLOCK)
+        WHERE PropertyId = @PreferedFirmwareVersionPropId
+    ),
+    TemplateFW AS (
+        SELECT 
+            ur.MobileUnitId,
+            tdpr.TemplateDevicePropertyKey,
+            CASE WHEN ISNUMERIC(tdpr.[Value]) = 1 THEN CAST(tdpr.[Value] AS BIGINT) ELSE NULL END AS TemplateFirmwareVersionId
+        FROM #UnitResults ur
+        INNER JOIN [DeviceConfiguration].[template].[MobileDeviceTemplates] tmdt WITH (NOLOCK)
+            ON tmdt.MobileDeviceTemplateKey = ur.MobileDeviceTemplateKey 
+            AND tmdt.LibraryKey = ur.LibraryKey 
+            AND tmdt.MobileDeviceKey = ur.MobileDeviceKey
+        CROSS JOIN FWPropKey fpk
+        INNER JOIN [DeviceConfiguration].[definition].[DeviceDependencies] ddd WITH (NOLOCK)
+            ON ddd.ParentDeviceKey = tmdt.MobileDeviceKey
+        INNER JOIN [DeviceConfiguration].[template].[DeviceProperties] tdpr WITH (NOLOCK)
+            ON tdpr.DeviceKey = ddd.ChildDeviceKey 
+            AND tdpr.PropertyKey = fpk.PropertyKey
+            AND tdpr.LibraryKey = ur.LibraryKey
+            AND tdpr.MobileDeviceTemplateKey = ur.MobileDeviceTemplateKey
+        WHERE tdpr.Value IS NOT NULL
+    ),
+    OverrideFW AS (
+        SELECT 
+            muodp.MobileUnitKey,
+            muodp.TemplateDevicePropertyKey,
+            CASE WHEN ISNUMERIC(muodp.[Value]) = 1 THEN CAST(muodp.[Value] AS BIGINT) ELSE NULL END AS OverriddenFirmwareVersionId
+        FROM [DeviceConfiguration].[mobileunit].[OverridenDeviceProperties] muodp WITH (NOLOCK)
+        WHERE muodp.Value IS NOT NULL
+    ),
+    PreferredFW AS (
+        SELECT
+            tfw.MobileUnitId,
+            COALESCE(ofw.OverriddenFirmwareVersionId, tfw.TemplateFirmwareVersionId) AS PreferredFirmwareVersionId
+        FROM TemplateFW tfw
+        LEFT JOIN OverrideFW ofw ON tfw.TemplateDevicePropertyKey = ofw.TemplateDevicePropertyKey
+                            AND ofw.MobileUnitKey = tfw.MobileUnitKey -- Assuming MobileUnitKey is available in TemplateFW via join on #UnitResults
+    ),
+    PreferredFWNameType AS (
+        SELECT 
+            pfw.MobileUnitId,
+            pfw.PreferredFirmwareVersionId,
+            dfw.Name AS PreferredFirmwareName,
+            dfw.FirmwareType
+        FROM PreferredFW pfw
+        INNER JOIN [DeviceConfiguration].[definition].[FirmwareVersions] dfw WITH (NOLOCK)
+            ON pfw.PreferredFirmwareVersionId = dfw.FirmwareVersionId
+        INNER JOIN [DeviceConfiguration].[library].[FirmwareVersions] lfw WITH (NOLOCK)
+            ON dfw.FirmwareVersionKey = lfw.FirmwareVersionKey 
+            AND lfw.LibraryKey = (SELECT TOP 1 ur.LibraryKey FROM #UnitResults ur WHERE ur.MobileUnitId = pfw.MobileUnitId)
+    )
+    UPDATE ur
+    SET 
+        PreferredFirmwareName = pfwnt.PreferredFirmwareName,
+        PreferredFirmwareVersionId = pfwnt.PreferredFirmwareVersionId,
+        FirmwareType = pfwnt.FirmwareType
+    FROM #UnitResults ur
+    INNER JOIN PreferredFWNameType pfwnt ON ur.MobileUnitId = pfwnt.MobileUnitId;
+
+
+    -- Step 3c: Determine IsFirmwareOutdated (Set-Based logic using new columns)
+    
+    WITH FwFilterChecks AS (
+        SELECT 
+            ur.MobileUnitId,
+            ur.PreferredFirmwareVersionId,
+            ur.FirmwareType,
+            ur.LibraryKey,
+            ur.MobileDeviceKey
+        FROM #UnitResults ur
+        WHERE ur.PreferredFirmwareName IS NOT NULL AND ur.InstalledFirmwareName IS NOT NULL
+          AND ur.PreferredFirmwareVersionId IS NOT NULL AND ur.FirmwareType IS NOT NULL
+    ),
+    FilterFlags AS (
+        SELECT 
+            ffc.*,
+            -- Check if FMBas Device
+            CASE WHEN EXISTS (
+                SELECT 1 FROM [DeviceConfiguration].[definition].[DeviceDependencies] ddd WITH (NOLOCK)
+                INNER JOIN [DeviceConfiguration].[definition].[Devices] ddParent WITH (NOLOCK) ON ddParent.DeviceKey = ddd.ParentDeviceKey
+                WHERE ddd.ChildDeviceKey = ffc.MobileDeviceKey AND ddParent.DeviceId = @FM3XXX_MOBILE_DEVICE_RANGE
+            ) THEN 1 ELSE 0 END AS IsFMBasDevice,
+            -- Check if CAN Incompatible (using the fixed list of DeviceIds)
+            CASE WHEN ffc.FirmwareType = @FMCANDDMs AND EXISTS (
+                 SELECT 1 FROM [DeviceConfiguration].[definition].[Devices] dd WITH (NOLOCK)
+                 WHERE dd.DeviceKey = ffc.MobileDeviceKey
+                   AND dd.DeviceId IN (873035855993834515, -9096330589235079600, -1840564510281932398, -4778860267039095909, -5858009722316757743, 4650434075306181696, -7990768985497297820, 3527221626955903837, -2584440882719714179, 6009028139816724904, -8283040575705223110, -2638857266241007532, 6710364014173584261, -90599922128129323, -2135111653303591150, -5604407714490286122)
+            ) THEN 1 ELSE 0 END AS IsCanBasIncompatible
+        FROM FwFilterChecks ffc
+    ),
+    FilteredVersions AS (
+        SELECT
+            ff.MobileUnitId,
+            dfw.FirmwareVersionId,
+            dfw.Name,
+            -- Calculate version number (rank) for the unit's filtered set
+            ROW_NUMBER() OVER (PARTITION BY ff.MobileUnitId ORDER BY dfw.Name) AS VersionNumber 
+        FROM FilterFlags ff
+        INNER JOIN [DeviceConfiguration].[definition].[FirmwareVersions] dfw WITH (NOLOCK) ON dfw.FirmwareType = ff.FirmwareType
+        INNER JOIN [DeviceConfiguration].[library].[FirmwareVersions] lfw WITH (NOLOCK) ON dfw.FirmwareVersionKey = lfw.FirmwareVersionKey AND lfw.LibraryKey = ff.LibraryKey
+        WHERE 
+            -- Apply CAN filter (Remove 'E%' versions for CAN incompatible FMCs)
+            NOT (ff.IsCanBasIncompatible = 1 AND ff.FirmwareType = @FMCANDDMs AND dfw.Name LIKE 'E%')
+            -- Apply FMBas filter (Remove all versions if it's BAS DDR type but not an FMBas device)
+            AND NOT (ff.FirmwareType = @FM3xBASDDR AND ff.IsFMBasDevice = 0)
+    ),
+    VersionRanked AS (
+        SELECT
+            fv.MobileUnitId,
+            PreferredVersionNumber = fv.VersionNumber,
+            LatestVersionNumber = MAX(fv.VersionNumber) OVER (PARTITION BY fv.MobileUnitId)
+        FROM FilteredVersions fv
+        INNER JOIN #UnitResults ur ON ur.MobileUnitId = fv.MobileUnitId
+        WHERE fv.FirmwareVersionId = ur.PreferredFirmwareVersionId
+    )
+    UPDATE ur
+    SET IsFirmwareOutdated = 1
+    FROM #UnitResults ur
+    INNER JOIN VersionRanked vr ON ur.MobileUnitId = vr.MobileUnitId
+    WHERE (vr.LatestVersionNumber - vr.PreferredVersionNumber) > 2;
+    
+
+    -- 4. SET-BASED MESSAGE ALERT CALCULATION (Replacing MobileUnit_GetMobileUnitMessageAlerts)
+    
+    -- Constants for message alerts
+    DECLARE @MSG_SENDCONFIG INT = 254;
+    DECLARE @MSG_SENDFIRMWARE INT = 103;
+    DECLARE @MSG_SENDSETTINGS INT = 255;
+    
+    -- Known good statuses (10, 12, 13, 25, 28)
+    WITH KnownGoodStatuses AS (
+        SELECT StatusId = 10 UNION ALL SELECT StatusId = 12 UNION ALL SELECT StatusId = 13 UNION ALL SELECT StatusId = 25 UNION ALL SELECT StatusId = 28
+    ),
+    RankedMessages AS (
+        SELECT
+            mum.MobileUnitId,
+            mum.MessageSubType,
+            mum.CreationDateUtc,
+            mum.MessageStatus,
+            ROW_NUMBER() OVER (PARTITION BY mum.MobileUnitId, mum.MessageSubType ORDER BY mum.CreationDateUtc DESC) as RowNum
+        FROM [state].[MobileUnitMessage] mum WITH (NOLOCK)
+        INNER JOIN #UnitResults ur ON ur.MobileUnitId = mum.MobileUnitId -- Target only the units we care about
+        WHERE mum.MessageSubType IN (@MSG_SENDCONFIG, @MSG_SENDFIRMWARE, @MSG_SENDSETTINGS)
+    ),
+    LatestMessageStatus AS (
+        SELECT
+            rm.MobileUnitId,
+            rm.MessageSubType,
+            rm.CreationDateUtc,
+            CASE WHEN kgs.StatusId IS NOT NULL THEN 1 ELSE 0 END AS IsKnownGoodStatus
+        FROM RankedMessages rm
+        LEFT JOIN KnownGoodStatuses kgs ON rm.MessageStatus = kgs.StatusId
+        WHERE rm.RowNum = 1 -- Only the latest message of each type
+    ),
+    MessageAlerts AS (
+        SELECT
+            MobileUnitId,
+            IsConfigOrSettingAlert = MAX(CASE
+                                            WHEN lms.MessageSubType IN (@MSG_SENDCONFIG, @MSG_SENDSETTINGS) 
+                                                AND lms.CreationDateUtc < DATEADD(day, -5, GETUTCDATE()) 
+                                                AND lms.IsKnownGoodStatus = 0
+                                            THEN 1
+                                            ELSE 0
+                                        END),
+            IsFirmwareAlert = MAX(CASE
+                                    WHEN lms.MessageSubType = @MSG_SENDFIRMWARE
+                                        AND lms.CreationDateUtc < DATEADD(day, -3, GETUTCDATE()) 
+                                        AND lms.IsKnownGoodStatus = 0
+                                    THEN 1
+                                    ELSE 0
+                                END)
+        FROM LatestMessageStatus lms
+        GROUP BY MobileUnitId
+    )
+    SELECT ma.MobileUnitId,
+           MessageAlertCode = CONCAT(
+                                CAST(ma.IsConfigOrSettingAlert AS CHAR(1)),
+                                CAST(ma.IsFirmwareAlert AS CHAR(1))
+                            )
+    INTO #MessageAlerts
+    FROM MessageAlerts ma;
+
+
+    -- 5. SET-BASED LAST MESSAGE DATE (Replacing MobileUnit_GetMobileUnitLastMessageDate)
+    
+    WITH LastMessage AS (
+        SELECT
+            mum.MobileUnitId,
+            mum.MessageStatusDateUtc,
+            ROW_NUMBER() OVER (PARTITION BY mum.MobileUnitId ORDER BY mum.MessageStatusDateUtc DESC) as rn
+        FROM [state].[MobileUnitMessage] mum WITH (NOLOCK)
+        INNER JOIN #UnitResults ur ON ur.MobileUnitId = mum.MobileUnitId -- Target only the units we care about
+        WHERE mum.MessageSubType IN (@MSG_SENDCONFIG, @MSG_SENDFIRMWARE, @MSG_SENDSETTINGS)
+    )
+    SELECT
+        MobileUnitId,
+        LastMessageStatusDateUtc = MessageStatusDateUtc
+    INTO #LastMessageDate
+    FROM LastMessage
+    WHERE rn = 1;
+
+
+    -- 6. Final Result Set: JOIN all components
+
+    SELECT
+        Alerts = CONCAT(
+                    ISNULL(ma.MessageAlertCode, '00'),           -- Alert 1 & 2
+                    CAST(ISNULL(ur.IsFirmwareOutdated, 0) AS CHAR(1)),  -- Alert 3
+                    CAST(ISNULL(ur.IsMissingParameters, 0) AS CHAR(1))  -- Alert 4 (always 0)
+                 ),
+        ur.MobileUnitId,
+        ur.Serialnumber,
+        ur.ConfigurationGroupId,
+        NULL as CommsLog,
+        CAST(lmd.LastMessageStatusDateUtc AS DATETIME) AS MessageStatusDateUtc, 
+        ur.InstalledFirmwareName AS FWVersion,
+        ur.PreferredFirmwareName AS PreferredFWVersion
+    FROM #UnitResults ur
+    -- Use LEFT JOIN to simulate OUTER APPLY for the message date (will be NULL if no message exists)
+    LEFT JOIN #LastMessageDate lmd ON ur.MobileUnitId = lmd.MobileUnitId
+    -- Use LEFT JOIN to simulate CROSS APPLY for the alerts (will be NULL if no messages, result in '00')
+    LEFT JOIN #MessageAlerts ma ON ur.MobileUnitId = ma.MobileUnitId;
+
+
+    -- 7. Clean up temp tables
+    DROP TABLE #UnitResults;
+    DROP TABLE #MessageAlerts;
+    DROP TABLE #LastMessageDate;
+
+END;
+GO
+```
