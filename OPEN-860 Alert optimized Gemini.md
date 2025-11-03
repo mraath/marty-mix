@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T15:56
-updated: 2025-11-03T16:16
+updated: 2025-11-03T16:24
 ---
 
 ```sql
@@ -702,15 +702,25 @@ BEGIN
         InstalledFirmwareName NVARCHAR(50),
         PreferredFirmwareName NVARCHAR(50),
         IsFirmwareOutdated BIT,
-        IsMissingParameters BIT -- Defaults to 0 since the SP logic is commented out
+        IsMissingParameters BIT
     );
 
-    -- Insert basic info with defaults
-    INSERT INTO #UnitResults
+    -- **FIX FOR MSG 213: Explicitly list all columns in INSERT and SELECT**
+    INSERT INTO #UnitResults (
+        MobileUnitId, AssetId, ConfigurationGroupId, ConfigurationGroupKey, MobileDeviceKey, MobileUnitKey, 
+        ConfigurationStatusId, ConfigurationStatus, ConfigurationStatusDate, LegacyOrgId, LegacyVehicleId, 
+        [UniqueIdentifier], Serialnumber, StreamaxSerialNumber, ConfigurationGenerationNotes, ConfigurationGenerationWarning, 
+        LibraryKey, EventTemplateKey, LocationTemplateKey, MobileDeviceTemplateKey, 
+        PreferredFirmwareVersionId, FirmwareType, InstalledFirmwareName, PreferredFirmwareName, 
+        IsFirmwareOutdated, IsMissingParameters
+    )
     SELECT 
-        bi.*,
-        NULL AS PreferredFirmwareVersionId,
-        NULL AS FirmwareType,
+        bi.MobileUnitId, bi.AssetId, bi.ConfigurationGroupId, bi.ConfigurationGroupKey, bi.MobileDeviceKey, bi.MobileUnitKey, 
+        bi.ConfigurationStatusId, bi.ConfigurationStatus, bi.ConfigurationStatusDate, bi.LegacyOrgId, bi.LegacyVehicleId, 
+        bi.[UniqueIdentifier], bi.Serialnumber, bi.StreamaxSerialNumber, bi.ConfigurationGenerationNotes, bi.ConfigurationGenerationWarning, 
+        bi.LibraryKey, bi.EventTemplateKey, bi.LocationTemplateKey, bi.MobileDeviceTemplateKey,
+        CAST(NULL AS BIGINT) AS PreferredFirmwareVersionId, -- Explicit CAST for New Column 1
+        CAST(NULL AS INT) AS FirmwareType,                 -- Explicit CAST for New Column 2
         CAST(NULL AS NVARCHAR(50)) AS InstalledFirmwareName,
         CAST(NULL AS NVARCHAR(50)) AS PreferredFirmwareName,
         CAST(0 AS BIT) AS IsFirmwareOutdated,
@@ -752,6 +762,7 @@ BEGIN
     TemplateFW AS (
         SELECT 
             ur.MobileUnitId,
+            ur.MobileUnitKey, -- *** REFINEMENT: Explicitly including MobileUnitKey for subsequent join ***
             tdpr.TemplateDevicePropertyKey,
             CASE WHEN ISNUMERIC(tdpr.[Value]) = 1 THEN CAST(tdpr.[Value] AS BIGINT) ELSE NULL END AS TemplateFirmwareVersionId
         FROM #UnitResults ur
@@ -783,7 +794,7 @@ BEGIN
             COALESCE(ofw.OverriddenFirmwareVersionId, tfw.TemplateFirmwareVersionId) AS PreferredFirmwareVersionId
         FROM TemplateFW tfw
         LEFT JOIN OverrideFW ofw ON tfw.TemplateDevicePropertyKey = ofw.TemplateDevicePropertyKey
-                            AND ofw.MobileUnitKey = tfw.MobileUnitKey -- Assuming MobileUnitKey is available in TemplateFW via join on #UnitResults
+                            AND ofw.MobileUnitKey = tfw.MobileUnitKey -- Join is now possible using MobileUnitKey from TemplateFW
     ),
     PreferredFWNameType AS (
         SELECT 
@@ -888,7 +899,7 @@ BEGIN
             mum.MessageStatus,
             ROW_NUMBER() OVER (PARTITION BY mum.MobileUnitId, mum.MessageSubType ORDER BY mum.CreationDateUtc DESC) as RowNum
         FROM [state].[MobileUnitMessage] mum WITH (NOLOCK)
-        INNER JOIN #UnitResults ur ON ur.MobileUnitId = mum.MobileUnitId -- Target only the units we care about
+        INNER JOIN #UnitResults ur ON ur.MobileUnitId = mum.MobileUnitId
         WHERE mum.MessageSubType IN (@MSG_SENDCONFIG, @MSG_SENDFIRMWARE, @MSG_SENDSETTINGS)
     ),
     LatestMessageStatus AS (
@@ -896,30 +907,30 @@ BEGIN
             rm.MobileUnitId,
             rm.MessageSubType,
             rm.CreationDateUtc,
-            CASE WHEN kgs.StatusId IS NOT NULL THEN 1 ELSE 0 END AS IsKnownGoodStatus
+            rm.MessageStatus
         FROM RankedMessages rm
-        LEFT JOIN KnownGoodStatuses kgs ON rm.MessageStatus = kgs.StatusId
         WHERE rm.RowNum = 1 -- Only the latest message of each type
     ),
     MessageAlerts AS (
         SELECT
-            MobileUnitId,
+            lms.MobileUnitId,
             IsConfigOrSettingAlert = MAX(CASE
                                             WHEN lms.MessageSubType IN (@MSG_SENDCONFIG, @MSG_SENDSETTINGS) 
                                                 AND lms.CreationDateUtc < DATEADD(day, -5, GETUTCDATE()) 
-                                                AND lms.IsKnownGoodStatus = 0
+                                                AND kgs.StatusId IS NULL -- Check if Status is NOT known good
                                             THEN 1
                                             ELSE 0
                                         END),
             IsFirmwareAlert = MAX(CASE
                                     WHEN lms.MessageSubType = @MSG_SENDFIRMWARE
                                         AND lms.CreationDateUtc < DATEADD(day, -3, GETUTCDATE()) 
-                                        AND lms.IsKnownGoodStatus = 0
+                                        AND kgs.StatusId IS NULL -- Check if Status is NOT known good
                                     THEN 1
                                     ELSE 0
                                 END)
         FROM LatestMessageStatus lms
-        GROUP BY MobileUnitId
+        LEFT JOIN KnownGoodStatuses kgs ON lms.MessageStatus = kgs.StatusId
+        GROUP BY lms.MobileUnitId
     )
     SELECT ma.MobileUnitId,
            MessageAlertCode = CONCAT(
@@ -938,7 +949,7 @@ BEGIN
             mum.MessageStatusDateUtc,
             ROW_NUMBER() OVER (PARTITION BY mum.MobileUnitId ORDER BY mum.MessageStatusDateUtc DESC) as rn
         FROM [state].[MobileUnitMessage] mum WITH (NOLOCK)
-        INNER JOIN #UnitResults ur ON ur.MobileUnitId = mum.MobileUnitId -- Target only the units we care about
+        INNER JOIN #UnitResults ur ON ur.MobileUnitId = mum.MobileUnitId
         WHERE mum.MessageSubType IN (@MSG_SENDCONFIG, @MSG_SENDFIRMWARE, @MSG_SENDSETTINGS)
     )
     SELECT
@@ -965,9 +976,9 @@ BEGIN
         ur.InstalledFirmwareName AS FWVersion,
         ur.PreferredFirmwareName AS PreferredFWVersion
     FROM #UnitResults ur
-    -- Use LEFT JOIN to simulate OUTER APPLY for the message date (will be NULL if no message exists)
+    -- Use LEFT JOIN to simulate OUTER APPLY for the message date
     LEFT JOIN #LastMessageDate lmd ON ur.MobileUnitId = lmd.MobileUnitId
-    -- Use LEFT JOIN to simulate CROSS APPLY for the alerts (will be NULL if no messages, result in '00')
+    -- Use LEFT JOIN to simulate CROSS APPLY for the alerts (results in '00' if no message alerts exist)
     LEFT JOIN #MessageAlerts ma ON ur.MobileUnitId = ma.MobileUnitId;
 
 
