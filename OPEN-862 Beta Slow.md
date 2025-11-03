@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-11-03T08:59
+updated: 2025-11-03T10:20
 ---
 
 # OPEN-862 Beta Slow
@@ -14,7 +14,6 @@ Friend:: [[2025-10-28]]
 JIRA:OPEN-862 Beta Slow
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-862)
 
-🌞
 
 ## TODO
 ```dataviewjs
@@ -42,6 +41,10 @@ This Spike aims to:
 - Profile and analyze the page load process to identify where the most time is spent.   
 - Determine if the **CAN Scripts** fetching is the main contributor to the slow load times, or if other factors are involved.
 - Document findings
+
+## Nice Jira Feedback summary
+
+[[OPEN-862 Beta Slow Jira summary]]
 
 ## Investigation
 
