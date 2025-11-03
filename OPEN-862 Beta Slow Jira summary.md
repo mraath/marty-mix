@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T13:16
+updated: 2025-11-03T13:18
 ---
 ## Initial findings
 
@@ -37,10 +37,10 @@ Lastly, we could also look into getting the *config groups list*. However, this 
 
 ## More findings
 
-From the above table we can also see that the three stored procs mentioned above are lazy loaded. However, sometimes it seemed to still have an influence on the initial data being loaded. This could be another thing we could change to ensure that lazy loading happens only after the initial data has populated the grid.
-We can do this for both the ConfigGroupsGrid and the AssetListsGrid.
+From the above table we can also see that the three stored procs mentioned above are lazy loaded. However, sometimes it seemed to still have an influence on the initial data being loaded. This could be another thing we could change to ensure that **lazy loading** happens only after the initial data has populated the grid.
+We can do this for both the Config Groups Grid and the Assets List Grid.
 
-Once we have enhanced the stored procs and we have also ensured that the lazy loading happens at the correct time, we could look into loading only a few config groups assets at a time. However, for now, I think we should just focus on the above-mentioned enhancements.
+Once we have enhanced the stored procs and we have also ensured that the lazy loading happens at the correct time, we could look into loading only a few config groups assets at a time. However, for now, I think we should just focus on the above-mentioned enhancements, before adding **batch** loading.
 
 ## Database Changes
 
