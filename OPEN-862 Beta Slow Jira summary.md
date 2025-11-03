@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T13:10
+updated: 2025-11-03T13:13
 ---
 ## Initial findings
 
@@ -73,4 +73,4 @@ As a proof of concept, I took the alerts, stored proc, I added some enhancements
 
 ## Steps
 
-
+I would suggest to start with the three mentioned stored props. Fix the performance issues mentioned above. Start with alerts, then asset lines, then the assets list. Last, Ensure, Lazy, Loading, Correct, Time,
