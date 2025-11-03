@@ -1,6 +1,6 @@
 ---
 created: 2025-10-28T07:32
-updated: 2025-10-30T10:10
+updated: 2025-11-03T12:59
 ---
 Perplexity 1
 
@@ -299,4 +299,103 @@ Once the logs are gathered, you will analyze the **waterfall of time**:
 
 ---
 
-???
+CHAT GPT Summary:
+
+
+Here’s a clear, simplified summary and actionable recommendations from your findings:
+
+---
+
+## **1) Simplified Summary of Performance Issues**
+
+- **Table Variables (@...)**
+    
+    - Lack statistics → SQL Server assumes very few rows → poor execution plans for joins.
+        
+    - Leads to slow, nested-loop joins in complex queries.
+        
+- **Correlated Subqueries in Final SELECT**
+    
+    - Multiple scalar subqueries for `CanScriptLineId, CanScript, Speed, RPM, Fuel, SP, HOS`.
+        
+    - Executed **row-by-row**, causing major bottlenecks (16s → 1 min runtimes).
+        
+- **Cursors**
+    
+    - Iterates over each mobile unit and executes two SPs per unit.
+        
+    - Example: 1,000 units → 1 base query + 2,000 SP calls + 1,000 UPDATEs → extremely slow.
+        
+    - Major CPU and I/O drain.
+        
+- **String Aggregation / Connection Logic**
+    
+    - `FOR XML PATH('')` logic and CASE statements work but can be simplified.
+        
+    - Over-complicated, impacting readability and slight performance.
+        
+- **Joins & Multi-join Queries**
+    
+    - Complex joins over Table Variables without statistics → suboptimal execution plans.
+        
+- **Firmware Version Checks**
+    
+    - Current logic counts outdated versions inside a subquery per mobile unit → inefficient.
+        
+
+---
+
+## **2) Bullet-Point Recommendations for Resolution**
+
+- **Replace Table Variables with Temporary Tables or CTEs**
+    
+    - Temporary tables (#...) allow SQL Server to collect statistics → better execution plans.
+        
+    - For smaller or intermediate datasets, use CTEs for clarity and optimization.
+        
+- **Eliminate Correlated Subqueries**
+    
+    - Use **conditional aggregation / PIVOT** to convert row-by-row subqueries into set-based operations.
+        
+    - Use `OUTER APPLY` or `SELECT TOP 1` instead of scalar subqueries for single-value lookups.
+        
+- **Replace Cursors with Set-Based Logic**
+    
+    - Integrate the logic of `[MobileUnit_GetMobileUnitFirmwareInfo]` and `[MobileUnit_GetMobileUnitMissingParameters]` directly using **joins or CTEs**.
+        
+    - Pass a table of MobileUnitIds to SPs or functions instead of calling them per row.
+        
+- **Optimize String Aggregation / Connection Logic**
+    
+    - Simplify `CASE WHEN ... ELSE ... END` to `ISNULL(eff.Connection, cgl.Connection)`.
+        
+    - Simplify `FOR XML PATH('')` + `STUFF` by aggregating already pivoted data.
+        
+- **Firmware Version Comparison**
+    
+    - Consider parsing version numbers instead of string comparison (optional if version ordering may fail).
+        
+- **General Join & Query Optimization**
+    
+    - Ensure all joins use indexes on join columns.
+        
+    - Replace nested loops with **hash or merge joins** where possible (SQL Server may choose automatically with statistics).
+        
+- **Pre-aggregate / Pivot Repeated Data**
+    
+    - Pivot `WireName/LineId/Connection` into a single temporary table instead of multiple subqueries per row.
+        
+- **Set-Based Black Flags Calculation**
+    
+    - Keep using CTEs and COUNT(DISTINCT...) with LEFT JOINs → avoids multiple per-row calculations.
+        
+
+---
+
+✅ **Overall Effect**: Switching from Table Variables + Cursors + correlated subqueries to temporary tables / CTEs + set-based joins will reduce runtime by 10–100×, drastically lowering CPU and I/O usage.
+
+---
+
+If you want, I can also create a **diagram showing the old vs new execution flow** to make these improvements super easy to visualize.
+
+Do you want me to do that?

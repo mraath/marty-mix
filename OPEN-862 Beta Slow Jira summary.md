@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T10:20
-updated: 2025-11-03T12:51
+updated: 2025-11-03T13:08
 ---
 ## Initial findings
 
@@ -46,7 +46,24 @@ Once we have enhanced the stored procs and we have also ensured that the lazy lo
 
 Personally I think making stored proc changes would have the most significant effect on these slow pages. After this I would look into the lazy loading in the front end to ensure it loads after the initial grid data has been been populated.
 
+### Performance issues
 
+1) Table variables
+	- Has poor execution plans for joins as sql assumes very few rows
+	- Results in slow nested loops joins and complex queries
+	- USE: Temporary Tables or CTEs (for smaller datasets)
+2) Correlated Subqueries
+	- Multiple scalar subqueries for different lines: Incl. CAN
+	- Row-by-row execution and bottleneck
+	- USE: Outer apply / conditional aggregation / PIVOT
+3) Cursors
+	- Iterates over each unit, two SPs per unit
+	- eg. 1000 units > 1 base query + 2000 SP calls + 1000 updates.... this is very slow
+	- USE: Joins / CTE's instead of integrated logic
+4) Other
+	- String aggregation
+	- Multi-join queries over table variables
+	- FW version outdated calculated inside a subquery per mobile unit
 
 ## POC
 
