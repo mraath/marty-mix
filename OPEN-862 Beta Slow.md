@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-11-03T10:20
+updated: 2025-11-03T15:41
 ---
 
 # OPEN-862 Beta Slow
@@ -87,7 +87,36 @@ Dev Tools Filter: -.js, -.html, -en_, -
 
 
 Alerts:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Stored Procedures\MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups.sql
+
+
+
+
+
+
 [state].[MobileUnit_GetMobileUnitLastMessageDate]
 C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\state\Functions\MobileUnit_GetMobileUnitLastMessageDate.sql
 
