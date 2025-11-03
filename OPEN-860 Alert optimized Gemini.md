@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T15:56
-updated: 2025-11-03T16:24
+updated: 2025-11-03T16:26
 ---
 
 ```sql
@@ -705,7 +705,7 @@ BEGIN
         IsMissingParameters BIT
     );
 
-    -- **FIX FOR MSG 213: Explicitly list all columns in INSERT and SELECT**
+    -- FIX FOR MSG 213: Explicitly list all columns in INSERT and SELECT
     INSERT INTO #UnitResults (
         MobileUnitId, AssetId, ConfigurationGroupId, ConfigurationGroupKey, MobileDeviceKey, MobileUnitKey, 
         ConfigurationStatusId, ConfigurationStatus, ConfigurationStatusDate, LegacyOrgId, LegacyVehicleId, 
@@ -719,8 +719,8 @@ BEGIN
         bi.ConfigurationStatusId, bi.ConfigurationStatus, bi.ConfigurationStatusDate, bi.LegacyOrgId, bi.LegacyVehicleId, 
         bi.[UniqueIdentifier], bi.Serialnumber, bi.StreamaxSerialNumber, bi.ConfigurationGenerationNotes, bi.ConfigurationGenerationWarning, 
         bi.LibraryKey, bi.EventTemplateKey, bi.LocationTemplateKey, bi.MobileDeviceTemplateKey,
-        CAST(NULL AS BIGINT) AS PreferredFirmwareVersionId, -- Explicit CAST for New Column 1
-        CAST(NULL AS INT) AS FirmwareType,                 -- Explicit CAST for New Column 2
+        CAST(NULL AS BIGINT) AS PreferredFirmwareVersionId, 
+        CAST(NULL AS INT) AS FirmwareType,                 
         CAST(NULL AS NVARCHAR(50)) AS InstalledFirmwareName,
         CAST(NULL AS NVARCHAR(50)) AS PreferredFirmwareName,
         CAST(0 AS BIT) AS IsFirmwareOutdated,
@@ -760,9 +760,13 @@ BEGIN
         WHERE PropertyId = @PreferedFirmwareVersionPropId
     ),
     TemplateFW AS (
+        -- *** FIX FOR MSG 207: Ensure all necessary columns from #UnitResults are selected here ***
         SELECT 
             ur.MobileUnitId,
-            ur.MobileUnitKey, -- *** REFINEMENT: Explicitly including MobileUnitKey for subsequent join ***
+            ur.MobileUnitKey, 
+            ur.LibraryKey, -- Needed for PreferredFWNameType CTE
+            ur.MobileDeviceTemplateKey, -- Needed for joins below
+            ur.MobileDeviceKey, -- Needed for joins below
             tdpr.TemplateDevicePropertyKey,
             CASE WHEN ISNUMERIC(tdpr.[Value]) = 1 THEN CAST(tdpr.[Value] AS BIGINT) ELSE NULL END AS TemplateFirmwareVersionId
         FROM #UnitResults ur
@@ -791,10 +795,11 @@ BEGIN
     PreferredFW AS (
         SELECT
             tfw.MobileUnitId,
-            COALESCE(ofw.OverriddenFirmwareVersionId, tfw.TemplateFirmwareVersionId) AS PreferredFirmwareVersionId
+            COALESCE(ofw.OverriddenFirmwareVersionId, tfw.TemplateFirmwareVersionId) AS PreferredFirmwareVersionId,
+            tfw.LibraryKey -- Pass LibraryKey up
         FROM TemplateFW tfw
         LEFT JOIN OverrideFW ofw ON tfw.TemplateDevicePropertyKey = ofw.TemplateDevicePropertyKey
-                            AND ofw.MobileUnitKey = tfw.MobileUnitKey -- Join is now possible using MobileUnitKey from TemplateFW
+                            AND ofw.MobileUnitKey = tfw.MobileUnitKey
     ),
     PreferredFWNameType AS (
         SELECT 
@@ -807,7 +812,7 @@ BEGIN
             ON pfw.PreferredFirmwareVersionId = dfw.FirmwareVersionId
         INNER JOIN [DeviceConfiguration].[library].[FirmwareVersions] lfw WITH (NOLOCK)
             ON dfw.FirmwareVersionKey = lfw.FirmwareVersionKey 
-            AND lfw.LibraryKey = (SELECT TOP 1 ur.LibraryKey FROM #UnitResults ur WHERE ur.MobileUnitId = pfw.MobileUnitId)
+            AND lfw.LibraryKey = pfw.LibraryKey -- Use passed up LibraryKey
     )
     UPDATE ur
     SET 
@@ -828,6 +833,7 @@ BEGIN
             ur.LibraryKey,
             ur.MobileDeviceKey
         FROM #UnitResults ur
+        -- *** FIX FOR MSG 207: These columns are now available directly from #UnitResults ***
         WHERE ur.PreferredFirmwareName IS NOT NULL AND ur.InstalledFirmwareName IS NOT NULL
           AND ur.PreferredFirmwareVersionId IS NOT NULL AND ur.FirmwareType IS NOT NULL
     ),
