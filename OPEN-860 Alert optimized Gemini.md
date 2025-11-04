@@ -1,6 +1,6 @@
 ---
 created: 2025-11-03T15:56
-updated: 2025-11-03T16:26
+updated: 2025-11-04T10:17
 ---
 
 ```sql
@@ -642,37 +642,14 @@ CREATE PROCEDURE [state].[MobileUnit_GetAllMobileUnitAlertsForConfigurationGroup
     @configGroupIds [dbo].[SelectionIds] READONLY
 AS
 BEGIN
+    
+
+
+	
+
     SET NOCOUNT ON;
 
-    -- 1. Get Basic Info (Execution of first SP remains as it uses a READONLY table)
-    DECLARE @BasicInfo TABLE
-    (
-        MobileUnitId BIGINT,
-        AssetId BIGINT,
-        ConfigurationGroupId BIGINT,
-        ConfigurationGroupKey INT,
-        MobileDeviceKey INT,
-        MobileUnitKey INT,
-        ConfigurationStatusId INT,
-        ConfigurationStatus NVARCHAR(50),
-        ConfigurationStatusDate DATETIME,
-        LegacyOrgId INT,
-        LegacyVehicleId INT,
-        [UniqueIdentifier] NVARCHAR(250),
-        Serialnumber NVARCHAR(250),
-        StreamaxSerialNumber NVARCHAR(250),
-        ConfigurationGenerationNotes NVARCHAR(MAX),
-        ConfigurationGenerationWarning NVARCHAR(MAX),
-        LibraryKey INT,
-        EventTemplateKey INT,
-        LocationTemplateKey INT,
-        MobileDeviceTemplateKey INT
-    );
-    INSERT INTO @BasicInfo
-    EXEC [state].[MobileUnit_GetMobileUnitBasicInfoForConfigGroups] @configGroupIds;
-
-
-    -- 2. Basic Unit Results Table (Updated to include temporary FW keys for set-based logic)
+    -- 2. Basic Unit Results Table
     CREATE TABLE #UnitResults
     (
         MobileUnitId BIGINT PRIMARY KEY CLUSTERED,
@@ -704,8 +681,82 @@ BEGIN
         IsFirmwareOutdated BIT,
         IsMissingParameters BIT
     );
+    
 
-    -- FIX FOR MSG 213: Explicitly list all columns in INSERT and SELECT
+    -- 1. Integrated Basic Info Retrieval (from MobileUnit_GetMobileUnitBasicInfoForConfigGroups)
+    WITH Constants AS (
+        SELECT
+            UNIT_IMEI = CAST(9188780602356317147 AS BIGINT),
+            SERIAL_NUMBER = CAST(-6167220489794283114 AS BIGINT),
+            StreamaxSerialNumber = CAST(-4477362625925416557 AS BIGINT)
+    ),
+    PropKeys AS (
+        SELECT
+            PropIMEIKey = (
+                SELECT TOP 1 [PropertyKey]
+                FROM [DeviceConfiguration].[definition].[Properties] dp WITH (NOLOCK)
+                CROSS JOIN Constants c
+                WHERE dp.PropertyId = c.UNIT_IMEI
+            ),
+            PropStreamaxKey = (
+                SELECT TOP 1 [PropertyKey]
+                FROM [DeviceConfiguration].[definition].[Properties] dp WITH (NOLOCK)
+                CROSS JOIN Constants c
+                WHERE dp.PropertyId = c.StreamaxSerialNumber
+            )
+    ),
+    BasicInfoCTE AS (
+        SELECT
+            mu.MobileUnitId,
+            amu.AssetId,
+            tcg.ConfigurationGroupId,
+            tcg.ConfigurationGroupKey,
+            mu.MobileDeviceKey,
+            mu.MobileUnitKey,
+            mu.[ConfigurationStatus] AS ConfigurationStatusId,
+            cs.[Description] AS ConfigurationStatus,
+            mu.DateUpdated AS ConfigurationStatusDate,
+            amu.LegacyOrgId,
+            amu.LegacyVehicleId,
+            [UniqueIdentifier] = CASE WHEN mu.UniqueIdentifier IS NULL THEN mup.Value ELSE mu.UniqueIdentifier END,
+            Serialnumber = mus.Value, -- mus is joined on SERIAL_NUMBER property
+            StreamaxSerialNumber = COALESCE(mus2.Value, mup2.Value), -- mus2 (state) or mup2 (properties)
+            mu.ConfigurationGenerationNotes,
+            mu.ConfigurationGenerationWarning,
+            tcg.LibraryKey,
+            tcg.EventTemplateKey,
+            tcg.LocationTemplateKey,
+            tcg.MobileDeviceTemplateKey
+        FROM @configGroupIds cgids
+        INNER JOIN [DeviceConfiguration].[template].[ConfigurationGroups] tcg WITH (NOLOCK)
+            ON tcg.ConfigurationGroupId = cgids.id
+        INNER JOIN [DeviceConfiguration].[mobileunit].[MobileUnits] mu WITH (NOLOCK)
+            ON mu.ConfigurationGroupKey = tcg.ConfigurationGroupKey
+        INNER JOIN [DeviceConfiguration].[mobileunit].[AssetMobileUnits] amu WITH (NOLOCK)
+            ON mu.MobileUnitKey = amu.MobileUnitKey
+        INNER JOIN [DeviceConfiguration].[definition].[ConfigurationStatuses] cs WITH (NOLOCK)
+            ON cs.[ConfigurationStatus] = mu.[ConfigurationStatus]
+        CROSS JOIN Constants consts
+        CROSS JOIN PropKeys pk
+        LEFT JOIN [DeviceConfiguration].[mobileunit].[MobileUnitProperties] mup WITH (NOLOCK)
+            ON mu.[MobileUnitKey] = mup.[MobileUnitKey]
+            AND mup.[PropertyKey] = pk.PropIMEIKey
+        LEFT JOIN [DeviceConfiguration.DataProcessing].[state].[MobileUnitState] mus WITH (NOLOCK)
+            ON mus.[MobileUnitId] = mu.[MobileUnitId]
+            AND mus.[PropertyId] = consts.SERIAL_NUMBER
+        -- Join for StreamaxSerialNumber (State table)
+        LEFT JOIN [DeviceConfiguration.DataProcessing].[state].[MobileUnitState] mus2 WITH (NOLOCK)
+            ON mus2.[MobileUnitId] = mu.[MobileUnitId]
+            AND mus2.[PropertyId] = consts.StreamaxSerialNumber
+        -- Join for StreamaxSerialNumber (MobileUnitProperties table)
+        LEFT JOIN [DeviceConfiguration].[mobileunit].[MobileUnitProperties] mup2 WITH (NOLOCK)
+            ON mu.[MobileUnitKey] = mup2.[MobileUnitKey]
+            AND mup2.[PropertyKey] = pk.PropStreamaxKey
+    )
+    
+    
+
+    -- Insert data directly from the integrated BasicInfoCTE into #UnitResults
     INSERT INTO #UnitResults (
         MobileUnitId, AssetId, ConfigurationGroupId, ConfigurationGroupKey, MobileDeviceKey, MobileUnitKey, 
         ConfigurationStatusId, ConfigurationStatus, ConfigurationStatusDate, LegacyOrgId, LegacyVehicleId, 
@@ -725,10 +776,10 @@ BEGIN
         CAST(NULL AS NVARCHAR(50)) AS PreferredFirmwareName,
         CAST(0 AS BIT) AS IsFirmwareOutdated,
         CAST(0 AS BIT) AS IsMissingParameters
-    FROM @BasicInfo bi;
+    FROM BasicInfoCTE bi;
     
     
-    -- 3. SET-BASED FIRMWARE INFORMATION POPULATION (Replacing Cursor/MobileUnit_GetMobileUnitFirmwareInfo)
+    -- 3. SET-BASED FIRMWARE INFORMATION POPULATION
     
     -- Constants for Firmware Logic
     DECLARE @FIRMWARE_VERSION BIGINT = 642299852142387816;
@@ -742,7 +793,7 @@ BEGIN
         SELECT
             mus.MobileUnitId,
             mus.[Value] AS InstalledFirmwareName
-        FROM [state].[MobileUnitState] mus WITH (NOLOCK)
+        FROM [DeviceConfiguration.DataProcessing].[state].[MobileUnitState] mus WITH (NOLOCK)
         INNER JOIN #UnitResults ur ON ur.MobileUnitId = mus.MobileUnitId
         WHERE mus.[PropertyId] = @FIRMWARE_VERSION
     )
@@ -760,15 +811,15 @@ BEGIN
         WHERE PropertyId = @PreferedFirmwareVersionPropId
     ),
     TemplateFW AS (
-        -- *** FIX FOR MSG 207: Ensure all necessary columns from #UnitResults are selected here ***
         SELECT 
             ur.MobileUnitId,
             ur.MobileUnitKey, 
-            ur.LibraryKey, -- Needed for PreferredFWNameType CTE
-            ur.MobileDeviceTemplateKey, -- Needed for joins below
-            ur.MobileDeviceKey, -- Needed for joins below
+            ur.LibraryKey, 
+            ur.MobileDeviceTemplateKey, 
+            ur.MobileDeviceKey, 
             tdpr.TemplateDevicePropertyKey,
-            CASE WHEN ISNUMERIC(tdpr.[Value]) = 1 THEN CAST(tdpr.[Value] AS BIGINT) ELSE NULL END AS TemplateFirmwareVersionId
+            -- FIX: Use TRY_CAST for robust conversion from NVARCHAR to BIGINT
+            TRY_CAST(tdpr.[Value] AS BIGINT) AS TemplateFirmwareVersionId
         FROM #UnitResults ur
         INNER JOIN [DeviceConfiguration].[template].[MobileDeviceTemplates] tmdt WITH (NOLOCK)
             ON tmdt.MobileDeviceTemplateKey = ur.MobileDeviceTemplateKey 
@@ -788,7 +839,8 @@ BEGIN
         SELECT 
             muodp.MobileUnitKey,
             muodp.TemplateDevicePropertyKey,
-            CASE WHEN ISNUMERIC(muodp.[Value]) = 1 THEN CAST(muodp.[Value] AS BIGINT) ELSE NULL END AS OverriddenFirmwareVersionId
+            -- FIX: Use TRY_CAST for robust conversion from NVARCHAR to BIGINT
+            TRY_CAST(muodp.[Value] AS BIGINT) AS OverriddenFirmwareVersionId
         FROM [DeviceConfiguration].[mobileunit].[OverridenDeviceProperties] muodp WITH (NOLOCK)
         WHERE muodp.Value IS NOT NULL
     ),
@@ -817,7 +869,7 @@ BEGIN
     UPDATE ur
     SET 
         PreferredFirmwareName = pfwnt.PreferredFirmwareName,
-        PreferredFirmwareVersionId = pfwnt.PreferredFirmwareVersionId,
+        PreferredFirmwareVersionId = pfwnt.PreferredFirmwareVersionId, 
         FirmwareType = pfwnt.FirmwareType
     FROM #UnitResults ur
     INNER JOIN PreferredFWNameType pfwnt ON ur.MobileUnitId = pfwnt.MobileUnitId;
@@ -833,7 +885,6 @@ BEGIN
             ur.LibraryKey,
             ur.MobileDeviceKey
         FROM #UnitResults ur
-        -- *** FIX FOR MSG 207: These columns are now available directly from #UnitResults ***
         WHERE ur.PreferredFirmwareName IS NOT NULL AND ur.InstalledFirmwareName IS NOT NULL
           AND ur.PreferredFirmwareVersionId IS NOT NULL AND ur.FirmwareType IS NOT NULL
     ),
@@ -886,7 +937,7 @@ BEGIN
     WHERE (vr.LatestVersionNumber - vr.PreferredVersionNumber) > 2;
     
 
-    -- 4. SET-BASED MESSAGE ALERT CALCULATION (Replacing MobileUnit_GetMobileUnitMessageAlerts)
+    -- 4. SET-BASED MESSAGE ALERT CALCULATION 
     
     -- Constants for message alerts
     DECLARE @MSG_SENDCONFIG INT = 254;
@@ -904,7 +955,7 @@ BEGIN
             mum.CreationDateUtc,
             mum.MessageStatus,
             ROW_NUMBER() OVER (PARTITION BY mum.MobileUnitId, mum.MessageSubType ORDER BY mum.CreationDateUtc DESC) as RowNum
-        FROM [state].[MobileUnitMessage] mum WITH (NOLOCK)
+        FROM [DeviceConfiguration.DataProcessing].[state].[MobileUnitMessage] mum WITH (NOLOCK)
         INNER JOIN #UnitResults ur ON ur.MobileUnitId = mum.MobileUnitId
         WHERE mum.MessageSubType IN (@MSG_SENDCONFIG, @MSG_SENDFIRMWARE, @MSG_SENDSETTINGS)
     ),
@@ -947,14 +998,14 @@ BEGIN
     FROM MessageAlerts ma;
 
 
-    -- 5. SET-BASED LAST MESSAGE DATE (Replacing MobileUnit_GetMobileUnitLastMessageDate)
+    -- 5. SET-BASED LAST MESSAGE DATE
     
     WITH LastMessage AS (
         SELECT
             mum.MobileUnitId,
             mum.MessageStatusDateUtc,
             ROW_NUMBER() OVER (PARTITION BY mum.MobileUnitId ORDER BY mum.MessageStatusDateUtc DESC) as rn
-        FROM [state].[MobileUnitMessage] mum WITH (NOLOCK)
+        FROM [DeviceConfiguration.DataProcessing].[state].[MobileUnitMessage] mum WITH (NOLOCK)
         INNER JOIN #UnitResults ur ON ur.MobileUnitId = mum.MobileUnitId
         WHERE mum.MessageSubType IN (@MSG_SENDCONFIG, @MSG_SENDFIRMWARE, @MSG_SENDSETTINGS)
     )
@@ -992,6 +1043,8 @@ BEGIN
     DROP TABLE #UnitResults;
     DROP TABLE #MessageAlerts;
     DROP TABLE #LastMessageDate;
+
+
 
 END;
 GO
