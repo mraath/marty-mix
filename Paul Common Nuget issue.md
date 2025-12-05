@@ -1,0 +1,20 @@
+---
+created: 2025-11-11T12:24
+updated: 2025-11-12T15:45
+---
+
+---
+created: 2025-11-11T12:24
+updated: 2025-11-11T12:24
+---
+
+/DynaMiX.API/config-admin/4036779219063094058/libraries/peripheral-script-CAN-devices
+
+/DynaMiX.API/config-admin/4036779219063094058/libraries/peripheral-devices
+GET_PERIPHERALS_LIBRARY
+GetPeripheralsLibrary
+
+
+
+An error occurred while deserializing the stream into List`1. Here is a small extract of the stream at the point of the error: "Boolean","DeviceType":"Boolean"},{"Id":0,"LibraryId":1,"DeviceId":2205211260651553154,"Description":"Rss test","DeviceTypeDescription":"Boolean","DeviceType":"Boolean"},{"Id":0,"LibraryId":1,"DeviceId":-8751674090293278542,"Description":"Rss test 2","DeviceTypeDescription":"Boolean","DeviceType":"Boolean"},{"Id":0,"LibraryId":1,"DeviceId":-3808513429271751216,"Description":"ELD Bluetooth Display (_Beta_)","DeviceTypeDescription":"Extended Device","DeviceType":"ExternalDevice"},{"Id":0,"LibraryId":1,"DeviceId":8867098656071093910,"Description":"Electric.Yutong.Bus.E12.v1.0.0.1_EV_TEST_SCRIPT","DeviceTypeDescription":"Scriptable CAN","DeviceType":"ScriptableCan"},{"Id":0,"LibraryId":1,"DeviceId":-8343667306932529676,"Description":"Script.CAN.VOLVO.BZL ELECTRIC.POS5.ACK_ENBL.v1.0.0.0_MG","DeviceTypeDescription":"Scriptable CAN","DeviceType":"ScriptableCan"},{"Id":0,"LibraryId":1,"DeviceId":5787192984829231859,"Description":"Script.CAN.J1939.SHACMAN.X3000.POS4.LZCJD4V1_HX.ACK_ENBL.v1.0.0.0_MG","DeviceTypeDescription":"Scriptable CAN","DeviceType":"ScriptableCan"},{"Id":0,"LibraryId":1,"DeviceId":-5272712689191034258,"Description":"CalAmp ELD","DeviceTypeDescription":"Extended Device","DeviceType":"ExternalDevice"},{"Id":0,"LibraryId":1,"DeviceId":3140801712221377721,"Description":"CAN Daimler Mercedes-Benz Rev 1.9.1.3","DeviceTypeDescription":"Scriptable CAN","DeviceType":"ScriptableCan"},{"Id":0,"LibraryId":1,"DeviceId":-1809298220647822065,"Description":"YS_Test","DeviceTypeDescription":"Statistical","DeviceType":"Statistical"},{"Id":0,"LibraryId":1,"DeviceId":-5343743459912244066,"Description":"werqreewr","DeviceTypeDescription":"Boolean","DeviceType":"Boolean"},{"Id":0,"LibraryId":1,"DeviceId":-348475847107893177,"Description":"Zonika SR Test","DeviceTypeDescription":"Boolean","DeviceType":"Boolean"},{"Id":0,"LibraryId":1,"DeviceId":-140568156349688485,"Description":"BCDWW","DeviceTypeDescription":"Boolean","DeviceType":"Boolean"},{"Id":0,"LibraryId":1,"DeviceId":-3036087521611031221,"Description":"Script.CAN.J1939.250KBPS.ACK_ENBL.v1.29.0.7_MG","DeviceTypeDescription":"Scriptable CAN","DeviceType":"ScriptableCan"},{"Id":0,"LibraryId":1,"DeviceId":6864176285547536977,"Description":"Script.CAN.J1939.500KBPS.ACK_ENBL.v1.29.0.7_MG","DeviceTypeDescription":"Scriptable CAN","DeviceType":"ScriptableCan"},{"Id":0,"LibraryId":1,"DeviceId":-7966649637254435479,"Description":"Script.CAN.J1939.250KBPS.ACK_ENBL.v2.0.0.0_MG__BETA__NoMESALogical","DeviceTypeDescription":"Scriptable CAN","DeviceType":"ScriptableCan"},{"Id":0,"LibraryId":1,"DeviceId":1893471208719365765,"Description":"Script.CAN.J1939.250KBPS.ACK_ENBL.v2.0.0.0_MG__BETA_","DeviceTypeDescription":"Scriptable CAN","DeviceType":"ScriptableCan"},{"Id":0,"LibraryId":1,"DeviceId":-8042395657113157937,"Description":"Script.CAN.SOLARIS.URBINO-12-HYDROGEN.POS5.SUU24116_MB.v1.0.0.0_MG__BETA_","DeviceTypeDescription":"Scriptable CAN","DeviceType":"ScriptableCan"},{"Id":0,"LibraryId":1,"DeviceId":-3796886209186439847,"Description":"FMSI_VAM_SCR-1824_v1.0.5.0","DeviceTypeDescription":"Scriptable Device","DeviceType":"ScriptableDevice"},{"Id":0,"LibraryId":1,"DeviceId":-9059820193328812067,"Description":"General Purpose Output (unprotected)","DeviceTypeDescription":"Teltonika Output","DeviceType":48},{"Id":0,"LibraryId":1,"DeviceId":1126284906692963773,"Description":"Immobilizer","DeviceTypeDescription":"Teltonika Output","DeviceType":48}]. Please see the inner _exception_ for more details.  
+**Error no: 1724816462985478144**

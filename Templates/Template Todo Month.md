@@ -1,6 +1,6 @@
 ---
 created: 2025-10-28T07:06
-updated: 2025-10-28T07:07
+updated: 2025-12-05T08:55
 ---
 
 ```dataviewjs
@@ -21,7 +21,9 @@ function asMoment(dateField) {
 }
 
 // Filter pages created or updated within the last 4 weeks
-const recentPages = dv.pages().filter(p => {
+const recentPages = dv.pages()
+.where(p => !p.file.path.startsWith("Templates/"))
+.filter(p => {
 	const created = asMoment(p.created);
 	const updated = asMoment(p.updated);
 	return (created && created.isAfter(cutoff)) || (updated && updated.isAfter(cutoff));

@@ -1,7 +1,20 @@
 ---
 created: 2025-06-10T07:45
-updated: 2025-09-16T07:36
+updated: 2025-12-05T08:56
 ---
+
+[[Daily Merge 20251205]]
+[[Daily Merge 20251204]]
+[[Daily Merge 20251203]]
+[[Daily Merge 20251202]]
+[[Daily Merge 20251201]]
+[[Daily Merge 20251128]]
+[[Daily Merge 20251127]]
+[[Daily Merge 20251126]]
+[[Daily Merge 20251125]]
+
+---
+
 [[Daily Merge 20250902]]
 [[Daily Merge 20250904]]
 [[Daily Merge 20250905]]
@@ -26,4 +39,11 @@ updated: 2025-09-16T07:36
 [[Daily Merge 20250623]]
 
 ---
+
+[[Daily Merge 20251112]]
+[[Daily Merge 20251113]]
+[[Daily Merge 20251114]]
+[[Daily Merge 20251119]]
+[[Daily Merge 20251120]]
+[[Daily Merge 20251121]]
 

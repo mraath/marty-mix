@@ -1,6 +1,6 @@
 ---
 created: 2022-07-15T16:27
-updated: 2025-10-28T07:08
+updated: 2025-12-05T10:48
 ---
 {{date}} {{time}}
 Parent:: [[Daily]] 
@@ -13,7 +13,7 @@ Parent:: [[Daily]]
 
 ## Outstanding this month
 
-![[Template Todo Month]]
+![[Template Todo Month Simple]]
 
 ## Worked on
 

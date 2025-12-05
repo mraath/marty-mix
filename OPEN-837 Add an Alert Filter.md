@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-10-24T15:28
+updated: 2025-11-12T15:00
 ---
 
 # OPEN-837 Add an Alert Filter
@@ -64,7 +64,7 @@ filter.alerts
 
 - [x] [PR to DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/132292) ✅ 2025-10-14
 	- [x] [Made it work with what we have](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/132931) ✅ 2025-10-24
-- [ ] PR to INT
+- [x] INT: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/134014
 
 ## Notes
 

@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-11-03T16:16
+updated: 2025-11-20T15:48
 ---
 
 # OPEN-862 Beta Slow
@@ -138,8 +138,8 @@ C:\Projects\DynaMiX.DeviceConfig\DeviceConfiguration.DataProcessing\Schemas\stat
 - [ ] On AU seems like the asset lists returns quickly, however, it seems to wait for a lazy loading call before displaying, this could be an issue
 	- [ ] Maybe for both CG and Assets check lazy load after init has been populated in grid.... boolean?
 - [ ] Could load assets a few cgs at a time
-- [ ] DB - to check load time of asset-lines..... test in AU DB. Check time. NULL can and dont work out logic. Check time again.
-- [ ] DB - do similar things for other lines, etc...
+- [x] DB - to check load time of asset-lines..... test in AU DB. Check time. NULL can and dont work out logic. Check time again. ✅ 2025-11-20
+- [x] DB - do similar things for other lines, etc... ✅ 2025-11-20
 
 ## SQL to find big orgs
 
@@ -188,3 +188,23 @@ LibraryKey	(No column name)	Notes
 
 
 - Template_GetConfigurationGroupsMultiselect|Template_GetConfigurationGroupsOtherColumns|MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups|MobileUnit_GetUnallocatedAssets|MobileUnit_GetAllMobileUnitsForConfigurationGroups|MobileUnit_GetAllMobileUnitLinesForConfigurationGroups|MobileUnit_GetAllMobileUnitAlertsForConfigurationGroups|MobileUnit_GetMobileUnitMissingParameters|MobileUnit_GetMobileUnitBasicInfoForConfigGroups|MobileUnit_GetMobileUnitFirmwareInfo|MobileUnit_GetMobileUnitMessageAlerts|MobileUnit_GetMobileUnitLastMessageDate
+
+
+## Stored Proc fixes
+
+- [x] **ALERT**: C:\Projects\GeminiAlertTestTransaction_20251105.sql to be implemented on INT ✅ 2025-11-20
+	- [ ] and then PROD
+	- [ ] THEN add the extra column to INT (maybe before)
+- [x] **LINES**: C:\Projects\Database\DeviceConfiguration\Schemas\mobileunit\Stored ✅ 2025-11-20
+  Procedures\MobileUnit_GetAllMobileUnitLinesForConfigurationGroups_Optimized.sql
+  TEST: C:\Projects\OPEN-862_Lines_Testing_Optimized.sql
+  First optimized attempt: become slower than og. C:\Projects\Database\DeviceConfiguration\Schemas\mobileunit\Stored Procedures\MobileUnit_GetAllMobileUnitLinesForConfigurationGroups_Optimized.sql
+  Attempt2: C:\Projects\Database\DeviceConfiguration\Schemas\mobileunit\Stored Procedures\MobileUnit_GetAllMobileUnitLinesForConfigurationGroups_Optimized-attempt2.sql
+  SLOW....
+  Attempt3: C:\Projects\Database\DeviceConfiguration\Schemas\mobileunit\Stored Procedures\MobileUnit_GetAllMobileUnitLinesForConfigurationGroups_Optimized-attempt2 copy.sql
+	- [x] 3 Times faster: C:\Projects\Database\DeviceConfiguration\Schemas\mobileunit\Stored Procedures\MobileUnit_GetAllMobileUnitLinesForConfigurationGroups_Optimized_Claude.sql ✅ 2025-11-20
+- (NA) MobileUnit_GetAllMobileUnitsForConfigurationGroups: 
+	- C:\Projects\Database\DeviceConfiguration\Schemas\mobileunit\Stored Procedures\MobileUnit_GetAllMobileUnitsForConfigurationGroups.sql
+	- ==FINE as it was==
+
+[[OPEN-840 Refactor Beta Stored Procs]]

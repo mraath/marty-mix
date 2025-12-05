@@ -1,6 +1,6 @@
 ---
 created: 2024-07-25T16:51
-updated: 2025-04-22T09:16
+updated: 2025-12-03T13:26
 ---
 
 ## Intro
@@ -119,6 +119,12 @@ Inside the contructor
 Hide HTML if no languageset
 
 ![[Frangular Languaging Hide if No Languageset.png]]
+
+## Kendo languaging
+
+The kendo languaging sometimes need some extra love.
+Here is an example of languaging the items selected in the multiselect element
+[[Languaging Kendo Items Selected]]
 
 ## Building
 
