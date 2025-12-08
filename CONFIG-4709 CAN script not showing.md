@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-08T09:59
+updated: 2025-12-08T12:03
 ---
 
 # CONFIG-4709 CAN script not showing
@@ -47,6 +47,7 @@ So I think it is HTML parts (new type maybe breaking other)
 
 - [x] [Config-4709 > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/135177) ✅ 2025-11-28
 - [x] [Config-4709 > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/135705) ✅ 2025-12-05
+
 
 ## NEXT ISSUE
 

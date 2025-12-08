@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-08T12:01
+updated: 2025-12-08T12:03
 ---
 
 # OPEN-748 Black Flag Can Script not visible
@@ -42,6 +42,11 @@ On flagged vehicles, where the script has been changed away from the template, t
 This is the old config page display:
 
 ![[Pasted image 20251208120118.png|300]]
+
+
+## Code
+
+blackFlagModalShow
 
 
 ## Branch
