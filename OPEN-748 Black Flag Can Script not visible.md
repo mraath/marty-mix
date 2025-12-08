@@ -41,7 +41,7 @@ On flagged vehicles, where the script has been changed away from the template, t
 
 This is the old config page display:
 
-![[Pasted image 20251208120118.png]]
+![[Pasted image 20251208120118.png|300]]
 
 
 ## Branch
