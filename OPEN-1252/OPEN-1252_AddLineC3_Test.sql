@@ -6,301 +6,222 @@ USE [DeviceConfiguration];
 
 -- 1) Create stored procs
 --DROP PROCEDURE [mobileunit].[MobileUnit_GetAllMobileUnitLinesForConfigurationGroups_C3];
+--DROP PROCEDURE [template].[Template_GetConfigurationGroupsOtherColumns_C3];
 
 /*
-CREATE PROCEDURE [mobileunit].[MobileUnit_GetAllMobileUnitLinesForConfigurationGroups_C3]
-  @configGroupIds [dbo].[SelectionIds] READONLY
+--CREATE PROCEDURE [mobileunit].[MobileUnit_GetAllMobileUnitLinesForConfigurationGroups_C3]
+CREATE PROCEDURE [template].[Template_GetConfigurationGroupsOtherColumns_C3]
+  @groupId BIGINT
 AS
 BEGIN
+
   SET NOCOUNT ON;
 
-  DECLARE @StreamaxSerialNumber BIGINT = -4477362625925416557;
-  DECLARE @STREAMAX_STANDALONE_DEVICE_KEY INT = (
-    SELECT [DeviceKey] 
-    FROM [definition].[Devices] WITH (NOLOCK) 
-    WHERE DeviceId = -1064000195705392069
-  );
+  --VARIABLES
+  DECLARE @PreferedFirmwareVersion BIGINT = 4015466679217121645;
 
-  -- Step 1: General Config Group Info with proper indexing
-  CREATE TABLE #GeneralConfigGroupInfo (
-    ConfigurationGroupId     BIGINT,
-    DeviceKey                INT,
-    MobileDeviceTemplateKey  BIGINT,
-    LibraryKey               INT,
-    ConfigurationGroupKey    INT,
-    MobileDevice             NVARCHAR(50),
-    INDEX IX_ConfigGroupId CLUSTERED (ConfigurationGroupId),
-    INDEX IX_DeviceKey NONCLUSTERED (DeviceKey),
-    INDEX IX_ConfigGroupKey NONCLUSTERED (ConfigurationGroupKey)
-  );
+  DECLARE @FWVersion SMALLINT = 
+        (SELECT PropertyKey
+  FROM [definition].[Properties] WITH (NOLOCK)
+  WHERE PropertyId = @PreferedFirmwareVersion);
 
-  INSERT INTO #GeneralConfigGroupInfo
-  SELECT
-    tcg.ConfigurationGroupId,
-    dd.DeviceKey,
-    tcg.MobileDeviceTemplateKey,
-    tcg.LibraryKey,
-    tcg.ConfigurationGroupKey,
-    dmd.Description
-  FROM @configGroupIds cg
-    INNER JOIN [template].[ConfigurationGroups] tcg WITH (NOLOCK) 
-      ON tcg.ConfigurationGroupId = cg.id
-    INNER JOIN [template].[MobileDeviceTemplates] mdt WITH (NOLOCK) 
-      ON tcg.MobileDeviceTemplateKey = mdt.MobileDeviceTemplateKey 
-      AND tcg.LibraryKey = mdt.LibraryKey
-    INNER JOIN [definition].[Devices] dd WITH (NOLOCK) 
-      ON mdt.MobileDeviceKey = dd.DeviceKey
-    INNER JOIN [definition].[MobileDevices] dmd WITH (NOLOCK) 
-      ON dd.DeviceKey = dmd.DeviceKey;
-
-  -- Step 2: Mobile Units with proper indexing
-  CREATE TABLE #MobileUnits (
-    ConfigurationGroupId     BIGINT,
-    MobileUnitId             BIGINT,
-    MobileUnitKey            INT,
-    MobileDeviceKey          INT,
-    StreamaxSerialNumber     NVARCHAR(250),
-    INDEX IX_MobileUnitId CLUSTERED (MobileUnitId),
-    INDEX IX_ConfigGroupId NONCLUSTERED (ConfigurationGroupId),
-    INDEX IX_MobileUnitKey NONCLUSTERED (MobileUnitKey)
-  );
-
-  INSERT INTO #MobileUnits
-  SELECT
-    g.ConfigurationGroupId,
-    mu.MobileUnitId,
-    mu.MobileUnitKey,
-    mu.MobileDeviceKey,
-    CASE WHEN mu.MobileDeviceKey = @STREAMAX_STANDALONE_DEVICE_KEY 
-         THEN mu.UniqueIdentifier 
-         ELSE ap.Value 
-    END
-  FROM #GeneralConfigGroupInfo g
-    INNER JOIN [mobileunit].[MobileUnits] mu WITH (NOLOCK) 
-      ON mu.ConfigurationGroupKey = g.ConfigurationGroupKey
-    LEFT JOIN [mobileunit].[AssetProperties] ap WITH (NOLOCK) 
-      ON mu.MobileUnitId = ap.AssetId 
-      AND ap.PropertyId = @StreamaxSerialNumber;
-
-  -- Step 3: All Config Group Lines
-  CREATE TABLE #AllConfigGroupLines (
-    ConfigurationGroupId BIGINT,
-    WireName             NVARCHAR(200),
-    Connection           NVARCHAR(200),
-    LineId               NVARCHAR(50),
-    INDEX IX_ConfigGroupId CLUSTERED (ConfigurationGroupId, LineId)
-  );
-
-  INSERT INTO #AllConfigGroupLines
-  SELECT
-    g.ConfigurationGroupId,
-    dl.[Name],
-    lpd.[Description],
-    dl.LineId
-  FROM #GeneralConfigGroupInfo g
-    LEFT JOIN [definition].[MobileDeviceLines] dmdl WITH (NOLOCK) 
-      ON dmdl.[MobileDeviceKey] = g.DeviceKey
-    LEFT JOIN [definition].[Lines] dl WITH (NOLOCK) 
-      ON dl.[LineKey] = dmdl.[LineKey]
-    INNER JOIN [template].[Devices] td WITH (NOLOCK) 
+  WITH GeneralConfigGroupInfo AS (
+    SELECT
+      tcg.ConfigurationGroupId,
+      tcg.ConfigurationGroupKey,
+      tcg.MobileDeviceTemplateKey,
+      tcg.LibraryKey,
+      dd.DeviceKey,
+      dmd.Description AS MobileDevice
+    FROM [library].[Libraries] l WITH (NOLOCK)
+      INNER JOIN [template].[ConfigurationGroups] tcg WITH (NOLOCK) ON tcg.LibraryKey = l.LibraryKey
+      INNER JOIN [template].[MobileDeviceTemplates] mdt WITH (NOLOCK)
+      ON tcg.MobileDeviceTemplateKey = mdt.MobileDeviceTemplateKey
+        AND tcg.LibraryKey = mdt.LibraryKey
+      INNER JOIN [definition].[Devices] dd WITH (NOLOCK) ON mdt.MobileDeviceKey = dd.DeviceKey
+      INNER JOIN [definition].[MobileDevices] dmd WITH (NOLOCK) ON dd.DeviceKey = dmd.DeviceKey
+    WHERE l.GroupId = @groupId
+  ), MobileUnits AS (
+    SELECT
+      g.ConfigurationGroupId,
+      mu.ConfigurationGroupKey,
+      (mu.MobileUnitKey) AS MobileUnitKey
+    FROM GeneralConfigGroupInfo g
+      INNER JOIN [mobileunit].[MobileUnits] mu WITH (NOLOCK) ON mu.ConfigurationGroupKey = g.ConfigurationGroupKey
+      INNER JOIN [mobileunit].[AssetMobileUnits] amu WITH (NOLOCK) ON amu.MobileUnitKey = mu.MobileUnitKey
+  ), AssetsCount AS (
+    SELECT
+      ConfigurationGroupId,
+      Count(MobileUnitKey) AS AssetsCount
+    FROM MobileUnits
+    GROUP BY ConfigurationGroupId
+  ), BlackFlagsCount AS (
+    SELECT
+      ConfigurationGroupId,
+      COUNT(MobileUnitKey) AS BlackFlagsCount
+    FROM
+      (
+        SELECT DISTINCT
+          mu.ConfigurationGroupId AS ConfigurationGroupId,
+          mu.MobileUnitKey AS MobileUnitKey
+        FROM MobileUnits mu
+          --Overwritten Events
+          LEFT JOIN [mobileunit].[OverridenEvents] events WITH (NOLOCK) ON events.MobileUnitKey = mu.MobileUnitKey
+          LEFT JOIN [mobileunit].[OverridenEventActions] eventActions WITH (NOLOCK) ON eventActions.MobileUnitKey = mu.MobileUnitKey
+          LEFT JOIN [mobileunit].[OverridenEventConditionThresholds] thresholds WITH (NOLOCK) ON thresholds.MobileUnitKey = mu.MobileUnitKey
+          --Overwritten Device Info
+          LEFT JOIN [mobileunit].[OverridenDevices] devices WITH (NOLOCK) ON devices.MobileUnitKey = mu.MobileUnitKey
+          LEFT JOIN [mobileunit].[OverridenDeviceParameters] params WITH (NOLOCK) ON params.MobileUnitKey = mu.MobileUnitKey
+          LEFT JOIN [mobileunit].[OverridenCanParameters] paramsCan WITH (NOLOCK) ON params.MobileUnitKey = mu.MobileUnitKey
+          LEFT JOIN [mobileunit].[OverridenDeviceProperties] properties WITH (NOLOCK) ON properties.MobileUnitKey = mu.MobileUnitKey
+            AND properties.PersistOnReset = 0
+          LEFT JOIN [mobileunit].[OverridenPeripheralDevices] peripherals WITH (NOLOCK) ON peripherals.MobileUnitKey = mu.MobileUnitKey
+        WHERE
+          (
+            events.MobileUnitKey IS NOT NULL
+            OR eventActions.MobileUnitKey IS NOT NULL
+            OR thresholds.MobileUnitKey IS NOT NULL
+            OR devices.MobileUnitKey IS NOT NULL
+            OR params.MobileUnitKey IS NOT NULL
+            OR paramsCan.MobileUnitKey IS NOT NULL
+            OR properties.MobileUnitKey IS NOT NULL
+            OR peripherals.MobileUnitKey IS NOT NULL
+          )
+      ) AS uniqueRows
+    GROUP BY ConfigurationGroupId
+  ), AllConfigGroupLines AS (
+    SELECT
+      [ConfigurationGroupId] = g.ConfigurationGroupId,
+      [WireName] = dl.[Name],
+      [Connection] = lpd.[Description],
+      [LineId] = CAST(dl.LineId AS NVARCHAR(50))
+    FROM GeneralConfigGroupInfo g
+      LEFT JOIN [definition].[MobileDeviceLines] dmdl WITH (NOLOCK) ON dmdl.[MobileDeviceKey] = g.DeviceKey
+      LEFT JOIN [definition].[Lines] dl WITH (NOLOCK) ON dl.[LineKey] = dmdl.[LineKey]
+      LEFT JOIN [definition].[Lines] dl_e WITH (NOLOCK) ON dl_e.[LineKey] = dmdl.[EquivalentLineKey]
+      --Template Devices
+      INNER JOIN [template].[Devices] td WITH (NOLOCK)
       ON td.[MobileDeviceTemplateKey] = g.[MobileDeviceTemplateKey]
-      AND g.LibraryKey = td.LibraryKey
-    INNER JOIN [definition].[Devices] tdd WITH (NOLOCK) 
-      ON tdd.[DeviceKey] = td.[DeviceKey]
-    CROSS APPLY ( 
-      SELECT [LineKey] = tpd.[LineKey]
-      FROM [template].[PeripheralDevices] tpd WITH (NOLOCK)
-      WHERE tpd.[TemplateDeviceKey] = td.[TemplateDeviceKey]
-        AND tpd.[LineKey] = dmdl.[LineKey]
-    ) pd
-    LEFT JOIN [definition].[MobileDeviceLinePeripheralDevices] dmdlpd WITH (NOLOCK) 
-      ON dmdlpd.[MobileDeviceKey] = g.DeviceKey
-      AND dmdlpd.[LineKey] = pd.[LineKey]
-      AND dmdlpd.[PeripheralDeviceKey] = tdd.[DeviceKey]
-    LEFT JOIN [library].[Devices] ld WITH (NOLOCK) 
-      ON ld.DeviceKey = dmdlpd.PeripheralDeviceKey 
-      AND ld.LibraryKey = g.LibraryKey
-    LEFT JOIN [library].[PeripheralDevices] lpd WITH (NOLOCK) 
-      ON lpd.LibraryDeviceKey = ld.LibraryDeviceKey;
-
-  -- Step 4: Effective Lines
-  CREATE TABLE #EffectiveLines (
-    MobileUnitId   BIGINT,
-    WireName       NVARCHAR(200),
-    Connection     NVARCHAR(200),
-    IsOverridden   BIT,
-    LineId         NVARCHAR(50),
-    INDEX IX_MobileUnitId CLUSTERED (MobileUnitId, LineId)
-  );
-
-  INSERT INTO #EffectiveLines
+        AND g.LibraryKey = td.LibraryKey
+      INNER JOIN [definition].[Devices] tdd WITH (NOLOCK) ON tdd.[DeviceKey] = td.[DeviceKey]
+      -- Peripheral devices
+      CROSS APPLY
+      (
+        SELECT
+          [LineKey] = tpd.[LineKey]
+        FROM [template].[PeripheralDevices] tpd WITH (NOLOCK)
+        WHERE tpd.[TemplateDeviceKey] = td.[TemplateDeviceKey]
+          AND tpd.[LineKey] = dmdl.[LineKey]
+      ) pd
+      LEFT JOIN [definition].[Lines] pdl WITH (NOLOCK) ON pdl.[LineKey] = pd.[LineKey]
+      -- Lines
+      LEFT JOIN [definition].[MobileDeviceLinePeripheralDevices] dmdlpd WITH (NOLOCK)
+      ON dmdlpd.[MobileDeviceKey] = g.DeviceKey --mu.[MobileDeviceKey]
+        AND dmdlpd.[LineKey] = pd.[LineKey]
+        AND dmdlpd.[PeripheralDeviceKey] = tdd.[DeviceKey]
+      -- Get connected device
+      LEFT JOIN [library].[Devices] ld WITH (NOLOCK) ON ld.DeviceKey = dmdlpd.PeripheralDeviceKey
+        AND ld.LibraryKey = g.LibraryKey
+      LEFT JOIN [library].[PeripheralDevices] lpd WITH (NOLOCK) ON lpd.LibraryDeviceKey = ld.LibraryDeviceKey
+  ), AggregatedCanLines AS (
+    SELECT
+      l.ConfigurationGroupId,
+      CanScriptLineId = STUFF((
+        SELECT
+          ', ' + l2.[LineId]
+        FROM AllConfigGroupLines l2
+        WHERE
+          l2.ConfigurationGroupId = l.ConfigurationGroupId
+          AND l2.WireName IN ('C1', 'C2', 'C3')
+        FOR XML PATH(''), TYPE).value('.', 'NVARCHAR(MAX)'), 1, 2, ''),
+      CanScript = STUFF((
+        SELECT
+          ', ' + l2.[Connection]
+        FROM AllConfigGroupLines l2
+        WHERE
+          l2.ConfigurationGroupId = l.ConfigurationGroupId
+          AND l2.WireName IN ('C1', 'C2', 'C3')
+        FOR XML PATH(''), TYPE).value('.', 'NVARCHAR(MAX)'), 1, 2, '')
+    FROM AllConfigGroupLines l
+    WHERE
+      l.WireName IN ('C1', 'C2', 'C3')
+    GROUP BY l.ConfigurationGroupId
+  ), FWVersions AS (
+    SELECT DISTINCT
+      g.ConfigurationGroupId,
+      fw.Name AS FWName
+    FROM GeneralConfigGroupInfo g
+      -- Find optional logical device dependencies for the main mobile device
+      INNER JOIN [definition].[DeviceDependencies] dep WITH (NOLOCK)
+      ON dep.ParentDeviceKey = g.DeviceKey
+        AND dep.DependencyType = 1
+      -- Join template.Devices on the child device from dependencies
+      INNER JOIN [template].[Devices] td WITH (NOLOCK)
+      ON td.MobileDeviceTemplateKey = g.MobileDeviceTemplateKey
+        AND td.LibraryKey = g.LibraryKey
+        AND td.DeviceKey = dep.ChildDeviceKey
+      -- Get firmware properties from the dependency device
+      INNER JOIN [template].[DeviceProperties] tdpr WITH (NOLOCK)
+      ON tdpr.MobileDeviceTemplateKey = td.MobileDeviceTemplateKey
+        AND tdpr.DeviceKey = td.DeviceKey
+        AND tdpr.PropertyKey = @FWVersion
+      -- Get the firmware version details
+      INNER JOIN [definition].[FirmwareVersions] fw WITH (NOLOCK) ON fw.FirmwareVersionId = tdpr.Value
+    WHERE tdpr.Value IS NOT NULL
+  ), AggregatedFW AS (
+    SELECT
+      ConfigurationGroupId,
+      STUFF((
+        SELECT
+          ', ' + FWName
+        FROM FWVersions fw
+        WHERE
+          fw.ConfigurationGroupId = f.ConfigurationGroupId
+        FOR XML PATH(''), TYPE).value('.', 'NVARCHAR(MAX)'), 1, 2, '') AS FWVersion
+    FROM FWVersions f
+    GROUP BY ConfigurationGroupId
+  ), PivotedLines AS (
+    SELECT
+      ConfigurationGroupId,
+      MAX(CASE WHEN WireName LIKE 'F%' AND Connection LIKE '%SPEED%' THEN Connection END) AS Speed_FM,
+      MAX(CASE WHEN WireName = 'Speed' THEN Connection END) AS Speed_Other,
+      MAX(CASE WHEN WireName LIKE 'F%' AND Connection LIKE '%RPM%' THEN Connection END) AS RPM_FM,
+      MAX(CASE WHEN WireName = 'RPM' THEN Connection END) AS RPM_Other,
+      MAX(CASE WHEN WireName LIKE 'F%' AND Connection LIKE '%Fuel%' THEN Connection END) AS Fuel_FM,
+      MAX(CASE WHEN WireName = 'Fuel' THEN Connection END) AS Fuel_Other,
+      MAX(CASE WHEN WireName = 'SP' THEN Connection END) AS SP,
+      MAX(CASE WHEN WireName = 'HOS' THEN Connection END) AS HOS
+    FROM AllConfigGroupLines l
+    GROUP BY ConfigurationGroupId
+  )
   SELECT
-    mu.MobileUnitId,
-    dl.[Name],
-    lpd.[Description],
-    CAST(CASE WHEN opd.[MobileUnitKey] IS NOT NULL AND opd.[LineKey] IS NOT NULL 
-              THEN 1 ELSE 0 END AS BIT),
-    dl.LineId
-  FROM #MobileUnits mu
-    INNER JOIN #GeneralConfigGroupInfo g 
-      ON g.ConfigurationGroupId = mu.ConfigurationGroupId
-    INNER JOIN [template].[Devices] td WITH (NOLOCK) 
-      ON td.[MobileDeviceTemplateKey] = g.[MobileDeviceTemplateKey]
-    INNER JOIN [definition].[Devices] dd WITH (NOLOCK) 
-      ON dd.[DeviceKey] = td.[DeviceKey]
-    CROSS APPLY ( 
-      SELECT
-        [LineKey] = CASE WHEN opd.[MobileUnitKey] IS NOT NULL 
-                         THEN opd.[LineKey] 
-                         ELSE tpd.[LineKey] END
-      FROM [template].[PeripheralDevices] tpd WITH (NOLOCK)
-        LEFT JOIN [mobileunit].[OverridenPeripheralDevices] opd WITH (NOLOCK) 
-          ON opd.[MobileUnitKey] = mu.[MobileUnitKey]
-          AND opd.[TemplateDeviceKey] = tpd.[TemplateDeviceKey]
-      WHERE tpd.[TemplateDeviceKey] = td.[TemplateDeviceKey]
-        AND ((opd.[MobileUnitKey] IS NOT NULL AND opd.[LineKey] IS NOT NULL)
-             OR (opd.[MobileUnitKey] IS NULL AND tpd.[LineKey] IS NOT NULL))
-    ) pd
-    LEFT JOIN [mobileunit].[OverridenPeripheralDevices] opd WITH (NOLOCK)
-      ON opd.[MobileUnitKey] = mu.[MobileUnitKey]
-      AND opd.[LineKey] = pd.[LineKey]
-    LEFT JOIN [definition].[Lines] dl WITH (NOLOCK) 
-      ON dl.[LineKey] = pd.[LineKey]
-    LEFT JOIN [definition].[MobileDeviceLinePeripheralDevices] dmdlpd WITH (NOLOCK) 
-      ON dmdlpd.[MobileDeviceKey] = mu.[MobileDeviceKey]
-      AND dmdlpd.[LineKey] = pd.[LineKey]
-      AND dmdlpd.[PeripheralDeviceKey] = dd.[DeviceKey]
-    LEFT JOIN [library].[Devices] ld WITH (NOLOCK) 
-      ON ld.DeviceKey = dmdlpd.PeripheralDeviceKey
-      AND ld.LibraryKey = g.LibraryKey
-    LEFT JOIN [library].[PeripheralDevices] lpd WITH (NOLOCK) 
-      ON lpd.LibraryDeviceKey = ld.LibraryDeviceKey;
-
-  -- Step 5: Mobile Unit Lines (matching original ORDER BY)
-  CREATE TABLE #MobileUnitLines (
-    MobileUnitId         BIGINT,
-    ConfigurationGroupId BIGINT,
-    LineId               NVARCHAR(50),
-    WireName             NVARCHAR(200),
-    IsOverridden         BIT,
-    Connection           NVARCHAR(200),
-    INDEX IX_Main CLUSTERED (ConfigurationGroupId DESC, WireName DESC, MobileUnitId)
-  );
-
-  INSERT INTO #MobileUnitLines
-  SELECT
-    mu.MobileUnitId,
-    cgl.ConfigurationGroupId,
-    cgl.LineId,
-    cgl.WireName,
-    ISNULL(eff.IsOverridden, 0),
-    CASE WHEN ISNULL(eff.IsOverridden, 0) = 1 
-         THEN eff.Connection 
-         ELSE cgl.Connection END
-  FROM #MobileUnits mu
-    INNER JOIN #AllConfigGroupLines cgl 
-      ON cgl.ConfigurationGroupId = mu.ConfigurationGroupId
-    LEFT JOIN #EffectiveLines eff 
-      ON eff.MobileUnitId = mu.MobileUnitId
-      AND eff.LineId = cgl.LineId
-  ORDER BY cgl.ConfigurationGroupId DESC, cgl.WireName DESC;
-
-  -- Step 6: Pre-aggregate specific wire values to avoid correlated subqueries
-  CREATE TABLE #AggregatedLines (
-    MobileUnitId          BIGINT,
-    ConfigurationGroupId  BIGINT,
-    CanScriptLineId       NVARCHAR(MAX),
-    CanScript             NVARCHAR(MAX),
-    SpeedConnection       NVARCHAR(200),
-    RPMConnection         NVARCHAR(200),
-    FuelConnection        NVARCHAR(200),
-    SPConnection          NVARCHAR(200),
-    HOSConnection         NVARCHAR(200),
-    FreqSpeedConnection   NVARCHAR(200),
-    FreqRPMConnection     NVARCHAR(200),
-    FreqFuelConnection    NVARCHAR(200),
-    INDEX IX_Main CLUSTERED (MobileUnitId, ConfigurationGroupId)
-  );
-
-  INSERT INTO #AggregatedLines
-  SELECT
-    l.MobileUnitId,
-    l.ConfigurationGroupId,
-    -- CanScriptLineId (order by WireName DESC to match original)
-    STUFF((
-      SELECT ', ' + l2.LineId
-      FROM #MobileUnitLines l2
-      WHERE l2.MobileUnitId = l.MobileUnitId
-        AND l2.ConfigurationGroupId = l.ConfigurationGroupId
-        AND l2.WireName IN ('C1', 'C2', 'C3')
-      ORDER BY l2.WireName DESC
-      FOR XML PATH(''), TYPE).value('.', 'NVARCHAR(MAX)'), 1, 2, ''),
-    -- CanScript (order by WireName DESC to match original)
-    STUFF((
-      SELECT ', ' + l2.Connection
-      FROM #MobileUnitLines l2
-      WHERE l2.MobileUnitId = l.MobileUnitId
-        AND l2.ConfigurationGroupId = l.ConfigurationGroupId
-        AND l2.WireName IN ('C1', 'C2', 'C3')
-      ORDER BY l2.WireName DESC
-      FOR XML PATH(''), TYPE).value('.', 'NVARCHAR(MAX)'), 1, 2, ''),
-    -- Speed
-    MAX(CASE WHEN l.WireName = 'Speed' THEN l.Connection END),
-    -- RPM
-    MAX(CASE WHEN l.WireName = 'RPM' THEN l.Connection END),
-    -- Fuel
-    MAX(CASE WHEN l.WireName = 'Fuel' THEN l.Connection END),
-    -- SP
-    MAX(CASE WHEN l.WireName = 'SP' THEN l.Connection END),
-    -- HOS
-    MAX(CASE WHEN l.WireName = 'HOS' THEN l.Connection END),
-    -- Frequency lines for Speed
-    MAX(CASE WHEN l.WireName LIKE 'F%' AND l.Connection LIKE '%SPEED%' 
-             THEN l.Connection END),
-    -- Frequency lines for RPM
-    MAX(CASE WHEN l.WireName LIKE 'F%' AND l.Connection LIKE '%RPM%' 
-             THEN l.Connection END),
-    -- Frequency lines for Fuel
-    MAX(CASE WHEN l.WireName LIKE 'F%' AND l.Connection LIKE '%Fuel%' 
-             THEN l.Connection END)
-  FROM #MobileUnitLines l
-  GROUP BY l.MobileUnitId, l.ConfigurationGroupId;
-
-  -- Final SELECT with pre-aggregated data
-  SELECT
-    mu.MobileUnitId,
-    agg.CanScriptLineId,
-    agg.CanScript,
+    Flagged = b.BlackFlagsCount,
+    g.ConfigurationGroupId,
+    a.AssetsCount,
+    fw.FWVersion,
+    acl.CanScriptLineId,
+    acl.CanScript,
     Speed = CASE
-      WHEN g.MobileDevice LIKE 'MiX2%' THEN 'GPS velocity as speed'
-      WHEN g.MobileDevice LIKE 'FM%' THEN agg.FreqSpeedConnection
-      ELSE agg.SpeedConnection
-    END,
-    RPM = CASE
-      WHEN g.MobileDevice LIKE 'FM%' THEN agg.FreqRPMConnection
-      ELSE agg.RPMConnection
-    END,
-    Fuel = CASE
-      WHEN g.MobileDevice LIKE 'FM%' THEN agg.FreqFuelConnection
-      ELSE agg.FuelConnection
-    END,
-    SP = agg.SPConnection,
-    MiXVisionSerialnumber = mu.StreamaxSerialNumber,
-    HOS = agg.HOSConnection
-  FROM #GeneralConfigGroupInfo g
-    INNER JOIN #MobileUnits mu 
-      ON mu.ConfigurationGroupId = g.ConfigurationGroupId
-    LEFT JOIN #AggregatedLines agg
-      ON agg.MobileUnitId = mu.MobileUnitId
-      AND agg.ConfigurationGroupId = g.ConfigurationGroupId;
-
-  -- Cleanup
-  DROP TABLE IF EXISTS #GeneralConfigGroupInfo;
-  DROP TABLE IF EXISTS #MobileUnits;
-  DROP TABLE IF EXISTS #AllConfigGroupLines;
-  DROP TABLE IF EXISTS #EffectiveLines;
-  DROP TABLE IF EXISTS #MobileUnitLines;
-  DROP TABLE IF EXISTS #AggregatedLines;
+              WHEN g.MobileDevice LIKE 'MiX2%' THEN 'GPS velocity as speed' --Business rule on OE-20, this is always the value for MiX2000
+              WHEN g.MobileDevice LIKE 'FM%' THEN pl.Speed_FM
+              ELSE pl.Speed_Other
+            END,
+    RPM =   CASE
+              WHEN g.MobileDevice LIKE 'FM%' THEN pl.RPM_FM
+              ELSE pl.RPM_Other
+            END,
+    Fuel =  CASE
+              WHEN g.MobileDevice LIKE 'FM%' THEN pl.Fuel_FM
+              ELSE pl.Fuel_Other
+            END,
+    pl.SP,
+    pl.HOS
+  FROM GeneralConfigGroupInfo g
+    LEFT JOIN AssetsCount a ON a.ConfigurationGroupId = g.ConfigurationGroupId
+    LEFT JOIN BlackFlagsCount b ON b.ConfigurationGroupId = g.ConfigurationGroupId
+    LEFT JOIN PivotedLines pl ON pl.ConfigurationGroupId = g.ConfigurationGroupId
+    LEFT JOIN AggregatedFW fw ON fw.ConfigurationGroupId = g.ConfigurationGroupId
+    LEFT JOIN AggregatedCanLines acl ON acl.ConfigurationGroupId = g.ConfigurationGroupId;
 
 END
 */
@@ -320,11 +241,18 @@ VALUES
 -- LOTS, but NO ALERTS: VALUES (-4706039627829598783),(199325999668202366), (-8457480704780512749),(2677576181771254477),(2823596733503101975),(1538687544172856721), (-4229490949371290982), (-2384730484822060182),(7440653181116775134),(8283011099424745956),(6270824666272621435), (-8949632091574047260), (-8207503568458137854), (-1215659196319016695),(6152593781035096689),(2974831301785092008),(3962657782447665558), (-3546122059729481997),(5567431191665092749), (-5883907305683060856),(461085753557650606),(3502599370431462499), (-7369294648932782097), (-8787908773382047661),(7287834424358043214),(3977693385065534239),(3545130468931642729),(75472660843825717), (-6236293196728745404), (-2473474416939851345), (-4815071576473298740), (-2317285672350580067),(3504428657675998019),(4462868102626601662),(3052323964734261303),(2610836696632034535),(3273233624147396660), (-8388558004121944370),(5295170289666896775),(7909417651692360436), (-7590346313175141016),(6277877287032876699), (-576980630916973063);
 
 
+-- ASSET PANEL
 -- Execute the old
 --7s 127
 --EXEC [mobileunit].[MobileUnit_GetAllMobileUnitLinesForConfigurationGroups] @configGroupIds = @MyConfigGroupIds;
 -- 6s 127
-EXEC [mobileunit].[MobileUnit_GetAllMobileUnitLinesForConfigurationGroups_C3] @configGroupIds = @MyConfigGroupIds;
+--EXEC [mobileunit].[MobileUnit_GetAllMobileUnitLinesForConfigurationGroups_C3] @configGroupIds = @MyConfigGroupIds;
+
+
+-- CONFIG GROUP PANEL
+DECLARE @groupId BIGINT = -5401647754082838271;
+--EXEC [template].[Template_GetConfigurationGroupsOtherColumns] @groupId = @groupId;
+EXEC [template].[Template_GetConfigurationGroupsOtherColumns_C3] @groupId = @groupId;
 
 /*
 
