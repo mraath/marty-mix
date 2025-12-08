@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-08T11:59
+updated: 2025-12-08T12:01
 ---
 
 # OPEN-748 Black Flag Can Script not visible
@@ -34,6 +34,14 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
 ## Shorter Description
+
+On flagged vehicles, where the script has been changed away from the template, the script name is truncated in the new info screen, so you aren't able to see what has been changed. There is no way of expanding the columns to see the information either.
+
+![[Pasted image 20251208120107.png|300]]
+
+This is the old config page display:
+
+![[Pasted image 20251208120118.png]]
 
 
 ## Branch
