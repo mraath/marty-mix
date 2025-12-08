@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-08T09:57
+updated: 2025-12-08T09:59
 ---
 
 # CONFIG-4709 CAN script not showing
@@ -54,4 +54,4 @@ Config Group Panel not showing C3
 - PROCEDURE [template].[Template_GetConfigurationGroupsOtherColumns]
 
 - [ ] Config-1252 > DEV
-- [ ] Config-1252 > INT
+- [ ] [Config-1252 > INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/135796?_a=files)
