@@ -50,3 +50,6 @@ So I think it is HTML parts (new type maybe breaking other)
 
 ## NEXT ISSUE
 
+Config Group Panel not showing C3
+- PROCEDURE [template].[Template_GetConfigurationGroupsOtherColumns]
+
