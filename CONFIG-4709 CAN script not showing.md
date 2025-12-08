@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-08T14:37
+updated: 2025-12-08T14:40
 ---
 
 # CONFIG-4709 CAN script not showing
@@ -54,7 +54,7 @@ So I think it is HTML parts (new type maybe breaking other)
 Config Group Panel not showing C3
 - PROCEDURE [template].[Template_GetConfigurationGroupsOtherColumns]
 
-- [ ] Config-1252 > DEV
-- [ ] [Config-1252 > INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/135796?_a=files)
+- na: Config-1252 > DEV
+- [x] [Config-1252 > INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/135796?_a=files) ✅ 2025-12-08
 - [ ] [Config-1252 > 26.1](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/135806)
 
