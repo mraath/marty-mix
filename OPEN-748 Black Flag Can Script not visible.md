@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-08T10:48
+updated: 2025-12-08T11:59
 ---
 
 # OPEN-748 Black Flag Can Script not visible
@@ -38,7 +38,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-748 Black Flag Can Script not visible.INT
+> Branch: Config/MR/Feature/OPEN-748_BlackFlagCanScriptNotVisible.INT
 
 ## PR
 
