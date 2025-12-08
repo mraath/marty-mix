@@ -3,13 +3,13 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-11-28T15:28
+updated: 2025-12-08T09:30
 ---
 
 # CONFIG-4709 CAN script not showing
 
 Date: 2025-11-27 Time: 13:39
-Parent:: ==xxxx==
+Parent:: [[OPEN-862 Beta Slow]]
 Friend:: [[2025-11-27]]
 JIRA:CONFIG-4709 CAN script not showing
 [JIRA](https://powerfleet.atlassian.net/browse/CONFIG-4709)
@@ -43,7 +43,10 @@ Populating the row is considering it....
 So I think it is HTML parts (new type maybe breaking other)
 
 > Config/MR/Bug/CONFIG-4709CANScriptNotShowing.INT
+> Config/MR/Bug/CONFIG-4709CANScriptNotShowing.INT3
 
 - [x] [Config-4709 > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/135177) ✅ 2025-11-28
-- [ ] Config-4709 > INT
+- [x] [Config-4709 > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/135705) ✅ 2025-12-05
+
+## NEXT ISSUE
 
