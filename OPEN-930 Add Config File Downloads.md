@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-09T09:55
+updated: 2025-12-09T09:59
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -58,6 +58,8 @@ downloadPendingConfigFileClicked(row): void {
 	window.open(downloadPendingUrl.urlReplace({ assetId: row.assetId, auth: this.authentication.authenticationToken }), "_blank");
 }
 ```
+
+assetData > getConfigGroupAssets
 
 ### BE
 
