@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-09T10:23
+updated: 2025-12-09T11:03
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -63,6 +63,8 @@ assetData > getConfigGroupAssets > GET_CONFIG_GROUP_ASSETS > GetConfigGroupAsset
 C:\Projects\DynaMiX.Backend\API\DynaMiX.API\NancyModules\ConfigAdmin\TemplateLevel\ConfigurationGroupsModule.cs
 
 
+
+
 ### BE
 
 Routes:
@@ -81,6 +83,16 @@ hsM4kDevices
 hsM6kDevices
 
 DeviceConfigClient.MobileUnits.GetMobileUnitSummariesForConfigurationGroupMobileUnitSummary
+
+#### Calls
+
+//Config
+var jsonData = DeviceConfigClient.MobileUnitConfiguration.GetLoadedConfigTextSummaryForMobileUnit(authToken, assetId).ConfigureAwait(false).GetAwaiter().GetResult();
+return WriteFileResponse(assetId, jsonData != null ? JsonConvert.DeserializeObject(jsonData).ToString() : null);
+
+//Pending
+var jsonData = DeviceConfigClient.MobileUnitConfiguration.GetPendingConfigTextSummaryForMobileUnit(authToken, assetId).ConfigureAwait(false).GetAwaiter().GetResult();
+return WriteFileResponse(assetId, jsonData != null ? JsonConvert.DeserializeObject(jsonData).ToString() : null, true)
 
 ### Client
 
