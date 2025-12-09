@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-09T15:57
+updated: 2025-12-09T16:27
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -97,6 +97,8 @@ var jsonData = DeviceConfigClient.MobileUnitConfiguration.GetPendingConfigTextSu
 return WriteFileResponse(assetId, jsonData != null ? JsonConvert.DeserializeObject(jsonData).ToString() : null, true)
 
 **EG**: "https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-5401647754082838271/asset/1626018637366906880/downloadConfigPendingFile"
+
+**downloadConfigPendingFile**
 
 19bd4d3f-5b45-4d1f-b47b-98e81a959720
 -5401647754082838271
