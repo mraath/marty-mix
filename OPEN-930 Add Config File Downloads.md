@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-09T10:10
+updated: 2025-12-09T10:23
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -79,6 +79,12 @@ ModuleRoutes.GET_PENDING_CONFIG_FILE.ToLinkCarrier("downloadPendingConfigFile", 
 hsFmDevices.Contains
 hsM4kDevices
 hsM6kDevices
+
+DeviceConfigClient.MobileUnits.GetMobileUnitSummariesForConfigurationGroupMobileUnitSummary
+
+### Client
+
+
 
 
 ## SP 2
