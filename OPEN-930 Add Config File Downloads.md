@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-09T11:03
+updated: 2025-12-09T11:10
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -36,10 +36,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ### FE
 
-- [ ] Download config file
+- Download config file
 	- DownloadConfigFile
 	- downloadConfigFileClicked
-- [ ] Download pending config file
+- Download pending config file
 	- DownloadPendingConfigFile
 	- downloadPendingConfigFileClicked
 
@@ -71,15 +71,15 @@ Routes:
 public static readonly RouteDefinition GET_CONFIG_FILE = new RouteDefinition(APISettings.Current.ApiBaseUrl, BasePath, "/organisations/{orgId}/asset/{assetId}/downloadConfigFile", Core.Http.Constants.HTTPVerbs.GET);
 public static readonly RouteDefinition GET_PENDING_CONFIG_FILE = new RouteDefinition(APISettings.Current.ApiBaseUrl, BasePath, "/organisations/{orgId}/asset/{assetId}/downloadConfigPendingFile", Core.Http.Constants.HTTPVerbs.GET);
 
-canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents
+- [ ] canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents
 
 ModuleRoutes.GET_CONFIG_FILE.ToLinkCarrier("downloadConfigFile", new { orgId = organisationId }),
 ModuleRoutes.GET_PENDING_CONFIG_FILE.ToLinkCarrier("downloadPendingConfigFile", new { orgId = organisationId }),
 
 #### Rules
 
-hsFmDevices.Contains
-hsM4kDevices
+- [ ] hsFmDevices.Contains
+- [ ] hsM4kDevices
 hsM6kDevices
 
 DeviceConfigClient.MobileUnits.GetMobileUnitSummariesForConfigurationGroupMobileUnitSummary
@@ -96,6 +96,9 @@ return WriteFileResponse(assetId, jsonData != null ? JsonConvert.DeserializeObje
 
 ### Client
 
+IMobileUnitConfigurationRepository
+- [ ] GetLoadedConfigTextSummaryForMobileUnit
+- [ ] GetPendingConfigTextSummaryForMobileUnit
 
 
 
