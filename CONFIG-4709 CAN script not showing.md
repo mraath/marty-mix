@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-08T14:40
+updated: 2025-12-09T09:36
 ---
 
 # CONFIG-4709 CAN script not showing
@@ -56,5 +56,5 @@ Config Group Panel not showing C3
 
 - na: Config-1252 > DEV
 - [x] [Config-1252 > INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/135796?_a=files) ✅ 2025-12-08
-- [ ] [Config-1252 > 26.1](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/135806)
+- [x] [Config-1252 > 26.1](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/135806) ✅ 2025-12-09
 
