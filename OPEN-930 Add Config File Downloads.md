@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-08T16:57
+updated: 2025-12-09T09:53
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -34,10 +34,34 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Description
 
+### FE
+
 - [ ] Download config file
-	- 
+	- DownloadConfigFile
+	- downloadConfigFileClicked
 - [ ] Download pending config file
-	- 
+	- DownloadPendingConfigFile
+	- downloadPendingConfigFileClicked
+
+It is already in the Core enum: C:\Projects\MiX.DeviceIntegration.Core\MiX.DeviceIntegration.Common\Enums\AssetConfigurationAction.cs
+
+### BE
+
+Routes:
+public static readonly RouteDefinition GET_CONFIG_FILE = new RouteDefinition(APISettings.Current.ApiBaseUrl, BasePath, "/organisations/{orgId}/asset/{assetId}/downloadConfigFile", Core.Http.Constants.HTTPVerbs.GET);
+public static readonly RouteDefinition GET_PENDING_CONFIG_FILE = new RouteDefinition(APISettings.Current.ApiBaseUrl, BasePath, "/organisations/{orgId}/asset/{assetId}/downloadConfigPendingFile", Core.Http.Constants.HTTPVerbs.GET);
+
+canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents
+
+ModuleRoutes.GET_CONFIG_FILE.ToLinkCarrier("downloadConfigFile", new { orgId = organisationId }),
+ModuleRoutes.GET_PENDING_CONFIG_FILE.ToLinkCarrier("downloadPendingConfigFile", new { orgId = organisationId }),
+
+#### Rules
+
+hsFmDevices.Contains
+hsM4kDevices
+hsM6kDevices
+
 
 ## SP 2
 
