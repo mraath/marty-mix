@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-09T11:10
+updated: 2025-12-09T11:11
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -72,6 +72,8 @@ public static readonly RouteDefinition GET_CONFIG_FILE = new RouteDefinition(API
 public static readonly RouteDefinition GET_PENDING_CONFIG_FILE = new RouteDefinition(APISettings.Current.ApiBaseUrl, BasePath, "/organisations/{orgId}/asset/{assetId}/downloadConfigPendingFile", Core.Http.Constants.HTTPVerbs.GET);
 
 - [ ] canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents
+- canDownloadConfigFile > 
+- canAccessEvents >
 
 ModuleRoutes.GET_CONFIG_FILE.ToLinkCarrier("downloadConfigFile", new { orgId = organisationId }),
 ModuleRoutes.GET_PENDING_CONFIG_FILE.ToLinkCarrier("downloadPendingConfigFile", new { orgId = organisationId }),
@@ -79,8 +81,8 @@ ModuleRoutes.GET_PENDING_CONFIG_FILE.ToLinkCarrier("downloadPendingConfigFile", 
 #### Rules
 
 - [ ] hsFmDevices.Contains
-- [ ] hsM4kDevices
-hsM6kDevices
+- [ ] hsM4kDevices.Contains
+- [ ] hsM6kDevices.Contains
 
 DeviceConfigClient.MobileUnits.GetMobileUnitSummariesForConfigurationGroupMobileUnitSummary
 
