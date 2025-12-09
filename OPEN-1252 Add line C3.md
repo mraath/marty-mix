@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-05T10:54
+updated: 2025-12-09T09:37
 ---
 
 # OPEN-1252 Add line C3
@@ -45,4 +45,4 @@ We need to add C3 into this:
 ## PR
 
 - [x] [OPEN-1252 Add line C3 > DEV](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/135614) ✅ 2025-12-04
-- [ ] [OPEN-1252 Add line C3 > INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/135688)
+- [x] [OPEN-1252 Add line C3 > INT](https://dev.azure.com/MiXTelematics/Common/_git/Database/pullrequest/135688) ✅ 2025-12-09
