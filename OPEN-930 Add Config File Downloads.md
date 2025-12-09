@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-09T09:53
+updated: 2025-12-09T09:55
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -44,6 +44,20 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- downloadPendingConfigFileClicked
 
 It is already in the Core enum: C:\Projects\MiX.DeviceIntegration.Core\MiX.DeviceIntegration.Common\Enums\AssetConfigurationAction.cs
+
+```ts
+downloadConfigFileClicked(row): void {
+	this._currentRow = row;
+	var downloadUrl = this.assetData.downloadConfigFile.fullUri;
+	window.open(downloadUrl.urlReplace({ assetId: row.assetId, auth: this.authentication.authenticationToken }), "_blank");
+}
+
+downloadPendingConfigFileClicked(row): void {
+	this._currentRow = row;
+	var downloadPendingUrl = this.assetData.downloadPendingConfigFile.fullUri;
+	window.open(downloadPendingUrl.urlReplace({ assetId: row.assetId, auth: this.authentication.authenticationToken }), "_blank");
+}
+```
 
 ### BE
 
