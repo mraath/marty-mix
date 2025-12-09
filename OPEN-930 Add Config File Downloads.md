@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-09T12:14
+updated: 2025-12-09T12:20
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -97,6 +97,30 @@ var jsonData = DeviceConfigClient.MobileUnitConfiguration.GetPendingConfigTextSu
 return WriteFileResponse(assetId, jsonData != null ? JsonConvert.DeserializeObject(jsonData).ToString() : null, true)
 
 **EG**: "https://integration.mixtelematics.com/DynaMiX.API/config-admin/organisations/-5401647754082838271/asset/1626018637366906880/downloadConfigPendingFile"
+
+```TS
+private Response WriteFileResponse(long assetId, string file, bool getPending = false)
+{
+	var pendingString = getPending ? "Pending" : "";
+	if (string.IsNullOrEmpty(file))
+	{
+		var dataType = getPending ? "pending" : "loaded";
+		file = $"No {dataType} configuration found";
+	}
+	Response response = new Response();
+	var fileName = $"{pendingString}ConfigFile_{assetId}.txt";
+	response.Headers.Add("Content-Disposition", "attachment; filename=" + fileName);
+	response.ContentType = "text/plain";
+	response.Contents = stream =>
+	{
+		using (var writer = new StreamWriter(stream))
+		{
+			writer.Write($"{file}");
+		}
+	};
+	return response;
+}
+```
 
 ### Client
 
