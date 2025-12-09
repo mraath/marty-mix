@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-09T09:59
+updated: 2025-12-09T10:10
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -59,7 +59,9 @@ downloadPendingConfigFileClicked(row): void {
 }
 ```
 
-assetData > getConfigGroupAssets
+assetData > getConfigGroupAssets > GET_CONFIG_GROUP_ASSETS > GetConfigGroupAssetList
+C:\Projects\DynaMiX.Backend\API\DynaMiX.API\NancyModules\ConfigAdmin\TemplateLevel\ConfigurationGroupsModule.cs
+
 
 ### BE
 
