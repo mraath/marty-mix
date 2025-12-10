@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-09T16:27
+updated: 2025-12-10T10:26
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -134,7 +134,19 @@ IMobileUnitConfigurationRepository
 - [ ] GetLoadedConfigTextSummaryForMobileUnit
 - [ ] GetPendingConfigTextSummaryForMobileUnit
 
+## FR API
 
+getPendingConfigTextSummaryForMobileUnit
+
+
+## FR UI
+
+eg to follow:
+getOverriddenInformationForMobileUnit
+
+action
+- getPendingConfig
+- [ ] xxxxx
 
 ## SP 2
 
