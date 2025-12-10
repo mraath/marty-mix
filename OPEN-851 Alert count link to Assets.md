@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-03T12:22
+updated: 2025-12-10T16:00
 ---
 
 # OPEN-851 Alert count link to Assets
@@ -53,4 +53,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - [x] [OPEN-851 Alert count link to Assets > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/135409) ✅ 2025-12-02
 	- [x] [Alphabetic list](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/135415) ✅ 2025-12-02
-- [ ] OPEN-851 Alert count link to Assets > INT
+- [ ] [OPEN-851 Alert count link to Assets > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/135942)

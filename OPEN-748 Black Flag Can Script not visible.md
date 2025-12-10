@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2025-12-10T15:26
+updated: 2025-12-10T16:07
 ---
 
 # OPEN-748 Black Flag Can Script not visible
@@ -57,4 +57,4 @@ blackFlagModalShow
 ## PR
 
 - [x] [OPEN-748 Black Flag Can Script not visible > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/135804?_a=files) ✅ 2025-12-08
-- [ ] [OPEN-748 Black Flag Can Script not visible > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/135941)
+- [x] [OPEN-748 Black Flag Can Script not visible > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/135941) ✅ 2025-12-10
