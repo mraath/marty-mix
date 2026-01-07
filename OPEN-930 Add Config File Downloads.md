@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-07T13:28
+updated: 2026-01-07T16:04
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -108,7 +108,7 @@ return WriteFileResponse(assetId, jsonData != null ? JsonConvert.DeserializeObje
 
 **downloadConfigPendingFile**
 
-19bd4d3f-5b45-4d1f-b47b-98e81a959720
+d7da1838-6050-4f39-a691-a139c8b4e162
 -5401647754082838271
 1626018637366906880
 
