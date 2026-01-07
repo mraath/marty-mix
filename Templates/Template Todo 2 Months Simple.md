@@ -1,6 +1,6 @@
 ---
 created: 2025-10-28T07:06
-updated: 2025-12-05T11:12
+updated: 2026-01-07T09:10
 ---
 
 ```dataviewjs
@@ -11,7 +11,7 @@ function callout(text, type) {
 }
 
 const now = moment();
-const cutoff = moment().subtract(4, "weeks");
+const cutoff = moment().subtract(8, "weeks");
 
 // Helper to safely convert Obsidian date fields to moment objects
 function asMoment(dateField) {
