@@ -79,7 +79,7 @@ Routes:
 public static readonly RouteDefinition GET_CONFIG_FILE = new RouteDefinition(APISettings.Current.ApiBaseUrl, BasePath, "/organisations/{orgId}/asset/{assetId}/downloadConfigFile", Core.Http.Constants.HTTPVerbs.GET);
 public static readonly RouteDefinition GET_PENDING_CONFIG_FILE = new RouteDefinition(APISettings.Current.ApiBaseUrl, BasePath, "/organisations/{orgId}/asset/{assetId}/downloadConfigPendingFile", Core.Http.Constants.HTTPVerbs.GET);
 
-#### Per
+#### Permissions
 
 - [x] canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents ✅ 2026-01-08
 - bool canAccessMobileDeviceSettings = allPermissions[ConfigConstants.Permissions.ASSET_LEVEL_ACCESS_MOBILE_DEVICE];
@@ -89,15 +89,12 @@ ModuleRoutes.GET_CONFIG_FILE.ToLinkCarrier("downloadConfigFile", new { orgId = o
 ModuleRoutes.GET_PENDING_CONFIG_FILE.ToLinkCarrier("downloadPendingConfigFile", new { orgId = organisationId }),
 
 
-
 - [ ] TRY THESE:
 ```c#
 bool canAccessMobileDeviceSettings = _authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_ACCESS_MOBILE_DEVICE, groupId).ConfigureAwait(false).GetAwaiter().GetResult();
 bool canAccessEvents = _authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_ACCESS_EVENTS, groupId).ConfigureAwait(false).GetAwaiter().GetResult();
 bool canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents
 ```
-
-
 
 #### Rules
 
