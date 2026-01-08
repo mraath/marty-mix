@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-08T12:28
+updated: 2026-01-08T12:30
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -87,8 +87,7 @@ ModuleRoutes.GET_CONFIG_FILE.ToLinkCarrier("downloadConfigFile", new { orgId = o
 ModuleRoutes.GET_PENDING_CONFIG_FILE.ToLinkCarrier("downloadPendingConfigFile", new { orgId = organisationId }),
 
 TRY THESE:
-await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_LIBRARY_LEVEL, groupId).ConfigureAwait(false);
-await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_LIBRARY_LEVEL, groupId).ConfigureAwait(false);
+_authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_ACCESS_MOBILE_DEVICE, groupId).ConfigureAwait(false).GetAwaiter().GetResult();
 
 await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_LIBRARY_MOBILE_DEVICES).ConfigureAwait(false);
 
