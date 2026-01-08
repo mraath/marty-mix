@@ -91,6 +91,7 @@ await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_LIBRARY_LE
 await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_LIBRARY_LEVEL, groupId).ConfigureAwait(false);
 
 await _authorisationProxy.Authorise(authToken, Permissions.CAN_ACCESS_LIBRARY_MOBILE_DEVICES).ConfigureAwait(false);
+
 #### Rules
 
 ```c#
