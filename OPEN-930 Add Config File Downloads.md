@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-08T12:54
+updated: 2026-01-08T15:57
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -114,7 +114,14 @@ HashSet<long> hsM6KDevices = (capabilities.MiX6000Devices == null) ? new HashSet
 DeviceConfigClient.MobileUnits.GetMobileUnitSummariesForConfigurationGroupMobileUnitSummary
 
 ??? GetMobileUnitCapabilitiesForConfigurationGroupsAssetList
-```
+
+```c#
+//CLIENT
+
+Task<MobileUnitCapabilitiesForConfigurationGroupsAssetList> GetMobileUnitCapabilitiesForConfigurationGroupsAssetList(string authToken, long groupId, long configurationGroupId = 0, long? correlationId = null);
+
+var result = DeviceConfigClient.MobileUnits.GetMobileUnitCapabilitiesForConfigurationGroupsAssetList(authtoken, groupId).ConfigureAwait(false).GetAwaiter().GetResult();
+
 ```
 
 
