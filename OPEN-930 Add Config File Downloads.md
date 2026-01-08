@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-08T15:57
+updated: 2026-01-08T16:17
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -39,6 +39,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 GetLoadedConfigTextSummaryForMobileUnit
 GetPendingConfigTextSummaryForMobileUnit
 
+GetMobileUnitCapabilitiesForConfigurationGroupsAssetList
 
 ## Description
 
