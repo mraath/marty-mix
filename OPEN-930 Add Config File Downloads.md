@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-08T10:53
+updated: 2026-01-08T10:55
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -99,7 +99,7 @@ HashSet<long> hsM6KDevices = (capabilities.MiX6000Devices == null) ? new HashSet
 - [ ] hsM4kDevices.Contains
 - [ ] hsM6kDevices.Contains
 
-- [ ] Could just check if Mobile Device in one of the above
+- [ ] Could just check if Mobile Device in one of the above: assetlist[0].mobileDevice in ("MiX3000")
 
 DeviceConfigClient.MobileUnits.GetMobileUnitSummariesForConfigurationGroupMobileUnitSummary
 
