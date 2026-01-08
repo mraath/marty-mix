@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-08T12:36
+updated: 2026-01-08T12:38
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -79,18 +79,22 @@ Routes:
 public static readonly RouteDefinition GET_CONFIG_FILE = new RouteDefinition(APISettings.Current.ApiBaseUrl, BasePath, "/organisations/{orgId}/asset/{assetId}/downloadConfigFile", Core.Http.Constants.HTTPVerbs.GET);
 public static readonly RouteDefinition GET_PENDING_CONFIG_FILE = new RouteDefinition(APISettings.Current.ApiBaseUrl, BasePath, "/organisations/{orgId}/asset/{assetId}/downloadConfigPendingFile", Core.Http.Constants.HTTPVerbs.GET);
 
-- [ ] canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents
+#### Per
+
+- [x] canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents ✅ 2026-01-08
 - bool canAccessMobileDeviceSettings = allPermissions[ConfigConstants.Permissions.ASSET_LEVEL_ACCESS_MOBILE_DEVICE];
 - bool canAccessEvents = allPermissions[ConfigConstants.Permissions.ASSET_LEVEL_ACCESS_EVENTS];
 
 ModuleRoutes.GET_CONFIG_FILE.ToLinkCarrier("downloadConfigFile", new { orgId = organisationId }),
 ModuleRoutes.GET_PENDING_CONFIG_FILE.ToLinkCarrier("downloadPendingConfigFile", new { orgId = organisationId }),
 
-TRY THESE:
-```c#
-bool canAccessMobileDevice = _authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_ACCESS_MOBILE_DEVICE, groupId).ConfigureAwait(false).GetAwaiter().GetResult();
-bool canAccessMobileDevice = _authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_ACCESS_EVENTS, groupId).ConfigureAwait(false).GetAwaiter().GetResult();
 
+
+- [ ] TRY THESE:
+```c#
+bool canAccessMobileDeviceSettings = _authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_ACCESS_MOBILE_DEVICE, groupId).ConfigureAwait(false).GetAwaiter().GetResult();
+bool canAccessEvents = _authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_ACCESS_EVENTS, groupId).ConfigureAwait(false).GetAwaiter().GetResult();
+bool canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents
 ```
 
 
