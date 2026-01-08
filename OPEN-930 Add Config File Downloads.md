@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-08T10:34
+updated: 2026-01-08T10:53
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -88,9 +88,18 @@ ModuleRoutes.GET_PENDING_CONFIG_FILE.ToLinkCarrier("downloadPendingConfigFile", 
 
 #### Rules
 
+```c#
+capabilities = DeviceConfigClient.MobileUnits.GetMobileUnitCapabilitiesForConfigurationGroupsAssetList("", organisationId, configGroupId).ConfigureAwait(false).GetAwaiter().GetResult();
+HashSet<long> hsFmDevices = (capabilities.FmDeviceFamily == null) ? new HashSet<long>() : new HashSet<long>(capabilities.FmDeviceFamily);
+HashSet<long> hsM4KDevices = (capabilities.MiX4000Devices == null) ? new HashSet<long>() : new HashSet<long>(capabilities.MiX4000Devices);
+HashSet<long> hsM6KDevices = (capabilities.MiX6000Devices == null) ? new HashSet<long>() : new HashSet<long>(capabilities.MiX6000Devices);
+```
+
 - [ ] hsFmDevices.Contains
 - [ ] hsM4kDevices.Contains
 - [ ] hsM6kDevices.Contains
+
+- [ ] Could just check if Mobile Device in one of the above
 
 DeviceConfigClient.MobileUnits.GetMobileUnitSummariesForConfigurationGroupMobileUnitSummary
 
