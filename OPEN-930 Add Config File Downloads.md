@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-08T16:51
+updated: 2026-01-13T09:33
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -40,6 +40,7 @@ GetLoadedConfigTextSummaryForMobileUnit
 GetPendingConfigTextSummaryForMobileUnit
 
 GetMobileUnitCapabilitiesForConfigurationGroupsAssetList
+GetUserAcce
 
 ## Description
 
@@ -95,6 +96,9 @@ ModuleRoutes.GET_PENDING_CONFIG_FILE.ToLinkCarrier("downloadPendingConfigFile", 
 bool canAccessMobileDeviceSettings = _authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_ACCESS_MOBILE_DEVICE, groupId).ConfigureAwait(false).GetAwaiter().GetResult();
 bool canAccessEvents = _authorisationProxy.Authorise(authToken, Permissions.ASSET_LEVEL_ACCESS_EVENTS, groupId).ConfigureAwait(false).GetAwaiter().GetResult();
 bool canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents
+
+//    public const long ASSET_LEVEL_ACCESS_MOBILE_DEVICE = 520000008L;
+//    public const long ASSET_LEVEL_ACCESS_EVENTS = 520000006L;
 ```
 
 #### Rules
@@ -197,5 +201,4 @@ action
 ## PR
 
 - [ ] OPEN-930 Add Config File Downloads > DEV
-- [ ] OPEN-930 Add Config File Downloads > INT
-
+- [ ] OPEN-930 Add Config File Downloads
