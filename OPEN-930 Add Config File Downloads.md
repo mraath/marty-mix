@@ -40,7 +40,7 @@ GetLoadedConfigTextSummaryForMobileUnit
 GetPendingConfigTextSummaryForMobileUnit
 
 GetMobileUnitCapabilitiesForConfigurationGroupsAssetList
-GetUserAcce
+GetUserAccess
 
 ## Description
 
@@ -201,4 +201,5 @@ action
 ## PR
 
 - [ ] OPEN-930 Add Config File Downloads > DEV
-- [ ] OPEN-930 Add Config File Downloads
+- [ ] OPEN-930 Add Config File Downloads > INT
+
