@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-13T14:15
+updated: 2026-01-13T14:30
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -40,7 +40,7 @@ GetLoadedConfigTextSummaryForMobileUnit
 GetPendingConfigTextSummaryForMobileUnit
 
 GetMobileUnitCapabilitiesForConfigurationGroupsAssetList
-GetUserAccess
+GetUserPermissions
 
 ## Description
 
@@ -99,6 +99,8 @@ bool canDownloadConfigFile = canAccessMobileDeviceSettings && canAccessEvents
 
 //    public const long ASSET_LEVEL_ACCESS_MOBILE_DEVICE = 520000008L;
 //    public const long ASSET_LEVEL_ACCESS_EVENTS = 520000006L;
+
+//public const string GetUserPermissions = "configuration-groups/groupId/{groupId}/user-permissions"
 ```
 
 #### Rules
