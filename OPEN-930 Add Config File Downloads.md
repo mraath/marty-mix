@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-13T16:38
+updated: 2026-01-13T16:44
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -204,10 +204,13 @@ action
 
 - [ ] [OPEN-930 Config > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/136718)
 - [ ] OPEN-930 Config > INT
+
 - [ ] OPEN-930 Client > DEV
 - [ ] OPEN-930 Client > INT
+
 - [ ] OPEN-930 FR API > DEV
 - [ ] OPEN-930 FR API > INT
+
 - [ ] OPEN-930 FR UI > DEV
 - [ ] OPEN-930 FR UI > INT
 
