@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-14T12:14
+updated: 2026-01-14T15:10
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -45,6 +45,8 @@ GetUserPermissions
 per line: canDownloadConfigFile(mobileUnitId)
 
 ## Description
+
+## CODE
 
 ### FE
 
@@ -198,7 +200,7 @@ getOverriddenInformationForMobileUnit
 
 action
 - getPendingConfig
-- [ ] xxxxx
+- [x] xxxxx ✅ 2026-01-14
 
 ## SP 2
 
@@ -216,7 +218,7 @@ action
 - [ ] OPEN-930 Client > INT
 	- Nuget: xxx
 
-- [ ] OPEN-930 FR API > DEV
+- [x] [OPEN-930 FR API > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/136773) ✅ 2026-01-14
 - [ ] OPEN-930 FR API > INT
 	- [ ] Client 4 INT!
 
