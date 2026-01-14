@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-14T07:42
+updated: 2026-01-14T07:52
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -184,6 +184,10 @@ IMobileUnitConfigurationRepository
 
 getPendingConfigTextSummaryForMobileUnit
 
+```c#
+public const string GetUserPermissions = "api/configuration-groups/organisation/{groupId}/user-permissions";
+
+```
 
 ## FR UI
 
