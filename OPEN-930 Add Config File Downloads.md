@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-14T10:52
+updated: 2026-01-14T12:14
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -41,6 +41,8 @@ GetPendingConfigTextSummaryForMobileUnit
 
 GetMobileUnitCapabilitiesForConfigurationGroupsAssetList
 GetUserPermissions
+
+per line: canDownloadConfigFile(mobileUnitId)
 
 ## Description
 
@@ -112,11 +114,11 @@ HashSet<long> hsM4KDevices = (capabilities.MiX4000Devices == null) ? new HashSet
 HashSet<long> hsM6KDevices = (capabilities.MiX6000Devices == null) ? new HashSet<long>() : new HashSet<long>(capabilities.MiX6000Devices);
 ```
 
-- [ ] hsFmDevices.Contains
-- [ ] hsM4kDevices.Contains
-- [ ] hsM6kDevices.Contains
+- [x] hsFmDevices.Contains ✅ 2026-01-14
+- [x] hsM4kDevices.Contains ✅ 2026-01-14
+- [x] hsM6kDevices.Contains ✅ 2026-01-14
 
-- [ ] Could just check if Mobile Device in one of the above: assetlist[0].mobileDevice in ("MiX3000")
+- [x] Could just check if Mobile Device in one of the above: assetlist[0].mobileDevice in ("MiX3000") ✅ 2026-01-14
 
 DeviceConfigClient.MobileUnits.GetMobileUnitSummariesForConfigurationGroupMobileUnitSummary
 
@@ -177,8 +179,8 @@ private Response WriteFileResponse(long assetId, string file, bool getPending = 
 ### Client
 
 IMobileUnitConfigurationRepository
-- [ ] GetLoadedConfigTextSummaryForMobileUnit
-- [ ] GetPendingConfigTextSummaryForMobileUnit
+- [x] GetLoadedConfigTextSummaryForMobileUnit ✅ 2026-01-14
+- [x] GetPendingConfigTextSummaryForMobileUnit ✅ 2026-01-14
 
 ## FR API
 
