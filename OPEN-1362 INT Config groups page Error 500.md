@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-15T12:44
+updated: 2026-01-15T15:35
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -48,6 +48,14 @@ CorrelationId:1748371667841667072|/api/configuration-groups-multiselect/groupId/
 https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multiselect/groupId/-5401647754082838271/mobile-units/1646589414582132736/get-overridden-info
 ```
 
+![[Pasted image 20260115153105.png]]
+
+![[Pasted image 20260115153538.png]]
+
+- NOT happening locally
+- Happening INT
+- Local > Local FR API > INT API - NOPE
+- 
 ### Error 2
 ![[Pasted image 20260115123934.png|500]]
 
