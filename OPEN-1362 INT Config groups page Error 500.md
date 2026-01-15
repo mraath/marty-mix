@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-15T16:04
+updated: 2026-01-15T16:20
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -67,6 +67,7 @@ https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multis
 - NOT happening locally
 - Happening INT
 - Local > Local FR API > INT API - NOPE
+- https://app.axiom.co/powerfleet-cpve/query?qid=hVK9Xjc2hmW-t8wcaw&relative=1
 - 
 ### Error 2
 ![[Pasted image 20260115123934.png|500]]
