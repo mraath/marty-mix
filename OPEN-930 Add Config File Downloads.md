@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-14T15:10
+updated: 2026-01-15T11:08
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -222,6 +222,7 @@ action
 - [ ] OPEN-930 FR API > INT
 	- [ ] Client 4 INT!
 
-- [ ] OPEN-930 FR UI > DEV
+- [x] [OPEN-930 FR UI > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/136819) ✅ 2026-01-15
+	- https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/136820
 - [ ] OPEN-930 FR UI > INT
 
