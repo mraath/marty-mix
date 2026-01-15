@@ -3,10 +3,10 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-15T12:33
+updated: 2026-01-15T12:37
 ---
 
-# error
+# OPEN-1362 INT Config groups page Error 500
 
 Date: 2026-01-15 Time: 12:33
 Parent:: ==xxxx==
@@ -38,11 +38,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Branch
 
-> Branch: Config/MR/Feature/error.INT
+> Branch: Config/MR/Feature/OPEN-1362_ConfiggroupsPageError500.INT
 
 ## PR
 
-- [ ] error > DEV
-- [ ] error > INT
-- [ ] error > UAT
-- [ ] error > PROD
+- [ ] OPEN-1362 > DEV
+- [ ] OPEN-1362 > INT
+- [ ] OPEN-1362 > UAT
+- [ ] OPEN-1362 > PROD
