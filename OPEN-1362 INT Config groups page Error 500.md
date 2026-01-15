@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-15T12:37
+updated: 2026-01-15T12:40
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -34,6 +34,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
 ## Shorter Description
+
+![[Pasted image 20260115123934.png]]
+
+![[Pasted image 20260115123948.png|500]]
+
+## CODE
 
 
 ## Branch
