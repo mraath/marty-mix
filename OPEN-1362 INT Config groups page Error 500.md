@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T10:28
+updated: 2026-01-16T13:10
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -101,7 +101,7 @@ at Microsoft.AspNetCore.Mvc. Infrastructure. ActionMethodExecutor. TaskOfiAction
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-1362_ConfiggroupsPageError500.INT
+> Branch: Config/MR/Feature/OPEN-1362_ConfiggroupsPageError500Clean.INT
 
 ## PR
 
