@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T14:55
+updated: 2026-01-16T15:52
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -105,5 +105,6 @@ at Microsoft.AspNetCore.Mvc. Infrastructure. ActionMethodExecutor. TaskOfiAction
 
 ## PR
 
-- [ ] [OPEN-1362 > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/136897)
+- [x] [OPEN-1362 > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/136897) ✅ 2026-01-16
+	- [ ] https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/136902
 
