@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T08:32
+updated: 2026-01-16T08:39
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -76,16 +76,21 @@ https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multis
 
 ```ts
 /api/configuration-groups/organisation/xxxxx/query-options
-Object reference not set to an nstance of an object. at
-MiX.Fleet.Services.Logic.Groups.OrganisationGroupManager.Get cationDetailAsync(lnt64 organisationld) in
-622 at
-MiX.Fleet.Services.Api.Core.GroupsController.GetOrgamsationDetaiIAsync(Int64 organisationld) in
-909 at
-Microsoft.AspNetCore.Mvc.tnfrastructure.ActionMethodExecutor.TaskOflActionResultExecutor.Execute(ActionContext actionContext,
-IActionResultTypeMapper mapper, ObjectMethodExecutor executor. Object controller, ObjectO arguments) at
-invoker) at
-invoker,
-Task lastTask, State next, Scope scope, Object state. Boolean isCompleted) at
+
+
+
+
+Error 500 - OK x Correlationlc17474004233116917 76| api/configuration-groups/organisation/6161510139338182415/query-options
+|01/12/2026 12:04:28|Error:MiX Core.Clients.HitpRetries+ HUpinvalldRequesLEXCeption: Response status code does not indicate success: 500 (Error occured at /2 nisatic 1 15/details |Date:01/12/2026 12:04:28 | Correlation!d:1747400555935383552 Error:System. 
+NullReferenceException: Object reference not set to afffistance of an object. 
+
+at MiX Fleet. Semce;u.-:gu:.smps.nrgamsamncrmpmanager.cemr:nﬁsaxmnmmmsyncq|m54 organisationld) in Jhomejusts/work/1/s/MIX Fleet Services.Logic/Groups/OrganisationGroupManager.cs 
+line 622 
+
+at MiX Fleet Services. Api.Core GroupsControlier. GetOrganisationDetailAsync(Int64 organisationid) in Jhomejvsts/work/1/s/MiX. Fleet Services.Api. Core/Controllers/GroupsController.cs 
+line 909 
+
+at Microsoft.AspNetCore.Mvc. Infrastructure. ActionMethodExecutor. TaskOfiActionResult Executor.Execute(ActionContext actionContext, ‘ IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object(] arguments) at Microsoft.AspNetCore.Mve.Infrastructure. ControllerActioninvaker. <InvokeActionMethodAsync>g_Logged|12_1(ControllerActioninvoker invoker) at ~ Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActioninvoker.<InvokeNextActionFilterAsync>g._Awaited| 10_0(ControllerActioninvoker invoker, ‘ Task lastTask, State next, Scope scope, Object state, Boolean isCompleted) at | (oo
 ```
 
 ## CODE
