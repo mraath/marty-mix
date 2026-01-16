@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T11:18
+updated: 2026-01-16T15:23
 ---
 
 # OPEN-1371 INT Error 500 on Config Group Alerts
@@ -107,6 +107,7 @@ at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaite
 
 ## Code
 
+- Chinese (traditional) ALERTs bug
 
 ## Branch
 
