@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T14:46
+updated: 2026-01-16T14:55
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -68,7 +68,7 @@ https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multis
 - Happening INT
 - Local > Local FR API > INT API - NOPE
 - https://app.axiom.co/powerfleet-cpve/query?qid=hVK9Xjc2hmW-t8wcaw&relative=1
-- 
+- Timezone: TimeZone lookup failed. Name: 'Africa/Johannesburg' not found in Globalisation Client
 ### Error 2
 ![[Pasted image 20260115123934.png|500]]
 
