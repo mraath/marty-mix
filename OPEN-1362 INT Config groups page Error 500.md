@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-15T16:20
+updated: 2026-01-16T08:32
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -75,6 +75,17 @@ https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multis
 #### Log 2
 
 ```ts
+/api/configuration-groups/organisation/xxxxx/query-options
+Object reference not set to an nstance of an object. at
+MiX.Fleet.Services.Logic.Groups.OrganisationGroupManager.Get cationDetailAsync(lnt64 organisationld) in
+622 at
+MiX.Fleet.Services.Api.Core.GroupsController.GetOrgamsationDetaiIAsync(Int64 organisationld) in
+909 at
+Microsoft.AspNetCore.Mvc.tnfrastructure.ActionMethodExecutor.TaskOflActionResultExecutor.Execute(ActionContext actionContext,
+IActionResultTypeMapper mapper, ObjectMethodExecutor executor. Object controller, ObjectO arguments) at
+invoker) at
+invoker,
+Task lastTask, State next, Scope scope, Object state. Boolean isCompleted) at
 ```
 
 ## CODE
