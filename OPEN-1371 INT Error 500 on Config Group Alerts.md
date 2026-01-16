@@ -3,16 +3,16 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T10:27
+updated: 2026-01-16T10:28
 ---
 
 # OPEN-1371 INT Error 500 on Config Group Alerts
 
 Date: 2026-01-16 Time: 10:27
-Parent:: ==xxxx==
+Parent:: [[timezone]]
 Friend:: [[2026-01-16]]
 JIRA:OPEN-1371 INT Error 500 on Config Group Alerts
-JIRA
+[JIRA](https://powerfleet.atlassian.net/browse/OPEN-1371)
 
 
 ## TODO
@@ -35,7 +35,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
-
+![[Pasted image 20260116102747.png]]
 ## Code
 
 

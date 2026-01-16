@@ -3,13 +3,13 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T08:56
+updated: 2026-01-16T10:28
 ---
 
 # OPEN-1362 INT Config groups page Error 500
 
 Date: 2026-01-15 Time: 12:33
-Parent:: ==xxxx==
+Parent:: [[timezone]]
 Friend:: [[2026-01-15]]
 JIRA:error
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-1362)
