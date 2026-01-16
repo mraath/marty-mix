@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T15:52
+updated: 2026-01-16T16:11
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -98,7 +98,19 @@ at Microsoft.AspNetCore.Mvc. Infrastructure. ActionMethodExecutor. TaskOfiAction
 
 ## CODE
 
+## Devs message
 
+Hey, I am working on two erorrs.
+I am running out of time for today though as I have to leave here in 50 mins to take my kids somewhere.
+So if this needs to be done today, could someone please take over.
+
+OPEN-1362: Has two issues in Frangular API:
+1) Globalisation Client not getting the timezones we sent it, although a few weeks ago this worked. They say we should use short code. Tried. Doesnt yet work... cache?
+2) GetOrganisationDetailAsync when clicking and resizing columns in the config group left pane - I can't duplicate this, Amy is busy trying.
+OPEN-1371
+3) When setting the user preference to Chinese (traditional), while loading ALERTs, it throws a bug in Config.Api. Not happening for English.
+
+Thanks - M
 ## Branch
 
 > Branch: Config/MR/Feature/OPEN-1362_ConfiggroupsPageError500Clean.INT
