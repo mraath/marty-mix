@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T11:17
+updated: 2026-01-16T11:18
 ---
 
 # OPEN-1371 INT Error 500 on Config Group Alerts
@@ -45,7 +45,7 @@ CorrelationId:1748104504199303168|/api/configuration-groups-multiselect/groupId/
 
 "ExceptionMessage":"Object reference not set to an instance of an object.","ExceptionType":"System.NullReferenceException","StackTrace":" 
 
-//Config.Api
+//API
 at Config.Api.Logic.TimeZones.TimeZonesHelper.DateFormatConverter.GetRegionalFormatForDate(Int32 localeId, String languageCode) in /home/vsts/work/1/s/Config.Api.Logic/TimeZones/TimeZonesHelper.cs:
 line 290
 at Config.Api.Logic.TimeZones.TimeZonesHelper.GetShortDateTime(Nullable\u00601 dateTime, Int64 assetId, List\u00601 historicalTimeZones, MiXFleetUser userAccount) in /home/vsts/work/1/s/Config.Api.Logic/TimeZones/TimeZonesHelper.cs:
@@ -54,6 +54,7 @@ at Config.Api.Logic.Managers.TemplateLevel.ConfigurationGroupManager.ConvertAsse
 line 409
 at Config.Api.Logic.Managers.TemplateLevel.ConfigurationGroupManager.GetConfigurationGroupsMultiselectAssetAlertsList(String authToken, Int64 groupId, List\u00601 configurationGroupIds, Nullable\u00601 correlationId) in /home/vsts/work/1/s/Config.Api.Logic/Managers/TemplateLevel/ConfigurationGroupManager.cs:
 line 388
+//API: GetConfigurationGroupsAlerts
 at Config.Api.Controllers.ConfigurationGroupLevel.ConfigurationGroupController.GetConfigurationGroupsAlerts(String authToken, Int64 groupId, List\u00601 configurationGroupIds, Nullable\u00601 correlationId) in /home/vsts/work/1/s/Config.Api/Controllers/ConfigurationGroupLevel/ConfigurationGroupController.cs:
 line 104
 
