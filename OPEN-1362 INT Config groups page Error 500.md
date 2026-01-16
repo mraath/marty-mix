@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T08:39
+updated: 2026-01-16T08:56
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -74,6 +74,8 @@ https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multis
 
 #### Log 2
 
+https://app.axiom.co/powerfleet-cpve/query?qid=B9EImS7icQK-t8xmiq
+
 ```ts
 /api/configuration-groups/organisation/xxxxx/query-options
 
@@ -92,6 +94,7 @@ line 909
 
 at Microsoft.AspNetCore.Mvc. Infrastructure. ActionMethodExecutor. TaskOfiActionResult Executor.Execute(ActionContext actionContext, ‘ IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object(] arguments) at Microsoft.AspNetCore.Mve.Infrastructure. ControllerActioninvaker. <InvokeActionMethodAsync>g_Logged|12_1(ControllerActioninvoker invoker) at ~ Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActioninvoker.<InvokeNextActionFilterAsync>g._Awaited| 10_0(ControllerActioninvoker invoker, ‘ Task lastTask, State next, Scope scope, Object state, Boolean isCompleted) at | (oo
 ```
+
 
 ## CODE
 
