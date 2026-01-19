@@ -1,7 +1,14 @@
 ---
 created: 2023-06-08T12:27
-updated: 2025-07-30T15:39
+updated: 2026-01-19T09:21
 ---
+
+## Latest 202601
+
+Config API DEV: http://api.deviceconfig.dev.priv/swagger/index.html
+Config API INT: http://ecs-api.config.int.priv/swagger/index.html
+
+## A LOT
 
 Local: http://localhost/DynaMiX.DeviceConfig.Services.Api
 DEV: http://api.deviceconfig.configdev.mix.local
