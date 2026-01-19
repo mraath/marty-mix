@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-19T09:51
+updated: 2026-01-19T09:53
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -77,6 +77,7 @@ https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multis
 
 ![[Pasted image 20260119095105.png]]
 
+![[Pasted image 20260119095301.png]]
 
 
 
