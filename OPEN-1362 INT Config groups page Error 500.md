@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-16T16:11
+updated: 2026-01-19T09:05
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -69,6 +69,8 @@ https://mixconfigfrangularapi.mixdevelopment.com/api/configuration-groups-multis
 - Local > Local FR API > INT API - NOPE
 - https://app.axiom.co/powerfleet-cpve/query?qid=hVK9Xjc2hmW-t8wcaw&relative=1
 - Timezone: TimeZone lookup failed. Name: 'Africa/Johannesburg' not found in Globalisation Client
+- The shortcode when I test locally is: "CAT/SAST", when I run it on INT it is "Africa/Johannesburg"
+- 
 ### Error 2
 ![[Pasted image 20260115123934.png|500]]
 
