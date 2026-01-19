@@ -3,10 +3,10 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-19T08:21
+updated: 2026-01-19T10:42
 ---
 
-# OPEN-1371 INT Error 500 on Config Group Alerts
+# OPEN-1371 INT Error 500 on Config Group Alerts CHINESE
 
 Date: 2026-01-16 Time: 10:27
 Parent:: [[timezone]]
