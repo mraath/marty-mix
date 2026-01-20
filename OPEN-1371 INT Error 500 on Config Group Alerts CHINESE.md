@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-20T09:42
+updated: 2026-01-20T11:52
 ---
 
 # OPEN-1371 INT Error 500 on Config Group Alerts CHINESE
@@ -114,6 +114,42 @@ at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaite
 b2f62e48-5863-47d0-b611-41add196e351
 -5401647754082838271
 [-2221726257111617269,-2440320943995442748,-3743982644936471179,7417790447252270150,-8709427607151919796,-3237025716664041701,-6151267166848528093]
+
+
+## Missing
+
+```txt
+CultureInfo.GetCultures(CultureTypes.SpecificCultures) gets all the culture info for specific cultures in the system.
+supportedCultures contains all the ones we support for eg. InsighReport
+
+The problem is although our ids are found in supportedCultures, they are not found in CultureInfo.GetCultures.
+This causes the issue we are having.
+We found it for one, but it will do it for all of these...
+
+    [0]: 1028
+    [1]: 1064
+    [2]: 1094
+    [3]: 1117
+    [4]: 1128
+    [5]: 1131
+    [6]: 1158
+    [7]: 1164
+    [8]: 2052
+    [9]: 2074
+    [10]: 2143
+    [11]: 2155
+    [12]: 3076
+    [13]: 3098
+    [14]: 3179
+    [15]: 4100
+    [16]: 5124 <<< The one Amy found
+
+I will now have a look in other repos to see how it is handled there.
+```
+
+## Other repos
+
+....
 
 ## Branch
 
