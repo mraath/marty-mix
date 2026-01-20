@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-19T10:42
+updated: 2026-01-20T09:42
 ---
 
 # OPEN-1371 INT Error 500 on Config Group Alerts CHINESE
@@ -108,6 +108,12 @@ at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaite
 ## Code
 
 - **Chinese** (traditional) ALERTs bug
+
+## Swagger test
+
+b2f62e48-5863-47d0-b611-41add196e351
+-5401647754082838271
+[-2221726257111617269,-2440320943995442748,-3743982644936471179,7417790447252270150,-8709427607151919796,-3237025716664041701,-6151267166848528093]
 
 ## Branch
 
