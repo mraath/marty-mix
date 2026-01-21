@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-20T16:56
+updated: 2026-01-21T09:59
 ---
 
 # OPEN-1371 INT Error 500 on Config Group Alerts CHINESE
@@ -157,7 +157,4 @@ I will now have a look in other repos to see how it is handled there.
 
 ## PR
 
-- [ ] OPEN-1371 INT Error 500 on Config Group Alerts > DEV
-- [ ] OPEN-1371 INT Error 500 on Config Group Alerts > INT
-- [ ] OPEN-1371 INT Error 500 on Config Group Alerts > UAT
-- [ ] OPEN-1371 INT Error 500 on Config Group Alerts > PROD
+- [x] [OPEN-1371 Fix Chine etc locales > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/137214) ✅ 2026-01-21
