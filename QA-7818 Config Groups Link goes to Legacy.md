@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-22T15:39
+updated: 2026-01-22T15:41
 ---
 
 # QA-7818 Config Groups Link goes to Legacy
@@ -49,7 +49,7 @@ config-admin/configuration-groups
 
 - Asset Description (/asset/events?assetId=1646589414582132736)
 	- Event (/asset/events/edit?templateEventId=-5880546474772399188&assetId=1646589414582132736)
-		- Mobile device template (SAME as below, but test)
+		- ~~Mobile device~~ template (SAME as below, but test)
 	- Mobile device template (/asset/mobile-device?assetId=1646589414582132736)
 		- Mobile Device type (/asset/mobile-device/edit?assetId=1694875078396985344)
 		- Line Connection (/asset/mobile-device/edit?assetId=1694875078396985344&lineId=4376715893163448311)
