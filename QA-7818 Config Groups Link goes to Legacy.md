@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-22T15:47
+updated: 2026-01-23T09:07
 ---
 
 # QA-7818 Config Groups Link goes to Legacy
@@ -66,7 +66,7 @@ config-admin/configuration-groups
 
 ## PR
 
-- [ ] QA[-7818 Config Groups Link goes to Legacy > DEV](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/137310?_a=files)
-- [ ] QA-7818 Config Groups Link goes to Legacy > INT
+- [x] QA[-7818 Config Groups Link goes to Legacy > DEV](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/137310?_a=files) ✅ 2026-01-23
+- [ ] [QA-7818 Config Groups Link goes to Legacy > INT](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/137401)
 - [ ] QA-7818 Config Groups Link goes to Legacy > UAT
 - [ ] QA-7818 Config Groups Link goes to Legacy > PROD
