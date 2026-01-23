@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-23T09:22
+updated: 2026-01-23T09:23
 ---
 
 # OPEN-1371 INT Error 500 on Config Group Alerts CHINESE
@@ -151,6 +151,7 @@ I will now have a look in other repos to see how it is handled there.
 
 **MORE ISSUES**
 
+- Bashkir (Russia)
 - 
 
 ## Branch
