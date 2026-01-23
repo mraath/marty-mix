@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-23T11:20
+updated: 2026-01-23T12:02
 ---
 
 # OPEN-1371 INT Error 500 on Config Group Alerts CHINESE
@@ -243,3 +243,4 @@ CorrelationId:1751251909980930048|/api/configuration-groups-multiselect/groupId/
 ## PR
 
 - [x] [OPEN-1371 Fix Chine etc locales > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/137214) ✅ 2026-01-21
+	- [ ] [OPEN-1371 More Locales > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/137402?_a=files)
