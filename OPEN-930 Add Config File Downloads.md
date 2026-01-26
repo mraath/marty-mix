@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-26T11:12
+updated: 2026-01-26T11:19
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -212,11 +212,12 @@ action
 ## PR
 
 - [x] [OPEN-930 Config > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/Config.Api/pullrequest/136718) ✅ 2026-01-13
-	- Merged INT 2026
+	- Merged INT 20260126
 - [ ] OPEN-930 Config > INT
 
 - [x] [OPEN-930 Client > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/136725) ✅ 2026-01-13
 	- Nuget: MiX.ConfigInternal.Api.Client.2026.3.20260113.1-beta.nupkg
+	- Merged INT 20260126
 - [ ] OPEN-930 Client > INT
 	- Nuget: xxx
 
@@ -227,4 +228,5 @@ action
 - [x] [OPEN-930 FR UI > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/136819) ✅ 2026-01-15
 	- https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/136820
 	- [ConfigFile_ Added to File > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/137227)
-- [ ] OPEN-930 FR UI > 
+- [ ] OPEN-930 FR UI > INT
+
