@@ -1,0 +1,54 @@
+---
+status: busy
+comment:
+priority: 1
+created: 2023-03-27T07:35
+updated: 2026-01-26T08:29
+---
+
+# OPEN-1382 Auto select Config Group from Asset List
+
+Date: 2026-01-26 Time: 08:28
+Parent:: ==xxxx==
+Friend:: [[2026-01-26]]
+JIRA:OPEN-1382 Auto select Config Group from Asset List
+[JIRA](https://powerfleet.atlassian.net/browse/OPEN-1382)
+
+## TODO
+```dataviewjs
+function callout(text, type) {
+    const allText = `> [!${type}]\n` + text;
+    const lines = allText.split('\n');
+    return lines.join('\n> ') + '\n'
+}
+
+const query = `
+not done
+path includes ${dv.current().file.path}
+# you can add any number of extra Tasks instructions, for example:
+# group by heading
+`;
+
+dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
+```
+
+## Description
+
+When directing to the Config groups pane from links in the 
+- [ ] Asset List or 
+- [ ] Asset details
+
+## CODE
+
+## SP 2
+
+## Branch
+
+> Branch: Config/MR/Feature/OPEN-1382 Auto select Config Group from Asset List.INT
+
+## PR
+
+- [ ] OPEN-1382 Auto select Config Group from Asset List > DEV
+- [ ] OPEN-1382 Auto select Config Group from Asset List > INT
+- [ ] OPEN-1382 Auto select Config Group from Asset List > UAT
+- [ ] OPEN-1382 Auto select Config Group from Asset List > PROD
