@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-15T12:39
+updated: 2026-01-26T15:16
 ---
 
 # OPEN-997 New Column Reordering
@@ -48,4 +48,4 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] OPEN-997 New Column Reordering > DEV
 - [ ] OPEN-997 New Column Reordering > INT
 - [ ] OPEN-997 New Column Reordering > UAT
--
+- [ ] OPEN-997 New Column Reordering > PROD
