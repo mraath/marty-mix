@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-26T15:26
+updated: 2026-01-27T06:39
 ---
 
 # OPEN-930 Add Config File Downloads
@@ -208,7 +208,7 @@ action
 
 > Branch: Config/MR/Feature/OPEN-930_AddConfigFileDownloads.INT
 > FE: _MERGE!!!!_
-> INT **LAtest** Config/MR/Feature/OPEN-930_AddConfigFileDownloads.INT_Merge_NEW
+> INT **LAtest refactored** Config/MR/Feature/OPEN-930_AddConfigFileDownloads.INT_Merge_NEW
 
 ## PR
 
