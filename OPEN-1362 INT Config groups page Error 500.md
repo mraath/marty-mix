@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-19T09:53
+updated: 2026-01-28T07:19
 ---
 
 # OPEN-1362 INT Config groups page Error 500
@@ -131,5 +131,5 @@ Thanks - M
 ## PR
 
 - [x] [OPEN-1362 > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/136897) ✅ 2026-01-16
-	- [ ] https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/136902
+	- [x] https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.API/pullrequest/136902 ✅ 2026-01-28
 
