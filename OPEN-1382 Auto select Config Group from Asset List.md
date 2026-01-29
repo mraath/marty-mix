@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-29T11:10
+updated: 2026-01-29T11:16
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -53,6 +53,8 @@ openConfigGroup
 
 Asset configuration changed. Click here to go to configuration groups to compile and upload now.
 
+C:\Projects\MiX.Fleet.UI\UI\Js\FleetAdmin\Controllers\assetCommissioning.ts
+$setPath('/config-admin/configuration-groups-multiselect
 
 
 ## SP 2
