@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-29T11:40
+updated: 2026-01-29T11:49
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -65,7 +65,7 @@ this.location.setPath(MiXFleet.ConfigAdmin.Routes.AssetMobileDevicePeripheralEdi
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-1382 Auto select Config Group from Asset List.INT
+> Branch: Config/MR/Feature/OPEN-1382_AutoselectConfigGroupfromAssetList.INT
 
 ## PR
 
