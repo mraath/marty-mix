@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-29T16:45
+updated: 2026-01-29T16:47
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -42,27 +42,26 @@ When directing to the Config groups pane from links in the
 
 ### REPO Mixleet UI
 
-
-
+This is the repo where we need to change it, in three places
 #### Assets List
 
 C:\Projects\MiX.Fleet.UI\UI\Js\FleetAdmin\Controllers\assetList.ts
-openConfigGroup
-
+method openConfigGroup
 
 #### Mobile Device Settings
 
+Close to wording like:
 Asset configuration changed. Click here to go to configuration groups to compile and upload now.
 
 C:\Projects\MiX.Fleet.UI\UI\Js\FleetAdmin\Controllers\assetCommissioning.ts
 setPath('/config-admin/configuration-groups-multiselect
 
-eg.: 
+change to eg.: 
 this.location.setPath('config-admin/configuration-groups-multiselect', { groupId: asset.groupid }); //something like this
 
-## Frangular UI
+### Frangular UI
 
-asset
+I will still add where but it will be in the configurationgroups.... file
 
 ## AI question
 
