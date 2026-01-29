@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-26T08:29
+updated: 2026-01-29T10:36
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -39,6 +39,14 @@ When directing to the Config groups pane from links in the
 - [ ] Asset details
 
 ## CODE
+
+### Assets List
+
+
+
+### Mobile Device Settings
+
+
 
 ## SP 2
 
