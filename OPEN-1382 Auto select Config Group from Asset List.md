@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-29T16:48
+updated: 2026-01-30T07:26
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -75,6 +75,22 @@ this.location.setPath('config-admin/configuration-groups-multiselect', { groupId
 
 I will still add where but it will be in the configurationgroups.... 
 file: C:\Projects\MiX.Config.Frangular.UI\src\app\config-groups\config-groups.component.ts
+
+Maybe something like this:
+  ```c#
+  filterByAlert(alertMessage: configAlertMessage) {
+    this.configAssetAlertsModalClose();
+
+    if (this.selectedConfigGroupForAlerts) {
+      this.configGroupSelectedKeys = [this.selectedConfigGroupForAlerts.configurationGroupId];
+      this.selectedAlerts = [];
+      this.pendingAlertFilter = alertMessage.alert;
+      this.loadConfigAssets();
+    }
+  }
+  ```
+
+
 
 ## SP 2
 
