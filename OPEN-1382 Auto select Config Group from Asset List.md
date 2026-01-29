@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-29T11:49
+updated: 2026-01-29T16:44
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -57,9 +57,22 @@ C:\Projects\MiX.Fleet.UI\UI\Js\FleetAdmin\Controllers\assetCommissioning.ts
 setPath('/config-admin/configuration-groups-multiselect
 
 eg.: 
-this.location.setPath(MiXFleet.ConfigAdmin.Routes.AssetMobileDevicePeripheralEdit, { assetId: this.location.getQueryParameter("assetId"), lineId: line.id });
+this.location.setPath('config-admin/configuration-groups-multiselect', { groupId: this.location.getQueryParameter("assetId"), lineId: line.id });
 
 
+## AI question
+
+I am currently working on this story:  
+C:\Projects\marty-mix\OPEN-1382 Auto select Config Group from Asset List.md  
+  
+It links to this jira issue:  
+[https://powerfleet.atlassian.net/browse/OPEN-1382](https://powerfleet.atlassian.net/browse/OPEN-1382)  
+  
+Basically the FLEET.UI will get extra params in the Setpath....  
+The parameter will be a configgroupId (still need to find out the exact field name)  
+
+The Frangular UI will have to handle this new parameter, basically if it is present, we need to autoselect the config group mentioned,
+We currently also do this when a user clicks on the number of assets in the alerts modal in the Frangular UI
 
 ## SP 2
 
