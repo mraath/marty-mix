@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-29T11:18
+updated: 2026-01-29T11:40
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -55,6 +55,10 @@ Asset configuration changed. Click here to go to configuration groups to compi
 
 C:\Projects\MiX.Fleet.UI\UI\Js\FleetAdmin\Controllers\assetCommissioning.ts
 setPath('/config-admin/configuration-groups-multiselect
+
+eg.: 
+this.location.setPath(MiXFleet.ConfigAdmin.Routes.AssetMobileDevicePeripheralEdit, { assetId: this.location.getQueryParameter("assetId"), lineId: line.id });
+
 
 
 ## SP 2
