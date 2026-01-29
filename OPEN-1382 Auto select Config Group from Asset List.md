@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-29T10:51
+updated: 2026-01-29T11:10
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -50,6 +50,8 @@ openConfigGroup
 
 
 ### Mobile Device Settings
+
+Asset configuration changed. Click here to go to configuration groups to compile and upload now.
 
 
 
