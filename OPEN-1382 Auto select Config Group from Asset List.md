@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-30T07:54
+updated: 2026-01-30T08:02
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -79,7 +79,8 @@ file: C:\Projects\MiX.Config.Frangular.UI\src\app\config-groups\config-groups.co
 This is how we set it from the Grid:
 ```c#
 this.selectedConfigGroupForAlerts = dataItem; //NEED to figure this one out (IConfigurationGroupsMultiselectCarrier)
-//Maybe do this once we have loaded the config groups, then get the dataItem by
+//Maybe do this once we have loaded the config groups, then get the dataItem by using the id sent in
+this.selectedConfigGroupForAlerts.configurationGroupId
 ```
 Maybe something like this:
   ```c#
