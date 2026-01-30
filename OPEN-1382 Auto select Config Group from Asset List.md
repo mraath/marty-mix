@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-30T08:02
+updated: 2026-01-30T09:02
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -70,6 +70,12 @@ setPath('/config-admin/configuration-groups-multiselect
 
 change to eg.: 
 this.location.setPath('config-admin/configuration-groups-multiselect', { groupId: asset.groupid }); //something like this
+
+
+#### ConfigGroupsMultiselectController
+
+C:\Projects\MiX.Fleet.UI\UI\Js\ConfigAdmin\Controllers\ConfigGroupsMultiselectController.ts
+this.location.getQueryParameter("templateEventId");
 
 ### Frangular UI
 
