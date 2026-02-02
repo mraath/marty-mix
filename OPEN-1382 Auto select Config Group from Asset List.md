@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-30T09:02
+updated: 2026-02-02T08:01
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -112,7 +112,7 @@ Maybe something like this:
 
 ## PR
 
-- [ ] OPEN-1382 Auto select Config Group from Asset List > DEV
-- [ ] OPEN-1382 Auto select Config Group from Asset List > INT
-- [ ] OPEN-1382 Auto select Config Group from Asset List > UAT
-- [ ] OPEN-1382 Auto select Config Group from Asset List > PROD
+- [ ] OPEN-1382 UI: Auto select Config Group from Asset List > DEV
+- [ ] OPEN-1382 **FR UI**: Auto select Config Group from Asset List > DEV
+- [ ] OPEN-1382 UI: Auto select Config Group from Asset List > INT
+- [ ] OPEN-1382 **FR UI**: Auto select Config Group from Asset List > INT
