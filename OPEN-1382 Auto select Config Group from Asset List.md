@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-02T13:49
+updated: 2026-02-02T14:08
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -114,7 +114,7 @@ Maybe something like this:
 ## PR
 
 - [x] [OPEN-1382 UI: Auto select Config Group from Asset List > DEV](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/137951) ✅ 2026-02-02
-	- [ ] [Part 2](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/137955)
+	- [x] [Part 2](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/137955) ✅ 2026-02-02
 - [x] [OPEN-1382 **FR UI**: Auto select Config Group from Asset List > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/137952) ✅ 2026-02-02
 - [ ] OPEN-1382 UI: Auto select Config Group from Asset List > INT
 - [ ] OPEN-1382 **FR UI**: Auto select Config Group from Asset List > INT
