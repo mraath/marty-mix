@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-02T11:10
+updated: 2026-02-03T08:59
 ---
 
 # OPEN-997 New Column Reordering
@@ -82,7 +82,7 @@ kendo-popup #popup class="popup-column-chooser" *ngIf="showGridConfigGroupColumn
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-997 New Column Reordering.INT
+> Branch: Config/MR/Feature/OPEN-997_NewColumnReordering.INT
 
 ## PR
 
