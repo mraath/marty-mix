@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-01-21T12:56
+updated: 2026-02-03T09:27
 ---
 
 # OPEN-1416 Change Alert Filter Multiselect to OR
@@ -45,5 +45,5 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## PR
 
-- [ ] [OPEN-1416 Change Alert Filter Multiselect to OR > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/137215)
-- [ ] OPEN-1416 Change Alert Filter Multiselect to OR > INT
+- [x] [OPEN-1416 Change Alert Filter Multiselect to OR > DEV](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/137215) ✅ 2026-02-03
+- [ ] [OPEN-1416 Change Alert Filter Multiselect to OR > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/138052?_a=files)
