@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T12:10
+updated: 2026-02-04T12:11
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -114,10 +114,9 @@ I am still busy getting the repo locally, so I can send you the fields needed on
 Some more links:
 - Spike QC Automation: https://powerfleet.atlassian.net/browse/OPEN-1223 Investigate QC Automation
 - Epic na API: https://powerfleet.atlassian.net/browse/OPEN-1264 Unity MX Installation QC Automation - Phase 1
-- https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate Customer Database requirements (not related to OP)
+- https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate Customer Database requirements (not related to OPEN-1493)
 - https://powerfleet.atlassian.net/browse/OPEN-1493 Add UI for support to supply Salesforce case info and start QC Automation manually
-	- [[OPEN-1493 UI for Salesforce case Info]]
-- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate Config analyses tool to see where changes happened
+- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate Config analyses tool to see where changes happened (future story)
 
 
 ## Steps
