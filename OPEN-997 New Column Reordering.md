@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T09:46
+updated: 2026-02-04T09:53
 ---
 
 # OPEN-997 New Column Reordering
@@ -286,7 +286,7 @@ Config/MR/Feature/OPEN-997_NewColumnReordering.INT
 Herewith a video showing this in action:
 xxxxxxxxxxxxxxxxxxxxxxxxx
 
-Herewith the diff at the time of this:
+
 
 ## SP 2
 
