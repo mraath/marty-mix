@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T16:08
+updated: 2026-02-04T16:09
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -146,8 +146,27 @@ Hey - so paar vinnige vrae:
 - UI: Waar gaan dit leef? Op een van AWS servers? OF iewers op n SalesForce server? Het ons al n plek om dit te sit? **Nee**, ons moet besluit. Sal beter wees op **AWS** dink ek?
 - UI Fields: Jy het gese dis die SalesforceCase class tot en met die Odometer field? Sorry my note le by die huis :-D Tot by **CanConnected**
 - AUTH: Roep ons die huidige Config.API auth end-point? Seker? **JA**
-- JSON: Het ons al n idee hoe dit moet lyk aan die einde of gaan ons dit vir nou eers kyk hoe dit lyk en dan verder gesels? William sal voorbeeld stuur
-- 
+- JSON: Het ons al n idee hoe dit moet lyk aan die einde of gaan ons dit vir nou eers kyk hoe dit lyk en dan verder gesels? 
+	- [ ] William sal **voorbeeld** stuur
+```json
+{  
+  "CaseNumber": "XYZ",  
+  "GroupId": 1234567890123456,    
+  "LegacyOrgId": 1234,  
+  "UniqueIdentifier": "3453453453453",  
+  "AssetId": 1234567890123456,  
+  "DeviceType":"MIX4000",  
+  "InstallationDateCompleted": "2025-01-21T05:52:09Z",  
+  "FirmwareVersion": "4.6.1",  
+  "Odometer": 987654,  
+  "DriveMateConnected": false,  
+  "IridiumConnected": false,  
+  "RoviConnected": false,  
+  "DtcoConnected": false,  
+  "VideoConnected": false,  
+  "CanConnected": false  
+}
+```
 
 ## Steps
 
