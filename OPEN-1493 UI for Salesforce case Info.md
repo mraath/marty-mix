@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T12:05
+updated: 2026-02-04T12:09
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -105,6 +105,11 @@ Yes. Phase 5 (**Trigger**) and the **Instruction Preservation Rule** are designe
 | **Reproducibility**   | Low              | High (Templates)       | **Next.js** |
 
 ### Second question
+
+I will be focussing on the following story:
+https://powerfleet.atlassian.net/browse/OPEN-1493
+
+I am still busy getting the repo locally, so I can send you the fields needed on the form, for our planning, however, while I am waiting to get this, could you look at the above story.... then also look into the links below.... to see related things I should consider, also maybe build a short diagram as to how these stories link.... I know tha
 
 ## Steps
 
