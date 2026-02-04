@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T12:20
+updated: 2026-02-04T12:28
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -115,7 +115,12 @@ Once we know more I would like to plan this using the planning and brainstorming
 
 ### Answer 2
 
-
+- [ ] **Environment:** Where will this UI live? (e.g., Internal web portal, standalone desktop app, or nested in Salesforce via Canvas/Iframe?)
+- [ ] **Authentication Flow:** You mentioned authenticating against your own DB/API. We should decide if we want a SSO (Single Sign-On) experience with Salesforce or a separate login.
+- [ ] **API Contract:** Once you have the local repo, let's define the JSON structure the API expects and what it returns.
+- [ ] local repository: **Form fields** field requirements
+- [ ] **API details** needed
+- [ ] 
 
 
 ## Steps
