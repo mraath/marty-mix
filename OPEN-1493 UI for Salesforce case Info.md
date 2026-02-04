@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T15:19
+updated: 2026-02-04T15:21
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -128,7 +128,10 @@ Once we know more I would like to plan this using the planning and brainstorming
 
 Hey - so paar vinnige vrae:
 - API: Run dit al iewers (Eg. dev / int) waar ek dit kan roep of run ek dit net locally
-- UI: Waar gaan dit leef? Op AWS? OF iewers op n SalesForce server?
+- UI: Waar gaan dit leef? Op een van AWS servers? OF iewers op n SalesForce server? Het ons al n plek om dit te sit?
+- AUTH: Roep ons die huidige Config.API auth end-point? Seker?
+- JSON: Het ons al n idee hoe dit moet lyk aan die einde of gaan ons dit vir nou eers kyk hoe dit lyk en dan verder gesels?
+- 
 
 ## Steps
 
