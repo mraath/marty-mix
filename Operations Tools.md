@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-04T08:48
+updated: 2026-02-04T11:05
 ---
 > [!Information] Writing tools to make the clients' lives easer.
 
@@ -17,6 +17,7 @@ updated: 2026-02-04T08:48
 - Epic na API: https://powerfleet.atlassian.net/browse/OPEN-1264 Unity MX Installation QC Automation - Phase 1
 - https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate Customer Database requirements
 - https://powerfleet.atlassian.net/browse/OPEN-1493 Add UI for support to supply Salesforce case info and start QC Automation manually
+	- [[OPEN-1493 UI for Salesforce case Info]]
 - https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate Config analyses tool to see where changes happened
 
 ## Examples
