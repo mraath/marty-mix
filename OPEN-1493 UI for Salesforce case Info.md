@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T15:36
+updated: 2026-02-04T15:37
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -122,7 +122,8 @@ Once we know more I would like to plan this using the planning and brainstorming
 - [ ] **API details** needed
 - [ ] 
 
-
+- fields: The form that needs to be filled in in the ui has these fields: C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Logic\Entities\SalesforceCase.cs. Not all of these are needed. I might need to change it going forward but for now only up to 
+- 
 
 
 ## Questions to team
