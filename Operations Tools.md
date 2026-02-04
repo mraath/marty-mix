@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-03T14:42
+updated: 2026-02-04T08:46
 ---
 > [!Information] Writing tools to make the clients' lives easer.
 
@@ -16,8 +16,8 @@ updated: 2026-02-03T14:42
 - Epic na API: https://powerfleet.atlassian.net/browse/OPEN-1264
 - Spike QC Automation: https://powerfleet.atlassian.net/browse/OPEN-1223
 - https://powerfleet.atlassian.net/browse/OPEN-1495
-- https://powerfleet.atlassian.net/browse/OPEN-1493
-- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting
+- https://powerfleet.atlassian.net/browse/OPEN-1493 Add UI for support to supply Salesforce case info and start QC Automation manually
+- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: nvestigate Config analyses tool to see where changes happened
 
 ## Examples
 
