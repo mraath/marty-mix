@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T11:51
+updated: 2026-02-04T12:05
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -111,6 +111,10 @@ Yes. Phase 5 (**Trigger**) and the **Instruction Preservation Rule** are designe
 - I asked AI if next.js and BLAST would be a good fit.... YES
 - I will use firecrawl.dev > playground to get all the brand design
 - Got a local repo for OperationsTools
+- [ ] Should we use the Salesforce or Powerfleet styling?
+	- Extract: Use CSS Peeper on your company’s main portal to get the HEX codes.
+	- Mockup: Use html.to.design to pull a Salesforce layout into Figma so your form looks native to the environment.
+	- Implement: In your Next.js app, put these colors into your tailwind.config.ts so you can use them as standard classes (e.g., bg-brand-blue).
 - 
 
 ## Code
