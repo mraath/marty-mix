@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T12:09
+updated: 2026-02-04T12:10
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -109,7 +109,16 @@ Yes. Phase 5 (**Trigger**) and the **Instruction Preservation Rule** are designe
 I will be focussing on the following story:
 https://powerfleet.atlassian.net/browse/OPEN-1493
 
-I am still busy getting the repo locally, so I can send you the fields needed on the form, for our planning, however, while I am waiting to get this, could you look at the above story.... then also look into the links below.... to see related things I should consider, also maybe build a short diagram as to how these stories link.... I know tha
+I am still busy getting the repo locally, so I can send you the fields needed on the form, for our planning, however, while I am waiting to get this, could you look at the above story.... then also look into the links below.... to see related things I should consider, also maybe build a short diagram as to how these stories link.... I know there was an epic / spice (OPEN-1123) from which they generated the phase 1 (OPEN-1264) of which this story I am working on (OPEN-1493) is one of the tasks.
+
+Some more links:
+- Spike QC Automation: https://powerfleet.atlassian.net/browse/OPEN-1223 Investigate QC Automation
+- Epic na API: https://powerfleet.atlassian.net/browse/OPEN-1264 Unity MX Installation QC Automation - Phase 1
+- https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate Customer Database requirements (not related to OP)
+- https://powerfleet.atlassian.net/browse/OPEN-1493 Add UI for support to supply Salesforce case info and start QC Automation manually
+	- [[OPEN-1493 UI for Salesforce case Info]]
+- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate Config analyses tool to see where changes happened
+
 
 ## Steps
 
