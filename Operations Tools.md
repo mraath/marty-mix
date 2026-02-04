@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-04T11:05
+updated: 2026-02-04T15:04
 ---
 > [!Information] Writing tools to make the clients' lives easer.
 
@@ -9,6 +9,7 @@ updated: 2026-02-04T11:05
 - [Sprint Board](https://powerfleet.atlassian.net/jira/software/c/projects/OPEN/boards/7014/backlog)
 - [Repo Overview](https://dev.azure.com/MiXTelematics/OperationsTools)
 - [Kanban](https://powerfleet.atlassian.net/jira/software/c/projects/OPEN/boards/6981)
+- [Repo Dev](https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation?path=%2F&version=GBdevelopment&_a=contents)
 - 
 
 ## Stories
