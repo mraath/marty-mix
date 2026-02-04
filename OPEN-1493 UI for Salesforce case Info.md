@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T12:34
+updated: 2026-02-04T15:19
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -122,6 +122,13 @@ Once we know more I would like to plan this using the planning and brainstorming
 - [ ] **API details** needed
 - [ ] 
 
+## Questions to team
+
+### Questions vir William
+
+Hey - so paar vinnige vrae:
+- API: Run dit al iewers (Eg. dev / int) waar ek dit kan roep of run ek dit net locally
+- UI: Waar gaan dit leef? Op AWS? OF iewers op n SalesForce server?
 
 ## Steps
 
