@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T15:39
+updated: 2026-02-04T15:41
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -124,7 +124,8 @@ Once we know more I would like to plan this using the planning and brainstorming
 
 - As this will be a tool which might become part of a bigger project (which most likely will be angular or c#), please write the next.js app in such a way that logic can be easily extracted and moved over if needed.
 - **UI fields**: The form that needs to be filled in in the ui has these fields: C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Logic\Entities\SalesforceCase.cs. Not all of these are needed. I might need to change it going forward but for now only up to **Odometer** is mandatory.
-- Environment
+- **Environment**: You had a good question, for now I will test it locally as a standalone next.js app, going forward we will most likely host this in AWS.
+- **Authentication**: I will need to authenticate against an api end-point on our server. We could potentially firs
 
 
 ## Questions to team
