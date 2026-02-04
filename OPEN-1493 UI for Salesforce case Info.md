@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T11:26
+updated: 2026-02-04T11:33
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -101,7 +101,11 @@ Yes. Phase 5 (**Trigger**) and the **Instruction Preservation Rule** are designe
 
 ### Second question
 
+## Steps
 
+- I asked AI if next.js and BLAST would be a good fit.... YES
+- I will use firecrawl.dev > playground to get all the brand design
+- 
 
 ## Code
 
