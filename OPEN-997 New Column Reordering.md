@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T09:53
+updated: 2026-02-04T10:39
 ---
 
 # OPEN-997 New Column Reordering
@@ -277,14 +277,16 @@ After this I tried the drag drop as an enhancement and eventually I got it worki
 Before the drag drop was working I had some issues. I lost certain columns, furthermore certain indexes wouldn't persist. Sometimes the column orders on the grid would not match the column selector's order. 
 
 As my branch is currently, it seems to be working fine. 
-However, I would suggest that a **developer** takes **one or two days** just to double check, especially the indexing. I added a console log (currently commented out) which can be used for debugging to ensure the indexing is working. Also test that if you go to another page and return that it actually persists for both the config grid and the assets grid column orders. 
+However, I would suggest that a **developer** takes **one (maybe two) days** just to double check, especially the indexing. I added a console log (currently commented out) which can be used for debugging to ensure the indexing is working. Also test that if you go to another page and return that it actually persists for both the config grid and the assets grid column orders. 
 I would then also suggest that a **tester** will take **one (maybe two) days** just to test this properly as we know that column ordering has been an issue in the past. However, it shouldn't take more than a day.
+
+As most of the work has been done and it will mostly be double checking things, I would suggest no more than 3 days (mostly for testing and a little bit of Dev sanity checking)
 
 Herewith the branch I worked on (this is before the FR UI Refactoring)
 Config/MR/Feature/OPEN-997_NewColumnReordering.INT
 
 Herewith a video showing this in action:
-xxxxxxxxxxxxxxxxxxxxxxxxx
+[Watch the video here](https://mixtelematics-my.sharepoint.com/:v:/p/marthinus_raath/IQD3ubDg4VIvQ7SmnJSwIW_fAY0UuuWxv9Ao8gP-ckjUQp0?e=ZCuokX)
 
 
 
@@ -641,4 +643,4 @@ index 71312f8..fdb4221 100644
 
 ## PR
 
-- [ ] cccccccc
+- [x] COmmented on story ✅ 2026-02-04
