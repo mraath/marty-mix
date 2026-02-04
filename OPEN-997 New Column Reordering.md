@@ -268,9 +268,10 @@ configgroups.component.ts
 
 ## CODE
 
+
 Looked into Shawn's 
 example on the **ui-config-groups** branch on the MiX Seed app
-
+MiX Seed: `https://mixtelematics.visualstudio.com/DynaMiX/_git/Seed`
 ## SP 2
 
 ## Branch
