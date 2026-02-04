@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T15:49
+updated: 2026-02-04T15:50
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -122,13 +122,14 @@ Once we know more I would like to plan this using the planning and brainstorming
 - [ ] **API details** needed
 - [ ] 
 
-- As this will be a tool which might become part of a bigger project (which most likely will be angular or c#), please write the next.js app in such a way that logic can be easily extracted and moved over if needed.
+### Question 3 - AG (field info etc)
+
+ As this will be a tool which might become part of a bigger project (which most likely will be angular or c#), please write the next.js app in such a way that logic can be easily extracted and moved over if needed.
 - **UI fields**: The form that needs to be filled in in the ui has these fields: C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Logic\Entities\SalesforceCase.cs. Not all of these are needed. I might need to change it going forward but for now only up to **Odometer** is mandatory.
 - **Environment**: You had a good question, for now I will test it locally as a standalone next.js app, going forward we will most likely host this in AWS.
 - **Authentication**: I will need to authenticate against an api end-point on our server. This authentication will need to happen before the user gets access to capturing this form. A good example of such a potential auth form is: https://integration.mixtelematics.com/#/login. For now we wont need the Language selector. so only the username and password.
 - **API Contract**: See what I mentioned about the fields, this class will then be sent to this api end-point:  C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api\Controllers\QC\QcController.cs, the controller is:  `public async Task<IActionResult> PerformQC([FromQuery] string authToken, [FromBody] SalesforceCase caseDetail)`
 - **API Result**: Currently this class gets returned: C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Common\RequestResult.cs, which we will need to make nicer and convert to the correct JSON. The `List<TestArea> TestAreas` shows what was tested while `List<string> Messages` gives more information eg. results or reasons for failure. We can correct the JSON format later. Please take note.
-- 
 
 
 ## Questions to team
