@@ -286,6 +286,8 @@ Config/MR/Feature/OPEN-997_NewColumnReordering.INT
 Herewith a video showing this in action:
 xxxxxxxxxxxxxxxxxxxxxxxxx
 
+Herewith the diff at the time of this:
+
 ## SP 2
 
 ## Branch
