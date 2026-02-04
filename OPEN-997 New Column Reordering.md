@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-03T11:12
+updated: 2026-02-04T09:34
 ---
 
 # OPEN-997 New Column Reordering
@@ -268,15 +268,360 @@ configgroups.component.ts
 
 ## CODE
 
+Looked into Shawn's 
+example on the **ui-config-groups** branch on the MiX Seed app
+
 ## SP 2
 
 ## Branch
 
 > Branch: Config/MR/Feature/OPEN-997_NewColumnReordering.INT
 
+## DIFF
+
+```diff
+diff --git a/package.json b/package.json
+index d10d4cd..260c4bb 100644
+--- a/package.json
++++ b/package.json
+@@ -24,7 +24,6 @@
+   "private": true,
+   "dependencies": {
+     "@angular/animations": "12.2.16",
+-    "@angular/cdk": "^12.2.13",
+     "@angular/common": "12.2.16",
+     "@angular/compiler": "12.2.16",
+     "@angular/core": "12.2.16",
+diff --git a/src/app/app.module.ts b/src/app/app.module.ts
+index dc6b29d..5c06611 100644
+--- a/src/app/app.module.ts
++++ b/src/app/app.module.ts
+@@ -69,7 +69,6 @@ import { LogicalDeviceComponent } from "./components/common/logical-device/featu
+ import { HealthCheckComponent } from "./health-check/health-check.component";
+ import { StatusIconComponent } from "./components/common/staus-icon/status-icon.component";
+ import { DaysInStatusCellComponent } from "./health-check/days-in-status/days-in-status-cell.component";
+-import { DragDropModule } from '@angular/cdk/drag-drop';
+ 
+ @NgModule({
+   declarations: [
+@@ -118,8 +117,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
+     RadioButtonModule, LabelModule,
+     //CANLibraryModule
+     CalibrationModule,
+-    NumericTextBoxModule,
+-    DragDropModule
++    NumericTextBoxModule
+   ],
+   providers: [
+     SpinnerService,
+diff --git a/src/app/configgroups/configgroups.component.html b/src/app/configgroups/configgroups.component.html
+index 5105731..a2934c4 100644
+--- a/src/app/configgroups/configgroups.component.html
++++ b/src/app/configgroups/configgroups.component.html
+@@ -60,30 +60,23 @@
+             </button>
+           </div>
+           <kendo-popup #popup class="popup-column-chooser" *ngIf="showGridConfigGroupColumns" [anchor]="configGroupsColumnChooserButton" (anchorViewportLeave)="showGridConfigGroupColumns = false" [animate]="false" [anchorAlign]="anchorAlign" [popupAlign]="popupAlign">
+-            <div cdkDropList (cdkDropListDropped)="dropConfigGroups($event)" class="column-chooser-list">
+-              <div class="wrap d-flex align-items-center" *ngFor="let item of configGroupsColumnsOrdered; let i = index; trackBy: trackByField" role="menuitem" cdkDrag>
+-                <input type="checkbox" id="{{item?.field}}" class="k-checkbox"
+-                      [checked]="!item?.hidden"
+-                      [disabled]="item?.locked"
+-                      (click)="columnVisibilityChanged(item)" />
+-                <label class="k-checkbox-label flex-grow-1 mb-0"
+-                      for="{{item?.field}}"
+-                      (click)="$event.stopPropagation()">{{item?.title|dmxTranslate}}</label>
+-                
+-                <div class="ml-2">
+-                  <span class="column-chooser-drag-handle hand-cursor" cdkDragHandle 
+-                        [class.disabled]="item?.locked" 
+-                        style="font-size: 18px; color: #888;">☰</span>
+-                </div>
+-              </div>
++            <div class="wrap" *ngFor="let item of configGroupsColumnsOrdered; let i = index" role="menuitem">
++              <input type="checkbox" id="{{item?.field}}" class="k-checkbox"
++                     [checked]="!item?.hidden"
++                     [disabled]="item?.locked"
++                     (click)="columnVisibilityChanged(item)" />
++              <label class="k-checkbox-label"
++                     for="{{item?.field}}"
++                     (click)="$event.stopPropagation()">{{item?.title|dmxTranslate}}</label>
+             </div>
+           </kendo-popup>
+         </div>
+       </div>
+     </div>
+ 
++    <!-- CONFIGURATION GROUPS GRID -->
+     <div class="row flex-grow-1 position-relative mr-overflow">
+-      <kendo-grid #configGroupsGrid [data]="filteredConfigGroups" [skip]="skip"  [selectable]="{enabled: true, checkboxOnly: true}" [resizable]="true" [reorderable]="false" [sortable]="{mode: 'single',initialDirection: 'asc',allowUnsort: false}" [sort]="sortConfigGroups" (sortChange)="sortConfigGroupsChange($event)" class="grid-full-height" (selectionChange)="onConfigGroupSelectionChange($event)" (columnReorder)="columnReordered($event)" kendoGridSelectBy="configurationGroupId" [(selectedKeys)]="configGroupSelectedKeys" (columnResize)="columnResize($event)">
++      <kendo-grid [data]="filteredConfigGroups" [skip]="skip"  [selectable]="{enabled: true, checkboxOnly: true}" [resizable]="true" [reorderable]="true" [sortable]="{mode: 'single',initialDirection: 'asc',allowUnsort: false}" [sort]="sortConfigGroups" (sortChange)="sortConfigGroupsChange($event)" class="grid-full-height" (selectionChange)="onConfigGroupSelectionChange($event)" (columnReorder)="columnReordered($event)" kendoGridSelectBy="configurationGroupId" [(selectedKeys)]="configGroupSelectedKeys" (columnResize)="columnResize($event)">
+ 
+         <!--Config Groups Text Filter-->
+         <ng-template kendoGridToolbarTemplate>
+@@ -276,22 +269,28 @@
+                 style="background-color: transparent; border: none;">
+         </button>
+       </div>
+-      <kendo-popup #popup class="popup-column-chooser" *ngIf="showGridConfigAssetsColumns" [anchor]="assetsColumnChooserButton" (anchorViewportLeave)="showGridConfigAssetsColumns = false" [animate]="false" [anchorAlign]="anchorAlign" [popupAlign]="popupAlign">
+-        <div cdkDropList (cdkDropListDropped)="dropAssets($event)" class="column-chooser-list popup-column-chooser-scroll" style="white-space: nowrap;">
+-          <div class="wrap d-flex align-items-center" *ngFor="let item of configAssetsColumnsOrdered; let i = index; trackBy: trackByField" role="menuitem" cdkDrag>
+-            <input type="checkbox" id="{{item?.field}}" class="k-checkbox"
+-                  [checked]="!item?.hidden"
+-                  [disabled]="item?.locked"
+-                  (click)="assetsColumnVisibilityChanged(item)" />
+-            <label class="k-checkbox-label flex-grow-1 mb-0"
+-                  for="{{item?.field}}"
+-                  (click)="$event.stopPropagation()">{{item?.title|dmxTranslate}}</label>
+-            
+-            <div class="ml-2 mr-2">
+-              <span class="column-chooser-drag-handle hand-cursor" cdkDragHandle 
+-                    [class.disabled]="item?.locked" 
+-                    style="font-size: 18px; color: #888;">☰</span>
+-            </div>
++      <kendo-popup #popup class="popup-column-chooser"
++                   *ngIf="showGridConfigAssetsColumns"
++                   [anchor]="assetsColumnChooserButton"
++                   (anchorViewportLeave)="showGridConfigAssetsColumns = false"
++                   [anchorAlign]="anchorAlign"
++                   [popupAlign]="popupAlign"
++                   style="width: auto;">
++        <div class="popup-column-chooser-scroll" style="white-space: nowrap;">
++          <div class="wrap"
++               *ngFor="let item of configAssetsColumnsOrdered; let i = index"
++               role="menuitem">
++            <input type="checkbox"
++                   id="{{item?.field}}"
++                   class="k-checkbox"
++                   [checked]="!item?.hidden"
++                   [disabled]="item?.locked"
++                   (click)="assetsColumnVisibilityChanged(item)" />
++            <label class="k-checkbox-label"
++                   for="{{item?.field}}"
++                   (click)="$event.stopPropagation()">
++              {{item?.title|dmxTranslate}}
++            </label>
+           </div>
+         </div>
+       </kendo-popup>
+@@ -301,7 +300,7 @@
+ 
+ <!-- ASSETS PANEL GRID -->
+ <div class="row flex-grow-1 position-relative">
+-  <kendo-grid #assetsGrid [data]="filteredAssets" [skip]="skip" [selectable]="{enabled: true, checkboxOnly: true}" [resizable]="true" [reorderable]="false" [sortable]="{mode: 'single',initialDirection: 'asc',allowUnsort: false}" [sort]="sortAssets" (sortChange)="sortAssetsChange($event)" class="grid-full-height" (selectionChange)="onAssetSelectionChange($event)" (columnReorder)="assetsColumnReordered($event)" kendoGridSelectBy="assetId" [(selectedKeys)]="assetSelectedKeys" (excelExport)="onExcelExportAssets($event)" [pageable]="true" [singlepage]="true" (columnResize)="assetColumnResize($event)" [rowClass]="fwOldVersionHighlightRowClassFn">
++  <kendo-grid #assetsGrid [data]="filteredAssets" [skip]="skip" [selectable]="{enabled: true, checkboxOnly: true}" [resizable]="true" [reorderable]="true" [sortable]="{mode: 'single',initialDirection: 'asc',allowUnsort: false}" [sort]="sortAssets" (sortChange)="sortAssetsChange($event)" class="grid-full-height" (selectionChange)="onAssetSelectionChange($event)" (columnReorder)="assetsColumnReordered($event)" kendoGridSelectBy="assetId" [(selectedKeys)]="assetSelectedKeys" (excelExport)="onExcelExportAssets($event)" [pageable]="true" [singlepage]="true" (columnResize)="assetColumnResize($event)" [rowClass]="fwOldVersionHighlightRowClassFn">
+ 
+     <!--Assets Text Filter-->
+     <ng-template kendoGridToolbarTemplate>
+diff --git a/src/app/configgroups/configgroups.component.ts b/src/app/configgroups/configgroups.component.ts
+index 71312f8..fdb4221 100644
+--- a/src/app/configgroups/configgroups.component.ts
++++ b/src/app/configgroups/configgroups.component.ts
+@@ -65,7 +65,6 @@ import { ISimpleFileTransferBase64 } from '../shared/hypermedia/simple-file-tran
+ import { DownloadService } from '../shared/download.service';
+ import { IColumn } from './models/grid/column.interface';
+ import { ILink } from './models/grid/link.interface';
+-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+ 
+ export enum Modal {
+   mesa
+@@ -202,7 +201,6 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+ //, AfterViewInit
+ {
+   @ViewChild("assetsGrid", { static: false }) assetsGrid: GridComponent;
+-  @ViewChild("configGroupsGrid", { static: false }) configGroupsGrid: GridComponent;
+   @ViewChild("configGroupsColumnChooserButton") public configGroupsColumnChooserButton: ElementRef;
+   @ViewChild("assetsColumnChooserButton") public assetsColumnChooserButton: ElementRef;
+   @ViewChild('assetsDropdown') assetsDropdown: any;
+@@ -223,7 +221,6 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+   assetsMoveErrorMessage: string;
+   columns: IColumn[] = [];
+   organisationId: string;
+-  configGroupId: string;
+   configGroupIds: string[] = [];
+   iFrameMessage: string;
+   sidebarSize = '50%';
+@@ -929,11 +926,8 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+       this.gridSelectionCriteriaService.getSelectedConfigGroups(SelectionCriteriaKeys.selectedConfigGroups + this.organisationId)
+         .pipe(takeWhile(() => this.alive))
+         .subscribe((data: string) => {
+-          // Check query params first
+-          if (this.configGroupId) {
+-            this.configGroupSelectedKeys = [this.configGroupId];
+-            this.loadConfigAssets();
+-          } else if (data) {
++          if(data)
++          {
+             // If selected group ids value doesn't match a pattern - empty the selection
+             const regex = /^-?\d+(,-?\d+)*$/;
+             this.configGroupSelectedKeys = regex.test(data) ? data.split(',') : [];
+@@ -2232,7 +2226,6 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+     //console.log("FR UI: onMessageReceived: " + JSON.stringify(msg, null, 2));
+     //This is where the authToken gets sent in from the OLD UI
+     this.organisationId = msg.data.message.data.organisationId;
+-    this.configGroupId = msg.data.message.data.configGroupId;
+     //console.log("Org in Frangular: " + this.organisationId);
+     this.xAuth = msg.data.xAuth;
+     this.sessionService.setAuthToken(msg.data.xAuth).pipe(takeWhile(() => this.alive))
+@@ -3670,92 +3663,7 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+ 
+     //Save to selection criteria
+     column = new ColumnReorderEvent({ column: column.column, newIndex: column.newIndex, oldIndex: column.oldIndex });
+-    this.gridSelectionCriteriaService.changeColumnOrdering(SelectionCriteriaKeys.assetsColumnSettings, this.assetsColumnSettings, column, 1, this.assetsColumns.length);
+-  }
+-
+-  dropConfigGroups(event: CdkDragDrop<any[]>): void {
+-    if (event.previousIndex === event.currentIndex) return;
+-
+-    // Create the new order
+-    const newOrder = [...this.configGroupsColumnsOrdered];
+-    moveItemInArray(newOrder, event.previousIndex, event.currentIndex);
+-
+-    // Persist the change
+-    this.reorderManual(
+-      this.configGroupsColumnsOrdered,
+-      event.previousIndex,
+-      event.currentIndex,
+-      'configGroups'
+-    );
+-
+-    // Update the UI reference
+-    this.configGroupsColumnsOrdered = newOrder;
+-  }
+-
+-  dropAssets(event: CdkDragDrop<any[]>): void {
+-    if (event.previousIndex === event.currentIndex) return;
+-
+-    // Create the new order
+-    const newOrder = [...this.configAssetsColumnsOrdered];
+-    moveItemInArray(newOrder, event.previousIndex, event.currentIndex);
+-
+-    // Persist the change
+-    this.reorderManual(
+-      this.configAssetsColumnsOrdered,
+-      event.previousIndex,
+-      event.currentIndex,
+-      'assets'
+-    );
+-
+-    // Update the UI reference
+-    this.configAssetsColumnsOrdered = newOrder;
+-  }
+-
+-  // Keeps track of each field to not loose eg. checked
+-  trackByField(index: number, item: any): string {
+-    return item.field;
+-  }
+-  
+-  moveColumnUp(index: number, gridType: string) {
+-    if (index === 0) return;
+-    const columns = gridType === 'configGroups' ? this.configGroupsColumnsOrdered : this.configAssetsColumnsOrdered;
+-    this.reorderManual(columns, index, index - 1, gridType);
+-  }
+-
+-  moveColumnDown(index: number, gridType: string) {
+-    const columns = gridType === 'configGroups' ? this.configGroupsColumnsOrdered : this.configAssetsColumnsOrdered;
+-    if (index === columns.length - 1) return;
+-    this.reorderManual(columns, index, index + 1, gridType);
+-  }
+-
+-  private reorderManual(columns: IColumn[], popupOldIndex: number, popupNewIndex: number, gridType: string) {
+-    const item = columns[popupOldIndex];
+-
+-    const gridOldIndex = popupOldIndex + 1;
+-    const gridNewIndex = popupNewIndex + 1;
+-
+-    //Good way to debug indexes
+-    //console.log(`Moving ${item.field} from ${gridOldIndex} to ${gridNewIndex}`);
+-
+-    const event = new ColumnReorderEvent({
+-      column: { field: item.field } as any,
+-      newIndex: gridNewIndex,
+-      oldIndex: gridOldIndex
+-    });
+-
+-    if (gridType === 'configGroups') {
+-      this.gridSelectionCriteriaService.changeColumnOrdering(SelectionCriteriaKeys.configGroupsColumnSettings, this.configGroupsColumnSettings, event, 1, this.configGroupsColumns.length);
+-      this.gridSelectionCriteriaService.reorderGridColumnsOnStartup(this.configGroupsGrid, this.configGroupsColumnSettings);
+-    } else {
+-      this.gridSelectionCriteriaService.changeColumnOrdering(SelectionCriteriaKeys.assetsColumnSettings, this.assetsColumnSettings, event, 1, this.assetsColumns.length);
+-      this.gridSelectionCriteriaService.reorderGridColumnsOnStartup(this.assetsGrid, this.assetsColumnSettings);
+-    }
+-
+-    if (gridType === 'configGroups') {
+-      this.setupConfigGroupsGrid();
+-    } else {
+-      this.setupConfigAssetsGrid();
+-    }
++    this.gridSelectionCriteriaService.changeColumnOrdering(SelectionCriteriaKeys.assetsColumnSettings, this.assetsColumnSettings, column, 0, this.assetsColumns.length);
+   }
+ 
+   assetColumnResize(columnResizeEvent: ColumnResizeArgs[]) {
+@@ -3799,9 +3707,7 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+ 
+         this.configGroupsHiddenColumns = gridColumnData.hiddenColumns;
+         this.setupConfigGroupsGrid();
+-        if (this.configGroupsGrid) {
+-          this.gridSelectionCriteriaService.reorderGridColumnsOnStartup(this.configGroupsGrid, this.configGroupsColumnSettings);
+-        }
++
+       }, () => this.setupConfigGroupsGrid());
+   }
+ 
+@@ -3819,9 +3725,7 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+ 
+         this.configAssetsHiddenColumns = gridColumnData.hiddenColumns;
+         this.setupConfigAssetsGrid();
+-        if (this.assetsGrid) {
+-          this.gridSelectionCriteriaService.reorderGridColumnsOnStartup(this.assetsGrid, this.assetsColumnSettings);
+-        }
++
+         this.loadSpinnerAssets = false;
+ 
+       }, () => this.setupConfigAssetsGrid());
+@@ -3866,11 +3770,6 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+     //console.log("configGroupColumn done");
+     this.configGroupsColumnsOrdered = [];
+     this.configGroupsColumnsOrdered.push(...this.configGroupsColumns);
+-
+-    // Filter out undefined and maintain grid order
+-    this.configGroupsColumnsOrdered = this.configGroupsColumnsOrdered.filter(c => c !== undefined);
+-
+-    /* Shawn recommendation: maintain grid order in chooser
+     this.configGroupsColumnsOrdered.sort((columnA, columnB) => {
+       const titleA = columnA.title.toLowerCase();
+       const titleB = columnB.title.toLowerCase();
+@@ -3881,7 +3780,6 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+       }
+       return 0;
+     });
+-    */
+   }
+ 
+   private setupConfigAssetsGrid() {
+@@ -3933,11 +3831,6 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+     //console.log("configAssetsColumn done");
+     this.configAssetsColumnsOrdered = [];
+     this.configAssetsColumnsOrdered.push(...this.assetsColumns);
+-
+-    // Filter out undefined and maintain grid order
+-    this.configAssetsColumnsOrdered = this.configAssetsColumnsOrdered.filter(c => c !== undefined);
+-
+-    /* Shawn recommendation: maintain grid order in chooser
+     this.configAssetsColumnsOrdered.sort((columnA, columnB) => {
+       const titleA = columnA.title.toLowerCase();
+       const titleB = columnB.title.toLowerCase();
+@@ -3948,7 +3841,6 @@ export class ConfiggroupsComponent implements OnInit, OnDestroy
+       }
+       return 0;
+     });
+-    */
+   }
+ 
+ 
+
+```
+
 ## PR
 
-- [ ] OPEN-997 New Column Reordering > DEV
-- [ ] OPEN-997 New Column Reordering > INT
-- [ ] OPEN-997 New Column Reordering > UAT
-- [ ] OPEN-997 New Column Reordering > PROD
+- [ ] cccccccc
