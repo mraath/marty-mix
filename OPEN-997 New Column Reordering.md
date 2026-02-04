@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T09:34
+updated: 2026-02-04T09:42
 ---
 
 # OPEN-997 New Column Reordering
@@ -268,10 +268,21 @@ configgroups.component.ts
 
 ## CODE
 
+As per the parent story, Open-715, I looked into Shawn's example on our **ui-config-groups** branch.
+This can be found in the MiX Seed repo: `https://mixtelematics.visualstudio.com/DynaMiX/_git/Seed`. 
+
+I got those changes into our pop-up column selectors for as a proof of concept with up and down arrows. 
+This worked well and it also persisted the column order in the selection criteria. 
+After this I tried the drag drop as an enhancement and eventually I got it working.
+Before the drag drop was working I had some issues. I lost certain columns, furthermore certain indexes wouldn't persist. Sometimes the column orders on the grid would not match the column selector's order. 
+
+As my branch is currently, it seems to be working fine. 
+However, I would suggest that a **developer** takes **one or two days** just to double check, especially the indexing. I added a console log (currently commented out) which can be used for debugging to ensure the indexing is working. Also test that if you go to another page and return that it actually persists for both the config grid and the assets grid column orders. 
+I would then also suggest that a **tester** will take **one or two days** just to test this properly as we know that column ordering has been an issue in the past. However, it shouldn't take more than a day max to be done.
 
 Looked into Shawn's 
-example on the **ui-config-groups** branch on the MiX Seed app
-MiX Seed: `https://mixtelematics.visualstudio.com/DynaMiX/_git/Seed`
+example on the  branch on the MiX Seed app
+
 ## SP 2
 
 ## Branch
