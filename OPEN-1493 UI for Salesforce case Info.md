@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T11:33
+updated: 2026-02-04T11:47
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -35,6 +35,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Shorter Description
 
+Currently, we are waiting for Salesforce devs to implement [OPEN-1356: Trigger QC API EndpointReady for Grooming](https://powerfleet.atlassian.net/browse/OPEN-1356) and [OPEN-1295: Call Salesforce Endpoint from QC AutomationReady for Sprint](https://powerfleet.atlassian.net/browse/OPEN-1295). We are not sure how long that will take, therefore we need to supply the support agents with a mechanism to supply the needed Salsforce case info and return the result for them. To do this, we need to:
+
+1. Create a UI that will enable them to fill in the needed data points (see [OPEN-1356: Trigger QC API EndpointReady for Grooming](https://powerfleet.atlassian.net/browse/OPEN-1356)).
+    
+2. Supply an overloaded version of the Endpoint that returns the resultset in json format for them to add to the Salesforce case.
 
 ## AI
 
