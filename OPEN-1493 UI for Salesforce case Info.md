@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T15:50
+updated: 2026-02-04T16:08
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -131,17 +131,22 @@ Once we know more I would like to plan this using the planning and brainstorming
 - **API Contract**: See what I mentioned about the fields, this class will then be sent to this api end-point:  C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api\Controllers\QC\QcController.cs, the controller is:  `public async Task<IActionResult> PerformQC([FromQuery] string authToken, [FromBody] SalesforceCase caseDetail)`
 - **API Result**: Currently this class gets returned: C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Common\RequestResult.cs, which we will need to make nicer and convert to the correct JSON. The `List<TestArea> TestAreas` shows what was tested while `List<string> Messages` gives more information eg. results or reasons for failure. We can correct the JSON format later. Please take note.
 
+### Answers
+
+- Ran into an error
+- [ ] **API Base URL:** TBD (Please provide the local/dev API endpoint for the  `QcController` ).
+- [ ] **Auth Endpoint:** TBD (Please provide the authentication endpoint URL).
 
 ## Questions to team
 
 ### Questions vir William
 
 Hey - so paar vinnige vrae:
-- API: Run dit al iewers (Eg. dev / int) waar ek dit kan roep of run ek dit net locally
-- UI: Waar gaan dit leef? Op een van AWS servers? OF iewers op n SalesForce server? Het ons al n plek om dit te sit?
-- UI Fields: Jy het gese dis die SalesforceCase class tot en met die Odometer field? Sorry my note le by die huis :-D
-- AUTH: Roep ons die huidige Config.API auth end-point? Seker?
-- JSON: Het ons al n idee hoe dit moet lyk aan die einde of gaan ons dit vir nou eers kyk hoe dit lyk en dan verder gesels?
+- API: Run dit al iewers (Eg. dev / int) waar ek dit kan roep of run ek dit net locally: **NEE**
+- UI: Waar gaan dit leef? Op een van AWS servers? OF iewers op n SalesForce server? Het ons al n plek om dit te sit? **Nee**, ons moet besluit. Sal beter wees op **AWS** dink ek?
+- UI Fields: Jy het gese dis die SalesforceCase class tot en met die Odometer field? Sorry my note le by die huis :-D Tot by **CanConnected**
+- AUTH: Roep ons die huidige Config.API auth end-point? Seker? **JA**
+- JSON: Het ons al n idee hoe dit moet lyk aan die einde of gaan ons dit vir nou eers kyk hoe dit lyk en dan verder gesels? William sal voorbeeld stuur
 - 
 
 ## Steps
