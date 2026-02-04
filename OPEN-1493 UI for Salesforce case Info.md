@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T15:46
+updated: 2026-02-04T15:48
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -130,7 +130,8 @@ Once we know more I would like to plan this using the planning and brainstorming
 ```c#
 public async Task<IActionResult> PerformQC([FromQuery] string authToken, [FromBody] SalesforceCase caseDetail)
 ```
-- API Result
+- **API Result**: Currently this class gets returned: C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Common\RequestResult.cs, which we will need to make nicer and convert to the correct JSON. The `List<TestArea> TestAreas"  We can do this later. Please take note.
+- 
 
 
 ## Questions to team
