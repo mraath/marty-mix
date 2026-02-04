@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T09:42
+updated: 2026-02-04T09:46
 ---
 
 # OPEN-997 New Column Reordering
@@ -278,10 +278,13 @@ Before the drag drop was working I had some issues. I lost certain columns, furt
 
 As my branch is currently, it seems to be working fine. 
 However, I would suggest that a **developer** takes **one or two days** just to double check, especially the indexing. I added a console log (currently commented out) which can be used for debugging to ensure the indexing is working. Also test that if you go to another page and return that it actually persists for both the config grid and the assets grid column orders. 
-I would then also suggest that a **tester** will take **one or two days** just to test this properly as we know that column ordering has been an issue in the past. However, it shouldn't take more than a day max to be done.
+I would then also suggest that a **tester** will take **one (maybe two) days** just to test this properly as we know that column ordering has been an issue in the past. However, it shouldn't take more than a day.
 
-Looked into Shawn's 
-example on the  branch on the MiX Seed app
+Herewith the branch I worked on (this is before the FR UI Refactoring)
+Config/MR/Feature/OPEN-997_NewColumnReordering.INT
+
+Herewith a video showing this in action:
+xxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## SP 2
 
