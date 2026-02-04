@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T12:11
+updated: 2026-02-04T12:20
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -43,7 +43,7 @@ Currently, we are waiting for Salesforce devs to implement [OPEN-1356: Trigger Q
 
 ## AI
 
-### First question
+### First question - gemini
 
 I've been asked to start working on a new team. It's called the Operations Tools Team. We will be doing very rapid application development. We still need to consider standards, but the main aim is to quickly complete and come with solutions for customer issues. Basically, we will get a task from our CEO, and then we must come up with a quick solution. I wanted to know if my below prompt will be adequate for this. What I would like to do, for instance, we currently have a quality control epic. From that epic, we got a phase one for quality control. And out of that phase one, we have a UI form I need to design in which we will get information from a user. This information is related to Salesforce. I will then push this information into our API. The API will do certain tests on our user data and then return a JSON object This JSON object we will later feed back into Salesforce Would a Next.js web app be a good fit for this? We do need to authenticate a user, so we need some form of login, which will authenticate against our own database. We could use the same API to do this, or maybe we could use a different one. Is there something that if we use Next.js, is the Next.js app a good fit? Or should I rather just go for vanilla JS and API calls and CSS? What would be the best fit? Also, is there something that we could reproduce? Could we, because obviously now I'm going to work on this UI form, but in future I will work on something else. So could I then still use the below prompt? And also, once I use this prompt, can I still enhance the app? Let me know.
 
@@ -104,19 +104,18 @@ Yes. Phase 5 (**Trigger**) and the **Instruction Preservation Rule** are designe
 | **API Handling**      | Client-side only | Server-side (Secure)   | **Next.js** |
 | **Reproducibility**   | Low              | High (Templates)       | **Next.js** |
 
-### Second question
+### Second question - Antigravity (flash)
 
-I will be focussing on the following story:
-https://powerfleet.atlassian.net/browse/OPEN-1493
+I've been asked to start working on a new team. It's called the Operations Tools Team. We will be doing very rapid application development. We still need to consider standards, but the main aim is to quickly complete and come with solutions for customer issues. Basically, we will get a task from our CEO, and then we must come up with a quick solution. I wanted to know if my below prompt will be adequate for this. What I would like to do, for instance, we currently have a quality control epic. From that epic, we got a phase one for quality control. And out of that phase one, we have a UI form I need to design in which we will get information from a user. This information is related to Salesforce. I will then push this information into our API. The API will do certain tests on our user data and then return a JSON object This JSON object we will later feed back into Salesforce. We do need to authenticate a user, so we need some form of login, which will authenticate against our own database / api. We could use the same API to do this, or maybe we could use a different one. Please consider this while planning. 
 
-I am still busy getting the repo locally, so I can send you the fields needed on the form, for our planning, however, while I am waiting to get this, could you look at the above story.... then also look into the links below.... to see related things I should consider, also maybe build a short diagram as to how these stories link.... I know there was an epic / spice (OPEN-1123) from which they generated the phase 1 (OPEN-1264) of which this story I am working on (OPEN-1493) is one of the tasks.
+I will be focussing on the following story: [https://powerfleet.atlassian.net/browse/OPEN-1493](https://powerfleet.atlassian.net/browse/OPEN-1493) I am still busy getting the repo locally, so I can send you the fields needed on the form, for our planning, however, while I am waiting to get this, could you look at the above story.... then also look into the links below.... to see related things I should consider, also maybe build a short diagram as to how these stories link.... I know there was an epic / spice (OPEN-1123) from which they generated the phase 1 (OPEN-1264) of which this story I am working on (OPEN-1493) is one of the tasks. Some more links: - Spike QC Automation: [https://powerfleet.atlassian.net/browse/OPEN-1223](https://powerfleet.atlassian.net/browse/OPEN-1223) Investigate QC Automation - Epic na API: [https://powerfleet.atlassian.net/browse/OPEN-1264](https://powerfleet.atlassian.net/browse/OPEN-1264) Unity MX Installation QC Automation - Phase 1 - [https://powerfleet.atlassian.net/browse/OPEN-1495](https://powerfleet.atlassian.net/browse/OPEN-1495) Investigate Customer Database requirements (not related to OPEN-1493) - [https://powerfleet.atlassian.net/browse/OPEN-1493](https://powerfleet.atlassian.net/browse/OPEN-1493) Add UI for support to supply Salesforce case info and start QC Automation manually - [https://powerfleet.atlassian.net/browse/OPEN-1494](https://powerfleet.atlassian.net/browse/OPEN-1494) Meeting: Investigate Config analyses tool to see where changes happened (future story)  
+  
+  
+Once we know more I would like to plan this using the planning and brainstorming skill, after this I will give you very specific BLAST prompt to help me in the design. Please also use the design skill and the resources folder in order to know the branding. Please do keep track of where we are in this process. Maybe make use of gemini.md or a blueprint.md or whatever will work for you. Please let me know which file to refer back to for status on this.
 
-Some more links:
-- Spike QC Automation: https://powerfleet.atlassian.net/browse/OPEN-1223 Investigate QC Automation
-- Epic na API: https://powerfleet.atlassian.net/browse/OPEN-1264 Unity MX Installation QC Automation - Phase 1
-- https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate Customer Database requirements (not related to OPEN-1493)
-- https://powerfleet.atlassian.net/browse/OPEN-1493 Add UI for support to supply Salesforce case info and start QC Automation manually
-- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate Config analyses tool to see where changes happened (future story)
+### Answer 2
+
+
 
 
 ## Steps
