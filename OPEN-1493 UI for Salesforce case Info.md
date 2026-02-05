@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T16:16
+updated: 2026-02-05T08:14
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -115,12 +115,11 @@ Once we know more I would like to plan this using the planning and brainstorming
 
 ### Answer 2
 
-- [ ] **Environment:** Where will this UI live? (e.g., Internal web portal, standalone desktop app, or nested in Salesforce via Canvas/Iframe?)
-- [ ] **Authentication Flow:** You mentioned authenticating against your own DB/API. We should decide if we want a SSO (Single Sign-On) experience with Salesforce or a separate login.
-- [ ] **API Contract:** Once you have the local repo, let's define the JSON structure the API expects and what it returns.
-- [ ] local repository: **Form fields** field requirements
-- [ ] **API details** needed
-- [ ] 
+- [x] **Environment:** Where will this UI live? (e.g., Internal web portal, standalone desktop app, or nested in Salesforce via Canvas/Iframe?) ✅ 2026-02-05
+- [x] **Authentication Flow:** You mentioned authenticating against your own DB/API. We should decide if we want a SSO (Single Sign-On) experience with Salesforce or a separate login. ✅ 2026-02-05
+- [x] **API Contract:** Once you have the local repo, let's define the JSON structure the API expects and what it returns. ✅ 2026-02-05
+- [x] local repository: **Form fields** field requirements ✅ 2026-02-05
+- [x] **API details** needed ✅ 2026-02-05
 
 ### Question 3 - AG (field info etc)
 
@@ -134,8 +133,8 @@ Once we know more I would like to plan this using the planning and brainstorming
 ### Answers
 
 - Ran into an error
-- [ ] **API Base URL:** TBD (Please provide the local/dev API endpoint for the  `QcController` ).
-- [ ] **Auth Endpoint:** TBD (Please provide the authentication endpoint URL).
+- [x] **API Base URL:** TBD (Please provide the local/dev API endpoint for the  `QcController` ). ✅ 2026-02-05
+- [x] **Auth Endpoint:** TBD (Please provide the authentication endpoint URL). ✅ 2026-02-05
 
 ### Another help regarding fields
 
