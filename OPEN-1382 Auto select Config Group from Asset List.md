@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T10:46
+updated: 2026-02-05T16:32
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -119,3 +119,4 @@ Maybe something like this:
 
 - [ ] [OPEN-1382 UI: Auto select Config Group from Asset List > INT](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/138152)
 - [ ] [OPEN-1382 **FR UI**: Auto select Config Group from Asset List > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/138153)
+	- [ ] Config/MR/Feature/OPEN-1382_AutoselectConfigGroupfromAssetList.INTMergedOut
