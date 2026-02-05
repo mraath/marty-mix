@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-04T16:10
+updated: 2026-02-04T16:16
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -125,7 +125,7 @@ Once we know more I would like to plan this using the planning and brainstorming
 ### Question 3 - AG (field info etc)
 
  As this will be a tool which might become part of a bigger project (which most likely will be angular or c#), please write the next.js app in such a way that logic can be easily extracted and moved over if needed.
-- **UI fields**: The form that needs to be filled in in the ui has these fields: C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Logic\Entities\SalesforceCase.cs. Not all of these are needed. I might need to change it going forward but for now only up to **Odometer** is mandatory.
+- **UI fields**: The form that needs to be filled in in the ui has these fields: C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Logic\Entities\SalesforceCase.cs. Not all of these are needed. I might need to change it going forward but for now only up to **CanConnected** is mandatory.
 - **Environment**: You had a good question, for now I will test it locally as a standalone next.js app, going forward we will most likely host this in AWS.
 - **Authentication**: I will need to authenticate against an api end-point on our server. This authentication will need to happen before the user gets access to capturing this form. A good example of such a potential auth form is: https://integration.mixtelematics.com/#/login. For now we wont need the Language selector. so only the username and password.
 - **API Contract**: See what I mentioned about the fields, this class will then be sent to this api end-point:  C:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api\Controllers\QC\QcController.cs, the controller is:  `public async Task<IActionResult> PerformQC([FromQuery] string authToken, [FromBody] SalesforceCase caseDetail)`
@@ -136,6 +136,32 @@ Once we know more I would like to plan this using the planning and brainstorming
 - Ran into an error
 - [ ] **API Base URL:** TBD (Please provide the local/dev API endpoint for the  `QcController` ).
 - [ ] **Auth Endpoint:** TBD (Please provide the authentication endpoint URL).
+
+### Another help regarding fields
+
+Before I said the fields only need to go up to a certain point, I was wrong, it must go up to only up to **CanConnected** is mandatory.
+Here is an example of the json we will get in future once salesforce integrates with this endpoint directly and we no longer need the UI manual form:
+```json
+{  
+  "CaseNumber": "XYZ",  
+  "GroupId": 1234567890123456,    
+  "LegacyOrgId": 1234,  
+  "UniqueIdentifier": "3453453453453",  
+  "AssetId": 1234567890123456,  
+  "DeviceType":"MIX4000",  
+  "InstallationDateCompleted": "2025-01-21T05:52:09Z",  
+  "FirmwareVersion": "4.6.1",  
+  "Odometer": 987654,  
+  "DriveMateConnected": false,  
+  "IridiumConnected": false,  
+  "RoviConnected": false,  
+  "DtcoConnected": false,  
+  "VideoConnected": false,  
+  "CanConnected": false  
+}
+```
+- Essientially the story we are working on is the UI story (manual input) for this future one: [[OPEN-1356] Trigger QC API Endpoint - Jira](https://powerfleet.atlassian.net/browse/OPEN-1356 "https://powerfleet.atlassian.net/browse/open-1356")
+    
 
 ## Questions to team
 
