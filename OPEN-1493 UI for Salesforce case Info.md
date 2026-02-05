@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-05T08:14
+updated: 2026-02-05T15:36
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -203,6 +203,18 @@ Hey - so paar vinnige vrae:
 	- Mockup: Use html.to.design to pull a Salesforce layout into Figma so your form looks native to the environment.
 	- Implement: In your Next.js app, put these colors into your tailwind.config.ts so you can use them as standard classes (e.g., bg-brand-blue).
 - 
+
+## DB
+
+```sql
+USE Deviceconfiguration;
+SELECT TOP 10 * FROM mobileunit.Mobileunits
+WHERE UniqueIdentifier = '866561069628406';
+SELECT * FROM mobileunit.AssetMobileUnits WHERE MobileUnitKey = 153855;
+
+USE FMONlineDB;
+SELECT TOP 10 * FROM dbo.Organisation
+```
 
 ## Code
 
