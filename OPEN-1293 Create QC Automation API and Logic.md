@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-06T10:19
+updated: 2026-02-06T10:20
 ---
 
 # OPEN-1293 Create QC Automation API and Logic
@@ -40,7 +40,7 @@ Create an API and logic to manage automations of commonly repeated support tasks
 - **Quality control** after installation
 - **Decommissioning** of devices
 
-The API endpoint will be a conduit between the originating platform (e.g. Salesforce) and the different APIs that perform the tasks. It does not interact directly with the source or target platforms. Helper methods may be implemented but also do not interact directly.
+The API endpoint will be a conduit between the originating platform (e.g. **Salesforce**) and the different APIs that perform the tasks. It does not interact directly with the source or target platforms. Helper methods may be implemented but also do not interact directly.
 
 ### Technical Notes
 - Should follow the Daemon pattern for consistency.
