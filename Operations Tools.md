@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-06T09:21
+updated: 2026-02-06T09:23
 ---
 > [!Information] Writing tools to make the clients' lives easer.
 
@@ -15,11 +15,12 @@ updated: 2026-02-06T09:21
 ## Stories
 
 - Spike QC Automation: https://powerfleet.atlassian.net/browse/OPEN-1223 **Investigate QC Automation**
-- Epic na API: https://powerfleet.atlassian.net/browse/OPEN-1264 Unity MX Installation QC Automation - **Phase 1**
-- https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate **Customer Database** requirements
-- https://powerfleet.atlassian.net/browse/OPEN-1493 Add **UI** for support to supply Salesforce case info and start QC Automation manually
-	- [[OPEN-1493 UI for Salesforce case Info]]
-- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** analyses tool to see where changes happened
+	- Epic na API: https://powerfleet.atlassian.net/browse/OPEN-1264 Unity MX Installation QC Automation - **Phase 1**
+		- https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate **Customer Database** requirements
+		- https://powerfleet.atlassian.net/browse/OPEN-1293: API End point
+		- https://powerfleet.atlassian.net/browse/OPEN-1493 Add **UI** for support to supply Salesforce case info and start QC Automation manually
+			- [[OPEN-1493 UI for Salesforce case Info]]
+		- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** analyses tool to see where changes happened
 
 
 - **AI** to work with Salesforce: https://powerfleet.atlassian.net/browse/OPEN-1526
