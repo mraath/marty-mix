@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-06T10:20
+updated: 2026-02-06T10:24
 ---
 
 # OPEN-1293 Create QC Automation API and Logic
@@ -94,8 +94,6 @@ The API endpoint will be a conduit between the originating platform (e.g. **Sale
 - Team: Operations Tools
 - Created: 9 December 2025, 13:20
 - Updated: 4 days ago
-
-
 
 ## Code
 
