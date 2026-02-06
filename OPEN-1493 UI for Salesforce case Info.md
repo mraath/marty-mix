@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-06T12:27
+updated: 2026-02-06T14:49
 ---
 
 # OPEN-1493 UI for Salesforce case Info
