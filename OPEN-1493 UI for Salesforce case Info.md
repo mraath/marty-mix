@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-06T10:50
+updated: 2026-02-06T12:27
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -213,8 +213,27 @@ WHERE UniqueIdentifier = '866561069628406';
 SELECT * FROM mobileunit.AssetMobileUnits WHERE MobileUnitKey = 153855;
 
 USE FMONlineDB;
-SELECT TOP 10 * FROM dbo.Organisation
+SELECT TOP 10 * FROM dbo.Organisation WHERE liOrgID = 10000;
+SELECT TOP 10 * FROM [dynamix].[Organisations] WHERE OrganisationId = 10000;
+
+/*
+USE DynaMiX;
+SELECT TOP 10 * FROM dbo.Organisation WHERE liOrgID = 10000;
+*/
 ```
+
+## Test Data
+
+**Salesforce Case Details**
+Case number: XYZ
+Group ID: -5401647754082838271
+Legacy Org ID: 10000
+Unique identifier: 866561069628406
+Asset ID: 1646589414582132736
+Device type: MIX4000
+Installation date: 2026/02/06
+Firmware version: 5.10.12
+Odometer: 123456
 
 ## Code
 
