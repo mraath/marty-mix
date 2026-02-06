@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-06T09:24
+updated: 2026-02-06T11:58
 ---
 > [!Information] Writing tools to make the clients' lives easer.
 
@@ -16,7 +16,8 @@ updated: 2026-02-06T09:24
 
 - Spike QC Automation: https://powerfleet.atlassian.net/browse/OPEN-1223 **Investigate QC Automation**
 	- Epic na API: https://powerfleet.atlassian.net/browse/OPEN-1264 Unity MX Installation QC Automation - **Phase 1**
-		- https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate **Customer Database** requirements
+		- https://powerfleet.atlassian.net/browse/OPEN-1539: Consolidated Customer/Subscriber **Database EPIC**
+			- https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate **Customer Database** requirements
 		- https://powerfleet.atlassian.net/browse/OPEN-1293: **API** End point
 			- https://powerfleet.atlassian.net/browse/OPEN-1493 Add **UI** for support to supply Salesforce case info and start QC Automation manually
 				- [[OPEN-1493 UI for Salesforce case Info]]
@@ -25,6 +26,9 @@ updated: 2026-02-06T09:24
 
 - **AI** to work with Salesforce: https://powerfleet.atlassian.net/browse/OPEN-1526
 - **Trigger** QC API Endpoint: https://powerfleet.atlassian.net/browse/OPEN-1356
+- **Salesforce** EndPoint: [[OPEN-1328] Create endpoint in Salesforce - Jira](https://powerfleet.atlassian.net/browse/OPEN-1328 "https://powerfleet.atlassian.net/browse/open-1328")
+
+Jira
 
 ## Examples
 
