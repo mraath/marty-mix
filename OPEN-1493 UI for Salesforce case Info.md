@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-05T15:36
+updated: 2026-02-06T10:50
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -172,7 +172,7 @@ Hey - so paar vinnige vrae:
 - UI Fields: Jy het gese dis die SalesforceCase class tot en met die Odometer field? Sorry my note le by die huis :-D Tot by **CanConnected**
 - AUTH: Roep ons die huidige Config.API auth end-point? Seker? **JA**
 - JSON: Het ons al n idee hoe dit moet lyk aan die einde of gaan ons dit vir nou eers kyk hoe dit lyk en dan verder gesels? 
-	- [ ] William sal **voorbeeld** stuur
+	- [x] William sal **voorbeeld** stuur ✅ 2026-02-06
 ```json
 {  
   "CaseNumber": "XYZ",  
