@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-05T16:38
+updated: 2026-02-09T11:01
 ---
 
 # OPEN-1382 Auto select Config Group from Asset List
@@ -35,8 +35,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## Description
 
 When directing to the Config groups pane from links in the 
-- [ ] Asset List or 
-- [ ] Asset details
+- [x] Asset List or ✅ 2026-02-09
+- [x] Asset details ✅ 2026-02-09
 
 ## AI question
 
@@ -120,4 +120,4 @@ Maybe something like this:
 - [x] [OPEN-1382 UI: Auto select Config Group from Asset List > INT](https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/138152) ✅ 2026-02-05
 - [x] [OPEN-1382 **FR UI**: Auto select Config Group from Asset List > INT](https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.Config.Frangular.UI/pullrequest/138153) ✅ 2026-02-05
 	- [x] Config/MR/Feature/OPEN-1382_AutoselectConfigGroupfromAssetList.INTMergedOut ✅ 2026-02-05
-	- [ ] INT 2: Merged out fixed: https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/138265
+	- [x] INT 2: Merged out fixed: https://dev.azure.com/MiXTelematics/Common/_git/MiX.Fleet.UI/pullrequest/138265 ✅ 2026-02-09
