@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-09T15:40
+updated: 2026-02-09T16:06
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -282,7 +282,7 @@ dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTes
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-1493 UI for Salesforce case Info.INT
+> Branch: Config/MR/Feature/OPEN-1493_UI_for_Salesforce_case_Info.INT
 
 ## PR
 
