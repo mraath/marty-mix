@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-06T14:49
+updated: 2026-02-09T15:39
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -235,6 +235,48 @@ Installation date: 2026/02/06
 Firmware version: 5.10.12
 Odometer: 123456
 
+
+## Unit Tests
+
+To run these unit tests manually, you can use the 
+
+```
+dotnet test
+```
+
+ command in your terminal. Here are the most useful ways to run them:
+
+### 1. Run all tests in the project
+
+From any terminal, run:
+
+powershell
+```
+```
+dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTests\Powerfleet.Automation.Logic.UnitTests.csproj"
+
+### 2. Run with detailed output
+
+If you want to see exactly which test cases passed without scrolling through noise, add the console logger:
+
+powershell
+
+dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTests\Powerfleet.Automation.Logic.UnitTests.csproj" --logger:"console;verbosity=normal"
+
+### 3. Run only specific tests (Filtering)
+
+If you only want to run the 
+
+QCManager tests (and ignore any others that might be added later):
+
+powershell
+
+dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTests\Powerfleet.Automation.Logic.UnitTests.csproj" --filter "QCManager"
+
+### Tips for IDEs:
+
+- **Visual Studio**: You can open the **Test Explorer** (Test > Test Explorer) and they will show up there for one-click running and debugging.
+- **VS Code**: If you have the "C# Dev Kit" extension installed, you can use the **Testing** icon in the left-hand sidebar to run or debug individual tests visually.
 ## Code
 
 
