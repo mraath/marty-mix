@@ -291,7 +291,7 @@ dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTes
 ## PR
 
 - [ ] OPEN-1493 UI for Salesforce case Info > DEV
-	- [ ] API
+	- [ ] API: https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation/pullrequest/138538
 	- [ ] UI: xxxxxxxxx
 - [ ] OPEN-1493 UI for Salesforce case Info > INT
 - [ ] OPEN-1493 UI for Salesforce case Info > UAT
