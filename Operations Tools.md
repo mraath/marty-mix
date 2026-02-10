@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-06T11:58
+updated: 2026-02-10T07:19
 ---
 > [!Information] Writing tools to make the clients' lives easer.
 
@@ -20,7 +20,8 @@ updated: 2026-02-06T11:58
 			- https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate **Customer Database** requirements
 		- https://powerfleet.atlassian.net/browse/OPEN-1293: **API** End point
 			- https://powerfleet.atlassian.net/browse/OPEN-1493 Add **UI** for support to supply Salesforce case info and start QC Automation manually
-				- [[OPEN-1493 UI for Salesforce case Info]]
+				- [ ] [[OPEN-1493 UI for Salesforce case Info]]
+			- [ ] https://powerfleet.atlassian.net/browse/OPEN-1299
 		- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** analyses tool to see where changes happened
 
 
