@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-10T10:17
+updated: 2026-02-10T11:05
 ---
 
 # OPEN-1299_QC_Video_Test
@@ -41,7 +41,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-1299_QC_Video_Test.INT
+> Branch: Config/MR/Feature/OPEN-1299_QC_Video_Test.DEV
 
 ## PR
 
