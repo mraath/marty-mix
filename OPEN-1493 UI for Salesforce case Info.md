@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-10T07:21
+updated: 2026-02-10T08:01
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -279,6 +279,10 @@ dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTes
 
 ## Code
 
+
+## REPO
+
+> NEW: https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation.UI
 
 ## Branch
 
