@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-10T08:01
+updated: 2026-02-10T11:03
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -291,6 +291,8 @@ dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTes
 ## PR
 
 - [ ] OPEN-1493 UI for Salesforce case Info > DEV
+	- [ ] API
+	- [ ] UI: xxxxxxxxx
 - [ ] OPEN-1493 UI for Salesforce case Info > INT
 - [ ] OPEN-1493 UI for Salesforce case Info > UAT
 - [ ] OPEN-1493 UI for Salesforce case Info > PROD
