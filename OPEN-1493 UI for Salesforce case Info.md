@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-10T11:03
+updated: 2026-02-11T16:30
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -148,7 +148,7 @@ Here is an example of the json we will get in future once salesforce integrates 
   "UniqueIdentifier": "3453453453453",  
   "AssetId": 1234567890123456,  
   "DeviceType":"MIX4000",  
-  "InstallationDateCompleted": "2025-01-21T05:52:09Z",  
+  "InstallationDateCompleted": "2024-01-21T05:52:09Z",  
   "FirmwareVersion": "4.6.1",  
   "Odometer": 987654,  
   "DriveMateConnected": false,  
