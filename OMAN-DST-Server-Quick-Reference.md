@@ -1,6 +1,6 @@
 ---
 created: 2026-02-11T15:48
-updated: 2026-02-11T16:29
+updated: 2026-02-11T17:14
 ---
 # OMAN Daylight Savings Server Information
 
@@ -9,23 +9,6 @@ updated: 2026-02-11T16:29
 **Server:** HSOMNIIS18  
 **API:** FMTimeAdjuster.Api  
 **Gateway:** omntsg.mixtelematics.com  
-**Environment:** 18.17 (Production - OMAN)
-
----
-
-## Server Details
-
-### IIS Server
-- **Primary Server:** HSOMNIIS18 (also HSOMNIIS19 available)
-- **API Name:** FMTimeAdjuster.Api (DynaMiX.DeviceConfig.FMTimeAdjuster.Api)
-- **API URL:** https://om.mixtelematics.com/DynaMiX.DeviceConfig.FMTimeAdjuster.Api
-- **Log Location:** L:/WebServices/DynaMiX.DeviceConfig.FMTimeAdjuster.Api/DynaMiX.DeviceConfig.FMTimeAdjuster.Api.log
-
-### Jumpbox/Client Tool
-- **Server:** HSOMNATS01 (or HSOMNATS02 if first doesn't work)
-- **Tool:** FMTimeAdapter app (old 18.17 compatible version)
-- **Location on Jumpbox:** Run the OLD 18.17 compatible FMTimeAdapter app
-
 ### Other OMAN Servers
 - HSOMNAPP03
 - HSOMNAPP09
@@ -51,7 +34,34 @@ updated: 2026-02-11T16:29
 ### Jumpbox Tool Setup
 
 1. **Run the FMTimeAdapter app** on the jumpbox
-2. **Check log files** for any errors
+2. **Check log files** for any errors (see Log Files section below)
+
+---
+
+## Log Files & Debugging
+
+### OMAN Log File Location
+**Primary Log:** `L:\WebServices\DynaMiX.DeviceConfig.FMTimeAdjuster.Api\DynaMiX.DeviceConfig.FMTimeAdjuster.Api.log`
+
+### What to Search For
+- **"DST Manager"** - UI tool logging (debug level only)
+- Look for command execution confirmations
+- Check for error messages or exceptions
+
+### Centralized Logging
+- **Logz.io** - Also contains DST-related logs
+- Search term: "DST Manager"
+
+### Troubleshooting Steps
+1. **Check the API log** on HSOMNIIS18 at the location above
+2. **Search for "DST Manager"** to see if commands went through
+3. **Verify in SQL** - Check messages table for Command 45 entries
+4. **Check Logz.io** for centralized logging across environments
+5. **Review error messages** - Common issues include Automapper config errors
+
+### Similar Setup (ALG Reference)
+- ALG Server: HSATSDMXIIS01
+- ALG Log: `L:\WebServices\DynaMiX.DeviceConfig.FMTimeAdjuster.Api`
 
 ---
 
@@ -117,7 +127,7 @@ Examples:
 Quick checks:
 1. Check **messages** table in SQL
 2. Try on **Swagger** endpoint
-3. Check the **log** for "DST Manager"
+3. **Check the log file** for "DST Manager" (see Log Files section above)
 4. Verify Org timezone offset and Site timezone offset
 5. Use online Unix time converter for param3 validation
 

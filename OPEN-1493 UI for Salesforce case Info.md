@@ -231,7 +231,7 @@ Legacy Org ID: 10000
 Unique identifier: 866561069628406
 Asset ID: 1646589414582132736
 Device type: MIX4000
-Installation date: 2026/02/06
+Installation date: 2024/02/06
 Firmware version: 5.10.12
 Odometer: 123456
 
