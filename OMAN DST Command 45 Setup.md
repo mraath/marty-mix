@@ -1,6 +1,6 @@
 ---
 created: 2025-03-12T08:09
-updated: 2026-02-12T09:16
+updated: 2026-02-12T09:31
 ---
 ## IIS
 
@@ -15,7 +15,8 @@ updated: 2026-02-12T09:16
 	- For our situation the Automapper was giving an error and we fixed the below:
 ![[OMAN DST Command 45 Setup Automapper fix.png]]
 - After this the Api loaded successfully, green 404 monster
-- web.config > LOG: 
+- web.config > LOG: 'L:\Webservices\........... IN GMN'
+- FAILURE:
 ## Utils
 
 - On the **jumpbox**, run the OLD **18.17** compatible **FMTimeAdapter** app
