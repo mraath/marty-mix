@@ -1,6 +1,6 @@
 ---
 created: 2025-03-12T08:09
-updated: 2026-02-12T09:37
+updated: 2026-02-12T09:43
 ---
 ## IIS
 
@@ -23,7 +23,11 @@ updated: 2026-02-12T09:37
 	- deviceIntegrationManager.UpdateAssetTimezoneDeviation
 	- .... many things....
 	- C:\Projects\DynaMiX.Backend\Logic\DynaMiX.Logic\ConfigAdmin\Integration\MobileUnitLevel\DeviceIntegrationManager.cs
-		- 
+		- SendCommandToUpdateAssetTimezoneDeviation
+			- CommandManager.SendCommandToMobileDevice
+			- FAILURE: Remote message for asset {assetId} not sent
+			- mucProxy.SendCommandToMobileUnit
+			- SendCommandToMobileDeviceOldWay
 
 ## Utils
 
