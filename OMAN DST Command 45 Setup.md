@@ -1,6 +1,6 @@
 ---
 created: 2025-03-12T08:09
-updated: 2026-02-12T09:32
+updated: 2026-02-12T09:37
 ---
 ## IIS
 
@@ -18,6 +18,13 @@ updated: 2026-02-12T09:32
 - web.config
 	- LOG: 'L:\Webservices\........... IN GMN'
 		- "FAILURE:"
+
+- This calls:
+	- deviceIntegrationManager.UpdateAssetTimezoneDeviation
+	- .... many things....
+	- C:\Projects\DynaMiX.Backend\Logic\DynaMiX.Logic\ConfigAdmin\Integration\MobileUnitLevel\DeviceIntegrationManager.cs
+		- 
+
 ## Utils
 
 - On the **jumpbox**, run the OLD **18.17** compatible **FMTimeAdapter** app
