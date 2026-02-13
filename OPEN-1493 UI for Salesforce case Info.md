@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-11T16:30
+updated: 2026-02-13T09:50
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -296,3 +296,13 @@ dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTes
 - [ ] OPEN-1493 UI for Salesforce case Info > INT
 - [ ] OPEN-1493 UI for Salesforce case Info > UAT
 - [ ] OPEN-1493 UI for Salesforce case Info > PROD
+
+## Deploy
+
+?? **`https://powerfleet-automation.dev.mixtelematics.com`**
+
+
+I couldnt figure out the target group:
+https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#TargetGroups:v=3;$case=tags:false%5C,client:false;$regex=tags:false%5C,client:false
+I coulnt find the load balances:
+https://eu-w
