@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-13T09:50
+updated: 2026-02-13T09:51
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -301,8 +301,10 @@ dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTes
 
 ?? **`https://powerfleet-automation.dev.mixtelematics.com`**
 
+The security group was: - [sg-0514f9a34b60d28af](https://eu-west-1.console.aws.amazon.com/vpc/home?region=eu-west-1#SecurityGroup:groupId=sg-0514f9a34b60d28af)
 
 I couldnt figure out the target group:
 https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#TargetGroups:v=3;$case=tags:false%5C,client:false;$regex=tags:false%5C,client:false
+
 I coulnt find the load balances:
-https://eu-w
+https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#LoadBalancers:search=:dev;v=3;$case=tags:false%5C,client:false;$regex=tags:false%5C,client:false
