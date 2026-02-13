@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-13T13:30
+updated: 2026-02-13T13:32
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -301,7 +301,7 @@ dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTes
 
 - DEV: 
 	- **[http://52.211.2.39:3000](http://52.211.2.39:3000/)** BACKDOOR
-	- https://powerfleet-automation.dev.mixtelematics.com: MAIN
+	- **[https://powerfleet-automation.dev.mixtelematics.com](https://powerfleet-automation.dev.mixtelematics.com/)** MAIN
 
 
 The security group was: - [sg-0514f9a34b60d28af](https://eu-west-1.console.aws.amazon.com/vpc/home?region=eu-west-1#SecurityGroup:groupId=sg-0514f9a34b60d28af)
