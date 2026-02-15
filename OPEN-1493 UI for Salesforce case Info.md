@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-13T13:32
+updated: 2026-02-16T07:07
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -276,6 +276,33 @@ dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTes
 
 - **Visual Studio**: You can open the **Test Explorer** (Test > Test Explorer) and they will show up there for one-click running and debugging.
 - **VS Code**: If you have the "C# Dev Kit" extension installed, you can use the **Testing** icon in the left-hand sidebar to run or debug individual tests visually.
+
+## ALL Tests - not all implemented
+
+**CURRENT TESTS (22 tests)**
+
+- Do we have a mobiledevice for the asset installed?  
+- Is the unit's raw date >= install date?  
+- Is the firmware version on the unit = what the installer confirmed?  
+- Is the config upload date >= Install date?  
+- Is the unit's config status = Accepted after install date?  
+- Are there trips after install date?  
+- Does the unit have a valid odometer reading?  
+- Is the odometer value >= the expected value?  
+- Are there positions for the unit after install date?  
+- Does the latest position have a valid GPS fix?  
+- Does the latest position have a valid timestamp?  
+- Does the latest position have a valid Hdop?  
+- Does the latest position have a odometer and is it what is expected?  
+- If a video peripheral is installed, is it available on a "line"?  
+- If a video peripheral is installed, does it have cameras configured?  
+- If DriveMate is enabled, is it available on a "line"?  
+- If DriveMate is enabled, are there DriveMate Change Mode events after the install date?  
+- If Iridium is installed, is it available on a "line"?  
+- If Iridium is installed, does it have an active airtime contract?  
+- If Iridium is installed, does it have heartbeat events after install date?  
+- If ROVI is installed, is it available on a "line"?  
+- If DTCO is installed, is it available on a "line"?
 
 ## Code
 
