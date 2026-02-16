@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-16T11:19
+updated: 2026-02-16T12:30
 ---
 
 # OPEN-1601 Setup Pipeline for the Powerfleet Automation UI
@@ -51,6 +51,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 "https://powerfleet-automation.dev.mixtelematics.com",
 "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxAPI",
 
+
+automation.dev.mixtelematics.com
+automation-api.dev.mixtelematics.com
+
+
 "https://mixconfigfrangularui.mixdevelopment.com",
 "https://mixconfigfrangularapi.mixdevelopment.com",
 
@@ -66,3 +71,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] OPEN-1601 Setup Pipeline for the Powerfleet Automation UI > INT
 - [ ] OPEN-1601 Setup Pipeline for the Powerfleet Automation UI > UAT
 - [ ] OPEN-1601 Setup Pipeline for the Powerfleet Automation UI > PROD
+
+## AWS Setup
+
