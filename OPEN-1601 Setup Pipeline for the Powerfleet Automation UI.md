@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-16T12:30
+updated: 2026-02-16T12:32
 ---
 
 # OPEN-1601 Setup Pipeline for the Powerfleet Automation UI
