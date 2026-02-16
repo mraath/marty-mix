@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-16T07:14
+updated: 2026-02-16T10:09
 ---
 
 # OPEN-1601 Setup Pipeline for the Powerfleet Automation UI
@@ -14,6 +14,7 @@ Friend:: [[2026-02-16]]
 JIRA:OPEN-1601 Setup Pipeline for the Powerfleet Automation UI
 [JIRA](https://powerfleet.atlassian.net/browse/OPEN-1601)
 
+Linked to [[OPEN-1493 UI for Salesforce case Info]]
 
 ## TODO
 ```dataviewjs
@@ -38,6 +39,13 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Code
 
+
+## Deploy
+
+- DEV: 
+	- **[http://52.211.2.39:3000](http://52.211.2.39:3000/)** BACKDOOR
+		- http://18.202.56.106:3000/
+	- **[https://powerfleet-automation.dev.mixtelematics.com](https://powerfleet-automation.dev.mixtelematics.com/)** MAIN
 
 ## Branch
 
