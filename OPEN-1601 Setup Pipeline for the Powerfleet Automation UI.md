@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-16T10:09
+updated: 2026-02-16T11:18
 ---
 
 # OPEN-1601 Setup Pipeline for the Powerfleet Automation UI
@@ -46,6 +46,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 	- **[http://52.211.2.39:3000](http://52.211.2.39:3000/)** BACKDOOR
 		- http://18.202.56.106:3000/
 	- **[https://powerfleet-automation.dev.mixtelematics.com](https://powerfleet-automation.dev.mixtelematics.com/)** MAIN
+
+
+"https://mixconfigfrangularui.mixdevelopment.com",
+
+		"https://mixconfigfrangularapi.mixdevelopment.com",
 
 ## Branch
 
