@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-10T07:19
+updated: 2026-02-18T08:20
 ---
 > [!Information] Writing tools to make the clients' lives easer.
 
@@ -23,6 +23,11 @@ updated: 2026-02-10T07:19
 				- [ ] [[OPEN-1493 UI for Salesforce case Info]]
 			- [ ] https://powerfleet.atlassian.net/browse/OPEN-1299
 		- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** analyses tool to see where changes happened
+- Decommissioning Automation - Phase 1: https://powerfleet.atlassian.net/browse/OPEN-1545
+	- Add Decommissioning Endpoint
+
+
+
 
 
 - **AI** to work with Salesforce: https://powerfleet.atlassian.net/browse/OPEN-1526
