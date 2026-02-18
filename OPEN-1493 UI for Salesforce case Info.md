@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-18T08:18
+updated: 2026-02-18T08:56
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -12,7 +12,7 @@ Date: 2026-02-04 Time: 11:05
 Parent:: [[Operations Tools]]
 Friend:: [[2026-02-04]]
 JIRA:OPEN-1493 UI for Salesforce case Info
-==URL TO JIRA==
+[JIRA](https://powerfleet.atlassian.net/browse/OPEN-1493)
 
 
 ## TODO

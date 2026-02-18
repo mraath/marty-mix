@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-18T08:20
+updated: 2026-02-18T08:23
 ---
 > [!Information] Writing tools to make the clients' lives easer.
 
@@ -24,10 +24,9 @@ updated: 2026-02-18T08:20
 			- [ ] https://powerfleet.atlassian.net/browse/OPEN-1299
 		- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** analyses tool to see where changes happened
 - Decommissioning Automation - Phase 1: https://powerfleet.atlassian.net/browse/OPEN-1545
-	- Add Decommissioning Endpoint
-
-
-
+	- Add Decommissioning Endpoint: https://powerfleet.atlassian.net/browse/OPEN-1567
+- Operations Enablement Engineering Improvements: https://powerfleet.atlassian.net/browse/PFI-3133
+	- CAN Logger App Enhancements: https://powerfleet.atlassian.net/browse/OPEN-455
 
 
 - **AI** to work with Salesforce: https://powerfleet.atlassian.net/browse/OPEN-1526
