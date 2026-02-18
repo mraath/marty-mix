@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-18T08:56
+updated: 2026-02-18T11:05
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -147,6 +147,26 @@ Here is an example of the json we will get in future once salesforce integrates 
   "LegacyOrgId": 1234,  
   "UniqueIdentifier": "3453453453453",  
   "AssetId": 1234567890123456,  
+  "DeviceType":"MIX4000",  
+  "InstallationDateCompleted": "2024-01-21T05:52:09Z",  
+  "FirmwareVersion": "4.6.1",  
+  "Odometer": 987654,  
+  "DriveMateConnected": false,  
+  "IridiumConnected": false,  
+  "RoviConnected": false,  
+  "DtcoConnected": false,  
+  "VideoConnected": false,  
+  "CanConnected": false  
+}
+```
+
+```json
+{  
+  "CaseNumber": "XYZ",  
+  "GroupId": 4036779219063094058,    
+  "LegacyOrgId": 1234,  
+  "UniqueIdentifier": "359315071771793",  
+  "AssetId": 1660021429525905408,  
   "DeviceType":"MIX4000",  
   "InstallationDateCompleted": "2024-01-21T05:52:09Z",  
   "FirmwareVersion": "4.6.1",  
