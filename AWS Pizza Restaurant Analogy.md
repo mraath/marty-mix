@@ -1,6 +1,6 @@
 ---
 created: 2026-02-16T15:26
-updated: 2026-02-17T14:44
+updated: 2026-02-18T07:58
 ---
 # AWS Concepts: The "Pizza Restaurant" Analogy
 
@@ -97,3 +97,5 @@ Imagine your cloud application is a **Pizza Restaurant**.
     *   Health Check is failing (Inspector keeps marking the chef as "unfit").
     *   App crashes on startup (Chef burns the pizza every time).
 *   **Fix:** Check CloudWatch Logs, verify health endpoint returns 200 OK, ensure ports match.
+
+[AWS Pizza Restaurant Analogy Diagram](Excalidraw/AWS%20Pizza%20Restaurant%20Analogy.excalidraw)
