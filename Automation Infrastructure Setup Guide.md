@@ -38,6 +38,22 @@ To ensures the API loads the correct configuration, the following environment va
 | `ASPNETCORE_ENVIRONMENT` | `DEV` / `INT` / `UAT` / `Production` | Standard .NET variable for config loading |
 | `Environment` | `DEV` / `INT` / `UAT` / `ZA` / `US` ... | Legacy/Custom variable used by some clients |
 
+### 3.1 Manual Environment Variable Update (Persistent)
+To permanently add or change environment variables for an ECS service:
+1.  In the left sidebar, click **Task definitions**.
+2.  Select the **dev-powerfleet-automation-api** family.
+3.  Click the checkbox for the **latest revision** (e.g., revision 3 or higher) and select **Create new revision** -> **Create new revision**.
+4.  Scroll down to the **Container definitions** section and click on the container (e.g., `dev-powerfleet-automation-api`).
+5.  Scroll down to the **Environment** section.
+6.  Under **Environment variables**, click **Add environment variable**:
+    - **Key**: `ASPNETCORE_ENVIRONMENT`
+    - **Value**: `Development`
+7.  Click **Create** at the bottom of the page.
+8.  Go back to **Clusters** -> **DEV-Config** -> **Services** -> **dev-powerfleet-automation-api**.
+9.  Click **Update**.
+10. Under **Task definition revision**, select **Latest** (it should now be the new revision you just created).
+11. Click **Update**.
+
 > [!IMPORTANT]
 > Failure to set these will cause the API to default to `Production`, which will lead to incorrect API URL resolution and potentially 500 errors if production services are unreachable from non-prod environments.
 
