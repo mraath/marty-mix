@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-18T11:05
+updated: 2026-02-18T11:57
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -179,6 +179,50 @@ Here is an example of the json we will get in future once salesforce integrates 
   "CanConnected": false  
 }
 ```
+
+```txt
+{4b56673c-d3d1-41f8-84d0-a38c124e275f
+  "CaseNumber": "1234",
+  "GroupId": 4036779219063094058,
+  "LegacyOrgId": 0,
+  "UniqueIdentifier": "359315071771793",
+  "AssetId": 1660021429525905408,
+  "DeviceType": "MIX4000",
+  "InstallationDateCompleted": "2026-02-18T03:06:12.529Z",
+  "FirmwareVersion": "MIX4000",
+  "Odometer": 0,
+  "DriveMateConnected": true,
+  "IridiumConnected": true,
+  "RoviConnected": true,
+  "DtcoConnected": true,
+  "VideoConnected": true,
+  "CanConnected": true,
+  "DateToPending": "2026-02-18T03:06:12.529Z",
+  "RequestResults": {
+    "Status": "Unknown",
+    "TestAreas": [
+      {
+        "AreaName": "string",
+        "Result": "string"
+      }
+    ],
+    "Messages": [
+      "string"
+    ]
+  },
+  "IsConfigTested": true,
+  "IsTripInfoTested": true,
+  "IsCommsTested": true,
+  "IsDriveMateTested": true,
+  "IsIridiumTested": true,
+  "IsRoviTested": true,
+  "IsDtcoTested": true,
+  "IsVideoTested": true,
+  "IsCanTested": true,
+  "CurrentCaseStatus": "Unknown"
+}
+```
+
 - Essientially the story we are working on is the UI story (manual input) for this future one: [[OPEN-1356] Trigger QC API Endpoint - Jira](https://powerfleet.atlassian.net/browse/OPEN-1356 "https://powerfleet.atlassian.net/browse/open-1356")
     
 
