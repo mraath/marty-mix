@@ -1,6 +1,6 @@
 ---
 created: 2026-02-16T15:23
-updated: 2026-02-16T15:30
+updated: 2026-02-18T16:26
 ---
 # Automation Infrastructure: AWS Setup Guide (DEV/INT/PROD)
 
@@ -28,8 +28,20 @@ To maintain consistency with `Frangular`, use the following pattern:
 | **DEV** | `automation.dev.mixtelematics.com` | `automation-api.dev.mixtelematics.com` | `DEV-Config` |
 | **INT** | `automation.int.mixtelematics.com` | `automation-api.int.mixtelematics.com` | `INT-Config` |
 | **PROD (ZA)**| `automation.za.mixtelematics.com` | `automation-api.za.mixtelematics.com` | `PROD-Config-ZA`|
+| **PROD (US)**| `automation.us.mixtelematics.com` | `automation-api.us.mixtelematics.com` | `PROD-Config-US`|
 
-## 3. PowerShell Verification Script
+## 3. Required Environment Variables (ECS Task Definition)
+To ensures the API loads the correct configuration, the following environment variables **must** be set in the ECS Task Definition for each service:
+
+| Variable | Recommended Value | Description |
+| :--- | :--- | :--- |
+| `ASPNETCORE_ENVIRONMENT` | `DEV` / `INT` / `UAT` / `Production` | Standard .NET variable for config loading |
+| `Environment` | `DEV` / `INT` / `UAT` / `ZA` / `US` ... | Legacy/Custom variable used by some clients |
+
+> [!IMPORTANT]
+> Failure to set these will cause the API to default to `Production`, which will lead to incorrect API URL resolution and potentially 500 errors if production services are unreachable from non-prod environments.
+
+## 4. PowerShell Verification Script
 Copy-paste this to verify the infrastructure status in any environment:
 
 ```pwsh
@@ -45,6 +57,6 @@ $zone = Get-R53HostedZoneList | Where-Object { $_.Name -match "mixtelematics.com
 Get-R53ResourceRecordSet -HostedZoneId $zone.Id | Where-Object { $_.Name -match "automation" }
 ```
 
-## 4. Connectivity Testing
+## 5. Connectivity Testing
 - **API Health**: `http://automation-api.dev.mixtelematics.com/health`
 - **UI Detection**: Visit `http://automation.dev.mixtelematics.com` and verify the detected environment in the console.
