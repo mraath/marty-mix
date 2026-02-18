@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-18T11:57
+updated: 2026-02-18T13:28
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -222,6 +222,10 @@ Here is an example of the json we will get in future once salesforce integrates 
   "CurrentCaseStatus": "Unknown"
 }
 ```
+
+
+> OK - I just want to know. The whole idea with the different appsettings json files is so the environment on which it is deployed uses the correct "overwrites". Does the Automation API have the logic built in to do this? OR does it do it while BUILDING the environment on a pull request? I just want to make sure all the mechanisms are there so it will work going forward.
+
 
 - Essientially the story we are working on is the UI story (manual input) for this future one: [[OPEN-1356] Trigger QC API Endpoint - Jira](https://powerfleet.atlassian.net/browse/OPEN-1356 "https://powerfleet.atlassian.net/browse/open-1356")
     
