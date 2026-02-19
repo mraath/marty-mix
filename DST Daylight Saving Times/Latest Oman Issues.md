@@ -1,3 +1,7 @@
+---
+created: 2026-02-19T11:05
+updated: 2026-02-19T13:40
+---
 # Latest Oman DST Issues (Feb 2026)
 
 ## Summary of Findings
@@ -7,7 +11,7 @@
 **Date Range:** Feb 11, 2026 - Present
 
 ### Key Points:
-1.  **Environment:** Oman Server (`HSOMNIIS18` / `HSOMNATS01`), Database: `Schlumberger-OPG-Oman`.
+1.  **Environment:** Oman Server (`HSOMNIIS18` / `HSOMNIIS19` / `HSOMNATS01`), Database: `Schlumberger-OPG-Oman`.
 2.  **Org ID:** `700083822000352569`
 3.  **Symptoms:**
     *   The TimeAdjuster app (Support utility) works for Mix4000 units but fails for some FM units.
@@ -113,3 +117,21 @@ Schlumberger-OPG-Oman
 orgId=700083822000352569
 
 [List of vehicles provided in the table above]
+
+---
+
+## 2026-02-19: Discovery of Logs on HSOMNIIS19
+
+Investigation of the **HSOMNIIS19** server reveals active logging and the root cause of the "Not all adjusted" error for these FMs.
+
+### Findings:
+1.  **Log Source:** `L:\WebServices\DynaMiX.DeviceConfig.FMTimeAdjuster.Api\DynaMiX.DeviceConfig.FMTimeAdjuster.Api.log` on **HSOMNIIS19**.
+2.  **Root Cause:** `DynaMiX.Common.UnauthenticatedException: Error in the application.`
+3.  **Trace:** The failure occurs in `AuthenticationManager.ValidateSession`. 
+
+### Impact:
+Even if the user successfully logs into the UI tool, the subsequent call to the `FMTimeAdjuster.Api` fails to validate the `authToken` provided by the tool. This prevents the `AdjustAssetDayLightSavings` logic from ever reaching the command dispatch phase.
+
+### Possible Reasons:
+*   The `FMTimeAdjuster.Api` on Oman (18.17) is expecting a different authentication mechanism or token format than what the Jumpbox tool is providing.
+*   Session state / Load balancing issues between `HSOMNIIS18` and `HSOMNIIS19`.

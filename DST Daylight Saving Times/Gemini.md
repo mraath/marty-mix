@@ -1,6 +1,6 @@
 ---
 created: 2026-02-19T10:51
-updated: 2026-02-19T13:06
+updated: 2026-02-19T13:37
 ---
 # Daylight Saving Time (DST) & Command 45 Summary
 
@@ -74,6 +74,10 @@ To ensure the `FMTimeAdjuster.Api` is functioning correctly on the Oman server:
 ### 4.1 Log File Location (Oman Server)
 The primary log file for the DST service on the Oman server is located at:
 `L:\WebServices\DynaMiX.DeviceConfig.FMTimeAdjuster.Api\DynaMiX.DeviceConfig.FMTimeAdjuster.Api.log`
+
+Common servers to check:
+*   `HSOMNIIS18`
+*   `HSOMNIIS19` (Confirmed active Feb 2026)
 
 ### 4.2 Searching Logs
 When troubleshooting, search for the following terms in the log file or via centralized logging:
@@ -166,12 +170,13 @@ The architecture diagram above has been updated to reflect this detailed flow:
         *   If Exception during send: Logs `>   FAILURE: Remote message for asset {AssetId} not sent. {Exception}`
 
 ### 7.2 How to Debug "Not all commands were sent"
-Because the UI error is generic, you **MUST** look at the logs on the server (**HSOMNIIS18**).
+Because the UI error is generic, you **MUST** look at the logs on the server (**HSOMNIIS18** or **HSOMNIIS19**).
 
 1.  Open `L:\WebServices\DynaMiX.DeviceConfig.FMTimeAdjuster.Api\DynaMiX.DeviceConfig.FMTimeAdjuster.Api.log`.
 2.  Search **specifically** for this string:
-    `FAILURE: Remote message for asset`
-3.  You will find one of two things:
+    `FAILURE:`
+3.  You will find one of three things:
+    *   **"UnauthenticatedException"**: The `authToken` passed by the client is invalid or the session has expired on the server. (Confirmed Feb 2026).
     *   **"Not all required logical devices connected"**: The unit config in the DB is missing the `REMOTE_COMMAND` logical device.
     *   **Exception Message**: An actual crash/error occurred while queuing the command.
 
