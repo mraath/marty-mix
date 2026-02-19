@@ -1,3 +1,7 @@
+---
+created: 2026-02-19T10:51
+updated: 2026-02-19T13:06
+---
 # Daylight Saving Time (DST) & Command 45 Summary
 
 ![[DST Architecture.excalidraw]]
@@ -178,10 +182,18 @@ Because the UI error is generic, you **MUST** look at the logs on the server (**
 The investigation revealed that the command flow extends beyond the standard Backend logic into the **DeviceConfig** service layer.
 
 ### 8.1 Call Path & Repositories
+
+**Authentication Flow:**
+- **Tool** -> **DynaMiX.Api** (`/authentication/token`)
+- **Repo:** `DynaMiX.Backend`
+- **Result:** Returns `AuthToken` used for subsequent command calls.
+
+**Command Flow:**
 1.  **FMTimeAdjuster Utility** (`DynaMiX.Backend` repo)
 2.  **FMTimeAdjuster.Api** (`DynaMiX.Backend` repo)
 3.  **CommandManager** (`DynaMiX.Backend` repo) -> Uses `MobileUnitCommandsProxy`.
 4.  **DynaMiX.DeviceConfig.Services.API** (`DynaMiX.DeviceConfig` repo) -> Receives request via `MobileUnitCommandsController`.
+5.  **Dispatch** -> **Comms Client 4k/6k** (MiX Connect) & **DB** (FM Messages).
 
 ### 8.2 DeviceConfig Log Search Terms
 If the `FMTimeAdjuster.Api` logs show success but the command doesn't arrive, check the **DeviceConfig API** logs (often centralized in Logz.io or Axiom under `DynaMiX.Services.API` or similar):
