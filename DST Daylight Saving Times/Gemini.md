@@ -1,6 +1,6 @@
 ---
 created: 2026-02-19T10:51
-updated: 2026-02-19T13:37
+updated: 2026-02-19T14:42
 ---
 # Daylight Saving Time (DST) & Command 45 Summary
 
@@ -14,7 +14,7 @@ There are two primary versions of the DST environment relevant to our operations
 
 ### 1.1 Oman Server (Version 18.17)
 *   **Version:** 18.17.3 (Older technology).
-*   **Server Name:** `HSOMNIIS18`.
+*   **Server Name:** `HSOMNIIS18`. (19)
 *   **API:** `FMTimeAdjuster.Api`.
 *   **Gateway:** `omntsg.mixtelematics.com` (Note: Do NOT use `atsats.mixtelematics.com`).
 *   **Client Compatibility:** Because 18.17 uses older technology, the **latest client cannot be used**. You must use the **OLD 18.17 compatible `FMTimeAdapter` app**.
