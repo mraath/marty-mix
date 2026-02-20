@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-20T16:12
+updated: 2026-02-20T16:32
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -416,6 +416,3 @@ https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#LoadBalancers
 
 The first image shows what the client looks like at the moment it tries to fins the asset. The second shows where it doesnt find it, thus ending up with the rttot that it cant find it. Does the info look correct? How do I debug this further? Seems like the dev endpoint is not working? not sure
 
-## AWS / Online
-
-https://automation.dev.mixtelematics.com/

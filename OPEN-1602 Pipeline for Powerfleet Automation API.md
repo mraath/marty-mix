@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-16T15:30
+updated: 2026-02-20T16:31
 ---
 
 # OPEN-1602 Pipeline for Powerfleet Automation API
@@ -49,3 +49,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] OPEN-1602 Pipeline for Powerfleet Automation API > INT
 - [ ] OPEN-1602 Pipeline for Powerfleet Automation API > UAT
 - [ ] OPEN-1602 Pipeline for Powerfleet Automation API > PROD
+
+## AWS
+
+https://automation-api.dev.mixtelematics.com/swagger/index.html

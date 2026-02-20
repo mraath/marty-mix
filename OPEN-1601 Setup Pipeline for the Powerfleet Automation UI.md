@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-16T15:26
+updated: 2026-02-20T16:32
 ---
 
 # OPEN-1601 Setup Pipeline for the Powerfleet Automation UI
@@ -126,3 +126,8 @@ Ek dink nie hierdie maak die "uitrol" n baie lang proses - so ek sal eers net DE
 - [[AWS Troubleshooting and Python Learnings]] ( learnings from Friday/Monday regarding broken CLI and token expiry )
 - [[Automation Infrastructure Setup Guide]] ( All moving parts for UI and API across DEV/INT/PROD )
 - [[AWS Pizza Restaurant Analogy]] ( A simplified explanation of clusters, tasks, and networking )
+
+
+## AWS / Online
+
+https://automation.dev.mixtelematics.com/
