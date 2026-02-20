@@ -1,0 +1,172 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text",
+      "x": 350,
+      "y": 50,
+      "text": "Internet",
+      "fontSize": 20,
+      "seed": 103950919,
+      "versionNonce": 3736307738975606121
+    },
+    {
+      "type": "rectangle",
+      "x": 300,
+      "y": 100,
+      "width": 200,
+      "height": 40,
+      "strokeColor": "#232F3E",
+      "text": "config.dev.priv",
+      "seed": 583740724,
+      "versionNonce": 14653460700181547029
+    },
+    {
+      "type": "text",
+      "x": 310,
+      "y": 110,
+      "text": "config.dev.priv",
+      "fontSize": 14,
+      "seed": 3914168443,
+      "versionNonce": 5357922601134360981
+    },
+    {
+      "type": "rectangle",
+      "x": 300,
+      "y": 160,
+      "width": 200,
+      "height": 40,
+      "strokeColor": "#232F3E",
+      "text": "api.deviceconfig.dev.priv",
+      "seed": 4048313750,
+      "versionNonce": 13474227383182359947
+    },
+    {
+      "type": "text",
+      "x": 310,
+      "y": 170,
+      "text": "api.deviceconfig.dev.priv",
+      "fontSize": 14,
+      "seed": 340643036,
+      "versionNonce": 8847618914325647171
+    },
+    {
+      "type": "rectangle",
+      "x": 550,
+      "y": 100,
+      "width": 180,
+      "height": 80,
+      "strokeColor": "#8C4FFF",
+      "backgroundColor": "#e7f2fa",
+      "fillStyle": "solid",
+      "seed": 360040897,
+      "versionNonce": 11672128904766187336
+    },
+    {
+      "type": "text",
+      "x": 560,
+      "y": 130,
+      "text": "ALB: DEV-DI-API-ALB\n(internal)",
+      "fontSize": 14,
+      "seed": 4031385119,
+      "versionNonce": 14311472346423332869
+    },
+    {
+      "type": "rectangle",
+      "x": 780,
+      "y": 120,
+      "width": 150,
+      "height": 40,
+      "strokeColor": "#8C4FFF",
+      "seed": 943550825,
+      "versionNonce": 2204488500247906700
+    },
+    {
+      "type": "text",
+      "x": 790,
+      "y": 130,
+      "text": "dev-config-api-TG",
+      "fontSize": 12,
+      "seed": 2936522925,
+      "versionNonce": 11554973751530559943
+    },
+    {
+      "type": "rectangle",
+      "x": 980,
+      "y": 100,
+      "width": 200,
+      "height": 150,
+      "strokeColor": "#FF9900",
+      "backgroundColor": "#fff3e0",
+      "fillStyle": "hachure",
+      "seed": 2918322777,
+      "versionNonce": 17811898467247666945
+    },
+    {
+      "type": "text",
+      "x": 990,
+      "y": 120,
+      "text": "ECS Service:\ndev-config-api\n\nCluster:\nDEV-Config",
+      "fontSize": 14,
+      "seed": 1957901881,
+      "versionNonce": 1206707922896043289
+    },
+    {
+      "type": "arrow",
+      "x": 500,
+      "y": 120,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "seed": 3574816859,
+      "versionNonce": 11498799651394305381
+    },
+    {
+      "type": "arrow",
+      "x": 730,
+      "y": 140,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "seed": 698493264,
+      "versionNonce": 1554667278965384465
+    },
+    {
+      "type": "arrow",
+      "x": 930,
+      "y": 140,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "seed": 126331483,
+      "versionNonce": 7879486627979873871
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": 20
+  }
+}

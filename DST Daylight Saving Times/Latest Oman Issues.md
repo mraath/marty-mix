@@ -1,6 +1,6 @@
 ---
 created: 2026-02-19T11:05
-updated: 2026-02-19T14:30
+updated: 2026-02-19T15:00
 ---
 # Latest Oman DST Issues (Feb 2026)
 
@@ -135,3 +135,24 @@ Even if the user successfully logs into the UI tool, the subsequent call to the 
 ### Possible Reasons:
 *   The `FMTimeAdjuster.Api` on Oman (18.17) is expecting a different authentication mechanism or token format than what the Jumpbox tool is providing.
 *   Session state / Load balancing issues between `HSOMNIIS18` and `HSOMNIIS19`.
+
+---
+
+## 8. Technical Findings & Database Mappings (Feb 2026)
+
+The investigation has confirmed specific technical details regarding command dispatch and storage.
+
+### 8.1 Authentication Failure
+The `UnauthenticatedException` on `HSOMNIIS19` occurs because `AuthenticationManager.ValidateSession` returns null. This is the primary blocker preventing the `FMTimeAdjuster.Api` from successfully processing the task.
+
+### 8.2 Command Storage Locations
+Commands are written to different tables based on the device type:
+
+| Device Type | Protocol | Repo / Stored Procedure | Database / Table |
+| :--- | :--- | :--- | :--- |
+| **FM units** | Legacy | `JobsAndMessagingRepository.cs` / `[dynamix].[Messages_Add]` | Asset DB / `[dbo].[messages]` |
+| **MiX4000 (Mesa)** | New | `DeviceConfigRepository.cs` / `[state].[MobileUnitMessage_Add]` | DataProcessing DB / `[state].[MobileUnitMessage]` |
+
+### 8.3 Verification Filters
+*   **FM:** Search `sParams` for `CommandID=45`.
+*   **Mesa:** Search `ParamsJson` for `"CommandId":45`.

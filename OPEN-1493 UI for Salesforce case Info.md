@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-18T13:28
+updated: 2026-02-19T15:36
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -406,3 +406,12 @@ https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#TargetGroups:
 
 I coulnt find the load balances:
 https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#LoadBalancers:search=:dev;v=3;$case=tags:false%5C,client:false;$regex=tags:false%5C,client:false
+
+## Debug API
+
+![[Pasted image 20260219153527.png]]
+
+![[Pasted image 20260219153626.png]]
+
+
+The first image shows what the client looks like at the moment it tries to fins the asset. The second shows where it doesnt find it, thus ending up with the rttot that it cant find it. Does the info look correct? How do I debug this further? Seems like the dev endpoint is not working? not sure
