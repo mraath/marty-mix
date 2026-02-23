@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-23T16:49
+updated: 2026-02-23T16:53
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -419,10 +419,10 @@ The first image shows what the client looks like at the moment it tries to fins 
 
 ## Verbeteringe
 
-- INT
+- DEV
 	- 1 instance
 	- Drop down
-		- AU
+		- AU (kan dit inlog op ander API)
 		- etc
 - Auth > config.api > authentication service
 	- dalk users sonder login
