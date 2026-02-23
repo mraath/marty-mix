@@ -2,7 +2,7 @@
 created: 2025-05-05T11:56
 updated: 2026-02-24T07:19
 ---
-![[TO]]
+
 
 > [!Information] Writing tools to make the clients' lives easer.
 
