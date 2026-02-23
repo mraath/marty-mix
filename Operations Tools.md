@@ -1,7 +1,9 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-24T07:17
+updated: 2026-02-24T07:19
 ---
+![[TO]]
+
 > [!Information] Writing tools to make the clients' lives easer.
 
 ## Links
@@ -27,7 +29,9 @@ updated: 2026-02-24T07:17
 	- Add Decommissioning Endpoint: https://powerfleet.atlassian.net/browse/OPEN-1567
 - Operations Enablement Engineering Improvements: https://powerfleet.atlassian.net/browse/PFI-3133
 	- CAN Logger App Enhancements: https://powerfleet.atlassian.net/browse/OPEN-455
-
+- [ ] FC Plus
+- [ ] Config change analysis tool - SPLIT!
+	- https://powerfleet.atlassian.net/browse/OPEN-1624
 
 - **AI** to work with Salesforce: https://powerfleet.atlassian.net/browse/OPEN-1526
 - **Trigger** QC API Endpoint: https://powerfleet.atlassian.net/browse/OPEN-1356
@@ -39,20 +43,18 @@ Jira
 
 - DEV
 	- 1 instance
-	- Drop down
+	- [ ] Drop down
 		- AU (kan dit inlog op ander API)
 		- etc
-		- Auth > config.api > authentication service
+		- [ ] Auth > config.api > authentication service
 			- dalk users sonder login
-- Velde:
+- [ ] Velde:
 	- Legacy ID (remove)
 	- Device Type: Dropdown - API
 		- 4k, 6k (spelling)
-- Video
+- [ ] Video
 	- Ook nou gecheck oor video. Ons toets alreeds of daar kameras opgestel is as die peripheral connect is. Al wat nou moet gebeur is om deur die List te hardloop, elke channel te kyk of daar video op die channel is na installation.
-- FC Plus
-- Config change analysis tool - SPLIT!
-	- https://powerfleet.atlassian.net/browse/OPEN-1624
+
 - 
 
 ## Examples
