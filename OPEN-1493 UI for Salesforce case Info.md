@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-23T16:53
+updated: 2026-02-23T17:00
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -424,6 +424,11 @@ The first image shows what the client looks like at the moment it tries to fins 
 	- Drop down
 		- AU (kan dit inlog op ander API)
 		- etc
-- Auth > config.api > authentication service
-	- dalk users sonder login
+		- Auth > config.api > authentication service
+			- dalk users sonder login
+- Velde:
+	- Legacy ID (remove)
+	- Device Type: Dropdown - API
+	- 
+- Video
 - FC Plus
