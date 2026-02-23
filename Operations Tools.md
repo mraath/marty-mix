@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-24T07:24
+updated: 2026-02-24T07:25
 ---
 ## TODO
 
@@ -40,7 +40,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- https://powerfleet.atlassian.net/browse/OPEN-1495 Investigate **Customer Database** requirements
 		- https://powerfleet.atlassian.net/browse/OPEN-1293: **API** End point
 			- https://powerfleet.atlassian.net/browse/OPEN-1493 Add **UI** for support to supply Salesforce case info and start QC Automation manually
-				- [ ] [[OPEN-1493 UI for Salesforce case Info]]
+				- [x] [[OPEN-1493 UI for Salesforce case Info]] ✅ 2026-02-24
 					- DEV
 						- **1 instance**
 						- [ ] Drop down
