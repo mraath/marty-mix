@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-23T17:00
+updated: 2026-02-23T17:01
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -429,6 +429,6 @@ The first image shows what the client looks like at the moment it tries to fins 
 - Velde:
 	- Legacy ID (remove)
 	- Device Type: Dropdown - API
-	- 
+		- 4k, 6k (spelling)
 - Video
 - FC Plus
