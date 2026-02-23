@@ -1,7 +1,25 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-24T07:19
+updated: 2026-02-24T07:23
 ---
+## TODO
+
+```dataviewjs
+function callout(text, type) {
+    const allText = `> [!${type}]\n` + text;
+    const lines = allText.split('\n');
+    return lines.join('\n> ') + '\n'
+}
+
+const query = `
+not done
+path includes ${dv.current().file.path}
+# you can add any number of extra Tasks instructions, for example:
+# group by heading
+`;
+
+dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
+```
 
 
 > [!Information] Writing tools to make the clients' lives easer.
@@ -23,7 +41,18 @@ updated: 2026-02-24T07:19
 		- https://powerfleet.atlassian.net/browse/OPEN-1293: **API** End point
 			- https://powerfleet.atlassian.net/browse/OPEN-1493 Add **UI** for support to supply Salesforce case info and start QC Automation manually
 				- [ ] [[OPEN-1493 UI for Salesforce case Info]]
-			- [ ] https://powerfleet.atlassian.net/browse/OPEN-1299
+					- DEV
+						- 1 instance
+						- [ ] Drop down
+							- AU (kan dit inlog op ander API)
+							- etc
+							- [ ] Auth > config.api > authentication service
+								- dalk users sonder login
+					- [ ] Velde:
+						- Legacy ID (remove)
+						- Device Type: Dropdown - API
+							- 4k, 6k (spelling)
+			- [ ] **VIDEO**: https://powerfleet.atlassian.net/browse/OPEN-1299
 		- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** analyses tool to see where changes happened
 - Decommissioning Automation - Phase 1: https://powerfleet.atlassian.net/browse/OPEN-1545
 	- Add Decommissioning Endpoint: https://powerfleet.atlassian.net/browse/OPEN-1567
@@ -41,17 +70,7 @@ Jira
 
 ## Verbeteringe
 
-- DEV
-	- 1 instance
-	- [ ] Drop down
-		- AU (kan dit inlog op ander API)
-		- etc
-		- [ ] Auth > config.api > authentication service
-			- dalk users sonder login
-- [ ] Velde:
-	- Legacy ID (remove)
-	- Device Type: Dropdown - API
-		- 4k, 6k (spelling)
+
 - [ ] Video
 	- Ook nou gecheck oor video. Ons toets alreeds of daar kameras opgestel is as die peripheral connect is. Al wat nou moet gebeur is om deur die List te hardloop, elke channel te kyk of daar video op die channel is na installation.
 
