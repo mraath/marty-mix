@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-20T16:32
+updated: 2026-02-23T10:54
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -181,7 +181,7 @@ Here is an example of the json we will get in future once salesforce integrates 
 ```
 
 ```txt
-{4b56673c-d3d1-41f8-84d0-a38c124e275f
+{938e1822-bfee-4da9-bddc-78846fdc18a0
   "CaseNumber": "1234",
   "GroupId": 4036779219063094058,
   "LegacyOrgId": 0,
