@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-24T06:42
+updated: 2026-02-24T07:17
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -388,9 +388,7 @@ dotnet test "c:\Projects\Powerfleet.Automation\Powerfleet.Automation.Api.UnitTes
 - [x] OPEN-1493 UI for Salesforce case Info > DEV ✅ 2026-02-20
 	- [x] API: https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation/pullrequest/138538 ✅ 2026-02-20
 	- [x] UI: xxxxxxxxx ✅ 2026-02-20
-- [ ] OPEN-1493 UI for Salesforce case Info > INT
-- [ ] OPEN-1493 UI for Salesforce case Info > UAT
-- [ ] OPEN-1493 UI for Salesforce case Info > PROD
+- [ ] OPEN-1493 UI for Salesforce case Info > INT?
 
 ## Deploy
 
@@ -419,20 +417,3 @@ The first image shows what the client looks like at the moment it tries to fins 
 
 ## Verbeteringe
 
-- DEV
-	- 1 instance
-	- Drop down
-		- AU (kan dit inlog op ander API)
-		- etc
-		- Auth > config.api > authentication service
-			- dalk users sonder login
-- Velde:
-	- Legacy ID (remove)
-	- Device Type: Dropdown - API
-		- 4k, 6k (spelling)
-- Video
-	- Ook nou gecheck oor video. Ons toets alreeds of daar kameras opgestel is as die peripheral connect is. Al wat nou moet gebeur is om deur die List te hardloop, elke channel te kyk of daar video op die channel is na installation.
-- FC Plus
-- Config change analysis tool - SPLIT!
-	- https://powerfleet.atlassian.net/browse/OPEN-1624
-- 
