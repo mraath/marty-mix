@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-23T17:01
+updated: 2026-02-24T06:42
 ---
 
 # OPEN-1493 UI for Salesforce case Info
@@ -431,4 +431,8 @@ The first image shows what the client looks like at the moment it tries to fins 
 	- Device Type: Dropdown - API
 		- 4k, 6k (spelling)
 - Video
+	- Ook nou gecheck oor video. Ons toets alreeds of daar kameras opgestel is as die peripheral connect is. Al wat nou moet gebeur is om deur die List te hardloop, elke channel te kyk of daar video op die channel is na installation.
 - FC Plus
+- Config change analysis tool - SPLIT!
+	- https://powerfleet.atlassian.net/browse/OPEN-1624
+- 
