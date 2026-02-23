@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-23T08:31
+updated: 2026-02-23T08:38
 ---
 
 # OPEN-1663 API DEV issues
@@ -42,6 +42,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 UI: https://powerfleet-automation.dev.mixtelematics.com
 API: https://automation-api.dev.mixtelematics.com/swagger/index.html
 Config API: 
+
+- `api.deviceconfig.configdev.mix.local` (Local/On-prem DNS)
+- `api.deviceconfig.dev.priv`
 ## Branch
 
 > Branch: Config/MR/Feature/OPEN-1663 API DEV issues.INT
