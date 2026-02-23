@@ -419,11 +419,11 @@ The first image shows what the client looks like at the moment it tries to fins 
 
 ## Verbeteringe
 
-- AUS
+- INT
 	- 1 instance
 	- Drop down
 		- AU
 		- etc
 - Auth > config.api > authentication service
 	- dalk users sonder login
-	-
+- FC Plus
