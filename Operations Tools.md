@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-24T07:23
+updated: 2026-02-24T07:24
 ---
 ## TODO
 
@@ -42,17 +42,20 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- https://powerfleet.atlassian.net/browse/OPEN-1493 Add **UI** for support to supply Salesforce case info and start QC Automation manually
 				- [ ] [[OPEN-1493 UI for Salesforce case Info]]
 					- DEV
-						- 1 instance
+						- **1 instance**
 						- [ ] Drop down
 							- AU (kan dit inlog op ander API)
 							- etc
 							- [ ] Auth > config.api > authentication service
 								- dalk users sonder login
-					- [ ] Velde:
+					- [ ] **Velde**:
 						- Legacy ID (remove)
 						- Device Type: Dropdown - API
 							- 4k, 6k (spelling)
+					- [x] Menu with Decommissioning place holder ✅ 2026-02-24
 			- [ ] **VIDEO**: https://powerfleet.atlassian.net/browse/OPEN-1299
+				- Ook nou gecheck oor video. Ons toets alreeds of daar kameras opgestel is as die peripheral connect is. Al wat nou moet gebeur is om deur die List te hardloop, elke channel te kyk of daar video op die channel is na installation.
+			- 
 		- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** analyses tool to see where changes happened
 - Decommissioning Automation - Phase 1: https://powerfleet.atlassian.net/browse/OPEN-1545
 	- Add Decommissioning Endpoint: https://powerfleet.atlassian.net/browse/OPEN-1567
@@ -68,13 +71,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 Jira
 
-## Verbeteringe
-
-
-- [ ] Video
-	- Ook nou gecheck oor video. Ons toets alreeds of daar kameras opgestel is as die peripheral connect is. Al wat nou moet gebeur is om deur die List te hardloop, elke channel te kyk of daar video op die channel is na installation.
-
-- 
 
 ## Examples
 
