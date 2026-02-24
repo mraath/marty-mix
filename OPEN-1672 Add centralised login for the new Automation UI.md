@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-24T11:07
+updated: 2026-02-24T11:23
 ---
 
 # OPEN-1672 Add centralised login for the new Automation UI
@@ -41,7 +41,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-1672 Add centralised login for the new Automation UI.INT
+> Branch: OPEN-1672_SingularSignup_Automation_UI.INT
+
+## Nuget
+
+MiX.ConfigInternal.Api.Client.2026.6.20260224.1-alpha
 
 ## PR
 
