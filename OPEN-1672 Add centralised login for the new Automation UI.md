@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-24T11:23
+updated: 2026-02-24T11:47
 ---
 
 # OPEN-1672 Add centralised login for the new Automation UI
@@ -45,7 +45,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Nuget
 
-MiX.ConfigInternal.Api.Client.2026.6.20260224.1-alpha
+MiX.ConfigInternal.Api.Client.2026.2.24.2
 
 ## PR
 
