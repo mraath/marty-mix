@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-24T07:14
+updated: 2026-02-24T15:05
 ---
 
 # OPEN-1577 Multiple UI Forms and menu
@@ -48,3 +48,9 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - [x] OPEN-1577 Multiple UI Forms and menu > DEV ✅ 2026-02-24
 - [ ] INT?
+- 
+## Notes
+
+- [[SOP - Implementing Navigation Menu]]
+- [[Project Map - Navigation and Decommissioning]]
+- [[Walkthrough - Navigation Menu & Decommissioning Placeholder]]
