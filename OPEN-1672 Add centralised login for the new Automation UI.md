@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-24T11:47
+updated: 2026-02-24T11:58
 ---
 
 # OPEN-1672 Add centralised login for the new Automation UI
@@ -45,7 +45,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Nuget
 
-MiX.ConfigInternal.Api.Client.2026.2.24.2
+MiX.ConfigInternal.Api.Client.2026.6.20260224.2-alpha
 
 ## PR
 
@@ -53,3 +53,6 @@ MiX.ConfigInternal.Api.Client.2026.2.24.2
 - [ ] OPEN-1672 Add centralised login for the new Automation UI > INT
 - [ ] OPEN-1672 Add centralised login for the new Automation UI > UAT
 - [ ] OPEN-1672 Add centralised login for the new Automation UI > PROD
+
+- Client: INT: https://dev.azure.com/MiXTelematics/DeviceIntegration/_git/MiX.DeviceConfig/pullrequest/139404
+- 
