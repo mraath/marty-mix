@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-25T10:28
+updated: 2026-02-25T10:40
 ---
 
 # OPEN-1494 Config Analysis Tool
@@ -225,10 +225,23 @@ Comparison: Diff today's reports against yesterday's to flag changes.
 
 ![[Pasted image 20260225101944.png]]
 
+### Diff List
+
+![[Pasted image 20260225104032.png]]
+
 ### Diff Cards
 
 ![[Pasted image 20260225102220.png]]
 
+### Diff Human Readable
+
+![[Pasted image 20260225103524.png]]
+
+### Diff classic
+
+![[Pasted image 20260225103609.png]]
+
+![[Pasted image 20260225103335.png]]
 
 ### Chat bot
 
