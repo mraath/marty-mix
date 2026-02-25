@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-24T07:25
+updated: 2026-02-25T09:30
 ---
 ## TODO
 
@@ -43,22 +43,22 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 				- [x] [[OPEN-1493 UI for Salesforce case Info]] ✅ 2026-02-24
 					- DEV
 						- **1 instance**
-						- [ ] Drop down
+						- [x] Drop down ✅ 2026-02-25
 							- AU (kan dit inlog op ander API)
 							- etc
 							- [ ] Auth > config.api > authentication service
 								- dalk users sonder login
-					- [ ] **Velde**:
+					- [x] **Velde**: ✅ 2026-02-25
 						- Legacy ID (remove)
 						- Device Type: Dropdown - API
 							- 4k, 6k (spelling)
 					- [x] Menu with Decommissioning place holder ✅ 2026-02-24
 			- [ ] **VIDEO**: https://powerfleet.atlassian.net/browse/OPEN-1299
 				- Ook nou gecheck oor video. Ons toets alreeds of daar kameras opgestel is as die peripheral connect is. Al wat nou moet gebeur is om deur die List te hardloop, elke channel te kyk of daar video op die channel is na installation.
-			- 
-		- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** analyses tool to see where changes happened
-- Decommissioning Automation - Phase 1: https://powerfleet.atlassian.net/browse/OPEN-1545
-	- Add Decommissioning Endpoint: https://powerfleet.atlassian.net/browse/OPEN-1567
+			- Decommissioning Automation - Phase 1: https://powerfleet.atlassian.net/browse/OPEN-1545
+				- Add Decommissioning Endpoint: https://powerfleet.atlassian.net/browse/OPEN-1567
+					- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** analyses tool to see where changes happened
+- 
 - Operations Enablement Engineering Improvements: https://powerfleet.atlassian.net/browse/PFI-3133
 	- CAN Logger App Enhancements: https://powerfleet.atlassian.net/browse/OPEN-455
 - [ ] FC Plus
