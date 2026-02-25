@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-25T10:40
+updated: 2026-02-25T11:11
 ---
 
 # OPEN-1494 Config Analysis Tool
@@ -225,6 +225,10 @@ Comparison: Diff today's reports against yesterday's to flag changes.
 
 ![[Pasted image 20260225101944.png]]
 
+### Dashboard over time
+
+![[Pasted image 20260225111128.png]]
+
 ### Diff List
 
 ![[Pasted image 20260225104032.png]]
@@ -249,6 +253,9 @@ Comparison: Diff today's reports against yesterday's to flag changes.
 
 ![[Pasted image 20260225102733.png]]
 
+### Powerfleet EG
+
+![[screencapture-localhost-3000-2026-02-25-10_52_12.png]]
 
 
 ## CODE
