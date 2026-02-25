@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-25T09:32
+updated: 2026-02-25T09:42
 ---
 ## TODO
 
@@ -58,6 +58,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 			- Decommissioning Automation - Phase 1: https://powerfleet.atlassian.net/browse/OPEN-1545
 				- Add Decommissioning Endpoint: https://powerfleet.atlassian.net/browse/OPEN-1567
 			- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** **analyses** tool to see where changes happened
+				- [[OPEN-1494 Config Analysis Tool]]
 - 
 - Operations Enablement Engineering Improvements: https://powerfleet.atlassian.net/browse/PFI-3133
 	- CAN Logger App Enhancements: https://powerfleet.atlassian.net/browse/OPEN-455
