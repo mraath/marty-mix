@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-02-25T09:30
+updated: 2026-02-25T09:32
 ---
 ## TODO
 
@@ -57,7 +57,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 				- Ook nou gecheck oor video. Ons toets alreeds of daar kameras opgestel is as die peripheral connect is. Al wat nou moet gebeur is om deur die List te hardloop, elke channel te kyk of daar video op die channel is na installation.
 			- Decommissioning Automation - Phase 1: https://powerfleet.atlassian.net/browse/OPEN-1545
 				- Add Decommissioning Endpoint: https://powerfleet.atlassian.net/browse/OPEN-1567
-					- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** analyses tool to see where changes happened
+			- https://powerfleet.atlassian.net/browse/OPEN-1494 Meeting: Investigate **Config** **analyses** tool to see where changes happened
 - 
 - Operations Enablement Engineering Improvements: https://powerfleet.atlassian.net/browse/PFI-3133
 	- CAN Logger App Enhancements: https://powerfleet.atlassian.net/browse/OPEN-455
