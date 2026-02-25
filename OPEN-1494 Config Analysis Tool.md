@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-25T09:43
+updated: 2026-02-25T10:22
 ---
 
 # OPEN-1494 Config Analysis Tool
@@ -217,6 +217,17 @@ Daily Pull: Pull the two CSV reports.
   
 
 Comparison: Diff today's reports against yesterday's to flag changes.
+
+## Image inspiration
+
+![[Pasted image 20260225101944.png]]
+
+### Diff Cards
+
+![[Pasted image 20260225102220.png]]
+
+
+
 ## CODE
 
 ## SP 2
