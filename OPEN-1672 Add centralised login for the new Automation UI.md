@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-24T16:50
+updated: 2026-02-25T09:27
 ---
 
 # OPEN-1672 Add centralised login for the new Automation UI
@@ -72,3 +72,21 @@ MiX.ConfigInternal.Api.Client.2026.6.20260224.2-alpha
 
 - [[Walkthrough - Decommissioning UI & Auth Updates]]
 - [[MORE changes for dropdown login environments]]
+- [[Walkthrough - Navigation Menu & Decommissioning Placeholder]]
+- [[SOP - Implementing Navigation Menu]]
+
+### Technical History & Context (from recent findings)
+
+- **Evolution of Environment Switching:**
+    - **Initial Approach:** Global singleton state switch. This was found to be risky in multi-user/parallel request scenarios and led to potential deadlocks or a 500 Internal Server Error when switching.
+    - **Refined Approach (Current):** Switched to a **Concurrent Environment Context** model. 
+        - [EnvironmentContextManager.cs] manages a `ConcurrentDictionary` of `EnvironmentContext`.
+        - Each request (Auth, QC, Decommissioning) passes an `environment` parameter (header `X-Environment` or query param) to retrieve the correct scoped context.
+        - Clients and [GlobalSettings] are now scoped per-context, allowing parallel requests to different environments (DEV, INT, AU, etc.) without interference.
+- **Bug Fixes:**
+    - Fixed compilation errors in `QCManagerTests` due to the [QCManager] constructor now requiring [GlobalSettings] injection.
+    - Resolved 500 errors by ensuring `EnvironmentSettingsProvider` doesn't perform blocking global operations during request processing.
+- **Relevant Artifacts:**
+    - `e418b11d`: Per-Environment Client Instances (Revised Plan & Walkthrough)
+    - `b0a4b734`: Multi-Environment Support (Initial Implementation)
+    - `a890785e`: Fix Compilation Errors After Multi-Environment Refactor
