@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-25T11:26
+updated: 2026-02-25T11:33
 ---
 
 # OPEN-1494 Config Analysis Tool
@@ -270,7 +270,7 @@ Comparison: Diff today's reports against yesterday's to flag changes.
 
 ## Branch
 
-> Branch: Config/MR/Feature/OPEN-1494 Config Analysis Tool.INT
+> Branch: Config/MR/OPEN-1494_Config_Diff_Analysis.DEV
 
 ## PR
 
