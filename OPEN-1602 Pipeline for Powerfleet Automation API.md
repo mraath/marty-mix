@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-26T16:32
+updated: 2026-02-26T17:05
 ---
 
 # OPEN-1602 Pipeline for Powerfleet Automation API
@@ -73,6 +73,7 @@ https://automation-api.dev.mixtelematics.com/swagger/index.html
 ```
 
 
-So basically - say the diff is in a Grandparent > Parent > Child > Field Value, then please show the Grandparent Description > Parent Description > Child Description > Field Description Does this make sense? But display of This Description should make sense and that we could easily change the look and feel. I think for now display it like this:
-Grandparent Description: Parent Description: Child Description: Field Description
-(Also if it is nested deeper - just keep doing the same logic)
+```
+In the Automation UI... FOr both the Asset and MAtrix view. So basically - say the diff is in a Grandparent > Parent > Child > Field Value, then please show the Grandparent Description > Parent Description > Child Description > Field Description Does this make sense? But display of This Description should make sense and that we could easily change the look and feel. I think for now display it like this: Grandparent Description: Parent Description: Child Description: Field Description (Also if it is nested deeper - just keep doing the same logic)
+```
+
