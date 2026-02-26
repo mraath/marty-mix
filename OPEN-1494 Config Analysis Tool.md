@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-25T11:33
+updated: 2026-02-26T08:58
 ---
 
 # OPEN-1494 Config Analysis Tool
@@ -279,3 +279,6 @@ Comparison: Diff today's reports against yesterday's to flag changes.
 - [ ] OPEN-1494 Config Analysis Tool > UAT
 - [ ] OPEN-1494 Config Analysis Tool > PROD
 
+## NEXT
+
+Looks good. More info: 1) All sections must have the small red section counter - eg. Structural Count Mismatches is lacking it 2) Move the json file name under the Asset label and then top align the Asset Label and the Device properties counter eg. 63/66
