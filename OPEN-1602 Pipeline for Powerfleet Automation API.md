@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-20T16:31
+updated: 2026-02-26T10:15
 ---
 
 # OPEN-1602 Pipeline for Powerfleet Automation API
@@ -46,9 +46,6 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## PR
 
 - [ ] OPEN-1602 Pipeline for Powerfleet Automation API > DEV
-- [ ] OPEN-1602 Pipeline for Powerfleet Automation API > INT
-- [ ] OPEN-1602 Pipeline for Powerfleet Automation API > UAT
-- [ ] OPEN-1602 Pipeline for Powerfleet Automation API > PROD
 
 ## AWS
 
