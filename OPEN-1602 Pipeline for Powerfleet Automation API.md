@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-26T17:05
+updated: 2026-02-27T12:59
 ---
 
 # OPEN-1602 Pipeline for Powerfleet Automation API
@@ -50,6 +50,28 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ## AWS
 
 https://automation-api.dev.mixtelematics.com/swagger/index.html
+
+
+## Payload DEV
+
+```
+{
+    "InstallationDateCompleted": "2024-02-27",
+    "DriveMateConnected": false,
+    "IridiumConnected": false,
+    "RoviConnected": false,
+    "DtcoConnected": false,
+    "VideoConnected": false,
+    "CanConnected": false,
+    "CaseNumber": "12345",
+    "GroupId": "4036779219063094058",
+    "AssetId": "1662203632230096896",
+    "DeviceType": "MIX4000",
+    "Odometer": 324234,
+    "FirmwareVersion": "11111",
+    "UniqueIdentifier": "846516546515646"
+}
+```
 
 ## PAYLOAD INT
 
