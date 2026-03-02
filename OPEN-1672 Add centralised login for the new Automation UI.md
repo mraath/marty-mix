@@ -270,7 +270,7 @@ Reuse these:
 
 | Account             | operationsmixtelematics (365528985733)<br>MiX-DevOpsAdmin                                                      |
 | ------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Region              | Sydney<br>ap-southeast-2                                                                                       |
+| Region              | Sydney<br>ap-southeast-2                                                                                       
 
 | Component          | UI                    | API                   |
 | ------------------ | --------------------- | --------------------- |
