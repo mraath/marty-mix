@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-02-27T16:45
+updated: 2026-03-02T09:30
 ---
 
 # OPEN-1672 Add centralised login for the new Automation UI
@@ -166,3 +166,28 @@ AWS CLI doesnt work so use the python workaround
 
 IF at anytime you struggle on AWS Settings, you can use the AWS Skill to get more related information.
 ```
+
+
+## Config API INT
+
+| Component           | Details                                                                            |
+| ------------------- | ---------------------------------------------------------------------------------- |
+| **ECS Cluster**     | `INT-Config`                                                                       |
+| **ECS Service**     | `int-config-api` (2/2 running ✅)                                                   |
+| **Task Definition** | `int-config-api:7`                                                                 |
+| **Load Balancer**   | `INT-DI-API-ALB` (internal application)                                            |
+| **Target Group**    | `int-config-api-TG` (HTTP:80)                                                      |
+| **Security Group**  | `sg-09d9e1223188d85ff`                                                             |
+| **Public URLs**     | `ecs-api.config.int.priv`, `configapi.int.priv`, `api.config.devicestate.int.priv` |
+
+## Config API AU
+
+| Component           | Details |
+| ------------------- | ------- |
+| **ECS Cluster**     |         |
+| **ECS Service**     |         |
+| **Task Definition** |         |
+| **Load Balancer**   |         |
+| **Target Group**    |         |
+| **Security Group**  |         |
+| **Public URLs**     |         |

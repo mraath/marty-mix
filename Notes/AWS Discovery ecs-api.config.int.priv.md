@@ -1,20 +1,20 @@
 ---
 created: 2026-02-26T11:48
-updated: 2026-02-26T12:31
+updated: 2026-03-02T09:28
 ---
 # AWS Discovery: ecs-api.config.int.priv
 
 ## 📋 Summary
 
-| Component | Details |
-|---|---|
-| **ECS Cluster** | `INT-Config` |
-| **ECS Service** | `int-config-api` (2/2 running ✅) |
-| **Task Definition** | `int-config-api:7` |
-| **Load Balancer** | `INT-DI-API-ALB` (internal application) |
-| **Target Group** | `int-config-api-TG` (HTTP:80) |
-| **Security Group** | `sg-09d9e1223188d85ff` |
-| **Public URLs** | `ecs-api.config.int.priv`, `configapi.int.priv`, `api.config.devicestate.int.priv` |
+| Component           | Details                                                                            |
+| ------------------- | ---------------------------------------------------------------------------------- |
+| **ECS Cluster**     | `INT-Config`                                                                       |
+| **ECS Service**     | `int-config-api` (2/2 running ✅)                                                   |
+| **Task Definition** | `int-config-api:7`                                                                 |
+| **Load Balancer**   | `INT-DI-API-ALB` (internal application)                                            |
+| **Target Group**    | `int-config-api-TG` (HTTP:80)                                                      |
+| **Security Group**  | `sg-09d9e1223188d85ff`                                                             |
+| **Public URLs**     | `ecs-api.config.int.priv`, `configapi.int.priv`, `api.config.devicestate.int.priv` |
 
 ## 🏗️ Architecture Diagram
 
