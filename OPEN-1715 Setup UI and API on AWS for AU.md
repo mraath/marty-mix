@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T12:25
+updated: 2026-03-02T12:31
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -34,7 +34,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Description
 
-Please set up the 
+Please set up the AWS environments for both the Automation UI and API.
+Once done we can deploy to these environment to start testing on AU.
 
 ## CODE
 
