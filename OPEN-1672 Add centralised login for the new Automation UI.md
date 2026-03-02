@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T09:49
+updated: 2026-03-02T10:26
 ---
 
 # OPEN-1672 Add centralised login for the new Automation UI
@@ -193,3 +193,67 @@ IF at anytime you struggle on AWS Settings, you can use the AWS Skill to get mor
 | **Target Group**    | au-config-api-TG (HTTP:80)                                                                                     |
 | **Security Group**  | sg-09d97cfc127d25b95                                                                                           |
 | **Public URLs**     | ecs-api.config.au.priv, integrate.api.deviceconfig.syd.production.local, api.deviceconfig.syd.production.local |
+
+## Asking AI (steps and auto)
+
+You helped me to setup my Automation API and Automation UI, you then added these help documents:
+C:\Projects\marty-mix\Automation Infrastructure Setup Guide.md
+C:\Projects\marty-mix\AWS Troubleshooting and Python Learnings.md
+
+Could you give me a step by step way to do this manually on AWS for AU?
+
+First, here are my resulting setup for the two mentioned above:
+
+UI
+
+| Component           | Details                                        |
+| ------------------- | ---------------------------------------------- |
+| **ECS Cluster**     | `DEV-Config`                                   |
+| **ECS Service**     | `dev-powerfleet-automation-ui` (1/1 running ✅) |
+| **Task Definition** | `dev-powerfleet-automation-ui:1`               |
+| **Load Balancer**   | `DEV-Config-ExternalALB` (internet-facing ALB) |
+| **Target Group**    | `dev-powerfleet-automation-ui` (HTTP:3000)     |
+| **Security Group**  | `sg-0514f9a34b60d28af`                         |
+| **Public URLs**     | `automation.dev.mixtelematics.com`             |
+
+API
+
+| Component           | Details                                        |
+| ------------------- | ---------------------------------------------- |
+| **ECS Cluster**     | `DEV-Config`                                   |
+| **ECS Service**     | `dev-powerfleet-automation-ui` (1/1 running ✅) |
+| **Task Definition** | `dev-powerfleet-automation-ui:1`               |
+| **Load Balancer**   | `DEV-Config-ExternalALB` (internet-facing ALB) |
+| **Target Group**    | `dev-powerfleet-automation-ui` (HTTP:3000)     |
+| **Security Group**  | `sg-0514f9a34b60d28af`                         |
+| **Public URLs**     | `automation.dev.mixtelematics.com`             |
+
+The above to make use of the config.api on dev to get values....
+
+
+
+
+So I need you to help me setup the above, but for the AU environment.... which will make use of the AU config.api as setup below:
+
+| Component           | Details                                                                                                        |
+| ------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Account             | operationsmixtelematics (365528985733)<br>MiX-DevOpsAdmin                                                      |
+| Region              | Sydney<br>ap-southeast-2                                                                                       |
+| **ECS Cluster**     | AU-Config                                                                                                      |
+| **ECS Service**     | au-config-api                                                                                                  |
+| **Task Definition** | au-config-api:1                                                                                                |
+| **Load Balancer**   | AU-Config-InternalALB                                                                                          |
+| **Target Group**    | au-config-api-TG (HTTP:80)                                                                                     |
+| **Security Group**  | sg-09d97cfc127d25b95                                                                                           |
+| **Public URLs**     | ecs-api.config.au.priv, integrate.api.deviceconfig.syd.production.local, api.deviceconfig.syd.production.local |
+
+
+
+
+Please do this for me, if you cant, please give me the step by step how you did the first two mentioned, then I can duplicate it for the AU two,
+
+YEs - I think BEFORE you try to automate it, first just document the step by step you did for the first two, then I can duplicate it as a second phase if you cant automate it.
+
+## xcvxcvxcvxcvxcvxcv
+
+dddddddddddddddd
