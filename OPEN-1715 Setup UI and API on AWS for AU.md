@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T13:20
+updated: 2026-03-02T13:26
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -179,13 +179,9 @@ Now, run the tasks inside your existing cluster.
 
 - **Cluster**: `AU-Config`
 - **Launch Type**: **FARGATE**
-    
 - **Security Group**: `sg-09d97cfc127d25b95` (Reused as requested)
-    
 - **Services**:
-    
     1. **UI Service**: Create `au-powerfleet-automation-ui` linked to its Target Group.
-        
     2. **API Service**: Create `au-powerfleet-automation-api` linked to its Target Group.
         
 
