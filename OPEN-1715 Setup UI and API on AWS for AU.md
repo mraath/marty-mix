@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T14:03
+updated: 2026-03-02T14:07
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -226,11 +226,8 @@ When you create these **ECS Services**, there are a few critical "Networking" an
 In the **Networking** section of the Service creation:
 
 - **VPC**: Select the same VPC you used for the Target Groups (`vpc-1553a770`).
-    
 - **Subnets**: Select the **Private subnets** associated with your cluster (usually labeled `Private-app` or similar).
-    
 - **Security Group**: Use the one specifically requested: `sg-09d97cfc127d25b95`.
-    
 - **Public IP**: Set this to **DISABLED** (since these are in private subnets and will be reached via the Internal ALB).
     
 
@@ -239,13 +236,10 @@ In the **Networking** section of the Service creation:
 This is where you "hook up" the service to the Target Groups you made in Part 1:
 
 - **Load balancer type**: Select **Application Load Balancer**.
-    
 - **Load balancer name**: Select `AU-Config-InternalALB`.
-    
 - **Container to load balance**:
     
     - For the **UI Service**: Choose the `au-powerfleet-automation-ui` container and the port `3000`.
-        
     - For the **API Service**: Choose the `au-powerfleet-automation-api` container and the port `80`.
         
 - **Target Group**: Select the existing Target Groups you created (`au-powerfleet-automation-ui` or `au-powerfleet-automation-api`) rather than creating new ones.
