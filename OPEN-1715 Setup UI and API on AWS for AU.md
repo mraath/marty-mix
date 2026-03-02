@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T13:07
+updated: 2026-03-02T13:15
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -89,11 +89,8 @@ These are the "blueprints" for your containers. Ensure you use the **MiX-DevOpsA
 - **Image**: Use the existing image from your ECR (e.g., `powerfleet-automation-ui:latest`)
     365528985733.dkr.ecr.ap-southeast-2.amazonaws.com/powerfleet-automation-ui:latest
 - **Port Mapping**: `3000`
-    
 - **Environment Variables**:
-    
     - `NEXT_PUBLIC_API_URL`: `https://automation-api.au.mixtelematics.com`
-        
 
 ### 2.2 API Task Definition (`au-powerfleet-automation-api`)
 
