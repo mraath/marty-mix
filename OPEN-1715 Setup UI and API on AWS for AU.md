@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T13:32
+updated: 2026-03-02T14:03
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -170,6 +170,39 @@ Once you click **Create** at the bottom, repeat this process for the **API** usi
 * **Env Var 2**: `Environment` = `AU`
 
 Would you like me to clarify the **API Environment Variables** again before you start the second one?
+
+---
+
+Based on your last screenshot, it looks like `AU-Config-InternalALB` only has an **HTTP:80** listener active right now, rather than the HTTPS:443 one we were looking for. This is perfectly fine; it just means we will perform the "association" on Port 80 instead.
+
+To fix the error and link your Target Groups to the Load Balancer, follow these steps directly in the screen shown in your last image:
+
+### 1. Associate the UI Target Group
+
+1. In the **Listeners and rules** tab, click on the **4 rules** link next to the **HTTP:80** listener.
+    
+2. Click **Add rule**.
+    
+3. **Name**: Give it a name like `AU-Automation-UI`.
+    
+4. **Add condition**: Select **Host header** and enter `automation.au.mixtelematics.com`.
+    
+5. **Add action**: Select **Forward to target groups** and choose `au-powerfleet-automation-ui`.
+    
+6. Click **Create**.
+    
+
+### 2. Associate the API Target Group
+
+1. Repeat the process above for the API.
+    
+2. **Name**: `AU-Automation-API`.
+    
+3. **Add condition**: Select **Host header** and enter `automation-api.au.mixtelematics.com`.
+    
+4. **Add action**: Select **Forward to target groups** and choose `au-powerfleet-automation-api`.
+    
+5. Click **Create**.
 
 ---
 
