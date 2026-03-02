@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T14:07
+updated: 2026-03-02T16:27
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -237,7 +237,7 @@ This is where you "hook up" the service to the Target Groups you made in Part 1:
 
 - **Load balancer type**: Select **Application Load Balancer**.
 - **Load balancer name**: Select `AU-Config-InternalALB`.
-- **Container to load balance**:
+- **Container to load balance**: 
     
     - For the **UI Service**: Choose the `au-powerfleet-automation-ui` container and the port `3000`.
     - For the **API Service**: Choose the `au-powerfleet-automation-api` container and the port `80`.
