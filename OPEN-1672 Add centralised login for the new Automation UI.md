@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T09:30
+updated: 2026-03-02T09:49
 ---
 
 # OPEN-1672 Add centralised login for the new Automation UI
@@ -180,14 +180,16 @@ IF at anytime you struggle on AWS Settings, you can use the AWS Skill to get mor
 | **Security Group**  | `sg-09d9e1223188d85ff`                                                             |
 | **Public URLs**     | `ecs-api.config.int.priv`, `configapi.int.priv`, `api.config.devicestate.int.priv` |
 
-## Config API AU
+## Config API AU (manual)
 
-| Component           | Details |
-| ------------------- | ------- |
-| **ECS Cluster**     |         |
-| **ECS Service**     |         |
-| **Task Definition** |         |
-| **Load Balancer**   |         |
-| **Target Group**    |         |
-| **Security Group**  |         |
-| **Public URLs**     |         |
+| Component           | Details                                                                                                        |
+| ------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Account             | operationsmixtelematics (365528985733)<br>MiX-DevOpsAdmin                                                      |
+| Region              | Sydney<br>ap-southeast-2                                                                                       |
+| **ECS Cluster**     | AU-Config                                                                                                      |
+| **ECS Service**     | au-config-api                                                                                                  |
+| **Task Definition** | au-config-api:1                                                                                                |
+| **Load Balancer**   | AU-Config-InternalALB                                                                                          |
+| **Target Group**    | au-config-api-TG (HTTP:80)                                                                                     |
+| **Security Group**  | sg-09d97cfc127d25b95                                                                                           |
+| **Public URLs**     | ecs-api.config.au.priv, integrate.api.deviceconfig.syd.production.local, api.deviceconfig.syd.production.local |
