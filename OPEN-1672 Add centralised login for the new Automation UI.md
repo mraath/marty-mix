@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T10:26
+updated: 2026-03-02T10:38
 ---
 
 # OPEN-1672 Add centralised login for the new Automation UI
@@ -256,4 +256,12 @@ YEs - I think BEFORE you try to automate it, first just document the step by ste
 
 ## xcvxcvxcvxcvxcvxcv
 
-dddddddddddddddd
+| Component           | UI                                                                                                             | API                          |
+| ------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| **ECS Cluster**     | AU-Config                                                                                                      |                              |
+| **ECS Service**     | au-powerfleet-automation-ui                                                                                    | au-powerfleet-automation-api |
+| **Task Definition** | au-powerfleet-automation-ui                                                                                    | au-powerfleet-automation-api |
+| **Load Balancer**   | AU-Config-InternalALB                                                                                          |                              |
+| **Target Group**    | au-config-api-TG (HTTP:80)                                                                                     |                              |
+| **Security Group**  | sg-09d97cfc127d25b95                                                                                           |                              |
+| **Public URLs**     | ecs-api.config.au.priv, integrate.api.deviceconfig.syd.production.local, api.deviceconfig.syd.production.local |                              |
