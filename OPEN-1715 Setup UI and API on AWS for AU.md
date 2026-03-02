@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T13:26
+updated: 2026-03-02T13:32
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -185,6 +185,53 @@ Now, run the tasks inside your existing cluster.
     2. **API Service**: Create `au-powerfleet-automation-api` linked to its Target Group.
         
 
+---
+When you create these **ECS Services**, there are a few critical "Networking" and "Load Balancing" settings you must select to ensure the containers can talk to the internet and the Load Balancer can find them.
+
+### 1. Networking Settings
+
+In the **Networking** section of the Service creation:
+
+- **VPC**: Select the same VPC you used for the Target Groups (`vpc-1553a770`).
+    
+- **Subnets**: Select the **Private subnets** associated with your cluster (usually labeled `Private-app` or similar).
+    
+- **Security Group**: Use the one specifically requested: `sg-09d97cfc127d25b95`.
+    
+- **Public IP**: Set this to **DISABLED** (since these are in private subnets and will be reached via the Internal ALB).
+    
+
+### 2. Load Balancing Section
+
+This is where you "hook up" the service to the Target Groups you made in Part 1:
+
+- **Load balancer type**: Select **Application Load Balancer**.
+    
+- **Load balancer name**: Select `AU-Config-InternalALB`.
+    
+- **Container to load balance**:
+    
+    - For the **UI Service**: Choose the `au-powerfleet-automation-ui` container and the port `3000`.
+        
+    - For the **API Service**: Choose the `au-powerfleet-automation-api` container and the port `80`.
+        
+- **Target Group**: Select the existing Target Groups you created (`au-powerfleet-automation-ui` or `au-powerfleet-automation-api`) rather than creating new ones.
+    
+
+### 3. Deployment Configuration
+
+- **Desired tasks**: Start with **1** (you can increase this later if needed).
+    
+- **Deployment type**: **Rolling update** is standard for this setup.
+    
+
+---
+
+### Important Reminder: The "Image Error"
+
+Since you haven't pushed the actual code to ECR yet, these services **will initially fail** with an `ImageNotFoundException` or `Essential container in task exited`.
+
+> **Don't panic!** This is expected. Once you run your first build/deploy cycle and the images exist in ECR, the services will automatically pull the new images and start running correctly.
 ---
 
 ## Part 4: Network Routing (ALB & DNS)
