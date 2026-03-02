@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T13:15
+updated: 2026-03-02T13:20
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -95,17 +95,81 @@ These are the "blueprints" for your containers. Ensure you use the **MiX-DevOpsA
 ### 2.2 API Task Definition (`au-powerfleet-automation-api`)
 
 - **Container Name**: `au-powerfleet-automation-api`
-    
 - **Image**: Use the existing image from your ECR (e.g., `powerfleet-automation-api:latest`)
-    
 - **Port Mapping**: `80`
-    
 - **Environment Variables**:
-    
     - `ASPNETCORE_ENVIRONMENT`: `Production`
-        
     - `Environment`: `AU`
-        
+
+---
+
+## MORE HELP ON ABOVE
+
+Yes, you are in exactly the right place! Your screenshot shows the **Create new task definition** screen for the **ap-southeast-2 (Sydney)** region.
+
+Since you are setting up the **UI** first, here is exactly what to fill into those fields based on your requirements:
+
+### 1. Task definition configuration
+
+* **Task definition family**: `au-powerfleet-automation-ui`
+
+### 2. Infrastructure requirements
+
+* **Launch type**: **AWS Fargate** (Ensure this is checked)
+* **Operating system/Architecture**: `Linux/X86_64`
+* **Task size**:
+* **CPU**: `.25 vCPU` (This is usually sufficient for the UI)
+* **Memory**: `.5 GB`
+
+
+
+---
+
+### 3. Container - 1
+
+This is the section shown in the middle of your screenshot.
+
+* **Name**: `au-powerfleet-automation-ui`
+* **Image URI**: `365528985733.dkr.ecr.ap-southeast-2.amazonaws.com/powerfleet-automation-ui:latest`
+* **Essential container**: Yes (Should be checked by default)
+* **Port mappings**:
+* **Container port**: `3000`
+* **Protocol**: `TCP`
+* **App protocol**: `HTTP`
+
+
+
+---
+
+### 4. Environment variables
+
+Scroll down to the **Environment variables** section within the Container definition:
+
+* **Click "Add environment variable"**
+* **Key**: `NEXT_PUBLIC_API_URL`
+* **Value**: `https://automation-api.au.mixtelematics.com`
+
+---
+
+### 5. Logging (Optional but Recommended)
+
+In your screenshot, I see the **Log collection** section is open.
+
+* **Log driver**: `awslogs`
+* **Log group**: It should auto-populate, but you can set it to `/ecs/au-powerfleet-automation-ui` to match the DEV pattern.
+
+---
+
+**Next Step:**
+Once you click **Create** at the bottom, repeat this process for the **API** using these changes:
+
+* **Family & Name**: `au-powerfleet-automation-api`
+* **Image**: `365528985733.dkr.ecr.ap-southeast-2.amazonaws.com/powerfleet-automation-api:latest`
+* **Port**: `80`
+* **Env Var 1**: `ASPNETCORE_ENVIRONMENT` = `Production`
+* **Env Var 2**: `Environment` = `AU`
+
+Would you like me to clarify the **API Environment Variables** again before you start the second one?
 
 ---
 
@@ -114,7 +178,6 @@ These are the "blueprints" for your containers. Ensure you use the **MiX-DevOpsA
 Now, run the tasks inside your existing cluster.
 
 - **Cluster**: `AU-Config`
-    
 - **Launch Type**: **FARGATE**
     
 - **Security Group**: `sg-09d97cfc127d25b95` (Reused as requested)
