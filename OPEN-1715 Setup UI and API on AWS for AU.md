@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-02T16:27
+updated: 2026-03-03T08:17
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -281,7 +281,34 @@ In the hosted zone for `mixtelematics.com`, create two **A (Alias)** records:
 1. `automation.au.mixtelematics.com` → Alias to **AU-Config-InternalALB**
     
 2. `automation-api.au.mixtelematics.com` → Alias to **AU-Config-InternalALB**
+
+---
+
+### Step 4.2: Route 53 DNS Configuration (UI)
+
+Follow these steps in the Route 53 console to point your URL to the Load Balancer:
+
+1. **Open the Route 53 Console**: Go to **Hosted Zones** and select `mixtelematics.com`.
     
+2. **Create Record**:
+    
+    - **Record Name**: Enter `automation.au`.
+        
+    - **Record Type**: Select **A - Routes traffic to an IPv4 address and some AWS resources**.
+        
+    - **Alias**: Toggle this switch to **Yes**.
+        
+3. **Route traffic to**:
+    
+    - Choose **Alias to Application and Classic Load Balancer**.
+        
+    - **Region**: Select **ap-southeast-2 (Sydney)**.
+        
+    - **Load Balancer**: Select `AU-Config-InternalALB`.
+        
+4. **Routing Policy**: Leave as **Simple routing**.
+    
+5. **Save**: Click **Create records**.
 
 ---
 
