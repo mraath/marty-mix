@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-03T08:17
+updated: 2026-03-03T08:54
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -100,6 +100,55 @@ These are the "blueprints" for your containers. Ensure you use the **MiX-DevOpsA
 - **Environment Variables**:
     - `ASPNETCORE_ENVIRONMENT`: `Production`
     - `Environment`: `AU`
+
+---
+
+### Step 2.2: API Task Definition Configuration
+
+Based on your current screen, here is the configuration to use:
+
+- **Task Definition Family**: `au-powerfleet-automation-api`.
+    
+- **Infrastructure Requirements**:
+    
+    - **Launch Type**: Fargate.
+        
+    - **CPU**: .5 vCPU.
+        
+    - **Memory**: 1 GB.
+        
+- **Container Details**:
+    
+    - **Container Name**: `api`.
+        
+    - **Image**: Enter the URI for your API ECR repository (e.g., `365528985733.dkr.ecr.ap-southeast-2.amazonaws.com/au-powerfleet-automation-api:latest`).
+        
+    - **Port Mappings**:
+        
+        - **Container Port**: **80**.
+            
+        - **Protocol**: TCP.
+            
+        - **Port Name**: `api-80-tcp`.
+            
+- **Log Configuration**:
+    
+    - **Log Driver**: awslogs.
+        
+    - **Log Group**: `/ecs/au-powerfleet-automation-api`.
+        
+
+---
+
+### Critical Environment Variables (Crucial for API functionality)
+
+Under the **Environment variables** section for the container, you must add these so the API can communicate with your database and provide data for your Google Trends skill:
+
+| **Key**                  | **Value**                          |
+| ------------------------ | ---------------------------------- |
+| `ASPNETCORE_ENVIRONMENT` | `Production`                       |
+| `DB_CONNECTION_STRING`   | (Your specific AU Database string) |
+| `COMPANY_DOMAIN`         | `www.africanwind.com`              |
 
 ---
 
