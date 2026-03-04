@@ -1,6 +1,6 @@
 ---
 created: 2026-02-16T15:23
-updated: 2026-02-16T15:30
+updated: 2026-03-04T08:30
 ---
 # AWS CLI & Python Environment Troubleshooting (Friday/Monday Learnings)
 
@@ -41,3 +41,9 @@ The primary re-authentication method for the `MiX-DevOpsAdmin` role is via Okta 
 saml2aws login -a default
 ```
 This updates the local AWS credentials file directly, fixing both the CLI and MCP access.
+
+### SAML AU
+
+```
+saml2aws login --role arn:aws:iam::365528985733:role/MiX-DevOpsAdmin
+```
