@@ -1,6 +1,6 @@
 ---
 created: 2026-02-11T15:46
-updated: 2026-02-11T16:29
+updated: 2026-03-04T16:00
 ---
 
 # Marty-Mix: Second Brain & Knowledge Base
@@ -76,3 +76,10 @@ When searching this knowledge base:
 ---
 
 *This is a living document that grows with each day's work, capturing institutional knowledge and technical solutions for future reference.*
+
+## Second Brain Policy (Agent Instructions)
+
+- When creating or updating .md files that contain useful knowledge (guides, summaries, setup notes, learnings, architecture docs), **always save a copy into C:\Projects\marty-mix\** in an appropriate location.
+- Whenever new .md files are created during a session, **add wiki links for ALL new notes into the daily note** at C:\Projects\marty-mix\DailyNotes\YYYY-MM-DD.md under a ### Notes created today section.
+- Wiki link format: [[NoteFilenameWithoutExtension]]  brief one-line description.
+- The daily note date should match the current date (from the system metadata).
