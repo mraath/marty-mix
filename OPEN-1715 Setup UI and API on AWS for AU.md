@@ -1,9 +1,9 @@
 ---
-status: busy
+status: done
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-03T08:54
+updated: 2026-03-04T11:13
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
