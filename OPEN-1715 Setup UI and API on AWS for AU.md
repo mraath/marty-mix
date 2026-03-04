@@ -3,7 +3,7 @@ status: done
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-04T11:13
+updated: 2026-03-04T15:30
 ---
 
 # OPEN-1715 Setup UI and API on AWS for AU
@@ -369,3 +369,29 @@ Follow these steps in the Route 53 console to point your URL to the Load Balance
 | **UI URL**     | `https://automation.au.mixtelematics.com`            |
 | **API Health** | `https://automation-api.au.mixtelematics.com/health` |
 | **API Env**    | `Production` / `AU`                                  |
+
+## TEST DAta
+
+```
+{
+    "InstallationDateCompleted": "2024-02-02",
+    "DriveMateConnected": false,
+    "IridiumConnected": false,
+    "RoviConnected": false,
+    "DtcoConnected": false,
+    "VideoConnected": false,
+    "CanConnected": false,
+    "RegistrationNumber": "1IOU902_MiX4000",
+    "UniqueIdentifier": "863427061366226",
+    "CaseNumber": "11111",
+    "DeviceType": "MIX4000",
+    "AssetId": "1672318027863851008",
+    "GroupId": "-1201230228827182611",
+    "FirmwareVersion": "11111",
+    "Odometer": 13245
+}
+```
+
+## Summary
+
+- [[Glo]]
