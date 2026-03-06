@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-06T08:29
+updated: 2026-03-06T09:05
 ---
 							
 # ETS-8669 OMAN Command 45 DST issue
@@ -40,10 +40,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] **Step 1c:** Telnet to Redis (10.25.2.23:6379) from HSOMNIIS18 to confirm it is reachable
 - [ ] **Step 1 (verify):** Re-check HSOMNIIS19 log for `UnauthenticatedException` — confirm still present and check date of latest entries
 - [x] **NEW — Run tool directly on IIS server:** Ran tool on HSOMNIIS19 — **SUCCESS (2026-03-06 00:25).** Log on IIS18 shows: "Daylight savings adjustment starting" → "Updating: Schlumberger-OPG-Oman - Arabian Standard Time - C311824/C3100000257 [1 asset(s)]" → "Adjustment for assets completed." Asset -5059187462885730598 (vehicle 768). Root cause = **jumpbox cannot reach IIS APIs over network** — tool must be run directly on the IIS server.
-- [ ] **Step 2:** Run the `dbo.messages` SQL query (see Step 2 below) on `Schlumberger-OPG-Oman` for vehicles 768, 925, 881, 840 — confirm no `CommandID=45` rows exist
-- [ ] **Step 3:** Run logical device SQL (see Step 3 below) for those same vehicles — check if `BASE_FM_FUNCTIONALITY` and `REMOTE_COMMAND` are both present
-- [ ] **Step 4:** Run the same logical device query for a known-working Mix4000 asset — confirm it has `BASE_MESA_FUNCTIONALITY` + `REMOTE_COMMAND`
-- [ ] **Document findings** in this note and update the Findings Summary table below
+- [x] **Step 2 — DB confirmed:** `CommandID=45` rows found in `dbo.messages` for vehicle 768 and a second FM asset. Messages queued and processed correctly.
+- [x] **RESOLVED — All outstanding steps closed.** Steps 3 & 4 (logical device checks) no longer needed — the tool works end-to-end when run on the IIS server.
 - [x] ~~If Redis config is confirmed as root cause: raise with the OMAN infra team~~ — Redis config is NOT the issue
 
 ---
@@ -311,13 +309,13 @@ Also try hitting each node directly if possible (by IP or hostname) to check if 
 
 ## Findings Summary
 
-| Root Cause                                                                                                                                   | Status                                             | Evidence               | Fixable on 18.17?                                                 |
-| :------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :--------------------- | :---------------------------------------------------------------- |
-| **A: Redis session mismatch** — `FMTimeAdjuster.Api` web.config has wrong/mismatched `RedisServerUrl` or `RedisDatabaseIndex` vs DynaMiX.Api | **CONFIRMED** (lots of `UnauthenticatedException`) | HSOMNIIS19 log         | Yes — update web.config to match, no code deploy needed           |
-| Redis server unreachable from IIS process                                                                                                    | Possible (same symptom as above)                   | telnet check (Step 1c) | Yes — fix network/firewall or Redis service                       |
-| Tool using wrong auth URL (not `https://om.mixtelematics.com`)                                                                               | Possible                                           | Check tool config      | Yes — use correct URL                                             |
-| **B: Missing `REMOTE_COMMAND` logical device on FM assets**                                                                                  | Possible — only reachable once auth is fixed       | SQL: Step 3            | Yes — DBA inserts rows into `mobileunit.MobileUnitLogicalDevices` |
-| OMAN on unsupported v18.17                                                                                                                   | Permanent                                          | Environment fact       | No — upgrade is the real fix                                      |
+| Root Cause                                                                                                                                   | Status                          | Evidence                                                                                   | Fixable on 18.17?                                                                              |
+| :------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------ | :----------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
+| **A: Redis session mismatch** — `FMTimeAdjuster.Api` web.config has wrong/mismatched `RedisServerUrl` or `RedisDatabaseIndex` vs DynaMiX.Api | **ELIMINATED (2026-03-06)**     | All four web.configs identical: RedisServerUrl=10.25.2.23, RedisDatabaseIndex=2            | N/A                                                                                            |
+| Redis server unreachable from IIS process                                                                                                    | Not investigated — not needed   | N/A                                                                                        | N/A                                                                                            |
+| **Tool run from jumpbox — network prevents correct routing to IIS APIs**                                                                     | **ROOT CAUSE — CONFIRMED & RESOLVED (2026-03-06)** | Tool run on HSOMNIIS19 succeeded; DB confirmed `CommandID=45` messages queued for FM assets | Yes — run the tool directly on HSOMNIIS19. Under `C:\Projects\` there are two tool versions — use the **older one** (same as the jumpbox version). The newer one does not work. |
+| **B: Missing `REMOTE_COMMAND` logical device on FM assets**                                                                                  | Not needed — tool worked end-to-end | N/A                                                                                    | N/A                                                                                            |
+| OMAN on unsupported v18.17                                                                                                                   | Permanent                       | Environment fact                                                                           | No — upgrade is the real fix                                                                   |
 	
 > **Important:** Since OMAN is on unsupported v18.17, any "fix" is a workaround. The supported path is upgrading OMAN to the current version. Document these findings for the upgrade justification.
 
