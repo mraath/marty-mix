@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-06T09:05
+updated: 2026-03-06T09:11
 ---
 							
 # ETS-8669 OMAN Command 45 DST issue
@@ -318,6 +318,18 @@ Also try hitting each node directly if possible (by IP or hostname) to check if 
 | OMAN on unsupported v18.17                                                                                                                   | Permanent                       | Environment fact                                                                           | No — upgrade is the real fix                                                                   |
 	
 > **Important:** Since OMAN is on unsupported v18.17, any "fix" is a workaround. The supported path is upgrading OMAN to the current version. Document these findings for the upgrade justification.
+
+### JIRA Comment — Copy/Paste Ready
+
+**Root Cause & Resolution**
+
+The DST Command 45 adjustment was not being sent to FM units because the **FMTimeAdjuster tool was being run from the jumpbox**. Due to network/firewall restrictions in the OMAN environment, the jumpbox cannot correctly route requests to the IIS APIs — this caused every authentication attempt to fail with `UnauthenticatedException`, preventing any commands from being dispatched.
+
+**Resolution:** The tool was run directly on **HSOMNIIS19**. The IIS log confirmed successful execution — "Adjustment for assets completed" — and the `Schlumberger-OPG-Oman` database was verified to contain the expected `CommandID=45` messages for the affected FM assets. A second FM asset was tested and also confirmed working.
+
+**Going forward:** The FMTimeAdjuster tool must always be run **directly on HSOMNIIS19** (not the jumpbox) in the OMAN environment. On HSOMNIIS19 under `C:\Projects\` there are **two versions of the tool** — only the **older one** (the same version that was previously on the jumpbox) works correctly. Do not use the newer version. Due to the load balancer, execution may be logged on either IIS18 or IIS19 — this is expected behaviour.
+
+No code changes were required. No web.config changes were required (Redis settings were verified identical across all nodes).
 
 ---
 
