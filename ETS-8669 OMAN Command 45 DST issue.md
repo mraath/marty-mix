@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-06T07:35
+updated: 2026-03-06T08:04
 ---
 							
 # ETS-8669 OMAN Command 45 DST issue
@@ -35,17 +35,16 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ## Start Here Tomorrow — Priority Checklist
 
-- [ ] **Step 1b (CRITICAL):** On HSOMNIIS18, open both `web.config` files in Notepad and compare `RedisServerUrl` and `RedisDatabaseIndex`:
-  - `C:\inetpub\wwwroot\DynaMiX.DeviceConfig.FMTimeAdjuster.Api\web.config`
-  - `C:\inetpub\wwwroot\DynaMiX.Api\web.config`
-  - They MUST be identical — mismatch = confirmed root cause of `UnauthenticatedException`
-- [ ] **Step 1c:** Telnet to the Redis host on port 6379 from HSOMNIIS18 to confirm Redis is reachable (`telnet <redis-host> 6379`)
-- [ ] **Step 1 (verify):** Open the FMTimeAdjuster.Api log on HSOMNIIS19 (`L:\WebServices\DynaMiX.DeviceConfig.FMTimeAdjuster.Api\...log`) and confirm `UnauthenticatedException` is still present — check date of latest entries
-- [ ] **Step 2:** Run the `dbo.messages` SQL query (see Step 2 below) on `Schlumberger-OPG-Oman` for vehicles 768, 925, 881, 840 — confirm no `CommandID=45` rows exist (expected: none, since auth never passes)
+- [x] **Step 1b:** Compare `RedisServerUrl` + `RedisDatabaseIndex` across all web.configs on IIS18 and IIS19.
+  - **RESULT (2026-03-06): ALL IDENTICAL — RedisServerUrl=10.25.2.23, RedisDatabaseIndex=2 on both nodes, both APIs. Root Cause A (Redis mismatch) ELIMINATED.**
+- [ ] **Step 1c:** Telnet to Redis (10.25.2.23:6379) from HSOMNIIS18 to confirm it is reachable
+- [ ] **Step 1 (verify):** Re-check HSOMNIIS19 log for `UnauthenticatedException` — confirm still present and check date of latest entries
+- [ ] **NEW — Run tool directly on IIS server:** If running from jumpbox fails, try running the FMTimeAdjuster tool directly on HSOMNIIS18 or HSOMNIIS19 — rules out network/firewall between jumpbox and IIS
+- [ ] **Step 2:** Run the `dbo.messages` SQL query (see Step 2 below) on `Schlumberger-OPG-Oman` for vehicles 768, 925, 881, 840 — confirm no `CommandID=45` rows exist
 - [ ] **Step 3:** Run logical device SQL (see Step 3 below) for those same vehicles — check if `BASE_FM_FUNCTIONALITY` and `REMOTE_COMMAND` are both present
 - [ ] **Step 4:** Run the same logical device query for a known-working Mix4000 asset — confirm it has `BASE_MESA_FUNCTIONALITY` + `REMOTE_COMMAND`
 - [ ] **Document findings** in this note and update the Findings Summary table below
-- [ ] If Redis config is confirmed as root cause: raise with the OMAN infra team to align `FMTimeAdjuster.Api` web.config Redis settings with `DynaMiX.Api` (no code deploy needed)
+- [x] ~~If Redis config is confirmed as root cause: raise with the OMAN infra team~~ — Redis config is NOT the issue
 
 ---
 
@@ -310,13 +309,13 @@ Also try hitting each node directly if possible (by IP or hostname) to check if 
 
 ## Findings Summary
 
-| Root Cause | Status | Evidence | Fixable on 18.17? |
-| :--- | :--- | :--- | :--- |
-| **A: Redis session mismatch** — `FMTimeAdjuster.Api` web.config has wrong/mismatched `RedisServerUrl` or `RedisDatabaseIndex` vs DynaMiX.Api | **CONFIRMED** (lots of `UnauthenticatedException`) | HSOMNIIS19 log | Yes — update web.config to match, no code deploy needed |
-| Redis server unreachable from IIS process | Possible (same symptom as above) | telnet check (Step 1c) | Yes — fix network/firewall or Redis service |
-| Tool using wrong auth URL (not `https://om.mixtelematics.com`) | Possible | Check tool config | Yes — use correct URL |
-| **B: Missing `REMOTE_COMMAND` logical device on FM assets** | Possible — only reachable once auth is fixed | SQL: Step 3 | Yes — DBA inserts rows into `mobileunit.MobileUnitLogicalDevices` |
-| OMAN on unsupported v18.17 | Permanent | Environment fact | No — upgrade is the real fix |
+| Root Cause                                                                                                                                   | Status                                             | Evidence               | Fixable on 18.17?                                                 |
+| :------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------- | :--------------------- | :---------------------------------------------------------------- |
+| **A: Redis session mismatch** — `FMTimeAdjuster.Api` web.config has wrong/mismatched `RedisServerUrl` or `RedisDatabaseIndex` vs DynaMiX.Api | **CONFIRMED** (lots of `UnauthenticatedException`) | HSOMNIIS19 log         | Yes — update web.config to match, no code deploy needed           |
+| Redis server unreachable from IIS process                                                                                                    | Possible (same symptom as above)                   | telnet check (Step 1c) | Yes — fix network/firewall or Redis service                       |
+| Tool using wrong auth URL (not `https://om.mixtelematics.com`)                                                                               | Possible                                           | Check tool config      | Yes — use correct URL                                             |
+| **B: Missing `REMOTE_COMMAND` logical device on FM assets**                                                                                  | Possible — only reachable once auth is fixed       | SQL: Step 3            | Yes — DBA inserts rows into `mobileunit.MobileUnitLogicalDevices` |
+| OMAN on unsupported v18.17                                                                                                                   | Permanent                                          | Environment fact       | No — upgrade is the real fix                                      |
 	
 > **Important:** Since OMAN is on unsupported v18.17, any "fix" is a workaround. The supported path is upgrading OMAN to the current version. Document these findings for the upgrade justification.
 
