@@ -2,7 +2,7 @@
 status: committed
 priority: 1
 created: 2026-03-06T00:00
-updated: 2026-03-06T15:38
+updated: 2026-03-06T16:26
 ---
 
 # OPEN-1729 Change the UI for QC to accommodate the information needed to start checks
@@ -48,7 +48,7 @@ The following fields need to be visible on the QC UI:
 | Salesforce Case Number | Mandatory |
 | Installation Date | Mandatory |
 | Unique Identifier (IMEI) | Mandatory |
-| Registration Number | Mandatory |
+| Registration Number | Optional (feedback during testing) |
 | Odometer | Optional |
 
 Hide **ALL** peripheral fields on the UI.
