@@ -1,3 +1,7 @@
+---
+created: 2026-03-06T16:59
+updated: 2026-03-06T16:59
+---
 # Date Format Based on User Settings
 
 ## 1. DynaMiX.Backend
@@ -108,9 +112,69 @@ export interface IColumn {
 
 ---
 
+---
+
+## 3. Use Case — Timeline Text Summary (Backend API)
+
+The `TimelineTextSummary` class is a concrete example of `UserProfile.LocaleId` driving date formatting end-to-end in the API layer.
+
+### Flow
+
+1. **Module receives request** — `TimelineModuleBase.cs:255` constructs a `TimelineTextSummary`, passing `CurrentUserProfile` (sourced from the authenticated session via `MobileApiModuleBase.cs:440`).
+
+2. **Locale is resolved** — At each text-building method (trip depart, trip halt, event start/end), the locale is looked up via:
+
+	`TimelineTextSummary.cs:155`
+	```csharp
+	var selectedLocale = GlobalizationGateway.GetLocaleById(_userProfile.LocaleId).Value;
+	```
+
+3. **`DateFormatConverter` builds a `DateTimeFormatInfo`** — `DateFormatConverter.cs:37`
+
+	```csharp
+	// Singleton. Caches LocaleEntryCarrier by LocaleId.
+	public string GetRegionalDateFormat(DateTime dat, UserProfile userProfile)
+	{
+		LocaleEntryCarrier locale = UserLocale.GetOrAdd(
+			userProfile.LocaleId,
+			CultureSettings.GetLocalCultures().Find(o => o.Id == userProfile.LocaleId));
+
+		var newCulture = new CultureInfo(GetUserProfileLanguage(userProfile.LanguageCode), false);
+		newCulture.DateTimeFormat.ShortDatePattern = locale.ShortDatePattern;
+		newCulture.DateTimeFormat.LongTimePattern  = locale.LongTimePattern;
+		// ... all patterns applied from locale
+		return dat.ToString(newCulture.DateTimeFormat);
+	}
+	```
+
+4. **Date field in trip summary is formatted** — `TimelineTextSummary.cs:218`
+
+	```csharp
+	case ClassType.DateTime:
+		var dateFormat = DateFormatConverter.Instance.GetRegionalFormatForDate(
+			selectedLocale.Id, _userProfile.LanguageCode);
+		tripTextSummary.Value = zonedDateTime.DateTime.ToString(
+			dateFormat.ShortDatePattern + " " + dateFormat.LongTimePattern)
+			+ " (" + zonedDateTime.TimeZoneShortName + ")";
+		break;
+	```
+
+### Key files
+
+| File | Purpose |
+|---|---|
+| `Entities/DynaMiX.Entities/Users/UserProfile.cs:15` | Entity — `LocaleId` defaults to `CultureInfo.CurrentCulture.LCID`; `DateFormat`/`TimeFormat` fields are commented out |
+| `API/DynaMiX.API/Converters/DateFormatConverter.cs:37` | Singleton converter — maps `UserProfile.LocaleId` → `LocaleEntryCarrier` → `DateTimeFormatInfo` |
+| `API/DynaMiX.API/Converters/TimelineTextSummary.cs:155` | Consumer — calls `GetLocaleById(_userProfile.LocaleId)` and `DateFormatConverter` per text block |
+| `API/DynaMiX.API/NancyModules/Timeline/TimelineModuleBase.cs:255` | Entry point — passes `CurrentUserProfile` into `TimelineTextSummary` |
+
+> **Note:** `DateFormatConverter` uses `ConcurrentDictionary` to cache locale lookups by `LocaleId`, so the DB/culture resolution only happens once per locale per app lifetime.
+
+---
+
 ## Summary
 
 | Layer | Source | Applied Via |
 |---|---|---|
-| Backend | `[DynaMiX_Globalization].[DateFormats_GetList]` -> `DateFormat.FormatString` | `ZonedDateTimeCarrier.ToString(formatString)` |
+| Backend | `UserProfile.LocaleId` → `GlobalizationGateway.GetLocaleById()` → `LocaleEntryCarrier` | `DateFormatConverter.GetRegionalDateFormat()` → `DateTime.ToString(DateTimeFormatInfo)` |
 | Frontend | `sessionService.loggedInProfile.locale.shortDatePattern` + `shortTimePattern` | Angular `date` pipe |
