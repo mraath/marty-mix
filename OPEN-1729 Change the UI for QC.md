@@ -2,7 +2,7 @@
 status: committed
 priority: 1
 created: 2026-03-06T00:00
-updated: 2026-03-06T12:45
+updated: 2026-03-06T15:38
 ---
 
 # OPEN-1729 Change the UI for QC to accommodate the information needed to start checks
@@ -11,7 +11,7 @@ JIRA: [OPEN-1729](https://powerfleet.atlassian.net/browse/OPEN-1729)
 Parent: [[OPEN-1264]] — Unity MX Installation QC Automation - Phase 1
 Labels: Automation, OpsTools
 Assignee: Marthinus Raath
-Status: Committed
+Status: In Progress Dev
 
 ## Start Here Tomorrow — Priority Checklist
 
@@ -117,3 +117,23 @@ Registration Numbers are often **blank in Australia** because units are installe
 - [ ] OPEN-1729 QC UI Changes → INT
 - [ ] OPEN-1729 QC UI Changes → UAT
 - [ ] OPEN-1729 QC UI Changes → PROD
+
+## Session Notes - 2026-03-06
+
+### Completed this session
+- [x] Jira assigned to Marthinus Raath, transitioned to In Progress Dev
+- [x] Branch created: Config/MR/Feature/OPEN-1729_QC_UI_Layout on Powerfleet.Automation.UI
+- [x] SalesforceCase interface in contracts.ts trimmed to 5 fields (removed GroupId, LegacyOrgId, AssetId, DeviceType, FirmwareVersion, all peripheral booleans)
+- [x] QCFormView.tsx rewritten: 3-line layout, peripherals removed, date clear button, space stripping, odometer null fix, InstallationDate mandatory
+
+### Testing in progress - blocked on local API debugger
+- UI is running on Powerfleet.Automation.UI feature branch
+- .env.local currently pointing to localhost:7116 (local API)
+- API repo (Powerfleet.Automation) is on development branch - NO new branch created there (UI-only story)
+- Debugger setup done in C:\Projects\.vscode\launch.json using type: coreclr
+- Both ms-dotnettools.csdevkit and ms-dotnettools.csharp extensions installed
+
+### Next steps after restart
+- [ ] Reload window in Cursor, select Automation API DEV config, hit F5
+- [ ] Test the new QC form end-to-end against local API
+- [ ] Commit and raise PR once testing passes
