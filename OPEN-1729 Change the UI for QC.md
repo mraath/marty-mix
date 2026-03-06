@@ -2,7 +2,7 @@
 status: committed
 priority: 1
 created: 2026-03-06T00:00
-updated: 2026-03-06T11:45
+updated: 2026-03-06T12:45
 ---
 
 # OPEN-1729 Change the UI for QC to accommodate the information needed to start checks
@@ -15,12 +15,12 @@ Status: Committed
 
 ## Start Here Tomorrow — Priority Checklist
 
-- [ ] Implement 3-line layout (see Further Chat Notes)
-- [ ] Hide Firmware field
-- [ ] Hide all Peripheral-related UI elements
-- [ ] Validate: CaseNumber and UniqueIdentifier reject spaces
-- [ ] Validate: Odometer sends null when empty (0 is valid)
-- [ ] Verify Installation Date is treated as UTC
+- [x] Implement 3-line layout (see Further Chat Notes)
+- [x] Hide Firmware field
+- [x] Hide all Peripheral-related UI elements
+- [x] Validate: CaseNumber and UniqueIdentifier reject spaces
+- [x] Validate: Odometer sends null when empty (0 is valid)
+- [x] Verify Installation Date is treated as UTC
 
 ## TODO
 
@@ -109,7 +109,7 @@ Registration Numbers are often **blank in Australia** because units are installe
 
 ## Branch
 
-> Branch: (to be created)
+> Branch: \ on \
 
 ## PR Checklist
 
