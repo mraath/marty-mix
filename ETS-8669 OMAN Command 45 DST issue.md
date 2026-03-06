@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-06T08:13
+updated: 2026-03-06T08:29
 ---
 							
 # ETS-8669 OMAN Command 45 DST issue
@@ -39,7 +39,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
   - **RESULT (2026-03-06): ALL IDENTICAL — RedisServerUrl=10.25.2.23, RedisDatabaseIndex=2 on both nodes, both APIs. Root Cause A (Redis mismatch) ELIMINATED.**
 - [ ] **Step 1c:** Telnet to Redis (10.25.2.23:6379) from HSOMNIIS18 to confirm it is reachable
 - [ ] **Step 1 (verify):** Re-check HSOMNIIS19 log for `UnauthenticatedException` — confirm still present and check date of latest entries
-- [ ] **NEW — Run tool directly on IIS server:** If running from jumpbox fails, try running the FMTimeAdjuster tool directly on HSOMNIIS18 or HSOMNIIS19 — rules out network/firewall between jumpbox and IIS
+- [x] **NEW — Run tool directly on IIS server:** Ran tool on HSOMNIIS19 — **SUCCESS (2026-03-06 00:25).** Log on IIS18 shows: "Daylight savings adjustment starting" → "Updating: Schlumberger-OPG-Oman - Arabian Standard Time - C311824/C3100000257 [1 asset(s)]" → "Adjustment for assets completed." Asset -5059187462885730598 (vehicle 768). Root cause = **jumpbox cannot reach IIS APIs over network** — tool must be run directly on the IIS server.
 - [ ] **Step 2:** Run the `dbo.messages` SQL query (see Step 2 below) on `Schlumberger-OPG-Oman` for vehicles 768, 925, 881, 840 — confirm no `CommandID=45` rows exist
 - [ ] **Step 3:** Run logical device SQL (see Step 3 below) for those same vehicles — check if `BASE_FM_FUNCTIONALITY` and `REMOTE_COMMAND` are both present
 - [ ] **Step 4:** Run the same logical device query for a known-working Mix4000 asset — confirm it has `BASE_MESA_FUNCTIONALITY` + `REMOTE_COMMAND`
@@ -79,9 +79,11 @@ Database: `Schlumberger-OPG-Oman` | OrgID: `700083822000352569`
 
 ## Root Cause Analysis
 
-### Root Cause A — Authentication Failure (Redis Session Mismatch) ← CONFIRMED
+### Root Cause A — Authentication Failure (Redis Session Mismatch) ← ELIMINATED
 
-> **Finding (2026-03-05):** A LOT of `UnauthenticatedException` in the log = every single request failing auth, not intermittently. This is a **systematic config problem**, not a flaky load balancer.
+> **Finding (2026-03-05):** A LOT of `UnauthenticatedException` in the log.
+> **Finding (2026-03-06):** Redis config is IDENTICAL on all four web.configs (IIS18 + IIS19, both APIs): RedisServerUrl=10.25.2.23, RedisDatabaseIndex=2. Mismatch is NOT the cause.
+> **Real cause of UnauthenticatedException:** Tool was being run from the jumpbox — network/firewall blocks the jumpbox from properly routing auth + command to the same IIS node. Running the tool directly on HSOMNIIS19 succeeded immediately.
 
 **How auth actually works (traced through code):**
 
