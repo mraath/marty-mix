@@ -1,8 +1,8 @@
 ---
-status: committed
+status: in-progress-dev
 priority: 1
 created: 2026-03-06T00:00
-updated: 2026-03-06T11:45
+updated: 2026-03-10T15:29
 ---
 
 # OPEN-1730 Change the UI for Decomm to accommodate the information needed to start checks
@@ -11,17 +11,17 @@ JIRA: [OPEN-1730](https://powerfleet.atlassian.net/browse/OPEN-1730)
 Parent: [[OPEN-1264]] — Unity MX Installation QC Automation - Phase 1
 Labels: Automation, OpsTools
 Assignee: Marthinus Raath
-Status: Committed
+Status: In Progress Dev
 Related: [[OPEN-1576 Add UI for Decom Automation manually]]
 
 ## Start Here Tomorrow — Priority Checklist
 
-- [ ] Implement 2-line layout (see Further Chat Notes)
-- [ ] Set Decommissioning Date default to `DateTime.UtcNow`
-- [ ] Set Decommissioning Date field to **ReadOnly**
+- [x] Implement 2-line layout (see Further Chat Notes)
+- [x] Set Decommissioning Date default to `DateTime.UtcNow`
+- [x] Set Decommissioning Date field to **ReadOnly**
 - [ ] Wait for ETS defect ticket (Patrick) before renaming "Installation Date" → "Decommissioning Date (UTC)"
-- [ ] Combine implementation with [[OPEN-1576 Add UI for Decom Automation manually]]
-- [ ] Validate: CaseNumber and UniqueIdentifier reject spaces
+- [x] Combine implementation with [[OPEN-1576 Add UI for Decom Automation manually]]
+- [x] Validate: CaseNumber and UniqueIdentifier reject spaces
 
 ## TODO
 
@@ -96,7 +96,7 @@ Registration Numbers are often **blank in Australia** because units are installe
 
 ## Branch
 
-> Branch: (to be created)
+> Branch: `Config/MR/Feature/OPEN-1576_OPEN-1730_DecomUI` (shared with OPEN-1576)
 
 ## PR Checklist
 

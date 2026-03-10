@@ -2,7 +2,7 @@
 status: in-progress-dev
 priority: 1
 created: 2026-03-06T00:00
-updated: 2026-03-06T11:45
+updated: 2026-03-10T15:30
 ---
 
 # OPEN-1576 Add UI for Support to Supply Salesforce Case Info and Start Decom Automation Manually
@@ -16,10 +16,10 @@ Related: [[OPEN-1730 Change the UI for Decomm]]
 
 ## Start Here Tomorrow — Priority Checklist
 
-- [ ] Base form UI to be built in tandem with [[OPEN-1730 Change the UI for Decomm]]
-- [ ] Create overloaded API endpoint that returns resultset as JSON (for support to paste into Salesforce case)
-- [ ] Reference [[OPEN-1493 UI for Salesforce case Info]] as implementation example
-- [ ] See [[OPEN-1730 Change the UI for Decomm]] for form field/layout changes
+- [x] Base form UI to be built in tandem with [[OPEN-1730 Change the UI for Decomm]]
+- [x] Create overloaded API endpoint that returns resultset as JSON (for support to paste into Salesforce case)
+- [x] Reference [[OPEN-1493 UI for Salesforce case Info]] as implementation example
+- [x] See [[OPEN-1730 Change the UI for Decomm]] for form field/layout changes
 
 ## TODO
 
@@ -66,7 +66,7 @@ An overloaded (or separate) version of the Decom endpoint must:
 
 ## Branch
 
-> Branch: (to be created — likely shared with OPEN-1730)
+> Branch: `Config/MR/Feature/OPEN-1576_OPEN-1730_DecomUI` (shared with OPEN-1730)
 
 ## PR Checklist
 

@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-03-10T14:57
+updated: 2026-03-10T15:13
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -44,12 +44,12 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 ### Assigned to Me — UI Work
 
-| Ticket | Summary | Status | Note |
-|---|---|---|---|
-| [OPEN-1729](https://powerfleet.atlassian.net/browse/OPEN-1729) | [[OPEN-1729 Change the UI for QC\|QC UI — 3-line layout, hide peripherals/firmware]] | Committed | Start here |
-| [OPEN-1730](https://powerfleet.atlassian.net/browse/OPEN-1730) | [[OPEN-1730 Change the UI for Decomm\|Decomm UI — 2-line layout, ReadOnly UTC date]] | Committed | Combine with OPEN-1576 |
-| [OPEN-1737](https://powerfleet.atlassian.net/browse/OPEN-1737) | [[OPEN-1737 Change UI to allow for multiple IMEIs\|Multiple IMEI input — split & JSON array]] | Committed | After 1729 |
-| [OPEN-1576](https://powerfleet.atlassian.net/browse/OPEN-1576) | [[OPEN-1576 Add UI for Decom Automation manually\|Manual Decom trigger UI]] | In Progress Dev | Shared form with OPEN-1730 |
+| Ticket                                                         | Summary                                                                                       | Status          | Note                       |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | --------------- | -------------------------- |
+| [OPEN-1729](https://powerfleet.atlassian.net/browse/OPEN-1729) | [[OPEN-1729 Change the UI for QC\|QC UI — 3-line layout, hide peripherals/firmware]]          | Committed       | DONE                       |
+| [OPEN-1730](https://powerfleet.atlassian.net/browse/OPEN-1730) | [[OPEN-1730 Change the UI for Decomm\|Decomm UI — 2-line layout, ReadOnly UTC date]]          | Committed       | Combine with OPEN-1576     |
+| [OPEN-1737](https://powerfleet.atlassian.net/browse/OPEN-1737) | [[OPEN-1737 Change UI to allow for multiple IMEIs\|Multiple IMEI input — split & JSON array]] | Committed       | DONE                       |
+| [OPEN-1576](https://powerfleet.atlassian.net/browse/OPEN-1576) | [[OPEN-1576 Add UI for Decom Automation manually\|Manual Decom trigger UI]]                   | In Progress Dev | Shared form with OPEN-1730 |
 
 ### Background / Dependencies (Backend — Not My Primary)
 
