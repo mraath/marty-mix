@@ -2,7 +2,7 @@
 status: committed
 priority: 1
 created: 2026-03-06T00:00
-updated: 2026-03-10T11:57
+updated: 2026-03-10T15:04
 ---
 
 # OPEN-1737 Change UI to allow for multiple IMEIs
@@ -16,12 +16,12 @@ Related: [[OPEN-1729 Change the UI for QC]], [[OPEN-1725]]
 
 ## Start Here Tomorrow — Priority Checklist
 
-- [ ] Modify IMEI field to accept multiple values (split by `,` or ` `)
-- [ ] Update JSON generation — one record per IMEI
-- [ ] Handle `RegistrationNumber` as blank/null gracefully
-- [ ] Odometer → send `null` if empty
-- [ ] DataCenter derived from Environment combo box
-- [ ] Test with AU data (RegNo likely blank)
+- [x] Modify IMEI field to accept multiple values (split by `,` or ` `) ✅ 2026-03-10
+- [x] Update JSON generation — one record per IMEI ✅ 2026-03-10
+- [x] Handle `RegistrationNumber` as blank/null gracefully ✅ 2026-03-10
+- [x] Odometer → send `null` if empty ✅ 2026-03-10
+- [x] DataCenter derived from Environment combo box ✅ 2026-03-10
+- [x] Test with AU data (RegNo likely blank) ✅ 2026-03-10
 
 ## TODO
 
@@ -115,7 +115,4 @@ So a user can paste: `123456789012345, 987654321098765` or `123456789012345 9876
 ## PR Checklist
 
 - [x] [OPEN-1737 Multiple IMEIs → DEV](https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation.UI/pullrequestcreate?sourceRef=Config/MR/OPEN-1737_multiple_IMEIs&targetRef=development&sourceRepositoryId=8a7f617a-e5af-4308-977f-cb0d39024a46&targetRepositoryId=8a7f617a-e5af-4308-977f-cb0d39024a46) ✅ 2026-03-10
-	- [ ] [API TEMP FIX](https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation/pullrequest/140400)
-- [ ] OPEN-1737 Multiple IMEIs → INT
-- [ ] OPEN-1737 Multiple IMEIs → UAT
-- [ ] OPEN-1737 Multiple IMEIs → PROD
+	- [x] [API TEMP FIX](https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation/pullrequest/140400) ✅ 2026-03-10

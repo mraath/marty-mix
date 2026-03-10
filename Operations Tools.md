@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-03-09T08:32
+updated: 2026-03-10T14:57
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -24,7 +24,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 - [x] **OPEN-1729** — QC UI: Implement 3-line layout, hide firmware + peripherals ✅ 2026-03-09
 - [ ] **OPEN-1730** — Decomm UI: 2-line layout, ReadOnly UTC date (default = Now), combine with OPEN-1576
-- [ ] **OPEN-1737** — Multiple IMEI input: split on comma/space, build JSON array per IMEI
+- [x] **OPEN-1737** — Multiple IMEI input: split on comma/space, build JSON array per IMEI ✅ 2026-03-10
 - [ ] **OPEN-1576** — Manual Decom trigger UI: overloaded endpoint returning JSON result
 
 ## Links
