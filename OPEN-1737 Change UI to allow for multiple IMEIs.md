@@ -2,7 +2,7 @@
 status: committed
 priority: 1
 created: 2026-03-06T00:00
-updated: 2026-03-06T11:45
+updated: 2026-03-10T10:15
 ---
 
 # OPEN-1737 Change UI to allow for multiple IMEIs
@@ -104,9 +104,17 @@ So a user can paste: `123456789012345, 987654321098765` or `123456789012345 9876
 
 > Branch: (to be created)
 
+
+
+![[OPEN-1602 Pipeline for Powerfleet Automation API#Payload DEV]]
+
+
+![[OPEN-1602 Pipeline for Powerfleet Automation API#PAYLOAD INT]]
+
+
 ## PR Checklist
 
-- [ ] OPEN-1737 Multiple IMEIs → DEV
+- [ ] [OPEN-1737 Multiple IMEIs → DEV](https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation.UI/pullrequestcreate?sourceRef=Config/MR/OPEN-1737_multiple_IMEIs&targetRef=development&sourceRepositoryId=8a7f617a-e5af-4308-977f-cb0d39024a46&targetRepositoryId=8a7f617a-e5af-4308-977f-cb0d39024a46)
 - [ ] OPEN-1737 Multiple IMEIs → INT
 - [ ] OPEN-1737 Multiple IMEIs → UAT
 - [ ] OPEN-1737 Multiple IMEIs → PROD
