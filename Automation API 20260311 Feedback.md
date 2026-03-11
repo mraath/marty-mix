@@ -1,6 +1,6 @@
 ---
 created: 2026-03-11T09:07
-updated: 2026-03-11T09:17
+updated: 2026-03-11T09:19
 ---
 # Automation API — PR Feedback 2026-03-11
 
@@ -17,7 +17,7 @@ In `ActionQCRequestAsync` roep ons `DetermineMobileUnitSummaryAsync` met `Action
 
 ## 1b. `Decom` issue in code — **FOUT**
 
-Ekt my UI deel klaar gemaak en ingecheck. MEt my toets het ek gesien die IMEI word nie 
+Ekt my UI deel klaar gemaak en ingecheck. MEt my toets het ek gesien die IMEI word nie gevind vir die unit nie en dan gebeur niks nie. So verder is ek nog nie 100% seker van of die UI die regte result sal wys nie, maar in die API, as mens dit toets, het dit def. omgeval. Ek wou dit nou gou fix maar op die oomblik bou my nuutste kode van DEV nie - ek sal dit gou probeer fix. @Cornel
 
 ## 2. `_currentCase` field in QCManager — word nooit gebruik nie
 
