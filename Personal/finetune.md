@@ -1,6 +1,6 @@
 ---
 created: 2026-03-12T10:29
-updated: 2026-03-12T10:35
+updated: 2026-03-12T10:59
 ---
 # Writing Style Fine-Tune
 
@@ -22,6 +22,7 @@ This file contains specific corrections and examples to help AI sound more like 
 - "line" not "reël", "fix" not "oplossing" when talking about code changes
 - English dev slang ("fix", "line", "deploy", "register", "one-liner") flows naturally into Afrikaans sentences
 - Short punchy phrases preferred over full formal sentences when describing a fix
+- Use "'n" not "a" as the indefinite article in Afrikaans sentences — e.g. "Dis 'n one-liner" not "Dis a one-liner"
 
 ## IT / Technical Terms
 - Always keep in English exactly as they appear in code: class names, method names, file names, ticket numbers, framework names
