@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-10T15:04
+updated: 2026-03-11T15:09
 ---
 
 # OPEN-1602 Pipeline for Powerfleet Automation API
@@ -53,6 +53,8 @@ https://automation-api.dev.mixtelematics.com/swagger/index.html
 
 
 ## Payload DEV
+
+^f730e9
 
 ```
 {
