@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-11T15:09
+updated: 2026-03-12T11:45
 ---
 
 # OPEN-1602 Pipeline for Powerfleet Automation API
@@ -78,22 +78,14 @@ https://automation-api.dev.mixtelematics.com/swagger/index.html
 ## PAYLOAD INT
 
 ```
-{
-    "InstallationDateCompleted": "2024-02-26",
-    "DriveMateConnected": false,
-    "IridiumConnected": false,
-    "RoviConnected": false,
-    "DtcoConnected": false,
-    "VideoConnected": false,
-    "CanConnected": false,
-    "CaseNumber": "12345",
-    "GroupId": "6288350534931411179",
-    "AssetId": "1738024213057519616",
-    "DeviceType": "MIX4000",
-    "FirmwareVersion": "11111",
-    "Odometer": 12345,
-    "UniqueIdentifier": "359316077041140"
-}
+[
+  {
+    "SalesforceCaseNumber": "123123213",
+    "DataCenter": "INT",
+    "UniqueIdentifier": "359316077041140",
+    "ActionDate": "2026-03-12T03:43:51.275Z"
+  }
+]
 ```
 
 ^9265af
