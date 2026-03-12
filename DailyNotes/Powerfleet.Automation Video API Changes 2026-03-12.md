@@ -1,11 +1,11 @@
 ---
 created: 2026-03-12T10:45
-updated: 2026-03-12T14:10
+updated: 2026-03-12T14:12
 ---
 
 # Powerfleet.Automation — Video API Changes
 
-## Opsomming
+## Video Opsomming
 
 Al die video-related veranderinge gemaak op 2026-03-12 in `Powerfleet.Automation`.
 
@@ -24,9 +24,6 @@ Al die video-related veranderinge gemaak op 2026-03-12 in `Powerfleet.Automation
 
 **`EnvironmentScopedServiceWrapper.cs`**
 - Dieselfde null return bygevoeg vir consistency
-
-**`HelperManager.cs`**
-- `videoCards` tasks uitgecomment in `Task.WhenAll` en die assignments — beide QC en ConfigDelta cases
 
 ## TODO
 Soek vir `//TODO: MR: Video API fix pending` om al die bypassed calls op te tel wanneer die Video API issue aangespreek word.
