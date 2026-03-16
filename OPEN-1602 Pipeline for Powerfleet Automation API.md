@@ -3,7 +3,7 @@ status: busy
 comment:
 priority: 1
 created: 2023-03-27T07:35
-updated: 2026-03-13T07:56
+updated: 2026-03-16T19:16
 ---
 
 # OPEN-1602 Pipeline for Powerfleet Automation API
@@ -101,3 +101,8 @@ https://automation-api.dev.mixtelematics.com/swagger/index.html
 In the Automation UI... FOr both the Asset and MAtrix view. So basically - say the diff is in a Grandparent > Parent > Child > Field Value, then please show the Grandparent Description > Parent Description > Child Description > Field Description Does this make sense? But display of This Description should make sense and that we could easily change the look and feel. I think for now display it like this: Grandparent Description: Parent Description: Child Description: Field Description (Also if it is nested deeper - just keep doing the same logic)
 ```
 
+
+
+## HELP FIX URLS
+
+[Pull requests - Repos](https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation/pullrequestcreate?sourceRef=development&targetRef=Config/MR/Feature/OPEN-1493_UI_for_Salesforce_case_Info.INT&sourceRepositoryId=58f7c6cd-6b67-4620-932e-cdd9646e4eac&targetRepositoryId=58f7c6cd-6b67-4620-932e-cdd9646e4eac)
