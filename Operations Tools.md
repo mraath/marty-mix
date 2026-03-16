@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-03-11T09:56
+updated: 2026-03-16T08:50
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -27,6 +27,8 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [x] **OPEN-1737** — Multiple IMEI input: split on comma/space, build JSON array per IMEI ✅ 2026-03-10
 - [x] **OPEN-1576** — Manual Decom trigger UI: overloaded endpoint returning JSON result ✅ 2026-03-11
 
+- [ ] [[Operations Tools Looking forward 20260316]]
+
 ## Links
 
 | Resource | URL |
@@ -50,6 +52,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 | [OPEN-1730](https://powerfleet.atlassian.net/browse/OPEN-1730) | [[OPEN-1730 Change the UI for Decomm\|Decomm UI — 2-line layout, ReadOnly UTC date]]          | Committed       | DONE: Combine with OPEN-1576     |
 | [OPEN-1737](https://powerfleet.atlassian.net/browse/OPEN-1737) | [[OPEN-1737 Change UI to allow for multiple IMEIs\|Multiple IMEI input — split & JSON array]] | Committed       | DONE                             |
 | [OPEN-1576](https://powerfleet.atlassian.net/browse/OPEN-1576) | [[OPEN-1576 Add UI for Decom Automation manually\|Manual Decom trigger UI]]                   | In Progress Dev | DONE: Shared form with OPEN-1730 |
+| [OPEN-1788](https://powerfleet.atlassian.net/browse/OPEN-1788) | [[OPEN-1788 Add AI ChatBot Panel to the Configuration Delta Tool\|AI ChatBot Panel — Config Delta Tool]] | In Progress Dev | Branch: Config/MR/Feature/OPEN-1788_AIChatBotPanel |
 
 ### Background / Dependencies (Backend — Not My Primary)
 

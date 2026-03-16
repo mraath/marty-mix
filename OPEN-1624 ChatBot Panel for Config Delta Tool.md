@@ -1,7 +1,11 @@
+---
+created: 2026-03-13T16:41
+updated: 2026-03-13T16:41
+---
 # OPEN-1624 Child — ChatBot Panel for Configuration Delta Tool
 
-> **Draft JIRA Story** — Parent: [[OPEN-1624 Config change analysis tool]]
-> Status: Draft | Labels: OpsTools | Assignee: Marthinus Raath
+> **JIRA Story: [OPEN-1788](https://powerfleet.atlassian.net/browse/OPEN-1788)** — Parent: [[OPEN-1624 Config change analysis tool]]
+> Status: To Do | Labels: OpsTools | Assignee: Marthinus Raath
 
 ---
 
