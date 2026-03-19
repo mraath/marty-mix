@@ -1,11 +1,11 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-03-17T00:00
+updated: 2026-03-18T00:00
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
 
-## TODO — UI Tasks (Next Up)
+## TODO — Active Action Items
 
 ```dataviewjs
 function callout(text, type) {
@@ -22,23 +22,22 @@ path includes ${dv.current().file.path}
 dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
-- [x] **OPEN-1729** — QC UI: Implement 3-line layout, hide firmware + peripherals ✅ 2026-03-09
-- [x] **OPEN-1730** — Decomm UI: 2-line layout, ReadOnly UTC date (default = Now), combine with OPEN-1576 ✅ 2026-03-11
-- [x] **OPEN-1737** — Multiple IMEI input: split on comma/space, build JSON array per IMEI ✅ 2026-03-10
-- [x] **OPEN-1576** — Manual Decom trigger UI: overloaded endpoint returning JSON result ✅ 2026-03-11
-
-- [ ] Deploy to DEV/INT — verify with IMEI `352739097418310` (video-linked)
-- [ ] Check OPEN-1800 naming convention changes for UI impact
+- [ ] Deploy to **INT** — verify with IMEI `352739097418310` (video-linked)
+- [ ] Check [OPEN-1800](https://powerfleet.atlassian.net/browse/OPEN-1800) naming convention changes for UI impact
 - [ ] Verify all open tickets are in the correct status on the sprint board
+- [ ] **Answer all open questions on [OPEN-1832](https://powerfleet.atlassian.net/browse/OPEN-1832)** — boss flagged this as ready to tackle (2026-03-18)
+- [ ] **Determine if [OPEN-1744](https://powerfleet.atlassian.net/browse/OPEN-1744) is still valid** — boss questions whether it has been superseded by OPEN-1832 (2026-03-18)
 
 ---
 
-## Sprint Focus — Next Sprint
+## Current Sprint Focus
 
 > **Marthinus** → Config Delta / Audit Tool
 > **Cornel** → Salesforce integration
 
 ### Engineering Directives (from boss)
+
+See full context: [[Operations Tools Looking forward 20260316]]
 
 1. **Data via API** — All data loading and writes go through the API as far as possible.
 2. **UI via Agents** — UI and analyses are built by AI agents. Make it fast and visually premium: use graphs, maps wherever possible. API endpoints get updated as data changes.
@@ -68,53 +67,43 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 
 | Ticket | Summary | Status | Note |
 |---|---|---|---|
-| [OPEN-1788](https://powerfleet.atlassian.net/browse/OPEN-1788) | [[OPEN-1788 Add AI ChatBot Panel to the Configuration Delta Tool\|AI ChatBot Panel — Config Delta Tool]] | In Progress Dev | Branch: `Config/MR/Feature/OPEN-1788_AIChatBotPanel` |
-| [OPEN-1741](https://powerfleet.atlassian.net/browse/OPEN-1741) | Support descriptions instead of IDs (Config Delta) | — | Assigned to M |
-| [OPEN-1742](https://powerfleet.atlassian.net/browse/OPEN-1742) | Add dashboard summary (Config Delta) | — | Assigned to M |
-| [OPEN-1743](https://powerfleet.atlassian.net/browse/OPEN-1743) | Ignore certain differences in comparisons (Config Delta) | — | Assigned to M |
-| [OPEN-1744](https://powerfleet.atlassian.net/browse/OPEN-1744) | Config Delta — parent story | — | Key epic for next sprint |
-| [OPEN-1832](https://powerfleet.atlassian.net/browse/OPEN-1832) | Sub-ticket for OPEN-1744 | — | **Priority** — created by boss |
-| [OPEN-1833](https://powerfleet.atlassian.net/browse/OPEN-1833) | Sub-ticket for OPEN-1744 | — | **Priority** — created by boss |
-| [OPEN-1834](https://powerfleet.atlassian.net/browse/OPEN-1834) | Sub-ticket for OPEN-1744 | — | **Priority** — created by boss |
+| [OPEN-1832](https://powerfleet.atlassian.net/browse/OPEN-1832) | [[OPEN-1832 Add Test Case Creation Screen\|Add test case creation screen]] | In Progress Dev ★(1) | Branch: `Config/MR/Feature/OPEN-1832_TestCaseCreationScreen`. Open questions answered. **Subticket needed:** S3 integration for `standard.json` file browsing (standards hosted in S3 bucket, selectable from modal). Currently using local `data/testCase/` and `data/standards/` as file sources. |
+| [OPEN-1744](https://powerfleet.atlassian.net/browse/OPEN-1744) | Allow the user to select the standard and the assets that need to be compared against it. | Ready for Grooming ★(2) | ⚠️ **Validity in question** — boss asks if this has been superseded by OPEN-1832. Review before picking up. |
+| [OPEN-1788](https://powerfleet.atlassian.net/browse/OPEN-1788) | [[OPEN-1788 Add AI ChatBot Panel to the Configuration Delta Tool\|AI ChatBot Panel — Config Delta Tool]] | Ready for QA ★(3) | Branch: `Config/MR/Feature/OPEN-1788_AIChatBotPanel` |
+| [OPEN-1741](https://powerfleet.atlassian.net/browse/OPEN-1741) | Display item descriptions instead of raw IDs in all comparison views | Ready for QA | — |
+| [OPEN-1742](https://powerfleet.atlassian.net/browse/OPEN-1742) | Add a summary dashboard panel to comparison results showing asset counts and per-section drift counts | Ready for QA | — |
+| [OPEN-1743](https://powerfleet.atlassian.net/browse/OPEN-1743) | Exclude LastConfig, LastIMEI, and LastIMSI from configuration comparisons against the fleet standard | Ready for QA | — |
+| [OPEN-1844](https://powerfleet.atlassian.net/browse/OPEN-1844) | Add GetConfigurationGroupSummaries API endpoint | In Code Review | Grant — blocks OPEN-1845, enables OPEN-1832 |
+| [OPEN-1845](https://powerfleet.atlassian.net/browse/OPEN-1845) | Add ConfigConfigurationGroups API endpoint | Ready for QA | Grant — blocked by OPEN-1844, enables OPEN-1832 |
+| [OPEN-1833](https://powerfleet.atlassian.net/browse/OPEN-1833) | Add ConfigAllowedOrganisationsAsync endpoint to load accessible organisations | Ready for QA | William King |
+| [OPEN-1834](https://powerfleet.atlassian.net/browse/OPEN-1834) | Add GetActiveAssetListForOrganisationAsync endpoint to load active assets for a selected organisation | Ready for QA | Grant |
 
 ### Shared (Me + Boss)
 
 | Ticket | Summary | Status | Note |
 |---|---|---|---|
-| [OPEN-1756](https://powerfleet.atlassian.net/browse/OPEN-1756) | TBD | — | Ek/M |
-| [OPEN-1757](https://powerfleet.atlassian.net/browse/OPEN-1757) | TBD | — | Ek/M |
-
-### Background / Dependencies (Backend — Not My Primary)
-
-| Ticket | Summary | Notes |
-|---|---|---|
-| [OPEN-1725](https://powerfleet.atlassian.net/browse/OPEN-1725) | Update starting Endpoint to receive new parameters | API side of OPEN-1737 |
-| [OPEN-1726](https://powerfleet.atlassian.net/browse/OPEN-1726) | Retrieve device & asset info using new parameters | Backend logic |
-| [OPEN-1727](https://powerfleet.atlassian.net/browse/OPEN-1727) | Create static class for shared logic layer | Shared logic container |
-| [OPEN-1728](https://powerfleet.atlassian.net/browse/OPEN-1728) | Change how peripherals are checked | API refactor; UI hides peripherals for now |
+| [OPEN-1756](https://powerfleet.atlassian.net/browse/OPEN-1756) | Add manager to Automation API to load the necessary data to work with | ~~Cancelled~~ | Superseded |
+| [OPEN-1757](https://powerfleet.atlassian.net/browse/OPEN-1757) | Add endpoint for the config delta tool in the API to allow user to do a comparison | ~~Cancelled~~ | Superseded |
 
 ### Boss's Tickets (FYI)
 
-| Ticket | Summary | Note |
-|---|---|---|
-| [OPEN-1300](https://powerfleet.atlassian.net/browse/OPEN-1300) | — | Boss |
-| [OPEN-1607](https://powerfleet.atlassian.net/browse/OPEN-1607) | — | Boss |
-| [OPEN-1800](https://powerfleet.atlassian.net/browse/OPEN-1800) | Naming conventions (done) | ✅ Done — may cause minor UI impact |
+| Ticket | Summary | Status | Note |
+|---|---|---|---|
+| [OPEN-1300](https://powerfleet.atlassian.net/browse/OPEN-1300) | Add CAN peripheral, speed source, and RPM source checks to QC Automation | Committed | Boss |
+| [OPEN-1607](https://powerfleet.atlassian.net/browse/OPEN-1607) | Add odometer vs trip distance consistency check to QC Automation | Committed | Boss |
+| [OPEN-1800](https://powerfleet.atlassian.net/browse/OPEN-1800) | Enforce naming convention consistency across Powerfleet.Automation API - controllers, routes, and managers | In Progress QA | May cause minor UI impact |
 
 ---
 
-## API Fixes (Boss — 2026-03-14 weekend)
+## API Fixes — Weekend 2026-03-14 (Boss)
 
-Boss made the following API fixes and self-approved the PR:
+Boss made the following fixes and self-approved the PR. Relevant context for INT deploy:
 
-- Video API URL was incorrect
-- `AssetSummary` was returning null OrgId — fixed
-- `Positions` renamed to `LatestPositions`
-- `Events` renamed to `EventsSince`, `Trips` renamed to `TripsSince`
-- `GetSinceAsync` has known perf issues with large datasets — **noted for future sprint** (QBR/analytics impact)
-- Future: `HelperManager` to be refactored (story to be created) — config-driven loading instead of action switch
-
-**Action**: Deploy to **INT** (described as DEV) and test with IMEI `352739097418310`.
+- Video API URL corrected
+- `AssetSummary` null OrgId fixed
+- `Positions` → `LatestPositions`; `Events` → `EventsSince`; `Trips` → `TripsSince`
+- `GetSinceAsync` has known perf issues with large datasets — **note for QBR/analytics sprint**
+- Future: `HelperManager` refactor story to be created — config-driven loading
 
 ---
 
@@ -122,32 +111,41 @@ Boss made the following API fixes and self-approved the PR:
 
 ### QC Automation Phase 1 — Foundation
 
-- Spike: [OPEN-1223](https://powerfleet.atlassian.net/browse/OPEN-1223) — Investigate QC Automation
-	- API Endpoint: [OPEN-1293](https://powerfleet.atlassian.net/browse/OPEN-1293)
-	- UI (Completed): [OPEN-1493](https://powerfleet.atlassian.net/browse/OPEN-1493) — [[OPEN-1493 UI for Salesforce case Info]] ✅ 2026-02-24
-	- Video: [OPEN-1299](https://powerfleet.atlassian.net/browse/OPEN-1299) — check camera channels after install
-	- Decommissioning Phase 1: [OPEN-1545](https://powerfleet.atlassian.net/browse/OPEN-1545)
-		- Add Decomm Endpoint: [OPEN-1567](https://powerfleet.atlassian.net/browse/OPEN-1567)
+- [x] [OPEN-1729](https://powerfleet.atlassian.net/browse/OPEN-1729) — Change the UI for QC to accommodate the information needed to start checks ✅ 2026-03-09
+- [x] [OPEN-1730](https://powerfleet.atlassian.net/browse/OPEN-1730) — Change the UI for Decomm to accommodate the information needed to start checks ✅ 2026-03-11
+- [x] [OPEN-1737](https://powerfleet.atlassian.net/browse/OPEN-1737) — Change UI to allow for multiple IMEIs ✅ 2026-03-10
+- [x] [OPEN-1576](https://powerfleet.atlassian.net/browse/OPEN-1576) — Add UI for support to supply Salesforce case info and start Decom Automation manually ✅ 2026-03-11
+- Spike: [OPEN-1223](https://powerfleet.atlassian.net/browse/OPEN-1223) — Investigate QC Automation - Phase 1 ✅ Done
+	- API Endpoint: [OPEN-1293](https://powerfleet.atlassian.net/browse/OPEN-1293) — Create QC Automation API and Logic ✅ Done
+	- UI: [OPEN-1493](https://powerfleet.atlassian.net/browse/OPEN-1493) — [[OPEN-1493 UI for Salesforce case Info]] ✅ 2026-02-24
+	- Video: [OPEN-1299](https://powerfleet.atlassian.net/browse/OPEN-1299) — Test video status for installed device 🔄 In Progress QA
+	- Decommissioning Phase 1: [OPEN-1545](https://powerfleet.atlassian.net/browse/OPEN-1545) — Decommissioning Automation - Phase 1 🔄 Authoring
+		- Add Decomm Endpoint: [OPEN-1567](https://powerfleet.atlassian.net/browse/OPEN-1567) — Add Decommissioning Endpoint ✅ Done
+- Background (API for OPEN-1737):
+	- [OPEN-1725](https://powerfleet.atlassian.net/browse/OPEN-1725) — Update the starting Endpoint to receive new parameters ❌ Cancelled
+	- [OPEN-1726](https://powerfleet.atlassian.net/browse/OPEN-1726) — Retrieve device and asset info using new parameters ✅ Done
+	- [OPEN-1727](https://powerfleet.atlassian.net/browse/OPEN-1727) — Create a static class to handle shared information in logic layer ✅ Done
+	- [OPEN-1728](https://powerfleet.atlassian.net/browse/OPEN-1728) — Change the way that peripherals are checked ✅ Done
 
 ### Customer Database
 
-- Epic: [OPEN-1539](https://powerfleet.atlassian.net/browse/OPEN-1539) — Consolidated Customer/Subscriber Database
-	- [OPEN-1495](https://powerfleet.atlassian.net/browse/OPEN-1495) — Investigate Customer Database requirements
+- Epic: [OPEN-1539](https://powerfleet.atlassian.net/browse/OPEN-1539) — R1: Consolidated Customer/Subscriber Database 🔄 Formulating
+	- [OPEN-1495](https://powerfleet.atlassian.net/browse/OPEN-1495) — Investigate Customer Database requirements ⏸ On Hold
 
 ### Config Analysis Tool
 
-- [OPEN-1494](https://powerfleet.atlassian.net/browse/OPEN-1494) — [[OPEN-1494 Config Analysis Tool]] — Meeting: Investigate Config Analyses Tool
-- [OPEN-1624](https://powerfleet.atlassian.net/browse/OPEN-1624) — Split: Config Change Analysis Tool
+- [OPEN-1494](https://powerfleet.atlassian.net/browse/OPEN-1494) — [[OPEN-1494 Config Analysis Tool]] — Investigate Config analyses tool to see where changes happened ✅ Done
+- [OPEN-1624](https://powerfleet.atlassian.net/browse/OPEN-1624) — Config change analysis tool 🔄 In Progress
 
 ### Other
 
-- [OPEN-1526](https://powerfleet.atlassian.net/browse/OPEN-1526) — AI to work with Salesforce
-- [OPEN-1356](https://powerfleet.atlassian.net/browse/OPEN-1356) — Trigger QC API Endpoint
-- [OPEN-1328](https://powerfleet.atlassian.net/browse/OPEN-1328) — Create endpoint in Salesforce
-- [OPEN-1715](https://powerfleet.atlassian.net/browse/OPEN-1715) — [[OPEN-1715 Setup UI and API on AWS for AU]] — AWS Setup for AU
-- [PFI-3133](https://powerfleet.atlassian.net/browse/PFI-3133) — Operations Enablement Engineering Improvements
-	- [OPEN-455](https://powerfleet.atlassian.net/browse/OPEN-455) — CAN Logger App Enhancements
-- [OPEN-1631](https://powerfleet.atlassian.net/browse/OPEN-1631) — Develop and Implement tools to increase efficiency (Epic)
+- [OPEN-1526](https://powerfleet.atlassian.net/browse/OPEN-1526) — Investigate how to leverage AI to work with Salesforce information ⏸ On Hold
+- [OPEN-1356](https://powerfleet.atlassian.net/browse/OPEN-1356) — Trigger QC API Endpoint 🔄 Ready for Grooming
+- [OPEN-1328](https://powerfleet.atlassian.net/browse/OPEN-1328) — Create endpoint in Salesforce 🔄 Ready for Grooming
+- [OPEN-1715](https://powerfleet.atlassian.net/browse/OPEN-1715) — [[OPEN-1715 Setup UI and API on AWS for AU]] — Setup UI and API on AWS for AU ✅ Done
+- [PFI-3133](https://powerfleet.atlassian.net/browse/PFI-3133) — Operations Enablement Engineering Improvements 🔄 In Progress
+	- [OPEN-455](https://powerfleet.atlassian.net/browse/OPEN-455) — CAN Logger App Enhancements 🔄 Proposed
+- [OPEN-1631](https://powerfleet.atlassian.net/browse/OPEN-1631) — Develop and Implement tools to increase efficiency (Epic) 🔄 Formulating
 
 ---
 
@@ -156,4 +154,4 @@ Boss made the following API fixes and self-approved the PR:
 - [[QBR Report for clients]]
 - [[AI python to see data issues]]
 - [[Operations Enablement]]
-- [[Operations Tools Looking forward 20260316]]
+- [[Operations Tools Looking forward 20260316]] — source transcript: boss's sprint directives (Afrikaans)

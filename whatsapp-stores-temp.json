@@ -1,0 +1,29 @@
+[
+  {
+    "rank": 1,
+    "tier": 1,
+    "name": "Norton Bali Computer & Smartphone (Jimbaran)",
+    "address": "Jl. Uluwatu 2 No.02, Jimbaran, Badung",
+    "distance": "~5 km",
+    "phone": "628113979127",
+    "note": "Next to McDonald's Jimbaran"
+  },
+  {
+    "rank": 2,
+    "tier": 1,
+    "name": "Norton Service Center (Jimbaran)",
+    "address": "Jl. Uluwatu II No.2A, Jimbaran, Badung",
+    "distance": "~5 km",
+    "phone": "628224796954",
+    "note": "Next to McDonald's Jimbaran"
+  },
+  {
+    "rank": 3,
+    "tier": 2,
+    "name": "Norton Bali Computer & Smartphone (Taman Griya)",
+    "address": "Jalan Danau Batur Raya No 49C, Taman Griya, Badung",
+    "distance": "~15 km",
+    "phone": "6285792866013",
+    "note": "Main store / Store 1"
+  }
+]

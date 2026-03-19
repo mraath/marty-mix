@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Norton Bali Computer & Smartphone</title>
+	<style>
+		* { box-sizing: border-box; margin: 0; padding: 0; }
+		body {
+			font-family: 'Segoe UI', sans-serif;
+			background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+			min-height: 100vh;
+			padding: 40px 20px;
+			color: #fff;
+		}
+		h1 {
+			text-align: center;
+			font-size: 1.8rem;
+			margin-bottom: 6px;
+			letter-spacing: 1px;
+		}
+		.subtitle {
+			text-align: center;
+			color: #a0c4d8;
+			font-size: 0.9rem;
+			margin-bottom: 32px;
+		}
+		.message-box {
+			background: rgba(255,255,255,0.08);
+			border: 1px solid rgba(255,255,255,0.15);
+			border-radius: 12px;
+			padding: 16px 20px;
+			margin-bottom: 32px;
+			max-width: 860px;
+			margin-left: auto;
+			margin-right: auto;
+			backdrop-filter: blur(8px);
+		}
+		.message-box h3 {
+			font-size: 0.75rem;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: #a0c4d8;
+			margin-bottom: 8px;
+		}
+		.message-box p {
+			font-size: 0.95rem;
+			color: #e0f0ff;
+			line-height: 1.5;
+		}
+		.stores-grid {
+			display: grid;
+			gap: 16px;
+			max-width: 860px;
+			margin: 0 auto;
+		}
+		.card {
+			background: rgba(255,255,255,0.07);
+			border: 1px solid rgba(255,255,255,0.12);
+			border-radius: 16px;
+			padding: 20px 24px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+			backdrop-filter: blur(8px);
+			transition: background 0.2s, transform 0.2s;
+		}
+		.card:hover {
+			background: rgba(255,255,255,0.12);
+			transform: translateY(-2px);
+		}
+		.badge {
+			background: rgba(255,255,255,0.15);
+			border-radius: 50%;
+			width: 38px;
+			height: 38px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-weight: 700;
+			font-size: 1rem;
+			flex-shrink: 0;
+		}
+		.info { flex: 1; }
+		.info .name { font-size: 1.05rem; font-weight: 600; margin-bottom: 4px; }
+		.info .address { font-size: 0.82rem; color: #a0c4d8; }
+		.info .note { color: #ffd700; margin-left: 6px; }
+		.distance { font-size: 0.78rem; color: #7ec8e3; margin-top: 4px; }
+		.tier-header {
+			max-width: 860px;
+			margin: 28px auto 10px;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			color: rgba(255,255,255,0.45);
+		}
+		.tier-header::before, .tier-header::after {
+			content: '';
+			flex: 1;
+			height: 1px;
+			background: rgba(255,255,255,0.12);
+		}
+		.tier-2 .badge { background: rgba(255,200,50,0.2); color: #ffd166; }
+		.tier-2 { border-color: rgba(255,200,50,0.15); }
+		.actions {
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			gap: 8px;
+			flex-shrink: 0;
+		}
+		.wa-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			background: linear-gradient(135deg, #25d366, #128c7e);
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 18px;
+			border-radius: 50px;
+			font-size: 0.9rem;
+			font-weight: 600;
+			box-shadow: 0 4px 15px rgba(37,211,102,0.3);
+			transition: box-shadow 0.2s, transform 0.2s;
+		}
+		.wa-btn:hover {
+			box-shadow: 0 6px 20px rgba(37,211,102,0.5);
+			transform: scale(1.03);
+		}
+		.wa-icon { width: 18px; height: 18px; fill: #fff; }
+		.contacted-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 6px;
+			background: rgba(255,255,255,0.08);
+			border: 1px solid rgba(255,255,255,0.2);
+			color: rgba(255,255,255,0.55);
+			padding: 7px 14px;
+			border-radius: 50px;
+			font-size: 0.8rem;
+			font-weight: 500;
+			cursor: pointer;
+			transition: all 0.2s;
+			font-family: 'Segoe UI', sans-serif;
+		}
+		.contacted-btn:hover {
+			background: rgba(255,255,255,0.14);
+			color: rgba(255,255,255,0.85);
+		}
+		.contacted-icon { font-size: 0.85rem; opacity: 0.5; transition: all 0.2s; }
+		/* Contacted state */
+		.card.contacted {
+			opacity: 0.45;
+			background: rgba(255,255,255,0.03);
+			transform: none !important;
+		}
+		.card.contacted .info .name {
+			text-decoration: line-through;
+			color: rgba(255,255,255,0.5);
+		}
+		.card.contacted .contacted-btn {
+			background: rgba(37,211,102,0.2);
+			border-color: rgba(37,211,102,0.5);
+			color: #25d366;
+			font-weight: 600;
+		}
+		.card.contacted .contacted-icon { opacity: 1; }
+		/* Progress counter */
+		.progress-bar-wrap {
+			max-width: 860px;
+			margin: -16px auto 28px;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+		.progress-track {
+			flex: 1;
+			height: 4px;
+			background: rgba(255,255,255,0.1);
+			border-radius: 4px;
+			overflow: hidden;
+		}
+		.progress-fill {
+			height: 100%;
+			background: linear-gradient(90deg, #25d366, #128c7e);
+			border-radius: 4px;
+			transition: width 0.4s ease;
+			width: 0%;
+		}
+		.progress-label {
+			font-size: 0.78rem;
+			color: rgba(255,255,255,0.45);
+			white-space: nowrap;
+		}
+		footer {
+			text-align: center;
+			margin-top: 36px;
+			font-size: 0.75rem;
+			color: rgba(255,255,255,0.35);
+		}
+		.message-box textarea {
+			width: 100%;
+			background: rgba(255,255,255,0.06);
+			border: 1px solid rgba(255,255,255,0.2);
+			border-radius: 8px;
+			color: #e0f0ff;
+			font-size: 0.95rem;
+			line-height: 1.5;
+			padding: 10px 12px;
+			resize: vertical;
+			min-height: 80px;
+			font-family: 'Segoe UI', sans-serif;
+			outline: none;
+			transition: border-color 0.2s;
+		}
+		.message-box textarea:focus {
+			border-color: rgba(37,211,102,0.6);
+		}
+		.message-hint {
+			font-size: 0.72rem;
+			color: rgba(160,196,216,0.7);
+			margin-top: 6px;
+		}
+		/* QR button */
+		.qr-fab {
+			position: fixed;
+			bottom: 28px;
+			right: 28px;
+			background: linear-gradient(135deg, #2c5364, #203a43);
+			border: 1px solid rgba(255,255,255,0.2);
+			color: #fff;
+			padding: 14px 22px;
+			border-radius: 50px;
+			font-size: 0.95rem;
+			font-weight: 600;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+			transition: transform 0.2s, box-shadow 0.2s;
+			z-index: 100;
+			font-family: 'Segoe UI', sans-serif;
+		}
+		.qr-fab:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(0,0,0,0.5); }
+		/* Modal */
+		.modal-overlay {
+			display: none;
+			position: fixed;
+			inset: 0;
+			background: rgba(0,0,0,0.7);
+			backdrop-filter: blur(6px);
+			z-index: 200;
+			align-items: center;
+			justify-content: center;
+		}
+		.modal-overlay.open { display: flex; }
+		.modal {
+			background: linear-gradient(135deg, #1a2f3a, #243b4a);
+			border: 1px solid rgba(255,255,255,0.15);
+			border-radius: 20px;
+			padding: 32px;
+			max-width: 380px;
+			width: 90%;
+			text-align: center;
+			box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+			position: relative;
+		}
+		.modal h2 { font-size: 1.2rem; margin-bottom: 6px; }
+		.modal p { font-size: 0.82rem; color: #a0c4d8; margin-bottom: 20px; line-height: 1.5; }
+		#qrcode { display: flex; justify-content: center; margin-bottom: 18px; }
+		#qrcode canvas, #qrcode img { border-radius: 12px; border: 6px solid #fff; }
+		.modal-steps {
+			background: rgba(255,255,255,0.06);
+			border-radius: 10px;
+			padding: 12px 16px;
+			text-align: left;
+			font-size: 0.8rem;
+			color: #a0c4d8;
+			line-height: 1.8;
+		}
+		.modal-close {
+			position: absolute;
+			top: 14px; right: 18px;
+			background: none;
+			border: none;
+			color: rgba(255,255,255,0.5);
+			font-size: 1.4rem;
+			cursor: pointer;
+			line-height: 1;
+		}
+		.modal-close:hover { color: #fff; }
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+	<h1>🛒 Norton Bali Computer & Smartphone</h1>
+	<p class="subtitle">Ordered by distance · Click a button to open WhatsApp with message pre-filled</p>
+
+	<div class="progress-bar-wrap">
+		<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+		<div class="progress-label" id="progressLabel">0 / 3 contacted</div>
+	</div>
+
+	<div class="message-box">
+		<h3>Pre-filled WhatsApp Message <span style="color:#25d366">(editable — links update live)</span></h3>
+		<textarea id="msgInput" oninput="updateLinks()">Hello, do you have something like this for my laptop memory? Kingston (or similar but good quality): RAM Kingston Sodimm DDR4 16GB KVR32S22D8/16WP PC3200</textarea>
+		<p class="message-hint">Edit the message above — all WhatsApp buttons update instantly</p>
+	</div>
+
+	<div class="stores-grid" id="storeGrid">
+		
+		<div class="tier-header">Closest to you — Jimbaran / Uluwatu area</div>
+		<div class="card " id="card-1" data-rank="1">
+			<div class="badge">1</div>
+			<div class="info">
+				<div class="name">Norton Bali Computer & Smartphone (Jimbaran)</div>
+				<div class="address">📍 Jl. Uluwatu 2 No.02, Jimbaran, Badung <span class="note">★ Next to McDonald's Jimbaran</span></div>
+				<div class="distance">~5 km from you</div>
+			</div>
+			<div class="actions">
+				<a class="wa-btn" href="https://wa.me/628113979127?text=Hello%2C%20do%20you%20have%20something%20like%20this%20for%20my%20laptop%20memory%3F%20Kingston%20%28or%20similar%20but%20good%20quality%29%3A%20RAM%20Kingston%20Sodimm%20DDR4%2016GB%20KVR32S22D8/16WP%20PC3200" target="_blank" data-idx="1">
+					<svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+					WhatsApp
+				</a>
+				<button class="contacted-btn" onclick="toggleContacted(1)" title="Mark as contacted">
+					<span class="contacted-icon">✓</span>
+					<span class="contacted-label">Contacted</span>
+				</button>
+			</div>
+		</div>
+		<div class="card " id="card-2" data-rank="2">
+			<div class="badge">2</div>
+			<div class="info">
+				<div class="name">Norton Service Center (Jimbaran)</div>
+				<div class="address">📍 Jl. Uluwatu II No.2A, Jimbaran, Badung <span class="note">★ Next to McDonald's Jimbaran</span></div>
+				<div class="distance">~5 km from you</div>
+			</div>
+			<div class="actions">
+				<a class="wa-btn" href="https://wa.me/628224796954?text=Hello%2C%20do%20you%20have%20something%20like%20this%20for%20my%20laptop%20memory%3F%20Kingston%20%28or%20similar%20but%20good%20quality%29%3A%20RAM%20Kingston%20Sodimm%20DDR4%2016GB%20KVR32S22D8/16WP%20PC3200" target="_blank" data-idx="2">
+					<svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+					WhatsApp
+				</a>
+				<button class="contacted-btn" onclick="toggleContacted(2)" title="Mark as contacted">
+					<span class="contacted-icon">✓</span>
+					<span class="contacted-label">Contacted</span>
+				</button>
+			</div>
+		</div>
+		<div class="tier-header">Worth a try — further afield</div>
+		<div class="card tier-2" id="card-3" data-rank="3">
+			<div class="badge">3</div>
+			<div class="info">
+				<div class="name">Norton Bali Computer & Smartphone (Taman Griya)</div>
+				<div class="address">📍 Jalan Danau Batur Raya No 49C, Taman Griya, Badung <span class="note">★ Main store / Store 1</span></div>
+				<div class="distance">~15 km from you</div>
+			</div>
+			<div class="actions">
+				<a class="wa-btn" href="https://wa.me/6285792866013?text=Hello%2C%20do%20you%20have%20something%20like%20this%20for%20my%20laptop%20memory%3F%20Kingston%20%28or%20similar%20but%20good%20quality%29%3A%20RAM%20Kingston%20Sodimm%20DDR4%2016GB%20KVR32S22D8/16WP%20PC3200" target="_blank" data-idx="3">
+					<svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+					WhatsApp
+				</a>
+				<button class="contacted-btn" onclick="toggleContacted(3)" title="Mark as contacted">
+					<span class="contacted-icon">✓</span>
+					<span class="contacted-label">Contacted</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- QR Code floating button -->
+	<button class="qr-fab" onclick="openQR()">
+		<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="3" height="3"/><rect x="19" y="14" width="3" height="3"/><rect x="14" y="19" width="3" height="3"/><rect x="19" y="19" width="3" height="3"/></svg>
+		Open on Phone
+	</button>
+
+	<!-- QR Modal -->
+	<div class="modal-overlay" id="modalOverlay" onclick="closeQROutside(event)">
+		<div class="modal">
+			<button class="modal-close" onclick="closeQR()">×</button>
+			<h2>📱 Open on Your Phone</h2>
+			<p>Make sure your phone is on the <strong>same WiFi</strong> as this laptop, then scan below.</p>
+			<div id="qrcode"></div>
+			<div class="modal-steps">
+				1. Connect phone to same WiFi<br>
+				2. Open your camera app &amp; scan<br>
+				3. Tap store buttons to WhatsApp them directly
+			</div>
+		</div>
+	</div>
+
+	<footer>Generated by Claude Code · Verify phone numbers before visiting · Jimbaran / Badung, Bali</footer>
+
+	<script>
+		const phones = ["628113979127", "628224796954", "6285792866013"];
+		const TOTAL = 3;
+		const STORAGE_KEY = 'wa_contacted_norton_bali_computer___smartphone';
+
+		// ── Contacted toggle ──────────────────────────────────────────
+		function getContacted() {
+			try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); }
+			catch { return []; }
+		}
+
+		function saveContacted(list) {
+			localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+		}
+
+		function toggleContacted(rank) {
+			const list = getContacted();
+			const idx = list.indexOf(rank);
+			if (idx === -1) list.push(rank); else list.splice(idx, 1);
+			saveContacted(list);
+			applyContacted(list);
+		}
+
+		function applyContacted(list) {
+			document.querySelectorAll('.card').forEach(card => {
+				const r = parseInt(card.dataset.rank);
+				const btn = card.querySelector('.contacted-btn .contacted-label');
+				if (list.includes(r)) {
+					card.classList.add('contacted');
+					if (btn) btn.textContent = 'Contacted';
+				} else {
+					card.classList.remove('contacted');
+					if (btn) btn.textContent = 'Contacted';
+				}
+			});
+			const count = list.length;
+			const pct = TOTAL > 0 ? Math.round((count / TOTAL) * 100) : 0;
+			document.getElementById('progressFill').style.width = pct + '%';
+			document.getElementById('progressLabel').textContent = count + ' / ' + TOTAL + ' contacted';
+		}
+
+		// ── WA link updater (wa.me — works on mobile + desktop) ───────
+		function buildWaLink(phone, message) {
+			return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
+		}
+
+		function updateLinks() {
+			const msg = document.getElementById('msgInput').value;
+			document.querySelectorAll('.wa-btn').forEach((btn, i) => {
+				if (phones[i]) btn.href = buildWaLink(phones[i], msg);
+			});
+		}
+
+		// ── QR Code modal ─────────────────────────────────────────────
+		let qrGenerated = false;
+
+		function openQR() {
+			document.getElementById('modalOverlay').classList.add('open');
+			if (!qrGenerated) {
+				new QRCode(document.getElementById('qrcode'), {
+					text: window.location.href,
+					width: 240,
+					height: 240,
+					colorDark: '#000000',
+					colorLight: '#ffffff',
+					correctLevel: QRCode.CorrectLevel.M
+				});
+				qrGenerated = true;
+			}
+		}
+
+		function closeQR() {
+			document.getElementById('modalOverlay').classList.remove('open');
+		}
+
+		function closeQROutside(e) {
+			if (e.target === document.getElementById('modalOverlay')) closeQR();
+		}
+
+		// ── Init ──────────────────────────────────────────────────────
+		applyContacted(getContacted());
+	</script>
+</body>
+</html>
