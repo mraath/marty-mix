@@ -2,7 +2,7 @@
 status: In Progress Dev
 priority: 1
 created: 2026-03-18T00:00
-updated: 2026-03-18T00:00
+updated: 2026-03-20T08:51
 ---
 
 # OPEN-1832 Add Test Case Creation Screen
@@ -156,6 +156,15 @@ Story relationship overview:
 
 ---
 
+## TEST DATA
+
+|     |     |     |         |                          |                     |                            |                 |     |     |
+| --- | --- | --- | ------- | ------------------------ | ------------------- | -------------------------- | --------------- | --- | --- |
+|     |     |     |         | _001 MiX4000 + STM 2.0   | 1646589414582132736 | 19.03.26 1:24 (GMT+08:00)  | 354762110254171 |     |     |
+|     | 2   |     | MiX4000 | _002 Streamax Standalone | 1639409265540190208 | 29.10.25 23:49 (GMT+08:00) | 564113543154535 |     |     |
+|     | 1   |     | MiX4000 | 002 MiX4000 预告片 垃圾车      | 1631447698450665472 |                            |                 |     |     |
+
+---
 ## Branch
 
 > Branch: `Config/MR/Feature/OPEN-1832_TestCaseCreationScreen` (Powerfleet.Automation.UI)
