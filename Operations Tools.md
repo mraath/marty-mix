@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-03-18T00:00
+updated: 2026-03-23T09:09
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -50,11 +50,11 @@ See full context: [[Operations Tools Looking forward 20260316]]
 
 ## Links
 
-| Resource | URL |
-|---|---|
-| Sprint Board | [Sprint Board](https://powerfleet.atlassian.net/jira/software/c/projects/OPEN/boards/7014/backlog) |
-| Kanban | [Kanban](https://powerfleet.atlassian.net/jira/software/c/projects/OPEN/boards/6981) |
-| Repo Overview | [Azure DevOps](https://dev.azure.com/MiXTelematics/OperationsTools) |
+| Resource        | URL                                                                                                                                      |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Sprint Board    | [Sprint Board](https://powerfleet.atlassian.net/jira/software/c/projects/OPEN/boards/7014/backlog)                                       |
+| Kanban          | [Kanban](https://powerfleet.atlassian.net/jira/software/c/projects/OPEN/boards/6981)                                                     |
+| Repo Overview   | [Azure DevOps](https://dev.azure.com/MiXTelematics/OperationsTools)                                                                      |
 | Repo Dev Branch | [development](https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation?path=%2F&version=GBdevelopment&_a=contents) |
 
 ---

@@ -2,7 +2,7 @@
 status: In Progress Dev
 priority: 1
 created: 2026-03-18T00:00
-updated: 2026-03-20T08:59
+updated: 2026-03-20T10:13
 ---
 
 # OPEN-1832 Add Test Case Creation Screen
@@ -161,7 +161,7 @@ Story relationship overview:
 ```
 [
   {
-    "AssetId": 1639409265540190208
+    "AssetId": 1631447698450665472
   }
 ]
 ```
