@@ -2,7 +2,7 @@
 status: In Progress Dev
 priority: 1
 created: 2026-03-18T00:00
-updated: 2026-03-20T10:13
+updated: 2026-03-27T09:26
 ---
 
 # OPEN-1832 Add Test Case Creation Screen
@@ -177,6 +177,14 @@ RESULT:
 ```
 504 Gateway Time-out
 ```
+
+
+## Local Test >INT
+
+### Swagger works
+
+![[Pasted image 20260327092628.png]]
+
 
 
 ---
