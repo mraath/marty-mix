@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-03-30T16:08
+updated: 2026-03-30T16:30
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -27,7 +27,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] Verify all open tickets are in the correct status on the sprint board
 - [ ] **Answer all open questions on [OPEN-1832](https://powerfleet.atlassian.net/browse/OPEN-1832)** — boss flagged this as ready to tackle (2026-03-18)
 - [ ] **Determine if [OPEN-1744](https://powerfleet.atlassian.net/browse/OPEN-1744) is still valid** — boss questions whether it has been superseded by OPEN-1832 (2026-03-18)
-- [ ] **Close the new diff test ticket** — ⚠️ confirm ticket number first
+- [x] **OPEN-1832 already closed** — confirmed Done in Jira ✅
 - [ ] **Pick up OPEN-1842 and OPEN-1843** — move to In Progress Dev
 - [ ] **Create tickets** for: S3 persistence, Paperclip setup, WhatsApp→API, Central agent server, AWS ZA + 2nd region, Chatbot config-fix feature, Chatbot OpenAI keys
 - [ ] **Confirm with William** which four stories he created for you
@@ -76,6 +76,10 @@ See full context: [[Operations Tools Looking forward 20260316]]
 | [OPEN-1788](https://powerfleet.atlassian.net/browse/OPEN-1788) | [[OPEN-1788 Add AI ChatBot Panel to the Configuration Delta Tool\|AI ChatBot Panel — Config Delta Tool]] | Ready for QA ★(3) | Branch: `Config/MR/Feature/OPEN-1788_AIChatBotPanel` |
 | [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) | Investigate and Optimise Token Usage in AI ChatBot | Ready for Sprint | — |
 | [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) | Enhance AI ChatBot Follow-Up Question Generation | Ready for Sprint | — |
+| [OPEN-1913](https://powerfleet.atlassian.net/browse/OPEN-1913) | UI - Bootstrap Vitest and React Testing Library | Ready for Grooming | Grant — test setup foundation |
+| [OPEN-1914](https://powerfleet.atlassian.net/browse/OPEN-1914) | UI - Add seed unit tests for core service and utility logic | Ready for Grooming | Grant — depends on OPEN-1913 |
+| [OPEN-1915](https://powerfleet.atlassian.net/browse/OPEN-1915) | UI - Add mandatory test stage to Azure pipeline | Ready for Grooming | Grant — depends on OPEN-1913 |
+| [OPEN-1916](https://powerfleet.atlassian.net/browse/OPEN-1916) | UI - Enforce test coverage on commit via Husky pre-commit hook | Ready for Grooming | Grant — depends on OPEN-1913 |
 | [OPEN-1741](https://powerfleet.atlassian.net/browse/OPEN-1741) | Display item descriptions instead of raw IDs in all comparison views | Ready for QA | — |
 | [OPEN-1742](https://powerfleet.atlassian.net/browse/OPEN-1742) | Add a summary dashboard panel to comparison results showing asset counts and per-section drift counts | Ready for QA | — |
 | [OPEN-1743](https://powerfleet.atlassian.net/browse/OPEN-1743) | Exclude LastConfig, LastIMEI, and LastIMSI from configuration comparisons against the fleet standard | Ready for QA | — |
@@ -98,6 +102,10 @@ See full context: [[Operations Tools Looking forward 20260316]]
 | [OPEN-1300](https://powerfleet.atlassian.net/browse/OPEN-1300) | Add CAN peripheral, speed source, and RPM source checks to QC Automation | Committed | Boss |
 | [OPEN-1607](https://powerfleet.atlassian.net/browse/OPEN-1607) | Add odometer vs trip distance consistency check to QC Automation | Committed | Boss |
 | [OPEN-1800](https://powerfleet.atlassian.net/browse/OPEN-1800) | Enforce naming convention consistency across Powerfleet.Automation API - controllers, routes, and managers | In Progress QA | May cause minor UI impact |
+| [OPEN-1928](https://powerfleet.atlassian.net/browse/OPEN-1928) | Create Azure CI/CD pipeline for Powerfleet.Automation (ZA) | Ready for Sprint | Grant — API ZA pipeline |
+| [OPEN-1929](https://powerfleet.atlassian.net/browse/OPEN-1929) | Create Azure CI/CD pipeline for Powerfleet.Automation (ENT) | Ready for Sprint | Grant — API ENT pipeline |
+| [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA) | Ready for Sprint | Grant — UI ZA pipeline |
+| [OPEN-1931](https://powerfleet.atlassian.net/browse/OPEN-1931) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ENT) | Ready for Sprint | Grant — UI ENT pipeline |
 
 ---
 
@@ -145,9 +153,9 @@ Items captured this session. Tickets still to be created unless noted.
 - **Status**: 🎫 Ticket needed
 - **Reference**: [[Research/Claude Agent Server]]
 
-### 6. Two New AWS Environment Setups
-- **What**: Deploy Powerfleet Automation to ZA + one other region (⚠️ second region TBC)
-- **Status**: 🎫 Tickets needed (one per region)
+### 6. Two New AWS Environment Setups — ZA + ENT
+- **What**: Deploy Powerfleet Automation to ZA and ENT regions. CI/CD pipeline stories already created by Grant (OPEN-1928–1931). AWS infrastructure setup still needed.
+- **Status**: CI/CD tickets exist (Ready for Sprint). AWS infra tickets still needed.
 - **Reference**: [[Automation Infrastructure Setup Guide]], [[Global_Deployment_Guide]]
 
 ### 7. Chatbot: Config Fix Suggestions
@@ -156,16 +164,19 @@ Items captured this session. Tickets still to be created unless noted.
 - **Note**: Big value-add — needs API write endpoint to apply suggestions
 
 ### 8. Chatbot: OpenAI Keys
-- **What**: Ensure OpenAI keys are set in ECS task definitions across environments
-- **Status**: ⚠️ Clarify — is this about INT setup (done today) or additional work?
+- **What**: Ensure all AI keys (`OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `GROQ_API_KEY`, `OPENAI_API_TYPE`, `OPENAI_API_BASE`, `OPENAI_API_VERSION`, `OPENAI_DEPLOYMENT_NAME`, `OPENAI_API_KEY`) are set in the ECS task definition for every environment deployed
+- **Status**: ✅ Process captured — see AWS Regional Deployment Skill → Step 9. No separate ticket needed; this is a deployment checklist item.
 
-### 9. Four Stories from William
-- **Status**: ⚠️ Confirm ticket numbers with William
-- **Note**: Not yet known — ask William which four stories he assigned
+### 9. Four UI Test Stories from Grant
+- [OPEN-1913](https://powerfleet.atlassian.net/browse/OPEN-1913) — UI - Bootstrap Vitest and React Testing Library
+- [OPEN-1914](https://powerfleet.atlassian.net/browse/OPEN-1914) — UI - Add seed unit tests for core service and utility logic
+- [OPEN-1915](https://powerfleet.atlassian.net/browse/OPEN-1915) — UI - Add mandatory test stage to Azure pipeline
+- [OPEN-1916](https://powerfleet.atlassian.net/browse/OPEN-1916) — UI - Enforce test coverage on commit via Husky pre-commit hook
+- **Status**: All Ready for Grooming. OPEN-1913 is the foundation — others depend on it.
 
-### 10. Close New Diff Test Ticket
-- **Status**: ⚠️ Confirm ticket number, then close
-- **Note**: Reminder — do not forget to close this out
+### 10. Close OPEN-1832
+- **What**: Add test case creation screen to the Config Change Analysis Tool UI
+- **Status**: ✅ Already marked **Done** in Jira — nothing to do.
 
 ---
 
