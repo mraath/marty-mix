@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-03-23T09:09
+updated: 2026-03-30T16:08
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -27,6 +27,10 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [ ] Verify all open tickets are in the correct status on the sprint board
 - [ ] **Answer all open questions on [OPEN-1832](https://powerfleet.atlassian.net/browse/OPEN-1832)** — boss flagged this as ready to tackle (2026-03-18)
 - [ ] **Determine if [OPEN-1744](https://powerfleet.atlassian.net/browse/OPEN-1744) is still valid** — boss questions whether it has been superseded by OPEN-1832 (2026-03-18)
+- [ ] **Close the new diff test ticket** — ⚠️ confirm ticket number first
+- [ ] **Pick up OPEN-1842 and OPEN-1843** — move to In Progress Dev
+- [ ] **Create tickets** for: S3 persistence, Paperclip setup, WhatsApp→API, Central agent server, AWS ZA + 2nd region, Chatbot config-fix feature, Chatbot OpenAI keys
+- [ ] **Confirm with William** which four stories he created for you
 
 ---
 
@@ -70,6 +74,8 @@ See full context: [[Operations Tools Looking forward 20260316]]
 | [OPEN-1832](https://powerfleet.atlassian.net/browse/OPEN-1832) | [[OPEN-1832 Add Test Case Creation Screen\|Add test case creation screen]] | In Progress Dev ★(1) | Branch: `Config/MR/Feature/OPEN-1832_TestCaseCreationScreen`. Open questions answered. **Subticket needed:** S3 integration for `standard.json` file browsing (standards hosted in S3 bucket, selectable from modal). Currently using local `data/testCase/` and `data/standards/` as file sources. |
 | [OPEN-1744](https://powerfleet.atlassian.net/browse/OPEN-1744) | Allow the user to select the standard and the assets that need to be compared against it. | Ready for Grooming ★(2) | ⚠️ **Validity in question** — boss asks if this has been superseded by OPEN-1832. Review before picking up. |
 | [OPEN-1788](https://powerfleet.atlassian.net/browse/OPEN-1788) | [[OPEN-1788 Add AI ChatBot Panel to the Configuration Delta Tool\|AI ChatBot Panel — Config Delta Tool]] | Ready for QA ★(3) | Branch: `Config/MR/Feature/OPEN-1788_AIChatBotPanel` |
+| [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) | Investigate and Optimise Token Usage in AI ChatBot | Ready for Sprint | — |
+| [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) | Enhance AI ChatBot Follow-Up Question Generation | Ready for Sprint | — |
 | [OPEN-1741](https://powerfleet.atlassian.net/browse/OPEN-1741) | Display item descriptions instead of raw IDs in all comparison views | Ready for QA | — |
 | [OPEN-1742](https://powerfleet.atlassian.net/browse/OPEN-1742) | Add a summary dashboard panel to comparison results showing asset counts and per-section drift counts | Ready for QA | — |
 | [OPEN-1743](https://powerfleet.atlassian.net/browse/OPEN-1743) | Exclude LastConfig, LastIMEI, and LastIMSI from configuration comparisons against the fleet standard | Ready for QA | — |
@@ -104,6 +110,62 @@ Boss made the following fixes and self-approved the PR. Relevant context for INT
 - `Positions` → `LatestPositions`; `Events` → `EventsSince`; `Trips` → `TripsSince`
 - `GetSinceAsync` has known perf issues with large datasets — **note for QBR/analytics sprint**
 - Future: `HelperManager` refactor story to be created — config-driven loading
+
+---
+
+## Sprint Intake — 2026-03-30
+
+Items captured this session. Tickets still to be created unless noted.
+
+### 1. Paperclip — UI Agentic Development Setup
+- **What**: Set up [paperclipai/paperclip](https://github.com/paperclipai/paperclip) — open-source orchestration for zero-human companies
+- **Reference**: [YouTube demo](https://youtu.be/HJ-dwefABss?si=0RbaGBod88kRzhYz)
+- **Status**: 🎫 Ticket needed
+- **Note**: Evaluate for agentic UI development workflow integration
+
+### 2. S3 Persistence — Diff/Cases Runtime Files
+- **What**: Files written at runtime (`cases/`, `diff.json`) live only in container memory — lost on every ECS task restart. Need S3 (or EFS) for persistence.
+- **Scope**: API ticket + UI ticket + deploy to PROD in future. Diff Test also affected.
+- **Status**: 🎫 Tickets needed (API + UI + infra)
+- **Note**: Confirm the feature works first before tackling persistence architecture (as per 2026-03-30 note)
+
+### 3. ChatBot Token + Follow-Up Improvements *(Existing Tickets)*
+- [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) — Investigate and Optimise Token Usage in AI ChatBot
+- [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) — Enhance AI ChatBot Follow-Up Question Generation
+- **Status**: Ready for Sprint → move to In Progress Dev when picking up
+
+### 4. WhatsApp → API Call
+- **What**: Trigger an API endpoint via WhatsApp message (n8n or similar)
+- **Status**: 🎫 Ticket needed
+- **Reference**: [[Research/WhatsApp to API via n8n]] — Discord as test phase, Meta WhatsApp Cloud API for prod
+- **Note**: Scope and target endpoint TBD
+
+### 5. Dedicated Central Agent Server
+- **What**: Centralized Claude/AI agent server for team use (token centralization, fire-and-forget tasks)
+- **Status**: 🎫 Ticket needed
+- **Reference**: [[Research/Claude Agent Server]]
+
+### 6. Two New AWS Environment Setups
+- **What**: Deploy Powerfleet Automation to ZA + one other region (⚠️ second region TBC)
+- **Status**: 🎫 Tickets needed (one per region)
+- **Reference**: [[Automation Infrastructure Setup Guide]], [[Global_Deployment_Guide]]
+
+### 7. Chatbot: Config Fix Suggestions
+- **What**: Chatbot analyses config diff and *proposes* fixes (e.g. "reset X to Y") — user approves → config improves
+- **Status**: 🎫 Ticket needed (new feature story)
+- **Note**: Big value-add — needs API write endpoint to apply suggestions
+
+### 8. Chatbot: OpenAI Keys
+- **What**: Ensure OpenAI keys are set in ECS task definitions across environments
+- **Status**: ⚠️ Clarify — is this about INT setup (done today) or additional work?
+
+### 9. Four Stories from William
+- **Status**: ⚠️ Confirm ticket numbers with William
+- **Note**: Not yet known — ask William which four stories he assigned
+
+### 10. Close New Diff Test Ticket
+- **Status**: ⚠️ Confirm ticket number, then close
+- **Note**: Reminder — do not forget to close this out
 
 ---
 
