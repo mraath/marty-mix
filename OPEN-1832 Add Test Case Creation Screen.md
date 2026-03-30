@@ -2,7 +2,7 @@
 status: In Progress Dev
 priority: 1
 created: 2026-03-18T00:00
-updated: 2026-03-27T09:57
+updated: 2026-03-30T13:37
 ---
 
 # OPEN-1832 Add Test Case Creation Screen
@@ -197,6 +197,11 @@ RESULT:
 > Branch: `Config/MR/Feature/OPEN-1832_TestCaseCreationScreen` (Powerfleet.Automation.UI)
 
 ---
+
+## Urls
+
+https://automation-api.mixdevelopment.com/swagger/index.html 
+https://automation.mixdevelopment.com/
 
 ## PR Checklist
 
