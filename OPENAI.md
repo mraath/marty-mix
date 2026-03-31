@@ -1,9 +1,10 @@
 ---
 created: 2026-03-31T16:48
-updated: 2026-03-31T16:52
+updated: 2026-03-31T16:57
 ---
 [https://aura-ai-assistant-prod-eu.openai.azure.com/](https://aura-ai-assistant-prod-eu.openai.azure.com/ "https://aura-ai-assistant-prod-eu.openai.azure.com/")  
 AZURE_OPENAI_KEY_PROD_1_REDACTED   
+
 AZURE_OPENAI_KEY_PROD_2_REDACTED 
 
 Daai is 2 api keys wat jy op dieselfde url kan gebruik 
