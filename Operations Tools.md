@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-01T16:33
+updated: 2026-04-01T16:34
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -255,6 +255,10 @@ I have signed in on SAML for you to use AWS CLI
 
 
 ```
+ENT
+365528985733
+
+
 ```
 
 
