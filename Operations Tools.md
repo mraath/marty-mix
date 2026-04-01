@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-01T15:54
+updated: 2026-04-01T16:33
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -225,6 +225,22 @@ Items captured this session. Tickets still to be created unless noted.
 ## TEMP NOTE
 
 ```
+OK - in the Terminal I ran: SAML2aws login -a AU --force  
+This is to login to AU  
+HOWEVER I need to log into ZA  
+Could you create me another shortcut command like this  
+But to go into ZA  
+668736068906  
+Ireland
+
+eu-west-1  
+  
+And you can check where  
+ZA-Config  
+IS set up as a cluster - OK - lets first wait here - and then continue with the rest - lets first get that login shortcut
+
+---
+
 Setting up ZA on AWS for our Automation API and Automation UI.  
   
 PLease use this skill:  
@@ -235,6 +251,10 @@ At the end (or as part of the above) you also have to set tags
 C:\Projects\Skills\aws-tag-powerfleet-automation.md  
   
 I have signed in on SAML for you to use AWS CLI
+```
+
+
+```
 ```
 
 
