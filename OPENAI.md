@@ -1,6 +1,6 @@
 ---
 created: 2026-03-31T16:48
-updated: 2026-03-31T16:57
+updated: 2026-04-01T07:49
 ---
 [https://aura-ai-assistant-prod-eu.openai.azure.com/](https://aura-ai-assistant-prod-eu.openai.azure.com/ "https://aura-ai-assistant-prod-eu.openai.azure.com/")  
 AZURE_OPENAI_KEY_PROD_1_REDACTED   
@@ -22,3 +22,9 @@ So ek vermoed dit is die model wat jy moet gebruik. hier is die ander een: 
 "Endpoint": "[https://aura-ai-assistant-int-eu.openai.azure.com/"](https://aura-ai-assistant-int-eu.openai.azure.com/%22 "https://aura-ai-assistant-int-eu.openai.azure.com/%22"),  
 "ApiKey": "AZURE_OPENAI_KEY_INT_REDACTED",  
 "DeploymentName": "gpt-4.1"
+
+```
+"Endpoint": "https://aura-ai-assistant-int-eu.openai.azure.com/",  
+"ApiKey": "xxxxxxxxxx",  
+"DeploymentName": "gpt-4.1"
+```

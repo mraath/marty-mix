@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-03-30T16:30
+updated: 2026-04-01T15:54
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -221,6 +221,22 @@ Items captured this session. Tickets still to be created unless noted.
 - [OPEN-1631](https://powerfleet.atlassian.net/browse/OPEN-1631) — Develop and Implement tools to increase efficiency (Epic) 🔄 Formulating
 
 ---
+
+## TEMP NOTE
+
+```
+Setting up ZA on AWS for our Automation API and Automation UI.  
+  
+PLease use this skill:  
+C:\Projects\Skills\.agent\skills\aws-regional-deployment-skill\SKILL.md  
+  
+To setup ZA  
+At the end (or as part of the above) you also have to set tags  
+C:\Projects\Skills\aws-tag-powerfleet-automation.md  
+  
+I have signed in on SAML for you to use AWS CLI
+```
+
 
 ## Examples & Reference
 
