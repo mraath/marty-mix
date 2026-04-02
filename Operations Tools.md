@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-01T16:56
+updated: 2026-04-02T13:27
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -251,6 +251,16 @@ At the end (or as part of the above) you also have to set tags
 C:\Projects\Skills\aws-tag-powerfleet-automation.md  
   
 I have signed in on SAML for you to use AWS CLI
+
+---
+
+If I am not mistaken for AU, we used the following public facing urls....
+For AUtomation UI:
+https://automation-au.mixtelematics.com/
+For Automation API:
+https://automation-api-au.mixtelematics.com/
+
+If you could follow the same pattern it would be great
 ```
 
 
