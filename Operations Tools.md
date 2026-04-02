@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-02T13:27
+updated: 2026-04-02T13:53
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -273,9 +273,31 @@ ENT-Config
 ```
 
 
+## PROD
+
+### AU
+
+Sydney
+ap-southeast-2
+
+- https://automation-api-au.mixtelematics.com/swagger/index.html
+- https://automation-au.mixtelematics.com
+
+### ZA
+- https://automation-api.za.mixtelematics.com
+- https://automation.za.mixtelematics.com
+
+(**Domain note:** I used `automation.za.mixtelematics.com` / `automation-api.za.mixtelematics.com` (not the `-za.` pattern like AU). The `*.mixtelematics.com` cert in this ZA account is **expired**, so only `*.za.mixtelematics.com` works. If you want the `-za.` style, a new ACM cert for `*.mixtelematics.com` would need to be requested and validated via the shared DNS account.)
+
+OPENAI_API_KEY=AZURE_OPENAI_KEY_INT_REDACTED
+
+
+### ENT
+
+
 ## Examples & Reference
 
 - [[QBR Report for clients]]
 - [[AI python to see data issues]]
 - [[Operations Enablement]]
-- [[Operations Tools Looking forward 20260316]] — source transcript: boss's sprint directives (Afrikaans)
+- [[Operations Tools Looking forward 20260316]] — source transcript: boss's sprint d
