@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-02T14:00
+updated: 2026-04-02T14:09
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -314,6 +314,23 @@ aws ecs update-service --cluster ZA-Config --service za-powerfleet-automation-ui
 **3. Add OPENAI_API_KEY** — Via console: ECS → Task Definitions → `za-powerfleet-automation-ui` → Create new revision → add the key → update the service to use it.
 
 **Domain note:** I used `automation.za.mixtelematics.com` / `automation-api.za.mixtelematics.com` (not the `-za.` pattern like AU). The `*.mixtelematics.com` cert in this ZA account is **expired**, so only `*.za.mixtelematics.com` works. If you want the `-za.` style, a new ACM cert for `*.mixtelematics.com` would need to be requested and validated via the shared DNS account.
+
+**To fix it**, sign into the AU AWS account and do this via console:
+
+1. ECS → Task Definitions → `au-powerfleet-automation-ui` → latest revision → **Create new revision**
+2. Click the container → Environment variables, ensure all 5 are set:
+
+|Key|Value|
+|---|---|
+|`OPENAI_API_TYPE`|`azure`|
+|`OPENAI_API_BASE`|`https://aura-ai-assistant-int-eu.openai.azure.com/`|
+|`OPENAI_API_VERSION`|`2024-08-01-preview`|
+|`OPENAI_DEPLOYMENT_NAME`|`gpt-4.1`|
+|`OPENAI_API_KEY`|_(the key)_|
+
+3. Save revision → update the `au-powerfleet-automation-ui` service to use the new revision.
+
+> **Note:** The `OPENAI_API_BASE` above is the INT/EU endpoint — double-check AU has its own Azure OpenAI resource or if it shares the EU one, as that affects which key to use.
 
 
 ## Examples & Reference
