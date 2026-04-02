@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-02T13:53
+updated: 2026-04-02T14:00
 ---
 
 > [!Information] Writing tools to make the clients' lives easier.
@@ -277,6 +277,7 @@ ENT-Config
 
 ### AU
 
+
 Sydney
 ap-southeast-2
 
@@ -289,10 +290,30 @@ ap-southeast-2
 
 (**Domain note:** I used `automation.za.mixtelematics.com` / `automation-api.za.mixtelematics.com` (not the `-za.` pattern like AU). The `*.mixtelematics.com` cert in this ZA account is **expired**, so only `*.za.mixtelematics.com` works. If you want the `-za.` style, a new ACM cert for `*.mixtelematics.com` would need to be requested and validated via the shared DNS account.)
 
+**Add OPENAI_API_KEY** — Via console: ECS → Task Definitions → `za-powerfleet-automation-ui` → Create new revision → add the key → update the service to use it.
+
 OPENAI_API_KEY=AZURE_OPENAI_KEY_INT_REDACTED
 
 
 ### ENT
+
+
+## What you still need to do
+
+**1. Route 53 DNS** — The `mixtelematics.com` zone is not in this AWS account. Ask your DNS/infra team to create two A-record aliases pointing to `ZA-Config-ExternalALB-977038863.eu-west-1.elb.amazonaws.com` (hosted zone `Z32O12XQLNTSW2`):
+
+- `automation-api.za.mixtelematics.com`
+- `automation.za.mixtelematics.com`
+
+**2. Rebuild the UI Docker image** — The `api-urls.ts` fix I made is in source only. The DEV image currently deployed doesn't have it, so the ZA UI will route API calls to the wrong URL. You need to build + push a new image to `668736068906.dkr.ecr.eu-west-1.amazonaws.com/za-powerfleet-automation-ui:latest`, then force a redeployment:
+
+```bash
+aws ecs update-service --cluster ZA-Config --service za-powerfleet-automation-ui --force-new-deployment --region eu-west-1
+```
+
+**3. Add OPENAI_API_KEY** — Via console: ECS → Task Definitions → `za-powerfleet-automation-ui` → Create new revision → add the key → update the service to use it.
+
+**Domain note:** I used `automation.za.mixtelematics.com` / `automation-api.za.mixtelematics.com` (not the `-za.` pattern like AU). The `*.mixtelematics.com` cert in this ZA account is **expired**, so only `*.za.mixtelematics.com` works. If you want the `-za.` style, a new ACM cert for `*.mixtelematics.com` would need to be requested and validated via the shared DNS account.
 
 
 ## Examples & Reference
@@ -300,4 +321,4 @@ OPENAI_API_KEY=AZURE_OPENAI_KEY_INT_REDACTED
 - [[QBR Report for clients]]
 - [[AI python to see data issues]]
 - [[Operations Enablement]]
-- [[Operations Tools Looking forward 20260316]] — source transcript: boss's sprint d
+- [[Operations Tools Looking forward 20260316]] — source transcript: boss's sprint directives (Afrikaans)
