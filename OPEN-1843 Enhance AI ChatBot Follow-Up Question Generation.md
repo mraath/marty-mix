@@ -2,7 +2,7 @@
 status: In Progress Dev
 priority: 1
 created: 2026-04-07T00:00
-updated: 2026-04-07T00:00
+updated: 2026-04-08T07:36
 ---
 
 # OPEN-1843 Enhance AI ChatBot Follow-Up Question Generation
@@ -77,6 +77,10 @@ Four intent categories to drive question brainstorming:
 - `root-cause` — why did this change happen
 - `remediation` — how to fix/align the config
 - `impact` — operational consequences of the change
+
+## Test on INT
+
+![[Pasted image 20260408073618.png]]
 
 ## Branch
 
