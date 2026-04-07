@@ -1,6 +1,6 @@
 ---
 created: 2026-04-07T07:45
-updated: 2026-04-07T08:15
+updated: 2026-04-07T08:17
 ---
 
 created: 2026-04-07T07:45
@@ -48,7 +48,7 @@ MiX-DevOpsAdmin
 
 ## SERVER
 
-Account: mixenterprise (522301445307)
+Account: mixenterprise (522301445307) ==ENT==
 MiX-DevOpsAdmin
 MiX-Support
 
