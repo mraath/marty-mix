@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-08T10:00
+updated: 2026-04-08T14:31
 ---
 > [!Information] Writing tools to make the clients' lives easier.
 
@@ -76,6 +76,7 @@ See full context: [[Operations Tools Looking forward 20260316]]
 | [OPEN-1929](https://powerfleet.atlassian.net/browse/OPEN-1929) | Create Azure CI/CD pipeline for Powerfleet.Automation (ENT)    | **Done** ✅ |                                         |
 | [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA)  | **Done** ✅ |                                         |
 | [OPEN-1931](https://powerfleet.atlassian.net/browse/OPEN-1931) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ENT) | **Done** ✅ |                                         |
+| [OPEN-2013](https://powerfleet.atlassian.net/browse/OPEN-2013) | Production Branch & Auto-Deploy Pipeline for Automation API and UI | **In Progress Dev** 🔨 | [[OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI]] |
 
 ### Grant's Tickets (Needs QA)
 
