@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-07T10:31
+updated: 2026-04-08T10:00
 ---
 > [!Information] Writing tools to make the clients' lives easier.
 
@@ -22,7 +22,7 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
 - [X] **Review OPEN-1928–1931** (CI/CD pipelines) — all are now **Ready for Review**, approve or merge
-- [ ] **Pick up OPEN-1842 and OPEN-1843** — both Committed, move to In Progress Dev and start work
+- [X] **Pick up OPEN-1842 and OPEN-1843** — both In Progress Dev ✅
 - [X] **QA sign-off on OPEN-1913, 1914, 1916** (Grant's test stories) — all Ready for QA
 - [ ] **Create tickets** for: S3 persistence, Paperclip setup, WhatsApp→API, Central agent server, Chatbot config-fix feature
 - [X] **OPEN-1800 naming convention** — Done ✅ (no UI impact action needed)
@@ -72,23 +72,30 @@ See full context: [[Operations Tools Looking forward 20260316]]
 | ----------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------- | --------------------------------------- |
 | [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) | Investigate and Optimise Token Usage in AI ChatBot             | **Committed** ⚡        | Pick up next — move to In Progress Dev |
 | [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) | Enhance AI ChatBot Follow-Up Question Generation               | **In Progress Dev** 🔨  | [[OPEN-1843 Enhance AI ChatBot Follow-Up Question Generation]] |
-| [OPEN-1928](https://powerfleet.atlassian.net/browse/OPEN-1928) | Create Azure CI/CD pipeline for Powerfleet.Automation (ZA)     | **Ready for Review** 👀 | Needs review/approval                   |
-| [OPEN-1929](https://powerfleet.atlassian.net/browse/OPEN-1929) | Create Azure CI/CD pipeline for Powerfleet.Automation (ENT)    | **Ready for Review** 👀 | Needs review/approval                   |
-| [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA)  | **Ready for Review** 👀 | Needs review/approval                   |
-| [OPEN-1931](https://powerfleet.atlassian.net/browse/OPEN-1931) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ENT) | **Ready for Review** 👀 | Needs review/approval                   |
+| [OPEN-1928](https://powerfleet.atlassian.net/browse/OPEN-1928) | Create Azure CI/CD pipeline for Powerfleet.Automation (ZA)     | **Done** ✅ |                                         |
+| [OPEN-1929](https://powerfleet.atlassian.net/browse/OPEN-1929) | Create Azure CI/CD pipeline for Powerfleet.Automation (ENT)    | **Done** ✅ |                                         |
+| [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA)  | **Done** ✅ |                                         |
+| [OPEN-1931](https://powerfleet.atlassian.net/browse/OPEN-1931) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ENT) | **Done** ✅ |                                         |
 
 ### Grant's Tickets (Needs QA)
 
 | Ticket                                                      | Summary                                                        | Status                 | Note                       |
 | ----------------------------------------------------------- | -------------------------------------------------------------- | ---------------------- | -------------------------- |
-| [OPEN-1913](https://powerfleet.atlassian.net/browse/OPEN-1913) | UI - Bootstrap Vitest and React Testing Library                | **Ready for QA** | Foundation for 1914 + 1916 |
-| [OPEN-1914](https://powerfleet.atlassian.net/browse/OPEN-1914) | UI - Add seed unit tests for core service and utility logic    | **Ready for QA** | Depends on OPEN-1913       |
-| [OPEN-1916](https://powerfleet.atlassian.net/browse/OPEN-1916) | UI - Enforce test coverage on commit via Husky pre-commit hook | **Ready for QA** | Depends on OPEN-1913       |
+| [OPEN-1913](https://powerfleet.atlassian.net/browse/OPEN-1913) | UI - Bootstrap Vitest and React Testing Library                | **Done** ✅ | Foundation for 1914 + 1916 |
+| [OPEN-1914](https://powerfleet.atlassian.net/browse/OPEN-1914) | UI - Add seed unit tests for core service and utility logic    | **Done** ✅ | Depends on OPEN-1913       |
+| [OPEN-1916](https://powerfleet.atlassian.net/browse/OPEN-1916) | UI - Enforce test coverage on commit via Husky pre-commit hook | **Done** ✅ | Depends on OPEN-1913       |
 
 ### Recently Done (this sprint)
 
 | Ticket                                                      | Summary                                               | Assignee                                 |
 | ----------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------- |
+| [OPEN-1928](https://powerfleet.atlassian.net/browse/OPEN-1928) | Create Azure CI/CD pipeline for Powerfleet.Automation (ZA)     | Marthinus                                |
+| [OPEN-1929](https://powerfleet.atlassian.net/browse/OPEN-1929) | Create Azure CI/CD pipeline for Powerfleet.Automation (ENT)    | Marthinus                                |
+| [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA)  | Marthinus                                |
+| [OPEN-1931](https://powerfleet.atlassian.net/browse/OPEN-1931) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ENT) | Marthinus                                |
+| [OPEN-1913](https://powerfleet.atlassian.net/browse/OPEN-1913) | UI - Bootstrap Vitest and React Testing Library                 | Grant                                    |
+| [OPEN-1914](https://powerfleet.atlassian.net/browse/OPEN-1914) | UI - Add seed unit tests for core service and utility logic     | Grant                                    |
+| [OPEN-1916](https://powerfleet.atlassian.net/browse/OPEN-1916) | UI - Enforce test coverage on commit via Husky pre-commit hook  | Grant                                    |
 | [OPEN-1832](https://powerfleet.atlassian.net/browse/OPEN-1832) | Add test case creation screen                         | Marthinus                                |
 | [OPEN-1788](https://powerfleet.atlassian.net/browse/OPEN-1788) | AI ChatBot Panel — Config Delta Tool                 | Marthinus                                |
 | [OPEN-1741](https://powerfleet.atlassian.net/browse/OPEN-1741) | Display item descriptions instead of raw IDs          | Marthinus                                |
