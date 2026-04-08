@@ -1,6 +1,6 @@
 ---
 created: 2026-04-07T07:45
-updated: 2026-04-07T08:17
+updated: 2026-04-08T11:58
 ---
 
 created: 2026-04-07T07:45
@@ -38,7 +38,7 @@ MiX-Support
 
 ## SERVER
 
-Account: mixdevelopment (601704920959)
+Account: mixdevelopment (601704920959) ==DEV== & ==INT==
 MiX-DevOpsAdmin
 
 ## SERVER
