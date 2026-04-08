@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-08T14:31
+updated: 2026-04-08T16:02
 ---
 > [!Information] Writing tools to make the clients' lives easier.
 
@@ -70,13 +70,13 @@ See full context: [[Operations Tools Looking forward 20260316]]
 
 | Ticket                                                      | Summary                                                        | Status                        | Note                                    |
 | ----------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------- | --------------------------------------- |
-| [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) | Investigate and Optimise Token Usage in AI ChatBot             | **Committed** ⚡        | Pick up next — move to In Progress Dev |
+| [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) | Investigate and Optimise Token Usage in AI ChatBot             | **In Progress Dev** 🔨 | [[OPEN-1842 Investigate and Optimise Token Usage in AI ChatBot]] |
 | [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) | Enhance AI ChatBot Follow-Up Question Generation               | **In Progress Dev** 🔨  | [[OPEN-1843 Enhance AI ChatBot Follow-Up Question Generation]] |
 | [OPEN-1928](https://powerfleet.atlassian.net/browse/OPEN-1928) | Create Azure CI/CD pipeline for Powerfleet.Automation (ZA)     | **Done** ✅ |                                         |
 | [OPEN-1929](https://powerfleet.atlassian.net/browse/OPEN-1929) | Create Azure CI/CD pipeline for Powerfleet.Automation (ENT)    | **Done** ✅ |                                         |
 | [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA)  | **Done** ✅ |                                         |
 | [OPEN-1931](https://powerfleet.atlassian.net/browse/OPEN-1931) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ENT) | **Done** ✅ |                                         |
-| [OPEN-2013](https://powerfleet.atlassian.net/browse/OPEN-2013) | Production Branch & Auto-Deploy Pipeline for Automation API and UI | **In Progress Dev** 🔨 | [[OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI]] |
+| [OPEN-2013](https://powerfleet.atlassian.net/browse/OPEN-2013) | Production Branch & Auto-Deploy Pipeline for Automation API and UI | **Ready for Review** 🏁 | [[OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI]] |
 
 ### Grant's Tickets (Needs QA)
 

@@ -2,21 +2,20 @@
 status: In Progress Dev
 priority: 1
 created: 2026-04-08T00:00
-updated: 2026-04-08T14:39
+updated: 2026-04-08T16:01
 ---
-
 # OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI
 
 JIRA: [OPEN-2013](https://powerfleet.atlassian.net/browse/OPEN-2013)
 Parent: [[OPEN-1624]] — Config change analysis tool
 Labels: None
 Assignee: Marthinus Raath
-Status: In Progress Dev
+Status: Ready for Review (QA)
 
 ## Start Here Tomorrow — Priority Checklist
 
-- [ ] Set up the production branches as specified in the Jira description.
-- [ ] Configure auto-deploy pipelines.
+- [X] Set up the production branches as specified in the Jira description.
+- [X] Configure auto-deploy pipelines.
 
 ## TODO
 
@@ -49,7 +48,7 @@ Production Branch & Auto-Deploy Pipeline for Automation API and UI
 
 ## PR Checklist
 
-- [ ] OPEN-2013 → DEV
-- [ ] OPEN-2013 → INT
-- [ ] OPEN-2013 → UAT
-- [ ] OPEN-2013 → PROD
+- [X] OPEN-2013 → DEV
+- [X] OPEN-2013 → INT
+- [X] OPEN-2013 → UAT
+- [X] OPEN-2013 → PROD
