@@ -1,13 +1,13 @@
 ---
 created: 2026-04-09T08:47
-updated: 2026-04-09T08:55
+updated: 2026-04-09T09:21
 ---
 ## QC Tests
 
 ### INT
 
-AssetId:
-IMEI:
+IMEI: 
+AssetId: 
 
 ### ZA
 
@@ -17,8 +17,9 @@ AssetId: 1060691539057098752
 
 ### ENT
 
-AssetId:
-IMEI:
+
+IMEI: 359588160376456
+AssetId: 1466834224284590080
 
 ### AU
 
