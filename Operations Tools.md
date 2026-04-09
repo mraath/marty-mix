@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-08T16:02
+updated: 2026-04-09T10:17
 ---
 > [!Information] Writing tools to make the clients' lives easier.
 
@@ -24,7 +24,11 @@ dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 - [X] **Review OPEN-1928–1931** (CI/CD pipelines) — all are now **Ready for Review**, approve or merge
 - [X] **Pick up OPEN-1842 and OPEN-1843** — both In Progress Dev ✅
 - [X] **QA sign-off on OPEN-1913, 1914, 1916** (Grant's test stories) — all Ready for QA
-- [ ] **Create tickets** for: S3 persistence, Paperclip setup, WhatsApp→API, Central agent server, Chatbot config-fix feature
+- [X] **ENT AWS infra** — Done ✅ (OPEN-1929 + OPEN-1931 CI/CD pipelines)
+- [X] **OPEN-2030** (Discord/WhatsApp→API POC) — ticket created ✅ under OPEN-1624
+- [X] **OPEN-2029** (Persist Config Diff to Database) — ticket created ✅ replaces S3 plan
+- [X] **OPEN-2028** (Chatbot Config Fix Suggestions) — ticket exists ✅
+- [ ] **OPEN-1971** (Paperclip / Central Agent Server) — pick up and start work
 - [X] **OPEN-1800 naming convention** — Done ✅ (no UI impact action needed)
 - [X] **OPEN-1744 validity** — Confirmed Cancelled ✅ (superseded by OPEN-1832)
 - [X] **OPEN-1832** — Done ✅
@@ -70,13 +74,13 @@ See full context: [[Operations Tools Looking forward 20260316]]
 
 | Ticket                                                      | Summary                                                        | Status                        | Note                                    |
 | ----------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------- | --------------------------------------- |
-| [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) | Investigate and Optimise Token Usage in AI ChatBot             | **In Progress Dev** 🔨 | [[OPEN-1842 Investigate and Optimise Token Usage in AI ChatBot]] |
-| [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) | Enhance AI ChatBot Follow-Up Question Generation               | **In Progress Dev** 🔨  | [[OPEN-1843 Enhance AI ChatBot Follow-Up Question Generation]] |
+| [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) | Investigate and Optimise Token Usage in AI ChatBot             | **Done** ✅ | [[OPEN-1842 Investigate and Optimise Token Usage in AI ChatBot]] |
+| [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) | Enhance AI ChatBot Follow-Up Question Generation               | **Done** ✅ | [[OPEN-1843 Enhance AI ChatBot Follow-Up Question Generation]] |
 | [OPEN-1928](https://powerfleet.atlassian.net/browse/OPEN-1928) | Create Azure CI/CD pipeline for Powerfleet.Automation (ZA)     | **Done** ✅ |                                         |
 | [OPEN-1929](https://powerfleet.atlassian.net/browse/OPEN-1929) | Create Azure CI/CD pipeline for Powerfleet.Automation (ENT)    | **Done** ✅ |                                         |
 | [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA)  | **Done** ✅ |                                         |
 | [OPEN-1931](https://powerfleet.atlassian.net/browse/OPEN-1931) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ENT) | **Done** ✅ |                                         |
-| [OPEN-2013](https://powerfleet.atlassian.net/browse/OPEN-2013) | Production Branch & Auto-Deploy Pipeline for Automation API and UI | **Ready for Review** 🏁 | [[OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI]] |
+| [OPEN-2013](https://powerfleet.atlassian.net/browse/OPEN-2013) | Production Branch & Auto-Deploy Pipeline for Automation API and UI | **Done** ✅ | [[OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI]] |
 
 ### Grant's Tickets (Needs QA)
 
@@ -90,6 +94,9 @@ See full context: [[Operations Tools Looking forward 20260316]]
 
 | Ticket                                                      | Summary                                               | Assignee                                 |
 | ----------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------- |
+| [OPEN-2013](https://powerfleet.atlassian.net/browse/OPEN-2013) | Production Branch & Auto-Deploy Pipeline for Automation API and UI | Marthinus                         |
+| [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) | Investigate and Optimise Token Usage in AI ChatBot    | Marthinus                                |
+| [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) | Enhance AI ChatBot Follow-Up Question Generation      | Marthinus                                |
 | [OPEN-1928](https://powerfleet.atlassian.net/browse/OPEN-1928) | Create Azure CI/CD pipeline for Powerfleet.Automation (ZA)     | Marthinus                                |
 | [OPEN-1929](https://powerfleet.atlassian.net/browse/OPEN-1929) | Create Azure CI/CD pipeline for Powerfleet.Automation (ENT)    | Marthinus                                |
 | [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA)  | Marthinus                                |
@@ -146,8 +153,8 @@ Items captured this session. Tickets still to be created unless noted.
 
 - **What**: Set up [paperclipai/paperclip](https://github.com/paperclipai/paperclip) — open-source orchestration for zero-human companies
 - **Reference**: [YouTube demo](https://youtu.be/HJ-dwefABss?si=0RbaGBod88kRzhYz)
-- **Status**: 🎫 Ticket needed
-- **Note**: Evaluate for agentic UI development workflow integration
+- **Status**: 🎫 [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) — ticket exists, ready to start
+- **Note**: Also covers item 5 (Central Agent Server)
 
 ### 2. S3 Persistence — Diff/Cases Runtime Files
 
@@ -172,19 +179,21 @@ Items captured this session. Tickets still to be created unless noted.
 ### 5. Dedicated Central Agent Server
 
 - **What**: Centralized Claude/AI agent server for team use (token centralization, fire-and-forget tasks)
-- **Status**: 🎫 Ticket needed
+- **Status**: 🎫 [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) — covered by Paperclip ticket (item 1)
 - **Reference**: [[Research/Claude Agent Server]]
 
 ### 6. Two New AWS Environment Setups — ZA + ENT
 
-- **What**: Deploy Powerfleet Automation to ZA and ENT regions. CI/CD pipeline stories already created by Grant (OPEN-1928–1931). AWS infrastructure setup still needed.
-- **Status**: CI/CD tickets exist (Ready for Sprint). AWS infra tickets still needed.
+- **What**: Deploy Powerfleet Automation to ZA and ENT regions.
+- **ZA**: ✅ Deployed — `automation-api.za.mixtelematics.com` / `automation.za.mixtelematics.com`
+- **ENT**: CI/CD pipeline done (OPEN-1929/1931). AWS infra (ECS, ALB, DNS) still needs to be set up. 🎫 Ticket needed.
+- **Note**: S3 persistence is a separate concern — not the same as infra setup.
 - **Reference**: [[Automation Infrastructure Setup Guide]], [[Global_Deployment_Guide]]
 
 ### 7. Chatbot: Config Fix Suggestions
 
 - **What**: Chatbot analyses config diff and *proposes* fixes (e.g. "reset X to Y") — user approves → config improves
-- **Status**: 🎫 Ticket needed (new feature story)
+- **Status**: 🎫 [OPEN-2028](https://powerfleet.atlassian.net/browse/OPEN-2028) — ticket exists, ready to start
 - **Note**: Big value-add — needs API write endpoint to apply suggestions
 
 ### 8. Chatbot: OpenAI Keys
