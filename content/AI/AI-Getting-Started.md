@@ -30,7 +30,7 @@ What helps here is that most people are already familiar with chatbots — so yo
 
 After any change, go and check **Git** — see exactly what it touched. Nothing is committed until you say so. This is what builds confidence that it's doing what you expect.
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+![[git-example.png]]
 
 On the left you can see the diff (red = removed, green = added). On the right is every file the agent touched. You can see it all clearly before committing anything. It's a great habit to build from day one.
 
