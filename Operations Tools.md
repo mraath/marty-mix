@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-09T10:17
+updated: 2026-04-10T12:57
 ---
 > [!Information] Writing tools to make the clients' lives easier.
 
@@ -142,6 +142,45 @@ Boss made the following fixes and self-approved the PR. Relevant context for INT
 - `Positions` → `LatestPositions`; `Events` → `EventsSince`; `Trips` → `TripsSince`
 - `GetSinceAsync` has known perf issues with large datasets — **note for QBR/analytics sprint**
 - Future: `HelperManager` refactor story to be created — config-driven loading
+
+---
+
+## Planning Notes — OPEN-1651 to OPEN-1745 (Config Features) — 2026-04-10
+
+> Boss + Marthinus chat. Notes captured from verbal discussion. See also: [[Diff Ideas — Future Roadmap]]
+
+### OPEN-1651 — Frequency-Based Config Polling
+- Currently you can set up a test manually, but the idea is to **schedule it** — run on certain intervals automatically
+- Manager should not have to go in and re-trigger it every time
+- When the schedule runs → **generate and send a document** (report) automatically
+- The scheduling + document generation is part of this story's scope
+
+### OPEN-1653 — Config Compare & Diff Engine *(picking up soon — priority)*
+- Add **version diff**: compare a specific historical config version to the current one, or compare two historical versions to each other
+- SR guys already use a tool to look at what a config looked like at a specific point in time — this must integrate or align with that
+- Could also be scheduled later (run a version diff on a schedule)
+- Asset-to-asset diff is a related but separate idea — see [[Diff Ideas — Future Roadmap]]
+
+### OPEN-1654 — Full Org Config Retrieval
+- Potentially **massive** in scope — running across a full org could be very heavy
+- Will likely need to be **scheduled off-hours** rather than on-demand
+- Still in planning — needs more thought before committing to an approach
+
+### OPEN-1664 — AI Agent / Custom Analysis (Chatbot)
+- "Super Seed" was mentioned in notes — exact meaning unclear, needs revisiting
+- No firm direction yet — needs more planning before starting
+
+### OPEN-1745 — Drift Explanation & Impact
+- Need to **ask Mike** what the impact definition should be
+- Get feedback from Mike before implementing
+
+### OPEN-1667 — Export Results *(second story to focus on)*
+- Covers: chatbot results + diff output → one clean exportable document
+- Proposed document structure:
+  1. **Brief summary** — what is happening with the diff
+  2. **Key action points / serious alerts** — things the user must pay attention to
+  3. **Full Q&A transcript** — every question the user asked + every chatbot answer
+- Export as a nicely formatted document (PDF / similar)
 
 ---
 
