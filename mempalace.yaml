@@ -1,0 +1,246 @@
+wing: marty_mix
+rooms:
+- name: attachments
+  description: Files from Attachments/
+  keywords:
+  - attachments
+  - attachments
+- name: busy
+  description: Files from Busy/
+  keywords:
+  - busy
+  - busy
+- name: chats
+  description: Files from Chats/
+  keywords:
+  - chats
+  - chats
+- name: cline
+  description: Files from Cline/
+  keywords:
+  - cline
+  - cline
+- name: confluence_pages
+  description: Files from Confluence Pages/
+  keywords:
+  - confluence_pages
+  - confluence pages
+- name: content
+  description: Files from content/
+  keywords:
+  - content
+  - content
+- name: context
+  description: Files from Context/
+  keywords:
+  - context
+  - context
+- name: daily_merge
+  description: Files from Daily Merge/
+  keywords:
+  - daily_merge
+  - daily merge
+- name: dailynotes
+  description: Files from DailyNotes/
+  keywords:
+  - dailynotes
+  - dailynotes
+- name: documentation
+  description: Files from docs/
+  keywords:
+  - documentation
+  - docs
+- name: done
+  description: Files from Done/
+  keywords:
+  - done
+  - done
+- name: drawio
+  description: Files from DrawIo/
+  keywords:
+  - drawio
+  - drawio
+- name: dst
+  description: Files from DST/
+  keywords:
+  - dst
+  - dst
+- name: dst_daylight_saving_times
+  description: Files from DST Daylight Saving Times/
+  keywords:
+  - dst_daylight_saving_times
+  - dst daylight saving times
+- name: ets_6874
+  description: Files from ETS-6874/
+  keywords:
+  - ets_6874
+  - ets-6874
+- name: excalidraw
+  description: Files from Excalidraw/
+  keywords:
+  - excalidraw
+  - excalidraw
+- name: hide
+  description: Files from Hide/
+  keywords:
+  - hide
+  - hide
+- name: inputs
+  description: Files from inputs/
+  keywords:
+  - inputs
+  - inputs
+- name: learn
+  description: Files from Learn/
+  keywords:
+  - learn
+  - learn
+- name: mcp_obsidian
+  description: Files from mcp-obsidian/
+  keywords:
+  - mcp_obsidian
+  - mcp-obsidian
+- name: monthlynotes
+  description: Files from MonthlyNotes/
+  keywords:
+  - monthlynotes
+  - monthlynotes
+- name: need_parent
+  description: Files from Need Parent/
+  keywords:
+  - need_parent
+  - need parent
+- name: oe_bugs
+  description: Files from OE BUGS/
+  keywords:
+  - oe_bugs
+  - oe bugs
+- name: oe_config_groups_page
+  description: Files from OE Config Groups Page/
+  keywords:
+  - oe_config_groups_page
+  - oe config groups page
+- name: open_1252
+  description: Files from OPEN-1252/
+  keywords:
+  - open_1252
+  - open-1252
+- name: open_840
+  description: Files from OPEN-840/
+  keywords:
+  - open_840
+  - open-840
+- name: parked
+  description: Files from Parked/
+  keywords:
+  - parked
+  - parked
+- name: pdf
+  description: Files from pdf/
+  keywords:
+  - pdf
+  - pdf
+- name: personal
+  description: Files from Personal/
+  keywords:
+  - personal
+  - personal
+- name: testing
+  description: Files from QA/
+  keywords:
+  - testing
+  - qa
+- name: quartz
+  description: Files from quartz/
+  keywords:
+  - quartz
+  - quartz
+- name: research
+  description: Files from Research/
+  keywords:
+  - research
+  - research
+- name: roo_code
+  description: Files from roo code/
+  keywords:
+  - roo_code
+  - roo code
+- name: scripts
+  description: Files from scripts/
+  keywords:
+  - scripts
+  - scripts
+- name: some_day
+  description: Files from Some Day/
+  keywords:
+  - some_day
+  - some day
+- name: spaces
+  description: Files from Spaces/
+  keywords:
+  - spaces
+  - spaces
+- name: sql
+  description: Files from SQL/
+  keywords:
+  - sql
+  - sql
+- name: sr_14585_fm_idling_though_distance_and_speed_greater_than_5km
+  description: Files from SR-14585 FM idling though distance and speed greater than
+    5km/
+  keywords:
+  - sr_14585_fm_idling_though_distance_and_speed_greater_than_5km
+  - sr-14585 fm idling though distance and speed greater than 5km
+- name: srs
+  description: Files from SRs/
+  keywords:
+  - srs
+  - srs
+- name: streamax
+  description: Files from Streamax/
+  keywords:
+  - streamax
+  - streamax
+- name: svg
+  description: Files from SVG/
+  keywords:
+  - svg
+  - svg
+- name: templater
+  description: Files from Templater/
+  keywords:
+  - templater
+  - templater
+- name: templates
+  description: Files from Templates/
+  keywords:
+  - templates
+  - templates
+- name: textgenerator
+  description: Files from textgenerator/
+  keywords:
+  - textgenerator
+  - textgenerator
+- name: weeklynotes
+  description: Files from WeeklyNotes/
+  keywords:
+  - weeklynotes
+  - weeklynotes
+- name: wip
+  description: Files from WIP/
+  keywords:
+  - wip
+  - wip
+- name: backend
+  description: Files from Database/
+  keywords:
+  - backend
+  - database
+- name: frontend
+  description: Files from components/
+  keywords:
+  - frontend
+  - components
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []
