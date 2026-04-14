@@ -2,7 +2,7 @@
 status: Committed
 priority: 1
 created: 2026-04-09T00:00
-updated: 2026-04-14T16:42
+updated: 2026-04-14T16:44
 ---
 
 # OPEN-2029 Persist Config Diff to Database
@@ -83,11 +83,12 @@ Test cases and diffs are fully persistent across ECS restarts. The container fil
 
 ## Some feedback from my side
 
-You mentio
+- You mentioned that you will add database tables to store associated assets with configs. We dont need to store the Assets' configs.... only the DIFFs per test (for now)
+- So if this means it is the endpoint to save the actual config for assets - then we could remove that as well ""
 
 ## PR Checklist
 
 - [ ] OPEN-2029 → DEV
 - [ ] OPEN-2029 → INT
 - [ ] OPEN-2029 → UAT
-- [ ] OPEN-202
+- [ ] OPEN-2029 → PROD
