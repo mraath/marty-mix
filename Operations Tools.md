@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-13T16:15
+updated: 2026-04-14T13:37
 ---
 > [!Information] Writing tools to make the clients' lives easier.
 
@@ -81,7 +81,7 @@ See full context: [[Operations Tools Looking forward 20260316]]
 | [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA)  | **Done** ✅ |                                         |
 | [OPEN-1931](https://powerfleet.atlassian.net/browse/OPEN-1931) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ENT) | **Done** ✅ |                                         |
 | [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) | [POC] Paperclip Standalone Agentic Server — Centralised AI Orchestration | **In Progress Dev** 🔄 | [[OPEN-1971]] |
-| [OPEN-2029](https://powerfleet.atlassian.net/browse/OPEN-2029) | Persist Config Diff to Database (Replace File-Based Storage)           | **Proposed**          |                |
+| [OPEN-2029](https://powerfleet.atlassian.net/browse/OPEN-2029) | Persist Config Diff to Database (Replace File-Based Storage)           | **Committed** 🔄       |                |
 | [OPEN-2013](https://powerfleet.atlassian.net/browse/OPEN-2013) | Production Branch & Auto-Deploy Pipeline for Automation API and UI | **Done** ✅ | [[OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI]] |
 
 ### Grant's Tickets (Needs QA)
