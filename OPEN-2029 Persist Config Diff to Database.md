@@ -2,7 +2,7 @@
 status: Committed
 priority: 1
 created: 2026-04-09T00:00
-updated: 2026-04-14T16:44
+updated: 2026-04-14T16:48
 ---
 
 # OPEN-2029 Persist Config Diff to Database
@@ -84,7 +84,9 @@ Test cases and diffs are fully persistent across ECS restarts. The container fil
 ## Some feedback from my side
 
 - You mentioned that you will add database tables to store associated assets with configs. We dont need to store the Assets' configs.... only the DIFFs per test (for now)
-- So if this means it is the endpoint to save the actual config for assets - then we could remove that as well ""
+- So if this means it is the endpoint to save the actual config for assets - then we could remove that as well "- POST `/api/configdiff/cases/{caseId}/assets` - save asset configs for a case"
+- You asked about this and I also think it should go to the API "For the diff generation script, I need to decide whether to keep it as a Node script that reads from the database or refactor it into an API endpoint. The current flow has the UI calling `POST /api/delta/generate` which triggers the script to read files and write the diff. After migration, I could either update the script to fetch data from the database and write results back, or move the logic entirely into an API route that handles the database operations directly."
+- 
 
 ## PR Checklist
 
