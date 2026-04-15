@@ -1,6 +1,7 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-14T13:37
+updated: 2026-04-15T10:50
+sprint: "2026-03-30"
 ---
 > [!Information] Writing tools to make the clients' lives easier.
 
@@ -21,25 +22,17 @@ path includes ${dv.current().file.path}
 dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
-- [X] **Review OPEN-1928–1931** (CI/CD pipelines) — all are now **Ready for Review**, approve or merge
-- [X] **Pick up OPEN-1842 and OPEN-1843** — both In Progress Dev ✅
-- [X] **QA sign-off on OPEN-1913, 1914, 1916** (Grant's test stories) — all Ready for QA
-- [X] **ENT AWS infra** — Done ✅ (OPEN-1929 + OPEN-1931 CI/CD pipelines)
-- [X] **OPEN-2030** (Discord/WhatsApp→API POC) — ticket created ✅ under OPEN-1624
-- [X] **OPEN-2029** (Persist Config Diff to Database) — ticket created ✅ replaces S3 plan
-- [X] **OPEN-2028** (Chatbot Config Fix Suggestions) — ticket exists ✅
-- [ ] **OPEN-1971** (Paperclip / Central Agent Server) — pick up and start work
-- [X] **OPEN-1800 naming convention** — Done ✅ (no UI impact action needed)
-- [X] **OPEN-1744 validity** — Confirmed Cancelled ✅ (superseded by OPEN-1832)
-- [X] **OPEN-1832** — Done ✅
-- [X] **OPEN-1788 AI ChatBot Panel** — Done ✅
-- [X] **OPEN-1741/1742/1743** — All Done ✅
+- [ ] **OPEN-1971** (Paperclip / Central Agent Server) — actively in progress, continue
+- [ ] **OPEN-2029** (Persist Config Diff to Database) — actively in progress, continue
+- [ ] **OPEN-2045** (Session Timeout 30 min) — In Progress QA, needs sign-off
+- [ ] **OPEN-2046** (Force login on new session) — In Progress QA, needs sign-off
+- [ ] **OPEN-1653** (Config Compare & Diff Engine) — Committed, pick up next
 
 ---
 
 ## Current Sprint Focus
 
-> **Marthinus** → Config Delta / Audit Tool
+> **Marthinus** → Config Delta / Audit Tool + Paperclip POC
 > **Cornel** → Salesforce integration
 
 ### Engineering Directives (from boss)
@@ -72,67 +65,106 @@ See full context: [[Operations Tools Looking forward 20260316]]
 
 ### Assigned to Me (Marthinus)
 
-| Ticket                                                      | Summary                                                        | Status                        | Note                                    |
-| ----------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------- | --------------------------------------- |
-| [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) | Investigate and Optimise Token Usage in AI ChatBot             | **Done** ✅ | [[OPEN-1842 Investigate and Optimise Token Usage in AI ChatBot]] |
-| [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) | Enhance AI ChatBot Follow-Up Question Generation               | **Done** ✅ | [[OPEN-1843 Enhance AI ChatBot Follow-Up Question Generation]] |
-| [OPEN-1928](https://powerfleet.atlassian.net/browse/OPEN-1928) | Create Azure CI/CD pipeline for Powerfleet.Automation (ZA)     | **Done** ✅ |                                         |
-| [OPEN-1929](https://powerfleet.atlassian.net/browse/OPEN-1929) | Create Azure CI/CD pipeline for Powerfleet.Automation (ENT)    | **Done** ✅ |                                         |
-| [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA)  | **Done** ✅ |                                         |
-| [OPEN-1931](https://powerfleet.atlassian.net/browse/OPEN-1931) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ENT) | **Done** ✅ |                                         |
-| [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) | [POC] Paperclip Standalone Agentic Server — Centralised AI Orchestration | **In Progress Dev** 🔄 | [[OPEN-1971]] |
-| [OPEN-2029](https://powerfleet.atlassian.net/browse/OPEN-2029) | Persist Config Diff to Database (Replace File-Based Storage)           | **Committed** 🔄       |                |
-| [OPEN-2013](https://powerfleet.atlassian.net/browse/OPEN-2013) | Production Branch & Auto-Deploy Pipeline for Automation API and UI | **Done** ✅ | [[OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI]] |
+> Shows all active tickets — everything except Done, Cancelled, and Closed.
 
-### Grant's Tickets (Needs QA)
+| Ticket                                                      | Summary                                                                   | Status                       | Note                                                                           |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------ |
+| [OPEN-2045](https://powerfleet.atlassian.net/browse/OPEN-2045) | UI - Implement 30-minute inactivity session timeout                       | **In Progress QA** 🧪  | Needs QA sign-off                                                              |
+| [OPEN-2046](https://powerfleet.atlassian.net/browse/OPEN-2046) | UI - Force login when starting a new application session                  | **In Progress QA** 🧪  | Needs QA sign-off                                                              |
+| [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) | [POC] Paperclip Standalone Agentic Server — Centralised AI Orchestration | **In Progress Dev** 🔄 | [[OPEN-1971]]                                                                  |
+| [OPEN-2029](https://powerfleet.atlassian.net/browse/OPEN-2029) | Persist Config Diff to Database (Replace File-Based Storage)              | **In Progress Dev** 🔄 |                                                                                |
+| [OPEN-1653](https://powerfleet.atlassian.net/browse/OPEN-1653) | UI - Select source and comparison configs for same-asset config compare   | **Committed** 📋      | Pick up after 2029 or in parallel                                              |
 
-| Ticket                                                      | Summary                                                        | Status                 | Note                       |
-| ----------------------------------------------------------- | -------------------------------------------------------------- | ---------------------- | -------------------------- |
-| [OPEN-1913](https://powerfleet.atlassian.net/browse/OPEN-1913) | UI - Bootstrap Vitest and React Testing Library                | **Done** ✅ | Foundation for 1914 + 1916 |
-| [OPEN-1914](https://powerfleet.atlassian.net/browse/OPEN-1914) | UI - Add seed unit tests for core service and utility logic    | **Done** ✅ | Depends on OPEN-1913       |
-| [OPEN-1916](https://powerfleet.atlassian.net/browse/OPEN-1916) | UI - Enforce test coverage on commit via Husky pre-commit hook | **Done** ✅ | Depends on OPEN-1913       |
+### Other Active (FYI)
 
-### Recently Done (this sprint)
+| Ticket                                                      | Summary                                                                            | Status         | Assignee     |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------- | ------------ |
+| [OPEN-2028](https://powerfleet.atlassian.net/browse/OPEN-2028) | Configure Standard OpenAI API Key for Paperclip Agents and Automation              | **Committed** 📋 | Ignus Crous |
 
-| Ticket                                                      | Summary                                               | Assignee                                 |
-| ----------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------- |
-| [OPEN-2030](https://powerfleet.atlassian.net/browse/OPEN-2030) | POC — Discord Slash Command Trigger for QC Automation               | Marthinus                         |
-| [OPEN-2013](https://powerfleet.atlassian.net/browse/OPEN-2013) | Production Branch & Auto-Deploy Pipeline for Automation API and UI  | Marthinus                         |
-| [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) | Investigate and Optimise Token Usage in AI ChatBot    | Marthinus                                |
-| [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) | Enhance AI ChatBot Follow-Up Question Generation      | Marthinus                                |
-| [OPEN-1928](https://powerfleet.atlassian.net/browse/OPEN-1928) | Create Azure CI/CD pipeline for Powerfleet.Automation (ZA)     | Marthinus                                |
-| [OPEN-1929](https://powerfleet.atlassian.net/browse/OPEN-1929) | Create Azure CI/CD pipeline for Powerfleet.Automation (ENT)    | Marthinus                                |
-| [OPEN-1930](https://powerfleet.atlassian.net/browse/OPEN-1930) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ZA)  | Marthinus                                |
-| [OPEN-1931](https://powerfleet.atlassian.net/browse/OPEN-1931) | Create Azure CI/CD pipeline for Powerfleet.Automation.UI (ENT) | Marthinus                                |
-| [OPEN-1913](https://powerfleet.atlassian.net/browse/OPEN-1913) | UI - Bootstrap Vitest and React Testing Library                 | Grant                                    |
-| [OPEN-1914](https://powerfleet.atlassian.net/browse/OPEN-1914) | UI - Add seed unit tests for core service and utility logic     | Grant                                    |
-| [OPEN-1916](https://powerfleet.atlassian.net/browse/OPEN-1916) | UI - Enforce test coverage on commit via Husky pre-commit hook  | Grant                                    |
-| [OPEN-1832](https://powerfleet.atlassian.net/browse/OPEN-1832) | Add test case creation screen                         | Marthinus                                |
-| [OPEN-1788](https://powerfleet.atlassian.net/browse/OPEN-1788) | AI ChatBot Panel — Config Delta Tool                 | Marthinus                                |
-| [OPEN-1741](https://powerfleet.atlassian.net/browse/OPEN-1741) | Display item descriptions instead of raw IDs          | Marthinus                                |
-| [OPEN-1742](https://powerfleet.atlassian.net/browse/OPEN-1742) | Summary dashboard panel — asset + drift counts       | Marthinus                                |
-| [OPEN-1743](https://powerfleet.atlassian.net/browse/OPEN-1743) | Exclude LastConfig/LastIMEI/LastIMSI from comparisons | Marthinus                                |
-| [OPEN-1844](https://powerfleet.atlassian.net/browse/OPEN-1844) | Add GetConfigurationGroupSummaries API endpoint       | Grant                                    |
-| [OPEN-1845](https://powerfleet.atlassian.net/browse/OPEN-1845) | Add ConfigConfigurationGroups API endpoint            | Grant                                    |
-| [OPEN-1833](https://powerfleet.atlassian.net/browse/OPEN-1833) | Add ConfigAllowedOrganisationsAsync endpoint          | William King                             |
-| [OPEN-1834](https://powerfleet.atlassian.net/browse/OPEN-1834) | Add GetActiveAssetListForOrganisationAsync endpoint   | Grant                                    |
-| [OPEN-1744](https://powerfleet.atlassian.net/browse/OPEN-1744) | Allow user to select standard and assets              | ~~Cancelled~~ (superseded by OPEN-1832) |
-| [OPEN-1915](https://powerfleet.atlassian.net/browse/OPEN-1915) | UI - Add mandatory test stage to Azure pipeline       | ~~Cancelled~~                           |
+### Other Active (FYI)
 
-### Shared (Me + Boss)
+| Ticket                                                      | Summary                                                                            | Status         | Assignee     |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------- | ------------ |
+| [OPEN-2028](https://powerfleet.atlassian.net/browse/OPEN-2028) | Configure Standard OpenAI API Key for Paperclip Agents and Automation              | **Committed** 📋 | Ignus Crous |
 
-| Ticket                                                      | Summary                                                                            | Status         | Note       |
-| ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------- | ---------- |
-| [OPEN-1756](https://powerfleet.atlassian.net/browse/OPEN-1756) | Add manager to Automation API to load the necessary data to work with              | ~~Cancelled~~ | Superseded |
-| [OPEN-1757](https://powerfleet.atlassian.net/browse/OPEN-1757) | Add endpoint for the config delta tool in the API to allow user to do a comparison | ~~Cancelled~~ | Superseded |
+---
 
-### Boss's Tickets (FYI)
+## Sprint Intake — 2026-03-30 (This Sprint)
 
-| Ticket                                                      | Summary                                                                  | Status       | Note                                       |
-| ----------------------------------------------------------- | ------------------------------------------------------------------------ | ------------ | ------------------------------------------ |
-| [OPEN-1300](https://powerfleet.atlassian.net/browse/OPEN-1300) | Add CAN peripheral, speed source, and RPM source checks to QC Automation | ~~Done~~ ✅ | Grant                                      |
-| [OPEN-1607](https://powerfleet.atlassian.net/browse/OPEN-1607) | Add odometer vs trip distance consistency check to QC Automation         | ~~Done~~ ✅ | Grant                                      |
-| [OPEN-1800](https://powerfleet.atlassian.net/browse/OPEN-1800) | Enforce naming convention consistency across Powerfleet.Automation API   | ~~Done~~ ✅ | William King — no UI impact action needed |
+> Items confirmed for this sprint. Only things to focus on NOW or already in flight.
+
+### 1. Paperclip — UI Agentic Development Setup
+
+- **What**: Set up [paperclipai/paperclip](https://github.com/paperclipai/paperclip) — open-source orchestration for zero-human companies
+- **Reference**: [YouTube demo](https://youtu.be/HJ-dwefABss?si=0RbaGBod88kRzhYz)
+- **Status**: 🔄 [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) — **In Progress Dev**
+- **Note**: Also covers central agent server
+
+### 2. S3 / DB Persistence — Diff/Cases Runtime Files
+
+- **What**: Files written at runtime (`cases/`, `diff.json`) live only in container memory — lost on every ECS restart. Now replacing S3 with DB persistence.
+- **Status**: 🔄 [OPEN-2029](https://powerfleet.atlassian.net/browse/OPEN-2029) — **In Progress Dev**
+- **Note**: Confirm feature works before tackling further persistence architecture
+
+### 3. Config Compare & Diff — OPEN-1653
+
+- **What**: UI - Select source and comparison configs for same-asset config compare & diff
+- **Status**: 📋 [OPEN-1653](https://powerfleet.atlassian.net/browse/OPEN-1653) — **Committed** — pick up next
+- **Note**: Boss called this second priority ("second story to focus on")
+
+### 4. Chatbot: Config Fix Suggestions
+
+- **What**: Chatbot analyses config diff and *proposes* fixes — user approves → config improves
+- **Status**: 📋 [OPEN-2028](https://powerfleet.atlassian.net/browse/OPEN-2028) — **Committed / Reassigned to Ignus Crous** (2026-04-13)
+- **Note**: Big value-add — needs API write endpoint to apply suggestions
+
+### 5. Two AWS Environments — ZA + ENT
+
+- **ZA**: ✅ Fully deployed — `automation-api.za.mixtelematics.com` / `automation.za.mixtelematics.com`
+- **ENT**: CI/CD pipeline done (OPEN-1929/1931). AWS infra (ECS, ALB, DNS) still needs to be set up. 🎫 Ticket needed.
+- **Reference**: [[Automation Infrastructure Setup Guide]], [[Global_Deployment_Guide]]
+
+---
+
+## Future Stories / Roadmap
+
+> These stories are groomed/proposed but **not yet in the active sprint**. Keep for future planning.
+
+### OPEN-1651 — Frequency-Based Config Polling *(Proposed)*
+
+- Currently you can set up a test manually, but the idea is to **schedule it** — run on certain intervals automatically
+- Manager should not have to go in and re-trigger it every time
+- When the schedule runs → **generate and send a document** (report) automatically
+- The scheduling + document generation is part of this story's scope
+
+### OPEN-1667 — Export Results *(Proposed)*
+
+- Covers: chatbot results + diff output → one clean exportable document
+- Proposed document structure:
+  1. **Brief summary** — what is happening with the diff
+  2. **Key action points / serious alerts** — things the user must pay attention to
+  3. **Full Q&A transcript** — every question the user asked + every chatbot answer
+- Export as a nicely formatted document (PDF / similar)
+
+### OPEN-1664 — AI Agent / Custom Analysis (Chatbot) *(Proposed)*
+
+- "Super Seed" was mentioned in notes — exact meaning unclear, needs revisiting
+- No firm direction yet — needs more planning before starting
+
+### OPEN-1745 — Drift Explanation & Impact *(Proposed)*
+
+- Need to **ask Mike** what the impact definition should be
+- Get feedback from Mike before implementing
+
+### OPEN-1654 — Full Org Config Retrieval *(Cancelled)*
+
+- ~~Cancelled~~ — was potentially massive in scope. Confirm with boss if still relevant.
+
+### WhatsApp → API Call *(No ticket yet)*
+
+- **What**: Trigger an API endpoint via WhatsApp message (n8n or similar)
+- **Reference**: [[Research/WhatsApp to API via n8n]] — Discord as test phase, Meta WhatsApp Cloud API for prod
+- **Note**: Scope and target endpoint TBD — create ticket when ready to pick up
 
 ---
 
@@ -148,113 +180,37 @@ Boss made the following fixes and self-approved the PR. Relevant context for INT
 
 ---
 
-## Planning Notes — OPEN-1651 to OPEN-1745 (Config Features) — 2026-04-10
+## PROD — AWS Environments
 
-> Boss + Marthinus chat. Notes captured from verbal discussion. See also: [[Diff Ideas — Future Roadmap]]
+### AU
 
-### OPEN-1651 — Frequency-Based Config Polling
-- Currently you can set up a test manually, but the idea is to **schedule it** — run on certain intervals automatically
-- Manager should not have to go in and re-trigger it every time
-- When the schedule runs → **generate and send a document** (report) automatically
-- The scheduling + document generation is part of this story's scope
+Sydney · ap-southeast-2
 
-### OPEN-1653 — Config Compare & Diff Engine *(picking up soon — priority)*
-- Add **version diff**: compare a specific historical config version to the current one, or compare two historical versions to each other
-- SR guys already use a tool to look at what a config looked like at a specific point in time — this must integrate or align with that
-- Could also be scheduled later (run a version diff on a schedule)
-- Asset-to-asset diff is a related but separate idea — see [[Diff Ideas — Future Roadmap]]
+- https://automation-api-au.mixtelematics.com/swagger/index.html
+- https://automation-au.mixtelematics.com
 
-### OPEN-1654 — Full Org Config Retrieval
-- Potentially **massive** in scope — running across a full org could be very heavy
-- Will likely need to be **scheduled off-hours** rather than on-demand
-- Still in planning — needs more thought before committing to an approach
+### ZA
 
-### OPEN-1664 — AI Agent / Custom Analysis (Chatbot)
-- "Super Seed" was mentioned in notes — exact meaning unclear, needs revisiting
-- No firm direction yet — needs more planning before starting
+- https://automation-api.za.mixtelematics.com
+- https://automation.za.mixtelematics.com
 
-### OPEN-1745 — Drift Explanation & Impact
-- Need to **ask Mike** what the impact definition should be
-- Get feedback from Mike before implementing
+> **Domain note:** Used `automation.za.mixtelematics.com` / `automation-api.za.mixtelematics.com` (not the `-za.` pattern like AU). The `*.mixtelematics.com` cert in this ZA account is **expired**, so only `*.za.mixtelematics.com` works. If you want the `-za.` style, a new ACM cert for `*.mixtelematics.com` would need to be requested and validated via the shared DNS account.
 
-### OPEN-1667 — Export Results *(second story to focus on)*
-- Covers: chatbot results + diff output → one clean exportable document
-- Proposed document structure:
-  1. **Brief summary** — what is happening with the diff
-  2. **Key action points / serious alerts** — things the user must pay attention to
-  3. **Full Q&A transcript** — every question the user asked + every chatbot answer
-- Export as a nicely formatted document (PDF / similar)
+**OpenAI key setup (ZA):** Via console: ECS → Task Definitions → `za-powerfleet-automation-ui` → Create new revision → add env vars → update the service.
 
----
+| Key                        | Value                                                  |
+| -------------------------- | ------------------------------------------------------ |
+| `OPENAI_API_TYPE`        | `azure`                                              |
+| `OPENAI_API_BASE`        | `https://aura-ai-assistant-int-eu.openai.azure.com/` |
+| `OPENAI_API_VERSION`     | `2024-08-01-preview`                                 |
+| `OPENAI_DEPLOYMENT_NAME` | `gpt-4.1`                                            |
+| `OPENAI_API_KEY`         | _(the key — stored in ECS task def)_                |
 
-## Sprint Intake — 2026-03-30
+### ENT
 
-Items captured this session. Tickets still to be created unless noted.
+Account: `522301445307` · Ireland · eu-west-1 · Cluster: `ENT-Config`
 
-### 1. Paperclip — UI Agentic Development Setup
-
-- **What**: Set up [paperclipai/paperclip](https://github.com/paperclipai/paperclip) — open-source orchestration for zero-human companies
-- **Reference**: [YouTube demo](https://youtu.be/HJ-dwefABss?si=0RbaGBod88kRzhYz)
-- **Status**: 🎫 [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) — ticket exists, ready to start
-- **Note**: Also covers item 5 (Central Agent Server)
-
-### 2. S3 Persistence — Diff/Cases Runtime Files
-
-- **What**: Files written at runtime (`cases/`, `diff.json`) live only in container memory — lost on every ECS task restart. Need S3 (or EFS) for persistence.
-- **Scope**: API ticket + UI ticket + deploy to PROD in future. Diff Test also affected.
-- **Status**: 🎫 Tickets needed (API + UI + infra)
-- **Note**: Confirm the feature works first before tackling persistence architecture (as per 2026-03-30 note)
-
-### 3. ChatBot Token + Follow-Up Improvements *(Existing Tickets)*
-
-- [OPEN-1842](https://powerfleet.atlassian.net/browse/OPEN-1842) — Investigate and Optimise Token Usage in AI ChatBot
-- [OPEN-1843](https://powerfleet.atlassian.net/browse/OPEN-1843) — Enhance AI ChatBot Follow-Up Question Generation
-- **Status**: **Committed** — move to In Progress Dev and start work now
-
-### 4. WhatsApp → API Call
-
-- **What**: Trigger an API endpoint via WhatsApp message (n8n or similar)
-- **Status**: 🎫 Ticket needed
-- **Reference**: [[Research/WhatsApp to API via n8n]] — Discord as test phase, Meta WhatsApp Cloud API for prod
-- **Note**: Scope and target endpoint TBD
-
-### 5. Dedicated Central Agent Server
-
-- **What**: Centralized Claude/AI agent server for team use (token centralization, fire-and-forget tasks)
-- **Status**: 🎫 [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) — covered by Paperclip ticket (item 1)
-- **Reference**: [[Research/Claude Agent Server]]
-
-### 6. Two New AWS Environment Setups — ZA + ENT
-
-- **What**: Deploy Powerfleet Automation to ZA and ENT regions.
-- **ZA**: ✅ Deployed — `automation-api.za.mixtelematics.com` / `automation.za.mixtelematics.com`
-- **ENT**: CI/CD pipeline done (OPEN-1929/1931). AWS infra (ECS, ALB, DNS) still needs to be set up. 🎫 Ticket needed.
-- **Note**: S3 persistence is a separate concern — not the same as infra setup.
-- **Reference**: [[Automation Infrastructure Setup Guide]], [[Global_Deployment_Guide]]
-
-### 7. Chatbot: Config Fix Suggestions
-
-- **What**: Chatbot analyses config diff and *proposes* fixes (e.g. "reset X to Y") — user approves → config improves
-- **Status**: 🎫 [OPEN-2028](https://powerfleet.atlassian.net/browse/OPEN-2028) — Proposed / **Reassigned to Ignus Crous** (2026-04-13)
-- **Note**: Big value-add — needs API write endpoint to apply suggestions
-
-### 8. Chatbot: OpenAI Keys
-
-- **What**: Ensure all AI keys (`OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `GROQ_API_KEY`, `OPENAI_API_TYPE`, `OPENAI_API_BASE`, `OPENAI_API_VERSION`, `OPENAI_DEPLOYMENT_NAME`, `OPENAI_API_KEY`) are set in the ECS task definition for every environment deployed
-- **Status**: ✅ Process captured — see AWS Regional Deployment Skill → Step 9. No separate ticket needed; this is a deployment checklist item.
-
-### 9. Four UI Test Stories from Grant
-
-- [OPEN-1913](https://powerfleet.atlassian.net/browse/OPEN-1913) — UI - Bootstrap Vitest and React Testing Library → **Ready for QA**
-- [OPEN-1914](https://powerfleet.atlassian.net/browse/OPEN-1914) — UI - Add seed unit tests for core service and utility logic → **Ready for QA**
-- [OPEN-1915](https://powerfleet.atlassian.net/browse/OPEN-1915) — UI - Add mandatory test stage to Azure pipeline → ~~Cancelled~~
-- [OPEN-1916](https://powerfleet.atlassian.net/browse/OPEN-1916) — UI - Enforce test coverage on commit via Husky pre-commit hook → **Ready for QA**
-- **Status**: 1913 + 1914 + 1916 need QA. 1915 cancelled.
-
-### 10. Close OPEN-1832
-
-- **What**: Add test case creation screen to the Config Change Analysis Tool UI
-- **Status**: ✅ Already marked **Done** in Jira — nothing to do.
+> CI/CD pipelines done (OPEN-1929/1931). AWS infra (ECS, ALB, DNS) **still needs to be set up**. 🎫 Ticket needed.
 
 ---
 
@@ -270,7 +226,7 @@ Items captured this session. Tickets still to be created unless noted.
 - Spike: [OPEN-1223](https://powerfleet.atlassian.net/browse/OPEN-1223) — Investigate QC Automation - Phase 1 ✅ Done
   - API Endpoint: [OPEN-1293](https://powerfleet.atlassian.net/browse/OPEN-1293) — Create QC Automation API and Logic ✅ Done
   - UI: [OPEN-1493](https://powerfleet.atlassian.net/browse/OPEN-1493) — [[OPEN-1493 UI for Salesforce case Info]] ✅ 2026-02-24
-  - Video: [OPEN-1299](https://powerfleet.atlassian.net/browse/OPEN-1299) — Test video status for installed device 🔄 In Progress QA
+  - Video: [OPEN-1299](https://powerfleet.atlassian.net/browse/OPEN-1299) — Test video status for installed device ✅ Done
   - Decommissioning Phase 1: [OPEN-1545](https://powerfleet.atlassian.net/browse/OPEN-1545) — Decommissioning Automation - Phase 1 🔄 Authoring
     - Add Decomm Endpoint: [OPEN-1567](https://powerfleet.atlassian.net/browse/OPEN-1567) — Add Decommissioning Endpoint ✅ Done
 - Background (API for OPEN-1737):
@@ -291,121 +247,18 @@ Items captured this session. Tickets still to be created unless noted.
 
 ### Other
 
-- [OPEN-1526](https://powerfleet.atlassian.net/browse/OPEN-1526) — Investigate how to leverage AI to work with Salesforce information ⏸ On Hold
+- [OPEN-1526](https://powerfleet.atlassian.net/browse/OPEN-1526) — Investigate how to leverage AI to work with Salesforce information ✅ Done
 - [OPEN-1356](https://powerfleet.atlassian.net/browse/OPEN-1356) — Trigger QC API Endpoint 🔄 Ready for Grooming
 - [OPEN-1328](https://powerfleet.atlassian.net/browse/OPEN-1328) — Create endpoint in Salesforce 🔄 Ready for Grooming
 - [OPEN-1715](https://powerfleet.atlassian.net/browse/OPEN-1715) — [[OPEN-1715 Setup UI and API on AWS for AU]] — Setup UI and API on AWS for AU ✅ Done
 - [PFI-3133](https://powerfleet.atlassian.net/browse/PFI-3133) — Operations Enablement Engineering Improvements 🔄 In Progress
   - [OPEN-455](https://powerfleet.atlassian.net/browse/OPEN-455) — CAN Logger App Enhancements 🔄 Proposed
-- [OPEN-1631](https://powerfleet.atlassian.net/browse/OPEN-1631) — Develop and Implement tools to increase efficiency (Epic) 🔄 Formulating
+- [OPEN-1631](https://powerfleet.atlassian.net/browse/OPEN-1631) — Develop and Implement tools to increase efficiency (Epic) 🔄 In Progress
+- [OPEN-1300](https://powerfleet.atlassian.net/browse/OPEN-1300) — Add CAN peripheral, speed source, and RPM source checks to QC Automation ✅ Done (Grant)
+- [OPEN-1607](https://powerfleet.atlassian.net/browse/OPEN-1607) — Add odometer vs trip distance consistency check to QC Automation ✅ Done (Grant)
+- [OPEN-1800](https://powerfleet.atlassian.net/browse/OPEN-1800) — Enforce naming convention consistency across Powerfleet.Automation API ✅ Done (William King)
 
 ---
-
-## TEMP NOTE
-
-```
-OK - in the Terminal I ran: SAML2aws login -a AU --force  
-This is to login to AU  
-HOWEVER I need to log into ZA  
-Could you create me another shortcut command like this  
-But to go into ZA  
-668736068906  
-Ireland
-
-eu-west-1  
-  
-And you can check where  
-ZA-Config  
-IS set up as a cluster - OK - lets first wait here - and then continue with the rest - lets first get that login shortcut
-
----
-
-Setting up ZA on AWS for our Automation API and Automation UI.  
-  
-PLease use this skill:  
-C:\Projects\Skills\.agent\skills\aws-regional-deployment-skill\SKILL.md  
-  
-To setup ZA  
-At the end (or as part of the above) you also have to set tags  
-C:\Projects\Skills\aws-tag-powerfleet-automation.md  
-  
-I have signed in on SAML for you to use AWS CLI
-
----
-
-If I am not mistaken for AU, we used the following public facing urls....
-For AUtomation UI:
-https://automation-au.mixtelematics.com/
-For Automation API:
-https://automation-api-au.mixtelematics.com/
-
-If you could follow the same pattern it would be great
-```
-
-```
-ENT
-522301445307
-Ireland
-eu-west-1
-ENT-Config
-```
-
-## PROD
-
-### AU
-
-Sydney
-ap-southeast-2
-
-- https://automation-api-au.mixtelematics.com/swagger/index.html
-- https://automation-au.mixtelematics.com
-
-### ZA
-
-- https://automation-api.za.mixtelematics.com
-- https://automation.za.mixtelematics.com
-
-(**Domain note:** I used `automation.za.mixtelematics.com` / `automation-api.za.mixtelematics.com` (not the `-za.` pattern like AU). The `*.mixtelematics.com` cert in this ZA account is **expired**, so only `*.za.mixtelematics.com` works. If you want the `-za.` style, a new ACM cert for `*.mixtelematics.com` would need to be requested and validated via the shared DNS account.)
-
-**Add OPENAI_API_KEY** — Via console: ECS → Task Definitions → `za-powerfleet-automation-ui` → Create new revision → add the key → update the service to use it.
-
-OPENAI_API_KEY=AZURE_OPENAI_KEY_INT_REDACTED
-
-### ENT
-
-## What you still need to do
-
-**1. Route 53 DNS** — The `mixtelematics.com` zone is not in this AWS account. Ask your DNS/infra team to create two A-record aliases pointing to `ZA-Config-ExternalALB-977038863.eu-west-1.elb.amazonaws.com` (hosted zone `Z32O12XQLNTSW2`):
-
-- `automation-api.za.mixtelematics.com`
-- `automation.za.mixtelematics.com`
-
-**2. Rebuild the UI Docker image** — The `api-urls.ts` fix I made is in source only. The DEV image currently deployed doesn't have it, so the ZA UI will route API calls to the wrong URL. You need to build + push a new image to `668736068906.dkr.ecr.eu-west-1.amazonaws.com/za-powerfleet-automation-ui:latest`, then force a redeployment:
-
-```bash
-aws ecs update-service --cluster ZA-Config --service za-powerfleet-automation-ui --force-new-deployment --region eu-west-1
-```
-
-**3. Add OPENAI_API_KEY** — Via console: ECS → Task Definitions → `za-powerfleet-automation-ui` → Create new revision → add the key → update the service to use it.
-
-**Domain note:** I used `automation.za.mixtelematics.com` / `automation-api.za.mixtelematics.com` (not the `-za.` pattern like AU). The `*.mixtelematics.com` cert in this ZA account is **expired**, so only `*.za.mixtelematics.com` works. If you want the `-za.` style, a new ACM cert for `*.mixtelematics.com` would need to be requested and validated via the shared DNS account.
-
-**To fix it**, sign into the AU AWS account and do this via console:
-
-1. ECS → Task Definitions → `au-powerfleet-automation-ui` → latest revision → **Create new revision**
-2. Click the container → Environment variables, ensure all 5 are set:
-
-| Key                        | Value                                                  |
-| -------------------------- | ------------------------------------------------------ |
-| `OPENAI_API_TYPE`        | `azure`                                              |
-| `OPENAI_API_BASE`        | `https://aura-ai-assistant-int-eu.openai.azure.com/` |
-| `OPENAI_API_VERSION`     | `2024-08-01-preview`                                 |
-| `OPENAI_DEPLOYMENT_NAME` | `gpt-4.1`                                            |
-| `OPENAI_API_KEY`         | _(the key)_                                          |
-
-3. Save revision → update the `au-powerfleet-automation-ui` service to use the new revision.
-
-> **Note:** The `OPENAI_API_BASE` above is the INT/EU endpoint — double-check AU has its own Azure OpenAI resource or if it shares the EU one, as that affects which key to use.
 
 ## Examples & Reference
 
@@ -413,3 +266,4 @@ aws ecs update-service --cluster ZA-Config --service za-powerfleet-automation-ui
 - [[AI python to see data issues]]
 - [[Operations Enablement]]
 - [[Operations Tools Looking forward 20260316]] — source transcript: boss's sprint directives (Afrikaans)
+- [[Diff Ideas — Future Roadmap]]

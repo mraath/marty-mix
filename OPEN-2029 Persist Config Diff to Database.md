@@ -2,7 +2,7 @@
 status: Committed
 priority: 1
 created: 2026-04-09T00:00
-updated: 2026-04-14T16:48
+updated: 2026-04-15T09:17
 ---
 
 # OPEN-2029 Persist Config Diff to Database
@@ -86,7 +86,31 @@ Test cases and diffs are fully persistent across ECS restarts. The container fil
 - You mentioned that you will add database tables to store associated assets with configs. We dont need to store the Assets' configs.... only the DIFFs per test (for now)
 - So if this means it is the endpoint to save the actual config for assets - then we could remove that as well "- POST `/api/configdiff/cases/{caseId}/assets` - save asset configs for a case"
 - You asked about this and I also think it should go to the API "For the diff generation script, I need to decide whether to keep it as a Node script that reads from the database or refactor it into an API endpoint. The current flow has the UI calling `POST /api/delta/generate` which triggers the script to read files and write the diff. After migration, I could either update the script to fetch data from the database and write results back, or move the logic entirely into an API route that handles the database operations directly."
-- 
+
+
+```
+  I am going on leave in 2 hours and OPEN-2029 is      
+  complete but not yet
+  deployed/tested. I do not want to lose any work.     
+
+  Please advise:
+  1. Is the OPEN-2029 branch safely committed and      
+  pushed? Confirm the
+     branch name and that all work is on remote.       
+  2. Is it safe to switch to a new Jira ticket now     
+  without losing anything?
+  3. What is the correct state to leave OPEN-2029 in   
+  before I go on leave
+     (Jira status, branch, PR)?
+  4. Recommend one or two small Jira tickets I could   
+  start and complete
+     before I leave in 2 hours — look at my current    
+  OPEN tickets and
+     suggest what is realistic.
+
+  Post your answers as a comment on this issue. Do not 
+  start any coding.
+```
 
 ## PR Checklist
 
