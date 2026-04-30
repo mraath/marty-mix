@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-15T10:50
+updated: 2026-04-28T00:00
 sprint: "2026-03-30"
 ---
 > [!Information] Writing tools to make the clients' lives easier.
@@ -22,11 +22,7 @@ path includes ${dv.current().file.path}
 dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
-- [ ] **OPEN-1971** (Paperclip / Central Agent Server) — actively in progress, continue
-- [ ] **OPEN-2029** (Persist Config Diff to Database) — actively in progress, continue
-- [ ] **OPEN-2045** (Session Timeout 30 min) — In Progress QA, needs sign-off
-- [ ] **OPEN-2046** (Force login on new session) — In Progress QA, needs sign-off
-- [ ] **OPEN-1653** (Config Compare & Diff Engine) — Committed, pick up next
+**OPEN-1653** (Config Compare & Diff Engine) — In Progress Dev, actively building
 
 ---
 
@@ -67,25 +63,16 @@ See full context: [[Operations Tools Looking forward 20260316]]
 
 > Shows all active tickets — everything except Done, Cancelled, and Closed.
 
-| Ticket                                                      | Summary                                                                   | Status                       | Note                                                                           |
-| ----------------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------ |
-| [OPEN-2045](https://powerfleet.atlassian.net/browse/OPEN-2045) | UI - Implement 30-minute inactivity session timeout                       | **In Progress QA** 🧪  | Needs QA sign-off                                                              |
-| [OPEN-2046](https://powerfleet.atlassian.net/browse/OPEN-2046) | UI - Force login when starting a new application session                  | **In Progress QA** 🧪  | Needs QA sign-off                                                              |
-| [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) | [POC] Paperclip Standalone Agentic Server — Centralised AI Orchestration | **In Progress Dev** 🔄 | [[OPEN-1971]]                                                                  |
-| [OPEN-2029](https://powerfleet.atlassian.net/browse/OPEN-2029) | Persist Config Diff to Database (Replace File-Based Storage)              | **In Progress Dev** 🔄 |                                                                                |
-| [OPEN-1653](https://powerfleet.atlassian.net/browse/OPEN-1653) | UI - Select source and comparison configs for same-asset config compare   | **Committed** 📋      | Pick up after 2029 or in parallel                                              |
+| Ticket                                                      | Summary                                                                   | Status                       | Note                              |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------- | --------------------------------- |
+| [OPEN-1653](https://powerfleet.atlassian.net/browse/OPEN-1653) | UI - Select source and comparison configs for same-asset config compare   | **In Progress Dev** 🔨 | [[OPEN-1653 UI - Select source and comparison configs for same-asset config comparison]] |
+| [OPEN-1667](https://powerfleet.atlassian.net/browse/OPEN-1667) | Allow user to save the results in different formats                       | **Committed** 📋       | Export Results — pick up after 1653 |
 
 ### Other Active (FYI)
 
-| Ticket                                                      | Summary                                                                            | Status         | Assignee     |
-| ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------- | ------------ |
-| [OPEN-2028](https://powerfleet.atlassian.net/browse/OPEN-2028) | Configure Standard OpenAI API Key for Paperclip Agents and Automation              | **Committed** 📋 | Ignus Crous |
-
-### Other Active (FYI)
-
-| Ticket                                                      | Summary                                                                            | Status         | Assignee     |
-| ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------- | ------------ |
-| [OPEN-2028](https://powerfleet.atlassian.net/browse/OPEN-2028) | Configure Standard OpenAI API Key for Paperclip Agents and Automation              | **Committed** 📋 | Ignus Crous |
+| Ticket                                                      | Summary                                                               | Status                 | Assignee     |
+| ----------------------------------------------------------- | --------------------------------------------------------------------- | ---------------------- | ------------ |
+| [OPEN-2028](https://powerfleet.atlassian.net/browse/OPEN-2028) | Configure Standard OpenAI API Key for Paperclip Agents and Automation | **Committed** 📋 | Andrew Molina |
 
 ---
 
@@ -97,19 +84,19 @@ See full context: [[Operations Tools Looking forward 20260316]]
 
 - **What**: Set up [paperclipai/paperclip](https://github.com/paperclipai/paperclip) — open-source orchestration for zero-human companies
 - **Reference**: [YouTube demo](https://youtu.be/HJ-dwefABss?si=0RbaGBod88kRzhYz)
-- **Status**: 🔄 [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) — **In Progress Dev**
-- **Note**: Also covers central agent server
+- **Status**: ❌ [OPEN-1971](https://powerfleet.atlassian.net/browse/OPEN-1971) — **Cancelled**
+- **Note**: POC cancelled
 
 ### 2. S3 / DB Persistence — Diff/Cases Runtime Files
 
 - **What**: Files written at runtime (`cases/`, `diff.json`) live only in container memory — lost on every ECS restart. Now replacing S3 with DB persistence.
-- **Status**: 🔄 [OPEN-2029](https://powerfleet.atlassian.net/browse/OPEN-2029) — **In Progress Dev**
-- **Note**: Confirm feature works before tackling further persistence architecture
+- **Status**: ✅ [OPEN-2029](https://powerfleet.atlassian.net/browse/OPEN-2029) — **Done**
+- **Note**: DB persistence shipped and confirmed working
 
 ### 3. Config Compare & Diff — OPEN-1653
 
 - **What**: UI - Select source and comparison configs for same-asset config compare & diff
-- **Status**: 📋 [OPEN-1653](https://powerfleet.atlassian.net/browse/OPEN-1653) — **Committed** — pick up next
+- **Status**: 🔨 [OPEN-1653](https://powerfleet.atlassian.net/browse/OPEN-1653) — **In Progress Dev** — active
 - **Note**: Boss called this second priority ("second story to focus on")
 
 ### 4. Chatbot: Config Fix Suggestions
@@ -137,7 +124,7 @@ See full context: [[Operations Tools Looking forward 20260316]]
 - When the schedule runs → **generate and send a document** (report) automatically
 - The scheduling + document generation is part of this story's scope
 
-### OPEN-1667 — Export Results *(Proposed)*
+### OPEN-1667 — Export Results *(Committed — Marthinus)*
 
 - Covers: chatbot results + diff output → one clean exportable document
 - Proposed document structure:
