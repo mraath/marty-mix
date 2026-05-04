@@ -1,7 +1,7 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-04-28T00:00
-sprint: "2026-03-30"
+updated: 2026-05-04T11:34
+sprint: 2026-03-30
 ---
 > [!Information] Writing tools to make the clients' lives easier.
 
@@ -138,7 +138,7 @@ See full context: [[Operations Tools Looking forward 20260316]]
 - "Super Seed" was mentioned in notes — exact meaning unclear, needs revisiting
 - No firm direction yet — needs more planning before starting
 
-### OPEN-1745 — Drift Explanation & Impact *(Proposed)*
+### OPEN-1745 — Drift Explanation & Impact *(Committed)*
 
 - Need to **ask Mike** what the impact definition should be
 - Get feedback from Mike before implementing
