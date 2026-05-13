@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-05-04T11:34
+updated: 2026-05-12T09:00
 sprint: 2026-03-30
 ---
 > [!Information] Writing tools to make the clients' lives easier.
@@ -66,7 +66,13 @@ See full context: [[Operations Tools Looking forward 20260316]]
 | Ticket                                                      | Summary                                                                   | Status                       | Note                              |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------- | --------------------------------- |
 | [OPEN-1653](https://powerfleet.atlassian.net/browse/OPEN-1653) | UI - Select source and comparison configs for same-asset config compare   | **In Progress Dev** 🔨 | [[OPEN-1653 UI - Select source and comparison configs for same-asset config comparison]] |
-| [OPEN-1667](https://powerfleet.atlassian.net/browse/OPEN-1667) | Allow user to save the results in different formats                       | **Committed** 📋       | Export Results — pick up after 1653 |
+| [OPEN-2142](https://powerfleet.atlassian.net/browse/OPEN-2142) | API - Add deployment pipeline to UK environment                           | **Ready for Review** 👀 | AWS deploy — UK |
+| [OPEN-2143](https://powerfleet.atlassian.net/browse/OPEN-2143) | API - Add deployment pipeline to US environment                           | **Ready for Review** 👀 | AWS deploy — US |
+| [OPEN-2144](https://powerfleet.atlassian.net/browse/OPEN-2144) | UI - Add deployment pipeline to UK environment                            | **Ready for Review** 👀 | AWS deploy — UK |
+| [OPEN-2145](https://powerfleet.atlassian.net/browse/OPEN-2145) | UI - Add deployment pipeline to US environment                            | **Ready for Review** 👀 | AWS deploy — US |
+| [OPEN-2039](https://powerfleet.atlassian.net/browse/OPEN-2039) | UI - Select source and comparison configs from different assets           | **Committed** 📋       | Cross-asset compare |
+| [OPEN-1924](https://powerfleet.atlassian.net/browse/OPEN-1924) | API - Investigate feasibility of cross-data centre configuration analysis | **Committed** 📋       | Spike — cross-DC |
+| [OPEN-1667](https://powerfleet.atlassian.net/browse/OPEN-1667) | Allow user to save the results in different formats                       | **Committed** 📋       | Export Results |
 
 ### Other Active (FYI)
 

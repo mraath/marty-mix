@@ -71,8 +71,6 @@ MiX-Support
 
 ## SERVER
 
-Account: operationsmixtelematics (365528985733) ==AU==
+Account: operationsmixtelematics (365528985733) ==AU (ap-southeast-2) US (us-east-1) UK (eu-west-1)==
 MiX-DevOpsAdmin
 MiX-Support
-
-  
