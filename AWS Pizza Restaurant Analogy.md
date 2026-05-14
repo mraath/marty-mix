@@ -6,6 +6,8 @@ updated: 2026-02-18T07:58
 
 Imagine your cloud application is a **Pizza Restaurant**.
 
+!(AWS Restaurant Explanation)[./AWS Restaurant Explanation.png)
+
 ### 1. The Server (EC2) =&gt; **The Ovens**
 *   **What it is:** The actual computer doing the work.
 *   **Analogy:** An oven. It cooks the pizza. If you have 100 customers, you might need 10 ovens.
@@ -98,4 +100,4 @@ Imagine your cloud application is a **Pizza Restaurant**.
     *   App crashes on startup (Chef burns the pizza every time).
 *   **Fix:** Check CloudWatch Logs, verify health endpoint returns 200 OK, ensure ports match.
 
-[AWS Pizza Restaurant Analogy Diagram](Excalidraw/AWS%20Pizza%20Restaurant%20Analogy.excalidraw)
+![AWS Pizza Restaurant Analogy Diagram](Excalidraw/AWS%20Pizza%20Restaurant%20Analogy.excalidraw)
