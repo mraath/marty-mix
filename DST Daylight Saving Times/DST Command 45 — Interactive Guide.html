@@ -142,6 +142,7 @@
     <button class="tab" onclick="show('flow')">Code Flow</button>
     <button class="tab" onclick="show('cornell')">Cornell's Guide</button>
     <button class="tab" onclick="show('params')">Param Reference</button>
+    <button class="tab" onclick="show('testing')">Testing</button>
   </nav>
 
   <!-- ═══════════════ OVERVIEW ═══════════════ -->
@@ -563,9 +564,139 @@ POST /mobileunits/send-command-to-outdated-daylight-savings
     </div>
   </div>
 
+  <!-- ═══════════════ TESTING ═══════════════ -->
+  <div id="panel-testing" class="panel">
+
+    <div class="card">
+      <h2>Did Command 45 actually reach the device?</h2>
+      <p style="font-size:14px; color:var(--muted); margin-bottom:16px;">
+        MiX4000 = Mesa path. Commands are queued in <code>[DeviceConfiguration.DataProcessing].[state].[MobileUnitMessage]</code>
+        and tracked through <code>[state].[MobileUnitMessageStateHistory]</code>.
+        Run this query after calling the client method to confirm the command was dispatched.
+      </p>
+
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:6px;">
+        <h3 style="margin:0;">SQL — Quick check for a specific MiX4000</h3>
+        <button onclick="copySQL()" style="font-size:12px; padding:5px 14px; background:#2563eb; color:white;
+          border:none; border-radius:6px; cursor:pointer; font-weight:600;">Copy SQL</button>
+      </div>
+
+<pre id="sql-block"><span class="cm">-- Quick check — did Command 45 get queued for this asset?</span>
+<span class="kw">SELECT TOP</span> 20
+    mum.CreationDateUtc,
+    mum.MobileUnitId,
+    mum.ParamsJson,
+    mumh.MessageStatus,
+    mumh.MessageStatusDateUtc
+<span class="kw">FROM</span> [DeviceConfiguration.DataProcessing].[state].[MobileUnitMessage] mum
+<span class="kw">LEFT JOIN</span> [DeviceConfiguration.DataProcessing].[state].[MobileUnitMessageStateHistory] mumh
+    <span class="kw">ON</span> mumh.MessageId = mum.MessageId
+<span class="kw">WHERE</span> mum.ParamsJson <span class="kw">LIKE</span> <span class="st">'%"CommandId":45,%'</span>
+  <span class="kw">AND</span> mum.MobileUnitId = <span class="ty">5458996954334640037</span>   <span class="cm">-- ← replace with your unit ID</span>
+<span class="kw">ORDER BY</span> mum.CreationDateUtc <span class="kw">DESC</span>, mumh.MessageStatusDateUtc <span class="kw">DESC</span></pre>
+
+      <div class="callout info" style="margin-top:16px;">
+        <div class="callout-title">Where to run this</div>
+        <p>Connect to <code>DSINTSQL01</code> (INT) or the DataProcessing DB for your environment.
+        Windows integrated auth — no password needed from the dev machine.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Reading the results</h2>
+      <table>
+        <thead><tr>
+          <th>MessageStatus</th>
+          <th>Meaning</th>
+          <th>What to do</th>
+        </tr></thead>
+        <tbody>
+          <tr style="background:#fef9c3;">
+            <td><code>22</code> — Created</td>
+            <td>Queued in DB, not yet sent to device</td>
+            <td>Wait — normal if just sent</td>
+          </tr>
+          <tr>
+            <td><code>4</code> — Sent</td>
+            <td>Dispatched to device, awaiting response</td>
+            <td>Wait — device may be offline</td>
+          </tr>
+          <tr>
+            <td><code>9</code> — Received</td>
+            <td>Device received the command</td>
+            <td>Good — processing</td>
+          </tr>
+          <tr style="background:#f0fdf4;">
+            <td><code>13</code> — Acknowledged</td>
+            <td>Device confirmed and applied the offset</td>
+            <td>Done — DST set correctly</td>
+          </tr>
+          <tr style="background:#f0fdf4;">
+            <td><code>25</code> — Complete</td>
+            <td>Fully processed</td>
+            <td>Done</td>
+          </tr>
+          <tr style="background:#fef2f2;">
+            <td><code>14</code> — Expired</td>
+            <td>Command timed out, device never responded</td>
+            <td>Device offline? Resend.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout danger" style="margin-top:16px;">
+        <div class="callout-title">No rows at all?</div>
+        <p>The command never reached the database. The failure happened before dispatch — check: auth token valid? Asset has <code>REMOTE_COMMAND</code> logical device? Asset has <code>BASE_MESA_FUNCTIONALITY</code>?</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Also useful — stored procedure (full check across all assets)</h2>
+      <p style="font-size:13px; color:var(--muted); margin-bottom:12px;">
+        The Windows Tool uses this proc internally for its "Get Outdated" button. It checks both FM and Mesa,
+        compares the latest command params against the asset's current site timezone, and returns which assets are incorrect.
+      </p>
+<pre><span class="cm">-- Full check: latest DST command per asset vs current site timezone</span>
+<span class="kw">EXEC</span> [state].[MobileUnitMessages_GetLatestDaylightSavingsCommands]
+    @orgIdsUI   = <span class="cm">/* dbo.SelectionIds table — pass empty for all orgs */</span>,
+    @assetIdsUI = <span class="cm">/* dbo.SelectionIds table — pass empty for all assets */</span>,
+    @typeIdsUI  = <span class="cm">/* dbo.SelectionIds table — pass empty for all types (FM + Mesa) */</span>
+
+<span class="cm">-- Returns one row per mobile unit with:
+--   MobileUnitId, vDesc, MobileDeviceTypeDescription,
+--   DisplayTimeZone, Message (last ParamsJson sent),
+--   liGMTOffset</span></pre>
+      <p style="font-size:12px; color:var(--muted); margin-top:10px;">
+        Source: <code>C:\Projects\marty-mix\Attachments\SRE-105_WIP.sql</code>
+      </p>
+    </div>
+
+  </div>
+
 </div>
 
 <script>
+function copySQL() {
+  const raw = `-- Quick check — did Command 45 get queued for this asset?
+SELECT TOP 20
+    mum.CreationDateUtc,
+    mum.MobileUnitId,
+    mum.ParamsJson,
+    mumh.MessageStatus,
+    mumh.MessageStatusDateUtc
+FROM [DeviceConfiguration.DataProcessing].[state].[MobileUnitMessage] mum
+LEFT JOIN [DeviceConfiguration.DataProcessing].[state].[MobileUnitMessageStateHistory] mumh
+    ON mumh.MessageId = mum.MessageId
+WHERE mum.ParamsJson LIKE '%"CommandId":45,%'
+  AND mum.MobileUnitId = 5458996954334640037   -- replace with your unit ID
+ORDER BY mum.CreationDateUtc DESC, mumh.MessageStatusDateUtc DESC`;
+  navigator.clipboard.writeText(raw).then(() => {
+    const btn = event.target;
+    btn.textContent = 'Copied!';
+    btn.style.background = '#16a34a';
+    setTimeout(() => { btn.textContent = 'Copy SQL'; btn.style.background = '#2563eb'; }, 2000);
+  });
+}
 function show(name) {
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
