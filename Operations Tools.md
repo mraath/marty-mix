@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-05-13T10:30
+updated: 2026-05-15T08:00
 sprint: 2026-03-30
 ---
 > [!Information] Writing tools to make the clients' lives easier.
@@ -71,7 +71,7 @@ See full context: [[Operations Tools Looking forward 20260316]]
 | [OPEN-2144](https://powerfleet.atlassian.net/browse/OPEN-2144) | UI - Add deployment pipeline to UK environment                            | **Ready for Review** 👀 | AWS deploy — UK |
 | [OPEN-2145](https://powerfleet.atlassian.net/browse/OPEN-2145) | UI - Add deployment pipeline to US environment                            | **Ready for Review** 👀 | AWS deploy — US |
 | [OPEN-2368](https://powerfleet.atlassian.net/browse/OPEN-2368) | API - Migrate configdiff repository to Aurora PostgreSQL                  | **Ready for Review** 👀 | PostgreSQL migration |
-| [OPEN-2369](https://powerfleet.atlassian.net/browse/OPEN-2369) | Database - Remove configdiff schema from DeviceConfiguration SSDT project | **In Code Review** 🔍 | PostgreSQL migration |
+| [OPEN-2369](https://powerfleet.atlassian.net/browse/OPEN-2369) | Database - Remove configdiff schema from DeviceConfiguration SSDT project | **Ready for Review** 👀 | PostgreSQL migration |
 | [OPEN-2298](https://powerfleet.atlassian.net/browse/OPEN-2298) | Run ConfigDiff production schema setup script on all production servers   | **Ready for Review** 👀 | Schema setup — prod servers |
 | [OPEN-2039](https://powerfleet.atlassian.net/browse/OPEN-2039) | UI - Select source and comparison configs from different assets           | **Committed** 📋       | Cross-asset compare |
 | [OPEN-1924](https://powerfleet.atlassian.net/browse/OPEN-1924) | API - Investigate feasibility of cross-data centre configuration analysis | **Committed** 📋       | Spike — cross-DC |
