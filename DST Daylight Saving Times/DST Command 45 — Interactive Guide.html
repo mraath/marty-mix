@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DST Command 45 — Architecture & Code Paths</title>
+<style>
+  :root {
+    --blue-bg: #dbeafe; --blue-border: #1d4ed8; --blue-text: #1e3a8a;
+    --orange-bg: #ffedd5; --orange-border: #c2410c; --orange-text: #7c2d12;
+    --purple-bg: #ede9fe; --purple-border: #6d28d9; --purple-text: #4c1d95;
+    --green-bg: #dcfce7; --green-border: #15803d; --green-text: #14532d;
+    --amber-bg: #fef3c7; --amber-border: #b45309; --amber-text: #78350f;
+    --grey-bg: #f3f4f6; --grey-border: #9ca3af; --grey-text: #374151;
+    --red-bg: #fef2f2; --red-border: #dc2626; --red-text: #7f1d1d;
+    --bg: #f8fafc; --surface: #ffffff; --text: #0f172a; --muted: #64748b;
+    --radius: 10px; --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.5; }
+  .page { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+  h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+  .subtitle { color: var(--muted); font-size: 15px; margin-bottom: 32px; }
+  h2 { font-size: 18px; font-weight: 600; margin-bottom: 16px; }
+  h3 { font-size: 15px; font-weight: 600; margin-bottom: 8px; }
+
+  /* NAV TABS */
+  .tabs { display: flex; gap: 4px; margin-bottom: 24px; border-bottom: 2px solid #e2e8f0; }
+  .tab { padding: 10px 20px; background: none; border: none; cursor: pointer;
+         font-size: 14px; font-weight: 500; color: var(--muted); border-radius: 6px 6px 0 0;
+         transition: all 0.15s; border-bottom: 2px solid transparent; margin-bottom: -2px; }
+  .tab:hover { color: var(--text); background: #f1f5f9; }
+  .tab.active { color: #2563eb; border-bottom-color: #2563eb; background: var(--surface); }
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  /* CARDS */
+  .card { background: var(--surface); border-radius: var(--radius); padding: 20px;
+          box-shadow: var(--shadow); border: 1px solid #e2e8f0; }
+  .card + .card { margin-top: 16px; }
+
+  /* ENTRY POINT BADGES */
+  .entry-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .entry-card { border-radius: var(--radius); padding: 16px; border-width: 2px; border-style: solid; }
+  .entry-card.blue { background: var(--blue-bg); border-color: var(--blue-border); }
+  .entry-card.orange { background: var(--orange-bg); border-color: var(--orange-border); }
+  .entry-card.amber { background: var(--amber-bg); border-color: var(--amber-border); }
+  .entry-title { font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+  .entry-card.blue .entry-title { color: var(--blue-text); }
+  .entry-card.orange .entry-title { color: var(--orange-text); }
+  .entry-card.amber .entry-title { color: var(--amber-text); }
+  .entry-card p { font-size: 13px; color: var(--grey-text); margin-top: 6px; }
+  .warn { display: inline-block; background: #fef2f2; color: #b91c1c; border: 1px solid #fca5a5;
+          border-radius: 4px; padding: 2px 8px; font-size: 12px; font-weight: 600; margin-top: 6px; }
+
+  /* FLOW DIAGRAM */
+  .flow { display: flex; flex-direction: column; align-items: center; gap: 0; }
+  .flow-row { display: flex; align-items: flex-start; gap: 16px; width: 100%; justify-content: center; }
+  .flow-box { border-radius: 8px; padding: 14px 18px; border-width: 2px; border-style: solid;
+              font-size: 13px; min-width: 180px; text-align: center; position: relative; }
+  .flow-box.blue { background: var(--blue-bg); border-color: var(--blue-border); color: var(--blue-text); }
+  .flow-box.orange { background: var(--orange-bg); border-color: var(--orange-border); color: var(--orange-text); }
+  .flow-box.purple { background: var(--purple-bg); border-color: var(--purple-border); color: var(--purple-text); }
+  .flow-box.green { background: var(--green-bg); border-color: var(--green-border); color: var(--green-text); }
+  .flow-box.grey { background: var(--grey-bg); border-color: var(--grey-border); color: var(--grey-text); }
+  .flow-box.amber { background: var(--amber-bg); border-color: var(--amber-border); color: var(--amber-text); }
+  .flow-box strong { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase;
+                     letter-spacing: 0.04em; margin-bottom: 4px; opacity: 0.7; }
+  .flow-arrow { display: flex; align-items: center; justify-content: center; height: 32px; color: var(--muted); font-size: 20px; }
+  .flow-arrow.label { flex-direction: column; gap: 2px; }
+  .flow-arrow.label span { font-size: 11px; color: var(--muted); }
+  .flow-split { display: flex; align-items: flex-start; gap: 24px; justify-content: center; }
+  .flow-branch { display: flex; flex-direction: column; align-items: center; }
+  .flow-label { font-size: 11px; font-weight: 600; color: var(--muted); background: var(--bg);
+                border: 1px solid #e2e8f0; border-radius: 20px; padding: 2px 10px; margin-bottom: 8px; }
+
+  /* CODE BLOCKS */
+  pre, code { font-family: "Cascadia Code", "JetBrains Mono", "Fira Code", monospace; }
+  pre { background: #0f172a; color: #e2e8f0; padding: 16px 20px; border-radius: 8px;
+        font-size: 13px; overflow-x: auto; line-height: 1.6; margin: 12px 0; }
+  code { background: #f1f5f9; color: #1e293b; padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+  .kw { color: #93c5fd; }  .cm { color: #6b7280; font-style: italic; }
+  .st { color: #86efac; }  .ty { color: #fde68a; }  .fn { color: #c4b5fd; }
+
+  /* ENDPOINT TABLE */
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #f1f5f9; padding: 10px 14px; text-align: left; font-weight: 600;
+       color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+  td { padding: 10px 14px; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; }
+  .badge.post { background: #dcfce7; color: #15803d; }
+  .badge.get { background: #dbeafe; color: #1d4ed8; }
+  .badge.best { background: #fef9c3; color: #a16207; }
+
+  /* CALLOUT */
+  .callout { border-radius: 8px; padding: 14px 18px; margin: 16px 0; border-left-width: 4px; border-left-style: solid; }
+  .callout.info { background: #eff6ff; border-color: #3b82f6; }
+  .callout.warn { background: #fef3c7; border-color: #f59e0b; }
+  .callout.success { background: #f0fdf4; border-color: #22c55e; }
+  .callout.danger { background: #fef2f2; border-color: #ef4444; }
+  .callout-title { font-weight: 700; font-size: 13px; margin-bottom: 4px; }
+  .callout p { font-size: 13px; }
+
+  /* PARAM TABLE */
+  .param-grid { display: grid; grid-template-columns: 80px 1fr 1fr; gap: 8px 16px; font-size: 13px; align-items: start; }
+  .param-label { font-weight: 700; font-family: monospace; color: #6d28d9; }
+  .param-desc { color: var(--text); }
+  .param-formula { color: var(--muted); font-style: italic; }
+
+  /* TRIGGER TABLE */
+  .trigger-list { display: flex; flex-direction: column; gap: 6px; }
+  .trigger-row { display: flex; gap: 12px; align-items: baseline; font-size: 13px; padding: 6px 10px;
+                 background: #f8fafc; border-radius: 6px; }
+  .trigger-file { font-family: monospace; font-size: 12px; color: #6d28d9; min-width: 260px; }
+  .trigger-method { color: var(--blue-text); font-weight: 600; min-width: 220px; }
+  .trigger-desc { color: var(--muted); }
+
+  /* CORNELL SECTION */
+  .cornell-steps { display: flex; flex-direction: column; gap: 12px; }
+  .cornell-step { border-radius: 8px; padding: 16px; border: 1px solid #e2e8f0; background: var(--surface); }
+  .step-num { display: inline-flex; align-items: center; justify-content: center; width: 24px; height: 24px;
+              background: #2563eb; color: white; border-radius: 50%; font-size: 12px; font-weight: 700;
+              margin-right: 8px; }
+  .step-title { font-weight: 600; font-size: 14px; }
+
+  /* SKIP RULES */
+  .skip-list { display: flex; flex-direction: column; gap: 8px; }
+  .skip-item { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; }
+  .skip-icon { color: #dc2626; font-size: 16px; margin-top: 1px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>DST — Command 45 Architecture &amp; Code Paths</h1>
+  <p class="subtitle">UpdateAssetTimezoneDeviation · 4 entry points · Config.Api delivers to device</p>
+
+  <nav class="tabs">
+    <button class="tab active" onclick="show('overview')">Overview</button>
+    <button class="tab" onclick="show('entries')">Entry Points</button>
+    <button class="tab" onclick="show('flow')">Code Flow</button>
+    <button class="tab" onclick="show('cornell')">Cornell's Guide</button>
+    <button class="tab" onclick="show('params')">Param Reference</button>
+  </nav>
+
+  <!-- ═══════════════ OVERVIEW ═══════════════ -->
+  <div id="panel-overview" class="panel active">
+    <div class="card">
+      <h2>What is Command 45?</h2>
+      <p style="font-size:14px; margin-bottom:16px; color:var(--muted)">
+        <strong>Command 45 = <code>UpdateAssetTimezoneDeviation</code></strong> — tells a device its timezone offset relative
+        to the org timezone, both before and after a DST transition.
+      </p>
+      <div class="param-grid" style="margin-bottom:16px;">
+        <div class="param-label">Param1</div>
+        <div class="param-desc">Seconds offset <strong>before</strong> DST change</div>
+        <div class="param-formula">SiteOffset − OrgOffset (pre-transition)</div>
+        <div class="param-label">Param2</div>
+        <div class="param-desc">Seconds offset <strong>after</strong> DST change</div>
+        <div class="param-formula">SiteOffset − OrgOffset (post-transition)</div>
+        <div class="param-label">Param3</div>
+        <div class="param-desc">Unix timestamp of DST transition</div>
+        <div class="param-formula">946688400 = "no DST" in Windows</div>
+      </div>
+      <div class="callout info">
+        <div class="callout-title">Key fact</div>
+        <p>Config.Api calculates all three params itself from the asset's site timezone. You never need to compute them manually.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Architecture at a Glance</h2>
+      <div class="flow" style="padding: 8px 0;">
+        <div class="flow-row">
+          <div class="flow-box blue" style="width:200px"><strong>Entry 1</strong>UI Events<br><small>9 Backend call sites</small></div>
+          <div class="flow-box orange" style="width:200px"><strong>Entry 2</strong>Windows Tool<br><small>DaylightSavingsTimeAdjusterNew</small></div>
+          <div class="flow-box blue" style="width:200px"><strong>Entry 3</strong>Nightly Service<br><small>00:00:01 daily</small></div>
+          <div class="flow-box amber" style="width:200px; border-style:dashed;"><strong>Entry 4 ⚠️</strong>Command Line<br><small>Silently stops at EndDate</small></div>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-row">
+          <div class="flow-box blue" style="width:460px"><strong>Entries 1 &amp; 3 only</strong>DeviceIntegrationManager → CommandManager<br><small>Calculates params · routes DIS vs legacy</small></div>
+          <div class="flow-box orange" style="width:380px"><strong>Entries 2, 3 &amp; 4</strong>MiX.ConfigInternal.Api.Client<br><small>HTTP client library</small></div>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-row">
+          <div class="flow-box purple" style="width:900px">
+            <strong>Config.Api</strong>
+            DaylightSavingsManager → MobileUnitCommandsManager<br>
+            <small>SendCommandToMobileUnit(authToken, orgId, assetId, CommandId=45, param1, param2, param3)</small>
+          </div>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-row" style="gap:40px;">
+          <div class="flow-box green" style="width:280px"><strong>Mesa / MiX4000</strong>[state].[MobileUnitMessage]<br><small>DataProcessing DB</small></div>
+          <div class="flow-box grey" style="width:280px"><strong>FM Legacy</strong>[dbo].[messages]<br><small>Asset Org DB · M2K units</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ ENTRY POINTS ═══════════════ -->
+  <div id="panel-entries" class="panel">
+    <div class="entry-grid">
+      <div class="entry-card blue">
+        <div class="entry-title">Entry 1 — UI / API Events</div>
+        <p>Nine call sites in <strong>DynaMiX.Backend</strong>. All funnel into <code>DeviceIntegrationManager.UpdateAssetTimezoneDeviation()</code>.</p>
+        <p style="margin-top:8px;">Triggered by moving assets, editing sites, merging sites, commissioning, config group changes, and mobile app updates.</p>
+      </div>
+      <div class="entry-card blue">
+        <div class="entry-title">Entry 3 — Nightly Service</div>
+        <p><code>DaylightSavingAdjustmentService</code> — runs at 00:00:01 daily in <strong>DynaMiX.Backend</strong>.</p>
+        <p style="margin-top:8px;">Skips assets that already received a correct command this year. Routes through <code>DeviceIntegrationManager</code> same as Entry 1.</p>
+      </div>
+      <div class="entry-card orange">
+        <div class="entry-title">Entry 2 — Windows Tool</div>
+        <p><code>DaylightSavingsTimeAdjusterNew</code> — redesigned 2023 (CONFIG-3387). WinForms, runs on jumpbox.</p>
+        <p style="margin-top:8px;">Calls Config.Api directly via <code>MiX.ConfigInternal.Api.Client</code>. Two-step: get outdated → send.</p>
+      </div>
+      <div class="entry-card amber">
+        <div class="entry-title">Entry 4 — Command Line ⚠️</div>
+        <p><code>DaylightSavingsTimeAdjusterCommandline</code> — loops every N minutes until <code>EndDate</code>.</p>
+        <span class="warn">⚠️ SILENTLY STOPS when EndDate expires — no error, no alert</span>
+        <p style="margin-top:8px;">Fix: RDP to HSSYDATS02 → open <code>C:\Projects\DST Command Line\appsettings.json</code> → update <code>EndDate</code>.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Entry 1 — All 9 Call Sites</h2>
+      <div class="trigger-list">
+        <div class="trigger-row">
+          <div class="trigger-file">OrgGroupMembershipModule.cs:431</div>
+          <div class="trigger-method">MoveAssetsToSite()</div>
+          <div class="trigger-desc">Asset moved to a different site</div>
+        </div>
+        <div class="trigger-row">
+          <div class="trigger-file">OrgGroupMembershipModule.cs:672</div>
+          <div class="trigger-method">UpdateSite()</div>
+          <div class="trigger-desc">Site timezone is edited</div>
+        </div>
+        <div class="trigger-row">
+          <div class="trigger-file">OrgGroupMembershipModule.cs:706</div>
+          <div class="trigger-method">MergeToSite()</div>
+          <div class="trigger-desc">Site merge</div>
+        </div>
+        <div class="trigger-row">
+          <div class="trigger-file">AssetCommissioningModule.cs:1676</div>
+          <div class="trigger-method">CommissionAsset()</div>
+          <div class="trigger-desc">Asset commissioned with a site</div>
+        </div>
+        <div class="trigger-row">
+          <div class="trigger-file">AssetMaintenanceModule.cs:546</div>
+          <div class="trigger-method">ChangeAssetConfigurationGroup()</div>
+          <div class="trigger-desc">Config group changed</div>
+        </div>
+        <div class="trigger-row">
+          <div class="trigger-file">DataModule.cs:1046</div>
+          <div class="trigger-method">CreateAsset() — Mobile</div>
+          <div class="trigger-desc">New asset created via mobile app</div>
+        </div>
+        <div class="trigger-row">
+          <div class="trigger-file">DataModule.cs:1079</div>
+          <div class="trigger-method">UpdateAsset() — Mobile</div>
+          <div class="trigger-desc">Asset site or group changed via mobile app</div>
+        </div>
+        <div class="trigger-row">
+          <div class="trigger-file">AssetsAndDriversModule.cs:181</div>
+          <div class="trigger-method">CreateAsset() — Mobile</div>
+          <div class="trigger-desc">New asset (alternate mobile module)</div>
+        </div>
+        <div class="trigger-row">
+          <div class="trigger-file">AssetsAndDriversModule.cs:220</div>
+          <div class="trigger-method">UpdateAsset() — Mobile</div>
+          <div class="trigger-desc">Asset updated (alternate mobile module)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ CODE FLOW ═══════════════ -->
+  <div id="panel-flow" class="panel">
+    <div class="card">
+      <h2>Entry 1 &amp; 3 — Through Backend</h2>
+<pre><span class="cm">// ─── Any of the 9 call sites ─────────────────────────────────────────</span>
+<span class="ty">DeviceIntegrationManager</span>.<span class="fn">UpdateAssetTimezoneDeviation</span>(authToken, orgId, siteId, assetIds, ...)
+  └─► <span class="fn">SendCommandToUpdateAssetTimezoneDeviation</span>(...)
+        <span class="cm">// Calculates params from site.DisplayTimeZone</span>
+        param1 = SiteOffset − OrgOffset (before DST, seconds)
+        param2 = SiteOffset − OrgOffset (after DST, seconds)
+        param3 = Unix timestamp of DST change (946688400 = no DST)
+        <span class="cm">// Filters: only FM/Mesa units WITH REMOTE_COMMAND logical device</span>
+        └─► <span class="ty">CommandManager</span>.<span class="fn">SendCommandToMobileDevice</span>(cmd, assetId, ...)
+              ├─ [DIS — M4K/M6K] → <span class="ty">MiX.ConfigInternal.Api.Client</span>
+              │                    → HTTP → Config.Api → device
+              └─ [Legacy — M2K]  → <span class="ty">MessagingManager</span>.<span class="fn">AddMessage</span>()
+                                   → [dbo].[messages] (Asset Org DB)</pre>
+    </div>
+
+    <div class="card">
+      <h2>Entries 2 &amp; 4 — Direct to Config.Api</h2>
+<pre><span class="cm">// Windows Tool (Entry 2) or Command Line (Entry 4)</span>
+<span class="cm">// No Backend involved — calls Config.Api via MiX.ConfigInternal.Api.Client</span>
+
+<span class="cm">// Step 1: find outdated assets (Config.Api calculates correct params)</span>
+<span class="ty">MobileUnitCommandsRepository</span>.<span class="fn">GetAssetsWithOutdatedDaylightSavingsCommands</span>(
+    authToken,
+    <span class="kw">new</span> <span class="ty">DaylightSavingsCommand</span> { GroupIds = <span class="st">""</span>, MobileUnitIds = <span class="st">"123,456"</span>, TypeIds = <span class="st">""</span> }
+)
+<span class="cm">// Returns: List&lt;AssetWithoutDST&gt; — each item has Param1/Param2/Param3 pre-calculated</span>
+
+<span class="cm">// Step 2: send (params came from step 1 — no manual calculation)</span>
+<span class="ty">MobileUnitCommandsRepository</span>.<span class="fn">SendCommandsToAssetsWithOutdatedDaylightSavingsCommands</span>(
+    authToken,
+    assets.<span class="fn">Select</span>(a => <span class="kw">new</span> <span class="ty">AssetDSTCommand</span> {
+        GroupId = a.GroupId, MobileUnitId = a.MobileUnitId,
+        IsRemoteCommandConnected = a.IsRemoteCommandConnected,
+        Param1 = a.Param1, Param2 = a.Param2, Param3 = a.Param3   <span class="cm">// straight from step 1</span>
+    }).<span class="fn">ToList</span>()
+)
+<span class="cm">// Returns: List&lt;string&gt; errors — empty = all sent OK</span></pre>
+    </div>
+
+    <div class="card">
+      <h2>Inside Config.Api</h2>
+<pre><span class="ty">DaylightSavingsManager</span>.<span class="fn">SendDaylightSavingsCommandToMobileUnits</span>(authToken, groupIds, mobileUnitIds, typeIds)
+  <span class="cm">// 1. Looks up assets → their sites → site.DisplayTimeZone</span>
+  <span class="cm">// 2. Calls TimeZoneCalculations.GetOffsetsBySiteTimeZoneName() → param1/2/3</span>
+  <span class="cm">// 3. For each asset:</span>
+  └─► <span class="ty">MobileUnitCommandsManager</span>.<span class="fn">SendCommandToMobileUnit</span>(
+        authToken, orgId, assetId,
+        CommandIdType.UpdateAssetTimezoneDeviation, <span class="cm">// = 45</span>
+        <span class="kw">null</span>, param1, param2, param3
+      )
+        ├─ [FM path]   → <span class="ty">MessagingManager</span> → [dbo].[messages]
+        └─ [Mesa path] → device-family <span class="ty">CommandSender</span> → [state].[MobileUnitMessage]</pre>
+
+      <div class="card" style="background:#fef2f2; border-color:#fca5a5; margin-top:16px;">
+        <h3>Silent skip rules — assets that receive no command and no error</h3>
+        <div class="skip-list" style="margin-top:8px;">
+          <div class="skip-item">
+            <span class="skip-icon">✗</span>
+            <span>Asset missing <code>BASE_FM_FUNCTIONALITY</code> <strong>and</strong> <code>BASE_MESA_FUNCTIONALITY</code> logical device → silently skipped</span>
+          </div>
+          <div class="skip-item">
+            <span class="skip-icon">✗</span>
+            <span>Asset missing <code>REMOTE_COMMAND</code> logical device → logged at Debug level as FAILURE, not sent</span>
+          </div>
+          <div class="skip-item">
+            <span class="skip-icon">✗</span>
+            <span>Already received correct DST command this year (Entry 3 only) → skipped to avoid duplicates</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ CORNELL'S GUIDE ═══════════════ -->
+  <div id="panel-cornell" class="panel">
+    <div class="callout success">
+      <div class="callout-title">Bottom line for Cornell</div>
+      <p>Config.Api handles <em>all</em> param calculation. You pass asset/group IDs and it figures out the timezone offsets. You never touch Param1/Param2/Param3 directly.</p>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Config.Api DST Endpoints</h2>
+      <table>
+        <thead><tr>
+          <th>Method</th><th>Route</th><th>Body</th><th>Returns</th><th></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="badge post">POST</span></td>
+            <td><code>mobileunits/daylight-savings</code></td>
+            <td><code>DaylightSavingsCommand</code></td>
+            <td><code>bool</code></td>
+            <td><span class="badge best">★ Simplest</span></td>
+          </tr>
+          <tr>
+            <td><span class="badge post">POST</span></td>
+            <td><code>mobileunits/outdated-daylight-savings</code></td>
+            <td><code>DaylightSavingsCommand</code></td>
+            <td><code>List&lt;AssetWithoutDST&gt;</code></td>
+            <td>Step 1 of 2</td>
+          </tr>
+          <tr>
+            <td><span class="badge post">POST</span></td>
+            <td><code>mobileunits/send-command-to-outdated-daylight-savings</code></td>
+            <td><code>List&lt;AssetDSTCommand&gt;</code></td>
+            <td><code>List&lt;string&gt;</code> errors</td>
+            <td>Step 2 of 2</td>
+          </tr>
+          <tr>
+            <td><span class="badge post">POST</span></td>
+            <td><code>organisations/daylight-savings/mobile-units</code></td>
+            <td>none</td>
+            <td><code>void</code></td>
+            <td>All orgs, auto</td>
+          </tr>
+          <tr>
+            <td><span class="badge get">GET</span></td>
+            <td><code>mobileunits/groupIds/{id}/mobile-units-list/dstcommandsqueued</code></td>
+            <td>—</td>
+            <td><code>List&lt;MobileUnitMessageDST&gt;</code></td>
+            <td>Audit/history</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size:12px; color:var(--muted); margin-top:10px;">
+        Swagger INT: <code>http://ecs-api.config.int.priv/swagger/index.html</code> &nbsp;|&nbsp;
+        Swagger DEV: <code>http://api.deviceconfig.dev.priv/swagger/index.html</code>
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Option A — Single call (recommended for a new app)</h2>
+      <div class="callout info" style="margin-bottom:12px;">
+        <p>One endpoint, no pre-computation. Config.Api finds outdated assets, calculates all params, and sends the commands. Returns <code>true</code>.</p>
+      </div>
+<pre><span class="cm">// Via MiX.ConfigInternal.Api.Client</span>
+<span class="kw">await</span> _internalOrgRepo.<span class="fn">AdjustDaylightSavingsForMobileUnits</span>(correlationId: requestId);
+
+<span class="cm">// Or directly via HTTP</span>
+POST /organisations/daylight-savings/mobile-units
+<span class="cm">// No body needed</span>
+
+<span class="cm">// Or for specific assets:</span>
+POST /mobileunits/daylight-savings
+{
+  <span class="st">"GroupIds"</span>: <span class="st">""</span>,
+  <span class="st">"MobileUnitIds"</span>: <span class="st">"1407712035682283520,1336405323247910912"</span>,
+  <span class="st">"TypeIds"</span>: <span class="st">""</span>
+}
+<span class="cm">// Returns: true</span></pre>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Option B — 2-step (when you want to show the user before sending)</h2>
+      <div class="callout info" style="margin-bottom:12px;">
+        <p>Step 1 returns a list showing each asset's current (wrong) params and the correct ones. Step 2 sends using the params <em>returned by step 1</em> — you never calculate offsets yourself.</p>
+      </div>
+<pre><span class="cm">// STEP 1 — get outdated assets (Config.Api calculates correct params)</span>
+POST /mobileunits/outdated-daylight-savings
+{
+  <span class="st">"GroupIds"</span>: <span class="st">""</span>,
+  <span class="st">"MobileUnitIds"</span>: <span class="st">"1407712035682283520,1336405323247910912"</span>,
+  <span class="st">"TypeIds"</span>: <span class="st">""</span>
+}
+<span class="cm">// Returns: List&lt;AssetWithoutDST&gt;</span>
+[{
+  <span class="st">"AssetId"</span>: 1407712035682283520,
+  <span class="st">"OrganisationName"</span>: <span class="st">"Chevron Barrow Island"</span>,
+  <span class="st">"AssetDesciption"</span>: <span class="st">"MiX4000 Unit 01"</span>,
+  <span class="st">"Status"</span>: <span class="st">"Command Incorrect"</span>,
+  <span class="st">"Param1"</span>: 3600,   <span class="cm">// ← correct value, already calculated</span>
+  <span class="st">"Param2"</span>: 7200,   <span class="cm">// ← correct value, already calculated</span>
+  <span class="st">"Param3"</span>: 1698620400  <span class="cm">// ← correct value, already calculated</span>
+}]
+
+<span class="cm">// Show list to user, let them confirm, then:</span>
+
+<span class="cm">// STEP 2 — send (pass params straight from step 1, no calculation)</span>
+POST /mobileunits/send-command-to-outdated-daylight-savings
+[{
+  <span class="st">"GroupId"</span>: 0,
+  <span class="st">"MobileUnitId"</span>: 1407712035682283520,
+  <span class="st">"IsRemoteCommandConnected"</span>: <span class="kw">true</span>,
+  <span class="st">"Param1"</span>: 3600,   <span class="cm">// ← from step 1</span>
+  <span class="st">"Param2"</span>: 7200,   <span class="cm">// ← from step 1</span>
+  <span class="st">"Param3"</span>: 1698620400  <span class="cm">// ← from step 1</span>
+}]
+<span class="cm">// Returns: [] (empty = all sent OK)  or  ["Asset 123: error message"]</span></pre>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>DTOs</h2>
+<pre><span class="kw">class</span> <span class="ty">DaylightSavingsCommand</span> {
+    <span class="kw">string</span> GroupIds;      <span class="cm">// comma-separated group IDs, or ""</span>
+    <span class="kw">string</span> MobileUnitIds; <span class="cm">// comma-separated asset IDs, or ""</span>
+    <span class="kw">string</span> TypeIds;       <span class="cm">// e.g. "MiX4k", or ""</span>
+}
+
+<span class="kw">class</span> <span class="ty">AssetWithoutDST</span> {     <span class="cm">// returned by step 1</span>
+    <span class="kw">long</span> GroupId, AssetId, MobileUnitId;
+    <span class="kw">string</span> OrganisationName, AssetDesciption, MobileDeviceTypeDescription;
+    <span class="kw">bool</span> IsRemoteCommandConnected, MesaHasUniqueIdentifier;
+    <span class="kw">uint</span> Param1, Param2, Param3;  <span class="cm">// correct values — use as-is in step 2</span>
+    <span class="kw">string</span> Status;                 <span class="cm">// "Command Incorrect", "Empty Command", etc.</span>
+}
+
+<span class="kw">class</span> <span class="ty">AssetDSTCommand</span> {      <span class="cm">// sent in step 2</span>
+    <span class="kw">long</span> GroupId, MobileUnitId;
+    <span class="kw">bool</span> IsRemoteCommandConnected;
+    <span class="kw">uint</span> Param1, Param2, Param3;  <span class="cm">// copy from AssetWithoutDST</span>
+}</pre>
+    </div>
+  </div>
+
+  <!-- ═══════════════ PARAM REFERENCE ═══════════════ -->
+  <div id="panel-params" class="panel">
+    <div class="card">
+      <h2>Command 45 Param Reference</h2>
+      <table style="margin-bottom:16px;">
+        <thead><tr><th>Param</th><th>Meaning</th><th>Formula</th><th>Special value</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><code>Param1</code></td>
+            <td>Seconds offset <strong>before</strong> DST transition</td>
+            <td><code>SiteOffset − OrgOffset</code></td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><code>Param2</code></td>
+            <td>Seconds offset <strong>after</strong> DST transition</td>
+            <td><code>SiteOffset − OrgOffset</code></td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><code>Param3</code></td>
+            <td>Unix timestamp of DST change</td>
+            <td>Windows timezone rules</td>
+            <td><code>946688400</code> = no DST</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>FM command format</h3>
+      <pre>CommandID=45;Params=dword:{Param1},dword:{Param2},dword:{Param3};</pre>
+
+      <h3>Mesa / MiX4000 command format</h3>
+      <pre>{ "CommandId": 45, "Param1": {p1}, "Param2": {p2}, "Param3": {p3} }</pre>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Command Line appsettings.json</h2>
+      <div class="callout warn" style="margin-bottom:12px;">
+        <div class="callout-title">⚠️ EndDate gotcha</div>
+        <p>When <code>EndDate</code> expires the tool silently stops — no log entry, no alert. If DST commands stop going out for an AU org, check this file first.</p>
+      </div>
+<pre>{
+  <span class="st">"AppName"</span>: <span class="st">"DynaMiX.DeviceConfig.Utilities.DaylightSavingsTimeAdjusterCommandline"</span>,
+  <span class="st">"Env"</span>: <span class="st">"SYD"</span>,
+  <span class="st">"EndDate"</span>: <span class="st">"2025/07/10"</span>,       <span class="cm">← UPDATE THIS when expired</span>
+  <span class="st">"MinutesInterval"</span>: <span class="st">"60"</span>,
+  <span class="st">"OrgIds"</span>: <span class="st">"-2028909786913159060"</span>,
+  <span class="st">"AssetIds"</span>: <span class="st">""</span>,
+  <span class="st">"TypeIds"</span>: <span class="st">"MiX4k"</span>
+}
+<span class="cm">Location: C:\Projects\DST Command Line\  on HSSYDATS02</span></pre>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Repos Quick Reference</h2>
+      <table>
+        <thead><tr><th>Repo</th><th>Local Path</th><th>Role</th></tr></thead>
+        <tbody>
+          <tr><td>DynaMiX.Backend</td><td><code>C:\Projects\DynaMiX.Backend</code></td><td>Entry 1 (UI), Entry 3 (service), DeviceIntegrationManager, CommandManager</td></tr>
+          <tr><td>Config.Api</td><td><code>C:\Projects\Config.Api</code></td><td>DST endpoints, param calculation, dispatches to Mesa/FM</td></tr>
+          <tr><td>MiX.DeviceConfig</td><td><code>C:\Projects\MiX.DeviceConfig\MiX.ConfigInternal.Api.Client</code></td><td>HTTP client wrapping Config.Api — used by Entries 2, 3 &amp; 4</td></tr>
+          <tr><td>DynaMiX.DeviceConfig</td><td>—</td><td><strong>Deprecated.</strong> Do not develop against. Config.Api replaces it.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function show(name) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('panel-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
