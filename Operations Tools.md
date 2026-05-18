@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-05-15T08:00
+updated: 2026-05-18T09:00
 sprint: 2026-03-30
 ---
 > [!Information] Writing tools to make the clients' lives easier.
@@ -63,25 +63,13 @@ See full context: [[Operations Tools Looking forward 20260316]]
 
 > Shows all active tickets — everything except Done, Cancelled, and Closed.
 
-| Ticket                                                      | Summary                                                                   | Status                       | Note                              |
-| ----------------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------- | --------------------------------- |
-| [OPEN-1653](https://powerfleet.atlassian.net/browse/OPEN-1653) | UI - Select source and comparison configs for same-asset config compare   | **Ready for Review** 👀 | [[OPEN-1653 UI - Select source and comparison configs for same-asset config comparison]] |
-| [OPEN-2142](https://powerfleet.atlassian.net/browse/OPEN-2142) | API - Add deployment pipeline to UK environment                           | **Ready for Review** 👀 | AWS deploy — UK |
-| [OPEN-2143](https://powerfleet.atlassian.net/browse/OPEN-2143) | API - Add deployment pipeline to US environment                           | **Ready for Review** 👀 | AWS deploy — US |
-| [OPEN-2144](https://powerfleet.atlassian.net/browse/OPEN-2144) | UI - Add deployment pipeline to UK environment                            | **Ready for Review** 👀 | AWS deploy — UK |
-| [OPEN-2145](https://powerfleet.atlassian.net/browse/OPEN-2145) | UI - Add deployment pipeline to US environment                            | **Ready for Review** 👀 | AWS deploy — US |
-| [OPEN-2368](https://powerfleet.atlassian.net/browse/OPEN-2368) | API - Migrate configdiff repository to Aurora PostgreSQL                  | **Ready for Review** 👀 | PostgreSQL migration |
-| [OPEN-2369](https://powerfleet.atlassian.net/browse/OPEN-2369) | Database - Remove configdiff schema from DeviceConfiguration SSDT project | **Ready for Review** 👀 | PostgreSQL migration |
-| [OPEN-2298](https://powerfleet.atlassian.net/browse/OPEN-2298) | Run ConfigDiff production schema setup script on all production servers   | **Ready for Review** 👀 | Schema setup — prod servers |
-| [OPEN-2039](https://powerfleet.atlassian.net/browse/OPEN-2039) | UI - Select source and comparison configs from different assets           | **Committed** 📋       | Cross-asset compare |
-| [OPEN-1924](https://powerfleet.atlassian.net/browse/OPEN-1924) | API - Investigate feasibility of cross-data centre configuration analysis | **Committed** 📋       | Spike — cross-DC |
-| [OPEN-1667](https://powerfleet.atlassian.net/browse/OPEN-1667) | Allow user to save the results in different formats                       | **Committed** 📋       | Export Results |
-
-### Other Active (FYI)
-
-| Ticket                                                      | Summary                                                               | Status                 | Assignee     |
-| ----------------------------------------------------------- | --------------------------------------------------------------------- | ---------------------- | ------------ |
-| [OPEN-2028](https://powerfleet.atlassian.net/browse/OPEN-2028) | Configure Standard OpenAI API Key for Paperclip Agents and Automation | **Committed** 📋 | Andrew Molina |
+| Ticket                                                      | Summary                                                                                  | Status             | Note                   |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------ | ---------------------- |
+| [OPEN-1996](https://powerfleet.atlassian.net/browse/OPEN-1996) | UI - Update login screen: Platform/Environment dropdowns + username/password          | **Committed** 📋 | ⭐ **FOCUS NOW** — Login screen |
+| [OPEN-2360](https://powerfleet.atlassian.net/browse/OPEN-2360) | Fix undecoded EventId and ParameterId values in Config Delta diff view                | **Committed** 📋 | Defect |
+| [OPEN-2362](https://powerfleet.atlassian.net/browse/OPEN-2362) | Fix AI chatbot hallucinations due to missing event/parameter name context             | **Committed** 📋 | Defect |
+| [OPEN-2363](https://powerfleet.atlassian.net/browse/OPEN-2363) | API - Load device data from MiX APIs for Config Delta workflow                        | **Committed** 📋 | 3 pts |
+| [OPEN-2438](https://powerfleet.atlassian.net/browse/OPEN-2438) | OMAN — Investigate porting DST CommandLine tool from AU (v18.17 compat)               | **Proposed** 👁  | Watch item — not in sprint |
 
 ---
 
