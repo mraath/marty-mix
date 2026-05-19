@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-05-18T09:00
+updated: 2026-05-19T13:04
 sprint: 2026-03-30
 ---
 > [!Information] Writing tools to make the clients' lives easier.
@@ -49,6 +49,7 @@ See full context: [[Operations Tools Looking forward 20260316]]
 | Resource        | URL                                                                                                                                   |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | Sprint Board    | [Sprint Board](https://powerfleet.atlassian.net/jira/software/c/projects/OPEN/boards/7014/backlog)                                       |
+| My Board        | [My Tickets](https://powerfleet.atlassian.net/jira/software/c/projects/OPEN/boards/7014?assignee=557058%3A456930fd-5aba-4785-9fea-2811fca22597) |
 | Kanban          | [Kanban](https://powerfleet.atlassian.net/jira/software/c/projects/OPEN/boards/6981)                                                     |
 | Repo Overview   | [Azure DevOps](https://dev.azure.com/MiXTelematics/OperationsTools)                                                                      |
 | Repo Dev Branch | [development](https://dev.azure.com/MiXTelematics/OperationsTools/_git/Powerfleet.Automation?path=%2F&version=GBdevelopment&_a=contents) |
@@ -65,7 +66,6 @@ See full context: [[Operations Tools Looking forward 20260316]]
 
 | Ticket                                                      | Summary                                                                                  | Status             | Note                   |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------ | ---------------------- |
-| [OPEN-1996](https://powerfleet.atlassian.net/browse/OPEN-1996) | UI - Update login screen: Platform/Environment dropdowns + username/password          | **Committed** 📋 | ⭐ **FOCUS NOW** — Login screen |
 | [OPEN-2360](https://powerfleet.atlassian.net/browse/OPEN-2360) | Fix undecoded EventId and ParameterId values in Config Delta diff view                | **Committed** 📋 | Defect |
 | [OPEN-2362](https://powerfleet.atlassian.net/browse/OPEN-2362) | Fix AI chatbot hallucinations due to missing event/parameter name context             | **Committed** 📋 | Defect |
 | [OPEN-2363](https://powerfleet.atlassian.net/browse/OPEN-2363) | API - Load device data from MiX APIs for Config Delta workflow                        | **Committed** 📋 | 3 pts |
