@@ -65,7 +65,7 @@ MiX-DevOpsAdmin
 
 ## SERVER
 
-Account: mixuat (059521945538) ==UAT== 
+Account: mixuat (059521945538) ==UAT== (eu-west-1)
 MiX-DevOpsAdmin
 MiX-Support
 
