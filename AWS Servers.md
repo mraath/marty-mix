@@ -1,6 +1,6 @@
 ---
 created: 2026-04-07T07:45
-updated: 2026-04-08T11:58
+updated: 2026-05-19T12:51
 ---
 
 created: 2026-04-07T07:45
@@ -32,7 +32,7 @@ MiX-DevOpsAdmin
 
 ## SERVER
 
-Account: mix-uatss (836524128243)
+Account: mix-uatss (836524128243) 
 MiX-DevOpsAdmin
 MiX-Support
 
@@ -65,7 +65,7 @@ MiX-DevOpsAdmin
 
 ## SERVER
 
-Account: mixuat (059521945538)
+Account: mixuat (059521945538) ==UAT== 
 MiX-DevOpsAdmin
 MiX-Support
 
