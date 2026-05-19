@@ -1,6 +1,6 @@
 ---
 created: 2026-04-07T07:45
-updated: 2026-05-19T12:51
+updated: 2026-05-19T15:10
 ---
 
 created: 2026-04-07T07:45
@@ -71,6 +71,6 @@ MiX-Support
 
 ## SERVER
 
-Account: operationsmixtelematics (365528985733) ==AU (ap-southeast-2) US (us-east-1) UK (eu-west-1)==
+Account: operationsmixtelematics (365528985733) ==AU (ap-southeast-2) US (us-east-1) UK (eu-west-1) UAE (ap-south-1)==
 MiX-DevOpsAdmin
 MiX-Support
