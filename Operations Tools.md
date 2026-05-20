@@ -1,6 +1,6 @@
 ---
 created: 2025-05-05T11:56
-updated: 2026-05-19T13:04
+updated: 2026-05-20T09:00
 sprint: 2026-03-30
 ---
 > [!Information] Writing tools to make the clients' lives easier.
@@ -66,9 +66,15 @@ See full context: [[Operations Tools Looking forward 20260316]]
 
 | Ticket                                                      | Summary                                                                                  | Status             | Note                   |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------ | ---------------------- |
+| [OPEN-2424](https://powerfleet.atlassian.net/browse/OPEN-2424) | API - Add deployment pipeline to UAE environment                                      | **In Progress Dev** 🔨 | 3 pts |
+| [OPEN-2425](https://powerfleet.atlassian.net/browse/OPEN-2425) | API - Add deployment pipeline to UAT environment                                      | **In Progress Dev** 🔨 | 3 pts |
+| [OPEN-2426](https://powerfleet.atlassian.net/browse/OPEN-2426) | UI - Add deployment pipeline to UAE environment                                       | **In Progress Dev** 🔨 | 3 pts |
+| [OPEN-2427](https://powerfleet.atlassian.net/browse/OPEN-2427) | UI - Add deployment pipeline to UAT environment                                       | **In Progress Dev** 🔨 | 3 pts |
 | [OPEN-2360](https://powerfleet.atlassian.net/browse/OPEN-2360) | Fix undecoded EventId and ParameterId values in Config Delta diff view                | **Committed** 📋 | Defect |
 | [OPEN-2362](https://powerfleet.atlassian.net/browse/OPEN-2362) | Fix AI chatbot hallucinations due to missing event/parameter name context             | **Committed** 📋 | Defect |
 | [OPEN-2363](https://powerfleet.atlassian.net/browse/OPEN-2363) | API - Load device data from MiX APIs for Config Delta workflow                        | **Committed** 📋 | 3 pts |
+| [OPEN-2461](https://powerfleet.atlassian.net/browse/OPEN-2461) | API - Add deployment pipeline to ZAGOV environment                                    | **Committed** 📋 | 3 pts |
+| [OPEN-2462](https://powerfleet.atlassian.net/browse/OPEN-2462) | UI - Add deployment pipeline to ZAGOV environment                                     | **Committed** 📋 | 3 pts |
 | [OPEN-2438](https://powerfleet.atlassian.net/browse/OPEN-2438) | OMAN — Investigate porting DST CommandLine tool from AU (v18.17 compat)               | **Proposed** 👁  | Watch item — not in sprint |
 
 ---
