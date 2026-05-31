@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # QA-5035 Add mobile device template disable save button
 
 [[QA-5035] QA - Error generated when creating a new Mobile device template - MiX Telematics JIRA](https://jira.mixtelematics.com/browse/QA-5035)

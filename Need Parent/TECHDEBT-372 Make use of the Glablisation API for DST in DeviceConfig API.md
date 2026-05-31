@@ -3,6 +3,7 @@ status: open
 date: 2023-07-26
 comment:
 priority: 5
+wiki_ingested: 2026-05-28
 ---
 
 # TECHDEBT-372 Make use of the Glablisation API for DST in DeviceConfig API

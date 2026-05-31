@@ -1,6 +1,7 @@
 ---
 created: 2024-03-27T10:47
 updated: 2024-03-27T10:47
+wiki_ingested: 2026-05-28
 ---
 GroupId	AssetId	MobileUnitId	sOrganisationName	vDesc	MobileDeviceTypeDescription	LegacyOrgId	LegacyVehicleId	MobileUnitKey	MobileDeviceType	liGMTOffset	DisplayTimeZone	Message	UniqueIdentifier
 2941218413219747865	2699194989678864534	2699194989678864534	Journey Management 2015	vehicle 1	MESA	500	117	40111	3	7200	South Africa Standard Time	{"CommandId":45,"Param1":7200,"Param2":7200,"Param3":946688400,"ConfigVersion":null,"FirmwareVersion":null,"CommandType":null,"Value":null,"ParamDictionary":null}	272727272727272

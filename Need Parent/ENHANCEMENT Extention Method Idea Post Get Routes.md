@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 So the other repetitive part I was referring to is this:
 
 ## Current code

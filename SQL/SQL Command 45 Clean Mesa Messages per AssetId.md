@@ -1,6 +1,7 @@
 ---
 created: 2024-03-27T14:08
 updated: 2024-03-27T14:08
+wiki_ingested: 2026-05-28
 ---
 ```sql
 DECLARE @mobileUnitId BIGINT = 1447989472206643200;

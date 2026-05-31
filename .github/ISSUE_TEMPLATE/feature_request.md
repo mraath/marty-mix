@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 name: Feature request
 about: Suggest an idea or improvement for Quartz
 title: ""

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # SR-9374 Live Tracking Not Showing Ignition Status Correctly
 
   API | Local

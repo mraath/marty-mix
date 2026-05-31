@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Friend: [[Debug]]
 
 HSDUBDQA01 - it should have VS and git installed. **Just be sure to check if any other users are logged into that host because parallel debug sessions from the same host could give unexpected results**

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # STM-544 Template: Streamax Peripheral line changes should update S17
 
 API | Local | INT

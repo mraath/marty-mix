@@ -1,6 +1,7 @@
 ---
 created: 2026-05-13
 tags: [demo, deployment, aws, azure-devops]
+wiki_ingested: 2026-05-28
 ---
 
 # Powerfleet Automation — Deployment Demo Script

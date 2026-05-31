@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ```sql
 -- FIRST: Delete the config group
 -- THEN run the below...

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # STM-533 STM change peripheral
 
 API | Local | INT

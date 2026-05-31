@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # QA-4795 Diagnositic - Trip Information - Incorrect value displayed out of trip
 
   QA - Diagnositic - Trip Information - Incorrect value displayed out of trip

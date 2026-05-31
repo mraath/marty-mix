@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Class Level
 
 Yes, you can use aspect-oriented programming (AOP) in C# to decorate a class and log the method being called by using an `Attribute` and an `Aspect`. Here's an example:

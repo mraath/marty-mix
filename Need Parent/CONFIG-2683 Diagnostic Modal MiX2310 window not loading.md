@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 CONFIG-2683 [Nicole Feedback Req] MiX2310 Diagnostic window doesn't load
 
 Parent:: [[Diagnostic Modal]]

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Development work
 
 Lang, UI, BE, Client (MiX.DeviceConfig), API (Dynamix.DeviceConfig), Common (MiX.DeviceIntegration.Core), DB

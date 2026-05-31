@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 name: Bug report
 about: Something about Quartz isn't working the way you expect
 title: ""

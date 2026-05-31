@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # AC-274 SPIKE diagram for outstanding AC work
 
 Create a client method to get the Parameters from lambda.

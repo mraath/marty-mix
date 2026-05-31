@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 status: committed
 priority: 1
 created: 2026-03-06T00:00

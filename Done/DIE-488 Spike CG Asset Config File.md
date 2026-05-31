@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 #done #spike #die
 Friend: [[DIE-485 DI Config Asset config file]]
 

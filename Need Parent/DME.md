@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 alias: Digital Matter
 created: 2023-10-03T14:33
 updated: 2023-11-02T09:19

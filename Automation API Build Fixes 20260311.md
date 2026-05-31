@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # Automation API Build Fixes — 2026-03-11
 
 ## Summary

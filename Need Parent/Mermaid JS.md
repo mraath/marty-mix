@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 
 [About Mermaid | Mermaid](https://mermaid.js.org/intro/)
 

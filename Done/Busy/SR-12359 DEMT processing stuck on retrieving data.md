@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 #LibraryEvents 
 
 # [[SR-12359] DEMT processing stuck on retrieving data - MiX Telematics JIRA](https://jira.mixtelematics.com/browse/SR-12359)

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # SR-11631 MiX 4000 IMEI diff on Asset Page (wrong) and modal (correct)
 
 	SR-11470

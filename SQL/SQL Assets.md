@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ```sql
 DECLARE @mobileUnitId BIGINT = 3056091971474160310;
 USE HalliburtonNorthAmerica_2015;

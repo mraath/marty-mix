@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 **In preparation for Session 8, please:**
 
 1) **Please prepare your introduction accordingly:**

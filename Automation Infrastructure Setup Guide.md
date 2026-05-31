@@ -1,6 +1,7 @@
 ---
 created: 2026-02-16T15:23
 updated: 2026-03-05T07:19
+wiki_ingested: 2026-05-28
 ---
 # Automation Infrastructure: AWS Setup Guide (DEV/INT/PROD)
 

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Date: 2022-06-21 Time: 14:59
 Status:
 Friend: 

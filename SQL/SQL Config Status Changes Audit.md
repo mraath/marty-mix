@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ```sql
 -- Get all status changes - audting
 USE DeviceConfiguration;

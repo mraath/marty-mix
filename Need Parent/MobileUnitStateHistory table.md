@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 One of the [[Tables]] to store eg:
 - [[Odometer]] history
 

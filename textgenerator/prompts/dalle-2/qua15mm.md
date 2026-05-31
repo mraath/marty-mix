@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 PromptInfo:
  promptId: qua15mm
  name: 🖼️ Generate a 15mm wide-angle lens photo 

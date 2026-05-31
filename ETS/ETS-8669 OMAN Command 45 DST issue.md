@@ -4,6 +4,7 @@ comment:
 priority: 1
 created: 2023-03-27T07:35
 updated: 2026-03-06T09:11
+wiki_ingested: 2026-05-28
 ---
 							
 # ETS-8669 OMAN Command 45 DST issue

@@ -9,6 +9,7 @@ tags:
   - automation
 status: done
 ticket: OPEN-1715
+wiki_ingested: 2026-05-28
 ---
 
 # AWS Tagging — AU Powerfleet Automation Resources

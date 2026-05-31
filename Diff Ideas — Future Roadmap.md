@@ -1,6 +1,7 @@
 ---
 created: 2026-04-10T00:00
 updated: 2026-04-10T14:51
+wiki_ingested: 2026-05-28
 ---
 
 > Ideas for future diff/analysis features. Not yet in sprint. Capture here so nothing is lost.

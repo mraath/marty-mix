@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # Vereenvoudigde konsep
 
 **end result**: _Notify_ die user daar was n trip met n false (of potential fake) borderline crossing

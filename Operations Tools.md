@@ -1,7 +1,8 @@
----
+﻿---
 created: 2025-05-05T11:56
-updated: 2026-05-20T09:00
-sprint: 2026-03-30
+updated: 2026-05-28T00:00
+sprint: 2026-05-25
+wiki_ingested: 2026-05-28
 ---
 > [!Information] Writing tools to make the clients' lives easier.
 
@@ -22,7 +23,7 @@ path includes ${dv.current().file.path}
 dv.paragraph(callout('```tasks\n' + query + '\n```', 'todo'));
 ```
 
-**OPEN-1653** (Config Compare & Diff Engine) — Ready for Review 👀
+**OPEN-1653** (Config Compare & Diff Engine) — Done ✅
 
 ---
 
@@ -63,24 +64,143 @@ See full context: [[Operations Tools Looking forward 20260316]]
 ### Assigned to Me (Marthinus)
 
 > Shows all active tickets — everything except Done, Cancelled, and Closed.
+> Last synced: 2026-05-28
 
-| Ticket                                                      | Summary                                                                                  | Status             | Note                   |
-| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------ | ---------------------- |
-| [OPEN-2424](https://powerfleet.atlassian.net/browse/OPEN-2424) | API - Add deployment pipeline to UAE environment                                      | **In Progress Dev** 🔨 | 3 pts |
-| [OPEN-2425](https://powerfleet.atlassian.net/browse/OPEN-2425) | API - Add deployment pipeline to UAT environment                                      | **In Progress Dev** 🔨 | 3 pts |
-| [OPEN-2426](https://powerfleet.atlassian.net/browse/OPEN-2426) | UI - Add deployment pipeline to UAE environment                                       | **In Progress Dev** 🔨 | 3 pts |
-| [OPEN-2427](https://powerfleet.atlassian.net/browse/OPEN-2427) | UI - Add deployment pipeline to UAT environment                                       | **In Progress Dev** 🔨 | 3 pts |
-| [OPEN-2360](https://powerfleet.atlassian.net/browse/OPEN-2360) | Fix undecoded EventId and ParameterId values in Config Delta diff view                | **Committed** 📋 | Defect |
-| [OPEN-2362](https://powerfleet.atlassian.net/browse/OPEN-2362) | Fix AI chatbot hallucinations due to missing event/parameter name context             | **Committed** 📋 | Defect |
-| [OPEN-2363](https://powerfleet.atlassian.net/browse/OPEN-2363) | API - Load device data from MiX APIs for Config Delta workflow                        | **Committed** 📋 | 3 pts |
-| [OPEN-2461](https://powerfleet.atlassian.net/browse/OPEN-2461) | API - Add deployment pipeline to ZAGOV environment                                    | **Committed** 📋 | 3 pts |
-| [OPEN-2462](https://powerfleet.atlassian.net/browse/OPEN-2462) | UI - Add deployment pipeline to ZAGOV environment                                     | **Committed** 📋 | 3 pts |
-| [OPEN-2438](https://powerfleet.atlassian.net/browse/OPEN-2438) | OMAN — Investigate porting DST CommandLine tool from AU (v18.17 compat)               | **Proposed** 👁  | Watch item — not in sprint |
+| Ticket | Summary | Status | Note | Description |
+| ------ | ------- | ------ | ---- | ----------- |
+| OPEN-2461 | API - Add deployment pipeline to ZAGOV environment | On Hold | 3 pts | Add Azure DevOps pipeline for `Powerfleet.Automation` targeting ZAGOV; auto-triggers on `integration → production` merge, mirroring the UAE pipeline (OPEN-2424). |
+| OPEN-2462 | UI - Add deployment pipeline to ZAGOV environment | On Hold | 3 pts | Same as OPEN-2461 but for `Powerfleet.Automation.UI`; mirrors the UAE UI pipeline (OPEN-2426). |
+| OPEN-2360 | Fix undecoded EventId and ParameterId values in Config Delta diff view | Committed | Defect | Raw numeric IDs (e.g. `601707137285611900`) shown in diff view instead of human-readable names. Fix: route EventId/ParameterId through the existing event/parameter lookup service in the UI. |
+| OPEN-2362 | Fix AI chatbot hallucinations due to missing event/parameter name context | Committed | Defect | Chatbot conflates TEG event thresholds with wrong events because the decoded event/parameter dictionary is not injected into the prompt. Fix: include the lookup context in the chatbot prompt for the current diff. |
+| OPEN-2363 | API - Load device data from MiX APIs for Config Delta workflow | Committed | 3 pts | Add a standalone method to retrieve device state from MiX APIs specifically for the Config Delta workflow path — originally descoped from OPEN-1756. Must surface errors to caller, not swallow them. |
+| OPEN-2438 | OMAN — Investigate porting DST CommandLine tool from AU (v18.17 compat) | Proposed | Watch item | Investigate feasibility of porting the DST CommandLine tool from AU to Oman, checking v18.17 compatibility. No active work yet. |
 
 ---
 
-## Sprint Intake — 2026-03-30 (This Sprint)
+## Full Sprint Overview (_synced 2026-05-28_)
 
+> All non-Done tickets in the current active sprint.
+
+### In Progress Dev (13 tickets)
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2610](https://powerfleet.atlassian.net/browse/OPEN-2610) | AUTO-API - Add in-process token session cache to reduce MiX Auth login floods | Grant | 3 | Story |
+| [OPEN-2504](https://powerfleet.atlassian.net/browse/OPEN-2504) | Camera calibration not available for MDM-managed iOS devices | Ivan Morris | - | Defect |
+| [OPEN-2493](https://powerfleet.atlassian.net/browse/OPEN-2493) | TechTool Access and Delete: unable to access config groups page | Jan Moppel | - | Defect |
+| [OPEN-2485](https://powerfleet.atlassian.net/browse/OPEN-2485) | Hide Actions Dropdown behind Permission | Jako Malan | 3 | Story |
+| [OPEN-2452](https://powerfleet.atlassian.net/browse/OPEN-2452) | Config script calibration value queries | Martin Rademeyer | 5 | Story |
+| [OPEN-2371](https://powerfleet.atlassian.net/browse/OPEN-2371) | Script usage config queries | Zonika Smit | 5 | Story |
+| [OPEN-2192](https://powerfleet.atlassian.net/browse/OPEN-2192) | Upgrade ZA scripts with clear supercedance | Martin Rademeyer | 5 | Story |
+| [OPEN-2187](https://powerfleet.atlassian.net/browse/OPEN-2187) | Implement compiled config Consolidated Json producer for Cellocator customer event conditions | Paul Roux | 3 | Story |
+| [OPEN-2107](https://powerfleet.atlassian.net/browse/OPEN-2107) | DEFECT | Config groups | Asset panel | Filters results should auto-apply | Pallavi Jadhav | - | Defect |
+| [OPEN-1882](https://powerfleet.atlassian.net/browse/OPEN-1882) | OEM Enrollment not shown on the new Config Groups Page | Pallavi Jadhav | 4 | Story |
+| [OPEN-1823](https://powerfleet.atlassian.net/browse/OPEN-1823) | Investigate Action - Hook into Salesforce | Jako Malan | 8 | Story |
+| [OPEN-1287](https://powerfleet.atlassian.net/browse/OPEN-1287) | Android 14: Discard window looks weird | Tim Lücke | - | Defect |
+| [OPEN-1266](https://powerfleet.atlassian.net/browse/OPEN-1266) | Assignee filter selector is not ordered alphabetically | Ivan Morris | - | Defect |
+
+### In Code Review (4 tickets)
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2587](https://powerfleet.atlassian.net/browse/OPEN-2587) | Empty state should not be displayed during initial load | Ivan Morris | - | Defect Sub-task |
+| [OPEN-2538](https://powerfleet.atlassian.net/browse/OPEN-2538) | PL File Management - Org setting flag | Zonika Smit | 3 | Story |
+| [OPEN-2525](https://powerfleet.atlassian.net/browse/OPEN-2525) | Create a reference storage for PL File usage | Zonika Smit | 3 | Story |
+| [OPEN-2473](https://powerfleet.atlassian.net/browse/OPEN-2473) | Crash in SyncManager.handleSyncResponse | Ivan Morris | - | Defect |
+
+### Ready for Review (15 tickets)
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2613](https://powerfleet.atlassian.net/browse/OPEN-2613) | CT-UI - Forward client IP address in auth proxy route | Grant | 1 | Story |
+| [OPEN-2611](https://powerfleet.atlassian.net/browse/OPEN-2611) | CT-API - Replace deprecated GetAuthToken with LoginWithMfaRenewalAsync | Grant | 2 | Story |
+| [OPEN-2609](https://powerfleet.atlassian.net/browse/OPEN-2609) | AUTO-API - Replace deprecated LoginAsync with LoginWithMfaRenewalAsync | Grant | 3 | Story |
+| [OPEN-2503](https://powerfleet.atlassian.net/browse/OPEN-2503) | Add two-layer Family/Device grid and multiselect filters to KB Driver Behavior Thresholds | Grant | 2 | Story |
+| [OPEN-2500](https://powerfleet.atlassian.net/browse/OPEN-2500) | Add Category, Mnemonic, and Type multiselect filters to Event x Action Matrix | Grant | 2 | Story |
+| [OPEN-2499](https://powerfleet.atlassian.net/browse/OPEN-2499) | Convert Event x Action Matrix to parent-child grid with Category as parent | Grant | 1 | Story |
+| [OPEN-2498](https://powerfleet.atlassian.net/browse/OPEN-2498) | Add Group, Input Definition, Alt Definition, and Device Families filters to Line Capability Matrix | Grant | 3 | Story |
+| [OPEN-2497](https://powerfleet.atlassian.net/browse/OPEN-2497) | Convert Line Capability Matrix to parent-child grid with Group as parent | Grant | 1 | Story |
+| [OPEN-2495](https://powerfleet.atlassian.net/browse/OPEN-2495) | Add Description multiselect filter to Mobile Device Lines Matrix | Grant | 1 | Story |
+| [OPEN-2491](https://powerfleet.atlassian.net/browse/OPEN-2491) | Add Family multiselect filter to Device Line Matrix | Grant | 1 | Story |
+| [OPEN-2490](https://powerfleet.atlassian.net/browse/OPEN-2490) | Add Category, Format, and Units multiselect filters to Parameter Category Matrix | Grant | 2 | Story |
+| [OPEN-2489](https://powerfleet.atlassian.net/browse/OPEN-2489) | Convert Parameter Category Matrix to parent-child grid with Category as parent | Grant | 1 | Story |
+| [OPEN-2488](https://powerfleet.atlassian.net/browse/OPEN-2488) | Add Format Type multiselect filter to Property Reference Matrix | Grant | 1 | Story |
+| [OPEN-2487](https://powerfleet.atlassian.net/browse/OPEN-2487) | Convert Property Reference Matrix to parent-child grid with Format Type as parent | Grant | 2 | Story |
+| [OPEN-1072](https://powerfleet.atlassian.net/browse/OPEN-1072) | Support provisioning of Samsara asset / vehicle gateway in POS | Zonika Smit | 7 | Story |
+
+### Ready for QA (2 tickets)
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2590](https://powerfleet.atlassian.net/browse/OPEN-2590) | Languaging has not been applied to the Column headers | Amy Rodger | - | Defect Sub-task |
+| [OPEN-1013](https://powerfleet.atlassian.net/browse/OPEN-1013) | Support Signal Count in CAN Script FMS | Unassigned | 4 | Story |
+
+### In Progress QA (3 tickets)
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2359](https://powerfleet.atlassian.net/browse/OPEN-2359) | Outline buttons are corrupted (wrong height) | Unathi Loni | - | Defect |
+| [OPEN-1639](https://powerfleet.atlassian.net/browse/OPEN-1639) | Improve task list loading behaviour - testing | Unathi Loni | 5 | Story |
+| [OPEN-1243](https://powerfleet.atlassian.net/browse/OPEN-1243) | SalesForce - UI Update | Amy Rodger | 4 | Story |
+
+### In Progress (other) (2 tickets)
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2559](https://powerfleet.atlassian.net/browse/OPEN-2559) | Document Install BFF architecture drafts | Matthias Clasen | 2 | Task |
+| [OPEN-2188](https://powerfleet.atlassian.net/browse/OPEN-2188) | Spike: Design Config API contract for Cellocator customer events | Zonika Smit | 2 | Spike |
+
+### On Hold (2 tickets)
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2461](https://powerfleet.atlassian.net/browse/OPEN-2461) | API - Add deployment pipeline to ZAGOV environment | **Marthinus Raath** | 3 | Story |
+| [OPEN-2462](https://powerfleet.atlassian.net/browse/OPEN-2462) | UI - Add deployment pipeline to ZAGOV environment | **Marthinus Raath** | 3 | Story |
+
+### Identified (1 ticket)
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2483](https://powerfleet.atlassian.net/browse/OPEN-2483) | INT Defect - Motorq_Ford - VIN (Unique identifier already in use) | Ashley Sikweza | - | Defect |
+
+### Committed (13 tickets)
+
+> Sprint ceremonies + Marthinus's 3 tickets.
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2363](https://powerfleet.atlassian.net/browse/OPEN-2363) | API - Load device data from MiX APIs for Config Delta workflow | **Marthinus Raath** | 3 | Story |
+| [OPEN-2362](https://powerfleet.atlassian.net/browse/OPEN-2362) | Fix AI chatbot hallucinations due to missing event/parameter name context | **Marthinus Raath** | - | Defect |
+| [OPEN-2360](https://powerfleet.atlassian.net/browse/OPEN-2360) | Fix undecoded EventId/ParameterId in Config Delta diff view | **Marthinus Raath** | - | Defect |
+| [OPEN-2558](https://powerfleet.atlassian.net/browse/OPEN-2558) | Risk Assessment - Config 26.13 | Zonika Smit | - | Task |
+| [OPEN-2556](https://powerfleet.atlassian.net/browse/OPEN-2556) | Daily Merge - API, Core, Client 26.13 | Unassigned | - | Task |
+| [OPEN-2555](https://powerfleet.atlassian.net/browse/OPEN-2555) | Daily Merge - UI, Backend, DB 26.13 | Unassigned | - | Task |
+| [OPEN-2554](https://powerfleet.atlassian.net/browse/OPEN-2554) | Deploy to VIR 26.13 | Zeshan Khan | - | Task |
+| [OPEN-2553](https://powerfleet.atlassian.net/browse/OPEN-2553) | Deploy to UAE 26.13 | Zeshan Khan | - | Task |
+| [OPEN-2552](https://powerfleet.atlassian.net/browse/OPEN-2552) | Deploy to DUB 26.13 | Zeshan Khan | - | Task |
+| [OPEN-2551](https://powerfleet.atlassian.net/browse/OPEN-2551) | Deploy to ENT 26.13 | Zeshan Khan | - | Task |
+| [OPEN-2550](https://powerfleet.atlassian.net/browse/OPEN-2550) | Deploy to ZA 26.13 | Zeshan Khan | - | Task |
+| [OPEN-2549](https://powerfleet.atlassian.net/browse/OPEN-2549) | Deploy to SYD 26.13 | Zeshan Khan | - | Task |
+| [OPEN-2358](https://powerfleet.atlassian.net/browse/OPEN-2358) | Spike: Approach for Mock Config API for Cellocator customer event definitions | Unassigned | 2 | Spike |
+
+### Ready for Sprint (4 tickets)
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2599](https://powerfleet.atlassian.net/browse/OPEN-2599) | Record coverage baselines and set regression-blocking thresholds across all repos | Grant | 3 | Story |
+| [OPEN-2598](https://powerfleet.atlassian.net/browse/OPEN-2598) | Add Coverlet coverage collection and dotnet test to Automation and ConfigTools.API pipelines | Grant | 2 | Story |
+| [OPEN-2343](https://powerfleet.atlassian.net/browse/OPEN-2343) | Setup AWS infrastructure for ZAGOV environment (RT-46) | Tim Lücke | 2 | Task |
+| [OPEN-2032](https://powerfleet.atlassian.net/browse/OPEN-2032) | Update versioning scheme | Ivan Morris | 1 | Story |
+
+### Backlog (5 tickets)
+
+| Ticket | Summary | Assignee | Points | Type |
+|--------|---------|----------|--------|------|
+| [OPEN-2558](https://powerfleet.atlassian.net/browse/OPEN-2558) | Risk Assessment - TechTool - 26.13 | Matthias Clasen | - | Task |
+| [OPEN-2548](https://powerfleet.atlassian.net/browse/OPEN-2548) | Support investigation of long running UPSERT_TASK requests | Tim Lücke | 1 | Task |
+| [OPEN-2134](https://powerfleet.atlassian.net/browse/OPEN-2134) | [i] Update app version & readme | Unassigned | - | Sub-task |
+| [OPEN-2133](https://powerfleet.atlassian.net/browse/OPEN-2133) | [a] Update app version & readme | Unassigned | - | Sub-task |
+| [OPEN-2132](https://powerfleet.atlassian.net/browse/OPEN-2132) | Add guide to Wiki | Unassigned | - | Sub-task |
 > Items confirmed for this sprint. Only things to focus on NOW or already in flight.
 
 ### 1. Paperclip — UI Agentic Development Setup
@@ -99,7 +219,7 @@ See full context: [[Operations Tools Looking forward 20260316]]
 ### 3. Config Compare & Diff — OPEN-1653
 
 - **What**: UI - Select source and comparison configs for same-asset config compare & diff
-- **Status**: 👀 [OPEN-1653](https://powerfleet.atlassian.net/browse/OPEN-1653) — **Ready for Review**
+- **Status**: ✅ [OPEN-1653](https://powerfleet.atlassian.net/browse/OPEN-1653) — **Done**
 - **Note**: Boss called this second priority ("second story to focus on")
 
 ### 4. Chatbot: Config Fix Suggestions

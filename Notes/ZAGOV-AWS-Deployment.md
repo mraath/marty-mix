@@ -2,6 +2,7 @@
 created: 2026-05-25T09:00
 updated: 2026-05-26T11:00
 tags: [aws, zagov, deployment, opstools]
+wiki_ingested: 2026-05-28
 ---
 
 # ZAGOV — Powerfleet Automation Deployment

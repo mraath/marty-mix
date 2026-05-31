@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 This team's [[Code]] focusses on the Device itself.
 Mostly the UI for users to do settings
 To get info from the device

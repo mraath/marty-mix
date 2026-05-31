@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 title: How to use Quartz
 draft: true
 tags: 

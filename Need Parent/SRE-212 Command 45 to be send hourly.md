@@ -4,6 +4,7 @@ comment:
 priority: 1
 created: 2023-03-27T07:35
 updated: 2024-05-03T14:28
+wiki_ingested: 2026-05-28
 ---
 
 # SRE-212 Command45 to be send hourly

@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 PromptInfo:
  promptId: classify-bart-large-mnli 
  name: 🪄 classify using bart-large-mnli

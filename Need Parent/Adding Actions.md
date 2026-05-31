@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Date: 2022-05-23 Time: 10:59
 Status: #closed  
 Parent:: [[Teaching]]

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 
 ## Online latest files for PaOBC Commissioning Client
 

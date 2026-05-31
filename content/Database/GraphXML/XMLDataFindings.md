@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # XML Data Structure Findings for Graph Generation
 
 This document outlines the rules and patterns discovered from analyzing the various XML data files. The purpose is to inform the logic of the `generate_yed_graph.py` script, which creates a visual relationship graph of the data.

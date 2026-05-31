@@ -3,6 +3,7 @@ status: Committed
 priority: 1
 created: 2026-04-09T00:00
 updated: 2026-04-15T09:17
+wiki_ingested: 2026-05-28
 ---
 
 # OPEN-2029 Persist Config Diff to Database

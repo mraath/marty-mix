@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Backlink: [[MiX 13 ClearBoundaries BorderPatrollers]]
 
 - **Repo**? Git? [mraath/GPSDriftDetecting: ML Model for the MiX I3 initiative (github.com)](https://github.com/mraath/GPSDriftDetecting)

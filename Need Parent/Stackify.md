@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 [Prefix: A Web Request Tracing for Developers (stackify.com)](https://stackify.com/prefix/)
 
 ![UI](https://lh3.googleusercontent.com/pw/AM-JKLXW9Pi7d97Rf2vZUNdktRHRg_sw33V5cgiDxtSZhkkvfa-f-w7IVvqqIPozv68OSB5Yxo9jfhYxbhOdAAf4RJBP-2OE_ZfCALkhb9hRXOnVb2iQqSUES92cDzHm7UDgkNGT9bPfGG2xtyZGSf57FiHK=w633-h280-no?authuser=0)

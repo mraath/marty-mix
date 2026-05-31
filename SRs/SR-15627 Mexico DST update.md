@@ -3,6 +3,7 @@ status: support feedback
 date: 2023-06-26
 comment: support feedback
 priority: 1
+wiki_ingested: 2026-05-28
 ---
 
 # SR-15627 Mexico DST update

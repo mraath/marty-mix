@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ```xml
 	<device id="7089198383589898700" type="0" sytemName="MobileDevice.AEMP">
 		<mobile description="AEMP" handler="13" sort="250" tracer="0" legacy="165" dsiType="CalAmp" uniqueProperty="AEMP" mobileDeviceType="13" />

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 **In preparation for Session 5, please:**
 - **Briefly review pages 5.4-5.6 of your Participant Manual.**  Prepare 2 scenarios that you feel strongly about!!!! Write your statements on the cards handed out in the class. Make sure to have your evidence separately
 	- DST

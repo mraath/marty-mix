@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 
 Date: 2023-06-05 Time: 10:15
 Parent:: [[Command 45]]

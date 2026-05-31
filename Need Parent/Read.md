@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Read
 - [https://developers.redhat.com/articles/2021/09/21/distributed-transaction-patterns-microservices-compared#conclusion](https://developers.redhat.com/articles/2021/09/21/distributed-transaction-patterns-microservices-compared#conclusion)
 - [Correctly using Concurrent Dictionary’s AddOrUpdate method | by cklutz | gft-engineering | Medium](https://medium.com/gft-engineering/correctly-using-concurrentdictionarys-addorupdate-method-94b7b41719d6)

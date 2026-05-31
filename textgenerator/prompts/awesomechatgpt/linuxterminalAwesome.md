@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 PromptInfo:
   promptId: linuxterminalAwesome
   name: 💻 Linux Terminal

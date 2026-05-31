@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Date: 2022-08-12 Time: 10:35
 Friend:: [[2022-08-12]]
 Parent:: [[Learning]]

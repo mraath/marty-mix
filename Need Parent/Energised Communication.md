@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Assignment
 - **Prepare a one-minute report** on an experience that involved a lot of action.  Be animated by reliving an experience just as it happened.  Show us the story of what happened.  Read pages 4.5-4.6 in your Participant Manual and **complete the “Energize Our Communications Report Planning Sheet on page 4.7**.
 

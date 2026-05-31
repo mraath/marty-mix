@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # SR-11062 Change config group with upload file
 
 /import

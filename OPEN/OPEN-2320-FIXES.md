@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # OPEN-2320 — Config Delta Fix Log
 
 **Period:** 5–6 May 2026  

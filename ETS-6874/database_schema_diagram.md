@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Here is a diagram representing the key table relationships based on the database schema files. This diagram illustrates how the tables are connected, which should clarify the joins required in the stored procedure.
 
 ```mermaid

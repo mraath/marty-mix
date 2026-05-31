@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 title: Welcome to Marty's Vault
 created: 2024-07-22T08:09
 updated: 2025-05-07T10:27

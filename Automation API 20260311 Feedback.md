@@ -1,6 +1,7 @@
 ---
 created: 2026-03-11T09:07
 updated: 2026-03-11T09:19
+wiki_ingested: 2026-05-28
 ---
 # Automation API — PR Feedback 2026-03-11
 

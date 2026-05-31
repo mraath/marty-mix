@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # SR-11740 Last Config load date not updating in DynaMiX
 
 	AssetList

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 You were right, the previous "cleaner" solution was not working because my assumption about the `DeviceDependencies` table was incomplete. Thank you for the feedback, it helped me find the correct relationship.
 
 I've analyzed the `DevicesData.xml` file, which contains the source data for the dependencies, and I have a definitive answer and a new, robust solution.

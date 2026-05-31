@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 page-title: "markdown-confluence/obsidian-integration: Sync / Publish Obsidian Notes to Confluence"
 url: https://github.com/markdown-confluence/obsidian-integration
 date: "2023-09-22 08:12:17"

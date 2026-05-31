@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Date: 2022-04-20 Time: 14:40
 Status: #done
 Friend: [[DIE-485 DI Config Asset config file]]

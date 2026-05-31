@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # CONFIG-2954 Config group issue for STM Streamax Standalone
 
 ```sql

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # [SR-12349 Config Compile Display Bug - MiX Telematics JIRA](https://jira.mixtelematics.com/browse/SR-12349)
 
 ## Resolved?

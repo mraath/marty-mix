@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 PromptInfo:
  promptId: artGraffiti
  name: 🖼️ Generate a graffiti photo

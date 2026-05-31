@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 aliases:
   - Event
 created: 2023-02-10T10:28

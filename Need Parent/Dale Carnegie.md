@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Books
 Child:: [[How to Win Friends and Influence people]]
 Child:: [[How to stop worrying and start living]]

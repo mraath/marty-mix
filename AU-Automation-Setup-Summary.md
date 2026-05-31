@@ -9,6 +9,7 @@ tags:
   - deploy
   - au
 status: done
+wiki_ingested: 2026-05-28
 ---
 
 # AU Powerfleet Automation Setup Summary

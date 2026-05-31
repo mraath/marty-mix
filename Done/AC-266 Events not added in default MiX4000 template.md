@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # AC-266 Events not added in default MiX4000 template
 
     COMMON | Local | INT | Nuget

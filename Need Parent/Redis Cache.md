@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # Redis Cache
 
 The general pattern for implementing caching with invalidation is to use a ==cache key== that incorporates a **version number** or **timestamp** that changes whenever the data being cached is _updated_. 

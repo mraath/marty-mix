@@ -1,6 +1,7 @@
 ---
 created: 2026-02-16T15:23
 updated: 2026-03-04T08:30
+wiki_ingested: 2026-05-28
 ---
 # AWS CLI & Python Environment Troubleshooting (Friday/Monday Learnings)
 

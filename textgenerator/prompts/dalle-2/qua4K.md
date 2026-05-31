@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 PromptInfo:
  promptId: qua4K
  name: 🖼️ Generate a 4K/8K photo 

@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 created: 2025-11-27T10:18
 updated: 2025-11-27T11:13
 ---

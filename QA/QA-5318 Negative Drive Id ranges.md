@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 status: uat testing
 date: 2022-11-08
 comment: New object works but value format type breaks things. New Value format type or FIX int object... I think second!

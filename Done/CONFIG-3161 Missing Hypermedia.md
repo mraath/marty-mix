@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## CONFIG-3161 Missing Hypermedia
 
 ## Info

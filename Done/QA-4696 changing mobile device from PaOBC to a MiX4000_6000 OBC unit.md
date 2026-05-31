@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # QA-4696 changing mobile device from PaOBC to a MiX4000/6000 OBC unit
 
 BE | Local

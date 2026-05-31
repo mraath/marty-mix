@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 SR-2119 Battery Level not updating
 
 Parent:: [[Diagnostic Modal]]

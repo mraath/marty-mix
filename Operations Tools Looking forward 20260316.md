@@ -1,6 +1,7 @@
 ---
 created: 2026-03-16T07:54
 updated: 2026-03-16T07:54
+wiki_ingested: 2026-05-28
 ---
 So volgende sprint dink ek ons focus moet wees die Config Audit tool (veral Marthinus Raath) en die Salesforce goed (veral Cornel Coetzee). Soos ons nou die dag bespreek het, doen ons die volgende:
 

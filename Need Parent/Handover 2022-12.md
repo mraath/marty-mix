@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Zonika
 
 Handover (aangesien vandag my laaste dag is voor vakansie - yeah!)

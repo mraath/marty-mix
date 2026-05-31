@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Name, SpeedLimit, WarningDelay, SpeedBuffer, RecordingDelay, etc
 
 ## Links

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 
 ## Assignment
 - **Prepare a two-minute report** by teaching us something related to your job that will be interesting for others to learn.  Bring this example to life by using an exhibit or visual.   **Use the LIONS formula** (page 4.10 in your Participant Manual). **Read and complete the “Make Our Ideas Clear Report Planning Sheet on pages 4.11-4.12.**

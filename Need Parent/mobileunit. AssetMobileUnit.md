@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Links
 
 - **Mobileunits**: mobileunit. AssetMobileUnit (MobileUnitKey) [[mobileunit. MobileUnits]]

@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 sticker: lucide//home
 _links:
   - /

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Status: #done
 JIRA:DIE-490
 [DIE-490](https://jira.mixtelematics.com/browse/DIE-490)

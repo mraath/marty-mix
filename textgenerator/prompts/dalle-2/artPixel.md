@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 PromptInfo:
  promptId: artPixel
  name: 🖼️ Generate a pixel art photo

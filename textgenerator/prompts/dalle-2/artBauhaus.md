@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 PromptInfo:
  promptId: artBauhaus
  name: 🖼️ Generate a bauhaus art photo 

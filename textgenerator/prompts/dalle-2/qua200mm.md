@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 PromptInfo:
  promptId: qua200mm
  name: 🖼️ Generate a 200mm lens photo

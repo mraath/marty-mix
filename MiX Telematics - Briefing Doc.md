@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # AWS Infrastructure and Powerfleet Automation Deployment Briefing
 
 ## Executive Summary

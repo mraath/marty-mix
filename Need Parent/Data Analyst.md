@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Video
 
 - [FASTEST Way to Become a Data Analyst and ACTUALLY Get a Job - YouTube](https://www.youtube.com/watch?v=AYWLZ1lES6g)

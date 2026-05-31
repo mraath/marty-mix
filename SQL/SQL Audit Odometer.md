@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Audit sql for [[Odometer]]
 
 ```sql

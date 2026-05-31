@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Intro
 
 Ford OEM mobile device, but will later be needed for other OEMs, MiX OBCs and CalAmp device once we start processing the DTC messages.

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # ConfigAdmin Template Rewrite Plan
 
 ## 1. Objective

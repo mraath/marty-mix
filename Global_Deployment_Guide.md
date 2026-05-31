@@ -1,6 +1,7 @@
 ---
 created: 2026-03-04T15:33
 updated: 2026-03-04T15:33
+wiki_ingested: 2026-05-28
 ---
 # Global Deployment Guide: Powerfleet Automation (API & UI)
 

@@ -1,6 +1,7 @@
 ---
 created: 2025-06-23T09:48
 updated: 2025-07-02T09:39
+wiki_ingested: 2026-05-28
 ---
 
 - [x] Config R25.10 Production pipelines: ✅ 2025-07-02

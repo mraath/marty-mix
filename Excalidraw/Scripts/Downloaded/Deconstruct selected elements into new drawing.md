@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 /*
 ![](https://raw.githubusercontent.com/zsviczian/obsidian-excalidraw-plugin/master/images/scripts-deconstruct.jpg)
 

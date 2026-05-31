@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Date: 2022-09-20 Time: 08:44
 Parent:: xxxx
 Friend:: [[2022-09-20]]

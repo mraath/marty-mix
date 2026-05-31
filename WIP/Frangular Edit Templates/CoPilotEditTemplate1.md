@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # Template Analysis and Implementation Plan
 
 ## 1. Core Shared Templates

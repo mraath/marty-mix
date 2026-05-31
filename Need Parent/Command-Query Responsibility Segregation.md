@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 To further safeguard the cache and ensure that it's always up to date, you can use the Command-Query Responsibility Segregation (CQRS) pattern. The CQRS pattern separates the responsibilities of writing data (commands) and reading data (queries) into separate objects or classes. By doing this, you can ensure that the cache is always invalidated whenever data is updated, as the code responsible for updating the data is decoupled from the code responsible for reading the data.
 
 Here's an example of how this can be implemented in C# using Redis:

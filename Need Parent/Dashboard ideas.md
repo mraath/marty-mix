@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 [Obsidian Observer](https://medium.com/obsidian-observer?source=post_page-----2b1982d023a0--------------------------------)
 
 ![](https://miro.medium.com/v2/resize:fit:875/0*VoWjh_23ZAS1Bio3.jpeg)

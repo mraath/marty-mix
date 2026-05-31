@@ -1,5 +1,6 @@
 ---
 created: 2026-05-21
+wiki_ingested: 2026-05-28
 ---
 # Automation UI URLs
 

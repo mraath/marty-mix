@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 status: Ready for Sprint
 priority: 1
 created: 2026-04-14T00:00

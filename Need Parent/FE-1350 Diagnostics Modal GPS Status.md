@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 
 Parent:: [[Diagnostic Modal]]
 Friend:: [[Property Bag]]

@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 status: closed
 date: 2023-01-04
 comment: Riaan needs to send command 45 to the unit

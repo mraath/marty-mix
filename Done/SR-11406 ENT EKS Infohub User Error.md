@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # SR-11406 ENT: EKS Infohub User Error (Exception Type: System.AggregateException)
 
 Client | Local | INT | nuget | WRONG is for .16 need to make one for PROD!!

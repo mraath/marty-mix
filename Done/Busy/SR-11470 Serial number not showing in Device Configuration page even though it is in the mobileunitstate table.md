@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 JIRA:SR-11470
 
 Request URL: http://localhost/DynaMiX.API/config-admin/organisations/-8386191436408769566/config_groups/6195278869291132898/assetlist

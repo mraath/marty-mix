@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # SR-10771 Configurations groups: Asset Level - Event change - Not Flagged (black flag?)
 
     Stefan Smeda

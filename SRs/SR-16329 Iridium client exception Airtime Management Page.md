@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 
 JIRA:SR-16329  
 [SR-16329 Error when activating Iridiums - Jira (atlassian.net)](https://csojiramixtelematics.atlassian.net/browse/SR-16329)

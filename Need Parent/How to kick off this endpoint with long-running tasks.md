@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 
 We have an API running on a server. It was written in c#. I can test this via a swagger call. It runs really fast, it then kicks of other tasks, but the swagger call stops within 1 second. The kicked off tasks can still run for minutes or hours. What would be the best way to call this API endpoint which needs to run nightly?
 

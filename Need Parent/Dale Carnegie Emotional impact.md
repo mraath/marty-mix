@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Preparation
 
 - **1)  Read pages 7.4-7.5 of your Participant Manual.**  There is no further preparation required for Part A.

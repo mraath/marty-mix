@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # CONFIG-2848 ODO and Engine Hours different on diagnostics modal and assets list
 
 SELECT TOP (1000) [MobileUnitStateKey]

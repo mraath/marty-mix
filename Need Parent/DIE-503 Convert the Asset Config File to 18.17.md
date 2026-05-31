@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Date: 2022-04-22 Time: 10:35
 Status: #closed  
 Friend: [[DIE-485 DI Config Asset config file]]

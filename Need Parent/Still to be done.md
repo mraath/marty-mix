@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Points to remove
 - Overspeed: ['velocity_kmph'] >= speed
 - Point Jump: point['velocity_kmph'] <= 0 and point['dist_km'] > 0)

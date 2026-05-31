@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # SR-10999 AU - Dynamix - Performance degradation
 
   DB | Local | INT

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ```c#
 //Helper class to get description
 namespace DynaMiX.Core.Extensions.Enum

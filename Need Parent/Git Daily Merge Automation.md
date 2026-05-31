@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Is there a way to automate the checking out, fetching, pulling latest of two branches? Lets call them DEV and INT. Then create a new branch for DEV. Then merge the latest INT into the latest DEV in this new branch.
 
 

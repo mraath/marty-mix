@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Part of the [[DME]] group.
 
 ![[DME#Important note]]

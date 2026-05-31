@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 # dynamix.MapLocations
 
 ## Special notes (maybe on linking)

@@ -3,6 +3,7 @@ status: closed
 date: 2023-06-05
 comment: Fleet
 priority: 8
+wiki_ingested: 2026-05-28
 ---
 
 # SR-15476 Command 45 not sent when moving between sites

@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 CONFIG-1471 Diff IMEI versions displayed
 
 Parent:: [[Diagnostic Modal]]

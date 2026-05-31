@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Date: 2022-03-10 Time: 09:18
 Status: #done
 Friend: [[DIE-488 Spike CG Asset Config File]] 

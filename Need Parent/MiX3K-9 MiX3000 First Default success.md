@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ## Mobile Device
 
 ![[Pasted image 20230119103310.png]]

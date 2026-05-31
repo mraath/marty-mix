@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 Parent::[[AC-78]]
 
 # AC-248 Default Configuration Not just Track & Trace

@@ -3,6 +3,7 @@ status: closed
 date: 2023-06-23
 comment:
 priority: 7
+wiki_ingested: 2026-05-28
 ---
 
 # QA-5861 Command 45 not sent when site changes

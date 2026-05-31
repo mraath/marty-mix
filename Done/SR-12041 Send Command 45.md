@@ -1,5 +1,6 @@
 ---
 Parent:: [[Command45]]
+wiki_ingested: 2026-05-28
 ---
 
 # SR-12041 Send Command 45 via FM Time Asjuster

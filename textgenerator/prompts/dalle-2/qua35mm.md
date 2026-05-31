@@ -1,4 +1,5 @@
 ---
+wiki_ingested: 2026-05-28
 PromptInfo:
  promptId: qua35mm 
  name: 🖼️ Generate a 35mm lens photo 

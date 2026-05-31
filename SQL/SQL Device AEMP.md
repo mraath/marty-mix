@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ```sql
 -- Test to see if the Device Type exists for AEMP
 SELECT * FROM DeviceConfiguration.definition.MobileDevices

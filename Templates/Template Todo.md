@@ -1,3 +1,6 @@
+---
+wiki_ingested: 2026-05-28
+---
 ```dataviewjs
 function callout(text, type) {
     const allText = `> [!${type}]\n` + text;
