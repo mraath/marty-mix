@@ -3,6 +3,11 @@
 > Append-only. Format: `## [YYYY-MM-DD] {operation} | {title}`
 > Parse tip: `grep "^## \[" log.md | tail -10`
 
+## [2026-06-03] ingest | Frangular local dev chain (from live session)
+- Pages created: Frangular-Local-Dev-Setup (concept)
+- Pages updated: index.md
+- Contradictions flagged: none
+
 ## [2026-05-29] ingest | raw/GitHub Login.md
 - Pages created: Powerfleet-GitHub-Enterprise (entity), github-login (source)
 - Pages updated: index.md

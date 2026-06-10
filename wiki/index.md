@@ -32,6 +32,7 @@
 - [AWS-Deployment-Pattern](concepts/AWS-Deployment-Pattern.md) — Step-by-step new region deployment; prerequisites, 4 components, failure modes table
 - [Config-Delta-Tool](concepts/Config-Delta-Tool.md) — Config comparison/diff/audit tool; AI chatbot, key tickets, future roadmap
 - [Config-Groups-Page](concepts/Config-Groups-Page.md) — Frangularisation of Config Groups UI; OE epic, key stories, known bugs
+- [Frangular-Local-Dev-Setup](concepts/Frangular-Local-Dev-Setup.md) — Run FRangular UI (local) → Frangular API (local) → DEV API; the one-line ConfigApiUrl change
 - [Decommissioning-Automation](concepts/Decommissioning-Automation.md) — Decomm automation Phase 1; auth proxy pattern, Salesforce case flow
 - [QC-Automation](concepts/QC-Automation.md) — Quality check automation Phase 1; IMEI submission, CAN/video/odometer checks
 
