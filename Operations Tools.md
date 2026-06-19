@@ -1,8 +1,51 @@
+---
+created: 2026-06-19T12:39
+updated: 2026-06-19T12:39
+---
 ﻿---
 created: 2025-05-05T11:56
-updated: 2026-05-28T00:00
-sprint: 2026-05-25
+updated: 2026-06-19T00:00
+sprint: 2026-06-18
 wiki_ingested: 2026-05-28
+---
+
+## ⚡ Sprint 26.14 — Marthinus Active Work (updated 2026-06-19)
+
+| Ticket | Summary | Status | Points |
+|--------|---------|--------|--------|
+| [OPEN-2884](https://powerfleet.atlassian.net/browse/OPEN-2884) | CT - Spike: Survey other teams' AI chatbot approach | **In Progress Dev** | 2 |
+| [OPEN-2360](https://powerfleet.atlassian.net/browse/OPEN-2360) | Fix undecoded EventId/ParameterId in Config Delta diff view | Committed | - |
+| [OPEN-2362](https://powerfleet.atlassian.net/browse/OPEN-2362) | Fix AI chatbot hallucinations (missing event/param context) | Committed | - |
+| [OPEN-2881](https://powerfleet.atlassian.net/browse/OPEN-2881) | CT - Spike: CAN compliance data sources + formula | Committed | 3 |
+| [OPEN-2882](https://powerfleet.atlassian.net/browse/OPEN-2882) | CT-API - Add CAN compliance endpoint | Committed | 5 |
+| [OPEN-2883](https://powerfleet.atlassian.net/browse/OPEN-2883) | CT-UI - Add CAN compliance tab | Committed | 5 |
+| [OPEN-2895](https://powerfleet.atlassian.net/browse/OPEN-2895) | CT-API - Deploy ConfigTools.API to UAT | **In Progress QA** | - |
+| [OPEN-2896](https://powerfleet.atlassian.net/browse/OPEN-2896) | CT-UI - Deploy ConfigTools.UI to UAT | **In Progress QA** | - |
+
+**Sequence:** OPEN-2360 → OPEN-2884 → OPEN-2362 → OPEN-2881 → OPEN-2882 → OPEN-2883
+
+### OPEN-2884 — Chatbot Spike (POC done 2026-06-19)
+- **Goal:** Survey other teams' AI chatbot approach before upgrading the chatbot model in OPEN-2362
+- **Decision:** Use Azure OpenAI only — `aura-ai-assistant-int-eu.openai.azure.com`, model `gpt-4.1`
+- **POC done:** `src/app/api/chat/route.ts` stripped to Azure OpenAI only (Groq/Gemini/OpenRouter commented out)
+- **Key source:** `OPENAI_API_KEY` pulled from ZA ECS task def `za-powerfleet-automation-ui`
+- **Env vars:** Set in `ConfigTools.UI/.env.local` — see [[OPENAI]] for full pattern
+- **Next:** `npm run dev` → test chatbot → then speak to team (questions in ticket note [[OPEN-2884]])
+- **Do NOT use:** personal Copilot licence, OpenRouter, Groq — company Azure instance only
+
+### ConfigTools Regional Deploy — All Live (2026-06-19)
+| Env | API | UI | Status |
+|-----|-----|----|--------|
+| AU | configtools-api.au.mixtelematics.com | configtools.au.mixtelematics.com | ✅ In Progress QA |
+| ZA | configtools-api.za.mixtelematics.com | configtools.za.mixtelematics.com | ✅ In Progress QA |
+| UK | configtools-api.uk.mixtelematics.com | configtools.uk.mixtelematics.com | ✅ In Progress QA |
+| US | configtools-api.us.mixtelematics.com | configtools.us.mixtelematics.com | ✅ In Progress QA |
+| ENT | configtools-api.ent.mixtelematics.com | configtools.ent.mixtelematics.com | ✅ In Progress QA |
+| UAE | configtools-api.ae.mixtelematics.com | configtools.ae.mixtelematics.com | ✅ In Progress QA |
+| UAT | configtools-api.uat.mixtelematics.com | configtools.uat.mixtelematics.com | ✅ In Progress QA |
+
+Open item on all envs: Aurora configdiff migration (`001_configdiff_postgresql.sql`) — requires VPC access.
+
 ---
 > [!Information] Writing tools to make the clients' lives easier.
 
