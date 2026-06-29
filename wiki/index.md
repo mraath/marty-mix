@@ -28,6 +28,7 @@
 
 ## Concepts
 
+- [ADO-Pipeline-CI-Trigger-Override](concepts/ADO-Pipeline-CI-Trigger-Override.md) — Definition-level CI triggers override YAML trigger:none; pipeline IDs 2510/2511; trigger_tests pattern; SDLC 429 fix
 - [Alerts-Feature](concepts/Alerts-Feature.md) — 4-alert system for Config Groups (config stale, FW stale, FW outdated, missing params); bit-string encoding
 - [AWS-Deployment-Pattern](concepts/AWS-Deployment-Pattern.md) — Step-by-step new region deployment; prerequisites, 4 components, failure modes table
 - [Config-Delta-Tool](concepts/Config-Delta-Tool.md) — Config comparison/diff/audit tool; AI chatbot, key tickets, future roadmap
