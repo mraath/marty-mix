@@ -11,6 +11,16 @@ updated: 2025-04-17T10:31
 - Logz.io (discontinued)
 - [Axiom](https://app.axiom.co/ "https://app.axiom.co/")
 	- Sign in and then select "Continue with SAML" and the "slug" to enter is "powerfleet" -- all lowercase
+	- Workspace path for saved queries: `app.axiom.co/powerfleet-cpve/...`
+	- **Filtering to the 4 Axiom-migrated Ops Tools apps** (Powerfleet.Automation, ConfigTools.API, Powerfleet.Analyzer, SupportTools — added 2026-07): the field is `ApplicationName` (not `AppName`), values are `Powerfleet.Automation.Api`, `ConfigTools.API.Api`, `Powerfleet.Analyzer.Api`, `SupportTools.Api`. Dataset per env tier: `int-logs` (DEV+INT), `uat-logs` (UAT), `prod-logs` (everything else). Query:
+		```
+		['int-logs']
+		| where ApplicationName in ('Powerfleet.Automation.Api', 'ConfigTools.API.Api', 'Powerfleet.Analyzer.Api', 'SupportTools.Api')
+		| sort by _time desc
+		| limit 100
+		```
+		All 4 apps log automatically on startup (no request needed) — check shortly after running each one. If not immediately visible, wait ~30-40 min and re-check; the periodic `LOGFILE cleanup starting` message is a reliable secondary confirmation signal even if you miss the one-time startup line. Confirmed live 2026-07-09: all 4 apps (Automation, ConfigTools.API, Analyzer, SupportTools) verified logging to `int-logs` on INT.
+	- Correct field name (confirmed via live query, corrects an earlier guess): `appName` (lowercase, not `ApplicationName`).
 
 ## OLDER
 
