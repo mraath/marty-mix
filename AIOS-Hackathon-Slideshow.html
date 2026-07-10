@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>THE SWAPPABLE AI ROUTER — AIOS Hackathon Pitch</title>
+<style>
+  :root {
+    --bg: #F5F0E8;
+    --navy: #1B2A4A;
+    --orange: #F07800;
+    --stripe-grey: #4a4a4a;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: var(--navy);
+    font-family: 'Courier New', ui-monospace, monospace;
+    overflow: hidden;
+  }
+  .stage {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 4vw;
+  }
+
+  .slide-panel {
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+  }
+  .slide-panel.active {
+    display: flex;
+  }
+
+  .slide-frame {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 auto;
+    transition: transform 0.4s ease;
+  }
+  .slide-frame img {
+    max-width: 88vw;
+    max-height: 74vh;
+    display: block;
+    box-shadow: 0 0 0 2px var(--navy), 0 20px 60px rgba(0,0,0,0.5);
+  }
+  /* Beat A: image alone, larger, centered vertically.
+     Beat B: image shrinks slightly and text panel reveals below it. */
+  .slide-panel.beat-a .slide-frame img {
+    max-height: 82vh;
+  }
+  .slide-panel.beat-b .slide-frame img {
+    max-height: 52vh;
+  }
+
+  .script-panel {
+    max-width: 78vw;
+    background: var(--bg);
+    border: 2px solid var(--navy);
+    border-radius: 6px;
+    padding: 22px 32px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    color: var(--navy);
+    font-size: 17px;
+    line-height: 1.55;
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-width: 0;
+  }
+  .slide-panel.beat-b .script-panel {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 34vh;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border-width: 2px;
+    overflow-y: auto;
+  }
+  .script-panel strong {
+    color: var(--orange);
+  }
+  .script-panel .note-label {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--stripe-grey);
+    border-top: 1px dashed var(--navy);
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  /* Hazard-stripe accent bar, top of stage — matches the blueprint brand's callout motif */
+  .hazard-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 10px;
+    background: repeating-linear-gradient(
+      45deg,
+      var(--orange), var(--orange) 14px,
+      var(--stripe-grey) 14px, var(--stripe-grey) 28px
+    );
+    z-index: 5;
+  }
+
+  /* Controls */
+  .controls {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--bg);
+    border: 2px solid var(--navy);
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    z-index: 10;
+  }
+  .nav-btn {
+    background: none;
+    border: 2px solid var(--navy);
+    color: var(--navy);
+    width: 40px; height: 40px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-btn:hover:not(:disabled) {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: var(--bg);
+  }
+  .nav-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+  .counter {
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    min-width: 84px;
+    text-align: center;
+  }
+  .beat-indicator {
+    display: flex;
+    gap: 5px;
+  }
+  .beat-indicator .pip {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    border: 2px solid var(--navy);
+    background: transparent;
+  }
+  .beat-indicator .pip.filled {
+    background: var(--navy);
+  }
+  .dots {
+    display: flex;
+    gap: 8px;
+  }
+  .dot {
+    width: 10px; height: 10px;
+    border-radius: 2px;
+    border: 2px solid var(--navy);
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+  .dot.active {
+    background: var(--orange);
+    border-color: var(--orange);
+  }
+
+  .ref-tag {
+    position: fixed;
+    top: 18px;
+    right: 24px;
+    color: var(--bg);
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    z-index: 10;
+  }
+
+  .hint {
+    position: fixed;
+    bottom: 84px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--bg);
+    font-size: 12px;
+    opacity: 0.45;
+    letter-spacing: 0.5px;
+    z-index: 10;
+  }
+
+  @media (max-width: 700px) {
+    .controls { gap: 10px; padding: 8px 12px; }
+    .dots { display: none; }
+    .script-panel { font-size: 14px; padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="hazard-bar"></div>
+  <div class="ref-tag">REF: AIOS-HACKATHON-001 · TOLERANCE: ZERO</div>
+
+  <div class="stage" id="stage">
+
+    <div class="slide-panel beat-a" data-slide="0">
+      <div class="slide-frame"><img src="aios-hackathon-slide-images/slide-01.png" alt="Slide 1"></div>
+      <div class="script-panel">
+        <p>"AI is changing faster than any of us can keep up with. Whatever model is best today — Claude, Copilot, Gemini — will probably be replaced by something better within the year. If we build our hackathon entry around one specific AI tool, we've built something that expires.</p>
+        <p>But there's one thing that doesn't expire: <strong>files.</strong> Every AI, past and future, still has to read text to know what's going on. So here's our bet: <strong>don't build around the AI. Build around the files — and make the AI swappable underneath them.</strong>"</p>
+      </div>
+    </div>
+
+    <div class="slide-panel" data-slide="1">
+      <div class="slide-frame"><img src="aios-hackathon-slide-images/slide-02.png" alt="Slide 2"></div>
+      <div class="script-panel">
+        <p>"Before we pitch an idea, let's show you what's already real, so you know we're not starting from nothing.</p>
+        <p>We already run <strong>SDLC</strong> — a system where 13 specialized AI agents handle our actual software delivery: writing code, reviewing it, testing it, moving Jira tickets through our real workflow. This isn't a demo. It's running in production, today, for a real team.</p>
+        <p>We also already use <strong>Paperclip</strong> — a mature open-source tool that manages AI agents like a company org chart: tasks get assigned, agents wake up on a schedule, work gets tracked. Also real, also running.</p>
+        <p>Here's the catch, and we want to be upfront about it: <strong>both of these are wired tightly to one specific AI tool.</strong> SDLC's automation only works because of a feature that's exclusive to one AI coding assistant — swap in a different one, and all that automation silently stops working. We checked. It's not a small gap, it's a hard wall.</p>
+        <p>That's not a criticism of what we built — it's the exact problem our hackathon entry is going to solve."</p>
+        <div class="note-label">SPEAKER NOTE: state the hooks limitation yourselves, before anyone in the room asks "does this work with Copilot?"</div>
+      </div>
+    </div>
+
+    <div class="slide-panel" data-slide="2">
+      <div class="slide-frame"><img src="aios-hackathon-slide-images/slide-03.png" alt="Slide 3"></div>
+      <div class="script-panel">
+        <p>"So here's what we're actually proposing to build this hackathon: a small, simple <strong>router</strong>.</p>
+        <p>Think of it like a receptionist. A task comes in. The router checks: which AI is on duty today — Claude or Copilot? It hands that AI the relevant context, lets it do the work, and writes down what happened for next time. The router doesn't care which AI is behind the desk. That's the whole point.</p>
+        <p>This is genuinely the missing piece. We looked at several existing systems that claim to support multiple AI tools — including a serious, actively-developed open-source project — and even they don't have a clean version of this. They wire up each AI tool by hand, one at a time, with separate code for each. <strong>Nobody has actually solved this cleanly yet.</strong> That's exactly why it's worth a hackathon."</p>
+        <div class="note-label">SPEAKER NOTE: this is the star slide — give it real time, don't rush past it.</div>
+      </div>
+    </div>
+
+    <div class="slide-panel" data-slide="3">
+      <div class="slide-frame"><img src="aios-hackathon-slide-images/slide-04.png" alt="Slide 4"></div>
+      <div class="script-panel">
+        <p>"The router needs somewhere to keep context — what's been done, what's pending, what this project is about. We're keeping that dead simple: <strong>plain markdown files.</strong> No database, no proprietary format.</p>
+        <p>Why does this matter? Because plain text is the one format every AI — the ones we use today and whatever wins next year — can already read. We've actually already proven this works in miniature: our SDLC system already keeps its own shared memory this way, in plain files, and it's held up fine in production.</p>
+        <p>The idea itself has a name in the AI community — sometimes called the 'wiki method': raw notes go in, get organized into a structured wiki over time, and that structure compounds instead of starting from zero every session. We're not claiming it beats every possible alternative at every scale — just that for a project like this, plain files you can open and read yourself beat a black-box database every time."</p>
+      </div>
+    </div>
+
+    <div class="slide-panel" data-slide="4">
+      <div class="slide-frame"><img src="aios-hackathon-slide-images/slide-05.png" alt="Slide 5"></div>
+      <div class="script-panel">
+        <p>"Where do you actually talk to this thing? We're deliberately keeping this simple and picking the channel that matches how this company actually works: <strong>Microsoft Teams.</strong></p>
+        <p>That's it. Not Discord, not WhatsApp — Teams, because that's where you already are. If there's time, we might add a simple web page too. Swapping which chat app we're reachable from turns out to be the easy part — the hard part was the router, which is where we spent our real effort."</p>
+      </div>
+    </div>
+
+    <div class="slide-panel" data-slide="5">
+      <div class="slide-frame"><img src="aios-hackathon-slide-images/slide-06.png" alt="Slide 6"></div>
+      <div class="script-panel">
+        <p>"Last thing, quickly: we're not trying to reinvent task tracking or ticket management this weekend. Paperclip already does agent task-scheduling well, and we already use it personally — no reason to rebuild that. And for anything Jira-related, if we have time, we'd borrow a pattern we already know works from SDLC. Both of these are 'nice if we get to it,' not part of what we're demoing today."</p>
+      </div>
+    </div>
+
+    <div class="slide-panel" data-slide="6">
+      <div class="slide-frame"><img src="aios-hackathon-slide-images/slide-07.png" alt="Slide 7"></div>
+      <div class="script-panel">
+        <p>"So, to bring it back to the start: every AI tool will be outdated within a year. We're not betting on one. We're betting on the one thing that doesn't expire — plain files — and building the one piece that's actually still missing: a router that can hand real work to whichever AI is best that month, starting with the two we already use, Claude and Copilot.</p>
+        <p>That's what we want to spend this hackathon building."</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hint">← → arrow keys · space to advance · click dots to jump slides</div>
+
+  <div class="controls">
+    <button class="nav-btn" id="prevBtn" aria-label="Previous">‹</button>
+    <div class="counter" id="counter">1 / 7</div>
+    <div class="beat-indicator" id="beatIndicator">
+      <div class="pip filled"></div>
+      <div class="pip"></div>
+    </div>
+    <div class="dots" id="dots"></div>
+    <button class="nav-btn" id="nextBtn" aria-label="Next">›</button>
+  </div>
+
+<script>
+  const panels = Array.from(document.querySelectorAll('.slide-panel'));
+  const totalSlides = panels.length;
+  let slideIndex = 0;
+  let beat = 0; // 0 = image only, 1 = image + script revealed
+
+  const counter = document.getElementById('counter');
+  const dotsWrap = document.getElementById('dots');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const beatIndicator = document.getElementById('beatIndicator');
+
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('button');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    dot.addEventListener('click', () => goToSlide(i));
+    dotsWrap.appendChild(dot);
+  }
+  const dots = Array.from(dotsWrap.children);
+
+  function render() {
+    panels.forEach((p, i) => {
+      p.classList.toggle('active', i === slideIndex);
+      p.classList.toggle('beat-a', i === slideIndex && beat === 0);
+      p.classList.toggle('beat-b', i === slideIndex && beat === 1);
+    });
+    dots.forEach((d, i) => d.classList.toggle('active', i === slideIndex));
+    counter.textContent = (slideIndex + 1) + ' / ' + totalSlides;
+    beatIndicator.children[0].classList.toggle('filled', true);
+    beatIndicator.children[1].classList.toggle('filled', beat === 1);
+    prevBtn.disabled = (slideIndex === 0 && beat === 0);
+    nextBtn.disabled = (slideIndex === totalSlides - 1 && beat === 1);
+  }
+
+  function goToSlide(i) {
+    slideIndex = Math.max(0, Math.min(totalSlides - 1, i));
+    beat = 0;
+    render();
+  }
+
+  function advance() {
+    if (beat === 0) {
+      beat = 1;
+    } else if (slideIndex < totalSlides - 1) {
+      slideIndex++;
+      beat = 0;
+    }
+    render();
+  }
+
+  function retreat() {
+    if (beat === 1) {
+      beat = 0;
+    } else if (slideIndex > 0) {
+      slideIndex--;
+      beat = 1;
+    }
+    render();
+  }
+
+  prevBtn.addEventListener('click', retreat);
+  nextBtn.addEventListener('click', advance);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); advance(); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); retreat(); }
+    if (e.key === 'Home') goToSlide(0);
+    if (e.key === 'End') { goToSlide(totalSlides - 1); beat = 1; render(); }
+  });
+
+  render();
+</script>
+
+</body>
+</html>
