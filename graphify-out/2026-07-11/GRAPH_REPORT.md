@@ -1,16 +1,15 @@
-# Graph Report - marty-mix  (2026-07-11)
+# Graph Report - .  (2026-07-10)
 
 ## Corpus Check
-- 3087 files · ~9,849,606 words
-- Verdict: corpus is large enough that graph structure adds value.
+- cluster-only mode — file stats not available
 
 ## Summary
 - 14630 nodes · 12473 edges · 3496 communities (1982 shown, 1514 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.62)
-- Token cost: 0 input · 0 output
+- Token cost: 102 input · 12 output
 
 ## Graph Freshness
-- Built from commit: `221a9fce`
+- Built from commit: `177a93c7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
