@@ -11245,9 +11245,9 @@
     "semantic_hash": ""
   },
   "Operations Tools.md": {
-    "mtime": 1783943394.8929203,
-    "ast_hash": "1e3728c2dfd3f693af4a8f932b3d969e",
-    "semantic_hash": ""
+    "mtime": 1781843997.64,
+    "ast_hash": "ca980df51354c3fbfabade9c50c917b4",
+    "semantic_hash": "ca980df51354c3fbfabade9c50c917b4"
   },
   "Ops Tools Antigravity training.md": {
     "mtime": 1779938766.781336,
@@ -20067,21 +20067,6 @@
   "aios-hackathon-slide-images/slide-07.png": {
     "mtime": 1783669168.7313955,
     "ast_hash": "3ee4755db6c21a7289fd77962bec8cc6",
-    "semantic_hash": ""
-  },
-  "AIOS-SDLC-OS-Web-Interface.md": {
-    "mtime": 1783990623.3788152,
-    "ast_hash": "f0330a18f034d0e712148b71626394ce",
-    "semantic_hash": ""
-  },
-  "DailyNotes/2026-07-13.md": {
-    "mtime": 1783944274.5032382,
-    "ast_hash": "91a61c6b9a0964f1ac8d37ee2032d1c6",
-    "semantic_hash": ""
-  },
-  "OPEN-2103 Config_Delta_Selection_Sortable_Searchable.md": {
-    "mtime": 1783944244.3082616,
-    "ast_hash": "78255f517143a2999e2f000175d5c83f",
     "semantic_hash": ""
   }
 }

@@ -1,16 +1,16 @@
-# Graph Report - marty-mix  (2026-07-14)
+# Graph Report - marty-mix  (2026-07-11)
 
 ## Corpus Check
-- 3090 files · ~9,852,752 words
+- 3087 files · ~9,849,606 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 14660 nodes · 12501 edges · 3500 communities (1984 shown, 1516 thin omitted)
+- 14630 nodes · 12473 edges · 3496 communities (1982 shown, 1514 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.62)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `30806f1e`
+- Built from commit: `221a9fce`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -3012,10 +3012,6 @@
 - Update Repo
 - UpdateDeviceCommand
 - AngularJS Component Architecture
-- Device Configuration
-- OE-481 iFrame
-- OE-539 Video Event Configuration action
-- 2026-07-13
 
 ## God Nodes (most connected - your core abstractions)
 1. `DONE` - 77 edges
@@ -3054,23 +3050,23 @@
 - **Images Related to Config Compiler Alert Configuration** — config_test_lft_requestpart_for_pallavi_new_client_1, configure_alerts_for_new_config_compiler_condition [EXTRACTED]
 - **Integration Flow with Microsoft Teams and Mobile Device Templates** — src_auth_session, src_microsoftteams_flowchart [EXTRACTED 0.75]
 
-## Communities (3500 total, 1516 thin omitted)
+## Communities (3496 total, 1514 thin omitted)
 
 ### Community 0 - "types.ts"
 Cohesion: 0.08
 Nodes (48): FullPageLayout, QuartzConfig, headerRegex, pageResources(), RenderComponents, renderPage(), defaultContentPageLayout, defaultListPageLayout (+40 more)
 
 ### Community 1 - "index.ts"
-Cohesion: 0.09
-Nodes (38): ArticleTitle(), Backlinks(), BreadcrumbOptions, CrumbData, defaultOptions, formatCrumb(), ContentMetadata(), ContentMetaOptions (+30 more)
+Cohesion: 0.10
+Nodes (35): ArticleTitle(), Backlinks(), BreadcrumbOptions, CrumbData, defaultOptions, formatCrumb(), ContentMetadata(), ContentMetaOptions (+27 more)
 
 ### Community 2 - "DONE"
 Cohesion: 0.04
 Nodes (50): Citations(), defaultOptions, Options, DataMap, defaultOptions, Description(), Options, urlRegex (+42 more)
 
 ### Community 3 - "dependencies"
-Cohesion: 0.13
-Nodes (26): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+18 more)
+Cohesion: 0.11
+Nodes (29): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+21 more)
 
 ### Community 4 - "build.ts"
 Cohesion: 0.04
@@ -3221,8 +3217,8 @@ Cohesion: 0.08
 Nodes (23): Example: persisting column width, Getting the values, HTML, Introduction, Mechanism, Need, Other selection criteria method, The data to be changed (+15 more)
 
 ### Community 42 - "Config Overview WIP.excalidraw.md"
-Cohesion: 0.08
-Nodes (19): Branches, Description, Implementation, OE-480 Navigation Item, Shorter Summary, TODO, Branches, Description (+11 more)
+Cohesion: 0.06
+Nodes (24): Branches, Description, Implementation, OE-480 Navigation Item, Shorter Summary, TODO, Branches, Description (+16 more)
 
 ### Community 43 - "OE-611 Alert not adjusting when removing missing parameters"
 Cohesion: 0.06
@@ -3673,8 +3669,8 @@ Cohesion: 0.15
 Nodes (12): April, August, December, February, January, July, June, March (+4 more)
 
 ### Community 159 - "Template Analysis and Implementation Plan"
-Cohesion: 0.15
-Nodes (13): BLOCKER, Branches, Build pipeline, Code snippets, Description, Image Summary, Last Steps, New Story needed (+5 more)
+Cohesion: 0.10
+Nodes (19): BLOCKER, Branches, Build pipeline, Code snippets, Description, Image Summary, Last Steps, New Story needed (+11 more)
 
 ### Community 160 - "Comprehensive Architectural Review and Refactoring Plan"
 Cohesion: 0.15
@@ -3849,8 +3845,8 @@ Cohesion: 0.18
 Nodes (7): Configuration Group, Events Template, Introduction, Logicals, Mobile Device Template, Property, Settings
 
 ### Community 206 - "SR-13671 Unable to add IMEI to assets"
-Cohesion: 0.18
-Nodes (10): Background and Goal, Branch, Dependencies, Functional Requirements, Notes, OPEN-2103 — UI: Config Delta Selection Boxes — Sortable & Searchable, Out of Scope, Potential UI Behaviour (+2 more)
+Cohesion: 0.29
+Nodes (5): Code, Links, Overview, Switch to use the new client method, Some of the services
 
 ### Community 207 - "SR-13955 Serial numbers now showing in config group page"
 Cohesion: 0.29
@@ -3986,7 +3982,7 @@ Nodes (5): Examples of current Alarms, Egs, Here are the steps you could follow:
 
 ### Community 240 - "Daily Merge.md"
 Cohesion: 0.12
-Nodes (12): Intro, Issues, Services, Add to SQL connection string, Issue, Transforms, Utilities, Code (+4 more)
+Nodes (9): Intro, Issues, Services, Add to SQL connection string, Issue, Transforms, Utilities, Device Configuration (+1 more)
 
 ### Community 241 - "Notes created today"
 Cohesion: 0.18
@@ -5057,8 +5053,8 @@ Cohesion: 0.33
 Nodes (5): Busy, Done, Feedback needed, Next steps, OE-20 UPDATE
 
 ### Community 517 - "2026-01-13.md"
-Cohesion: 0.05
-Nodes (38): AIOS Hackathon — Technical Architecture Brief, Interoperability facts (for the "how would we actually connect these" question), Is ThePopeBot's multi-agent support a real abstraction? (verified by reading source, 2026-07-10), SDLC (`C:\Projects\SDLC`) — the governed multi-agent pattern, Suggested slide breakdown for NotebookLM, ThePopeBot — third-party proof point (not code we're adopting), What AIOS actually is (ground truth, 2026-07-10), 0. Session 2 addendum (2026-07-10) — Claude Code hooks portability + ThePopeBot deep dive (+30 more)
+Cohesion: 0.08
+Nodes (24): AIOS Hackathon — Technical Architecture Brief, Interoperability facts (for the "how would we actually connect these" question), Is ThePopeBot's multi-agent support a real abstraction? (verified by reading source, 2026-07-10), SDLC (`C:\Projects\SDLC`) — the governed multi-agent pattern, Suggested slide breakdown for NotebookLM, ThePopeBot — third-party proof point (not code we're adopting), What AIOS actually is (ground truth, 2026-07-10), 0. Session 2 addendum (2026-07-10) — Claude Code hooks portability + ThePopeBot deep dive (+16 more)
 
 ### Community 518 - "2026-01-14.md"
 Cohesion: 0.33
@@ -5101,7 +5097,7 @@ Cohesion: 0.33
 Nodes (5): Error Log, OPEN-494, Shorter Description, Steps, TODO
 
 ### Community 528 - "2026-01-28.md"
-Cohesion: 0.50
+Cohesion: 0.33
 Nodes (3): OPEN-696 Edit modal Temp displays briefly upon canceling without saving, Shorter Description, TODO
 
 ### Community 529 - "2026-01-29.md"
@@ -7937,7 +7933,7 @@ Cohesion: 0.50
 Nodes (3): Decision, Locally tested, Merge
 
 ### Community 1257 - "2024-11-25.md"
-Cohesion: 0.33
+Cohesion: 0.50
 Nodes (3): OPEN-694 AutoFill all the time, Shorter Description, TODO
 
 ### Community 1258 - "2024-11-26.md"
@@ -8469,8 +8465,8 @@ Cohesion: 0.67
 Nodes (3): Libraries, Templates, Testing on DEV
 
 ### Community 1905 - "2025-07-14.md"
-Cohesion: 0.07
-Nodes (23): Meeting 3, Meeting 4, API Fixes — Weekend 2026-03-14 (Boss), Assigned to Me (Marthinus), AU, Config Analysis Tool, ConfigTools Regional Deploy — All Live (2026-06-19), Current Sprint Focus (+15 more)
+Cohesion: 0.08
+Nodes (22): Meeting 3, Meeting 4, API Fixes — Weekend 2026-03-14 (Boss), Assigned to Me (Marthinus), AU, Config Analysis Tool, ConfigTools Regional Deploy — All Live (2026-06-19), Current Sprint Focus (+14 more)
 
 ### Community 1922 - "2025-08-06.md"
 Cohesion: 0.13
@@ -8988,18 +8984,10 @@ Nodes (3): Preparing your vault for Dashboard++, Step 1: Install the Dashboard++
 Cohesion: 0.40
 Nodes (5): 3. Dependencies and Connections, AngularJS Bindings, Custom Directives, JavaScript Components, Services
 
-### Community 3497 - "OE-481 iFrame"
-Cohesion: 0.33
-Nodes (5): Branches, Description, Image Summary, OE-481 iFrame, TODO
-
-### Community 3498 - "OE-539 Video Event Configuration action"
-Cohesion: 0.33
-Nodes (6): Current Code, Current Implementation, Description, OE-539 Video Event Configuration action, TEST DATA, TODO
-
 ## Knowledge Gaps
-- **9940 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+9935 more)
+- **9918 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+9913 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1516 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1514 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -9008,13 +8996,13 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `DepGraph` connect `Major Issues:` to `types.ts`, `dependencies`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
-- **Why does `CONFIG-3663 Make Available Ford OEM` connect `2026-01-15.md` to `Notes created today`, `STEPS to get all the parameterIds and fix the make available`?**
-  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `Generates a consistent, visually distinct color for a given string.`, `Extracts the XML content from a T-SQL script variable.`, `Checks if a string represents a large integer, likely a unique ID.` to the rest of the system?**
-  _9951 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _9929 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `types.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.07859649122807018 - nodes in this community are weakly interconnected._
 - **Should `index.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.09164535379369139 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0985576923076923 - nodes in this community are weakly interconnected._
 - **Should `DONE` be split into smaller, more focused modules?**
   _Cohesion score 0.040674603174603176 - nodes in this community are weakly interconnected._
+- **Should `dependencies` be split into smaller, more focused modules?**
+  _Cohesion score 0.11008325624421832 - nodes in this community are weakly interconnected._
