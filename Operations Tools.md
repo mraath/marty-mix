@@ -9,6 +9,20 @@ sprint: 2026-06-18
 wiki_ingested: 2026-05-28
 ---
 
+## 🔔 Next Items (check every sign-in) — updated 2026-07-13
+
+> Priority order agreed with boss 2026-07-13. Ask Claude to "check my next items" or "remind me of my priorities" at session start to have this re-read.
+
+1. **[OPEN-3192](https://powerfleet.atlassian.net/browse/OPEN-3192) — Geotab Installation QC Automation Phase 3** — work through the 14 child stories **one at a time** (OPEN-3193→3205, OPEN-3223), all Ready for Sprint, unassigned. Dependency order: client wrapper (3194) → factory (3195) → checks (3196-3199, 3223) → tests (3200) → config (3201) → UI wiring (3202-3204) → test matrix (3205).
+2. **CAN Compliance tickets (Mike's work)** — [OPEN-2881](https://powerfleet.atlassian.net/browse/OPEN-2881) (spike) → [OPEN-2882](https://powerfleet.atlassian.net/browse/OPEN-2882) (API) → [OPEN-2883](https://powerfleet.atlassian.net/browse/OPEN-2883) (UI). **Blocked** — OPEN-2881 needs a live working session with Mike Sydenham to extract the real compliance formula/data source before any code starts. Boss said: start with bugs that can be fixed first, hold the rest until Mike session happens.
+3. **Screenshot investigation** — untracked, no ticket yet. *(Details TBD — ask Marthinus what this refers to.)*
+4. **Paused work (interrupted when testing broke)** — untracked, no ticket yet. *(Details TBD — ask Marthinus what this refers to.)*
+5. Discuss "die toets goed" (the test setup/infrastructure) with the team once 1-4 are underway.
+
+> **Loop-stream note:** boss mentioned adding Marthinus's username somewhere so `/loop loop-stream` auto-dispatches his tickets too (currently hardcoded to `Grant`/`opstoolssvc@powerfleet.com` in `.agent/skills/loop-stream-skill/SKILL.md`). Couldn't confirm from that file alone whether it's a single setting or 3 separate JQL edits — Marthinus is rewatching the meeting to confirm before this gets changed.
+
+---
+
 ## ⚡ Sprint 26.14 — Marthinus Active Work (updated 2026-06-19)
 
 | Ticket | Summary | Status | Points |
@@ -21,8 +35,9 @@ wiki_ingested: 2026-05-28
 | [OPEN-2883](https://powerfleet.atlassian.net/browse/OPEN-2883) | CT-UI - Add CAN compliance tab | Committed | 5 |
 | [OPEN-2895](https://powerfleet.atlassian.net/browse/OPEN-2895) | CT-API - Deploy ConfigTools.API to UAT | **In Progress QA** | - |
 | [OPEN-2896](https://powerfleet.atlassian.net/browse/OPEN-2896) | CT-UI - Deploy ConfigTools.UI to UAT | **In Progress QA** | - |
+| [OPEN-2103](https://powerfleet.atlassian.net/browse/OPEN-2103) | UI - Make Config Delta selection boxes sortable and searchable | **In Progress Dev** | 3 |
 
-**Sequence:** OPEN-2360 → OPEN-2884 → OPEN-2362 → OPEN-2881 → OPEN-2882 → OPEN-2883
+**Sequence:** OPEN-2360 → OPEN-2884 → OPEN-2362 → OPEN-2881 → OPEN-2882 → OPEN-2883 → OPEN-2103
 
 ### OPEN-2884 — Chatbot Spike (POC done 2026-06-19)
 - **Goal:** Survey other teams' AI chatbot approach before upgrading the chatbot model in OPEN-2362
