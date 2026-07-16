@@ -1,16 +1,16 @@
-# Graph Report - marty-mix  (2026-07-16)
+# Graph Report - marty-mix  (2026-07-14)
 
 ## Corpus Check
-- 3092 files · ~9,855,901 words
+- 3090 files · ~9,852,752 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 14674 nodes · 12513 edges · 3498 communities (1983 shown, 1515 thin omitted)
+- 14660 nodes · 12501 edges · 3500 communities (1984 shown, 1516 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.62)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `34fe993f`
+- Built from commit: `30806f1e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -1267,7 +1267,6 @@
 - 2024-11-18.md
 - 2024-11-19.md
 - 2024-11-20.md
-- 2024-11-21.md
 - 2024-11-22.md
 - 2024-11-25.md
 - 2024-11-26.md
@@ -3014,6 +3013,8 @@
 - UpdateDeviceCommand
 - AngularJS Component Architecture
 - Device Configuration
+- OE-481 iFrame
+- OE-539 Video Event Configuration action
 - 2026-07-13
 
 ## God Nodes (most connected - your core abstractions)
@@ -3035,10 +3036,10 @@
   Excalidraw/Decommissioning MiX4000.excalidraw.md → Attachments/MicrosoftTeams-image (7).png
 - `formatCrumb()` --calls--> `resolveRelative()`  [EXTRACTED]
   quartz/components/Breadcrumbs.tsx → quartz/util/path.ts
+- `RenderComponents` --references--> `QuartzComponent`  [EXTRACTED]
+  quartz/components/renderPage.tsx → quartz/components/types.ts
 - `Item` --references--> `FullSlug`  [EXTRACTED]
   quartz/components/scripts/search.inline.ts → quartz/util/path.ts
-- `buildQuartz()` --calls--> `joinSegments()`  [EXTRACTED]
-  quartz/build.ts → quartz/util/path.ts
 
 ## Import Cycles
 - 3-file cycle: `quartz/cfg.ts -> quartz/components/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
@@ -3053,31 +3054,31 @@
 - **Images Related to Config Compiler Alert Configuration** — config_test_lft_requestpart_for_pallavi_new_client_1, configure_alerts_for_new_config_compiler_condition [EXTRACTED]
 - **Integration Flow with Microsoft Teams and Mobile Device Templates** — src_auth_session, src_microsoftteams_flowchart [EXTRACTED 0.75]
 
-## Communities (3498 total, 1515 thin omitted)
+## Communities (3500 total, 1516 thin omitted)
 
 ### Community 0 - "types.ts"
-Cohesion: 0.06
-Nodes (31): DepGraph, NotFoundPage(), AliasRedirects(), Assets(), CNAME(), ComponentResources, defaultOptions, generateRSSFeed() (+23 more)
+Cohesion: 0.08
+Nodes (48): FullPageLayout, QuartzConfig, headerRegex, pageResources(), RenderComponents, renderPage(), defaultContentPageLayout, defaultListPageLayout (+40 more)
 
 ### Community 1 - "index.ts"
 Cohesion: 0.09
-Nodes (42): Analytics, FullPageLayout, PageLayout, SharedLayout, ArticleTitle(), Backlinks(), ContentMetadata(), ContentMetaOptions (+34 more)
+Nodes (38): ArticleTitle(), Backlinks(), BreadcrumbOptions, CrumbData, defaultOptions, formatCrumb(), ContentMetadata(), ContentMetaOptions (+30 more)
 
 ### Community 2 - "DONE"
 Cohesion: 0.04
 Nodes (50): Citations(), defaultOptions, Options, DataMap, defaultOptions, Description(), Options, urlRegex (+42 more)
 
 ### Community 3 - "dependencies"
-Cohesion: 0.10
-Nodes (37): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+29 more)
+Cohesion: 0.13
+Nodes (26): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+18 more)
 
 ### Community 4 - "build.ts"
 Cohesion: 0.04
 Nodes (57): dependencies, async-mutex, chalk, chokidar, @clack/prompts, cli-spinner, d3, esbuild-sass-plugin (+49 more)
 
 ### Community 5 - "How to stop worrying and start living.md"
-Cohesion: 0.09
-Nodes (43): checkboxId(), addToVisited(), getVisited(), LinkData, NodeData, renderGlobalGraph(), renderGraph(), registerEscapeHandler() (+35 more)
+Cohesion: 0.10
+Nodes (37): DataWrapper, ExplorerNode(), ExplorerNodeProps, Options, OrderEntries, parseDependencies(), DataMap, defaultOptions (+29 more)
 
 ### Community 6 - "index.md"
 Cohesion: 0.04
@@ -3112,8 +3113,8 @@ Cohesion: 0.05
 Nodes (42): 20230731 DEV run 1, 20230731 INT Run 2, enhanced, 20230731 INT run 3, 20230801 INT 2, 20230801 INT Run 1, 20230801 RUN 3, 20230802 RUN 1, 20230804 INT 1 (+34 more)
 
 ### Community 14 - "path.ts"
-Cohesion: 0.13
-Nodes (25): GlobalConfiguration, BreadcrumbOptions, CrumbData, defaultOptions, formatCrumb(), Date(), formatDate(), getDate() (+17 more)
+Cohesion: 0.10
+Nodes (24): Analytics, GlobalConfiguration, PageLayout, SharedLayout, Date(), formatDate(), getDate(), Props (+16 more)
 
 ### Community 15 - "MIX3K-9 MiX3000 Default Config Group.md"
 Cohesion: 0.13
@@ -3144,8 +3145,8 @@ Cohesion: 0.08
 Nodes (22): setupCallout(), toggleCallout(), arrowMapping, arrowRegex, blockReferenceRegex, calloutLineRegex, calloutMapping, calloutRegex (+14 more)
 
 ### Community 22 - "Description Update from Nicole"
-Cohesion: 0.06
-Nodes (10): New OE Epic, Message to SOC, Operations Eg, Current Code, Current Implementation, Description, OE-539 Video Event Configuration action, TEST DATA (+2 more)
+Cohesion: 0.08
+Nodes (4): New OE Epic, Message to SOC, Operations Eg, Swagger test
 
 ### Community 23 - "Description"
 Cohesion: 0.06
@@ -3156,8 +3157,8 @@ Cohesion: 0.06
 Nodes (31): `api-integration.spec.ts` — 19 tests (no browser), Architecture — Cloud INT vs Local API, Architecture — `scan-gaps.ps1` (to be built), Category A: Infrastructure / Timing (now fixed in Run 3), Category B: Test Data Issues (env-dependent, not code bugs), Category C: FC Plus — Worker Fixture Crash (needs vehicle ID), `config-delta-write.spec.ts` — 13 tests (API layer + limited browser), Current gap state (2026-05-26) (+23 more)
 
 ### Community 25 - "Tel-84 Command sent twice"
-Cohesion: 0.08
-Nodes (30): mouseEnterHandler(), p, displayPreview(), displayResults(), fetchContent(), fetchContentCache, hideSearch(), highlight() (+22 more)
+Cohesion: 0.07
+Nodes (41): checkboxId(), addToVisited(), getVisited(), LinkData, NodeData, renderGlobalGraph(), renderGraph(), mouseEnterHandler() (+33 more)
 
 ### Community 26 - "OE-501 SPIKE to create the multi-select config groups.md"
 Cohesion: 0.15
@@ -3220,8 +3221,8 @@ Cohesion: 0.08
 Nodes (23): Example: persisting column width, Getting the values, HTML, Introduction, Mechanism, Need, Other selection criteria method, The data to be changed (+15 more)
 
 ### Community 42 - "Config Overview WIP.excalidraw.md"
-Cohesion: 0.09
-Nodes (17): Branches, Description, Implementation, OE-480 Navigation Item, Shorter Summary, TODO, Branches, Description (+9 more)
+Cohesion: 0.08
+Nodes (19): Branches, Description, Implementation, OE-480 Navigation Item, Shorter Summary, TODO, Branches, Description (+11 more)
 
 ### Community 43 - "OE-611 Alert not adjusting when removing missing parameters"
 Cohesion: 0.06
@@ -3238,10 +3239,6 @@ Nodes (23): Alert 3, Alert 4, Alerts 1 and 2, All of a sudden this no longer wor
 ### Community 46 - "ofm.ts"
 Cohesion: 0.08
 Nodes (23): Answered Open Questions, Architecture Decision (from Q&A session 2026-03-18), Boss Context (2026-03-18), Branch, Dependency Chain (for planning), Description (from Jira), Further Chat Notes, Local Test >INT (+15 more)
-
-### Community 47 - "Major Issues:"
-Cohesion: 0.18
-Nodes (10): Architecture (shared across all three platforms), Claude Chat Gateways — Decisions & Options Log, Goal, Key decisions made (chronological), Open items / not yet done, Pitfalls skills written, Platform status, 🐛 Real bug found + fixed same day: stdout/stderr pipe deadlock in ALL THREE gateways (+2 more)
 
 ### Community 48 - "OPEN-1832 Add Test Case Creation Screen"
 Cohesion: 0.09
@@ -3376,8 +3373,8 @@ Cohesion: 0.11
 Nodes (17): BE, Branch, Calls, Client, CODE, Description, FE, FR API (+9 more)
 
 ### Community 82 - "MIX3K-89 Missing upgrade firmware button for MiX3000 devices"
-Cohesion: 0.08
-Nodes (24): author, bin, quartz, description, engines, node, npm, homepage (+16 more)
+Cohesion: 0.11
+Nodes (17): author, bin, quartz, description, engines, node, npm, homepage (+9 more)
 
 ### Community 83 - "OE-496 API Get config Groups and columns"
 Cohesion: 0.11
@@ -3989,7 +3986,7 @@ Nodes (5): Examples of current Alarms, Egs, Here are the steps you could follow:
 
 ### Community 240 - "Daily Merge.md"
 Cohesion: 0.12
-Nodes (9): Intro, Issues, Services, Add to SQL connection string, Issue, Transforms, Utilities, Device Configuration (+1 more)
+Nodes (12): Intro, Issues, Services, Add to SQL connection string, Issue, Transforms, Utilities, Code (+4 more)
 
 ### Community 241 - "Notes created today"
 Cohesion: 0.18
@@ -4160,7 +4157,7 @@ Cohesion: 0.22
 Nodes (7): OE-562 Language count, Shorter Description, TODO, Fixes, OE-590 Grammar for single Config group, Shorter Description, TODO
 
 ### Community 286 - "OPEN-1186 Alert column should be a number"
-Cohesion: 0.18
+Cohesion: 0.22
 Nodes (9): Branch, Description (from Jira), Further Chat Notes, Integration with OPEN-1730, OPEN-1576 Add UI for Support to Supply Salesforce Case Info and Start Decom Automation Manually, Overloaded Endpoint, PR Checklist, Start Here Tomorrow — Priority Checklist (+1 more)
 
 ### Community 287 - "OPEN-1601 Setup Pipeline for the Powerfleet Automation UI"
@@ -4188,8 +4185,8 @@ Cohesion: 0.22
 Nodes (8): API, BE, INT, Investigation, PRS, QA-7657 Camera Name not Chinese friendly, Shorter Description, TODO
 
 ### Community 293 - "SR-14277 Asset Manager Diagnostic Report - No Battery information shown"
-Cohesion: 0.11
-Nodes (15): DataWrapper, ExplorerNode(), ExplorerNodeProps, FileNode, FolderState, getPathSegment(), Options, OrderEntries (+7 more)
+Cohesion: 0.36
+Nodes (8): FolderState, MaybeHTMLElement, observer, setFolderState(), setupExplorer(), toggleCollapsedByPath(), toggleExplorer(), toggleFolder()
 
 ### Community 294 - "Description"
 Cohesion: 0.22
@@ -4336,7 +4333,7 @@ Cohesion: 0.25
 Nodes (8): AI, Another help regarding fields, Answer 1, Answer 2, Answers, First question - gemini, Question 3 - AG (field info etc), Second question - Antigravity (flash)
 
 ### Community 330 - "QA-5583 Speeding not available for selection"
-Cohesion: 0.20
+Cohesion: 0.25
 Nodes (6): Branch, Code, OPEN-1663 API DEV issues, PR, Shorter Description, TODO
 
 ### Community 331 - "QA-5849 GetStatus Command not populating table"
@@ -4588,8 +4585,8 @@ Cohesion: 0.29
 Nodes (6): Database Changes, Initial findings, More findings, Performance issues, POC, Steps
 
 ### Community 395 - "SR-14302 Active event negative temperature incorrect"
-Cohesion: 0.25
-Nodes (7): Branches, Description, Getting it to work, Image Summary, OE-484 SEED Frangular UI, OE-484 TODO, Work to be done
+Cohesion: 0.29
+Nodes (7): scripts, check, docs, format, profile, quartz, test
 
 ### Community 396 - "SR-14303 Harsh Cornering passive events not shown on Historical tracking map"
 Cohesion: 0.29
@@ -5104,7 +5101,7 @@ Cohesion: 0.33
 Nodes (5): Error Log, OPEN-494, Shorter Description, Steps, TODO
 
 ### Community 528 - "2026-01-28.md"
-Cohesion: 0.33
+Cohesion: 0.50
 Nodes (3): OPEN-696 Edit modal Temp displays briefly upon canceling without saving, Shorter Description, TODO
 
 ### Community 529 - "2026-01-29.md"
@@ -7935,16 +7932,12 @@ Nodes (3): OE-654 Not Languaged firmware upload request successful, Shorter Desc
 Cohesion: 0.50
 Nodes (3): Notes, OPEN-2573 — CT-API: Deploy ConfigTools.API to INT Environment, What was done
 
-### Community 1255 - "2024-11-21.md"
-Cohesion: 0.29
-Nodes (5): Code, Links, Overview, Switch to use the new client method, Some of the services
-
 ### Community 1256 - "2024-11-22.md"
 Cohesion: 0.50
 Nodes (3): Decision, Locally tested, Merge
 
 ### Community 1257 - "2024-11-25.md"
-Cohesion: 0.50
+Cohesion: 0.33
 Nodes (3): OPEN-694 AutoFill all the time, Shorter Description, TODO
 
 ### Community 1258 - "2024-11-26.md"
@@ -8995,25 +8988,33 @@ Nodes (3): Preparing your vault for Dashboard++, Step 1: Install the Dashboard++
 Cohesion: 0.40
 Nodes (5): 3. Dependencies and Connections, AngularJS Bindings, Custom Directives, JavaScript Components, Services
 
+### Community 3497 - "OE-481 iFrame"
+Cohesion: 0.33
+Nodes (5): Branches, Description, Image Summary, OE-481 iFrame, TODO
+
+### Community 3498 - "OE-539 Video Event Configuration action"
+Cohesion: 0.33
+Nodes (6): Current Code, Current Implementation, Description, OE-539 Video Event Configuration action, TEST DATA, TODO
+
 ## Knowledge Gaps
-- **9950 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+9945 more)
+- **9940 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+9935 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1515 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1516 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `CONFIG-3663 Make Available Ford OEM` connect `2026-01-15.md` to `Notes created today`, `STEPS to get all the parameterIds and fix the make available`?**
+- **Why does `OE-513 Configuration Groups - Frangularisation and enhancements` connect `Description` to `Description Update from Nicole`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `DepGraph` connect `Major Issues:` to `types.ts`, `dependencies`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
+- **Why does `CONFIG-3663 Make Available Ford OEM` connect `2026-01-15.md` to `Notes created today`, `STEPS to get all the parameterIds and fix the make available`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `Generates a consistent, visually distinct color for a given string.`, `Extracts the XML content from a T-SQL script variable.`, `Checks if a string represents a large integer, likely a unique ID.` to the rest of the system?**
-  _9961 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _9951 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `types.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.06128364389233954 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07859649122807018 - nodes in this community are weakly interconnected._
 - **Should `index.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.08828302499188576 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09164535379369139 - nodes in this community are weakly interconnected._
 - **Should `DONE` be split into smaller, more focused modules?**
   _Cohesion score 0.040674603174603176 - nodes in this community are weakly interconnected._
-- **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
-- **Should `build.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.03508771929824561 - nodes in this community are weakly interconnected._
