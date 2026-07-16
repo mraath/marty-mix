@@ -1,5 +1,5 @@
 ---
-Parent:: [[Command45]]
+Parent:: [[Command-45]]
 ---
 
 # SR-10305 [21.7 WIP] MiX4000 + MVR: Units Losing Timezone Settings

@@ -7,7 +7,7 @@ comment: When nothing to do
 ---
 
 Date: 2022-03-15 Time: 11:20
-Friend: [[BlackFlag]]
+Friend: [[Black Flag]]
 JIRA:UAT-973
 [[UAT-973] "Configuration differences from group" (Black flag) does not show correct Perferred firmware version - MiX Telematics JIRA](https://jira.mixtelematics.com/browse/UAT-973)
 

@@ -20085,23 +20085,13 @@
     "semantic_hash": ""
   },
   "Claude-Chat-Gateways.md": {
-    "mtime": 1784178021.3975017,
-    "ast_hash": "5ef953d934a12084d4bc207a5f196a8d",
+    "mtime": 1784100842.1950817,
+    "ast_hash": "e49b351926374398e66d46194ae9b9f0",
     "semantic_hash": ""
   },
   "DailyNotes/2026-07-15.md": {
-    "mtime": 1784159115.3477707,
-    "ast_hash": "33945606d515af291866e750bde97376",
-    "semantic_hash": ""
-  },
-  "DailyNotes/2026-07-16.md": {
-    "mtime": 1784175289.3078613,
-    "ast_hash": "d3bcf6864d60f6a6e2001b6bc6e6540c",
-    "semantic_hash": ""
-  },
-  "SDLC Agent Rules.md": {
-    "mtime": 1784159088.9925158,
-    "ast_hash": "ea1e6e5920df4da7867f9734a0c3bc75",
+    "mtime": 1784084718.9460447,
+    "ast_hash": "efe2aed93d6b4294bf542a92685cb39c",
     "semantic_hash": ""
   }
 }

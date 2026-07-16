@@ -1,5 +1,5 @@
 ---
-Parent:: [[Command45]]
+Parent:: [[Command-45]]
 wiki_ingested: 2026-05-28
 ---
 

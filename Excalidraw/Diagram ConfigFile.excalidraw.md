@@ -48,8 +48,7 @@ LibraryKey ^koX1Xlem
 
 LocationTemplateKey ^qjIESy6h
 
-[[FMOnlineDB.
-dbo.Organisation]] ^kTIe6hih
+[[FMOnlineDB .dbo.Organisation]] ^kTIe6hih
 
 liOrgID = legacyOrgId ^OjP8OjIT
 
