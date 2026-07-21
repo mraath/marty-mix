@@ -1,6 +1,6 @@
 ---
 created: 2026-07-21T15:15
-updated: 2026-07-21T15:15
+updated: 2026-07-21T16:22
 ---
 # Wiki Index — Powerfleet Engineering Knowledge Base
 
@@ -68,4 +68,4 @@ updated: 2026-07-21T15:15
 
 ## Synthesis
 
-_(none yet)_
+- [Claude-Multi-Agent-Architecture](synthesis/Claude-Multi-Agent-Architecture.md) — Claude Code settings inheritance (global/project/local); native subagents vs. SDLC's custom `.agent/agents/` framework vs. AIOS's persona system; Hermes vs. Paperclip comparison; full SDLC internals (agents, skills, workflows, triggers, state, hooks)
