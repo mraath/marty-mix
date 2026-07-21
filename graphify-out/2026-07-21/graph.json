@@ -3336,7 +3336,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "quartz_components_pages_content_content",
-      "community": 3,
+      "community": 1,
       "norm_label": "content()"
     },
     {
@@ -6376,7 +6376,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_util_jsx",
-      "community": 3,
+      "community": 1,
       "norm_label": "jsx.tsx"
     },
     {
@@ -6386,7 +6386,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "quartz_util_jsx_customcomponents",
-      "community": 3,
+      "community": 1,
       "norm_label": "customcomponents"
     },
     {
@@ -6396,7 +6396,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "quartz_util_jsx_htmltojsx",
-      "community": 3,
+      "community": 1,
       "norm_label": "htmltojsx()"
     },
     {
@@ -94314,7 +94314,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1493_ui_for_salesforce_case_info",
-      "community": 330,
+      "community": 3501,
       "norm_label": "open-1493 ui for salesforce case info.md"
     },
     {
@@ -94814,7 +94814,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1576_add_ui_for_decom_automation_manually",
-      "community": 286,
+      "community": 3501,
       "norm_label": "open-1576 add ui for decom automation manually.md"
     },
     {
@@ -95004,7 +95004,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1601_setup_pipeline_for_the_powerfleet_automation_ui",
-      "community": 330,
+      "community": 3501,
       "norm_label": "open-1601 setup pipeline for the powerfleet automation ui.md"
     },
     {
@@ -96274,7 +96274,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1730_change_the_ui_for_decomm",
-      "community": 286,
+      "community": 3501,
       "norm_label": "open-1730 change the ui for decomm.md"
     },
     {
@@ -115604,7 +115604,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "wip_frangular_edit_templates_editmobiledeviceplan_3_dependencies_and_connections",
-      "community": 224,
+      "community": 3495,
       "norm_label": "3. dependencies and connections"
     },
     {
@@ -115614,7 +115614,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "wip_frangular_edit_templates_editmobiledeviceplan_angularjs_bindings",
-      "community": 224,
+      "community": 3495,
       "norm_label": "angularjs bindings"
     },
     {
@@ -115624,7 +115624,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "wip_frangular_edit_templates_editmobiledeviceplan_custom_directives",
-      "community": 224,
+      "community": 3495,
       "norm_label": "custom directives"
     },
     {
@@ -115634,7 +115634,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "wip_frangular_edit_templates_editmobiledeviceplan_javascript_components",
-      "community": 224,
+      "community": 3495,
       "norm_label": "javascript components"
     },
     {
@@ -115644,7 +115644,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "wip_frangular_edit_templates_editmobiledeviceplan_services",
-      "community": 224,
+      "community": 3495,
       "norm_label": "services"
     },
     {
@@ -137898,106 +137898,6 @@
       "norm_label": "wiki pages updated"
     },
     {
-      "label": "open-2438-oman-dst-commandline-investigation.md",
-      "file_type": "document",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "wiki_sources_open_2438_oman_dst_commandline_investigation",
-      "community": 3495,
-      "norm_label": "open-2438-oman-dst-commandline-investigation.md"
-    },
-    {
-      "label": "Summary",
-      "file_type": "document",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "wiki_sources_open_2438_oman_dst_commandline_investigation_summary",
-      "community": 3495,
-      "norm_label": "summary"
-    },
-    {
-      "label": "Recommended Path",
-      "file_type": "document",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "wiki_sources_open_2438_oman_dst_commandline_investigation_recommended_path",
-      "community": 3495,
-      "norm_label": "recommended path"
-    },
-    {
-      "label": "What the CommandLine Tool Does",
-      "file_type": "document",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "wiki_sources_open_2438_oman_dst_commandline_investigation_what_the_commandline_tool_does",
-      "community": 3495,
-      "norm_label": "what the commandline tool does"
-    },
-    {
-      "label": "The Two Modern Endpoints",
-      "file_type": "document",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "wiki_sources_open_2438_oman_dst_commandline_investigation_the_two_modern_endpoints",
-      "community": 3495,
-      "norm_label": "the two modern endpoints"
-    },
-    {
-      "label": "Options Evaluated",
-      "file_type": "document",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L49",
-      "_origin": "ast",
-      "id": "wiki_sources_open_2438_oman_dst_commandline_investigation_options_evaluated",
-      "community": 3495,
-      "norm_label": "options evaluated"
-    },
-    {
-      "label": "OMAN's Legacy FMTimeAdjuster.Api",
-      "file_type": "document",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L57",
-      "_origin": "ast",
-      "id": "wiki_sources_open_2438_oman_dst_commandline_investigation_oman_s_legacy_fmtimeadjuster_api",
-      "community": 3495,
-      "norm_label": "oman's legacy fmtimeadjuster.api"
-    },
-    {
-      "label": "Affected Org",
-      "file_type": "document",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L65",
-      "_origin": "ast",
-      "id": "wiki_sources_open_2438_oman_dst_commandline_investigation_affected_org",
-      "community": 3495,
-      "norm_label": "affected org"
-    },
-    {
-      "label": "Open Questions (from raw)",
-      "file_type": "document",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L69",
-      "_origin": "ast",
-      "id": "wiki_sources_open_2438_oman_dst_commandline_investigation_open_questions_from_raw",
-      "community": 3495,
-      "norm_label": "open questions (from raw)"
-    },
-    {
-      "label": "Connections",
-      "file_type": "document",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L76",
-      "_origin": "ast",
-      "id": "wiki_sources_open_2438_oman_dst_commandline_investigation_connections",
-      "community": 3495,
-      "norm_label": "connections"
-    },
-    {
       "label": "open-tickets-cluster2.md",
       "file_type": "document",
       "source_file": "wiki/sources/open-tickets-cluster2.md",
@@ -138497,7 +138397,7 @@
       "community": 3173,
       "norm_label": "ac parent document",
       "community_name": "AC Parent Document",
-      "id": "ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_md"
+      "id": "ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_md"
     },
     {
       "label": "OPEN-505: Identify channels for blurring diagram",
@@ -139425,7 +139325,7 @@
       "community": 2273,
       "norm_label": "geteventlist",
       "community_name": "Jira Regression.md",
-      "id": "done_done_done_done_done_done_done_done_done_done_done_geteventlist"
+      "id": "done_done_done_done_done_done_done_done_done_done_geteventlist"
     },
     {
       "label": "SR-11406 ENT EKS Infohub User Error",
@@ -147987,7 +147887,7 @@
       "community": 2542,
       "norm_label": "filters documentation",
       "community_name": "titlegeneratorforwrittenpiecesAwesome.md",
-      "id": "filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_md"
+      "id": "filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_md"
     },
     {
       "label": ".npmrc",
@@ -275601,96 +275501,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L65",
-      "weight": 1.0,
-      "source": "wiki_sources_open_2438_oman_dst_commandline_investigation",
-      "target": "wiki_sources_open_2438_oman_dst_commandline_investigation_affected_org",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L76",
-      "weight": 1.0,
-      "source": "wiki_sources_open_2438_oman_dst_commandline_investigation",
-      "target": "wiki_sources_open_2438_oman_dst_commandline_investigation_connections",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L57",
-      "weight": 1.0,
-      "source": "wiki_sources_open_2438_oman_dst_commandline_investigation",
-      "target": "wiki_sources_open_2438_oman_dst_commandline_investigation_oman_s_legacy_fmtimeadjuster_api",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L69",
-      "weight": 1.0,
-      "source": "wiki_sources_open_2438_oman_dst_commandline_investigation",
-      "target": "wiki_sources_open_2438_oman_dst_commandline_investigation_open_questions_from_raw",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L49",
-      "weight": 1.0,
-      "source": "wiki_sources_open_2438_oman_dst_commandline_investigation",
-      "target": "wiki_sources_open_2438_oman_dst_commandline_investigation_options_evaluated",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "wiki_sources_open_2438_oman_dst_commandline_investigation",
-      "target": "wiki_sources_open_2438_oman_dst_commandline_investigation_recommended_path",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "wiki_sources_open_2438_oman_dst_commandline_investigation",
-      "target": "wiki_sources_open_2438_oman_dst_commandline_investigation_summary",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L40",
-      "weight": 1.0,
-      "source": "wiki_sources_open_2438_oman_dst_commandline_investigation",
-      "target": "wiki_sources_open_2438_oman_dst_commandline_investigation_the_two_modern_endpoints",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/sources/open-2438-oman-dst-commandline-investigation.md",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "wiki_sources_open_2438_oman_dst_commandline_investigation",
-      "target": "wiki_sources_open_2438_oman_dst_commandline_investigation_what_the_commandline_tool_does",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "wiki/sources/open-tickets-cluster2.md",
       "source_location": "L12",
       "weight": 1.0,
@@ -276197,5 +276007,5 @@
       "source_file": "Attachments/MicrosoftTeams-image (13).png"
     }
   ],
-  "built_at_commit": "39cf572d05eccb552615a35b80eea215c6731b70"
+  "built_at_commit": "9b49d287bda02dcb9a10bba2b039a967b50c6a5a"
 }

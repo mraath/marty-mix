@@ -1,16 +1,16 @@
-# Graph Report - marty-mix  (2026-07-21)
+# Graph Report - marty-mix  (2026-07-17)
 
 ## Corpus Check
-- 3095 files · ~9,858,279 words
+- 3094 files · ~9,857,710 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 14697 nodes · 12533 edges · 3503 communities (1986 shown, 1517 thin omitted)
+- 14687 nodes · 12524 edges · 3504 communities (1987 shown, 1517 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.62)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `39cf572d`
+- Built from commit: `9b49d287`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -3046,8 +3046,8 @@
   quartz/components/scripts/search.inline.ts → quartz/util/path.ts
 
 ## Import Cycles
-- 3-file cycle: `quartz/cfg.ts -> quartz/plugins/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
 - 3-file cycle: `quartz/cfg.ts -> quartz/components/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
+- 3-file cycle: `quartz/cfg.ts -> quartz/plugins/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
 - 4-file cycle: `quartz/cfg.ts -> quartz/plugins/types.ts -> quartz/components/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
 
 ## Hyperedges (group relationships)
@@ -3058,23 +3058,23 @@
 - **Images Related to Config Compiler Alert Configuration** — config_test_lft_requestpart_for_pallavi_new_client_1, configure_alerts_for_new_config_compiler_condition [EXTRACTED]
 - **Integration Flow with Microsoft Teams and Mobile Device Templates** — src_auth_session, src_microsoftteams_flowchart [EXTRACTED 0.75]
 
-## Communities (3503 total, 1517 thin omitted)
+## Communities (3504 total, 1517 thin omitted)
 
 ### Community 0 - "types.ts"
 Cohesion: 0.08
 Nodes (48): FullPageLayout, QuartzConfig, headerRegex, pageResources(), RenderComponents, renderPage(), defaultContentPageLayout, defaultListPageLayout (+40 more)
 
 ### Community 1 - "index.ts"
-Cohesion: 0.10
-Nodes (35): ArticleTitle(), Backlinks(), BreadcrumbOptions, CrumbData, defaultOptions, formatCrumb(), ContentMetadata(), ContentMetaOptions (+27 more)
+Cohesion: 0.09
+Nodes (38): ArticleTitle(), Backlinks(), BreadcrumbOptions, CrumbData, defaultOptions, formatCrumb(), ContentMetadata(), ContentMetaOptions (+30 more)
 
 ### Community 2 - "DONE"
 Cohesion: 0.04
 Nodes (50): Citations(), defaultOptions, Options, DataMap, defaultOptions, Description(), Options, urlRegex (+42 more)
 
 ### Community 3 - "dependencies"
-Cohesion: 0.11
-Nodes (29): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+21 more)
+Cohesion: 0.13
+Nodes (26): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+18 more)
 
 ### Community 4 - "build.ts"
 Cohesion: 0.04
@@ -3929,8 +3929,8 @@ Cohesion: 0.18
 Nodes (10): 1. Target Groups, 2. ALB Listener Rules, 3. Task Definitions, 4. ECS Services, Common Failure Modes, Connections, Pre-Requisites (must exist in target region), Public Access Pattern (Private ALB) (+2 more)
 
 ### Community 224 - "OE-521 Unallocated Assets assign to Config group"
-Cohesion: 0.12
-Nodes (15): 1. Introduction, 2. Template Structure Overview, 3. Dependencies and Connections, 4. Detailed Analysis of AssetMobileDeviceEditTemplate.html, 6. Technical Debt Consideration, 7. Mermaid Diagram of Dependencies, 8. Conclusion, AngularJS Bindings (+7 more)
+Cohesion: 0.18
+Nodes (10): 1. Introduction, 2. Template Structure Overview, 4. Detailed Analysis of AssetMobileDeviceEditTemplate.html, 6. Technical Debt Consideration, 7. Mermaid Diagram of Dependencies, 8. Conclusion, Functionality, In-depth Architectural Review and Refactoring Plan for AssetMobileDeviceEditTemplate.html (+2 more)
 
 ### Community 225 - "OE-638 Reset Black Flag"
 Cohesion: 0.18
@@ -4165,7 +4165,7 @@ Cohesion: 0.22
 Nodes (7): OE-562 Language count, Shorter Description, TODO, Fixes, OE-590 Grammar for single Config group, Shorter Description, TODO
 
 ### Community 286 - "OPEN-1186 Alert column should be a number"
-Cohesion: 0.18
+Cohesion: 0.22
 Nodes (9): Branch, Description (from Jira), Further Chat Notes, Integration with OPEN-1730, OPEN-1576 Add UI for Support to Supply Salesforce Case Info and Start Decom Automation Manually, Overloaded Endpoint, PR Checklist, Start Here Tomorrow — Priority Checklist (+1 more)
 
 ### Community 287 - "OPEN-1601 Setup Pipeline for the Powerfleet Automation UI"
@@ -4341,7 +4341,7 @@ Cohesion: 0.25
 Nodes (8): AI, Another help regarding fields, Answer 1, Answer 2, Answers, First question - gemini, Question 3 - AG (field info etc), Second question - Antigravity (flash)
 
 ### Community 330 - "QA-5583 Speeding not available for selection"
-Cohesion: 0.20
+Cohesion: 0.25
 Nodes (6): Branch, Code, OPEN-1663 API DEV issues, PR, Shorter Description, TODO
 
 ### Community 331 - "QA-5849 GetStatus Command not populating table"
@@ -8993,8 +8993,8 @@ Cohesion: 0.67
 Nodes (3): Preparing your vault for Dashboard++, Step 1: Install the Dashboard++ CSS Snippet, Step 2: Create your first Dashboard
 
 ### Community 3495 - "AngularJS Component Architecture"
-Cohesion: 0.20
-Nodes (9): Affected Org, Connections, OMAN's Legacy FMTimeAdjuster.Api, Open Questions (from raw), Options Evaluated, Recommended Path, Summary, The Two Modern Endpoints (+1 more)
+Cohesion: 0.40
+Nodes (5): 3. Dependencies and Connections, AngularJS Bindings, Custom Directives, JavaScript Components, Services
 
 ### Community 3497 - "scripts"
 Cohesion: 0.29
@@ -9013,7 +9013,7 @@ Cohesion: 0.50
 Nodes (3): Key Takeaways, Summary, Wiki Pages Updated
 
 ## Knowledge Gaps
-- **9968 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+9963 more)
+- **9959 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+9954 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1517 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -9023,14 +9023,14 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `CONFIG-3663 Make Available Ford OEM` connect `2026-01-15.md` to `Notes created today`, `STEPS to get all the parameterIds and fix the make available`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `Generates a consistent, visually distinct color for a given string.`, `Extracts the XML content from a T-SQL script variable.`, `Checks if a string represents a large integer, likely a unique ID.` to the rest of the system?**
-  _9979 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _9970 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `types.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.07859649122807018 - nodes in this community are weakly interconnected._
 - **Should `index.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.0985576923076923 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09164535379369139 - nodes in this community are weakly interconnected._
 - **Should `DONE` be split into smaller, more focused modules?**
   _Cohesion score 0.040674603174603176 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.11008325624421832 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12513842746400886 - nodes in this community are weakly interconnected._
 - **Should `build.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.03508771929824561 - nodes in this community are weakly interconnected._
