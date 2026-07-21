@@ -1,7 +1,16 @@
+---
+created: 2026-07-21T15:15
+updated: 2026-07-21T15:15
+---
 # Wiki Log — Powerfleet Engineering Knowledge Base
 
 > Append-only. Format: `## [YYYY-MM-DD] {operation} | {title}`
 > Parse tip: `grep "^## \[" log.md | tail -10`
+
+## [2026-07-21] ingest | SA Income Tax Brackets (from live session, salary/bonus review)
+- Pages created: SA Income Tax Brackets (concept)
+- Pages updated: index.md
+- Contradictions flagged: none
 
 ## [2026-06-03] ingest | Frangular local dev chain (from live session)
 - Pages created: Frangular-Local-Dev-Setup (concept)

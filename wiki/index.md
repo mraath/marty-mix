@@ -1,7 +1,11 @@
+---
+created: 2026-07-21T15:15
+updated: 2026-07-21T15:15
+---
 # Wiki Index — Powerfleet Engineering Knowledge Base
 
-> Auto-maintained by LLM. Last updated: 2026-05-29
-> Total pages: 31 | Sources ingested: 18
+> Auto-maintained by LLM. Last updated: 2026-07-21
+> Total pages: 32 | Sources ingested: 18
 
 ## Entities
 
@@ -36,6 +40,7 @@
 - [Frangular-Local-Dev-Setup](concepts/Frangular-Local-Dev-Setup.md) — Run FRangular UI (local) → Frangular API (local) → DEV API; the one-line ConfigApiUrl change
 - [Decommissioning-Automation](concepts/Decommissioning-Automation.md) — Decomm automation Phase 1; auth proxy pattern, Salesforce case flow
 - [QC-Automation](concepts/QC-Automation.md) — Quality check automation Phase 1; IMEI submission, CAN/video/odometer checks
+- [SA Income Tax Brackets](concepts/SA%20Income%20Tax%20Brackets.md) — SARS marginal tax brackets/rebates/thresholds (2025/26); used for salary/bonus after-tax analysis
 
 ## Sources
 
