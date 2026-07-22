@@ -1,6 +1,6 @@
 ---
 created: 2026-07-21T15:15
-updated: 2026-07-21T16:22
+updated: 2026-07-22T11:23
 ---
 # Wiki Index — Powerfleet Engineering Knowledge Base
 
@@ -69,3 +69,4 @@ updated: 2026-07-21T16:22
 ## Synthesis
 
 - [Claude-Multi-Agent-Architecture](synthesis/Claude-Multi-Agent-Architecture.md) — Claude Code settings inheritance (global/project/local); native subagents vs. SDLC's custom `.agent/agents/` framework vs. AIOS's persona system; Hermes vs. Paperclip comparison; full SDLC internals (agents, skills, workflows, triggers, state, hooks)
+- [AIOS-Paperclip-to-Hermes-Migration-Plan](synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md) — Approved 2026-07-22 plan: migrate Paperclip tasks to Hermes's native kanban, formalize AIOS agent definitions, add Hermes hook safeguards incl. a human-verification gate

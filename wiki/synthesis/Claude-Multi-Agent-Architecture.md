@@ -5,7 +5,7 @@ sources: []
 last_updated: 2026-07-21
 wiki_ingested: 2026-07-21
 created: 2026-07-21T16:44
-updated: 2026-07-21T17:10
+updated: 2026-07-22T11:23
 ---
 
 Working notes from a 2026-07-21 session on how Claude Code settings inheritance works across `C:\Projects\SDLC` (work) and `C:\Personal\AIOS` (personal), how their respective "agent" systems compare to Claude Code's native subagents, how Hermes and Paperclip relate inside AIOS, and a deep dive into SDLC's own internal architecture.
@@ -168,6 +168,27 @@ The engineering-operations manual: team/project/repo/pipeline mapping, governanc
 
 **General pattern**: hooks gate/inject at the Claude Code tool-call layer → agents execute skills and produce structured signals → dedicated `write_*.py` scripts (backup-enforced) are the only legitimate path to commit decision-signal state → the orchestrator reads that state to decide the next dispatch.
 
+## 2026-07-22 — Hermes deep dive: can it fully replace Paperclip, and can it grow SDLC-style governance?
+
+**Correction to the 2026-07-21 entry above**: that entry implied Hermes and Paperclip were only linked by shared personas. Deeper research found `hermes-web-ui` already embeds a live Paperclip Kanban view — but there was also a *false lead* worth recording so it isn't re-chased: it looked like the user had already tried Hermes's own native kanban and abandoned it for Paperclip. Checking `kanban/migrate-to-paperclip.py` and `wiki/entities/Paperclip.md` directly disproved this — that migration moved data from the old **markdown file** `kanban/braindump.md` to Paperclip, not away from Hermes's CLI kanban subsystem. Hermes's own `kanban.db` is a *different, currently-live* system running in parallel today (real tasks in it right now; Hermes's own cron runs "Paperclip Watchdog"/"Paperclip DB Backup" jobs to keep Paperclip healthy) — today's architecture treats Paperclip as primary and Hermes cron/kanban as supporting tooling around it, not a rejected alternative.
+
+### Can `hermes kanban` + `hermes cron` replace Paperclip?
+
+`hermes kanban` (33 subcommands) is a real orchestration engine, not a toy: SQLite-backed (`C:\Users\MarthinusR\AppData\Local\hermes\kanban.db`), shared across all profiles/personas, with atomic claim/lock (`claim_lock`/`claim_expires` columns — the same job Paperclip's `/checkout` endpoint does), and an autonomous dispatcher (`hermes kanban dispatch`, running continuously inside `hermes gateway start`) that reclaims stale claims and spawns workers with no human watching — a genuine heartbeat, not a passive board. `hermes-web-ui` already has a full native REST API for it (`packages/server/src/routes/hermes/kanban.ts` + a client store) sitting unused alongside `PaperclipView.vue`. `hermes cron` (11 subcommands) is a plain time-trigger scheduler with **no** claim/checkout semantics of its own — the concurrency-safe piece lives entirely in `kanban`, not `cron`.
+
+**Concrete gaps vs. Paperclip:**
+1. Hermes's `tenant`/`project_id` are free-text columns, not FK-enforced UUID entities like Paperclip's `companies→agents→projects` — no schema-level guarantee the 6 personas' data stays partitioned.
+2. Today's whole setup (watchdog/backup cron jobs, `PaperclipView.vue`, the vault's own "Paperclip = MAIN SOURCE OF TRUTH" note) assumes Paperclip stays — flipping that is a real migration (retire the Paperclip service, repoint the UI at the already-built native kanban API, migrate live Postgres data into `kanban.db`, drop the now-pointless watchdog jobs), not a settings toggle.
+3. Losing Postgres for SQLite is arguably a win at personal scale (fewer services running).
+
+### Can Hermes grow SDLC-style governance (hooks)?
+
+Yes — this is the strongest finding. `hermes hooks` is a **real `PreToolUse`-equivalent**, not a webhook/git-hook system: 16 named lifecycle events (`pre_tool_call`, `post_tool_call`, `pre_llm_call`, `pre_verify`, `subagent_stop`, etc.), each able to return `{"decision": "block", "reason": "..."}` and actually veto the action — documented in full at `website/docs/user-guide/features/hooks.md` with exact Python signatures and a JSON wire protocol for shell hooks. **Zero hooks are configured right now** (`hermes hooks list` → "No shell hooks configured") — the capability exists, fully documented, completely unused. `hermes plugins` additionally allows in-process Python gating via `ctx.register_hook(...)`. The one real limit: `command_allowlist` (the built-in dangerous-command gate) is a fixed category list — no custom conditions — so SDLC-style conditional logic (e.g. "block unless a manifest checkbox is ticked") has to go through the hook/plugin system, not the allowlist.
+
+### ⚠️ Critical reframe — this does NOT solve iCubed's Claude→Copilot decoupling goal
+
+Building governance hooks *inside Hermes specifically* only helps AIOS's personal side — it does not serve [[iCubed]]'s goal of letting SDLC run on Copilot as well as Claude. Per `AIOS-Hackathon-Architecture-Brief.md` (2026-07-10, pre-dating this research): *"we are not copying SDLC's governance layer into AIOS. We are building a new, tool-agnostic version of the same pattern — one that works whichever backend (Claude, Gemini, Hermes, Copilot) AIOS happens to be routing through."* Wiring new governance into Hermes's `pre_tool_call` hooks is exactly the same shape of vendor lock SDLC already has with Claude Code — just relocated to a different vendor (NousResearch instead of Anthropic). It doesn't make SDLC any more Copilot-compatible. See [[SDLC vs. Paperclip vs. Hermes as the orchestrator]] below for the pre-existing runtime-model comparison this builds on, and `AIOS-Hackathon-Architecture-Brief.md` for the full ThePopeBot precedent (a mature third-party project with the same ambition, using hand-wired per-agent conventions rather than a clean interface — the realistic difficulty bar for this kind of work).
+
 ## SDLC vs. Paperclip vs. Hermes as the orchestrator
 
 Where would orchestration actually live, and what happens when nobody's watching, under each?
@@ -182,6 +203,10 @@ Where would orchestration actually live, and what happens when nobody's watching
 | Human-in-the-loop | Built in — PO sign-off, Review Agent verdict, human-approved production PRs, watchable turn by turn | Weaker fit — built for fire-and-forget async workers | N/A — it's the entry channel (Discord/Slack/etc.), not a review gate |
 
 **The core difference**: SDLC's orchestration is *pull* — nothing happens until a human (or scheduled wakeup) triggers a Claude Code session, and its whole guarantee system rides on Claude Code's own hook mechanism. Paperclip's orchestration is *push* — a real service that wakes itself and dispatches with nobody home, which is what it's built for, but it ships none of SDLC's process guardrails out of the box. Hermes isn't a real candidate for *running* the orchestration at all — it's the layer that decides which model answers and which channel a message came in on; it could sit in front of either SDLC or Paperclip as an entry point, but it can't replace the task/state/gate layer itself. If SDLC ever needed to run fully unattended, Paperclip's heartbeat model is the right shape to borrow — but the hook-enforced guardrails would need to be rebuilt as application logic, not inherited for free.
+
+## 2026-07-22 — Approved implementation plan
+
+The Hermes-can-replace-Paperclip + hook-safeguards findings above turned into an approved, scoped implementation plan: [[AIOS-Paperclip-to-Hermes-Migration-Plan]] — migrate Paperclip's live tasks into Hermes's native kanban, formalize AIOS's personas as a proper agent/assignee registry, and add Hermes hook safeguards including a human-verification gate. The SDLC-side Copilot-dispatch hardening was explicitly parked, not part of this round.
 
 ## Open Questions
 
