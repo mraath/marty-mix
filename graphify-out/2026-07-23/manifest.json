@@ -15350,13 +15350,13 @@
     "semantic_hash": ""
   },
   "wiki/index.md": {
-    "mtime": 1784690613.601,
-    "ast_hash": "c725888d70b99b38bf1f1adcd9bfceb4",
+    "mtime": 1782713398.8450184,
+    "ast_hash": "f8987870a3ec9b8f8e5b50980a36c9c0",
     "semantic_hash": ""
   },
   "wiki/log.md": {
-    "mtime": 1784618132.536,
-    "ast_hash": "9b74109ce857e190fb5f19384f3cad8e",
+    "mtime": 1780474648.5129747,
+    "ast_hash": "5e93e71f8646c4061f46158592c2091d",
     "semantic_hash": ""
   },
   "wiki/sources/au-automation-setup.md": {
@@ -20107,66 +20107,6 @@
   "wiki/sources/open-2438-oman-dst-commandline-investigation.md": {
     "mtime": 1784537845.3672986,
     "ast_hash": "4e05e2b0ff80531ae517f639516069cf",
-    "semantic_hash": ""
-  },
-  "DailyNotes/2026-07-21.md": {
-    "mtime": 1784622179.234,
-    "ast_hash": "a2768dab668073b3ead656bf4eab1bd6",
-    "semantic_hash": ""
-  },
-  "DailyNotes/2026-07-22.md": {
-    "mtime": 1784693662.711,
-    "ast_hash": "c029bae428e7225addd4de6916920b13",
-    "semantic_hash": ""
-  },
-  "Personal/2026 Salary Increase and Bonus Review.md": {
-    "mtime": 1784615329.041,
-    "ast_hash": "bd914cbe9bf5e270934809042920913e",
-    "semantic_hash": ""
-  },
-  "wiki/concepts/SA Income Tax Brackets.md": {
-    "mtime": 1784620067.077,
-    "ast_hash": "742e828c124dd3728cb2440207442a95",
-    "semantic_hash": ""
-  },
-  "wiki/raw/2026-07-21 Comp Meeting Cheat Sheet.md": {
-    "mtime": 1784607708.0678554,
-    "ast_hash": "afe4a5b51245c68e0d9437b78f355a0a",
-    "semantic_hash": ""
-  },
-  "wiki/raw/2026-07-21 Draft Email to Managers - Comp Review.md": {
-    "mtime": 1784607721.74,
-    "ast_hash": "ca54decc34d6075689122fd499b585fc",
-    "semantic_hash": ""
-  },
-  "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md": {
-    "mtime": 1784690601.6337774,
-    "ast_hash": "0adafe85252ff708bdeb0cdb5201310a",
-    "semantic_hash": ""
-  },
-  "wiki/synthesis/Claude-Multi-Agent-Architecture.md": {
-    "mtime": 1784690628.518,
-    "ast_hash": "9c328cf8b80593542832504bc5f81ae4",
-    "semantic_hash": ""
-  },
-  "Attachments/Tax_Certificate2023_Statutory Tables_01-Mar-2022.pdf": {
-    "mtime": 1784604365.026318,
-    "ast_hash": "f4889080be7f9d8efed26a1c919b268d",
-    "semantic_hash": ""
-  },
-  "Attachments/Tax_Certificate2024_Statutory Tables_01-Mar-2023.pdf": {
-    "mtime": 1784604385.3045733,
-    "ast_hash": "0c840cc10f796374366786a53b122956",
-    "semantic_hash": ""
-  },
-  "Attachments/Tax_Certificate2025_Statutory Tables_01-Mar-2024.pdf": {
-    "mtime": 1784604395.6929238,
-    "ast_hash": "0482511b66efbcdadae031cf7c5730fa",
-    "semantic_hash": ""
-  },
-  "Attachments/Tax_Certificate2026_Statutory Tables_01-Mar-2025.pdf": {
-    "mtime": 1784604405.1883962,
-    "ast_hash": "65e0fbad5eb9e7ab8f92022bb7607b7c",
     "semantic_hash": ""
   }
 }

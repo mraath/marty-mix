@@ -3336,7 +3336,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "quartz_components_pages_content_content",
-      "community": 1,
+      "community": 3,
       "norm_label": "content()"
     },
     {
@@ -6376,7 +6376,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_util_jsx",
-      "community": 1,
+      "community": 3,
       "norm_label": "jsx.tsx"
     },
     {
@@ -6386,7 +6386,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "quartz_util_jsx_customcomponents",
-      "community": 1,
+      "community": 3,
       "norm_label": "customcomponents"
     },
     {
@@ -6396,7 +6396,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "quartz_util_jsx_htmltojsx",
-      "community": 1,
+      "community": 3,
       "norm_label": "htmltojsx()"
     },
     {
@@ -53658,66 +53658,6 @@
       "norm_label": "notes created today"
     },
     {
-      "label": "2026-07-21.md",
-      "file_type": "document",
-      "source_file": "DailyNotes/2026-07-21.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "dailynotes_2026_07_21",
-      "community": 3508,
-      "norm_label": "2026-07-21.md"
-    },
-    {
-      "label": "2026-07-21",
-      "file_type": "document",
-      "source_file": "DailyNotes/2026-07-21.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "dailynotes_2026_07_21_2026_07_21",
-      "community": 3508,
-      "norm_label": "2026-07-21"
-    },
-    {
-      "label": "Notes created today",
-      "file_type": "document",
-      "source_file": "DailyNotes/2026-07-21.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "dailynotes_2026_07_21_notes_created_today",
-      "community": 3508,
-      "norm_label": "notes created today"
-    },
-    {
-      "label": "2026-07-22.md",
-      "file_type": "document",
-      "source_file": "DailyNotes/2026-07-22.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "dailynotes_2026_07_22",
-      "community": 3509,
-      "norm_label": "2026-07-22.md"
-    },
-    {
-      "label": "2026-07-22",
-      "file_type": "document",
-      "source_file": "DailyNotes/2026-07-22.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "dailynotes_2026_07_22_2026_07_22",
-      "community": 3509,
-      "norm_label": "2026-07-22"
-    },
-    {
-      "label": "Notes created today",
-      "file_type": "document",
-      "source_file": "DailyNotes/2026-07-22.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "dailynotes_2026_07_22_notes_created_today",
-      "community": 3509,
-      "norm_label": "notes created today"
-    },
-    {
       "label": "2026-01-01.md",
       "file_type": "document",
       "source_file": "DailyNotes/2026/2026-01-01.md",
@@ -86704,7 +86644,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_20_configuration_groups_multi_select_config_groups",
-      "community": 395,
+      "community": 22,
       "norm_label": "oe-20 configuration groups - multi-select config groups.md"
     },
     {
@@ -87024,7 +86964,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_481_iframe",
-      "community": 3501,
+      "community": 22,
       "norm_label": "oe-481 iframe.md"
     },
     {
@@ -87034,7 +86974,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_481_iframe_oe_481_iframe",
-      "community": 3501,
+      "community": 22,
       "norm_label": "oe-481 iframe"
     },
     {
@@ -87044,7 +86984,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_481_iframe_todo",
-      "community": 3501,
+      "community": 22,
       "norm_label": "todo"
     },
     {
@@ -87054,7 +86994,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_481_iframe_image_summary",
-      "community": 3501,
+      "community": 22,
       "norm_label": "image summary"
     },
     {
@@ -87064,7 +87004,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_481_iframe_description",
-      "community": 3501,
+      "community": 22,
       "norm_label": "description"
     },
     {
@@ -87074,7 +87014,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_481_iframe_branches",
-      "community": 3501,
+      "community": 22,
       "norm_label": "branches"
     },
     {
@@ -87384,7 +87324,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_485_ui_holding_page",
-      "community": 395,
+      "community": 42,
       "norm_label": "oe-485 ui holding page.md"
     },
     {
@@ -87394,7 +87334,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_485_ui_holding_page_oe_485_ui_holding_page_with_the_configuration_group_multiselect_panel_and_assets_list_panel",
-      "community": 395,
+      "community": 42,
       "norm_label": "oe-485 ui holding page with the configuration group multiselect panel and assets list panel"
     },
     {
@@ -87404,7 +87344,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_485_ui_holding_page_todo",
-      "community": 395,
+      "community": 42,
       "norm_label": "todo"
     },
     {
@@ -87414,7 +87354,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_485_ui_holding_page_image_summary",
-      "community": 395,
+      "community": 42,
       "norm_label": "image summary"
     },
     {
@@ -87424,7 +87364,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_485_ui_holding_page_description",
-      "community": 395,
+      "community": 42,
       "norm_label": "description"
     },
     {
@@ -87434,7 +87374,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_485_ui_holding_page_branches",
-      "community": 395,
+      "community": 42,
       "norm_label": "branches"
     },
     {
@@ -87444,7 +87384,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_485_ui_holding_page_result",
-      "community": 395,
+      "community": 42,
       "norm_label": "result"
     },
     {
@@ -88134,7 +88074,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_492_seed_frangular_api",
-      "community": 395,
+      "community": 22,
       "norm_label": "oe-492 seed frangular api.md"
     },
     {
@@ -88584,7 +88524,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "oe_config_groups_page_oe_501_spike_to_create_the_multi_select_config_groups",
-      "community": 395,
+      "community": 22,
       "norm_label": "oe-501 spike to create the multi-select config groups.md"
     },
     {
@@ -94374,7 +94314,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1493_ui_for_salesforce_case_info",
-      "community": 3502,
+      "community": 330,
       "norm_label": "open-1493 ui for salesforce case info.md"
     },
     {
@@ -94874,7 +94814,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1576_add_ui_for_decom_automation_manually",
-      "community": 3502,
+      "community": 286,
       "norm_label": "open-1576 add ui for decom automation manually.md"
     },
     {
@@ -95064,7 +95004,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1601_setup_pipeline_for_the_powerfleet_automation_ui",
-      "community": 3502,
+      "community": 330,
       "norm_label": "open-1601 setup pipeline for the powerfleet automation ui.md"
     },
     {
@@ -96334,7 +96274,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1730_change_the_ui_for_decomm",
-      "community": 3502,
+      "community": 286,
       "norm_label": "open-1730 change the ui for decomm.md"
     },
     {
@@ -102606,86 +102546,6 @@
       "id": "paul_stored_proc_to_see_configuration_for_mobileunit",
       "community": 2733,
       "norm_label": "paul stored proc to see configuration for mobileunit.md"
-    },
-    {
-      "label": "2026 Salary Increase and Bonus Review.md",
-      "file_type": "document",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "personal_2026_salary_increase_and_bonus_review",
-      "community": 3073,
-      "norm_label": "2026 salary increase and bonus review.md"
-    },
-    {
-      "label": "2026 Salary Increase and Bonus Review",
-      "file_type": "document",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "personal_2026_salary_increase_and_bonus_review_2026_salary_increase_and_bonus_review",
-      "community": 3073,
-      "norm_label": "2026 salary increase and bonus review"
-    },
-    {
-      "label": "Table",
-      "file_type": "document",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "personal_2026_salary_increase_and_bonus_review_table",
-      "community": 3073,
-      "norm_label": "table"
-    },
-    {
-      "label": "Takeaways",
-      "file_type": "document",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L26",
-      "_origin": "ast",
-      "id": "personal_2026_salary_increase_and_bonus_review_takeaways",
-      "community": 3073,
-      "norm_label": "takeaways"
-    },
-    {
-      "label": "Underlying figures",
-      "file_type": "document",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L31",
-      "_origin": "ast",
-      "id": "personal_2026_salary_increase_and_bonus_review_underlying_figures",
-      "community": 3073,
-      "norm_label": "underlying figures"
-    },
-    {
-      "label": "Note on tax treatment",
-      "file_type": "document",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "personal_2026_salary_increase_and_bonus_review_note_on_tax_treatment",
-      "community": 3073,
-      "norm_label": "note on tax treatment"
-    },
-    {
-      "label": "Source certificates",
-      "file_type": "document",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L45",
-      "_origin": "ast",
-      "id": "personal_2026_salary_increase_and_bonus_review_source_certificates",
-      "community": 3073,
-      "norm_label": "source certificates"
-    },
-    {
-      "label": "Related notes",
-      "file_type": "document",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L52",
-      "_origin": "ast",
-      "id": "personal_2026_salary_increase_and_bonus_review_related_notes",
-      "community": 3073,
-      "norm_label": "related notes"
     },
     {
       "label": "OneDrive AU Cleanup.md",
@@ -136508,46 +136368,6 @@
       "norm_label": "connections"
     },
     {
-      "label": "SA Income Tax Brackets.md",
-      "file_type": "document",
-      "source_file": "wiki/concepts/SA Income Tax Brackets.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "wiki_concepts_sa_income_tax_brackets",
-      "community": 3504,
-      "norm_label": "sa income tax brackets.md"
-    },
-    {
-      "label": "Core Ideas",
-      "file_type": "document",
-      "source_file": "wiki/concepts/SA Income Tax Brackets.md",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "wiki_concepts_sa_income_tax_brackets_core_ideas",
-      "community": 3504,
-      "norm_label": "core ideas"
-    },
-    {
-      "label": "Connections",
-      "file_type": "document",
-      "source_file": "wiki/concepts/SA Income Tax Brackets.md",
-      "source_location": "L36",
-      "_origin": "ast",
-      "id": "wiki_concepts_sa_income_tax_brackets_connections",
-      "community": 3504,
-      "norm_label": "connections"
-    },
-    {
-      "label": "Open Questions",
-      "file_type": "document",
-      "source_file": "wiki/concepts/SA Income Tax Brackets.md",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "wiki_concepts_sa_income_tax_brackets_open_questions",
-      "community": 3504,
-      "norm_label": "open questions"
-    },
-    {
       "label": "AWS-Environments.md",
       "file_type": "document",
       "source_file": "wiki/entities/AWS-Environments.md",
@@ -137361,7 +137181,7 @@
       "label": "Wiki Index \u2014 Powerfleet Engineering Knowledge Base",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L5",
+      "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_index_wiki_index_powerfleet_engineering_knowledge_base",
       "community": 196,
@@ -137371,7 +137191,7 @@
       "label": "Entities",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L10",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "wiki_index_entities",
       "community": 196,
@@ -137381,7 +137201,7 @@
       "label": "Projects",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L12",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_index_projects",
       "community": 196,
@@ -137391,7 +137211,7 @@
       "label": "Systems",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L15",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "wiki_index_systems",
       "community": 196,
@@ -137401,7 +137221,7 @@
       "label": "Concepts",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L27",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "wiki_index_concepts",
       "community": 196,
@@ -137411,7 +137231,7 @@
       "label": "Tickets",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L30",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "wiki_index_tickets",
       "community": 196,
@@ -137421,9 +137241,9 @@
       "label": "Concepts",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L33",
+      "source_location": "L29",
       "_origin": "ast",
-      "id": "wiki_index_concepts_33",
+      "id": "wiki_index_concepts_29",
       "community": 196,
       "norm_label": "concepts"
     },
@@ -137431,7 +137251,7 @@
       "label": "Sources",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L45",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "wiki_index_sources",
       "community": 196,
@@ -137441,7 +137261,7 @@
       "label": "DST / Command 45",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L47",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "wiki_index_dst_command_45",
       "community": 196,
@@ -137451,7 +137271,7 @@
       "label": "Ops Tools",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L52",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "wiki_index_ops_tools",
       "community": 196,
@@ -137461,7 +137281,7 @@
       "label": "AWS / Automation Infrastructure",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L57",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "wiki_index_aws_automation_infrastructure",
       "community": 196,
@@ -137471,7 +137291,7 @@
       "label": "Clusters (Batch Ingested)",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L63",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "wiki_index_clusters_batch_ingested",
       "community": 196,
@@ -137481,7 +137301,7 @@
       "label": "Synthesis",
       "file_type": "document",
       "source_file": "wiki/index.md",
-      "source_location": "L69",
+      "source_location": "L64",
       "_origin": "ast",
       "id": "wiki_index_synthesis",
       "community": 196,
@@ -137501,27 +137321,17 @@
       "label": "Wiki Log \u2014 Powerfleet Engineering Knowledge Base",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L5",
+      "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "community": 86,
       "norm_label": "wiki log \u2014 powerfleet engineering knowledge base"
     },
     {
-      "label": "[2026-07-21] ingest | SA Income Tax Brackets (from live session, salary/bonus review)",
-      "file_type": "document",
-      "source_file": "wiki/log.md",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "wiki_log_2026_07_21_ingest_sa_income_tax_brackets_from_live_session_salary_bonus_review",
-      "community": 86,
-      "norm_label": "[2026-07-21] ingest | sa income tax brackets (from live session, salary/bonus review)"
-    },
-    {
       "label": "[2026-06-03] ingest | Frangular local dev chain (from live session)",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L15",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "wiki_log_2026_06_03_ingest_frangular_local_dev_chain_from_live_session",
       "community": 86,
@@ -137531,7 +137341,7 @@
       "label": "[2026-05-29] ingest | raw/GitHub Login.md",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L20",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "wiki_log_2026_05_29_ingest_raw_github_login_md",
       "community": 86,
@@ -137541,7 +137351,7 @@
       "label": "[2026-05-28] ingest | Final batch \u2014 journals, diagrams, Need Parent, misc (2,149 files)",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L25",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_final_batch_journals_diagrams_need_parent_misc_2_149_files",
       "community": 86,
@@ -137551,7 +137361,7 @@
       "label": "[2026-05-28] ingest | Remaining clusters \u2014 batch (356 files)",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L30",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_remaining_clusters_batch_356_files",
       "community": 86,
@@ -137561,7 +137371,7 @@
       "label": "[2026-05-28] ingest | Cluster 4 \u2014 ETS tickets (9 files)",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L36",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_cluster_4_ets_tickets_9_files",
       "community": 86,
@@ -137571,7 +137381,7 @@
       "label": "[2026-05-28] ingest | Cluster 3 \u2014 OE/Config Groups (71 files)",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L41",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_cluster_3_oe_config_groups_71_files",
       "community": 86,
@@ -137581,7 +137391,7 @@
       "label": "[2026-05-28] ingest | Cluster 2 \u2014 OPEN tickets (79 files)",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L46",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_cluster_2_open_tickets_79_files",
       "community": 86,
@@ -137591,7 +137401,7 @@
       "label": "[2026-05-28] ingest | Cluster 1 \u2014 AWS/Automation Infrastructure (22 files)",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L51",
+      "source_location": "L42",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_cluster_1_aws_automation_infrastructure_22_files",
       "community": 86,
@@ -137601,7 +137411,7 @@
       "label": "[2026-05-28] ingest | Remaining DST files tagged (batch 2)",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L57",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_remaining_dst_files_tagged_batch_2",
       "community": 86,
@@ -137611,7 +137421,7 @@
       "label": "[2026-05-28] skill-update | p-llm-wiki skill updated + committed",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L62",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_skill_update_p_llm_wiki_skill_updated_committed",
       "community": 86,
@@ -137621,7 +137431,7 @@
       "label": "[2026-05-28] ingest | DST Daylight Saving Times/DST Code Paths.md",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L67",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_dst_daylight_saving_times_dst_code_paths_md",
       "community": 86,
@@ -137631,7 +137441,7 @@
       "label": "[2026-05-28] ingest | DST Daylight Saving Times/DST Debug Guide.md",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L72",
+      "source_location": "L63",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_dst_daylight_saving_times_dst_debug_guide_md",
       "community": 86,
@@ -137641,7 +137451,7 @@
       "label": "[2026-05-28] ingest | ETS/ETS-8669 OMAN Command 45 DST issue.md",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L77",
+      "source_location": "L68",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_ets_ets_8669_oman_command_45_dst_issue_md",
       "community": 86,
@@ -137651,7 +137461,7 @@
       "label": "[2026-05-28] ingest | Operations Tools.md + Operations Tools Looking forward 20260316.md + supporting Ops Tools files",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L82",
+      "source_location": "L73",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_operations_tools_md_operations_tools_looking_forward_20260316_md_supporting_ops_tools_files",
       "community": 86,
@@ -137661,7 +137471,7 @@
       "label": "[2026-05-28] ingest | DST source files tagged (wiki_ingested frontmatter added)",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L87",
+      "source_location": "L78",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_ingest_dst_source_files_tagged_wiki_ingested_frontmatter_added",
       "community": 86,
@@ -137671,51 +137481,11 @@
       "label": "[2026-05-28] setup | Wiki initialized",
       "file_type": "document",
       "source_file": "wiki/log.md",
-      "source_location": "L91",
+      "source_location": "L82",
       "_origin": "ast",
       "id": "wiki_log_2026_05_28_setup_wiki_initialized",
       "community": 86,
       "norm_label": "[2026-05-28] setup | wiki initialized"
-    },
-    {
-      "label": "2026-07-21 Comp Meeting Cheat Sheet.md",
-      "file_type": "document",
-      "source_file": "wiki/raw/2026-07-21 Comp Meeting Cheat Sheet.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "wiki_raw_2026_07_21_comp_meeting_cheat_sheet",
-      "community": 3505,
-      "norm_label": "2026-07-21 comp meeting cheat sheet.md"
-    },
-    {
-      "label": "Comp Meeting Cheat Sheet \u2014 15 min with managers",
-      "file_type": "document",
-      "source_file": "wiki/raw/2026-07-21 Comp Meeting Cheat Sheet.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "wiki_raw_2026_07_21_comp_meeting_cheat_sheet_comp_meeting_cheat_sheet_15_min_with_managers",
-      "community": 3505,
-      "norm_label": "comp meeting cheat sheet \u2014 15 min with managers"
-    },
-    {
-      "label": "2026-07-21 Draft Email to Managers - Comp Review.md",
-      "file_type": "document",
-      "source_file": "wiki/raw/2026-07-21 Draft Email to Managers - Comp Review.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "wiki_raw_2026_07_21_draft_email_to_managers_comp_review",
-      "community": 3505,
-      "norm_label": "2026-07-21 draft email to managers - comp review.md"
-    },
-    {
-      "label": "Draft Email to Managers \u2014 2026/27 Comp Review",
-      "file_type": "document",
-      "source_file": "wiki/raw/2026-07-21 Draft Email to Managers - Comp Review.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "wiki_raw_2026_07_21_draft_email_to_managers_comp_review_draft_email_to_managers_2026_27_comp_review",
-      "community": 3505,
-      "norm_label": "draft email to managers \u2014 2026/27 comp review"
     },
     {
       "label": "au-automation-setup.md",
@@ -137764,7 +137534,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_sources_automation_infra_setup_guide",
-      "community": 3506,
+      "community": 29,
       "norm_label": "automation-infra-setup-guide.md"
     },
     {
@@ -137774,7 +137544,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_sources_automation_infra_setup_guide_summary",
-      "community": 3506,
+      "community": 29,
       "norm_label": "summary"
     },
     {
@@ -137784,7 +137554,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_sources_automation_infra_setup_guide_key_takeaways",
-      "community": 3506,
+      "community": 29,
       "norm_label": "key takeaways"
     },
     {
@@ -137794,7 +137564,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "wiki_sources_automation_infra_setup_guide_wiki_pages_updated",
-      "community": 3506,
+      "community": 29,
       "norm_label": "wiki pages updated"
     },
     {
@@ -137904,7 +137674,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_sources_ets_8669_oman_dst",
-      "community": 29,
+      "community": 3073,
       "norm_label": "ets-8669-oman-dst.md"
     },
     {
@@ -137914,7 +137684,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_sources_ets_8669_oman_dst_summary",
-      "community": 29,
+      "community": 3073,
       "norm_label": "summary"
     },
     {
@@ -137924,7 +137694,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_sources_ets_8669_oman_dst_key_takeaways",
-      "community": 29,
+      "community": 3073,
       "norm_label": "key takeaways"
     },
     {
@@ -137934,7 +137704,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "wiki_sources_ets_8669_oman_dst_new_entities_concepts",
-      "community": 29,
+      "community": 3073,
       "norm_label": "new entities/concepts"
     },
     {
@@ -137944,7 +137714,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "wiki_sources_ets_8669_oman_dst_wiki_pages_updated",
-      "community": 29,
+      "community": 3073,
       "norm_label": "wiki pages updated"
     },
     {
@@ -138044,7 +137814,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_sources_global_deployment_guide",
-      "community": 29,
+      "community": 3502,
       "norm_label": "global-deployment-guide.md"
     },
     {
@@ -138054,7 +137824,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_sources_global_deployment_guide_summary",
-      "community": 29,
+      "community": 3502,
       "norm_label": "summary"
     },
     {
@@ -138064,7 +137834,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_sources_global_deployment_guide_key_takeaways",
-      "community": 29,
+      "community": 3502,
       "norm_label": "key takeaways"
     },
     {
@@ -138074,7 +137844,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "wiki_sources_global_deployment_guide_wiki_pages_updated",
-      "community": 29,
+      "community": 3502,
       "norm_label": "wiki pages updated"
     },
     {
@@ -138274,7 +138044,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_looking_forward",
-      "community": 3507,
+      "community": 29,
       "norm_label": "operations-tools-looking-forward.md"
     },
     {
@@ -138284,7 +138054,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_looking_forward_summary",
-      "community": 3507,
+      "community": 29,
       "norm_label": "summary"
     },
     {
@@ -138294,7 +138064,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_looking_forward_key_takeaways",
-      "community": 3507,
+      "community": 29,
       "norm_label": "key takeaways"
     },
     {
@@ -138304,7 +138074,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_looking_forward_wiki_pages_updated",
-      "community": 3507,
+      "community": 29,
       "norm_label": "wiki pages updated"
     },
     {
@@ -138504,7 +138274,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_sources_zagov_aws_deployment",
-      "community": 29,
+      "community": 813,
       "norm_label": "zagov-aws-deployment.md"
     },
     {
@@ -138514,7 +138284,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_sources_zagov_aws_deployment_summary",
-      "community": 29,
+      "community": 813,
       "norm_label": "summary"
     },
     {
@@ -138524,7 +138294,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_sources_zagov_aws_deployment_key_takeaways",
-      "community": 29,
+      "community": 813,
       "norm_label": "key takeaways"
     },
     {
@@ -138534,7 +138304,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "wiki_sources_zagov_aws_deployment_wiki_pages_created",
-      "community": 29,
+      "community": 813,
       "norm_label": "wiki pages created"
     },
     {
@@ -138544,308 +138314,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "wiki_sources_zagov_aws_deployment_wiki_pages_updated",
-      "community": 29,
+      "community": 813,
       "norm_label": "wiki pages updated"
-    },
-    {
-      "label": "AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "community": 42,
-      "norm_label": "aios-paperclip-to-hermes-migration-plan.md"
-    },
-    {
-      "label": "Handoff background (for a reader with no prior context)",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_handoff_background_for_a_reader_with_no_prior_context",
-      "community": 42,
-      "norm_label": "handoff background (for a reader with no prior context)"
-    },
-    {
-      "label": "Part 1 \u2014 Paperclip \u2192 Hermes-kanban migration",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_1_paperclip_hermes_kanban_migration",
-      "community": 42,
-      "norm_label": "part 1 \u2014 paperclip \u2192 hermes-kanban migration"
-    },
-    {
-      "label": "Part 2 \u2014 Set up proper AIOS agent definitions",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L36",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_2_set_up_proper_aios_agent_definitions",
-      "community": 42,
-      "norm_label": "part 2 \u2014 set up proper aios agent definitions"
-    },
-    {
-      "label": "Part 3 \u2014 Kanban structure, modeled on Paperclip",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L44",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_3_kanban_structure_modeled_on_paperclip",
-      "community": 42,
-      "norm_label": "part 3 \u2014 kanban structure, modeled on paperclip"
-    },
-    {
-      "label": "Part 4 \u2014 Safeguards, including a human verification gate",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L48",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_4_safeguards_including_a_human_verification_gate",
-      "community": 42,
-      "norm_label": "part 4 \u2014 safeguards, including a human verification gate"
-    },
-    {
-      "label": "Suggested order",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L59",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_suggested_order",
-      "community": 42,
-      "norm_label": "suggested order"
-    },
-    {
-      "label": "Parked (not this round)",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L63",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_parked_not_this_round",
-      "community": 42,
-      "norm_label": "parked (not this round)"
-    },
-    {
-      "label": "Claude-Multi-Agent-Architecture.md",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture",
-      "community": 42,
-      "norm_label": "claude-multi-agent-architecture.md"
-    },
-    {
-      "label": "Settings inheritance \u2014 global vs. project vs. local",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_settings_inheritance_global_vs_project_vs_local",
-      "community": 42,
-      "norm_label": "settings inheritance \u2014 global vs. project vs. local"
-    },
-    {
-      "label": "Three different \"agent\" systems \u2014 not the same mechanism",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_three_different_agent_systems_not_the_same_mechanism",
-      "community": 42,
-      "norm_label": "three different \"agent\" systems \u2014 not the same mechanism"
-    },
-    {
-      "label": "[[Hermes]] vs. [[Paperclip]] (AIOS)",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L39",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_hermes_vs_paperclip_aios",
-      "community": 42,
-      "norm_label": "[[hermes]] vs. [[paperclip]] (aios)"
-    },
-    {
-      "label": "SDLC internals \u2014 the moving parts",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "community": 813,
-      "norm_label": "sdlc internals \u2014 the moving parts"
-    },
-    {
-      "label": "Plain-English glossary",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L60",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_plain_english_glossary",
-      "community": 813,
-      "norm_label": "plain-english glossary"
-    },
-    {
-      "label": "Wireframe \u2014 how a `code OPEN-1234` command flows through all of it",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L72",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_wireframe_how_a_code_open_1234_command_flows_through_all_of_it",
-      "community": 813,
-      "norm_label": "wireframe \u2014 how a `code open-1234` command flows through all of it"
-    },
-    {
-      "label": "Agents (`.agent/agents/`, 15 files)",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L123",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_agents_agent_agents_15_files",
-      "community": 813,
-      "norm_label": "agents (`.agent/agents/`, 15 files)"
-    },
-    {
-      "label": "Skills (`.agent/skills/`, ~170 files/folders)",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L134",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_skills_agent_skills_170_files_folders",
-      "community": 813,
-      "norm_label": "skills (`.agent/skills/`, ~170 files/folders)"
-    },
-    {
-      "label": "Workflows (`.agent/workflows/`)",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L138",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_workflows_agent_workflows",
-      "community": 813,
-      "norm_label": "workflows (`.agent/workflows/`)"
-    },
-    {
-      "label": "Triggers (`.agent/triggers/`)",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L142",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_triggers_agent_triggers",
-      "community": 813,
-      "norm_label": "triggers (`.agent/triggers/`)"
-    },
-    {
-      "label": "State (`.agent/shared-memory/state.json` + `schema.md`)",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L146",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_state_agent_shared_memory_state_json_schema_md",
-      "community": 813,
-      "norm_label": "state (`.agent/shared-memory/state.json` + `schema.md`)"
-    },
-    {
-      "label": "Hooks (`.claude/hooks/*.py`, ~55 scripts)",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L150",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_hooks_claude_hooks_py_55_scripts",
-      "community": 813,
-      "norm_label": "hooks (`.claude/hooks/*.py`, ~55 scripts)"
-    },
-    {
-      "label": "Rules (`.agent/rules.md`)",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L157",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_rules_agent_rules_md",
-      "community": 813,
-      "norm_label": "rules (`.agent/rules.md`)"
-    },
-    {
-      "label": "End-to-end trace: `code OPEN-1234`",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L161",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_end_to_end_trace_code_open_1234",
-      "community": 813,
-      "norm_label": "end-to-end trace: `code open-1234`"
-    },
-    {
-      "label": "2026-07-22 \u2014 Hermes deep dive: can it fully replace Paperclip, and can it grow SDLC-style governance?",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L171",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_2026_07_22_hermes_deep_dive_can_it_fully_replace_paperclip_and_can_it_grow_sdlc_style_governance",
-      "community": 42,
-      "norm_label": "2026-07-22 \u2014 hermes deep dive: can it fully replace paperclip, and can it grow sdlc-style governance?"
-    },
-    {
-      "label": "Can `hermes kanban` + `hermes cron` replace Paperclip?",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L175",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_can_hermes_kanban_hermes_cron_replace_paperclip",
-      "community": 42,
-      "norm_label": "can `hermes kanban` + `hermes cron` replace paperclip?"
-    },
-    {
-      "label": "Can Hermes grow SDLC-style governance (hooks)?",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L184",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_can_hermes_grow_sdlc_style_governance_hooks",
-      "community": 42,
-      "norm_label": "can hermes grow sdlc-style governance (hooks)?"
-    },
-    {
-      "label": "\u26a0\ufe0f Critical reframe \u2014 this does NOT solve iCubed's Claude\u2192Copilot decoupling goal",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L188",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_critical_reframe_this_does_not_solve_icubed_s_claude_copilot_decoupling_goal",
-      "community": 42,
-      "norm_label": "\u26a0\ufe0f critical reframe \u2014 this does not solve icubed's claude\u2192copilot decoupling goal"
-    },
-    {
-      "label": "SDLC vs. Paperclip vs. Hermes as the orchestrator",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L192",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_sdlc_vs_paperclip_vs_hermes_as_the_orchestrator",
-      "community": 42,
-      "norm_label": "sdlc vs. paperclip vs. hermes as the orchestrator"
-    },
-    {
-      "label": "2026-07-22 \u2014 Approved implementation plan",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L207",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_2026_07_22_approved_implementation_plan",
-      "community": 42,
-      "norm_label": "2026-07-22 \u2014 approved implementation plan"
-    },
-    {
-      "label": "Open Questions",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L211",
-      "_origin": "ast",
-      "id": "wiki_synthesis_claude_multi_agent_architecture_open_questions",
-      "community": 42,
-      "norm_label": "open questions"
     },
     {
       "label": "GitHub Funding Configuration",
@@ -139027,7 +138497,7 @@
       "community": 3173,
       "norm_label": "ac parent document",
       "community_name": "AC Parent Document",
-      "id": "ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_md"
+      "id": "ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_md"
     },
     {
       "label": "OPEN-505: Identify channels for blurring diagram",
@@ -139955,7 +139425,7 @@
       "community": 2273,
       "norm_label": "geteventlist",
       "community_name": "Jira Regression.md",
-      "id": "done_done_done_done_done_done_done_done_done_done_done_done_geteventlist"
+      "id": "done_done_done_done_done_done_done_done_done_done_done_geteventlist"
     },
     {
       "label": "SR-11406 ENT EKS Infohub User Error",
@@ -148517,7 +147987,7 @@
       "community": 2542,
       "norm_label": "filters documentation",
       "community_name": "titlegeneratorforwrittenpiecesAwesome.md",
-      "id": "filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_md"
+      "id": "filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_md"
     },
     {
       "label": ".npmrc",
@@ -203451,46 +202921,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "DailyNotes/2026-07-21.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "dailynotes_2026_07_21",
-      "target": "dailynotes_2026_07_21_2026_07_21",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "DailyNotes/2026-07-21.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "dailynotes_2026_07_21_2026_07_21",
-      "target": "dailynotes_2026_07_21_notes_created_today",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "DailyNotes/2026-07-22.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "dailynotes_2026_07_22",
-      "target": "dailynotes_2026_07_22_2026_07_22",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "DailyNotes/2026-07-22.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "dailynotes_2026_07_22_2026_07_22",
-      "target": "dailynotes_2026_07_22_notes_created_today",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "DailyNotes/2026/2026-01-01.md",
       "source_location": "L23",
       "weight": 1.0,
@@ -247131,76 +246561,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "personal_2026_salary_increase_and_bonus_review",
-      "target": "personal_2026_salary_increase_and_bonus_review_2026_salary_increase_and_bonus_review",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "personal_2026_salary_increase_and_bonus_review_2026_salary_increase_and_bonus_review",
-      "target": "personal_2026_salary_increase_and_bonus_review_note_on_tax_treatment",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L52",
-      "weight": 1.0,
-      "source": "personal_2026_salary_increase_and_bonus_review_2026_salary_increase_and_bonus_review",
-      "target": "personal_2026_salary_increase_and_bonus_review_related_notes",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L45",
-      "weight": 1.0,
-      "source": "personal_2026_salary_increase_and_bonus_review_2026_salary_increase_and_bonus_review",
-      "target": "personal_2026_salary_increase_and_bonus_review_source_certificates",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "personal_2026_salary_increase_and_bonus_review_2026_salary_increase_and_bonus_review",
-      "target": "personal_2026_salary_increase_and_bonus_review_table",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L26",
-      "weight": 1.0,
-      "source": "personal_2026_salary_increase_and_bonus_review_2026_salary_increase_and_bonus_review",
-      "target": "personal_2026_salary_increase_and_bonus_review_takeaways",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "Personal/2026 Salary Increase and Bonus Review.md",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "personal_2026_salary_increase_and_bonus_review_2026_salary_increase_and_bonus_review",
-      "target": "personal_2026_salary_increase_and_bonus_review_underlying_figures",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "Personal/OneDrive AU Cleanup.md",
       "source_location": "L6",
       "weight": 1.0,
@@ -273802,7 +273162,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L35",
+      "source_location": "L31",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_concepts_ado_pipeline_ci_trigger_override",
@@ -273952,7 +273312,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L37",
+      "source_location": "L33",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_concepts_aws_deployment_pattern",
@@ -274072,7 +273432,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L36",
+      "source_location": "L32",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_concepts_alerts_feature",
@@ -274142,7 +273502,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L38",
+      "source_location": "L34",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_concepts_config_delta_tool",
@@ -274202,7 +273562,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L39",
+      "source_location": "L35",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_concepts_config_groups_page",
@@ -274262,7 +273622,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L41",
+      "source_location": "L37",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_concepts_decommissioning_automation",
@@ -274322,7 +273682,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L40",
+      "source_location": "L36",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_concepts_frangular_local_dev_setup",
@@ -274362,40 +273722,10 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L42",
+      "source_location": "L38",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_concepts_qc_automation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/concepts/SA Income Tax Brackets.md",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "wiki_concepts_sa_income_tax_brackets",
-      "target": "wiki_concepts_sa_income_tax_brackets_connections",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/concepts/SA Income Tax Brackets.md",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "wiki_concepts_sa_income_tax_brackets",
-      "target": "wiki_concepts_sa_income_tax_brackets_core_ideas",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/concepts/SA Income Tax Brackets.md",
-      "source_location": "L40",
-      "weight": 1.0,
-      "source": "wiki_concepts_sa_income_tax_brackets",
-      "target": "wiki_concepts_sa_income_tax_brackets_open_questions",
       "confidence_score": 1.0
     },
     {
@@ -274472,7 +273802,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L16",
+      "source_location": "L12",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_aws_environments",
@@ -274622,7 +273952,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L18",
+      "source_location": "L14",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_command_45",
@@ -274722,7 +274052,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L19",
+      "source_location": "L15",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_config_api",
@@ -274812,7 +274142,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L28",
+      "source_location": "L24",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_dst",
@@ -274882,7 +274212,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L20",
+      "source_location": "L16",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_daylightsavingadjustmentservice",
@@ -274972,7 +274302,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L17",
+      "source_location": "L13",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_dynamix_backend",
@@ -275042,7 +274372,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L31",
+      "source_location": "L27",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_ets_8669",
@@ -275112,7 +274442,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L21",
+      "source_location": "L17",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_fmtimeadjuster",
@@ -275162,7 +274492,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L22",
+      "source_location": "L18",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_oman_environment",
@@ -275272,7 +274602,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L13",
+      "source_location": "L9",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_ops_tools",
@@ -275382,7 +274712,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L23",
+      "source_location": "L19",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_powerfleet_automation_aws",
@@ -275422,7 +274752,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L25",
+      "source_location": "L21",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_powerfleet_github_enterprise",
@@ -275502,7 +274832,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L24",
+      "source_location": "L20",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_entities_zagov_environment",
@@ -275512,7 +274842,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L5",
+      "source_location": "L1",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_index_wiki_index_powerfleet_engineering_knowledge_base",
@@ -275522,7 +274852,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L60",
+      "source_location": "L55",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_au_automation_setup",
@@ -275532,7 +274862,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L58",
+      "source_location": "L53",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_automation_infra_setup_guide",
@@ -275542,7 +274872,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L48",
+      "source_location": "L43",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_dst_code_paths",
@@ -275552,7 +274882,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L49",
+      "source_location": "L44",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_dst_debug_guide",
@@ -275562,7 +274892,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L50",
+      "source_location": "L45",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_ets_8669_oman_dst",
@@ -275572,7 +274902,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L66",
+      "source_location": "L61",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_ets_tickets_cluster4",
@@ -275582,7 +274912,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L55",
+      "source_location": "L50",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_github_login",
@@ -275592,7 +274922,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L59",
+      "source_location": "L54",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_global_deployment_guide",
@@ -275602,7 +274932,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L65",
+      "source_location": "L60",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_oe_config_groups_cluster3",
@@ -275612,7 +274942,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L64",
+      "source_location": "L59",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_open_tickets_cluster2",
@@ -275622,7 +274952,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L54",
+      "source_location": "L49",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_operations_tools_looking_forward",
@@ -275632,7 +274962,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L53",
+      "source_location": "L48",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_operations_tools_master",
@@ -275642,7 +274972,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L67",
+      "source_location": "L62",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_remaining_clusters_batch",
@@ -275652,47 +274982,27 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L61",
+      "source_location": "L56",
       "weight": 1.0,
       "source": "wiki_index",
       "target": "wiki_sources_zagov_aws_deployment",
       "confidence_score": 1.0
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/index.md",
-      "source_location": "L72",
-      "weight": 1.0,
-      "source": "wiki_index",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/index.md",
-      "source_location": "L71",
-      "weight": 1.0,
-      "source": "wiki_index",
-      "target": "wiki_synthesis_claude_multi_agent_architecture",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L33",
+      "source_location": "L29",
       "weight": 1.0,
       "source": "wiki_index_wiki_index_powerfleet_engineering_knowledge_base",
-      "target": "wiki_index_concepts_33",
+      "target": "wiki_index_concepts_29",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L10",
+      "source_location": "L6",
       "weight": 1.0,
       "source": "wiki_index_wiki_index_powerfleet_engineering_knowledge_base",
       "target": "wiki_index_entities",
@@ -275702,7 +275012,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L45",
+      "source_location": "L40",
       "weight": 1.0,
       "source": "wiki_index_wiki_index_powerfleet_engineering_knowledge_base",
       "target": "wiki_index_sources",
@@ -275712,7 +275022,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L69",
+      "source_location": "L64",
       "weight": 1.0,
       "source": "wiki_index_wiki_index_powerfleet_engineering_knowledge_base",
       "target": "wiki_index_synthesis",
@@ -275722,7 +275032,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L27",
+      "source_location": "L23",
       "weight": 1.0,
       "source": "wiki_index_entities",
       "target": "wiki_index_concepts",
@@ -275732,7 +275042,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L12",
+      "source_location": "L8",
       "weight": 1.0,
       "source": "wiki_index_entities",
       "target": "wiki_index_projects",
@@ -275742,7 +275052,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L15",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "wiki_index_entities",
       "target": "wiki_index_systems",
@@ -275752,7 +275062,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L30",
+      "source_location": "L26",
       "weight": 1.0,
       "source": "wiki_index_entities",
       "target": "wiki_index_tickets",
@@ -275762,7 +275072,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L57",
+      "source_location": "L52",
       "weight": 1.0,
       "source": "wiki_index_sources",
       "target": "wiki_index_aws_automation_infrastructure",
@@ -275772,7 +275082,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L63",
+      "source_location": "L58",
       "weight": 1.0,
       "source": "wiki_index_sources",
       "target": "wiki_index_clusters_batch_ingested",
@@ -275782,7 +275092,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L47",
+      "source_location": "L42",
       "weight": 1.0,
       "source": "wiki_index_sources",
       "target": "wiki_index_dst_command_45",
@@ -275792,7 +275102,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/index.md",
-      "source_location": "L52",
+      "source_location": "L47",
       "weight": 1.0,
       "source": "wiki_index_sources",
       "target": "wiki_index_ops_tools",
@@ -275802,7 +275112,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L5",
+      "source_location": "L1",
       "weight": 1.0,
       "source": "wiki_log",
       "target": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
@@ -275812,7 +275122,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L51",
+      "source_location": "L42",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_cluster_1_aws_automation_infrastructure_22_files",
@@ -275822,7 +275132,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L46",
+      "source_location": "L37",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_cluster_2_open_tickets_79_files",
@@ -275832,7 +275142,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L41",
+      "source_location": "L32",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_cluster_3_oe_config_groups_71_files",
@@ -275842,7 +275152,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L36",
+      "source_location": "L27",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_cluster_4_ets_tickets_9_files",
@@ -275852,7 +275162,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L67",
+      "source_location": "L58",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_dst_daylight_saving_times_dst_code_paths_md",
@@ -275862,7 +275172,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L72",
+      "source_location": "L63",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_dst_daylight_saving_times_dst_debug_guide_md",
@@ -275872,7 +275182,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L87",
+      "source_location": "L78",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_dst_source_files_tagged_wiki_ingested_frontmatter_added",
@@ -275882,7 +275192,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L77",
+      "source_location": "L68",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_ets_ets_8669_oman_command_45_dst_issue_md",
@@ -275892,7 +275202,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L25",
+      "source_location": "L16",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_final_batch_journals_diagrams_need_parent_misc_2_149_files",
@@ -275902,7 +275212,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L82",
+      "source_location": "L73",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_operations_tools_md_operations_tools_looking_forward_20260316_md_supporting_ops_tools_files",
@@ -275912,7 +275222,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L30",
+      "source_location": "L21",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_remaining_clusters_batch_356_files",
@@ -275922,7 +275232,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L57",
+      "source_location": "L48",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_ingest_remaining_dst_files_tagged_batch_2",
@@ -275932,7 +275242,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L91",
+      "source_location": "L82",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_setup_wiki_initialized",
@@ -275942,7 +275252,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L62",
+      "source_location": "L53",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_28_skill_update_p_llm_wiki_skill_updated_committed",
@@ -275952,7 +275262,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L20",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_05_29_ingest_raw_github_login_md",
@@ -275962,50 +275272,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/log.md",
-      "source_location": "L15",
+      "source_location": "L6",
       "weight": 1.0,
       "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
       "target": "wiki_log_2026_06_03_ingest_frangular_local_dev_chain_from_live_session",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/log.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "wiki_log_wiki_log_powerfleet_engineering_knowledge_base",
-      "target": "wiki_log_2026_07_21_ingest_sa_income_tax_brackets_from_live_session_salary_bonus_review",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/raw/2026-07-21 Comp Meeting Cheat Sheet.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "wiki_raw_2026_07_21_comp_meeting_cheat_sheet",
-      "target": "wiki_raw_2026_07_21_comp_meeting_cheat_sheet_comp_meeting_cheat_sheet_15_min_with_managers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/raw/2026-07-21 Comp Meeting Cheat Sheet.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "wiki_raw_2026_07_21_comp_meeting_cheat_sheet",
-      "target": "wiki_raw_2026_07_21_draft_email_to_managers_comp_review",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/raw/2026-07-21 Draft Email to Managers - Comp Review.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "wiki_raw_2026_07_21_draft_email_to_managers_comp_review",
-      "target": "wiki_raw_2026_07_21_draft_email_to_managers_comp_review_draft_email_to_managers_2026_27_comp_review",
       "confidence_score": 1.0
     },
     {
@@ -276679,296 +275949,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_handoff_background_for_a_reader_with_no_prior_context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L63",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_parked_not_this_round",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_1_paperclip_hermes_kanban_migration",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_2_set_up_proper_aios_agent_definitions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L44",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_3_kanban_structure_modeled_on_paperclip",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L48",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_4_safeguards_including_a_human_verification_gate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L59",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_suggested_order",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "target": "wiki_synthesis_claude_multi_agent_architecture",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L207",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_2026_07_22_approved_implementation_plan",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L171",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_2026_07_22_hermes_deep_dive_can_it_fully_replace_paperclip_and_can_it_grow_sdlc_style_governance",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_hermes_vs_paperclip_aios",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L211",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_open_questions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L56",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L192",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_sdlc_vs_paperclip_vs_hermes_as_the_orchestrator",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_settings_inheritance_global_vs_project_vs_local",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_three_different_agent_systems_not_the_same_mechanism",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L123",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_agents_agent_agents_15_files",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L161",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_end_to_end_trace_code_open_1234",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L150",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_hooks_claude_hooks_py_55_scripts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L60",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_plain_english_glossary",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L157",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_rules_agent_rules_md",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L134",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_skills_agent_skills_170_files_folders",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L146",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_state_agent_shared_memory_state_json_schema_md",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L142",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_triggers_agent_triggers",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L72",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_wireframe_how_a_code_open_1234_command_flows_through_all_of_it",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L138",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_workflows_agent_workflows",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L184",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_2026_07_22_hermes_deep_dive_can_it_fully_replace_paperclip_and_can_it_grow_sdlc_style_governance",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_can_hermes_grow_sdlc_style_governance_hooks",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L175",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_2026_07_22_hermes_deep_dive_can_it_fully_replace_paperclip_and_can_it_grow_sdlc_style_governance",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_can_hermes_kanban_hermes_cron_replace_paperclip",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/Claude-Multi-Agent-Architecture.md",
-      "source_location": "L188",
-      "weight": 1.0,
-      "source": "wiki_synthesis_claude_multi_agent_architecture_2026_07_22_hermes_deep_dive_can_it_fully_replace_paperclip_and_can_it_grow_sdlc_style_governance",
-      "target": "wiki_synthesis_claude_multi_agent_architecture_critical_reframe_this_does_not_solve_icubed_s_claude_copilot_decoupling_goal",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "references",
       "confidence": "INFERRED",
       "confidence_score": 0.5,
@@ -277217,5 +276197,5 @@
       "source_file": "Attachments/MicrosoftTeams-image (13).png"
     }
   ],
-  "built_at_commit": "93fabce705bb579a4bbd6cd639c87a5e2b409354"
+  "built_at_commit": "39cf572d05eccb552615a35b80eea215c6731b70"
 }
