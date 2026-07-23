@@ -2,9 +2,11 @@
 type: synthesis
 title: AIOS — Paperclip → Hermes-kanban Migration + Agents + Safeguards (approved plan)
 sources: []
-last_updated: 2026-07-22
+last_updated: 2026-07-23
 wiki_ingested: 2026-07-22
-status: approved, in progress
+status: complete
+created: 2026-07-23T11:32
+updated: 2026-07-23T11:33
 ---
 
 Approved implementation plan (2026-07-22), tracked live at `C:\Users\MarthinusR\.claude\plans\generic-mapping-anchor.md` and via Claude Code tasks in this session. See [[Claude-Multi-Agent-Architecture]] for the research that led here (Hermes capability deep-dive, Paperclip comparison, SDLC governance patterns).
@@ -63,3 +65,54 @@ Build order: guard #1 first (smallest), then decide on #2-4, prioritizing #4.
 ## Parked (not this round)
 
 SDLC-side Claude→Copilot dispatch hardening (SDLC's fallback today is prose instructions in `code-trigger.py`, not real code, plus `claude-status.json`'s unsafe writes bypassing `state_writer.py`) — a separate, smaller, work-side fix, revisit later.
+
+---
+
+## Outcomes (2026-07-22 → 2026-07-23) — all 12 tracked tasks done
+
+The plan above was followed with one real deviation, described under Part 4 below. Full session-by-session detail (including a live-dispatch incident and its fix) lives in Claude's cross-session memory: `project_paperclip_hermes_migration_pause` and `reference_hermes_kanban_dispatch_behavior`, in `C:\Users\MarthinusR\.claude\projects\C--Personal-AIOS\memory\`. This section is the durable summary.
+
+### Part 1 — Migration: done, 109/109 issues
+
+All 109 Paperclip issues now live on the Hermes native kanban board `aios` (`C:\Users\MarthinusR\AppData\Local\hermes\kanban\boards\aios\kanban.db`), created with `created_by='paperclip-migration'`. Final status breakdown at completion: `archived` 57 (includes the intentionally-inert triage-target rows, see below), `blocked` 21, `done` 31.
+
+**A real incident happened mid-migration and is worth knowing about even after the fact**: the original assumption that `hermes kanban create --triage` lands a task inertly turned out to be wrong — triage rows get auto-promoted and claimed by the live Hermes Gateway dispatcher within roughly 100 seconds. During the first full bulk-commit attempt, two migrated tasks were actually auto-dispatched and run as real agent work before this was caught (no confirmed external side effects — full detail in the memory file above). Fixed by rewriting `C:\Personal\AIOS\scripts\migrate-paperclip-to-kanban.py` so every row is created and then *immediately archived* (`archived` is the only status confirmed genuinely inert against the dispatcher) — terminal-status rows get their real historical status/timestamps backfilled via direct SQL afterward, and triage-target rows (31 of them, from Paperclip's `todo`/`in_progress`) now stay `archived` on purpose, pending the un-archive tooling built under Part 4.
+
+### Part 1, A2/A3 — hermes-web-ui repointed, Paperclip retired
+
+`hermes-web-ui`'s native `KanbanView.vue` turned out to already be board-agnostic (board switcher, `?board=` query param) — no server changes were needed. Only the client-side default changed: `DEFAULT_KANBAN_BOARD` in `packages/client/src/stores/hermes/kanban.ts` → `'aios'`. Per the user's explicit call, the old Paperclip tab was **not** removed from the sidebar — it's kept, labeled "Paperclip [migrated]", as a read-only reference.
+
+Paperclip itself was retired 2026-07-23: its dev-watch process tree (embedded Postgres + server/UI file watchers) was stopped. Its embedded Postgres was actually found crashed again at retirement time (same "corrupted shared memory" class of bug documented elsewhere in this vault, needing a full reboot to truly clear) — a fresh final backup couldn't be taken because of this, so retirement proceeded on the existing (5-day-old) backup plus the already-independently-verified 109/109 migration. `C:\Personal\paperclip`'s code, data directory, and backups are all untouched on disk — retirement means the processes were stopped, nothing was deleted.
+
+### Part 2/3 — Agent registry & project convention: done as planned
+
+Six formal agent definitions exist at `C:\Personal\AIOS\.agents\definitions\*.md`; `kanban-project-map.json` is the canonical validation shim. No deviation from the plan here.
+
+### Part 4 — Safeguards: guard #1 + Human Verification Gate, built differently than planned
+
+The plan's Part 4 assumed these would be built as real Hermes hooks (`hermes hooks`, 16 lifecycle events, veto-capable). **In practice, patching Hermes's own installed CLI/DB code was deliberately avoided** — it's a separate product with its own update cycle, and a hook change would apply to every board on the machine, not just `aios`. Instead, both guards were built as an AIOS-level convention layered on Hermes's *existing* CLI, in `C:\Personal\AIOS\scripts\`:
+
+- **The convention**: an agent that believes a task is done does not call `hermes kanban complete` on its own work. Instead, while the task is `running`, it calls `hermes kanban --board aios block <id> "review-required: <summary>" --kind needs_input` — a real, Hermes-native "route to a human" block kind, not the same thing as Hermes's own `review` status (which auto-dispatches *another agent*, not a human).
+- `kanban-review-queue.py` — lists everything awaiting human review (reads the board's SQLite directly, since `block_kind` isn't exposed by the CLI's own `--json` output).
+- `kanban-approve.py <id> [--summary ...] [--reject "..."]` — the sanctioned way a reviewed task becomes `done` (completes directly from `blocked`, deliberately skipping `unblock` first to avoid a brief `ready`/dispatchable window) or gets sent back for rework.
+- `kanban-unarchive.py <id> [--status triage]` — brings one of the 31 archived triage-target rows back to a workable status when a human's ready to actually work it (no native `unarchive` verb exists in Hermes's CLI).
+- `kanban-audit-unreviewed-done.py` — guard #1, folded in here: a reminder-only audit (not a hard block, matching this user's general preference for reminders over auto-enforcement) that flags any `done` task whose history never shows a `needs_input` block first.
+
+Full usage documented in `C:\Personal\AIOS\.agents\AGENTS.md`'s "Human Verification Gate" section.
+
+## Where to see it / what needs to be running
+
+**To just use the kanban CLI (create/list/block/complete tasks, run the four scripts above)** — nothing extra needs to be running. `hermes kanban --board aios <command>` and the Python scripts in `scripts\` talk straight to the board's SQLite file. This is true even with the Hermes Gateway stopped.
+
+**To browse the kanban board in a browser:**
+1. Start the dev server from `C:\Personal\AIOS\hermes-web-ui`:
+   ```powershell
+   cd C:\Personal\AIOS\hermes-web-ui
+   $env:HERMES_WEB_UI_DISABLE_GATEWAY_AUTOSTART = "1"
+   npm run dev
+   ```
+   The env var is required — without it, the server's own boot sequence tries to manage a *separate* per-profile gateway process for each of the 6 AIOS profiles, which fights with the real, manually-run Hermes Gateway and can hang the server for a minute or more once that gateway is actually up.
+2. Open **http://127.0.0.1:8649/** — log in with `mraath@gmail.com` (password was reset to the app's own documented default, `123456`, during this work; change it after logging in if you want something else).
+3. Sidebar → **Kanban** → lands on the `aios` board by default, showing all migrated + newly-created tasks. The old Paperclip tab is still there too, labeled `[migrated]`, read-only.
+
+**For dispatch (agents actually picking up and running tasks)** — that's the Hermes Gateway (`hermes gateway run --force`), a separate always-on process from hermes-web-ui entirely. It needs to be running for tasks to get claimed/worked automatically; the web UI and CLI both work fine whether it's up or not, they just won't see new dispatch activity if it's down.
