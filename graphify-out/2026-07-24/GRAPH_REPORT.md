@@ -1,16 +1,16 @@
-# Graph Report - marty-mix  (2026-07-24)
+# Graph Report - marty-mix  (2026-07-23)
 
 ## Corpus Check
-- 3103 files · ~9,865,839 words
+- 3103 files · ~9,864,868 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 14756 nodes · 12588 edges · 3512 communities (1992 shown, 1520 thin omitted)
+- 14750 nodes · 12582 edges · 3510 communities (1990 shown, 1520 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.62)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1260b6d5`
+- Built from commit: `93fabce7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -3026,8 +3026,6 @@
 - operations-tools-looking-forward.md
 - 2026-07-21
 - 2026-07-22
-- 3. Dependencies and Connections
-- open-tickets-cluster2.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `DONE` - 77 edges
@@ -3066,23 +3064,23 @@
 - **Images Related to Config Compiler Alert Configuration** — config_test_lft_requestpart_for_pallavi_new_client_1, configure_alerts_for_new_config_compiler_condition [EXTRACTED]
 - **Integration Flow with Microsoft Teams and Mobile Device Templates** — src_auth_session, src_microsoftteams_flowchart [EXTRACTED 0.75]
 
-## Communities (3512 total, 1520 thin omitted)
+## Communities (3510 total, 1520 thin omitted)
 
 ### Community 0 - "types.ts"
 Cohesion: 0.08
 Nodes (48): FullPageLayout, QuartzConfig, headerRegex, pageResources(), RenderComponents, renderPage(), defaultContentPageLayout, defaultListPageLayout (+40 more)
 
 ### Community 1 - "index.ts"
-Cohesion: 0.10
-Nodes (35): ArticleTitle(), Backlinks(), BreadcrumbOptions, CrumbData, defaultOptions, formatCrumb(), ContentMetadata(), ContentMetaOptions (+27 more)
+Cohesion: 0.09
+Nodes (38): ArticleTitle(), Backlinks(), BreadcrumbOptions, CrumbData, defaultOptions, formatCrumb(), ContentMetadata(), ContentMetaOptions (+30 more)
 
 ### Community 2 - "DONE"
 Cohesion: 0.04
 Nodes (50): Citations(), defaultOptions, Options, DataMap, defaultOptions, Description(), Options, urlRegex (+42 more)
 
 ### Community 3 - "dependencies"
-Cohesion: 0.11
-Nodes (29): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+21 more)
+Cohesion: 0.13
+Nodes (26): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+18 more)
 
 ### Community 4 - "build.ts"
 Cohesion: 0.04
@@ -3177,16 +3175,16 @@ Cohesion: 0.15
 Nodes (11): Automatically send, Branches, Data to use on INT, Description, Leonardo Issue, PRS, SQL, SRE-212 Command45 to be send hourly (+3 more)
 
 ### Community 27 - "RecentNotes.tsx"
-Cohesion: 0.06
-Nodes (30): Authentication, Automation UI & API URLs (All Environments), AWS Account Map, Connections, Active Features, AWS Environments, ConfigTools URLs, Connections (+22 more)
+Cohesion: 0.07
+Nodes (27): Authentication, Automation UI & API URLs (All Environments), AWS Account Map, Connections, Active Features, AWS Environments, ConfigTools URLs, Connections (+19 more)
 
 ### Community 28 - "Ops-Tools.md"
 Cohesion: 0.07
 Nodes (27): Data Schema, Decommissioning Form (Draft Schema), Discovery Results, Gemini Project Map: Powerfleet Automation UI - Navigation & Decommissioning, 📝 Maintenance Log, Menu Payload (JSON), Menu State (Draft), 🏗️ Phase 1: Blueprint (+19 more)
 
 ### Community 29 - "Command 45"
-Cohesion: 0.08
-Nodes (19): Concepts, Synthesis, Wiki Index — Powerfleet Engineering Knowledge Base, Key Takeaways, Summary, Wiki Pages Updated, Key Takeaways, Summary (+11 more)
+Cohesion: 0.07
+Nodes (20): Key Takeaways, Summary, Wiki Pages Updated, Key Takeaways, New Entities/Concepts, Summary, Wiki Pages Updated, Key Takeaways (+12 more)
 
 ### Community 30 - "Gemini Project Map: Powerfleet Automation UI - Navigation & Decommissioning"
 Cohesion: 0.05
@@ -3233,8 +3231,8 @@ Cohesion: 0.08
 Nodes (23): Example: persisting column width, Getting the values, HTML, Introduction, Mechanism, Need, Other selection criteria method, The data to be changed (+15 more)
 
 ### Community 42 - "Config Overview WIP.excalidraw.md"
-Cohesion: 0.09
-Nodes (21): 2026-07-22 — Approved implementation plan, 2026-07-22 — Hermes deep dive: can it fully replace Paperclip, and can it grow SDLC-style governance?, Agents (`.agent/agents/`, 15 files), Can Hermes grow SDLC-style governance (hooks)?, Can `hermes kanban` + `hermes cron` replace Paperclip?, ⚠️ Critical reframe — this does NOT solve iCubed's Claude→Copilot decoupling goal, End-to-end trace: `code OPEN-1234`, [[Hermes]] vs. [[Paperclip]] (AIOS) (+13 more)
+Cohesion: 0.11
+Nodes (17): Handoff background (for a reader with no prior context), Parked (not this round), Part 1 — Paperclip → Hermes-kanban migration, Part 2 — Set up proper AIOS agent definitions, Part 3 — Kanban structure, modeled on Paperclip, Part 4 — Safeguards, including a human verification gate, Suggested order, 2026-07-22 — Approved implementation plan (+9 more)
 
 ### Community 43 - "OE-611 Alert not adjusting when removing missing parameters"
 Cohesion: 0.06
@@ -3829,8 +3827,8 @@ Cohesion: 0.17
 Nodes (7): Dto, Method, METHOD NAME  (repeat to end of Method for each), Route, Expand on these, MethodName, Classes
 
 ### Community 196 - "Languaging.md"
-Cohesion: 0.40
-Nodes (5): AWS / Automation Infrastructure, Clusters (Batch Ingested), DST / Command 45, Ops Tools, Sources
+Cohesion: 0.15
+Nodes (13): AWS / Automation Infrastructure, Clusters (Batch Ingested), Concepts, Concepts, DST / Command 45, Entities, Ops Tools, Projects (+5 more)
 
 ### Community 197 - "SRE-212 Command45 to be send hourly"
 Cohesion: 0.12
@@ -3937,8 +3935,8 @@ Cohesion: 0.18
 Nodes (10): 1. Target Groups, 2. ALB Listener Rules, 3. Task Definitions, 4. ECS Services, Common Failure Modes, Connections, Pre-Requisites (must exist in target region), Public Access Pattern (Private ALB) (+2 more)
 
 ### Community 224 - "OE-521 Unallocated Assets assign to Config group"
-Cohesion: 0.18
-Nodes (10): 1. Introduction, 2. Template Structure Overview, 4. Detailed Analysis of AssetMobileDeviceEditTemplate.html, 6. Technical Debt Consideration, 7. Mermaid Diagram of Dependencies, 8. Conclusion, Functionality, In-depth Architectural Review and Refactoring Plan for AssetMobileDeviceEditTemplate.html (+2 more)
+Cohesion: 0.12
+Nodes (15): 1. Introduction, 2. Template Structure Overview, 3. Dependencies and Connections, 4. Detailed Analysis of AssetMobileDeviceEditTemplate.html, 6. Technical Debt Consideration, 7. Mermaid Diagram of Dependencies, 8. Conclusion, AngularJS Bindings (+7 more)
 
 ### Community 225 - "OE-638 Reset Black Flag"
 Cohesion: 0.18
@@ -6229,16 +6227,16 @@ Cohesion: 0.40
 Nodes (4): Key Takeaways, Summary, Wiki Pages Created, Wiki Pages Updated
 
 ### Community 811 - "Old Daily Merge Template.md"
-Cohesion: 0.14
-Nodes (13): Handoff background (for a reader with no prior context), Outcomes (2026-07-22 → 2026-07-23) — all 12 tracked tasks done, Parked (not this round), Part 1, A2/A3 — hermes-web-ui repointed, Paperclip retired, Part 1 — Migration: done, 109/109 issues, Part 1 — Paperclip → Hermes-kanban migration, Part 2/3 — Agent registry & project convention: done as planned, Part 2 — Set up proper AIOS agent definitions (+5 more)
+Cohesion: 0.40
+Nodes (4): Key Takeaways, New Entities/Concepts, Summary, Wiki Pages Updated
 
 ### Community 812 - "Retro.md"
 Cohesion: 0.40
 Nodes (4): Files Tagged by Folder, Key Takeaways, Summary, Wiki Pages Created
 
 ### Community 813 - "Swagger Urls.md"
-Cohesion: 0.40
-Nodes (5): Concepts, Entities, Projects, Systems, Tickets
+Cohesion: 0.18
+Nodes (11): Agents (`.agent/agents/`, 15 files), End-to-end trace: `code OPEN-1234`, Hooks (`.claude/hooks/*.py`, ~55 scripts), Plain-English glossary, Rules (`.agent/rules.md`), SDLC internals — the moving parts, Skills (`.agent/skills/`, ~170 files/folders), State (`.agent/shared-memory/state.json` + `schema.md`) (+3 more)
 
 ### Community 814 - "Branch"
 Cohesion: 0.10
@@ -8425,8 +8423,8 @@ Cohesion: 0.50
 Nodes (3): Resources, TODO, Week at a Glance
 
 ### Community 1376 - "2022-W39.md"
-Cohesion: 0.40
-Nodes (4): Key Takeaways, New Entities/Concepts, Summary, Wiki Pages Updated
+Cohesion: 0.50
+Nodes (3): Connections, Key Facts, Login SOP
 
 ### Community 1377 - "2022-W40.md"
 Cohesion: 0.50
@@ -9029,19 +9027,11 @@ Cohesion: 0.50
 Nodes (3): Key Takeaways, Summary, Wiki Pages Updated
 
 ### Community 3507 - "operations-tools-looking-forward.md"
-Cohesion: 0.40
-Nodes (4): Key Takeaways, Summary, Wiki Pages Created, Wiki Pages Updated
-
-### Community 3510 - "3. Dependencies and Connections"
-Cohesion: 0.40
-Nodes (5): 3. Dependencies and Connections, AngularJS Bindings, Custom Directives, JavaScript Components, Services
-
-### Community 3511 - "open-tickets-cluster2.md"
 Cohesion: 0.50
 Nodes (3): Key Takeaways, Summary, Wiki Pages Updated
 
 ## Knowledge Gaps
-- **10013 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+10008 more)
+- **10008 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+10003 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1520 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -9051,14 +9041,14 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `TECHDEBT-190 Move the DST Service to the DeviceConfig Repo` connect `types.ts` to `2022-05-27`, `darkmode.md`, `graph view.md`, `2025-06-30.md`, `Description (from Jira)`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `Generates a consistent, visually distinct color for a given string.`, `Extracts the XML content from a T-SQL script variable.`, `Checks if a string represents a large integer, likely a unique ID.` to the rest of the system?**
-  _10024 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _10019 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `types.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.07859649122807018 - nodes in this community are weakly interconnected._
 - **Should `index.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.0985576923076923 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09164535379369139 - nodes in this community are weakly interconnected._
 - **Should `DONE` be split into smaller, more focused modules?**
   _Cohesion score 0.040674603174603176 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.11008325624421832 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.12513842746400886 - nodes in this community are weakly interconnected._
 - **Should `build.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.03508771929824561 - nodes in this community are weakly interconnected._

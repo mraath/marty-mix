@@ -3336,7 +3336,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "quartz_components_pages_content_content",
-      "community": 3,
+      "community": 1,
       "norm_label": "content()"
     },
     {
@@ -6376,7 +6376,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_util_jsx",
-      "community": 3,
+      "community": 1,
       "norm_label": "jsx.tsx"
     },
     {
@@ -6386,7 +6386,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "quartz_util_jsx_customcomponents",
-      "community": 3,
+      "community": 1,
       "norm_label": "customcomponents"
     },
     {
@@ -6396,7 +6396,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "quartz_util_jsx_htmltojsx",
-      "community": 3,
+      "community": 1,
       "norm_label": "htmltojsx()"
     },
     {
@@ -115744,7 +115744,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "wip_frangular_edit_templates_editmobiledeviceplan_3_dependencies_and_connections",
-      "community": 3510,
+      "community": 224,
       "norm_label": "3. dependencies and connections"
     },
     {
@@ -115754,7 +115754,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "wip_frangular_edit_templates_editmobiledeviceplan_angularjs_bindings",
-      "community": 3510,
+      "community": 224,
       "norm_label": "angularjs bindings"
     },
     {
@@ -115764,7 +115764,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "wip_frangular_edit_templates_editmobiledeviceplan_custom_directives",
-      "community": 3510,
+      "community": 224,
       "norm_label": "custom directives"
     },
     {
@@ -115774,7 +115774,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "wip_frangular_edit_templates_editmobiledeviceplan_javascript_components",
-      "community": 3510,
+      "community": 224,
       "norm_label": "javascript components"
     },
     {
@@ -115784,7 +115784,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "wip_frangular_edit_templates_editmobiledeviceplan_services",
-      "community": 3510,
+      "community": 224,
       "norm_label": "services"
     },
     {
@@ -137234,7 +137234,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_entities_powerfleet_github_enterprise",
-      "community": 27,
+      "community": 1376,
       "norm_label": "powerfleet-github-enterprise.md"
     },
     {
@@ -137244,7 +137244,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_entities_powerfleet_github_enterprise_key_facts",
-      "community": 27,
+      "community": 1376,
       "norm_label": "key facts"
     },
     {
@@ -137254,7 +137254,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "wiki_entities_powerfleet_github_enterprise_login_sop",
-      "community": 27,
+      "community": 1376,
       "norm_label": "login sop"
     },
     {
@@ -137264,7 +137264,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "wiki_entities_powerfleet_github_enterprise_connections",
-      "community": 27,
+      "community": 1376,
       "norm_label": "connections"
     },
     {
@@ -137364,7 +137364,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "wiki_index_wiki_index_powerfleet_engineering_knowledge_base",
-      "community": 29,
+      "community": 196,
       "norm_label": "wiki index \u2014 powerfleet engineering knowledge base"
     },
     {
@@ -137374,7 +137374,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "wiki_index_entities",
-      "community": 813,
+      "community": 196,
       "norm_label": "entities"
     },
     {
@@ -137384,7 +137384,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_index_projects",
-      "community": 813,
+      "community": 196,
       "norm_label": "projects"
     },
     {
@@ -137394,7 +137394,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "wiki_index_systems",
-      "community": 813,
+      "community": 196,
       "norm_label": "systems"
     },
     {
@@ -137404,7 +137404,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "wiki_index_concepts",
-      "community": 813,
+      "community": 196,
       "norm_label": "concepts"
     },
     {
@@ -137414,7 +137414,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "wiki_index_tickets",
-      "community": 813,
+      "community": 196,
       "norm_label": "tickets"
     },
     {
@@ -137424,7 +137424,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "wiki_index_concepts_33",
-      "community": 29,
+      "community": 196,
       "norm_label": "concepts"
     },
     {
@@ -137484,7 +137484,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "wiki_index_synthesis",
-      "community": 29,
+      "community": 196,
       "norm_label": "synthesis"
     },
     {
@@ -137904,7 +137904,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_sources_ets_8669_oman_dst",
-      "community": 1376,
+      "community": 29,
       "norm_label": "ets-8669-oman-dst.md"
     },
     {
@@ -137914,7 +137914,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_sources_ets_8669_oman_dst_summary",
-      "community": 1376,
+      "community": 29,
       "norm_label": "summary"
     },
     {
@@ -137924,7 +137924,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_sources_ets_8669_oman_dst_key_takeaways",
-      "community": 1376,
+      "community": 29,
       "norm_label": "key takeaways"
     },
     {
@@ -137934,7 +137934,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "wiki_sources_ets_8669_oman_dst_new_entities_concepts",
-      "community": 1376,
+      "community": 29,
       "norm_label": "new entities/concepts"
     },
     {
@@ -137944,7 +137944,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "wiki_sources_ets_8669_oman_dst_wiki_pages_updated",
-      "community": 1376,
+      "community": 29,
       "norm_label": "wiki pages updated"
     },
     {
@@ -138234,7 +138234,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_sources_open_tickets_cluster2",
-      "community": 3511,
+      "community": 29,
       "norm_label": "open-tickets-cluster2.md"
     },
     {
@@ -138244,7 +138244,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_sources_open_tickets_cluster2_summary",
-      "community": 3511,
+      "community": 29,
       "norm_label": "summary"
     },
     {
@@ -138254,7 +138254,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_sources_open_tickets_cluster2_key_takeaways",
-      "community": 3511,
+      "community": 29,
       "norm_label": "key takeaways"
     },
     {
@@ -138264,7 +138264,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "wiki_sources_open_tickets_cluster2_wiki_pages_updated",
-      "community": 3511,
+      "community": 29,
       "norm_label": "wiki pages updated"
     },
     {
@@ -138274,7 +138274,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_looking_forward",
-      "community": 29,
+      "community": 3507,
       "norm_label": "operations-tools-looking-forward.md"
     },
     {
@@ -138284,7 +138284,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_looking_forward_summary",
-      "community": 29,
+      "community": 3507,
       "norm_label": "summary"
     },
     {
@@ -138294,7 +138294,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_looking_forward_key_takeaways",
-      "community": 29,
+      "community": 3507,
       "norm_label": "key takeaways"
     },
     {
@@ -138304,7 +138304,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_looking_forward_wiki_pages_updated",
-      "community": 29,
+      "community": 3507,
       "norm_label": "wiki pages updated"
     },
     {
@@ -138314,7 +138314,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_master",
-      "community": 29,
+      "community": 811,
       "norm_label": "operations-tools-master.md"
     },
     {
@@ -138324,7 +138324,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_master_summary",
-      "community": 29,
+      "community": 811,
       "norm_label": "summary"
     },
     {
@@ -138334,7 +138334,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_master_key_takeaways",
-      "community": 29,
+      "community": 811,
       "norm_label": "key takeaways"
     },
     {
@@ -138344,7 +138344,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_master_new_entities_concepts",
-      "community": 29,
+      "community": 811,
       "norm_label": "new entities/concepts"
     },
     {
@@ -138354,7 +138354,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "wiki_sources_operations_tools_master_wiki_pages_updated",
-      "community": 29,
+      "community": 811,
       "norm_label": "wiki pages updated"
     },
     {
@@ -138504,7 +138504,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_sources_zagov_aws_deployment",
-      "community": 3507,
+      "community": 29,
       "norm_label": "zagov-aws-deployment.md"
     },
     {
@@ -138514,7 +138514,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "wiki_sources_zagov_aws_deployment_summary",
-      "community": 3507,
+      "community": 29,
       "norm_label": "summary"
     },
     {
@@ -138524,7 +138524,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_sources_zagov_aws_deployment_key_takeaways",
-      "community": 3507,
+      "community": 29,
       "norm_label": "key takeaways"
     },
     {
@@ -138534,7 +138534,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "wiki_sources_zagov_aws_deployment_wiki_pages_created",
-      "community": 3507,
+      "community": 29,
       "norm_label": "wiki pages created"
     },
     {
@@ -138544,7 +138544,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "wiki_sources_zagov_aws_deployment_wiki_pages_updated",
-      "community": 3507,
+      "community": 29,
       "norm_label": "wiki pages updated"
     },
     {
@@ -138554,138 +138554,78 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "community": 811,
+      "community": 42,
       "norm_label": "aios-paperclip-to-hermes-migration-plan.md"
     },
     {
       "label": "Handoff background (for a reader with no prior context)",
       "file_type": "document",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L14",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_handoff_background_for_a_reader_with_no_prior_context",
-      "community": 811,
+      "community": 42,
       "norm_label": "handoff background (for a reader with no prior context)"
     },
     {
       "label": "Part 1 \u2014 Paperclip \u2192 Hermes-kanban migration",
       "file_type": "document",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L23",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_1_paperclip_hermes_kanban_migration",
-      "community": 811,
+      "community": 42,
       "norm_label": "part 1 \u2014 paperclip \u2192 hermes-kanban migration"
     },
     {
       "label": "Part 2 \u2014 Set up proper AIOS agent definitions",
       "file_type": "document",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L38",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_2_set_up_proper_aios_agent_definitions",
-      "community": 811,
+      "community": 42,
       "norm_label": "part 2 \u2014 set up proper aios agent definitions"
     },
     {
       "label": "Part 3 \u2014 Kanban structure, modeled on Paperclip",
       "file_type": "document",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L46",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_3_kanban_structure_modeled_on_paperclip",
-      "community": 811,
+      "community": 42,
       "norm_label": "part 3 \u2014 kanban structure, modeled on paperclip"
     },
     {
       "label": "Part 4 \u2014 Safeguards, including a human verification gate",
       "file_type": "document",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L50",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_4_safeguards_including_a_human_verification_gate",
-      "community": 811,
+      "community": 42,
       "norm_label": "part 4 \u2014 safeguards, including a human verification gate"
     },
     {
       "label": "Suggested order",
       "file_type": "document",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L61",
+      "source_location": "L59",
       "_origin": "ast",
       "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_suggested_order",
-      "community": 811,
+      "community": 42,
       "norm_label": "suggested order"
     },
     {
       "label": "Parked (not this round)",
       "file_type": "document",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L65",
+      "source_location": "L63",
       "_origin": "ast",
       "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_parked_not_this_round",
-      "community": 811,
+      "community": 42,
       "norm_label": "parked (not this round)"
-    },
-    {
-      "label": "Outcomes (2026-07-22 \u2192 2026-07-23) \u2014 all 12 tracked tasks done",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L71",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_outcomes_2026_07_22_2026_07_23_all_12_tracked_tasks_done",
-      "community": 811,
-      "norm_label": "outcomes (2026-07-22 \u2192 2026-07-23) \u2014 all 12 tracked tasks done"
-    },
-    {
-      "label": "Part 1 \u2014 Migration: done, 109/109 issues",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L75",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_1_migration_done_109_109_issues",
-      "community": 811,
-      "norm_label": "part 1 \u2014 migration: done, 109/109 issues"
-    },
-    {
-      "label": "Part 1, A2/A3 \u2014 hermes-web-ui repointed, Paperclip retired",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L81",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_1_a2_a3_hermes_web_ui_repointed_paperclip_retired",
-      "community": 811,
-      "norm_label": "part 1, a2/a3 \u2014 hermes-web-ui repointed, paperclip retired"
-    },
-    {
-      "label": "Part 2/3 \u2014 Agent registry & project convention: done as planned",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L87",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_2_3_agent_registry_project_convention_done_as_planned",
-      "community": 811,
-      "norm_label": "part 2/3 \u2014 agent registry & project convention: done as planned"
-    },
-    {
-      "label": "Part 4 \u2014 Safeguards: guard #1 + Human Verification Gate, built differently than planned",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L91",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_4_safeguards_guard_1_human_verification_gate_built_differently_than_planned",
-      "community": 811,
-      "norm_label": "part 4 \u2014 safeguards: guard #1 + human verification gate, built differently than planned"
-    },
-    {
-      "label": "Where to see it / what needs to be running",
-      "file_type": "document",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L103",
-      "_origin": "ast",
-      "id": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_where_to_see_it_what_needs_to_be_running",
-      "community": 811,
-      "norm_label": "where to see it / what needs to be running"
     },
     {
       "label": "Claude-Multi-Agent-Architecture.md",
@@ -138734,7 +138674,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_sdlc_internals_the_moving_parts",
-      "community": 42,
+      "community": 813,
       "norm_label": "sdlc internals \u2014 the moving parts"
     },
     {
@@ -138744,7 +138684,7 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_plain_english_glossary",
-      "community": 42,
+      "community": 813,
       "norm_label": "plain-english glossary"
     },
     {
@@ -138754,7 +138694,7 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_wireframe_how_a_code_open_1234_command_flows_through_all_of_it",
-      "community": 42,
+      "community": 813,
       "norm_label": "wireframe \u2014 how a `code open-1234` command flows through all of it"
     },
     {
@@ -138764,7 +138704,7 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_agents_agent_agents_15_files",
-      "community": 42,
+      "community": 813,
       "norm_label": "agents (`.agent/agents/`, 15 files)"
     },
     {
@@ -138774,7 +138714,7 @@
       "source_location": "L134",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_skills_agent_skills_170_files_folders",
-      "community": 42,
+      "community": 813,
       "norm_label": "skills (`.agent/skills/`, ~170 files/folders)"
     },
     {
@@ -138784,7 +138724,7 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_workflows_agent_workflows",
-      "community": 42,
+      "community": 813,
       "norm_label": "workflows (`.agent/workflows/`)"
     },
     {
@@ -138794,7 +138734,7 @@
       "source_location": "L142",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_triggers_agent_triggers",
-      "community": 42,
+      "community": 813,
       "norm_label": "triggers (`.agent/triggers/`)"
     },
     {
@@ -138804,7 +138744,7 @@
       "source_location": "L146",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_state_agent_shared_memory_state_json_schema_md",
-      "community": 42,
+      "community": 813,
       "norm_label": "state (`.agent/shared-memory/state.json` + `schema.md`)"
     },
     {
@@ -138814,7 +138754,7 @@
       "source_location": "L150",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_hooks_claude_hooks_py_55_scripts",
-      "community": 42,
+      "community": 813,
       "norm_label": "hooks (`.claude/hooks/*.py`, ~55 scripts)"
     },
     {
@@ -138824,7 +138764,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_rules_agent_rules_md",
-      "community": 42,
+      "community": 813,
       "norm_label": "rules (`.agent/rules.md`)"
     },
     {
@@ -138834,7 +138774,7 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "wiki_synthesis_claude_multi_agent_architecture_end_to_end_trace_code_open_1234",
-      "community": 42,
+      "community": 813,
       "norm_label": "end-to-end trace: `code open-1234`"
     },
     {
@@ -139087,7 +139027,7 @@
       "community": 3173,
       "norm_label": "ac parent document",
       "community_name": "AC Parent Document",
-      "id": "ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_md"
+      "id": "ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_md"
     },
     {
       "label": "OPEN-505: Identify channels for blurring diagram",
@@ -140015,7 +139955,7 @@
       "community": 2273,
       "norm_label": "geteventlist",
       "community_name": "Jira Regression.md",
-      "id": "done_done_done_done_done_done_done_done_done_done_done_done_done_geteventlist"
+      "id": "done_done_done_done_done_done_done_done_done_done_done_done_geteventlist"
     },
     {
       "label": "SR-11406 ENT EKS Infohub User Error",
@@ -148577,7 +148517,7 @@
       "community": 2542,
       "norm_label": "filters documentation",
       "community_name": "titlegeneratorforwrittenpiecesAwesome.md",
-      "id": "filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_md"
+      "id": "filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_md"
     },
     {
       "label": ".npmrc",
@@ -276742,7 +276682,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L14",
+      "source_location": "L12",
       "weight": 1.0,
       "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
       "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_handoff_background_for_a_reader_with_no_prior_context",
@@ -276752,17 +276692,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L71",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_outcomes_2026_07_22_2026_07_23_all_12_tracked_tasks_done",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L65",
+      "source_location": "L63",
       "weight": 1.0,
       "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
       "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_parked_not_this_round",
@@ -276772,7 +276702,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L23",
+      "source_location": "L21",
       "weight": 1.0,
       "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
       "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_1_paperclip_hermes_kanban_migration",
@@ -276782,7 +276712,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L38",
+      "source_location": "L36",
       "weight": 1.0,
       "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
       "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_2_set_up_proper_aios_agent_definitions",
@@ -276792,7 +276722,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L46",
+      "source_location": "L44",
       "weight": 1.0,
       "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
       "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_3_kanban_structure_modeled_on_paperclip",
@@ -276802,7 +276732,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L50",
+      "source_location": "L48",
       "weight": 1.0,
       "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
       "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_4_safeguards_including_a_human_verification_gate",
@@ -276812,70 +276742,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L61",
+      "source_location": "L59",
       "weight": 1.0,
       "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
       "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_suggested_order",
       "confidence_score": 1.0
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L103",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_where_to_see_it_what_needs_to_be_running",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L12",
+      "source_location": "L10",
       "weight": 1.0,
       "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan",
       "target": "wiki_synthesis_claude_multi_agent_architecture",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L81",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_outcomes_2026_07_22_2026_07_23_all_12_tracked_tasks_done",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_1_a2_a3_hermes_web_ui_repointed_paperclip_retired",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L75",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_outcomes_2026_07_22_2026_07_23_all_12_tracked_tasks_done",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_1_migration_done_109_109_issues",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L87",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_outcomes_2026_07_22_2026_07_23_all_12_tracked_tasks_done",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_2_3_agent_registry_project_convention_done_as_planned",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "wiki/synthesis/AIOS-Paperclip-to-Hermes-Migration-Plan.md",
-      "source_location": "L91",
-      "weight": 1.0,
-      "source": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_outcomes_2026_07_22_2026_07_23_all_12_tracked_tasks_done",
-      "target": "wiki_synthesis_aios_paperclip_to_hermes_migration_plan_part_4_safeguards_guard_1_human_verification_gate_built_differently_than_planned",
       "confidence_score": 1.0
     },
     {
@@ -277337,5 +277217,5 @@
       "source_file": "Attachments/MicrosoftTeams-image (13).png"
     }
   ],
-  "built_at_commit": "1260b6d5dc3fe8bcc56a7143dc3bbfa7a0855f98"
+  "built_at_commit": "93fabce705bb579a4bbd6cd639c87a5e2b409354"
 }
