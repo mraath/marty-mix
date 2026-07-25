@@ -1,6 +1,6 @@
 ---
 created: 2026-07-21T15:15
-updated: 2026-07-21T15:15
+updated: 2026-07-24T16:00
 ---
 # Wiki Log — Powerfleet Engineering Knowledge Base
 
@@ -10,6 +10,11 @@ updated: 2026-07-21T15:15
 ## [2026-07-21] ingest | SA Income Tax Brackets (from live session, salary/bonus review)
 - Pages created: SA Income Tax Brackets (concept)
 - Pages updated: index.md
+- Contradictions flagged: none
+
+## [2026-07-24] ingest | raw/Comp Meeting Cheat Sheet + raw/Draft Email to Managers (2 files)
+- Pages created: 2026-Salary-Increase-and-Bonus-Review (entity), comp-meeting-cheat-sheet (source), draft-email-managers-comp-review (source)
+- Pages updated: index.md (3 new entries, count 32→35, sources 18→20)
 - Contradictions flagged: none
 
 ## [2026-06-03] ingest | Frangular local dev chain (from live session)

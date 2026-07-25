@@ -1,11 +1,11 @@
 ---
 created: 2026-07-21T15:15
-updated: 2026-07-22T11:23
+updated: 2026-07-24T16:00
 ---
 # Wiki Index — Powerfleet Engineering Knowledge Base
 
-> Auto-maintained by LLM. Last updated: 2026-07-21
-> Total pages: 32 | Sources ingested: 18
+> Auto-maintained by LLM. Last updated: 2026-07-24
+> Total pages: 35 | Sources ingested: 20
 
 ## Entities
 
@@ -26,6 +26,7 @@ updated: 2026-07-22T11:23
 
 ### Concepts
 - [DST](entities/DST.md) — Daylight Saving Time in MiX/Powerfleet context; two failure modes
+- [2026-Salary-Increase-and-Bonus-Review](entities/2026-Salary-Increase-and-Bonus-Review.md) — Data-driven comp review: 4yr IRP5 vs CPI analysis; bonus ~78% cut, real gain halved
 
 ### Tickets
 - [ETS-8669](entities/ETS-8669.md) — OMAN Command 45 March 2026 incident; root cause: jumpbox auth routing; resolved
@@ -65,6 +66,10 @@ updated: 2026-07-22T11:23
 - [oe-config-groups-cluster3](sources/oe-config-groups-cluster3.md) — 71 OE/Config Groups ticket notes tagged
 - [ets-tickets-cluster4](sources/ets-tickets-cluster4.md) — 9 ETS ticket notes tagged
 - [remaining-clusters-batch](sources/remaining-clusters-batch.md) — 356 files tagged across SRs, SQL, Done, QA, AC, Frangular, root, misc
+
+### Compensation Review
+- [comp-meeting-cheat-sheet](sources/comp-meeting-cheat-sheet.md) — 15-min meeting prep: 7-step comp discussion flow with managers (2026-07-21)
+- [draft-email-managers-comp-review](sources/draft-email-managers-comp-review.md) — Draft follow-up email with 4-year CPI vs salary/bonus data table (2026-07-21)
 
 ## Synthesis
 

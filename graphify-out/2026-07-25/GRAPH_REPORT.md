@@ -1,16 +1,16 @@
-# Graph Report - marty-mix  (2026-07-25)
+# Graph Report - marty-mix  (2026-07-24)
 
 ## Corpus Check
-- 3108 files · ~9,867,648 words
+- 3103 files · ~9,865,839 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 14784 nodes · 12614 edges · 3514 communities (1993 shown, 1521 thin omitted)
+- 14756 nodes · 12588 edges · 3512 communities (1992 shown, 1520 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.62)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `563db416`
+- Built from commit: `1260b6d5`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -3019,7 +3019,6 @@
 - 2026-07-13
 - SDLC Agent Rules
 - OE-481 iFrame
-- global-deployment-guide.md
 - 2026-07-16
 - SA Income Tax Brackets.md
 - 2026-07-21 Comp Meeting Cheat Sheet.md
@@ -3029,8 +3028,6 @@
 - 2026-07-22
 - 3. Dependencies and Connections
 - open-tickets-cluster2.md
-- ets-tickets-cluster4.md
-- 2026-07-24
 
 ## God Nodes (most connected - your core abstractions)
 1. `DONE` - 77 edges
@@ -3057,8 +3054,8 @@
   quartz/components/scripts/search.inline.ts → quartz/util/path.ts
 
 ## Import Cycles
-- 3-file cycle: `quartz/cfg.ts -> quartz/plugins/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
 - 3-file cycle: `quartz/cfg.ts -> quartz/components/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
+- 3-file cycle: `quartz/cfg.ts -> quartz/plugins/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
 - 4-file cycle: `quartz/cfg.ts -> quartz/plugins/types.ts -> quartz/components/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
 
 ## Hyperedges (group relationships)
@@ -3069,7 +3066,7 @@
 - **Images Related to Config Compiler Alert Configuration** — config_test_lft_requestpart_for_pallavi_new_client_1, configure_alerts_for_new_config_compiler_condition [EXTRACTED]
 - **Integration Flow with Microsoft Teams and Mobile Device Templates** — src_auth_session, src_microsoftteams_flowchart [EXTRACTED 0.75]
 
-## Communities (3514 total, 1521 thin omitted)
+## Communities (3512 total, 1520 thin omitted)
 
 ### Community 0 - "types.ts"
 Cohesion: 0.08
@@ -3188,8 +3185,8 @@ Cohesion: 0.07
 Nodes (27): Data Schema, Decommissioning Form (Draft Schema), Discovery Results, Gemini Project Map: Powerfleet Automation UI - Navigation & Decommissioning, 📝 Maintenance Log, Menu Payload (JSON), Menu State (Draft), 🏗️ Phase 1: Blueprint (+19 more)
 
 ### Community 29 - "Command 45"
-Cohesion: 0.07
-Nodes (20): Connections, Key Facts, Open Questions, Timeline, Key Takeaways, Summary, Wiki Pages Updated, Key Takeaways (+12 more)
+Cohesion: 0.08
+Nodes (19): Concepts, Synthesis, Wiki Index — Powerfleet Engineering Knowledge Base, Key Takeaways, Summary, Wiki Pages Updated, Key Takeaways, Summary (+11 more)
 
 ### Community 30 - "Gemini Project Map: Powerfleet Automation UI - Navigation & Decommissioning"
 Cohesion: 0.05
@@ -3408,8 +3405,8 @@ Cohesion: 0.11
 Nodes (15): AI Integration (AI Alerts), Alert String Format, Connections, Key Message Status Codes (for Alert 1 & 2), Key Stored Procedures, The Four Alerts, Connections, Core Ideas (+7 more)
 
 ### Community 86 - "SR-16008 AlsoGetTXTFiles"
-Cohesion: 0.10
-Nodes (19): [2026-05-28] ingest | Cluster 1 — AWS/Automation Infrastructure (22 files), [2026-05-28] ingest | Cluster 2 — OPEN tickets (79 files), [2026-05-28] ingest | Cluster 3 — OE/Config Groups (71 files), [2026-05-28] ingest | Cluster 4 — ETS tickets (9 files), [2026-05-28] ingest | DST Daylight Saving Times/DST Code Paths.md, [2026-05-28] ingest | DST Daylight Saving Times/DST Debug Guide.md, [2026-05-28] ingest | DST source files tagged (wiki_ingested frontmatter added), [2026-05-28] ingest | ETS/ETS-8669 OMAN Command 45 DST issue.md (+11 more)
+Cohesion: 0.11
+Nodes (18): [2026-05-28] ingest | Cluster 1 — AWS/Automation Infrastructure (22 files), [2026-05-28] ingest | Cluster 2 — OPEN tickets (79 files), [2026-05-28] ingest | Cluster 3 — OE/Config Groups (71 files), [2026-05-28] ingest | Cluster 4 — ETS tickets (9 files), [2026-05-28] ingest | DST Daylight Saving Times/DST Code Paths.md, [2026-05-28] ingest | DST Daylight Saving Times/DST Debug Guide.md, [2026-05-28] ingest | DST source files tagged (wiki_ingested frontmatter added), [2026-05-28] ingest | ETS/ETS-8669 OMAN Command 45 DST issue.md (+10 more)
 
 ### Community 87 - "SR-16877 Airtime management Module - Contract column not displaying any data"
 Cohesion: 0.11
@@ -3832,8 +3829,8 @@ Cohesion: 0.17
 Nodes (7): Dto, Method, METHOD NAME  (repeat to end of Method for each), Route, Expand on these, MethodName, Classes
 
 ### Community 196 - "Languaging.md"
-Cohesion: 0.14
-Nodes (14): AWS / Automation Infrastructure, Clusters (Batch Ingested), Compensation Review, Concepts, Concepts, DST / Command 45, Entities, Ops Tools (+6 more)
+Cohesion: 0.40
+Nodes (5): AWS / Automation Infrastructure, Clusters (Batch Ingested), DST / Command 45, Ops Tools, Sources
 
 ### Community 197 - "SRE-212 Command45 to be send hourly"
 Cohesion: 0.12
@@ -4176,7 +4173,7 @@ Cohesion: 0.22
 Nodes (7): OE-562 Language count, Shorter Description, TODO, Fixes, OE-590 Grammar for single Config group, Shorter Description, TODO
 
 ### Community 286 - "OPEN-1186 Alert column should be a number"
-Cohesion: 0.18
+Cohesion: 0.22
 Nodes (9): Branch, Description (from Jira), Further Chat Notes, Integration with OPEN-1730, OPEN-1576 Add UI for Support to Supply Salesforce Case Info and Start Decom Automation Manually, Overloaded Endpoint, PR Checklist, Start Here Tomorrow — Priority Checklist (+1 more)
 
 ### Community 287 - "OPEN-1601 Setup Pipeline for the Powerfleet Automation UI"
@@ -4352,7 +4349,7 @@ Cohesion: 0.25
 Nodes (8): AI, Another help regarding fields, Answer 1, Answer 2, Answers, First question - gemini, Question 3 - AG (field info etc), Second question - Antigravity (flash)
 
 ### Community 330 - "QA-5583 Speeding not available for selection"
-Cohesion: 0.20
+Cohesion: 0.25
 Nodes (6): Branch, Code, OPEN-1663 API DEV issues, PR, Shorter Description, TODO
 
 ### Community 331 - "QA-5849 GetStatus Command not populating table"
@@ -6216,8 +6213,8 @@ Cohesion: 0.40
 Nodes (4): OLDER, Resources, TODO, Week at a Glance
 
 ### Community 807 - "Jira.md"
-Cohesion: 0.29
-Nodes (6): Africa Unwind Email Size Solution, ⚠️ Before doing anything: check company policy, Decision status, Deleting after export, Option A — Outlook AutoArchive → local .pst (quick, native, no scripting), Option B — Full export to Markdown + attachments (future-proof, greppable, no PST corruption risk)
+Cohesion: 0.40
+Nodes (4): Key Takeaways, New Entities/Concepts, Summary, Wiki Pages Updated
 
 ### Community 808 - "OE-542 Error 500 when moving asset to config group"
 Cohesion: 0.40
@@ -6240,8 +6237,8 @@ Cohesion: 0.40
 Nodes (4): Files Tagged by Folder, Key Takeaways, Summary, Wiki Pages Created
 
 ### Community 813 - "Swagger Urls.md"
-Cohesion: 0.33
-Nodes (5): Data Table (from email), Key Takeaways, New Entities/Concepts, Summary, Wiki Pages Updated
+Cohesion: 0.40
+Nodes (5): Concepts, Entities, Projects, Systems, Tickets
 
 ### Community 814 - "Branch"
 Cohesion: 0.10
@@ -9023,10 +9020,6 @@ Nodes (4): Rule: A compliance/review gate halt = open a PR immediately, never pa
 Cohesion: 0.33
 Nodes (5): Branches, Description, Image Summary, OE-481 iFrame, TODO
 
-### Community 3502 - "global-deployment-guide.md"
-Cohesion: 0.40
-Nodes (4): Key Takeaways, New Entities/Concepts, Summary, Wiki Pages Updated
-
 ### Community 3504 - "SA Income Tax Brackets.md"
 Cohesion: 0.50
 Nodes (3): Connections, Core Ideas, Open Questions
@@ -9044,32 +9037,28 @@ Cohesion: 0.40
 Nodes (5): 3. Dependencies and Connections, AngularJS Bindings, Custom Directives, JavaScript Components, Services
 
 ### Community 3511 - "open-tickets-cluster2.md"
-Cohesion: 0.40
-Nodes (4): Key Takeaways, New Entities/Concepts, Summary, Wiki Pages Updated
-
-### Community 3512 - "ets-tickets-cluster4.md"
 Cohesion: 0.50
 Nodes (3): Key Takeaways, Summary, Wiki Pages Updated
 
 ## Knowledge Gaps
-- **10033 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+10028 more)
+- **10013 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+10008 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1521 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1520 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `TECHDEBT-190 Move the DST Service to the DeviceConfig Repo` connect `types.ts` to `2022-05-27`, `darkmode.md`, `graph view.md`, `2025-06-30.md`, `Description (from Jira)`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `DONE` connect `index.md` to `VM-83 MiXTalk final stretch`, `QA-4521 PaOBC Removing asset and removing device for NO phone number supplied`, `modFanart.md`, `qua35mm.md`, `VM-234 Incorrect assets displayed in Cascading list for MiXTalk`, `VM-234 Incorrect assets displayed in Cascading list for MiXTalk`, `TEL-17 [21.9 Waiting Paul] Extra thresholds (2)`, `OBC-289 event thresholds`, `OBC-68 Mobile device settings tab: Configure Event Thresholds`, `database_schema_diagram.md`, `SR-10440`, `Frangular Languaging Constructorpng.md`, `2024-10-25.md`, `Git Daily Merge Automation.md`, `Handover Dec 2023.md`, `Jira Open Issues.md`, `KafkaConsumers.png.md`, `OBC-360 (New endpoint - still needs loads of other things)`, `STM-28 Storing Streamax`, `STM-123 Method for Decommissioning of Streamax Device`, `OBC-401 Change the uniqueproperty "PhoneNumber" for Mobile Phone`?**
-  _High betweenness centrality (0.000) - this node is a cross-community bridge._
-- **Why does `DepGraph` connect `global-deployment-guide.md` to `types.ts`, `dependencies`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `Generates a consistent, visually distinct color for a given string.`, `Extracts the XML content from a T-SQL script variable.`, `Checks if a string represents a large integer, likely a unique ID.` to the rest of the system?**
-  _10044 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _10024 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `types.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.07859649122807018 - nodes in this community are weakly interconnected._
 - **Should `index.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.0985576923076923 - nodes in this community are weakly interconnected._
 - **Should `DONE` be split into smaller, more focused modules?**
   _Cohesion score 0.040674603174603176 - nodes in this community are weakly interconnected._
+- **Should `dependencies` be split into smaller, more focused modules?**
+  _Cohesion score 0.11008325624421832 - nodes in this community are weakly interconnected._
+- **Should `build.ts` be split into smaller, more focused modules?**
+  _Cohesion score 0.03508771929824561 - nodes in this community are weakly interconnected._

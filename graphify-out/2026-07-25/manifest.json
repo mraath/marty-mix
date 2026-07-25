@@ -15350,13 +15350,13 @@
     "semantic_hash": ""
   },
   "wiki/index.md": {
-    "mtime": 1784883737.1231115,
-    "ast_hash": "05f42241c192c45eb952632346a1b8df",
+    "mtime": 1784690613.601,
+    "ast_hash": "c725888d70b99b38bf1f1adcd9bfceb4",
     "semantic_hash": ""
   },
   "wiki/log.md": {
-    "mtime": 1784883884.2612548,
-    "ast_hash": "405b47373900f108bbb2c8a4e71343cc",
+    "mtime": 1784618132.536,
+    "ast_hash": "9b74109ce857e190fb5f19384f3cad8e",
     "semantic_hash": ""
   },
   "wiki/sources/au-automation-setup.md": {
@@ -20167,31 +20167,6 @@
   "Attachments/Tax_Certificate2026_Statutory Tables_01-Mar-2025.pdf": {
     "mtime": 1784604405.1883962,
     "ast_hash": "65e0fbad5eb9e7ab8f92022bb7607b7c",
-    "semantic_hash": ""
-  },
-  "Africa Unwind Email Size Solution.md": {
-    "mtime": 1784852805.452109,
-    "ast_hash": "dc6b1f0b21a59a3083beaf27217106b7",
-    "semantic_hash": ""
-  },
-  "DailyNotes/2026-07-24.md": {
-    "mtime": 1784852819.632653,
-    "ast_hash": "3af91f56868fe72debad0ec02411b569",
-    "semantic_hash": ""
-  },
-  "wiki/entities/2026-Salary-Increase-and-Bonus-Review.md": {
-    "mtime": 1784883413.7307117,
-    "ast_hash": "a01346481166765506ad82ba451c4356",
-    "semantic_hash": ""
-  },
-  "wiki/sources/comp-meeting-cheat-sheet.md": {
-    "mtime": 1784883413.535653,
-    "ast_hash": "7e2c413bb2280af4a53e53fd6968a597",
-    "semantic_hash": ""
-  },
-  "wiki/sources/draft-email-managers-comp-review.md": {
-    "mtime": 1784883413.6808052,
-    "ast_hash": "030a0f7995ab5c4c402db4a99512ec0a",
     "semantic_hash": ""
   }
 }
