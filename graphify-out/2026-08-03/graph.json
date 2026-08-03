@@ -1226,7 +1226,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_repository_url",
-      "community": 533,
+      "community": 82,
       "norm_label": "url"
     },
     {
@@ -2096,7 +2096,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_layout",
-      "community": 1,
+      "community": 0,
       "norm_label": "quartz.layout.ts"
     },
     {
@@ -2106,7 +2106,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "quartz_layout_sharedpagecomponents",
-      "community": 1,
+      "community": 0,
       "norm_label": "sharedpagecomponents"
     },
     {
@@ -2116,7 +2116,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "quartz_layout_defaultcontentpagelayout",
-      "community": 1,
+      "community": 0,
       "norm_label": "defaultcontentpagelayout"
     },
     {
@@ -2126,7 +2126,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "quartz_layout_defaultlistpagelayout",
-      "community": 1,
+      "community": 0,
       "norm_label": "defaultlistpagelayout"
     },
     {
@@ -2246,7 +2246,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_cfg",
-      "community": 1,
+      "community": 14,
       "norm_label": "cfg.ts"
     },
     {
@@ -2256,7 +2256,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "quartz_cfg_analytics",
-      "community": 1,
+      "community": 14,
       "norm_label": "analytics"
     },
     {
@@ -2276,7 +2276,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "quartz_cfg_quartzconfig",
-      "community": 3,
+      "community": 0,
       "norm_label": "quartzconfig"
     },
     {
@@ -2286,7 +2286,7 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "quartz_cfg_fullpagelayout",
-      "community": 1,
+      "community": 0,
       "norm_label": "fullpagelayout"
     },
     {
@@ -2296,7 +2296,7 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "quartz_cfg_pagelayout",
-      "community": 1,
+      "community": 14,
       "norm_label": "pagelayout"
     },
     {
@@ -2306,7 +2306,7 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "quartz_cfg_sharedlayout",
-      "community": 1,
+      "community": 14,
       "norm_label": "sharedlayout"
     },
     {
@@ -2576,7 +2576,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_body",
-      "community": 1,
+      "community": 0,
       "norm_label": "body.tsx"
     },
     {
@@ -2586,7 +2586,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "quartz_components_body_body",
-      "community": 1,
+      "community": 0,
       "norm_label": "body()"
     },
     {
@@ -2596,7 +2596,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_breadcrumbs",
-      "community": 5,
+      "community": 1,
       "norm_label": "breadcrumbs.tsx"
     },
     {
@@ -2606,7 +2606,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "quartz_components_breadcrumbs_crumbdata",
-      "community": 5,
+      "community": 1,
       "norm_label": "crumbdata"
     },
     {
@@ -2616,7 +2616,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "quartz_components_breadcrumbs_breadcrumboptions",
-      "community": 5,
+      "community": 1,
       "norm_label": "breadcrumboptions"
     },
     {
@@ -2626,7 +2626,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "quartz_components_breadcrumbs_defaultoptions",
-      "community": 5,
+      "community": 1,
       "norm_label": "defaultoptions"
     },
     {
@@ -2636,7 +2636,7 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "quartz_components_breadcrumbs_formatcrumb",
-      "community": 5,
+      "community": 1,
       "norm_label": "formatcrumb()"
     },
     {
@@ -2646,7 +2646,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_contentmeta",
-      "community": 14,
+      "community": 1,
       "norm_label": "contentmeta.tsx"
     },
     {
@@ -2656,7 +2656,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "quartz_components_contentmeta_contentmetaoptions",
-      "community": 14,
+      "community": 1,
       "norm_label": "contentmetaoptions"
     },
     {
@@ -2666,7 +2666,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "quartz_components_contentmeta_defaultoptions",
-      "community": 14,
+      "community": 1,
       "norm_label": "defaultoptions"
     },
     {
@@ -2676,7 +2676,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "quartz_components_contentmeta_contentmetadata",
-      "community": 14,
+      "community": 1,
       "norm_label": "contentmetadata()"
     },
     {
@@ -2796,7 +2796,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_explorernode",
-      "community": 293,
+      "community": 5,
       "norm_label": "explorernode.tsx"
     },
     {
@@ -2806,7 +2806,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "quartz_components_explorernode_orderentries",
-      "community": 293,
+      "community": 5,
       "norm_label": "orderentries"
     },
     {
@@ -2816,7 +2816,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "quartz_components_explorernode_options",
-      "community": 293,
+      "community": 5,
       "norm_label": "options"
     },
     {
@@ -2826,7 +2826,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "quartz_components_explorernode_datawrapper",
-      "community": 293,
+      "community": 5,
       "norm_label": "datawrapper"
     },
     {
@@ -2846,7 +2846,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "quartz_components_explorernode_getpathsegment",
-      "community": 293,
+      "community": 14,
       "norm_label": "getpathsegment()"
     },
     {
@@ -2856,7 +2856,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "quartz_components_explorernode_filenode",
-      "community": 293,
+      "community": 14,
       "norm_label": "filenode"
     },
     {
@@ -2866,7 +2866,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "quartz_components_explorernode_filenode_constructor",
-      "community": 293,
+      "community": 14,
       "norm_label": ".constructor()"
     },
     {
@@ -2876,7 +2876,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "quartz_components_explorernode_filenode_insert",
-      "community": 293,
+      "community": 14,
       "norm_label": ".insert()"
     },
     {
@@ -2886,7 +2886,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "quartz_components_explorernode_filenode_add",
-      "community": 293,
+      "community": 14,
       "norm_label": ".add()"
     },
     {
@@ -2896,7 +2896,7 @@
       "source_location": "L109",
       "_origin": "ast",
       "id": "quartz_components_explorernode_filenode_filter",
-      "community": 293,
+      "community": 14,
       "norm_label": ".filter()"
     },
     {
@@ -2906,7 +2906,7 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "quartz_components_explorernode_filenode_map",
-      "community": 293,
+      "community": 14,
       "norm_label": ".map()"
     },
     {
@@ -2916,7 +2916,7 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "quartz_components_explorernode_filenode_getfolderpaths",
-      "community": 293,
+      "community": 14,
       "norm_label": ".getfolderpaths()"
     },
     {
@@ -2926,7 +2926,7 @@
       "source_location": "L152",
       "_origin": "ast",
       "id": "quartz_components_explorernode_filenode_sort",
-      "community": 293,
+      "community": 14,
       "norm_label": ".sort()"
     },
     {
@@ -2936,7 +2936,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "quartz_components_explorernode_explorernodeprops",
-      "community": 293,
+      "community": 5,
       "norm_label": "explorernodeprops"
     },
     {
@@ -3086,7 +3086,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "quartz_components_pagelist_sortfn",
-      "community": 14,
+      "community": 1,
       "norm_label": "sortfn"
     },
     {
@@ -3346,7 +3346,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_pages_foldercontent",
-      "community": 14,
+      "community": 1,
       "norm_label": "foldercontent.tsx"
     },
     {
@@ -3356,7 +3356,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "quartz_components_pages_foldercontent_foldercontentoptions",
-      "community": 14,
+      "community": 1,
       "norm_label": "foldercontentoptions"
     },
     {
@@ -3366,7 +3366,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "quartz_components_pages_foldercontent_defaultoptions",
-      "community": 14,
+      "community": 1,
       "norm_label": "defaultoptions"
     },
     {
@@ -3376,7 +3376,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_pages_tagcontent",
-      "community": 14,
+      "community": 1,
       "norm_label": "tagcontent.tsx"
     },
     {
@@ -3386,7 +3386,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "quartz_components_pages_tagcontent_tagcontentoptions",
-      "community": 14,
+      "community": 1,
       "norm_label": "tagcontentoptions"
     },
     {
@@ -3396,7 +3396,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "quartz_components_pages_tagcontent_defaultoptions",
-      "community": 14,
+      "community": 1,
       "norm_label": "defaultoptions"
     },
     {
@@ -3406,7 +3406,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_renderpage",
-      "community": 1,
+      "community": 0,
       "norm_label": "renderpage.tsx"
     },
     {
@@ -3416,7 +3416,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "quartz_components_renderpage_rendercomponents",
-      "community": 1,
+      "community": 0,
       "norm_label": "rendercomponents"
     },
     {
@@ -3426,7 +3426,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "quartz_components_renderpage_headerregex",
-      "community": 1,
+      "community": 0,
       "norm_label": "headerregex"
     },
     {
@@ -3436,7 +3436,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "quartz_components_renderpage_pageresources",
-      "community": 1,
+      "community": 0,
       "norm_label": "pageresources()"
     },
     {
@@ -3446,7 +3446,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "quartz_components_renderpage_renderpage",
-      "community": 1,
+      "community": 0,
       "norm_label": "renderpage()"
     },
     {
@@ -3486,7 +3486,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_scripts_checkbox_inline",
-      "community": 533,
+      "community": 25,
       "norm_label": "checkbox.inline.ts"
     },
     {
@@ -3496,7 +3496,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "quartz_components_scripts_checkbox_inline_checkboxid",
-      "community": 533,
+      "community": 25,
       "norm_label": "checkboxid()"
     },
     {
@@ -3506,7 +3506,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_scripts_clipboard_inline",
-      "community": 1,
+      "community": 0,
       "norm_label": "clipboard.inline.ts"
     },
     {
@@ -3516,7 +3516,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "quartz_components_scripts_clipboard_inline_onclick",
-      "community": 1,
+      "community": 0,
       "norm_label": "onclick()"
     },
     {
@@ -3696,7 +3696,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_scripts_popover_inline",
-      "community": 533,
+      "community": 25,
       "norm_label": "popover.inline.ts"
     },
     {
@@ -3706,7 +3706,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "quartz_components_scripts_popover_inline_p",
-      "community": 533,
+      "community": 25,
       "norm_label": "p"
     },
     {
@@ -3716,7 +3716,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "quartz_components_scripts_popover_inline_mouseenterhandler",
-      "community": 533,
+      "community": 25,
       "norm_label": "mouseenterhandler()"
     },
     {
@@ -3936,7 +3936,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline",
-      "community": 533,
+      "community": 25,
       "norm_label": "spa.inline.ts"
     },
     {
@@ -3946,7 +3946,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_announcer",
-      "community": 533,
+      "community": 25,
       "norm_label": "announcer"
     },
     {
@@ -3956,7 +3956,7 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_iselement",
-      "community": 533,
+      "community": 25,
       "norm_label": "iselement()"
     },
     {
@@ -3966,7 +3966,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_islocalurl",
-      "community": 533,
+      "community": 25,
       "norm_label": "islocalurl()"
     },
     {
@@ -3976,7 +3976,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_issamepage",
-      "community": 533,
+      "community": 25,
       "norm_label": "issamepage()"
     },
     {
@@ -3986,7 +3986,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_getopts",
-      "community": 533,
+      "community": 25,
       "norm_label": "getopts()"
     },
     {
@@ -3996,7 +3996,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_notifynav",
-      "community": 533,
+      "community": 25,
       "norm_label": "notifynav()"
     },
     {
@@ -4006,7 +4006,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_cleanupfns",
-      "community": 533,
+      "community": 25,
       "norm_label": "cleanupfns"
     },
     {
@@ -4016,7 +4016,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_navigate",
-      "community": 533,
+      "community": 25,
       "norm_label": "navigate()"
     },
     {
@@ -4026,7 +4026,7 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_createrouter",
-      "community": 533,
+      "community": 25,
       "norm_label": "createrouter()"
     },
     {
@@ -4036,7 +4036,7 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_constructor",
-      "community": 533,
+      "community": 25,
       "norm_label": "constructor()"
     },
     {
@@ -4046,7 +4046,7 @@
       "source_location": "L180",
       "_origin": "ast",
       "id": "quartz_components_scripts_spa_inline_connectedcallback",
-      "community": 533,
+      "community": 25,
       "norm_label": "connectedcallback()"
     },
     {
@@ -4166,7 +4166,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_depgraph_test",
-      "community": 0,
+      "community": 3107,
       "norm_label": "depgraph.test.ts"
     },
     {
@@ -4706,7 +4706,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_404",
-      "community": 1,
+      "community": 0,
       "norm_label": "404.tsx"
     },
     {
@@ -4726,7 +4726,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_aliases",
-      "community": 5,
+      "community": 0,
       "norm_label": "aliases.ts"
     },
     {
@@ -4856,7 +4856,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_contentindex",
-      "community": 25,
+      "community": 0,
       "norm_label": "contentindex.ts"
     },
     {
@@ -4866,7 +4866,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_contentindex_contentindex",
-      "community": 25,
+      "community": 0,
       "norm_label": "contentindex"
     },
     {
@@ -4886,7 +4886,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_contentindex_options",
-      "community": 25,
+      "community": 0,
       "norm_label": "options"
     },
     {
@@ -4896,7 +4896,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_contentindex_defaultoptions",
-      "community": 25,
+      "community": 0,
       "norm_label": "defaultoptions"
     },
     {
@@ -4906,7 +4906,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_contentindex_generatesitemap",
-      "community": 5,
+      "community": 0,
       "norm_label": "generatesitemap()"
     },
     {
@@ -4916,7 +4916,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_contentindex_generaterssfeed",
-      "community": 25,
+      "community": 0,
       "norm_label": "generaterssfeed()"
     },
     {
@@ -4926,7 +4926,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_contentpage",
-      "community": 1,
+      "community": 0,
       "norm_label": "contentpage.tsx"
     },
     {
@@ -4956,7 +4956,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_folderpage",
-      "community": 1,
+      "community": 0,
       "norm_label": "folderpage.tsx"
     },
     {
@@ -4966,7 +4966,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_folderpage_folderpageoptions",
-      "community": 1,
+      "community": 0,
       "norm_label": "folderpageoptions"
     },
     {
@@ -4986,7 +4986,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_helpers",
-      "community": 3,
+      "community": 0,
       "norm_label": "helpers.ts"
     },
     {
@@ -4996,7 +4996,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_helpers_writeoptions",
-      "community": 3,
+      "community": 0,
       "norm_label": "writeoptions"
     },
     {
@@ -5006,7 +5006,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_helpers_write",
-      "community": 1,
+      "community": 0,
       "norm_label": "write()"
     },
     {
@@ -5046,7 +5046,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_tagpage",
-      "community": 1,
+      "community": 0,
       "norm_label": "tagpage.tsx"
     },
     {
@@ -5056,7 +5056,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_tagpage_tagpageoptions",
-      "community": 1,
+      "community": 0,
       "norm_label": "tagpageoptions"
     },
     {
@@ -5076,7 +5076,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_filters_draft",
-      "community": 2,
+      "community": 533,
       "norm_label": "draft.ts"
     },
     {
@@ -5086,7 +5086,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "quartz_plugins_filters_draft_removedrafts",
-      "community": 2,
+      "community": 533,
       "norm_label": "removedrafts()"
     },
     {
@@ -5096,7 +5096,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_filters_explicit",
-      "community": 2,
+      "community": 533,
       "norm_label": "explicit.ts"
     },
     {
@@ -5106,7 +5106,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "quartz_plugins_filters_explicit_explicitpublish",
-      "community": 2,
+      "community": 533,
       "norm_label": "explicitpublish()"
     },
     {
@@ -5116,7 +5116,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_filters_index",
-      "community": 2,
+      "community": 533,
       "norm_label": "index.ts"
     },
     {
@@ -5126,7 +5126,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_index",
-      "community": 3,
+      "community": 0,
       "norm_label": "index.ts"
     },
     {
@@ -5146,7 +5146,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "quartz_plugins_index_vfile",
-      "community": 3,
+      "community": 0,
       "norm_label": "vfile"
     },
     {
@@ -5156,7 +5156,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "quartz_plugins_index_datamap",
-      "community": 3,
+      "community": 0,
       "norm_label": "datamap"
     },
     {
@@ -5586,7 +5586,7 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "quartz_plugins_transformers_links_datamap",
-      "community": 14,
+      "community": 5,
       "norm_label": "datamap"
     },
     {
@@ -6046,7 +6046,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_types",
-      "community": 2,
+      "community": 0,
       "norm_label": "types.ts"
     },
     {
@@ -6056,7 +6056,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "quartz_plugins_types_plugintypes",
-      "community": 2,
+      "community": 0,
       "norm_label": "plugintypes"
     },
     {
@@ -6066,7 +6066,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "quartz_plugins_types_optiontype",
-      "community": 2,
+      "community": 0,
       "norm_label": "optiontype"
     },
     {
@@ -6086,7 +6086,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "quartz_plugins_types_quartztransformerplugininstance",
-      "community": 2,
+      "community": 0,
       "norm_label": "quartztransformerplugininstance"
     },
     {
@@ -6096,7 +6096,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "quartz_plugins_types_quartzfilterplugin",
-      "community": 2,
+      "community": 533,
       "norm_label": "quartzfilterplugin"
     },
     {
@@ -6106,7 +6106,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "quartz_plugins_types_quartzfilterplugininstance",
-      "community": 2,
+      "community": 0,
       "norm_label": "quartzfilterplugininstance"
     },
     {
@@ -6126,7 +6126,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "quartz_plugins_types_quartzemitterplugininstance",
-      "community": 2,
+      "community": 0,
       "norm_label": "quartzemitterplugininstance"
     },
     {
@@ -6136,7 +6136,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_vfile",
-      "community": 14,
+      "community": 3,
       "norm_label": "vfile.ts"
     },
     {
@@ -6166,7 +6166,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "quartz_plugins_vfile_defaultprocessedcontent",
-      "community": 1,
+      "community": 0,
       "norm_label": "defaultprocessedcontent()"
     },
     {
@@ -6296,7 +6296,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_util_ctx",
-      "community": 3,
+      "community": 0,
       "norm_label": "ctx.ts"
     },
     {
@@ -6306,7 +6306,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "quartz_util_ctx_argv",
-      "community": 3,
+      "community": 0,
       "norm_label": "argv"
     },
     {
@@ -6316,7 +6316,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "quartz_util_ctx_buildctx",
-      "community": 3,
+      "community": 0,
       "norm_label": "buildctx"
     },
     {
@@ -6326,7 +6326,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_util_escape",
-      "community": 25,
+      "community": 0,
       "norm_label": "escape.ts"
     },
     {
@@ -6336,7 +6336,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_util_escape_escapehtml",
-      "community": 25,
+      "community": 0,
       "norm_label": "escapehtml()"
     },
     {
@@ -6516,7 +6516,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "quartz_util_path_clone",
-      "community": 1,
+      "community": 0,
       "norm_label": "clone"
     },
     {
@@ -6556,7 +6556,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "quartz_util_path_fullslug",
-      "community": 3,
+      "community": 0,
       "norm_label": "fullslug"
     },
     {
@@ -6576,7 +6576,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "quartz_util_path_simpleslug",
-      "community": 14,
+      "community": 5,
       "norm_label": "simpleslug"
     },
     {
@@ -6616,7 +6616,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "quartz_util_path_getfullslug",
-      "community": 533,
+      "community": 25,
       "norm_label": "getfullslug()"
     },
     {
@@ -6666,7 +6666,7 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "quartz_util_path_rebasehtmlelement",
-      "community": 533,
+      "community": 25,
       "norm_label": "_rebasehtmlelement()"
     },
     {
@@ -6676,7 +6676,7 @@
       "source_location": "L110",
       "_origin": "ast",
       "id": "quartz_util_path_normalizerelativeurls",
-      "community": 533,
+      "community": 25,
       "norm_label": "normalizerelativeurls()"
     },
     {
@@ -6696,7 +6696,7 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "quartz_util_path_normalizehastelement",
-      "community": 1,
+      "community": 0,
       "norm_label": "normalizehastelement()"
     },
     {
@@ -6746,7 +6746,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "quartz_util_path_joinsegments",
-      "community": 5,
+      "community": 0,
       "norm_label": "joinsegments()"
     },
     {
@@ -6756,7 +6756,7 @@
       "source_location": "L192",
       "_origin": "ast",
       "id": "quartz_util_path_getallsegmentprefixes",
-      "community": 14,
+      "community": 5,
       "norm_label": "getallsegmentprefixes()"
     },
     {
@@ -6926,7 +6926,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_util_resources",
-      "community": 1,
+      "community": 21,
       "norm_label": "resources.tsx"
     },
     {
@@ -6946,7 +6946,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "quartz_util_resources_jsresourcetoscriptelement",
-      "community": 1,
+      "community": 0,
       "norm_label": "jsresourcetoscriptelement()"
     },
     {
@@ -6956,7 +6956,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "quartz_util_resources_staticresources",
-      "community": 1,
+      "community": 0,
       "norm_label": "staticresources"
     },
     {
@@ -6986,7 +6986,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_util_theme",
-      "community": 0,
+      "community": 14,
       "norm_label": "theme.ts"
     },
     {
@@ -6996,7 +6996,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_util_theme_colorscheme",
-      "community": 0,
+      "community": 14,
       "norm_label": "colorscheme"
     },
     {
@@ -7006,7 +7006,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "quartz_util_theme_colors",
-      "community": 0,
+      "community": 14,
       "norm_label": "colors"
     },
     {
@@ -7016,7 +7016,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "quartz_util_theme_theme",
-      "community": 0,
+      "community": 14,
       "norm_label": "theme"
     },
     {
@@ -7026,7 +7026,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "quartz_util_theme_themekey",
-      "community": 0,
+      "community": 14,
       "norm_label": "themekey"
     },
     {
@@ -7036,7 +7036,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "quartz_util_theme_googlefonthref",
-      "community": 0,
+      "community": 14,
       "norm_label": "googlefonthref()"
     },
     {
@@ -7046,7 +7046,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "quartz_util_theme_joinstyles",
-      "community": 0,
+      "community": 14,
       "norm_label": "joinstyles()"
     },
     {
@@ -99514,7 +99514,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_505_identify_channels_for_blurring",
-      "community": 528,
+      "community": 1257,
       "norm_label": "open-505 identify channels for blurring.md"
     },
     {
@@ -99754,7 +99754,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_689_camera_direction_field_needed_in_operational_stored_procs",
-      "community": 528,
+      "community": 1257,
       "norm_label": "open-689 camera direction field needed in operational stored procs.md"
     },
     {
@@ -139367,7 +139367,7 @@
       "community": 3173,
       "norm_label": "ac parent document",
       "community_name": "AC Parent Document",
-      "id": "ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_md"
+      "id": "ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_md"
     },
     {
       "label": "OPEN-505: Identify channels for blurring diagram",
@@ -140295,7 +140295,7 @@
       "community": 2273,
       "norm_label": "geteventlist",
       "community_name": "Jira Regression.md",
-      "id": "done_done_done_done_done_done_done_done_done_done_done_done_done_done_done_geteventlist"
+      "id": "done_done_done_done_done_done_done_done_done_done_done_done_done_done_geteventlist"
     },
     {
       "label": "SR-11406 ENT EKS Infohub User Error",
@@ -148857,7 +148857,7 @@
       "community": 2542,
       "norm_label": "filters documentation",
       "community_name": "titlegeneratorforwrittenpiecesAwesome.md",
-      "id": "filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_md"
+      "id": "filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_md"
     },
     {
       "label": ".npmrc",
@@ -151755,17 +151755,6 @@
       "source": "package_repository",
       "target": "package_repository_url",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "quartz/components/scripts/popover.inline.ts",
-      "source_location": "L64",
-      "weight": 1.0,
-      "source": "quartz_components_scripts_popover_inline_mouseenterhandler",
-      "target": "package_repository_url"
     },
     {
       "relation": "contains",
@@ -277888,5 +277877,5 @@
       "source_file": "Attachments/MicrosoftTeams-image (13).png"
     }
   ],
-  "built_at_commit": "a5fe00e12c635c37c2cc7409afeae4f5f189385c"
+  "built_at_commit": "563db416f7bad5c4502061e628b7c6b55a545ab8"
 }

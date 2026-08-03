@@ -1,3036 +1,3036 @@
-# Graph Report - marty-mix  (2026-08-03)
+# Graph Report - marty-mix  (2026-07-25)
 
 ## Corpus Check
 - 3108 files · ~9,867,648 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 14784 nodes · 12615 edges · 3514 communities (1993 shown, 1521 thin omitted)
+- 14784 nodes · 12614 edges · 3514 communities (1993 shown, 1521 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.62)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a5fe00e1`
+- Built from commit: `563db416`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_types.ts|types.ts]]
-- [[_COMMUNITY_index.ts|index.ts]]
-- [[_COMMUNITY_DONE|DONE]]
-- [[_COMMUNITY_dependencies|dependencies]]
-- [[_COMMUNITY_build.ts|build.ts]]
-- [[_COMMUNITY_How to stop worrying and start living|How to stop worrying and start living.md]]
-- [[_COMMUNITY_index|index.md]]
-- [[_COMMUNITY_TECHDEBT-190 Move the DST Service to the DeviceConfig Repo|TECHDEBT-190 Move the DST Service to the DeviceConfig Repo]]
-- [[_COMMUNITY_ConfigTools Test Gap Analysis — 2026-06-22|ConfigTools Test Gap Analysis — 2026-06-22]]
-- [[_COMMUNITY_Command-45|Command-45.md]]
-- [[_COMMUNITY_CONFIG-3387 App or Report for Command 45|CONFIG-3387 App or Report for Command 45.md]]
-- [[_COMMUNITY_SR-16213 assets page returns to not commissioned|SR-16213 assets page returns to not commissioned]]
-- [[_COMMUNITY_DST Debug Guide — Daylight Saving Time Troubleshooting|DST Debug Guide — Daylight Saving Time Troubleshooting]]
-- [[_COMMUNITY_types.ts|types.ts]]
-- [[_COMMUNITY_path.ts|path.ts]]
-- [[_COMMUNITY_MIX3K-9 MiX3000 Default Config Group|MIX3K-9 MiX3000 Default Config Group.md]]
-- [[_COMMUNITY_search.inline.ts|search.inline.ts]]
-- [[_COMMUNITY_PMU Overview|PMU Overview.md]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_OPEN-1715 Setup UI and API on AWS for AU|OPEN-1715 Setup UI and API on AWS for AU]]
-- [[_COMMUNITY_OPEN-1842 Investigate and Optimise Token Usage in AI ChatBot|OPEN-1842 Investigate and Optimise Token Usage in AI ChatBot]]
-- [[_COMMUNITY_OE-513 Configuration Groups - Frangularisation and enhancements|OE-513 Configuration Groups - Frangularisation and enhancements.md]]
-- [[_COMMUNITY_Description Update from Nicole|Description Update from Nicole]]
-- [[_COMMUNITY_Description|Description]]
-- [[_COMMUNITY_OPEN-2576 — Automated Testing (Playwright E2E)|OPEN-2576 — Automated Testing (Playwright E2E)]]
-- [[_COMMUNITY_Tel-84 Command sent twice|Tel-84 Command sent twice]]
-- [[_COMMUNITY_OE-501 SPIKE to create the multi-select config groups|OE-501 SPIKE to create the multi-select config groups.md]]
-- [[_COMMUNITY_RecentNotes.tsx|RecentNotes.tsx]]
-- [[_COMMUNITY_Ops-Tools|Ops-Tools.md]]
-- [[_COMMUNITY_Command 45|Command 45]]
-- [[_COMMUNITY_Gemini Project Map Powerfleet Automation UI - Navigation & Decommissioning|Gemini Project Map: Powerfleet Automation UI - Navigation & Decommissioning]]
-- [[_COMMUNITY_MiX_|MiX_.md]]
-- [[_COMMUNITY_OE-509 UI Asset Upload FW|OE-509 UI Asset Upload FW]]
-- [[_COMMUNITY_OPEN-1729 Change the UI for QC to accommodate the information needed to start checks|OPEN-1729 Change the UI for QC to accommodate the information needed to start checks]]
-- [[_COMMUNITY_QA-6035 CalAmp - Imei field greyed out after adding a VIN number|QA-6035 CalAmp - Imei field greyed out after adding a VIN number]]
-- [[_COMMUNITY_index.ts|index.ts]]
-- [[_COMMUNITY_SR-15901|SR-15901]]
-- [[_COMMUNITY_SR-13274 VIN not cleared after decommissioning|SR-13274 VIN not cleared after decommissioning]]
-- [[_COMMUNITY_SR-17838 Error when clicking on Mobile Device Settings|SR-17838 Error when clicking on Mobile Device Settings]]
-- [[_COMMUNITY_ETS-8669 OMAN Command 45 DST issue|ETS-8669 OMAN Command 45 DST issue]]
-- [[_COMMUNITY_Operations Tools|Operations Tools.md]]
-- [[_COMMUNITY_Selection Criteria Example|Selection Criteria Example.md]]
-- [[_COMMUNITY_Config Overview WIP.excalidraw|Config Overview WIP.excalidraw.md]]
-- [[_COMMUNITY_OE-611 Alert not adjusting when removing missing parameters|OE-611 Alert not adjusting when removing missing parameters]]
-- [[_COMMUNITY_OMAN Daylight Savings Server Information|OMAN Daylight Savings Server Information]]
-- [[_COMMUNITY_QA-6032 Moving a Non-OEM asset into an OEM Config group removes the VIN Number from the asset|QA-6032 Moving a Non-OEM asset into an OEM Config group removes the VIN Number from the asset]]
-- [[_COMMUNITY_ofm.ts|ofm.ts]]
-- [[_COMMUNITY_Major Issues|Major Issues:]]
-- [[_COMMUNITY_OPEN-1832 Add Test Case Creation Screen|OPEN-1832 Add Test Case Creation Screen]]
-- [[_COMMUNITY_DepGraph|DepGraph]]
-- [[_COMMUNITY_Frangular Getting Started|Frangular Getting Started.md]]
-- [[_COMMUNITY_Frangular Languaging|Frangular Languaging.md]]
-- [[_COMMUNITY_Daylight Saving Time (DST) & Command 45 Summary|Daylight Saving Time (DST) & Command 45 Summary]]
-- [[_COMMUNITY_Mobile Unit Alerts Stored Procedure Optimization|Mobile Unit Alerts Stored Procedure Optimization]]
-- [[_COMMUNITY_handlers.js|handlers.js]]
-- [[_COMMUNITY_ExplorerNode.tsx|ExplorerNode.tsx]]
-- [[_COMMUNITY_SR-17834 Group with Id XXXXX not found|SR-17834 Group with Id XXXXX not found]]
-- [[_COMMUNITY_2026-04-07|2026-04-07.md]]
-- [[_COMMUNITY_package.json|package.json]]
-- [[_COMMUNITY_CONFIG-3663 Make Available Ford OEM|CONFIG-3663 Make Available Ford OEM]]
-- [[_COMMUNITY_Activity feed|Activity feed]]
-- [[_COMMUNITY_QA-6193 QA - Trimble Lite and Calamp avl and unit power changes applies to both templates when editing one|QA-6193 QA - Trimble Lite and Calamp avl and unit power changes applies to both templates when editing one]]
-- [[_COMMUNITY_QA-6236 VIN is not updated on the ROVI IV device when updating manually in the DynaMiX UI|QA-6236 VIN is not updated on the ROVI IV device when updating manually in the DynaMiX UI]]
-- [[_COMMUNITY_Code|Code.md]]
-- [[_COMMUNITY_CONFIG-4064 Validate numbers for SMSs|CONFIG-4064 Validate numbers for SMSs]]
-- [[_COMMUNITY_spa.inline.ts|spa.inline.ts]]
-- [[_COMMUNITY_index|index.md]]
-- [[_COMMUNITY_generate_yed_graph.py|generate_yed_graph.py]]
-- [[_COMMUNITY_Session Summary|Session Summary]]
-- [[_COMMUNITY_ETS-6021 CG Template change but Asset remains Ready to upload|ETS-6021 CG Template change but Asset remains Ready to upload]]
-- [[_COMMUNITY_BE|BE.md]]
-- [[_COMMUNITY_How to Win Friends and Influence people|How to Win Friends and Influence people.md]]
-- [[_COMMUNITY_Resource Inventory|Resource Inventory]]
-- [[_COMMUNITY_Image inspiration|Image inspiration]]
-- [[_COMMUNITY_AWS Concepts The Pizza Restaurant Analogy|AWS Concepts: The "Pizza Restaurant" Analogy]]
-- [[_COMMUNITY_Integration Testing Between OLD UI, FR-UI and FR-API|Integration Testing Between OLD UI, FR-UI and FR-API.md]]
-- [[_COMMUNITY_OE-20 NA POC Write a small App|OE-20 NA POC Write a small App.md]]
-- [[_COMMUNITY_OE-605 Alerts Column logic Config Group|OE-605 Alerts Column logic Config Group]]
-- [[_COMMUNITY_The Code — Section by Section|The Code — Section by Section]]
-- [[_COMMUNITY_Caching|Caching]]
-- [[_COMMUNITY_==LOOKING AHEAD (August)==|==LOOKING AHEAD (August)==]]
-- [[_COMMUNITY_Config-3508 Testing Large file transfer for Pallavi|Config-3508 Testing Large file transfer for Pallavi.md]]
-- [[_COMMUNITY_MIX3K-89 Missing upgrade firmware button for MiX3000 devices|MIX3K-89 Missing upgrade firmware button for MiX3000 devices]]
-- [[_COMMUNITY_OE-496 API Get config Groups and columns|OE-496 API Get config Groups and columns]]
-- [[_COMMUNITY_OE-501 SPIKE to create the multi-select config groups|OE-501 SPIKE to create the multi-select config groups]]
-- [[_COMMUNITY_OPEN-1672 Add centralised login for the new Automation UI|OPEN-1672 Add centralised login for the new Automation UI]]
-- [[_COMMUNITY_SR-16008 AlsoGetTXTFiles|SR-16008 AlsoGetTXTFiles]]
-- [[_COMMUNITY_SR-16877 Airtime management Module - Contract column not displaying any data|SR-16877 Airtime management Module - Contract column not displaying any data]]
-- [[_COMMUNITY_AC-350 Add DynamicCAN endpoints to the Config API|AC-350 Add DynamicCAN endpoints to the Config API]]
-- [[_COMMUNITY_Frangular - OLD Learning|Frangular - OLD Learning.md]]
-- [[_COMMUNITY_Section 3 The CICD Pipeline — Azure DevOps YML (Day-to-day deploys)|Section 3: The CI/CD Pipeline — Azure DevOps YML (Day-to-day deploys)]]
-- [[_COMMUNITY_SR-8111(httpsjira.mixtelematics.combrowseSR-8111) Timebased events|[SR-8111](https://jira.mixtelematics.com/browse/SR-8111) Timebased events]]
-- [[_COMMUNITY_TECHDEBT-190 Move the DST Service to the DeviceConfig Repo|TECHDEBT-190 Move the DST Service to the DeviceConfig Repo.md]]
-- [[_COMMUNITY_DIE-485 DI Config Asset config file|DIE-485 DI Config Asset config file.md]]
-- [[_COMMUNITY_OE-532 Add Remove action and Hyperlink Edit|OE-532 Add Remove action and Hyperlink Edit]]
-- [[_COMMUNITY_OE-487 UI Config list|OE-487 UI Config list.md]]
-- [[_COMMUNITY_OE-490 UI Upload FW|OE-490 UI Upload FW]]
-- [[_COMMUNITY_OE-515 Alerts Column logic|OE-515 Alerts Column logic]]
-- [[_COMMUNITY_SR-19946 ALG DTS fix|SR-19946 ALG DTS fix]]
-- [[_COMMUNITY_OPEN-1293 Create QC Automation API and Logic|OPEN-1293 Create QC Automation API and Logic]]
-- [[_COMMUNITY_Description (from Jira)|Description (from Jira)]]
-- [[_COMMUNITY_OPEN-930 Add Config File Downloads|OPEN-930 Add Config File Downloads]]
-- [[_COMMUNITY_SR-19107 IMSI has incorrect value|SR-19107 IMSI has incorrect value]]
-- [[_COMMUNITY_Folder Moves|Folder Moves]]
-- [[_COMMUNITY_compilerOptions|compilerOptions]]
-- [[_COMMUNITY_Alerts-Feature|Alerts-Feature.md]]
-- [[_COMMUNITY_Wiki Log — Powerfleet Engineering Knowledge Base|Wiki Log — Powerfleet Engineering Knowledge Base]]
-- [[_COMMUNITY_Test Pipeline Incident Report — 4 June 2026|Test Pipeline Incident Report — 4 June 2026]]
-- [[_COMMUNITY_Automation API Build Fixes — 2026-03-11|Automation API Build Fixes — 2026-03-11]]
-- [[_COMMUNITY_New Frangular Page|New Frangular Page.md]]
-- [[_COMMUNITY_GPS Drift Detecting|GPS Drift Detecting]]
-- [[_COMMUNITY_CONFIG-4035 INT cant add asset|CONFIG-4035 INT cant add asset]]
-- [[_COMMUNITY_Odometer|Odometer.md]]
-- [[_COMMUNITY_BME-7 New Config Endpoint for Mesa with Magix|BME-7 New Config Endpoint for Mesa with Magix]]
-- [[_COMMUNITY_Full Sprint Overview (_synced 2026-05-28_)|Full Sprint Overview (_synced 2026-05-28_)]]
-- [[_COMMUNITY_package.json|package.json]]
-- [[_COMMUNITY_SR-13904 GSM Modem Device Settings hidden on Mobile Device Template|SR-13904 GSM Modem Device Settings hidden on Mobile Device Template]]
-- [[_COMMUNITY_SR-15971 State of Charge always 0%|SR-15971 State of Charge always 0%]]
-- [[_COMMUNITY_OE-501 UI Documentation|OE-501 UI Documentation.md]]
-- [[_COMMUNITY_An Example Component|An Example Component]]
-- [[_COMMUNITY_Question|Question]]
-- [[_COMMUNITY_AWS Infrastructure and Powerfleet Automation Deployment Briefing|AWS Infrastructure and Powerfleet Automation Deployment Briefing]]
-- [[_COMMUNITY_Dale Carnegie|Dale Carnegie.md]]
-- [[_COMMUNITY_OPEN-1493 UI for Salesforce case Info|OPEN-1493 UI for Salesforce case Info]]
-- [[_COMMUNITY_OPEN-2029 Persist Config Diff to Database|OPEN-2029 Persist Config Diff to Database]]
-- [[_COMMUNITY_OPEN-2881 — CT - Spike CAN compliance data sources + formula|OPEN-2881 — CT - Spike: CAN compliance data sources + formula]]
-- [[_COMMUNITY_OPEN-997 New Column Reordering|OPEN-997 New Column Reordering]]
-- [[_COMMUNITY_QA-5861 Command 45 not sent when site changes|QA-5861 Command 45 not sent when site changes]]
-- [[_COMMUNITY_OPEN-2438 — OMAN Investigate porting DST CommandLine tool from AU (v18.17 compatibility)|OPEN-2438 — OMAN: Investigate porting DST CommandLine tool from AU (v18.17 compatibility)]]
-- [[_COMMUNITY_sql|sql.md]]
-- [[_COMMUNITY_STM-1074 Video event configuration|STM-1074 Video event configuration]]
-- [[_COMMUNITY_In-depth Architectural Review and Refactoring Plan for AssetMobileDeviceEditTemplate.html|In-depth Architectural Review and Refactoring Plan for AssetMobileDeviceEditTemplate.html]]
-- [[_COMMUNITY_AC-357 Find and assign the default config group|AC-357 Find and assign the default config group]]
-- [[_COMMUNITY_AWS Tagging — AU Powerfleet Automation Resources|AWS Tagging — AU Powerfleet Automation Resources]]
-- [[_COMMUNITY_Amazon Web Services Login|Amazon Web Services Login]]
-- [[_COMMUNITY_1. DynaMiX.Backend|1. DynaMiX.Backend]]
-- [[_COMMUNITY_Frangular Spinner|Frangular Spinner.md]]
-- [[_COMMUNITY_Monday, November 24, 2025|Monday, November 24, 2025]]
-- [[_COMMUNITY_Basic examples|Basic examples]]
-- [[_COMMUNITY_Config|Config.md]]
-- [[_COMMUNITY_Part 1 DEV Environment Setup (Retrospective)|Part 1: DEV Environment Setup (Retrospective)]]
-- [[_COMMUNITY_DME|DME.md]]
-- [[_COMMUNITY_CONFIG-3988 Configure alerts for new Config Compiler instances|CONFIG-3988 Configure alerts for new Config Compiler instances.md]]
-- [[_COMMUNITY_MiX|MiX.md]]
-- [[_COMMUNITY_CONFIG-3988 Configure alerts for new Config Compiler instances|CONFIG-3988 Configure alerts for new Config Compiler instances]]
-- [[_COMMUNITY_OE-543 Move Assets Error|OE-543 Move Assets Error]]
-- [[_COMMUNITY_SQL Query Execution Plan|SQL Query Execution Plan.md]]
-- [[_COMMUNITY_OE-491 UI Assets List Panel|OE-491 UI Assets List Panel]]
-- [[_COMMUNITY_OE-519 API Populate Lastposition for Asset List|OE-519 API Populate Lastposition for Asset List]]
-- [[_COMMUNITY_OPEN-2802 — DataExports Pipeline Investigation|OPEN-2802 — DataExports Pipeline Investigation]]
-- [[_COMMUNITY_Description (from Jira)|Description (from Jira)]]
-- [[_COMMUNITY_Issues Fixed|Issues Fixed]]
-- [[_COMMUNITY_OPEN-371 Column Order Lost|OPEN-371 Column Order Lost]]
-- [[_COMMUNITY_OPEN-505 Identify channels for blurring|OPEN-505 Identify channels for blurring]]
-- [[_COMMUNITY_QA-5675 QA - Remora - Diagnostic Page Speed ,Odometer and asset site time not displaying|QA-5675 QA - Remora - Diagnostic Page Speed ,Odometer and asset site time not displaying]]
-- [[_COMMUNITY_Claude Agent Server — Research & Decisions|Claude Agent Server — Research & Decisions]]
-- [[_COMMUNITY_SR-13967 Stored Proc taking too long on Config Page|SR-13967 Stored Proc taking too long on Config Page]]
-- [[_COMMUNITY_SR-16598 RW - Scheduler Timestamps flopping around on Uploads for FM units|SR-16598 RW - Scheduler Timestamps flopping around on Uploads for FM units]]
-- [[_COMMUNITY_Wiki Schema — Powerfleet Engineering Knowledge Base|Wiki Schema — Powerfleet Engineering Knowledge Base]]
-- [[_COMMUNITY_Template Analysis and Implementation Plan|Template Analysis and Implementation Plan]]
-- [[_COMMUNITY_Comprehensive Architectural Review and Refactoring Plan|Comprehensive Architectural Review and Refactoring Plan]]
-- [[_COMMUNITY_Frangular Notifications|Frangular Notifications.md]]
-- [[_COMMUNITY_Latest Oman DST Issues (Feb 2026)|Latest Oman DST Issues (Feb 2026)]]
-- [[_COMMUNITY_Marty-Mix Second Brain & Knowledge Base|Marty-Mix: Second Brain & Knowledge Base]]
-- [[_COMMUNITY_Global Deployment Guide Powerfleet Automation (API & UI)|Global Deployment Guide: Powerfleet Automation (API & UI)]]
-- [[_COMMUNITY_compilerOptions|compilerOptions]]
-- [[_COMMUNITY_18.17 information|18.17 information]]
-- [[_COMMUNITY_DIE-495 Config Report Asset Config Report UI Work|DIE-495 Config Report Asset Config Report UI Work]]
-- [[_COMMUNITY_CONFIG-3297 Parameter validation when renaming|CONFIG-3297 Parameter validation when renaming]]
-- [[_COMMUNITY_Dashboard ideas|Dashboard ideas.md]]
-- [[_COMMUNITY_FWQ-1400 FWQ - 3-Axis -Accelerometer events not applicable to MiX 6000 Lte devices|FWQ-1400 FWQ - 3-Axis -Accelerometer events not applicable to MiX 6000 Lte devices]]
-- [[_COMMUNITY_FE-2399 Location imports|FE-2399 Location imports]]
-- [[_COMMUNITY_OEM-542 Exclude AEMP config groups from list on Asset Page|OEM-542 Exclude AEMP config groups from list on Asset Page]]
-- [[_COMMUNITY_OE-20 Configuration Groups - Multi-select config groups|OE-20 Configuration Groups - Multi-select config groups]]
-- [[_COMMUNITY_OE-483 Auditing|OE-483 Auditing]]
-- [[_COMMUNITY_OE-497 API Load Assets|OE-497 API Load Assets]]
-- [[_COMMUNITY_Description (from Jira)|Description (from Jira)]]
-- [[_COMMUNITY_Description (from Jira)|Description (from Jira)]]
-- [[_COMMUNITY_OPEN-837 Add an Alert Filter|OPEN-837 Add an Alert Filter]]
-- [[_COMMUNITY_OPEN-862 Beta Slow AI|OPEN-862 Beta Slow AI.md]]
-- [[_COMMUNITY_devDependencies|devDependencies]]
-- [[_COMMUNITY_QA-4629 UAT Change Mobile devica|QA-4629 UAT Change Mobile devica]]
-- [[_COMMUNITY_QA-5075 Detailed Trip Specific Scenario test|QA-5075 Detailed Trip Specific Scenario test]]
-- [[_COMMUNITY_WhatsApp → API Endpoint via n8n|WhatsApp → API Endpoint via n8n]]
-- [[_COMMUNITY_SR-14341 Active vs passive events|SR-14341 Active vs passive events]]
-- [[_COMMUNITY_Technical Summary|Technical Summary]]
-- [[_COMMUNITY_Config-Delta-Tool|Config-Delta-Tool.md]]
-- [[_COMMUNITY_TShirt design (Tee spring)|TShirt design (Tee spring)]]
-- [[_COMMUNITY_Citizen Code of Conduct|Citizen Code of Conduct]]
-- [[_COMMUNITY_STM-1074 Questions regarding the above work done|STM-1074 Questions regarding the above work done.md]]
-- [[_COMMUNITY_CONFIG-2683 Nicole Feedback Req MiX2310 Diagnostic window doesn't load|CONFIG-2683 [Nicole Feedback Req] MiX2310 Diagnostic window doesn't load]]
-- [[_COMMUNITY_Comprehensive Solutions for Freeing Up Space|Comprehensive Solutions for Freeing Up Space]]
-- [[_COMMUNITY_How to trigger an alarm based on an AWS metrics|How to trigger an alarm based on an AWS metrics.md]]
-- [[_COMMUNITY_Config-3320 Salesforce Issue|Config-3320 Salesforce Issue]]
-- [[_COMMUNITY_DeviceConfig Client Adding|DeviceConfig Client Adding]]
-- [[_COMMUNITY_Languaging|Languaging.md]]
-- [[_COMMUNITY_SRE-212 Command45 to be send hourly|SRE-212 Command45 to be send hourly]]
-- [[_COMMUNITY_Untitled 4|Untitled 4.md]]
-- [[_COMMUNITY_Steps|Steps]]
-- [[_COMMUNITY_OE-651 Multiselect Compile Error|OE-651 Multiselect Compile Error]]
-- [[_COMMUNITY_OPEN-1362 INT Config groups page Error 500|OPEN-1362 INT Config groups page Error 500]]
-- [[_COMMUNITY_OPEN-1382 Auto select Config Group from Asset List|OPEN-1382 Auto select Config Group from Asset List]]
-- [[_COMMUNITY_OPEN-1788 Add AI ChatBot Panel to the Configuration Delta Tool|OPEN-1788 Add AI ChatBot Panel to the Configuration Delta Tool]]
-- [[_COMMUNITY_OPEN-714 Persisting Column Sizes|OPEN-714 Persisting Column Sizes]]
-- [[_COMMUNITY_OPEN-862 Beta Slow|OPEN-862 Beta Slow]]
-- [[_COMMUNITY_SR-13671 Unable to add IMEI to assets|SR-13671 Unable to add IMEI to assets]]
-- [[_COMMUNITY_SR-13955 Serial numbers now showing in config group page|SR-13955 Serial numbers now showing in config group page]]
-- [[_COMMUNITY_Entities|Entities]]
-- [[_COMMUNITY_Automation Infrastructure AWS Setup Guide (DEVINTPROD)|Automation Infrastructure: AWS Setup Guide (DEV/INT/PROD)]]
-- [[_COMMUNITY_SR-14647 Command 45 App Login Issue|SR-14647 Command 45 App Login Issue]]
-- [[_COMMUNITY_XML Data Structure Findings for Graph Generation|XML Data Structure Findings for Graph Generation]]
-- [[_COMMUNITY_OPEN-2030 — Discord QC Bot — DONE ✅|OPEN-2030 — Discord QC Bot — DONE ✅]]
-- [[_COMMUNITY_AdjustDaylightSavingsForOrganisationsAndMobileUnitsMethod|AdjustDaylightSavingsForOrganisationsAndMobileUnitsMethod.md]]
-- [[_COMMUNITY_ETS-2976 Config Beta page - compile status not displayed|ETS-2976 Config Beta page - compile status not displayed]]
-- [[_COMMUNITY_Gemini Cli Tips|Gemini Cli Tips.md]]
-- [[_COMMUNITY_index.ts|index.ts]]
-- [[_COMMUNITY_Async Work DeviceConfiguration|Async Work DeviceConfiguration.md]]
-- [[_COMMUNITY_Device|Device.md]]
-- [[_COMMUNITY_Make Available|Make Available.md]]
-- [[_COMMUNITY_Convert the Asset Config File to 18.17|Convert the Asset Config File to 18.17]]
-- [[_COMMUNITY_SAAS-10447 DST Tool in OMAN 18.17|SAAS-10447 DST Tool in OMAN 18.17]]
-- [[_COMMUNITY_TECHDEBT-427 Add config settings to switch between old and new code for the Daylight Savings Time service|TECHDEBT-427 Add config settings to switch between old and new code for the Daylight Savings Time service]]
-- [[_COMMUNITY_OE-533|OE-533]]
-- [[_COMMUNITY_OE-521 Unallocated Assets assign to Config group|OE-521 Unallocated Assets assign to Config group]]
-- [[_COMMUNITY_OE-638 Reset Black Flag|OE-638 Reset Black Flag]]
-- [[_COMMUNITY_OPEN-1371 INT Error 500 on Config Group Alerts CHINESE|OPEN-1371 INT Error 500 on Config Group Alerts CHINESE]]
-- [[_COMMUNITY_JIRA Story Description (Copy-Paste Ready)|JIRA Story Description (Copy-Paste Ready)]]
-- [[_COMMUNITY_OPEN-862 Beta Slow|OPEN-862 Beta Slow.md]]
-- [[_COMMUNITY_QA-6016 Error when changing Template SP line|QA-6016 Error when changing Template SP line]]
-- [[_COMMUNITY_UAT-1687 Peripheral Library MiX Rovi II|UAT-1687 Peripheral Library MiX Rovi II]]
-- [[_COMMUNITY_SR-13199|SR-13199]]
-- [[_COMMUNITY_SR-13285 GTMOffset is 0|SR-13285 GTMOffset is 0]]
-- [[_COMMUNITY_SR-15627 Mexico DST update|SR-15627 Mexico DST update]]
-- [[_COMMUNITY_Template Class|Template Class.md]]
-- [[_COMMUNITY_2026-06-04 — Failed Pipeline Tests Analysis|2026-06-04 — Failed Pipeline Tests Analysis]]
-- [[_COMMUNITY_Documenting|Documenting]]
-- [[_COMMUNITY_Graph|Graph]]
-- [[_COMMUNITY_A Case Study|A Case Study]]
-- [[_COMMUNITY_STM-1074 Moving Shuans html to our component|STM-1074 Moving Shuans html to our component.md]]
-- [[_COMMUNITY_Daily Merge|Daily Merge.md]]
-- [[_COMMUNITY_Notes created today|Notes created today]]
-- [[_COMMUNITY_AWS  SAM|AWS / SAM]]
-- [[_COMMUNITY_AEMP|AEMP.md]]
-- [[_COMMUNITY_Different Diagrams|Different Diagrams]]
-- [[_COMMUNITY_DIE-485 DI Config Asset config file|DIE-485 DI Config Asset config file]]
-- [[_COMMUNITY_DIE-505 Configuration group page Asset configuration file action result in an error for Not Commissioned units|DIE-505 Configuration group page Asset configuration file action result in an error for Not Commissioned units]]
-- [[_COMMUNITY_OE-538|OE-538]]
-- [[_COMMUNITY_TEL-62 Send Command Teltonika|TEL-62 Send Command Teltonika]]
-- [[_COMMUNITY_OPEN-1602 Pipeline for Powerfleet Automation API|OPEN-1602 Pipeline for Powerfleet Automation API]]
-- [[_COMMUNITY_OPEN-1730 Change the UI for Decomm to accommodate the information needed to start checks|OPEN-1730 Change the UI for Decomm to accommodate the information needed to start checks]]
-- [[_COMMUNITY_OPEN-698 Languaging|OPEN-698 Languaging]]
-- [[_COMMUNITY_QA-5206 Configuration groups page Action button available on asset setup with beacon and not commissioned|QA-5206 Configuration groups page Action button available on asset setup with beacon and not commissioned]]
-- [[_COMMUNITY_QA-5228_FixActiveMessagePriorityColumn_Unknown|QA-5228_FixActiveMessagePriorityColumn_Unknown]]
-- [[_COMMUNITY_QA-5231_HideColumnsNotUsed|QA-5231_HideColumnsNotUsed]]
-- [[_COMMUNITY_QA-5464 Data Exclusions Quarantined events still show|QA-5464 Data Exclusions Quarantined events still show]]
-- [[_COMMUNITY_SR-13578 Units Stuck Config Upload|SR-13578 Units Stuck Config Upload]]
-- [[_COMMUNITY_SR-13579_RetunValueofEnginHoursParameterDiffFM_Mesa|SR-13579_RetunValueofEnginHoursParameterDiffFM_Mesa]]
-- [[_COMMUNITY_SR-14595 Over speeding - TIERED event using deleted location|SR-14595 Over speeding - TIERED event using deleted location]]
-- [[_COMMUNITY_SR-9262 Investigate potential long-taking methods|SR-9262 Investigate potential long-taking methods]]
-- [[_COMMUNITY_2025-W31|2025-W31.md]]
-- [[_COMMUNITY_AWS-Deployment-Pattern|AWS-Deployment-Pattern.md]]
-- [[_COMMUNITY_In-depth Architectural Review and Refactoring Plan for EventEditTemplate.html|In-depth Architectural Review and Refactoring Plan for EventEditTemplate.html]]
-- [[_COMMUNITY_AC-363 MakeOrgIDOptional_FriendlyParameter|AC-363 MakeOrgIDOptional_FriendlyParameter]]
-- [[_COMMUNITY_4. Successful Bypass Strategies|4. Successful Bypass Strategies]]
-- [[_COMMUNITY_DEV Process|DEV Process.md]]
-- [[_COMMUNITY_Kendo Column Customised display|Kendo Column Customised display.md]]
-- [[_COMMUNITY_OE-513 Outstanding|OE-513 Outstanding.md]]
-- [[_COMMUNITY_Permissions|Permissions.md]]
-- [[_COMMUNITY_Jira Sync — 2026-05-15|Jira Sync — 2026-05-15]]
-- [[_COMMUNITY_2026-05-21|2026-05-21]]
-- [[_COMMUNITY_2026-05-26|2026-05-26]]
-- [[_COMMUNITY_OPEN-2936 — Linux Agent Path Fixes|OPEN-2936 — Linux Agent Path Fixes]]
-- [[_COMMUNITY_OPEN-3075 — AU outage + Decommissioning test — DONE|OPEN-3075 — AU "outage" + Decommissioning test — DONE]]
-- [[_COMMUNITY_2026-03-04|2026-03-04]]
-- [[_COMMUNITY_Architecture Layers|Architecture Layers]]
-- [[_COMMUNITY_More|More]]
-- [[_COMMUNITY_2025-05|2025-05.md]]
-- [[_COMMUNITY_Camera Video Channels Error|Camera Video Channels Error.md]]
-- [[_COMMUNITY_CONFIG-3703 Make Available Hino OEM|CONFIG-3703 Make Available Hino OEM]]
-- [[_COMMUNITY_First things|First things]]
-- [[_COMMUNITY_FE|FE.md]]
-- [[_COMMUNITY_Income streams|Income streams]]
-- [[_COMMUNITY_OE-530 Asset Row Action|OE-530 Asset Row Action]]
-- [[_COMMUNITY_Description|Description]]
-- [[_COMMUNITY_OE-537 BUG Spinner on Decommissioning DME|OE-537 BUG Spinner on Decommissioning DME]]
-- [[_COMMUNITY_OPEN-1186 Alert column should be a number|OPEN-1186 Alert column should be a number]]
-- [[_COMMUNITY_OPEN-1601 Setup Pipeline for the Powerfleet Automation UI|OPEN-1601 Setup Pipeline for the Powerfleet Automation UI]]
-- [[_COMMUNITY_OPEN-2936 — Enable Tier 123 API Tests Against All Prod Environments Post-Deploy|OPEN-2936 — Enable Tier 1/2/3 API Tests Against All Prod Environments Post-Deploy]]
-- [[_COMMUNITY_SR-14616 Black flag on asset not showing what is black flagged|SR-14616 Black flag on asset not showing what is black flagged]]
-- [[_COMMUNITY_QA-5318 Negative Drive Id ranges|QA-5318 Negative Drive Id ranges]]
-- [[_COMMUNITY_QA-6067|QA-6067]]
-- [[_COMMUNITY_SR-12500 Custom Param names on Peripheral library gives issues|SR-12500 Custom Param names on Peripheral library gives issues]]
-- [[_COMMUNITY_SR-14277 Asset Manager Diagnostic Report - No Battery information shown|SR-14277 Asset Manager Diagnostic Report - No Battery information shown]]
-- [[_COMMUNITY_Description|Description]]
-- [[_COMMUNITY_SR-15741 Incorrect VIN|SR-15741 Incorrect VIN]]
-- [[_COMMUNITY_SR-15876 Error Editing Location Template From Config Group|SR-15876 Error Editing Location Template From Config Group]]
-- [[_COMMUNITY_ADO Pipeline CI Trigger Override|ADO Pipeline CI Trigger Override]]
-- [[_COMMUNITY_In-depth Architectural Review and Refactoring Plan for LocationEditContentTemplate.html|In-depth Architectural Review and Refactoring Plan for LocationEditContentTemplate.html]]
-- [[_COMMUNITY_AU Powerfleet Automation Setup Summary|AU Powerfleet Automation Setup Summary]]
-- [[_COMMUNITY_BUILD Point to CFG fix|BUILD Point to CFG fix.md]]
-- [[_COMMUNITY_Getting Started with AI — A Practical Guide|Getting Started with AI — A Practical Guide]]
-- [[_COMMUNITY_ConfigAdmin Template Rewrite Plan|ConfigAdmin Template Rewrite Plan]]
-- [[_COMMUNITY_2025-11-27|2025-11-27.md]]
-- [[_COMMUNITY_2026-04-08|2026-04-08.md]]
-- [[_COMMUNITY_Jira Sync — 2026-04-15|Jira Sync — 2026-04-15]]
-- [[_COMMUNITY_Jira Sync — 2026-05-11 (Updated)|Jira Sync — 2026-05-11 (Updated)]]
-- [[_COMMUNITY_Formatting|Formatting]]
-- [[_COMMUNITY_AC-248 Default Configuration Not just Track & Trace|AC-248 Default Configuration Not just Track & Trace]]
-- [[_COMMUNITY_Findings|Findings]]
-- [[_COMMUNITY_Jira eg|Jira eg]]
-- [[_COMMUNITY_DIE-491 Mobile Device Section|DIE-491 Mobile Device Section]]
-- [[_COMMUNITY_DIE-493 Recording Options|DIE-493 Recording Options]]
-- [[_COMMUNITY_Learning|Learning.md]]
-- [[_COMMUNITY_LOG|LOG.md]]
-- [[_COMMUNITY_Make Available|Make Available]]
-- [[_COMMUNITY_Mermaid JS|Mermaid JS.md]]
-- [[_COMMUNITY_MiXTalk|MiXTalk.md]]
-- [[_COMMUNITY_Code for this|Code for this:]]
-- [[_COMMUNITY_OE-492 SEED Frangular API|OE-492 SEED Frangular API]]
-- [[_COMMUNITY_Description|Description]]
-- [[_COMMUNITY_OE-517 Unallocated Assets|OE-517 Unallocated Assets]]
-- [[_COMMUNITY_OE-541 Config Compile Status|OE-541 Config Compile Status]]
-- [[_COMMUNITY_OE-590 Grammar for single Config group|OE-590 Grammar for single Config group]]
-- [[_COMMUNITY_OPEN-1576 Add UI for Support to Supply Salesforce Case Info and Start Decom Automation Manually|OPEN-1576 Add UI for Support to Supply Salesforce Case Info and Start Decom Automation Manually]]
-- [[_COMMUNITY_OPEN-1577 Multiple UI Forms and menu|OPEN-1577 Multiple UI Forms and menu]]
-- [[_COMMUNITY_OPEN-249 IMEI in use message missing|OPEN-249 IMEI in use message missing]]
-- [[_COMMUNITY_OPEN-840 Refactor Beta Stored Procs|OPEN-840 Refactor Beta Stored Procs]]
-- [[_COMMUNITY_OPEN-862 Enhance Asset alerts SQL|OPEN-862 Enhance Asset alerts SQL.md]]
-- [[_COMMUNITY_Azure OpenAI — Company Reference|Azure OpenAI — Company Reference]]
-- [[_COMMUNITY_QA-5583 Speeding not available for selection|QA-5583 Speeding not available for selection]]
-- [[_COMMUNITY_QA-5849 GetStatus Command not populating table|QA-5849 GetStatus Command not populating table]]
-- [[_COMMUNITY_QA-7657 Camera Name not Chinese friendly|QA-7657 Camera Name not Chinese friendly]]
-- [[_COMMUNITY_SR-13706 Showing date time for VIN|SR-13706 Showing date time for VIN]]
-- [[_COMMUNITY_SR-14585 FM idling though distance and speed greater than 5kmh|SR-14585 FM idling though distance and speed greater than 5kmh]]
-- [[_COMMUNITY_SR-14824|SR-14824]]
-- [[_COMMUNITY_SR-17424 Moving FW column wants to move Config Group|SR-17424 Moving FW column wants to move Config Group]]
-- [[_COMMUNITY_SR-17543 Error when Commissioning MiX4000|SR-17543 Error when Commissioning MiX4000]]
-- [[_COMMUNITY_{{title}}|{{title}}]]
-- [[_COMMUNITY_Projects Folder Coverage Map|Projects Folder Coverage Map]]
-- [[_COMMUNITY_Frangular Edit Templates|Frangular Edit Templates.md]]
-- [[_COMMUNITY_ConfigAdmin Template Rewrite Plan|ConfigAdmin Template Rewrite Plan]]
-- [[_COMMUNITY_AU Environment - Infrastructure Audit & Fixes Report|AU Environment - Infrastructure Audit & Fixes Report]]
-- [[_COMMUNITY_AWS Login for SDK access using OKTA(httpsconfluence.mixtelematics.comdisplaysoftwaredevelopmentAWS+Login+for+SDK+access+using+OKTA)|[AWS Login for SDK access using OKTA](https://confluence.mixtelematics.com/display/softwaredevelopment/AWS+Login+for+SDK+access+using+OKTA)]]
-- [[_COMMUNITY_Starting points|Starting points]]
-- [[_COMMUNITY_generate-dependency-graph.js|generate-dependency-graph.js]]
-- [[_COMMUNITY_2023-05-03|2023-05-03.md]]
-- [[_COMMUNITY_2023-05-04|2023-05-04.md]]
-- [[_COMMUNITY_2023-05-05|2023-05-05.md]]
-- [[_COMMUNITY_2023-05-08|2023-05-08.md]]
-- [[_COMMUNITY_2023-05-09|2023-05-09.md]]
-- [[_COMMUNITY_A few pages I found that MIGHT need to be added|A few pages I found that MIGHT need to be added]]
-- [[_COMMUNITY_2026-05-13 — Tuesday|2026-05-13 — Tuesday]]
-- [[_COMMUNITY_Jira Sync — 2026-05-18|Jira Sync — 2026-05-18]]
-- [[_COMMUNITY_2026-03-06|2026-03-06.md]]
-- [[_COMMUNITY_2026-03-11|2026-03-11.md]]
-- [[_COMMUNITY_2026-04-20|2026-04-20]]
-- [[_COMMUNITY_Dewald Lookup|Dewald Lookup]]
-- [[_COMMUNITY_OBC-403 Mobile phone validation and uniqueness check|OBC-403 Mobile phone validation and uniqueness check]]
-- [[_COMMUNITY_VM-251 Commissioning status does not transition to Failed state after 30 minutes|VM-251 Commissioning status does not transition to "Failed" state after 30 minutes]]
-- [[_COMMUNITY_QA-3925 QA - MiX Talk - IMEI already in use when entering number that hasn't been used|QA-3925 QA - MiX Talk - IMEI already in use when entering number that hasn't been used]]
-- [[_COMMUNITY_QA-3925 QA - MiX Talk - IMEI already in use when entering number that hasn't been used|QA-3925 QA - MiX Talk - IMEI already in use when entering number that hasn't been used]]
-- [[_COMMUNITY_ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank|ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank]]
-- [[_COMMUNITY_ETS-6874|ETS-6874]]
-- [[_COMMUNITY_Text Elements|Text Elements]]
-- [[_COMMUNITY_DST|DST.md]]
-- [[_COMMUNITY_Code Review OE-501 Show all moving parts|Code Review OE-501 Show all moving parts.md]]
-- [[_COMMUNITY_Comms Log|Comms Log.md]]
-- [[_COMMUNITY_Diagnostic Modal|Diagnostic Modal.md]]
-- [[_COMMUNITY_Schemas|Schemas.md]]
-- [[_COMMUNITY_Code example of such a setting|Code example of such a setting]]
-- [[_COMMUNITY_Confluence|Confluence.md]]
-- [[_COMMUNITY_OrganisationControllerRoutes|OrganisationControllerRoutes.md]]
-- [[_COMMUNITY_OEM-489 TEST FordOEM Swagger and client|OEM-489 TEST FordOEM Swagger and client.md]]
-- [[_COMMUNITY_DIE-496 Config File Asset Config File Excel Export|DIE-496 Config File Asset Config File Excel Export]]
-- [[_COMMUNITY_STEPS to get all the parameterIds and fix the make available|STEPS to get all the parameterIds and fix the make available]]
-- [[_COMMUNITY_Marty|Marty.md]]
-- [[_COMMUNITY_MiX3K-9 MiX3000 First Default success|MiX3K-9 MiX3000 First Default success.md]]
-- [[_COMMUNITY_PaOBC INT issue|PaOBC INT issue.md]]
-- [[_COMMUNITY_OE-525|OE-525]]
-- [[_COMMUNITY_OE-482 Replace OLD with NEW|OE-482 Replace OLD with NEW]]
-- [[_COMMUNITY_OPEN-1416 Change Alert Filter Multiselect to OR|OPEN-1416 Change Alert Filter Multiselect to OR]]
-- [[_COMMUNITY_AI|AI]]
-- [[_COMMUNITY_OPEN-1663 API DEV issues|OPEN-1663 API DEV issues]]
-- [[_COMMUNITY_OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI|OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI]]
-- [[_COMMUNITY_OPEN-306|OPEN-306]]
-- [[_COMMUNITY_OPEN-403 Multiselect Columns|OPEN-403 Multiselect Columns]]
-- [[_COMMUNITY_Writing Style Fine-Tune|Writing Style Fine-Tune]]
-- [[_COMMUNITY_OneDrive AU Cleanup|OneDrive AU Cleanup]]
-- [[_COMMUNITY_QA-7242 Cant view Black Flag modal|QA-7242 Cant view Black Flag modal]]
-- [[_COMMUNITY_QA-7818 Config Groups Link goes to Legacy|QA-7818 Config Groups Link goes to Legacy]]
-- [[_COMMUNITY_SR-21085|SR-21085]]
-- [[_COMMUNITY_SR-14025 Night driving event triggering incorrectly|SR-14025 Night driving event triggering incorrectly]]
-- [[_COMMUNITY_SR-14042ErrorsOnUkStoredProcResolved|SR-14042ErrorsOnUkStoredProcResolved]]
-- [[_COMMUNITY_SR-14297 FM ODO sent through scheduler not being applied|SR-14297 FM ODO sent through scheduler not being applied]]
-- [[_COMMUNITY_SR-14302 Active event negative temperature incorrect|SR-14302 Active event negative temperature incorrect]]
-- [[_COMMUNITY_SR-14303 Harsh Cornering passive events not shown on Historical tracking map|SR-14303 Harsh Cornering passive events not shown on Historical tracking map]]
-- [[_COMMUNITY_SR-14483 Comms log order not great|SR-14483 Comms log order not great]]
-- [[_COMMUNITY_SR-15115 Events triggering out of hours|SR-15115 Events triggering out of hours]]
-- [[_COMMUNITY_SR-15477 Cant force Command 45 with tool|SR-15477 Cant force Command 45 with tool]]
-- [[_COMMUNITY_SR-17917 Library Events Missing|SR-17917 Library Events Missing]]
-- [[_COMMUNITY_{{title}}|{{title}}]]
-- [[_COMMUNITY_Architectural Review and Refactoring Plan for ConfigAdminTemplates|Architectural Review and Refactoring Plan for ConfigAdmin/Templates]]
-- [[_COMMUNITY_INT Test Device Data — 5 June 2026|INT Test Device Data — 5 June 2026]]
-- [[_COMMUNITY_Frangular Build and Deploy thanks to Zonika|Frangular Build and Deploy thanks to Zonika.md]]
-- [[_COMMUNITY_Languaging Kendo Items Selected|Languaging Kendo Items Selected.md]]
-- [[_COMMUNITY_OE-513 Languaging|OE-513 Languaging.md]]
-- [[_COMMUNITY_OE-513 PO Questions|OE-513 PO Questions.md]]
-- [[_COMMUNITY_Redefined Frangular Editing SPIKE|Redefined Frangular Editing SPIKE.md]]
-- [[_COMMUNITY_Discrepancy between Asset List Page and Diagnostics values|Discrepancy between Asset List Page and Diagnostics values.md]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_2023-05-29|2023-05-29.md]]
-- [[_COMMUNITY_2026-05-25|2026-05-25]]
-- [[_COMMUNITY_Work Daily Note — 2026-05-27|Work Daily Note — 2026-05-27]]
-- [[_COMMUNITY_2026-03-30|2026-03-30.md]]
-- [[_COMMUNITY_2026-04-14|2026-04-14.md]]
-- [[_COMMUNITY_2026-04-23|2026-04-23]]
-- [[_COMMUNITY_2026-04-28|2026-04-28]]
-- [[_COMMUNITY_Obsidian compatibility|Obsidian compatibility.md]]
-- [[_COMMUNITY_OBC-402 Mobile phone refactoring of Matthew's work|OBC-402 Mobile phone refactoring of Matthew's work]]
-- [[_COMMUNITY_TEL-3|TEL-3]]
-- [[_COMMUNITY_Document|Document]]
-- [[_COMMUNITY_More involved stuff|More involved stuff]]
-- [[_COMMUNITY_Data Analyst|Data Analyst.md]]
-- [[_COMMUNITY_DIE-492 Config File Connected Lines|DIE-492 Config File Connected Lines]]
-- [[_COMMUNITY_DIE-497 API and Client work|DIE-497 API and Client work]]
-- [[_COMMUNITY_dynamix.MapLocations|dynamix.MapLocations]]
-- [[_COMMUNITY_Event Templates|Event Templates.md]]
-- [[_COMMUNITY_FLEET-10449 Site level user Diagnostic request issue|FLEET-10449 Site level user Diagnostic request issue]]
-- [[_COMMUNITY_XML|XML]]
-- [[_COMMUNITY_OE-568 Default Column Width|OE-568 Default Column Width]]
-- [[_COMMUNITY_OE-614 Alerts not matched between CG and Assets|OE-614 Alerts not matched between CG and Assets]]
-- [[_COMMUNITY_OEM-570 Remove AEMP on the Mobile device settings page when changing the device type|OEM-570 Remove AEMP on the Mobile device settings page when changing the device type]]
-- [[_COMMUNITY_AWS Discovery automation-api.dev.mixtelematics.com|AWS Discovery: automation-api.dev.mixtelematics.com]]
-- [[_COMMUNITY_AWS Discovery ecs-api.config.int.priv|AWS Discovery: ecs-api.config.int.priv]]
-- [[_COMMUNITY_OE-528 Paging and Refresh bug|OE-528 Paging and Refresh bug]]
-- [[_COMMUNITY_OE-504 UI Asset Move to Config Group|OE-504 UI Asset Move to Config Group]]
-- [[_COMMUNITY_OE-656 Grey background|OE-656 Grey background]]
-- [[_COMMUNITY_OPEN-2461 — API Add Deployment Pipeline to ZAGOV Environment|OPEN-2461 — API: Add Deployment Pipeline to ZAGOV Environment]]
-- [[_COMMUNITY_OPEN-2578 — AUTO-UI Build Integration Test Coverage HTML Dashboard|OPEN-2578 — AUTO-UI: Build Integration Test Coverage HTML Dashboard]]
-- [[_COMMUNITY_OPEN-2580 — AUTO-UI Build Playwright E2E Page-Level HTML Test Runner|OPEN-2580 — AUTO-UI: Build Playwright E2E Page-Level HTML Test Runner]]
-- [[_COMMUNITY_OPEN-2582 — AUTO-UI Build Playwright Per-Story Scenario HTML Test Runner|OPEN-2582 — AUTO-UI: Build Playwright Per-Story Scenario HTML Test Runner]]
-- [[_COMMUNITY_OPEN-1252 Add line C3|OPEN-1252 Add line C3]]
-- [[_COMMUNITY_OPEN-1299_QC_Video_Test|OPEN-1299_QC_Video_Test]]
-- [[_COMMUNITY_OPEN-250 New VisionAI Events|OPEN-250 New VisionAI Events]]
-- [[_COMMUNITY_OPEN-699 Styling issue overflow|OPEN-699 Styling issue overflow]]
-- [[_COMMUNITY_OPEN-748 Black Flag Can Script not visible|OPEN-748 Black Flag Can Script not visible]]
-- [[_COMMUNITY_OPEN-836 Alert Hide missing Parameters|OPEN-836 Alert Hide missing Parameters]]
-- [[_COMMUNITY_OPEN-851 Alert count link to Assets|OPEN-851 Alert count link to Assets]]
-- [[_COMMUNITY_OPEN-862 Beta Slow Jira summary|OPEN-862 Beta Slow Jira summary.md]]
-- [[_COMMUNITY_Future Stories  Roadmap|Future Stories / Roadmap]]
-- [[_COMMUNITY_scripts|scripts]]
-- [[_COMMUNITY_QA-5723 Config status different|QA-5723 Config status different]]
-- [[_COMMUNITY_QA-6053 Calamp Lite and Tracker devices have no IMEI field in Mobile device settings|QA-6053 Calamp Lite and Tracker devices have no IMEI field in Mobile device settings]]
-- [[_COMMUNITY_QA-7654 Edit Camera Name Case|QA-7654 Edit Camera Name Case]]
-- [[_COMMUNITY_QA-7752 Sidebar Config Only Not Persist|QA-7752 Sidebar Config Only Not Persist]]
-- [[_COMMUNITY_UAT-973 Configuration differences from group (Black flag) does not show correct Preferred firmware version|UAT-973 Configuration differences from group (Black flag) does not show correct Preferred firmware version]]
-- [[_COMMUNITY_GitHub CLI Login - Powerfleet Enterprise|GitHub CLI Login - Powerfleet Enterprise]]
-- [[_COMMUNITY_SR-12339 Not able to add or save IMEI|SR-12339 Not able to add or save IMEI]]
-- [[_COMMUNITY_SR-14554 Periodic Error editing or creating SSE|SR-14554 Periodic Error editing or creating SSE]]
-- [[_COMMUNITY_SR-15056 Audit Report user info needed|SR-15056 Audit Report user info needed]]
-- [[_COMMUNITY_Class XXX_NAME|Class: XXX_NAME]]
-- [[_COMMUNITY_{{title}}|{{title}}]]
-- [[_COMMUNITY_AC-361 Fuel Type shows as null|AC-361 Fuel Type shows as null]]
-- [[_COMMUNITY_Four main Alerts|Four main Alerts]]
-- [[_COMMUNITY_Step-by-Step Guide Fixing the AU DNS Routing|Step-by-Step Guide: Fixing the AU DNS Routing]]
-- [[_COMMUNITY_Automation API — PR Feedback 2026-03-11|Automation API — PR Feedback 2026-03-11]]
-- [[_COMMUNITY_QC Tests|QC Tests]]
-- [[_COMMUNITY_Marty-Mix Rules|Marty-Mix Rules]]
-- [[_COMMUNITY_CONFIG-4709 CAN script not showing|CONFIG-4709 CAN script not showing]]
-- [[_COMMUNITY_OE-513 Sub bugs|OE-513 Sub bugs.md]]
-- [[_COMMUNITY_Sub Header|Sub Header]]
-- [[_COMMUNITY_Sub Header|Sub Header]]
-- [[_COMMUNITY_H2 now reads well|H2 now reads well]]
-- [[_COMMUNITY_Conflicts|Conflicts]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_2025-10-28|2025-10-28.md]]
-- [[_COMMUNITY_2025-10-29|2025-10-29.md]]
-- [[_COMMUNITY_2025-10-30|2025-10-30.md]]
-- [[_COMMUNITY_2025-10-31|2025-10-31.md]]
-- [[_COMMUNITY_2025-11-03|2025-11-03.md]]
-- [[_COMMUNITY_2025-11-04|2025-11-04.md]]
-- [[_COMMUNITY_2025-11-05|2025-11-05.md]]
-- [[_COMMUNITY_2025-11-06|2025-11-06.md]]
-- [[_COMMUNITY_2025-11-07|2025-11-07.md]]
-- [[_COMMUNITY_2025-11-10|2025-11-10.md]]
-- [[_COMMUNITY_2025-11-11|2025-11-11.md]]
-- [[_COMMUNITY_2025-11-12|2025-11-12.md]]
-- [[_COMMUNITY_2025-11-13|2025-11-13.md]]
-- [[_COMMUNITY_2025-11-14|2025-11-14.md]]
-- [[_COMMUNITY_2025-11-17|2025-11-17.md]]
-- [[_COMMUNITY_2025-11-18|2025-11-18.md]]
-- [[_COMMUNITY_2025-11-19|2025-11-19.md]]
-- [[_COMMUNITY_2025-11-20|2025-11-20.md]]
-- [[_COMMUNITY_Summary of Findings for `template.Template_GetConfigurationGroupsOtherColumns`|Summary of Findings for `[template].[Template_GetConfigurationGroupsOtherColumns]`]]
-- [[_COMMUNITY_2025-11-26|2025-11-26.md]]
-- [[_COMMUNITY_2025-11-28|2025-11-28.md]]
-- [[_COMMUNITY_2025-12-01|2025-12-01.md]]
-- [[_COMMUNITY_2025-12-02|2025-12-02.md]]
-- [[_COMMUNITY_2025-12-03|2025-12-03.md]]
-- [[_COMMUNITY_2025-12-04|2025-12-04.md]]
-- [[_COMMUNITY_2025-12-05|2025-12-05.md]]
-- [[_COMMUNITY_2025-12-08|2025-12-08.md]]
-- [[_COMMUNITY_2025-12-09|2025-12-09.md]]
-- [[_COMMUNITY_2025-12-10|2025-12-10.md]]
-- [[_COMMUNITY_2025-12-11|2025-12-11.md]]
-- [[_COMMUNITY_2026-05-14|2026-05-14]]
-- [[_COMMUNITY_2026-05-19|2026-05-19]]
-- [[_COMMUNITY_Work Daily Note — 2026-06-04|Work Daily Note — 2026-06-04]]
-- [[_COMMUNITY_2026-01-01|2026-01-01.md]]
-- [[_COMMUNITY_2026-01-02|2026-01-02.md]]
-- [[_COMMUNITY_2026-01-05|2026-01-05.md]]
-- [[_COMMUNITY_2026-01-06|2026-01-06.md]]
-- [[_COMMUNITY_2026-01-07|2026-01-07.md]]
-- [[_COMMUNITY_2026-01-08|2026-01-08.md]]
-- [[_COMMUNITY_2026-01-12|2026-01-12.md]]
-- [[_COMMUNITY_2026-01-13|2026-01-13.md]]
-- [[_COMMUNITY_2026-01-14|2026-01-14.md]]
-- [[_COMMUNITY_2026-01-15|2026-01-15.md]]
-- [[_COMMUNITY_2026-01-16|2026-01-16.md]]
-- [[_COMMUNITY_2026-01-19|2026-01-19.md]]
-- [[_COMMUNITY_2026-01-20|2026-01-20.md]]
-- [[_COMMUNITY_2026-01-21|2026-01-21.md]]
-- [[_COMMUNITY_2026-01-22|2026-01-22.md]]
-- [[_COMMUNITY_2026-01-23|2026-01-23.md]]
-- [[_COMMUNITY_2026-01-26|2026-01-26.md]]
-- [[_COMMUNITY_2026-01-27|2026-01-27.md]]
-- [[_COMMUNITY_2026-01-28|2026-01-28.md]]
-- [[_COMMUNITY_2026-01-29|2026-01-29.md]]
-- [[_COMMUNITY_2026-02-02|2026-02-02.md]]
-- [[_COMMUNITY_2026-02-03|2026-02-03.md]]
-- [[_COMMUNITY_2026-02-04|2026-02-04.md]]
-- [[_COMMUNITY_2026-02-05|2026-02-05.md]]
-- [[_COMMUNITY_2026-02-06|2026-02-06.md]]
-- [[_COMMUNITY_2026-02-09|2026-02-09.md]]
-- [[_COMMUNITY_2026-02-10|2026-02-10.md]]
-- [[_COMMUNITY_2026-02-11|2026-02-11.md]]
-- [[_COMMUNITY_2026-02-12|2026-02-12.md]]
-- [[_COMMUNITY_2026-02-13|2026-02-13.md]]
-- [[_COMMUNITY_2026-02-16|2026-02-16.md]]
-- [[_COMMUNITY_2026-02-17|2026-02-17.md]]
-- [[_COMMUNITY_2026-02-18|2026-02-18.md]]
-- [[_COMMUNITY_2026-02-19|2026-02-19.md]]
-- [[_COMMUNITY_2026-02-20|2026-02-20.md]]
-- [[_COMMUNITY_2026-02-23|2026-02-23.md]]
-- [[_COMMUNITY_2026-02-24|2026-02-24.md]]
-- [[_COMMUNITY_2026-02-25|2026-02-25.md]]
-- [[_COMMUNITY_2026-02-26|2026-02-26.md]]
-- [[_COMMUNITY_2026-02-27|2026-02-27.md]]
-- [[_COMMUNITY_2026-03-02|2026-03-02.md]]
-- [[_COMMUNITY_2026-03-03|2026-03-03.md]]
-- [[_COMMUNITY_2026-03-05|2026-03-05.md]]
-- [[_COMMUNITY_2026-03-09|2026-03-09.md]]
-- [[_COMMUNITY_2026-03-10|2026-03-10.md]]
-- [[_COMMUNITY_2026-03-13|2026-03-13.md]]
-- [[_COMMUNITY_2026-03-16|2026-03-16.md]]
-- [[_COMMUNITY_2026-03-18|2026-03-18]]
-- [[_COMMUNITY_2026-03-19|2026-03-19.md]]
-- [[_COMMUNITY_2026-03-20|2026-03-20.md]]
-- [[_COMMUNITY_2026-03-23|2026-03-23.md]]
-- [[_COMMUNITY_2026-03-24|2026-03-24.md]]
-- [[_COMMUNITY_2026-03-27|2026-03-27.md]]
-- [[_COMMUNITY_2026-03-31|2026-03-31.md]]
-- [[_COMMUNITY_2026-04-16|2026-04-16.md]]
-- [[_COMMUNITY_2026-04-17|2026-04-17.md]]
-- [[_COMMUNITY_2026-04-22|2026-04-22]]
-- [[_COMMUNITY_Jira Sync — 2026-05-12|Jira Sync — 2026-05-12]]
-- [[_COMMUNITY_OxHugoFlavoredMarkdown|OxHugoFlavoredMarkdown.md]]
-- [[_COMMUNITY_AC-313 POC Powershell to AWS script files|AC-313 POC Powershell to AWS script files]]
-- [[_COMMUNITY_OBC-360 (New endpoint - still needs loads of other things)|OBC-360 (New endpoint - still needs loads of other things)]]
-- [[_COMMUNITY_STM-28 Storing Streamax|STM-28 Storing Streamax]]
-- [[_COMMUNITY_VM-83 MiXTalk final stretch|VM-83 MiXTalk final stretch]]
-- [[_COMMUNITY_ETS-2017|ETS-2017]]
-- [[_COMMUNITY_ETS-2199 Cannot delete Location|ETS-2199 Cannot delete Location]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Frangular Edit Templates Grok Mirmaid prompts|Frangular Edit Templates Grok Mirmaid prompts.md]]
-- [[_COMMUNITY_CONFIG-3667 GPRS Communications tickbox was unselected|CONFIG-3667 GPRS Communications tickbox was unselected]]
-- [[_COMMUNITY_DB Maintenance|DB Maintenance.md]]
-- [[_COMMUNITY_definition MobileDevices|definition MobileDevices]]
-- [[_COMMUNITY_Deploy|Deploy.md]]
-- [[_COMMUNITY_Deployments 23.9|Deployments 23.9.md]]
-- [[_COMMUNITY_Forms for improvement|Forms for improvement.md]]
-- [[_COMMUNITY_Back End|Back End]]
-- [[_COMMUNITY_MIX3K-9 MiX3000 Default Config Group|MIX3K-9 MiX3000 Default Config Group]]
-- [[_COMMUNITY_SQL Data Schema|SQL Data Schema]]
-- [[_COMMUNITY_TECHDEBT-372 Make use of the Glablisation API for DST in DeviceConfig API|TECHDEBT-372 Make use of the Glablisation API for DST in DeviceConfig API]]
-- [[_COMMUNITY_OE-20 UPDATE|OE-20 UPDATE]]
-- [[_COMMUNITY_OE-485 UI Holding page with the Configuration Group Multiselect Panel and Assets List Panel -|OE-485 [UI] Holding page with the Configuration Group Multiselect Panel and Assets List Panel -]]
-- [[_COMMUNITY_OE-623 Missing firmware upload expired alert|OE-623 Missing firmware upload expired alert]]
-- [[_COMMUNITY_OPEN-2462 — UI Add Deployment Pipeline to ZAGOV Environment|OPEN-2462 — UI: Add Deployment Pipeline to ZAGOV Environment]]
-- [[_COMMUNITY_OPEN-2577 — AUTO-API Wire Swagger Coverage Gate into Azure DevOps Pipeline|OPEN-2577 — AUTO-API: Wire Swagger Coverage Gate into Azure DevOps Pipeline]]
-- [[_COMMUNITY_OPEN-1971 — POC Paperclip Standalone Agentic Server - Centralised AI Orchestration|OPEN-1971 — [POC] Paperclip Standalone Agentic Server - Centralised AI Orchestration]]
-- [[_COMMUNITY_OPEN-235 Error when moving Unallocated to Config Group|OPEN-235 Error when moving Unallocated to Config Group]]
-- [[_COMMUNITY_OPEN-236 config group panel shows 2 assets but only 1 asset appears in the asset panel|OPEN-236 config group panel shows 2 assets but only 1 asset appears in the asset panel]]
-- [[_COMMUNITY_OPEN-453 Healthcheck Permission|OPEN-453 Healthcheck Permission]]
-- [[_COMMUNITY_OPEN-494|OPEN-494]]
-- [[_COMMUNITY_OPEN-505 Identify channels for blurring|OPEN-505 Identify channels for blurring.md]]
-- [[_COMMUNITY_OPEN-689 Camera Direction field needed in operational stored procs|OPEN-689 Camera Direction field needed in operational stored procs]]
-- [[_COMMUNITY_Shorter Description|Shorter Description]]
-- [[_COMMUNITY_QA-7744 Language Kendo Items Selected|QA-7744 Language Kendo Items Selected]]
-- [[_COMMUNITY_Analysis and Plan for `uspGetMobileUnitMissingParameters` Logic|Analysis and Plan for `uspGetMobileUnitMissingParameters` Logic]]
-- [[_COMMUNITY_TODO|TODO.md]]
-- [[_COMMUNITY_SR-15595 Assets reporting incorrect time|SR-15595 Assets reporting incorrect time]]
-- [[_COMMUNITY_Template Daily Notes|Template Daily Notes.md]]
-- [[_COMMUNITY_{{title}}|{{title}}]]
-- [[_COMMUNITY_Template Weekly Notes|Template Weekly Notes.md]]
-- [[_COMMUNITY_2025-W23|2025-W23.md]]
-- [[_COMMUNITY_2025-W26|2025-W26.md]]
-- [[_COMMUNITY_2025-W27|2025-W27.md]]
-- [[_COMMUNITY_2025-W28|2025-W28.md]]
-- [[_COMMUNITY_2025-W29|2025-W29.md]]
-- [[_COMMUNITY_2025-W30|2025-W30.md]]
-- [[_COMMUNITY_2025-W32|2025-W32.md]]
-- [[_COMMUNITY_2025-W33|2025-W33.md]]
-- [[_COMMUNITY_2025-W34|2025-W34.md]]
-- [[_COMMUNITY_2025-W35|2025-W35.md]]
-- [[_COMMUNITY_2025-W36|2025-W36.md]]
-- [[_COMMUNITY_2025-W37|2025-W37.md]]
-- [[_COMMUNITY_2025-W38|2025-W38.md]]
-- [[_COMMUNITY_2025-W39|2025-W39.md]]
-- [[_COMMUNITY_2025-W40|2025-W40.md]]
-- [[_COMMUNITY_2025-W41|2025-W41.md]]
-- [[_COMMUNITY_2025-W42|2025-W42.md]]
-- [[_COMMUNITY_2025-W43|2025-W43.md]]
-- [[_COMMUNITY_2025-W44|2025-W44.md]]
-- [[_COMMUNITY_2025-W45|2025-W45.md]]
-- [[_COMMUNITY_2025-W46|2025-W46.md]]
-- [[_COMMUNITY_2026-W06|2026-W06.md]]
-- [[_COMMUNITY_2026-W07|2026-W07.md]]
-- [[_COMMUNITY_2026-W11|2026-W11.md]]
-- [[_COMMUNITY_2026-W12|2026-W12.md]]
-- [[_COMMUNITY_2026-W16|2026-W16.md]]
-- [[_COMMUNITY_AC-362 Add Installation Profile|AC-362 Add Installation Profile]]
-- [[_COMMUNITY_Amy Alerts Test Cases|Amy Alerts Test Cases.md]]
-- [[_COMMUNITY_Automation UI URLs|Automation UI URLs.md]]
-- [[_COMMUNITY_AWS Discovery api.deviceconfig.configdev.mix.local|AWS Discovery api.deviceconfig.configdev.mix.local]]
-- [[_COMMUNITY_Claude Code remote-control Prerequisites|Claude Code: /remote-control Prerequisites]]
-- [[_COMMUNITY_Adding a Filter|Adding a Filter.md]]
-- [[_COMMUNITY_You are ready Getting your SEED app up and going|You are ready: Getting your SEED app up and going]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_OE-501 API Documentation|OE-501 API Documentation.md]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Snippets|Snippets]]
-- [[_COMMUNITY_Quartz Cheatsheet|Quartz Cheatsheet]]
-- [[_COMMUNITY_CORS Unity Frangular UI|CORS Unity Frangular UI.md]]
-- [[_COMMUNITY_Database Merge Build Issues|Database Merge Build Issues.md]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_2022-03-01|2022-03-01]]
-- [[_COMMUNITY_2022-03-02|2022-03-02]]
-- [[_COMMUNITY_2022-03-03|2022-03-03]]
-- [[_COMMUNITY_2022-03-04|2022-03-04]]
-- [[_COMMUNITY_2022-03-07|2022-03-07]]
-- [[_COMMUNITY_2022-03-08|2022-03-08]]
-- [[_COMMUNITY_2022-03-09|2022-03-09]]
-- [[_COMMUNITY_2022-03-10|2022-03-10]]
-- [[_COMMUNITY_2022-03-11|2022-03-11]]
-- [[_COMMUNITY_2022-03-14|2022-03-14]]
-- [[_COMMUNITY_2022-03-15|2022-03-15]]
-- [[_COMMUNITY_2022-03-16|2022-03-16]]
-- [[_COMMUNITY_2022-03-17|2022-03-17]]
-- [[_COMMUNITY_2022-03-18|2022-03-18]]
-- [[_COMMUNITY_2022-03-21|2022-03-21]]
-- [[_COMMUNITY_2022-03-22|2022-03-22]]
-- [[_COMMUNITY_2022-03-23|2022-03-23]]
-- [[_COMMUNITY_2022-03-24|2022-03-24]]
-- [[_COMMUNITY_2022-03-25|2022-03-25]]
-- [[_COMMUNITY_2022-03-28|2022-03-28]]
-- [[_COMMUNITY_2022-03-29|2022-03-29]]
-- [[_COMMUNITY_2022-03-30|2022-03-30]]
-- [[_COMMUNITY_2022-03-31|2022-03-31]]
-- [[_COMMUNITY_2022-04-01|2022-04-01]]
-- [[_COMMUNITY_2022-04-04|2022-04-04]]
-- [[_COMMUNITY_2022-04-05|2022-04-05]]
-- [[_COMMUNITY_2022-04-06|2022-04-06]]
-- [[_COMMUNITY_2022-04-07|2022-04-07]]
-- [[_COMMUNITY_2022-04-08|2022-04-08]]
-- [[_COMMUNITY_2022-04-11|2022-04-11]]
-- [[_COMMUNITY_2022-04-12|2022-04-12]]
-- [[_COMMUNITY_2022-04-13|2022-04-13]]
-- [[_COMMUNITY_2022-04-14|2022-04-14]]
-- [[_COMMUNITY_2022-04-15|2022-04-15]]
-- [[_COMMUNITY_2022-04-18|2022-04-18]]
-- [[_COMMUNITY_2022-04-19|2022-04-19]]
-- [[_COMMUNITY_2022-04-20|2022-04-20]]
-- [[_COMMUNITY_2022-04-21|2022-04-21]]
-- [[_COMMUNITY_2022-04-22|2022-04-22]]
-- [[_COMMUNITY_2022-04-25|2022-04-25]]
-- [[_COMMUNITY_2022-04-26|2022-04-26]]
-- [[_COMMUNITY_2022-04-27|2022-04-27]]
-- [[_COMMUNITY_2022-04-28|2022-04-28]]
-- [[_COMMUNITY_2022-04-29|2022-04-29]]
-- [[_COMMUNITY_2022-05-02|2022-05-02]]
-- [[_COMMUNITY_2022-05-03|2022-05-03]]
-- [[_COMMUNITY_2022-05-04|2022-05-04]]
-- [[_COMMUNITY_2022-05-05|2022-05-05]]
-- [[_COMMUNITY_2022-05-06|2022-05-06]]
-- [[_COMMUNITY_2022-05-09|2022-05-09]]
-- [[_COMMUNITY_2022-05-10|2022-05-10]]
-- [[_COMMUNITY_2022-05-11|2022-05-11]]
-- [[_COMMUNITY_2022-05-12|2022-05-12]]
-- [[_COMMUNITY_2022-05-13|2022-05-13]]
-- [[_COMMUNITY_2022-05-16|2022-05-16]]
-- [[_COMMUNITY_2022-05-17|2022-05-17]]
-- [[_COMMUNITY_2022-05-18|2022-05-18]]
-- [[_COMMUNITY_2022-05-19|2022-05-19]]
-- [[_COMMUNITY_2022-05-20|2022-05-20]]
-- [[_COMMUNITY_2022-05-23|2022-05-23]]
-- [[_COMMUNITY_2022-05-24|2022-05-24]]
-- [[_COMMUNITY_2022-05-25|2022-05-25]]
-- [[_COMMUNITY_2022-05-26|2022-05-26]]
-- [[_COMMUNITY_2022-05-27|2022-05-27]]
-- [[_COMMUNITY_2022-05-30|2022-05-30]]
-- [[_COMMUNITY_2022-05-31|2022-05-31]]
-- [[_COMMUNITY_2022-08-16|2022-08-16]]
-- [[_COMMUNITY_2022-11-28|2022-11-28.md]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_2023-05-02|2023-05-02.md]]
-- [[_COMMUNITY_2024-03-22|2024-03-22.md]]
-- [[_COMMUNITY_2025-06-10|2025-06-10.md]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_Notes|Notes]]
-- [[_COMMUNITY_2026-03-12|2026-03-12]]
-- [[_COMMUNITY_2026-03-17|2026-03-17.md]]
-- [[_COMMUNITY_Infrastructure Changes|Infrastructure Changes]]
-- [[_COMMUNITY_Jira Sync — 2026-04-09|Jira Sync — 2026-04-09]]
-- [[_COMMUNITY_Jira Sync — 2026-04-13|Jira Sync — 2026-04-13]]
-- [[_COMMUNITY_Jira Sync — 2026-05-04|Jira Sync — 2026-05-04]]
-- [[_COMMUNITY_Powerfleet.Automation — Video API Changes|Powerfleet.Automation — Video API Changes]]
-- [[_COMMUNITY_Future Diff Ideas|Future Diff Ideas]]
-- [[_COMMUNITY_AC-163 SPIKE CAN Config Group|AC-163 SPIKE CAN Config Group]]
-- [[_COMMUNITY_STM-123 Method for Decommissioning of Streamax Device|STM-123 Method for Decommissioning of Streamax Device]]
-- [[_COMMUNITY_OBC-401 Change the uniqueproperty PhoneNumber for Mobile Phone|OBC-401 Change the uniqueproperty "PhoneNumber" for Mobile Phone]]
-- [[_COMMUNITY_ETS-6168 Error message appearing when trying to edit asset on  Mobile Device Settings|ETS-6168 Error message appearing when trying to edit asset on  Mobile Device Settings]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Code|Code]]
-- [[_COMMUNITY_This AI Text Detector boasts 99% Accuracy, we investigate - Palantir Rejects AI Pause - Meta’s AI Music Generator - And so much more...|This AI Text Detector boasts 99% Accuracy, we investigate - Palantir Rejects AI Pause - Meta’s AI Music Generator - And so much more...]]
-- [[_COMMUNITY_STEPS to get all the parameterIds and fix the make available|STEPS to get all the parameterIds and fix the make available]]
-- [[_COMMUNITY_CreateDeviceDetailsCarrier|CreateDeviceDetailsCarrier.md]]
-- [[_COMMUNITY_ENHANCEMENT Extention Method Idea Post Get Routes|ENHANCEMENT Extention Method Idea Post Get Routes.md]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Git Handy Command line|Git Handy Command line.md]]
-- [[_COMMUNITY_Jira|Jira.md]]
-- [[_COMMUNITY_OE-542 Error 500 when moving asset to config group|OE-542 Error 500 when moving asset to config group]]
-- [[_COMMUNITY_OE-602 Timer going too fast|OE-602 Timer going too fast]]
-- [[_COMMUNITY_OE-608 Error when loading YS_Bench Units|OE-608 Error when loading YS_Bench Units]]
-- [[_COMMUNITY_Old Daily Merge Template|Old Daily Merge Template.md]]
-- [[_COMMUNITY_Retro|Retro.md]]
-- [[_COMMUNITY_Swagger Urls|Swagger Urls.md]]
-- [[_COMMUNITY_Branch|Branch]]
-- [[_COMMUNITY_OE-636 Column Selector not Alphabetical|OE-636 Column Selector not Alphabetical]]
-- [[_COMMUNITY_OPEN-2574 — CT-UI Deploy ConfigTools.UI to INT Environment|OPEN-2574 — CT-UI: Deploy ConfigTools.UI to INT Environment]]
-- [[_COMMUNITY_OPEN-1052|OPEN-1052]]
-- [[_COMMUNITY_Unit Tests|Unit Tests]]
-- [[_COMMUNITY_OPEN-687|OPEN-687]]
-- [[_COMMUNITY_OPEN-781 Fix Row Width for icon rows|OPEN-781 Fix Row Width for icon rows]]
-- [[_COMMUNITY_OPEN-860 Alert optimized Gemini|OPEN-860 Alert optimized Gemini.md]]
-- [[_COMMUNITY_QA-7444|QA-7444]]
-- [[_COMMUNITY_SR-15476 Command 45 not sent when moving between sites|SR-15476 Command 45 not sent when moving between sites]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_{{title}}|{{title}}]]
-- [[_COMMUNITY_2022-W09|2022-W09]]
-- [[_COMMUNITY_2022-W10|2022-W10]]
-- [[_COMMUNITY_2022-W11|2022-W11]]
-- [[_COMMUNITY_2022-W12|2022-W12]]
-- [[_COMMUNITY_2022-W13|2022-W13]]
-- [[_COMMUNITY_2022-W14|2022-W14]]
-- [[_COMMUNITY_2022-W15|2022-W15]]
-- [[_COMMUNITY_2022-W16|2022-W16]]
-- [[_COMMUNITY_2022-W17|2022-W17]]
-- [[_COMMUNITY_2022-W18|2022-W18]]
-- [[_COMMUNITY_2022-W19|2022-W19]]
-- [[_COMMUNITY_2022-W20|2022-W20]]
-- [[_COMMUNITY_2022-W21|2022-W21]]
-- [[_COMMUNITY_2022-W22|2022-W22]]
-- [[_COMMUNITY_2022-W23|2022-W23]]
-- [[_COMMUNITY_2022-W24|2022-W24]]
-- [[_COMMUNITY_2022-W25|2022-W25]]
-- [[_COMMUNITY_2022-W26|2022-W26]]
-- [[_COMMUNITY_2022-W27|2022-W27]]
-- [[_COMMUNITY_2022-W28|2022-W28]]
-- [[_COMMUNITY_2022-W29|2022-W29]]
-- [[_COMMUNITY_2022-W30|2022-W30]]
-- [[_COMMUNITY_2024-W42|2024-W42.md]]
-- [[_COMMUNITY_2024-W43|2024-W43.md]]
-- [[_COMMUNITY_2024-W44|2024-W44.md]]
-- [[_COMMUNITY_2024-W45|2024-W45.md]]
-- [[_COMMUNITY_2024-W46|2024-W46.md]]
-- [[_COMMUNITY_2024-W47|2024-W47.md]]
-- [[_COMMUNITY_2024-W48|2024-W48.md]]
-- [[_COMMUNITY_2024-W49|2024-W49.md]]
-- [[_COMMUNITY_2024-W50|2024-W50.md]]
-- [[_COMMUNITY_2025-W01|2025-W01.md]]
-- [[_COMMUNITY_2025-W02|2025-W02.md]]
-- [[_COMMUNITY_2025-W03|2025-W03.md]]
-- [[_COMMUNITY_2025-W04|2025-W04.md]]
-- [[_COMMUNITY_2025-W05|2025-W05.md]]
-- [[_COMMUNITY_2025-W06|2025-W06.md]]
-- [[_COMMUNITY_2025-W07|2025-W07.md]]
-- [[_COMMUNITY_2025-W08|2025-W08.md]]
-- [[_COMMUNITY_2025-W09|2025-W09.md]]
-- [[_COMMUNITY_2025-W10|2025-W10.md]]
-- [[_COMMUNITY_2025-W11|2025-W11.md]]
-- [[_COMMUNITY_2025-W12|2025-W12.md]]
-- [[_COMMUNITY_2025-W13|2025-W13.md]]
-- [[_COMMUNITY_2025-W14|2025-W14.md]]
-- [[_COMMUNITY_2025-W15|2025-W15.md]]
-- [[_COMMUNITY_2025-W16|2025-W16.md]]
-- [[_COMMUNITY_2025-W17|2025-W17.md]]
-- [[_COMMUNITY_2025-W18|2025-W18.md]]
-- [[_COMMUNITY_2025-W19|2025-W19.md]]
-- [[_COMMUNITY_2025-W20|2025-W20.md]]
-- [[_COMMUNITY_2025-W21|2025-W21.md]]
-- [[_COMMUNITY_2025-W22|2025-W22.md]]
-- [[_COMMUNITY_2025-W24|2025-W24.md]]
-- [[_COMMUNITY_2025-W25|2025-W25.md]]
-- [[_COMMUNITY_dst-code-paths|dst-code-paths.md]]
-- [[_COMMUNITY_dst-debug-guide|dst-debug-guide.md]]
-- [[_COMMUNITY_ets-8669-oman-dst|ets-8669-oman-dst.md]]
-- [[_COMMUNITY_github-login|github-login.md]]
-- [[_COMMUNITY_oe-config-groups-cluster3|oe-config-groups-cluster3.md]]
-- [[_COMMUNITY_operations-tools-master|operations-tools-master.md]]
-- [[_COMMUNITY_remaining-clusters-batch|remaining-clusters-batch.md]]
-- [[_COMMUNITY_zagov-aws-deployment|zagov-aws-deployment.md]]
-- [[_COMMUNITY_5. Refactoring Plan|5. Refactoring Plan]]
-- [[_COMMUNITY_3. Dependencies and Connections|3. Dependencies and Connections]]
-- [[_COMMUNITY_5. Refactoring Plan|5. Refactoring Plan]]
-- [[_COMMUNITY_3. Dependencies and Connections|3. Dependencies and Connections]]
-- [[_COMMUNITY_5. Refactoring Plan|5. Refactoring Plan]]
-- [[_COMMUNITY_AC-363 MakeOrgIDOptional_FriendlyParameter|AC-363 MakeOrgIDOptional_FriendlyParameter.md]]
-- [[_COMMUNITY_Description|Description]]
-- [[_COMMUNITY_Alerts with AI|Alerts with AI.md]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_AWS api.deviceconfig.dev.priv|AWS api.deviceconfig.dev.priv.md]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_2022-06-01|2022-06-01]]
-- [[_COMMUNITY_2022-06-02|2022-06-02]]
-- [[_COMMUNITY_2022-06-03|2022-06-03]]
-- [[_COMMUNITY_2022-06-06|2022-06-06]]
-- [[_COMMUNITY_2022-06-07|2022-06-07]]
-- [[_COMMUNITY_2022-06-08|2022-06-08]]
-- [[_COMMUNITY_2022-06-09|2022-06-09]]
-- [[_COMMUNITY_2022-06-10|2022-06-10]]
-- [[_COMMUNITY_2022-06-13|2022-06-13]]
-- [[_COMMUNITY_2022-06-14|2022-06-14]]
-- [[_COMMUNITY_2022-06-15|2022-06-15]]
-- [[_COMMUNITY_2022-06-16|2022-06-16]]
-- [[_COMMUNITY_2022-06-17|2022-06-17]]
-- [[_COMMUNITY_2022-06-20|2022-06-20]]
-- [[_COMMUNITY_2022-06-21|2022-06-21]]
-- [[_COMMUNITY_2022-06-22|2022-06-22]]
-- [[_COMMUNITY_2022-06-23|2022-06-23]]
-- [[_COMMUNITY_2022-06-24|2022-06-24]]
-- [[_COMMUNITY_2022-06-27|2022-06-27]]
-- [[_COMMUNITY_2022-06-28|2022-06-28]]
-- [[_COMMUNITY_2022-06-29|2022-06-29]]
-- [[_COMMUNITY_2022-06-30|2022-06-30]]
-- [[_COMMUNITY_2022-07-01|2022-07-01]]
-- [[_COMMUNITY_2022-07-04|2022-07-04]]
-- [[_COMMUNITY_2022-07-05|2022-07-05]]
-- [[_COMMUNITY_2022-07-06|2022-07-06]]
-- [[_COMMUNITY_2022-07-07|2022-07-07]]
-- [[_COMMUNITY_2022-07-11|2022-07-11]]
-- [[_COMMUNITY_2022-07-12|2022-07-12]]
-- [[_COMMUNITY_2022-07-13|2022-07-13]]
-- [[_COMMUNITY_2022-07-14|2022-07-14]]
-- [[_COMMUNITY_2022-07-18|2022-07-18]]
-- [[_COMMUNITY_2022-07-19|2022-07-19]]
-- [[_COMMUNITY_2022-07-20|2022-07-20]]
-- [[_COMMUNITY_2022-07-21|2022-07-21]]
-- [[_COMMUNITY_2022-07-22|2022-07-22]]
-- [[_COMMUNITY_2022-07-25|2022-07-25]]
-- [[_COMMUNITY_2022-07-26|2022-07-26]]
-- [[_COMMUNITY_2022-07-27|2022-07-27]]
-- [[_COMMUNITY_2022-08-01|2022-08-01]]
-- [[_COMMUNITY_2022-08-02|2022-08-02]]
-- [[_COMMUNITY_2022-08-03|2022-08-03]]
-- [[_COMMUNITY_2022-08-04|2022-08-04]]
-- [[_COMMUNITY_2022-08-05|2022-08-05]]
-- [[_COMMUNITY_2022-08-08|2022-08-08]]
-- [[_COMMUNITY_2022-08-09|2022-08-09]]
-- [[_COMMUNITY_2022-08-10|2022-08-10]]
-- [[_COMMUNITY_2022-08-11|2022-08-11]]
-- [[_COMMUNITY_2022-08-12|2022-08-12]]
-- [[_COMMUNITY_2022-08-15|2022-08-15]]
-- [[_COMMUNITY_2022-08-17|2022-08-17]]
-- [[_COMMUNITY_2022-08-18|2022-08-18]]
-- [[_COMMUNITY_2022-11-23|2022-11-23.md]]
-- [[_COMMUNITY_2022-11-29|2022-11-29.md]]
-- [[_COMMUNITY_2022-12-01|2022-12-01.md]]
-- [[_COMMUNITY_2023-01-24|2023-01-24.md]]
-- [[_COMMUNITY_2023-08-11|2023-08-11.md]]
-- [[_COMMUNITY_2023-08-14|2023-08-14.md]]
-- [[_COMMUNITY_2023-08-15|2023-08-15.md]]
-- [[_COMMUNITY_2023-08-16|2023-08-16.md]]
-- [[_COMMUNITY_2023-08-17|2023-08-17.md]]
-- [[_COMMUNITY_2023-09-12|2023-09-12.md]]
-- [[_COMMUNITY_2023-09-13|2023-09-13.md]]
-- [[_COMMUNITY_2023-09-18|2023-09-18.md]]
-- [[_COMMUNITY_2023-10-03|2023-10-03.md]]
-- [[_COMMUNITY_2023-10-03 1|2023-10-03 1.md]]
-- [[_COMMUNITY_2023-10-04|2023-10-04.md]]
-- [[_COMMUNITY_2023-10-05|2023-10-05.md]]
-- [[_COMMUNITY_2023-10-06|2023-10-06.md]]
-- [[_COMMUNITY_2023-10-09|2023-10-09.md]]
-- [[_COMMUNITY_2023-10-10|2023-10-10.md]]
-- [[_COMMUNITY_2023-10-11|2023-10-11.md]]
-- [[_COMMUNITY_2023-10-12|2023-10-12.md]]
-- [[_COMMUNITY_2023-10-13|2023-10-13.md]]
-- [[_COMMUNITY_2023-10-16|2023-10-16.md]]
-- [[_COMMUNITY_2023-10-17|2023-10-17.md]]
-- [[_COMMUNITY_2023-10-18|2023-10-18.md]]
-- [[_COMMUNITY_2023-10-19|2023-10-19.md]]
-- [[_COMMUNITY_2023-10-20|2023-10-20.md]]
-- [[_COMMUNITY_2023-10-23|2023-10-23.md]]
-- [[_COMMUNITY_2023-10-24|2023-10-24.md]]
-- [[_COMMUNITY_2023-10-25|2023-10-25.md]]
-- [[_COMMUNITY_2023-10-26|2023-10-26.md]]
-- [[_COMMUNITY_2023-10-27|2023-10-27.md]]
-- [[_COMMUNITY_2023-10-30|2023-10-30.md]]
-- [[_COMMUNITY_2023-10-31|2023-10-31.md]]
-- [[_COMMUNITY_2023-11-01|2023-11-01.md]]
-- [[_COMMUNITY_2023-11-02|2023-11-02.md]]
-- [[_COMMUNITY_2023-11-03|2023-11-03.md]]
-- [[_COMMUNITY_2023-11-06|2023-11-06.md]]
-- [[_COMMUNITY_2023-11-07|2023-11-07.md]]
-- [[_COMMUNITY_2023-11-08|2023-11-08.md]]
-- [[_COMMUNITY_2023-11-09|2023-11-09.md]]
-- [[_COMMUNITY_2023-11-10|2023-11-10.md]]
-- [[_COMMUNITY_2023-11-13|2023-11-13.md]]
-- [[_COMMUNITY_2023-11-14|2023-11-14.md]]
-- [[_COMMUNITY_2023-11-15|2023-11-15.md]]
-- [[_COMMUNITY_2023-11-16|2023-11-16.md]]
-- [[_COMMUNITY_2023-11-17|2023-11-17.md]]
-- [[_COMMUNITY_2023-11-20|2023-11-20.md]]
-- [[_COMMUNITY_2023-11-21|2023-11-21.md]]
-- [[_COMMUNITY_2023-11-22|2023-11-22.md]]
-- [[_COMMUNITY_2023-11-23|2023-11-23.md]]
-- [[_COMMUNITY_2023-11-24|2023-11-24.md]]
-- [[_COMMUNITY_2023-11-27|2023-11-27.md]]
-- [[_COMMUNITY_2023-11-28|2023-11-28.md]]
-- [[_COMMUNITY_2023-11-29|2023-11-29.md]]
-- [[_COMMUNITY_2023-11-30|2023-11-30.md]]
-- [[_COMMUNITY_2023-12-01|2023-12-01.md]]
-- [[_COMMUNITY_2023-12-04|2023-12-04.md]]
-- [[_COMMUNITY_2023-12-05|2023-12-05.md]]
-- [[_COMMUNITY_2023-12-06|2023-12-06.md]]
-- [[_COMMUNITY_2023-12-07|2023-12-07.md]]
-- [[_COMMUNITY_2023-12-08|2023-12-08.md]]
-- [[_COMMUNITY_2023-12-11|2023-12-11.md]]
-- [[_COMMUNITY_2023-12-12|2023-12-12.md]]
-- [[_COMMUNITY_2023-12-13|2023-12-13.md]]
-- [[_COMMUNITY_2024-01-01|2024-01-01.md]]
-- [[_COMMUNITY_2024-01-02|2024-01-02.md]]
-- [[_COMMUNITY_2024-01-03|2024-01-03.md]]
-- [[_COMMUNITY_2024-01-04|2024-01-04.md]]
-- [[_COMMUNITY_2024-01-05|2024-01-05.md]]
-- [[_COMMUNITY_2024-01-08|2024-01-08.md]]
-- [[_COMMUNITY_2024-01-09|2024-01-09.md]]
-- [[_COMMUNITY_2024-01-10|2024-01-10.md]]
-- [[_COMMUNITY_2024-01-11|2024-01-11.md]]
-- [[_COMMUNITY_2024-01-12|2024-01-12.md]]
-- [[_COMMUNITY_2024-01-15|2024-01-15.md]]
-- [[_COMMUNITY_2024-01-16|2024-01-16.md]]
-- [[_COMMUNITY_2024-01-17|2024-01-17.md]]
-- [[_COMMUNITY_2024-01-18|2024-01-18.md]]
-- [[_COMMUNITY_2024-01-19|2024-01-19.md]]
-- [[_COMMUNITY_2024-01-22|2024-01-22.md]]
-- [[_COMMUNITY_2024-01-23|2024-01-23.md]]
-- [[_COMMUNITY_2024-01-24|2024-01-24.md]]
-- [[_COMMUNITY_2024-01-25|2024-01-25.md]]
-- [[_COMMUNITY_2024-01-26|2024-01-26.md]]
-- [[_COMMUNITY_2024-01-29|2024-01-29.md]]
-- [[_COMMUNITY_2024-01-30|2024-01-30.md]]
-- [[_COMMUNITY_2024-01-31|2024-01-31.md]]
-- [[_COMMUNITY_2024-02-01|2024-02-01.md]]
-- [[_COMMUNITY_2024-02-02|2024-02-02.md]]
-- [[_COMMUNITY_2024-02-05|2024-02-05.md]]
-- [[_COMMUNITY_2024-02-06|2024-02-06.md]]
-- [[_COMMUNITY_2024-02-07|2024-02-07.md]]
-- [[_COMMUNITY_2024-02-09|2024-02-09.md]]
-- [[_COMMUNITY_2024-02-12|2024-02-12.md]]
-- [[_COMMUNITY_2024-02-13|2024-02-13.md]]
-- [[_COMMUNITY_2024-02-14|2024-02-14.md]]
-- [[_COMMUNITY_2024-02-15|2024-02-15.md]]
-- [[_COMMUNITY_2024-02-16|2024-02-16.md]]
-- [[_COMMUNITY_2024-02-19|2024-02-19.md]]
-- [[_COMMUNITY_2024-02-20|2024-02-20.md]]
-- [[_COMMUNITY_2024-02-21|2024-02-21.md]]
-- [[_COMMUNITY_2024-02-22|2024-02-22.md]]
-- [[_COMMUNITY_2024-02-23|2024-02-23.md]]
-- [[_COMMUNITY_2024-02-26|2024-02-26.md]]
-- [[_COMMUNITY_2024-02-27|2024-02-27.md]]
-- [[_COMMUNITY_2024-02-28|2024-02-28.md]]
-- [[_COMMUNITY_2024-02-29|2024-02-29.md]]
-- [[_COMMUNITY_2024-03-01|2024-03-01.md]]
-- [[_COMMUNITY_2024-03-04|2024-03-04.md]]
-- [[_COMMUNITY_2024-03-05|2024-03-05.md]]
-- [[_COMMUNITY_2024-03-06|2024-03-06.md]]
-- [[_COMMUNITY_2024-03-07|2024-03-07.md]]
-- [[_COMMUNITY_2024-03-08|2024-03-08.md]]
-- [[_COMMUNITY_2024-03-11|2024-03-11.md]]
-- [[_COMMUNITY_2024-03-12|2024-03-12.md]]
-- [[_COMMUNITY_2024-03-13|2024-03-13.md]]
-- [[_COMMUNITY_2024-03-14|2024-03-14.md]]
-- [[_COMMUNITY_2024-03-15|2024-03-15.md]]
-- [[_COMMUNITY_2024-03-18|2024-03-18.md]]
-- [[_COMMUNITY_2024-03-19|2024-03-19.md]]
-- [[_COMMUNITY_2024-03-20|2024-03-20.md]]
-- [[_COMMUNITY_2024-03-21|2024-03-21.md]]
-- [[_COMMUNITY_2024-03-25|2024-03-25.md]]
-- [[_COMMUNITY_2024-03-26|2024-03-26.md]]
-- [[_COMMUNITY_2024-03-27|2024-03-27.md]]
-- [[_COMMUNITY_2024-03-28|2024-03-28.md]]
-- [[_COMMUNITY_2024-04-01|2024-04-01.md]]
-- [[_COMMUNITY_2024-04-02|2024-04-02.md]]
-- [[_COMMUNITY_2024-04-03|2024-04-03.md]]
-- [[_COMMUNITY_2024-04-04|2024-04-04.md]]
-- [[_COMMUNITY_2024-04-05|2024-04-05.md]]
-- [[_COMMUNITY_2024-04-08|2024-04-08.md]]
-- [[_COMMUNITY_2024-04-09|2024-04-09.md]]
-- [[_COMMUNITY_2024-04-10|2024-04-10.md]]
-- [[_COMMUNITY_2024-04-11|2024-04-11.md]]
-- [[_COMMUNITY_2024-04-12|2024-04-12.md]]
-- [[_COMMUNITY_2024-04-15|2024-04-15.md]]
-- [[_COMMUNITY_2024-04-16|2024-04-16.md]]
-- [[_COMMUNITY_2024-04-17|2024-04-17.md]]
-- [[_COMMUNITY_2024-04-18|2024-04-18.md]]
-- [[_COMMUNITY_2024-04-19|2024-04-19.md]]
-- [[_COMMUNITY_2024-04-22|2024-04-22.md]]
-- [[_COMMUNITY_2024-04-23|2024-04-23.md]]
-- [[_COMMUNITY_2024-04-24|2024-04-24.md]]
-- [[_COMMUNITY_2024-04-25|2024-04-25.md]]
-- [[_COMMUNITY_2024-04-26|2024-04-26.md]]
-- [[_COMMUNITY_2024-04-29|2024-04-29.md]]
-- [[_COMMUNITY_2024-04-30|2024-04-30.md]]
-- [[_COMMUNITY_2024-05-01|2024-05-01.md]]
-- [[_COMMUNITY_2024-05-02|2024-05-02.md]]
-- [[_COMMUNITY_2024-05-03|2024-05-03.md]]
-- [[_COMMUNITY_2024-05-06|2024-05-06.md]]
-- [[_COMMUNITY_2024-05-07|2024-05-07.md]]
-- [[_COMMUNITY_2024-05-08|2024-05-08.md]]
-- [[_COMMUNITY_2024-05-09|2024-05-09.md]]
-- [[_COMMUNITY_2024-05-10|2024-05-10.md]]
-- [[_COMMUNITY_2024-05-13|2024-05-13.md]]
-- [[_COMMUNITY_2024-05-14|2024-05-14.md]]
-- [[_COMMUNITY_2024-05-15|2024-05-15.md]]
-- [[_COMMUNITY_2024-05-16|2024-05-16.md]]
-- [[_COMMUNITY_2024-05-17|2024-05-17.md]]
-- [[_COMMUNITY_2024-05-20|2024-05-20.md]]
-- [[_COMMUNITY_2024-05-21|2024-05-21.md]]
-- [[_COMMUNITY_2024-05-22|2024-05-22.md]]
-- [[_COMMUNITY_2024-05-23|2024-05-23.md]]
-- [[_COMMUNITY_2024-05-24|2024-05-24.md]]
-- [[_COMMUNITY_2024-05-27|2024-05-27.md]]
-- [[_COMMUNITY_2024-05-28|2024-05-28.md]]
-- [[_COMMUNITY_2024-05-29|2024-05-29.md]]
-- [[_COMMUNITY_2024-05-30|2024-05-30.md]]
-- [[_COMMUNITY_2024-05-31|2024-05-31.md]]
-- [[_COMMUNITY_2024-06-03|2024-06-03.md]]
-- [[_COMMUNITY_2024-06-04|2024-06-04.md]]
-- [[_COMMUNITY_2024-06-05|2024-06-05.md]]
-- [[_COMMUNITY_2024-06-06|2024-06-06.md]]
-- [[_COMMUNITY_2024-06-07|2024-06-07.md]]
-- [[_COMMUNITY_2024-06-10|2024-06-10.md]]
-- [[_COMMUNITY_2024-06-11|2024-06-11.md]]
-- [[_COMMUNITY_2024-06-12|2024-06-12.md]]
-- [[_COMMUNITY_2024-06-13|2024-06-13.md]]
-- [[_COMMUNITY_2024-06-14|2024-06-14.md]]
-- [[_COMMUNITY_2024-06-17|2024-06-17.md]]
-- [[_COMMUNITY_2024-06-18|2024-06-18.md]]
-- [[_COMMUNITY_2024-06-19|2024-06-19.md]]
-- [[_COMMUNITY_2024-06-20|2024-06-20.md]]
-- [[_COMMUNITY_2024-06-21|2024-06-21.md]]
-- [[_COMMUNITY_2024-06-24|2024-06-24.md]]
-- [[_COMMUNITY_2024-06-25|2024-06-25.md]]
-- [[_COMMUNITY_2024-06-26|2024-06-26.md]]
-- [[_COMMUNITY_2024-06-27|2024-06-27.md]]
-- [[_COMMUNITY_2024-06-28|2024-06-28.md]]
-- [[_COMMUNITY_2024-07-01|2024-07-01.md]]
-- [[_COMMUNITY_2024-07-02|2024-07-02.md]]
-- [[_COMMUNITY_2024-07-03|2024-07-03.md]]
-- [[_COMMUNITY_2024-07-04|2024-07-04.md]]
-- [[_COMMUNITY_2024-07-05|2024-07-05.md]]
-- [[_COMMUNITY_2024-07-08|2024-07-08.md]]
-- [[_COMMUNITY_2024-07-09|2024-07-09.md]]
-- [[_COMMUNITY_2024-07-10|2024-07-10.md]]
-- [[_COMMUNITY_2024-07-11|2024-07-11.md]]
-- [[_COMMUNITY_2024-07-12|2024-07-12.md]]
-- [[_COMMUNITY_2024-07-15|2024-07-15.md]]
-- [[_COMMUNITY_2024-07-16|2024-07-16.md]]
-- [[_COMMUNITY_2024-07-17|2024-07-17.md]]
-- [[_COMMUNITY_2024-07-18|2024-07-18.md]]
-- [[_COMMUNITY_2024-07-19|2024-07-19.md]]
-- [[_COMMUNITY_2024-07-22|2024-07-22.md]]
-- [[_COMMUNITY_2024-07-23|2024-07-23.md]]
-- [[_COMMUNITY_2024-07-24|2024-07-24.md]]
-- [[_COMMUNITY_2024-07-25|2024-07-25.md]]
-- [[_COMMUNITY_2024-07-26|2024-07-26.md]]
-- [[_COMMUNITY_2024-07-29|2024-07-29.md]]
-- [[_COMMUNITY_2024-07-30|2024-07-30.md]]
-- [[_COMMUNITY_2024-07-31|2024-07-31.md]]
-- [[_COMMUNITY_2024-08-01|2024-08-01.md]]
-- [[_COMMUNITY_2024-08-02|2024-08-02.md]]
-- [[_COMMUNITY_2024-08-05|2024-08-05.md]]
-- [[_COMMUNITY_2024-08-06|2024-08-06.md]]
-- [[_COMMUNITY_2024-08-07|2024-08-07.md]]
-- [[_COMMUNITY_2024-08-08|2024-08-08.md]]
-- [[_COMMUNITY_2024-08-09|2024-08-09.md]]
-- [[_COMMUNITY_2024-08-12|2024-08-12.md]]
-- [[_COMMUNITY_2024-08-13|2024-08-13.md]]
-- [[_COMMUNITY_2024-08-14|2024-08-14.md]]
-- [[_COMMUNITY_2024-08-15|2024-08-15.md]]
-- [[_COMMUNITY_2024-08-16|2024-08-16.md]]
-- [[_COMMUNITY_2024-08-19|2024-08-19.md]]
-- [[_COMMUNITY_2024-08-20|2024-08-20.md]]
-- [[_COMMUNITY_2024-08-21|2024-08-21.md]]
-- [[_COMMUNITY_2024-08-22|2024-08-22.md]]
-- [[_COMMUNITY_2024-08-23|2024-08-23.md]]
-- [[_COMMUNITY_2024-08-26|2024-08-26.md]]
-- [[_COMMUNITY_2024-08-27|2024-08-27.md]]
-- [[_COMMUNITY_2024-08-28|2024-08-28.md]]
-- [[_COMMUNITY_2024-08-29|2024-08-29.md]]
-- [[_COMMUNITY_2024-08-30|2024-08-30.md]]
-- [[_COMMUNITY_2024-09-02|2024-09-02.md]]
-- [[_COMMUNITY_2024-09-03|2024-09-03.md]]
-- [[_COMMUNITY_2024-09-04|2024-09-04.md]]
-- [[_COMMUNITY_2024-09-05|2024-09-05.md]]
-- [[_COMMUNITY_2024-09-06|2024-09-06.md]]
-- [[_COMMUNITY_2024-09-09|2024-09-09.md]]
-- [[_COMMUNITY_2024-09-10|2024-09-10.md]]
-- [[_COMMUNITY_2024-09-11|2024-09-11.md]]
-- [[_COMMUNITY_2024-09-12|2024-09-12.md]]
-- [[_COMMUNITY_2024-09-13|2024-09-13.md]]
-- [[_COMMUNITY_2024-09-16|2024-09-16.md]]
-- [[_COMMUNITY_2024-09-17|2024-09-17.md]]
-- [[_COMMUNITY_2024-09-18|2024-09-18.md]]
-- [[_COMMUNITY_2024-09-19|2024-09-19.md]]
-- [[_COMMUNITY_2024-09-23|2024-09-23.md]]
-- [[_COMMUNITY_2024-09-24|2024-09-24.md]]
-- [[_COMMUNITY_2024-09-25|2024-09-25.md]]
-- [[_COMMUNITY_2024-09-26|2024-09-26.md]]
-- [[_COMMUNITY_2024-09-27|2024-09-27.md]]
-- [[_COMMUNITY_2024-09-30|2024-09-30.md]]
-- [[_COMMUNITY_2024-10-01|2024-10-01.md]]
-- [[_COMMUNITY_2024-10-02|2024-10-02.md]]
-- [[_COMMUNITY_2024-10-03|2024-10-03.md]]
-- [[_COMMUNITY_2024-10-04|2024-10-04.md]]
-- [[_COMMUNITY_2024-10-07|2024-10-07.md]]
-- [[_COMMUNITY_2024-10-08|2024-10-08.md]]
-- [[_COMMUNITY_2024-10-09|2024-10-09.md]]
-- [[_COMMUNITY_2024-10-10|2024-10-10.md]]
-- [[_COMMUNITY_2024-10-11|2024-10-11.md]]
-- [[_COMMUNITY_2024-10-14|2024-10-14.md]]
-- [[_COMMUNITY_2024-10-15|2024-10-15.md]]
-- [[_COMMUNITY_2024-10-16|2024-10-16.md]]
-- [[_COMMUNITY_2024-10-17|2024-10-17.md]]
-- [[_COMMUNITY_2024-10-18|2024-10-18.md]]
-- [[_COMMUNITY_2024-10-21|2024-10-21.md]]
-- [[_COMMUNITY_2024-10-22|2024-10-22.md]]
-- [[_COMMUNITY_2024-10-23|2024-10-23.md]]
-- [[_COMMUNITY_2024-10-24|2024-10-24.md]]
-- [[_COMMUNITY_2024-10-25|2024-10-25.md]]
-- [[_COMMUNITY_2024-10-28|2024-10-28.md]]
-- [[_COMMUNITY_2024-10-29|2024-10-29.md]]
-- [[_COMMUNITY_2024-10-30|2024-10-30.md]]
-- [[_COMMUNITY_2024-10-31|2024-10-31.md]]
-- [[_COMMUNITY_2024-11-04|2024-11-04.md]]
-- [[_COMMUNITY_2024-11-05|2024-11-05.md]]
-- [[_COMMUNITY_2024-11-06|2024-11-06.md]]
-- [[_COMMUNITY_2024-11-07|2024-11-07.md]]
-- [[_COMMUNITY_2024-11-08|2024-11-08.md]]
-- [[_COMMUNITY_2024-11-11|2024-11-11.md]]
-- [[_COMMUNITY_2024-11-12|2024-11-12.md]]
-- [[_COMMUNITY_2024-11-13|2024-11-13.md]]
-- [[_COMMUNITY_2024-11-14|2024-11-14.md]]
-- [[_COMMUNITY_2024-11-15|2024-11-15.md]]
-- [[_COMMUNITY_2024-11-18|2024-11-18.md]]
-- [[_COMMUNITY_2024-11-19|2024-11-19.md]]
-- [[_COMMUNITY_2024-11-20|2024-11-20.md]]
-- [[_COMMUNITY_2024-11-21|2024-11-21.md]]
-- [[_COMMUNITY_2024-11-22|2024-11-22.md]]
-- [[_COMMUNITY_2024-11-25|2024-11-25.md]]
-- [[_COMMUNITY_2024-11-26|2024-11-26.md]]
-- [[_COMMUNITY_2024-11-27|2024-11-27.md]]
-- [[_COMMUNITY_2024-11-28|2024-11-28.md]]
-- [[_COMMUNITY_2024-11-29|2024-11-29.md]]
-- [[_COMMUNITY_2024-12-02|2024-12-02.md]]
-- [[_COMMUNITY_2024-12-03|2024-12-03.md]]
-- [[_COMMUNITY_2024-12-04|2024-12-04.md]]
-- [[_COMMUNITY_2024-12-05|2024-12-05.md]]
-- [[_COMMUNITY_2024-12-06|2024-12-06.md]]
-- [[_COMMUNITY_2024-12-09|2024-12-09.md]]
-- [[_COMMUNITY_2024-12-10|2024-12-10.md]]
-- [[_COMMUNITY_2024-12-11|2024-12-11.md]]
-- [[_COMMUNITY_2024-12-12|2024-12-12.md]]
-- [[_COMMUNITY_2024-12-13|2024-12-13.md]]
-- [[_COMMUNITY_2024-12-16|2024-12-16.md]]
-- [[_COMMUNITY_2024-12-17|2024-12-17.md]]
-- [[_COMMUNITY_2024-12-18|2024-12-18.md]]
-- [[_COMMUNITY_2024-12-19|2024-12-19.md]]
-- [[_COMMUNITY_2024-12-20|2024-12-20.md]]
-- [[_COMMUNITY_2024-12-23|2024-12-23.md]]
-- [[_COMMUNITY_2024-12-24|2024-12-24.md]]
-- [[_COMMUNITY_2025-01-01|2025-01-01.md]]
-- [[_COMMUNITY_2025-01-02|2025-01-02.md]]
-- [[_COMMUNITY_2025-01-03|2025-01-03.md]]
-- [[_COMMUNITY_2026-05-23|2026-05-23]]
-- [[_COMMUNITY_2026-06-10|2026-06-10]]
-- [[_COMMUNITY_2026-06-22|2026-06-22]]
-- [[_COMMUNITY_2026-04-24|2026-04-24]]
-- [[_COMMUNITY_2026-05-06|2026-05-06]]
-- [[_COMMUNITY_backlinks|backlinks.md]]
-- [[_COMMUNITY_callouts|callouts.md]]
-- [[_COMMUNITY_folder and tag listings|folder and tag listings.md]]
-- [[_COMMUNITY_Assets|Assets.md]]
-- [[_COMMUNITY_ExplicitPublish|ExplicitPublish.md]]
-- [[_COMMUNITY_AC-163|AC-163]]
-- [[_COMMUNITY_AU launch|AU launch]]
-- [[_COMMUNITY_SR-11470 Serial number not showing in Device Configuration page even though it is in the mobileunitstate table|SR-11470 Serial number not showing in Device Configuration page even though it is in the mobileunitstate table.md]]
-- [[_COMMUNITY_zz_lauren UAT-1080 (19.14 Lauren Feedback req) Scheduler module available when giving access to change mobile device|zz_lauren UAT-1080 (19.14 Lauren Feedback req) Scheduler module available when giving access to change mobile device.md]]
-- [[_COMMUNITY_SR-12349 Config Compile Display Bug - MiX Telematics JIRA(httpsjira.mixtelematics.combrowseSR-12349)|[SR-12349 Config Compile Display Bug - MiX Telematics JIRA](https://jira.mixtelematics.com/browse/SR-12349)]]
-- [[_COMMUNITY_Timezones|Timezones]]
-- [[_COMMUNITY_CONFIG-3138 Location Import issue|CONFIG-3138 Location Import issue]]
-- [[_COMMUNITY_QA-4521 PaOBC Removing asset and removing device for NO phone number supplied|QA-4521 PaOBC Removing asset and removing device for NO phone number supplied]]
-- [[_COMMUNITY_final_solution_explanation|final_solution_explanation.md]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_FWQ-1400 3-Axis Not in event templates.excalidraw|FWQ-1400 3-Axis Not in event templates.excalidraw.md]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Manage Emotions.excalidraw|Manage Emotions.excalidraw.md]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Installation|Installation]]
-- [[_COMMUNITY_Config-3056 Driver Id Consilidation SPIKE 5days|Config-3056 Driver Id Consilidation SPIKE 5days]]
-- [[_COMMUNITY_Going forward|Going forward]]
-- [[_COMMUNITY_CONFIG-3919 TEST LFT RequestPart for Pallavi|CONFIG-3919 TEST LFT RequestPart for Pallavi.md]]
-- [[_COMMUNITY_CONFIG-4049 Update the version numbers Client and API to 24.1|CONFIG-4049 Update the version numbers Client and API to 24.1.md]]
-- [[_COMMUNITY_CORS|CORS.md]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Optimizing Obsidian|Optimizing Obsidian]]
-- [[_COMMUNITY_Sources of inspiration|Sources of inspiration]]
-- [[_COMMUNITY_dbo.MapLocations|dbo.MapLocations]]
-- [[_COMMUNITY_DSSTBWS001|DSSTBWS001.md]]
-- [[_COMMUNITY_Grid Footer Refresh|Grid Footer Refresh.md]]
-- [[_COMMUNITY_Jacque Meeting Bali|Jacque Meeting Bali.md]]
-- [[_COMMUNITY_MME-268 To remove PAOBC|MME-268 To remove PAOBC.md]]
-- [[_COMMUNITY_OE-518 Other porting story|OE-518 Other porting story]]
-- [[_COMMUNITY_Retro and Review 2024-04-17|Retro and Review 2024-04-17]]
-- [[_COMMUNITY_=============================================================== PERSONAL|=============================================================== PERSONAL]]
-- [[_COMMUNITY_OE-483 Auditing Findings Marty|OE-483 Auditing Findings Marty.md]]
-- [[_COMMUNITY_OE-631 Column selector styling|OE-631 Column selector styling]]
-- [[_COMMUNITY_OE-632 Kebab menu not visible|OE-632 Kebab menu not visible]]
-- [[_COMMUNITY_OE-635 Dropdown filtering messed up|OE-635 Dropdown filtering messed up]]
-- [[_COMMUNITY_OE-652 Not Languaged config status filter dropdown|OE-652 Not Languaged config status filter dropdown]]
-- [[_COMMUNITY_OE-653 Upload FW Dialogue|OE-653 Upload FW Dialogue]]
-- [[_COMMUNITY_OE-654 Not Languaged firmware upload request successful|OE-654 Not Languaged firmware upload request successful]]
-- [[_COMMUNITY_OPEN-2573 — CT-API Deploy ConfigTools.API to INT Environment|OPEN-2573 — CT-API: Deploy ConfigTools.API to INT Environment]]
-- [[_COMMUNITY_OPEN-1493 UI for Salesforce case Info|OPEN-1493 UI for Salesforce case Info.md]]
-- [[_COMMUNITY_OPEN-258 String change needed for incompatible Devices|OPEN-258 String change needed for incompatible Devices.md]]
-- [[_COMMUNITY_OPEN-694 AutoFill all the time|OPEN-694 AutoFill all the time]]
-- [[_COMMUNITY_OPEN-697 Edit camera name changes are not retained after saving|OPEN-697 Edit camera name changes are not retained after saving]]
-- [[_COMMUNITY_OPEN-743 new entry name is cleared|OPEN-743 new entry name is cleared]]
-- [[_COMMUNITY_OPEN-780 Disable save when nothing changed|OPEN-780 Disable save when nothing changed]]
-- [[_COMMUNITY_Writing Style — Marthinus Raath|Writing Style — Marthinus Raath]]
-- [[_COMMUNITY_QA-5713 Icon Wires not languaged|QA-5713 Icon Wires not languaged]]
-- [[_COMMUNITY_toc.inline.ts|toc.inline.ts]]
-- [[_COMMUNITY_Investigating|Investigating]]
-- [[_COMMUNITY_SR-16329 Iridium client exception Airtime Management Page|SR-16329 Iridium client exception Airtime Management Page.md]]
-- [[_COMMUNITY_STM SRs|STM SRs.md]]
-- [[_COMMUNITY_Retro and Review {{date}}|Retro and Review {{date}}]]
-- [[_COMMUNITY_2022-W31|2022-W31.md]]
-- [[_COMMUNITY_2022-W32|2022-W32.md]]
-- [[_COMMUNITY_2022-W33|2022-W33.md]]
-- [[_COMMUNITY_2022-W34|2022-W34.md]]
-- [[_COMMUNITY_2022-W35|2022-W35.md]]
-- [[_COMMUNITY_2022-W36|2022-W36.md]]
-- [[_COMMUNITY_2022-W37|2022-W37.md]]
-- [[_COMMUNITY_2022-W38|2022-W38.md]]
-- [[_COMMUNITY_2022-W39|2022-W39.md]]
-- [[_COMMUNITY_2022-W40|2022-W40.md]]
-- [[_COMMUNITY_2022-W41|2022-W41.md]]
-- [[_COMMUNITY_2022-W42|2022-W42.md]]
-- [[_COMMUNITY_2022-W43|2022-W43.md]]
-- [[_COMMUNITY_2022-W44|2022-W44.md]]
-- [[_COMMUNITY_2022-W45|2022-W45.md]]
-- [[_COMMUNITY_2022-W46|2022-W46.md]]
-- [[_COMMUNITY_2022-W47|2022-W47.md]]
-- [[_COMMUNITY_2022-W48|2022-W48.md]]
-- [[_COMMUNITY_2023-W01|2023-W01.md]]
-- [[_COMMUNITY_2023-W02|2023-W02.md]]
-- [[_COMMUNITY_2023-W03|2023-W03.md]]
-- [[_COMMUNITY_2023-W04|2023-W04.md]]
-- [[_COMMUNITY_2023-W05|2023-W05.md]]
-- [[_COMMUNITY_2023-W06|2023-W06.md]]
-- [[_COMMUNITY_2023-W07|2023-W07.md]]
-- [[_COMMUNITY_2023-W08|2023-W08.md]]
-- [[_COMMUNITY_2023-W09|2023-W09.md]]
-- [[_COMMUNITY_2023-W10|2023-W10.md]]
-- [[_COMMUNITY_2023-W11|2023-W11.md]]
-- [[_COMMUNITY_2023-W12|2023-W12.md]]
-- [[_COMMUNITY_2023-W13|2023-W13.md]]
-- [[_COMMUNITY_2023-W14|2023-W14.md]]
-- [[_COMMUNITY_2023-W15|2023-W15.md]]
-- [[_COMMUNITY_2023-W16|2023-W16.md]]
-- [[_COMMUNITY_2023-W17|2023-W17.md]]
-- [[_COMMUNITY_2023-W18|2023-W18.md]]
-- [[_COMMUNITY_2023-W19|2023-W19.md]]
-- [[_COMMUNITY_2023-W20|2023-W20.md]]
-- [[_COMMUNITY_2023-W21|2023-W21.md]]
-- [[_COMMUNITY_2023-W22|2023-W22.md]]
-- [[_COMMUNITY_2023-W23|2023-W23.md]]
-- [[_COMMUNITY_2023-W24|2023-W24.md]]
-- [[_COMMUNITY_2023-W25|2023-W25.md]]
-- [[_COMMUNITY_2023-W26|2023-W26.md]]
-- [[_COMMUNITY_2023-W27|2023-W27.md]]
-- [[_COMMUNITY_2023-W28|2023-W28.md]]
-- [[_COMMUNITY_2023-W29|2023-W29.md]]
-- [[_COMMUNITY_2023-W30|2023-W30.md]]
-- [[_COMMUNITY_2023-W31|2023-W31.md]]
-- [[_COMMUNITY_2023-W32|2023-W32.md]]
-- [[_COMMUNITY_2023-W33|2023-W33.md]]
-- [[_COMMUNITY_2023-W34|2023-W34.md]]
-- [[_COMMUNITY_2023-W35|2023-W35.md]]
-- [[_COMMUNITY_2023-W36|2023-W36.md]]
-- [[_COMMUNITY_2023-W37|2023-W37.md]]
-- [[_COMMUNITY_2023-W38|2023-W38.md]]
-- [[_COMMUNITY_2023-W39|2023-W39.md]]
-- [[_COMMUNITY_2023-W40|2023-W40.md]]
-- [[_COMMUNITY_2023-W41|2023-W41.md]]
-- [[_COMMUNITY_2023-W42|2023-W42.md]]
-- [[_COMMUNITY_2023-W43|2023-W43.md]]
-- [[_COMMUNITY_2023-W44|2023-W44.md]]
-- [[_COMMUNITY_2023-W45|2023-W45.md]]
-- [[_COMMUNITY_2023-W46|2023-W46.md]]
-- [[_COMMUNITY_2023-W47|2023-W47.md]]
-- [[_COMMUNITY_2023-W48|2023-W48.md]]
-- [[_COMMUNITY_2023-W49|2023-W49.md]]
-- [[_COMMUNITY_2023-W50|2023-W50.md]]
-- [[_COMMUNITY_2024-W01|2024-W01.md]]
-- [[_COMMUNITY_2024-W02|2024-W02.md]]
-- [[_COMMUNITY_2024-W03|2024-W03.md]]
-- [[_COMMUNITY_2024-W05|2024-W05.md]]
-- [[_COMMUNITY_2024-W06|2024-W06.md]]
-- [[_COMMUNITY_2024-W07|2024-W07.md]]
-- [[_COMMUNITY_2024-W08|2024-W08.md]]
-- [[_COMMUNITY_2024-W09|2024-W09.md]]
-- [[_COMMUNITY_2024-W10|2024-W10.md]]
-- [[_COMMUNITY_2024-W11|2024-W11.md]]
-- [[_COMMUNITY_2024-W12|2024-W12.md]]
-- [[_COMMUNITY_2024-W14|2024-W14.md]]
-- [[_COMMUNITY_2024-W15|2024-W15.md]]
-- [[_COMMUNITY_2024-W16|2024-W16.md]]
-- [[_COMMUNITY_2024-W17|2024-W17.md]]
-- [[_COMMUNITY_2024-W18|2024-W18.md]]
-- [[_COMMUNITY_2024-W19|2024-W19.md]]
-- [[_COMMUNITY_2024-W20|2024-W20.md]]
-- [[_COMMUNITY_2024-W21|2024-W21.md]]
-- [[_COMMUNITY_2024-W22|2024-W22.md]]
-- [[_COMMUNITY_2024-W23|2024-W23.md]]
-- [[_COMMUNITY_2024-W24|2024-W24.md]]
-- [[_COMMUNITY_2024-W25|2024-W25.md]]
-- [[_COMMUNITY_2024-W26|2024-W26.md]]
-- [[_COMMUNITY_2024-W27|2024-W27.md]]
-- [[_COMMUNITY_2024-W28|2024-W28.md]]
-- [[_COMMUNITY_2024-W29|2024-W29.md]]
-- [[_COMMUNITY_2024-W30|2024-W30.md]]
-- [[_COMMUNITY_2024-W31|2024-W31.md]]
-- [[_COMMUNITY_2024-W32|2024-W32.md]]
-- [[_COMMUNITY_2024-W33|2024-W33.md]]
-- [[_COMMUNITY_2024-W34|2024-W34.md]]
-- [[_COMMUNITY_2024-W35|2024-W35.md]]
-- [[_COMMUNITY_2024-W36|2024-W36.md]]
-- [[_COMMUNITY_2024-W37|2024-W37.md]]
-- [[_COMMUNITY_2024-W38|2024-W38.md]]
-- [[_COMMUNITY_2024-W40|2024-W40.md]]
-- [[_COMMUNITY_2024-W41|2024-W41.md]]
-- [[_COMMUNITY_Powerfleet-GitHub-Enterprise|Powerfleet-GitHub-Enterprise.md]]
-- [[_COMMUNITY_global-deployment-guide|global-deployment-guide.md]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_1671621250691637248 Error decommissioning Streamax|1671621250691637248 Error decommissioning Streamax.md]]
-- [[_COMMUNITY_Accept All Incoming Files Command Line|Accept All Incoming Files Command Line.md]]
-- [[_COMMUNITY_Video Download Uplodad Issues.excalidraw|Video Download Uplodad Issues.excalidraw.md]]
-- [[_COMMUNITY_Frangular Highlight cell conditionaly|Frangular Highlight cell conditionaly.md]]
-- [[_COMMUNITY_OE-513 Outstanding DEV|OE-513 Outstanding DEV.md]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Daily Merge 20250610|Daily Merge 20250610.md]]
-- [[_COMMUNITY_Daily Merge 20250611|Daily Merge 20250611.md]]
-- [[_COMMUNITY_Daily Merge 20250612|Daily Merge 20250612.md]]
-- [[_COMMUNITY_Daily Merge 20250613|Daily Merge 20250613.md]]
-- [[_COMMUNITY_Daily Merge 20250617|Daily Merge 20250617.md]]
-- [[_COMMUNITY_Daily Merge 20250618|Daily Merge 20250618.md]]
-- [[_COMMUNITY_Daily Merge 20250619|Daily Merge 20250619.md]]
-- [[_COMMUNITY_Daily Merge 20250620|Daily Merge 20250620.md]]
-- [[_COMMUNITY_Daily Merge 20250623|Daily Merge 20250623.md]]
-- [[_COMMUNITY_Daily Merge 20250902|Daily Merge 20250902.md]]
-- [[_COMMUNITY_Daily Merge 20250904|Daily Merge 20250904.md]]
-- [[_COMMUNITY_Daily Merge 20250905|Daily Merge 20250905.md]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Daily Merge 20250909|Daily Merge 20250909.md]]
-- [[_COMMUNITY_Daily Merge 20250910|Daily Merge 20250910.md]]
-- [[_COMMUNITY_Daily Merge 20250911|Daily Merge 20250911.md]]
-- [[_COMMUNITY_Daily Merge 20250912|Daily Merge 20250912.md]]
-- [[_COMMUNITY_Daily Merge 20250915|Daily Merge 20250915.md]]
-- [[_COMMUNITY_Daily Merge 20250916|Daily Merge 20250916.md]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Daily Merge 20251113|Daily Merge 20251113.md]]
-- [[_COMMUNITY_Daily Merge 20251114|Daily Merge 20251114.md]]
-- [[_COMMUNITY_Daily Merge 20251119|Daily Merge 20251119.md]]
-- [[_COMMUNITY_Daily Merge 20251120|Daily Merge 20251120.md]]
-- [[_COMMUNITY_Daily Merge 20251121|Daily Merge 20251121.md]]
-- [[_COMMUNITY_Daily Merge 20251126|Daily Merge 20251126.md]]
-- [[_COMMUNITY_Daily Merge 20251127|Daily Merge 20251127.md]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_2022-08-19|2022-08-19.md]]
-- [[_COMMUNITY_2022-08-22|2022-08-22.md]]
-- [[_COMMUNITY_2022-08-23|2022-08-23.md]]
-- [[_COMMUNITY_2022-08-24|2022-08-24.md]]
-- [[_COMMUNITY_2022-08-25|2022-08-25.md]]
-- [[_COMMUNITY_2022-08-26|2022-08-26.md]]
-- [[_COMMUNITY_2022-08-29|2022-08-29.md]]
-- [[_COMMUNITY_2022-08-30|2022-08-30.md]]
-- [[_COMMUNITY_2022-08-31|2022-08-31.md]]
-- [[_COMMUNITY_2022-09-01|2022-09-01.md]]
-- [[_COMMUNITY_2022-09-02|2022-09-02.md]]
-- [[_COMMUNITY_2022-09-05|2022-09-05.md]]
-- [[_COMMUNITY_2022-09-06|2022-09-06.md]]
-- [[_COMMUNITY_2022-09-07|2022-09-07.md]]
-- [[_COMMUNITY_2022-09-08|2022-09-08.md]]
-- [[_COMMUNITY_2022-09-09|2022-09-09.md]]
-- [[_COMMUNITY_2022-09-12|2022-09-12.md]]
-- [[_COMMUNITY_2022-09-13|2022-09-13.md]]
-- [[_COMMUNITY_2022-09-14|2022-09-14.md]]
-- [[_COMMUNITY_2022-09-15|2022-09-15.md]]
-- [[_COMMUNITY_2022-09-16|2022-09-16.md]]
-- [[_COMMUNITY_2022-09-19|2022-09-19.md]]
-- [[_COMMUNITY_2022-09-20|2022-09-20.md]]
-- [[_COMMUNITY_2022-09-21|2022-09-21.md]]
-- [[_COMMUNITY_2022-09-22|2022-09-22.md]]
-- [[_COMMUNITY_2022-09-23|2022-09-23.md]]
-- [[_COMMUNITY_2022-09-26|2022-09-26.md]]
-- [[_COMMUNITY_2022-09-27|2022-09-27.md]]
-- [[_COMMUNITY_2022-09-28|2022-09-28.md]]
-- [[_COMMUNITY_2022-09-29|2022-09-29.md]]
-- [[_COMMUNITY_2022-09-30|2022-09-30.md]]
-- [[_COMMUNITY_2022-10-03|2022-10-03.md]]
-- [[_COMMUNITY_2022-10-04|2022-10-04.md]]
-- [[_COMMUNITY_2022-10-05|2022-10-05.md]]
-- [[_COMMUNITY_2022-10-06|2022-10-06.md]]
-- [[_COMMUNITY_2022-10-07|2022-10-07.md]]
-- [[_COMMUNITY_2022-10-10|2022-10-10.md]]
-- [[_COMMUNITY_2022-10-11|2022-10-11.md]]
-- [[_COMMUNITY_2022-10-12|2022-10-12.md]]
-- [[_COMMUNITY_2022-10-13|2022-10-13.md]]
-- [[_COMMUNITY_2022-10-14|2022-10-14.md]]
-- [[_COMMUNITY_2022-10-17|2022-10-17.md]]
-- [[_COMMUNITY_2022-10-18|2022-10-18.md]]
-- [[_COMMUNITY_2022-10-19|2022-10-19.md]]
-- [[_COMMUNITY_2022-10-20|2022-10-20.md]]
-- [[_COMMUNITY_2022-10-21|2022-10-21.md]]
-- [[_COMMUNITY_2022-10-24|2022-10-24.md]]
-- [[_COMMUNITY_2022-10-25|2022-10-25.md]]
-- [[_COMMUNITY_2022-10-26|2022-10-26.md]]
-- [[_COMMUNITY_2022-10-27|2022-10-27.md]]
-- [[_COMMUNITY_2022-10-28|2022-10-28.md]]
-- [[_COMMUNITY_2022-10-31|2022-10-31.md]]
-- [[_COMMUNITY_2022-11-01|2022-11-01.md]]
-- [[_COMMUNITY_2022-11-02|2022-11-02.md]]
-- [[_COMMUNITY_2022-11-03|2022-11-03.md]]
-- [[_COMMUNITY_2022-11-04|2022-11-04.md]]
-- [[_COMMUNITY_2022-11-07|2022-11-07.md]]
-- [[_COMMUNITY_2022-11-08|2022-11-08.md]]
-- [[_COMMUNITY_2022-11-09|2022-11-09.md]]
-- [[_COMMUNITY_2022-11-10|2022-11-10.md]]
-- [[_COMMUNITY_2022-11-11|2022-11-11.md]]
-- [[_COMMUNITY_2022-11-14|2022-11-14.md]]
-- [[_COMMUNITY_2022-11-15|2022-11-15.md]]
-- [[_COMMUNITY_2022-11-16|2022-11-16.md]]
-- [[_COMMUNITY_2022-11-17|2022-11-17.md]]
-- [[_COMMUNITY_2022-11-18|2022-11-18.md]]
-- [[_COMMUNITY_2022-11-21|2022-11-21.md]]
-- [[_COMMUNITY_2022-11-22|2022-11-22.md]]
-- [[_COMMUNITY_2022-11-24|2022-11-24.md]]
-- [[_COMMUNITY_2022-11-25|2022-11-25.md]]
-- [[_COMMUNITY_2022-11-30|2022-11-30.md]]
-- [[_COMMUNITY_2022-12-02|2022-12-02.md]]
-- [[_COMMUNITY_2023-01-02|2023-01-02.md]]
-- [[_COMMUNITY_2023-01-03|2023-01-03.md]]
-- [[_COMMUNITY_2023-01-04|2023-01-04.md]]
-- [[_COMMUNITY_2023-01-05|2023-01-05.md]]
-- [[_COMMUNITY_2023-01-06|2023-01-06.md]]
-- [[_COMMUNITY_2023-01-09|2023-01-09.md]]
-- [[_COMMUNITY_2023-01-10|2023-01-10.md]]
-- [[_COMMUNITY_2023-01-11|2023-01-11.md]]
-- [[_COMMUNITY_2023-01-12|2023-01-12.md]]
-- [[_COMMUNITY_2023-01-13|2023-01-13.md]]
-- [[_COMMUNITY_2023-01-16|2023-01-16.md]]
-- [[_COMMUNITY_2023-01-17|2023-01-17.md]]
-- [[_COMMUNITY_2023-01-18|2023-01-18.md]]
-- [[_COMMUNITY_2023-01-19|2023-01-19.md]]
-- [[_COMMUNITY_2023-01-20|2023-01-20.md]]
-- [[_COMMUNITY_2023-01-23|2023-01-23.md]]
-- [[_COMMUNITY_2023-01-25|2023-01-25.md]]
-- [[_COMMUNITY_2023-01-26|2023-01-26.md]]
-- [[_COMMUNITY_2023-01-27|2023-01-27.md]]
-- [[_COMMUNITY_2023-01-30|2023-01-30.md]]
-- [[_COMMUNITY_2023-01-31|2023-01-31.md]]
-- [[_COMMUNITY_2023-02-01|2023-02-01.md]]
-- [[_COMMUNITY_2023-02-02|2023-02-02.md]]
-- [[_COMMUNITY_2023-02-03|2023-02-03.md]]
-- [[_COMMUNITY_2023-02-06|2023-02-06.md]]
-- [[_COMMUNITY_2023-02-07|2023-02-07.md]]
-- [[_COMMUNITY_2023-02-08|2023-02-08.md]]
-- [[_COMMUNITY_2023-02-09|2023-02-09.md]]
-- [[_COMMUNITY_2023-02-10|2023-02-10.md]]
-- [[_COMMUNITY_2023-02-13|2023-02-13.md]]
-- [[_COMMUNITY_2023-02-14|2023-02-14.md]]
-- [[_COMMUNITY_2023-02-15|2023-02-15.md]]
-- [[_COMMUNITY_2023-02-16|2023-02-16.md]]
-- [[_COMMUNITY_2023-02-17|2023-02-17.md]]
-- [[_COMMUNITY_2023-02-20|2023-02-20.md]]
-- [[_COMMUNITY_2023-02-21|2023-02-21.md]]
-- [[_COMMUNITY_2023-02-22|2023-02-22.md]]
-- [[_COMMUNITY_2023-02-23|2023-02-23.md]]
-- [[_COMMUNITY_2023-02-24|2023-02-24.md]]
-- [[_COMMUNITY_2023-02-27|2023-02-27.md]]
-- [[_COMMUNITY_2023-02-28|2023-02-28.md]]
-- [[_COMMUNITY_2023-03-01|2023-03-01.md]]
-- [[_COMMUNITY_2023-03-02|2023-03-02.md]]
-- [[_COMMUNITY_2023-03-03|2023-03-03.md]]
-- [[_COMMUNITY_2023-03-06|2023-03-06.md]]
-- [[_COMMUNITY_2023-03-07|2023-03-07.md]]
-- [[_COMMUNITY_2023-03-08|2023-03-08.md]]
-- [[_COMMUNITY_2023-03-09|2023-03-09.md]]
-- [[_COMMUNITY_2023-03-10|2023-03-10.md]]
-- [[_COMMUNITY_2023-03-13|2023-03-13.md]]
-- [[_COMMUNITY_2023-03-14|2023-03-14.md]]
-- [[_COMMUNITY_2023-03-15|2023-03-15.md]]
-- [[_COMMUNITY_2023-03-16|2023-03-16.md]]
-- [[_COMMUNITY_2023-03-17|2023-03-17.md]]
-- [[_COMMUNITY_2023-03-20|2023-03-20.md]]
-- [[_COMMUNITY_2023-03-21|2023-03-21.md]]
-- [[_COMMUNITY_2023-03-22|2023-03-22.md]]
-- [[_COMMUNITY_2023-03-23|2023-03-23.md]]
-- [[_COMMUNITY_2023-03-24|2023-03-24.md]]
-- [[_COMMUNITY_2023-03-27|2023-03-27.md]]
-- [[_COMMUNITY_2023-03-28|2023-03-28.md]]
-- [[_COMMUNITY_2023-03-29|2023-03-29.md]]
-- [[_COMMUNITY_2023-03-30|2023-03-30.md]]
-- [[_COMMUNITY_2023-03-31|2023-03-31.md]]
-- [[_COMMUNITY_2023-04-03|2023-04-03.md]]
-- [[_COMMUNITY_2023-04-04|2023-04-04.md]]
-- [[_COMMUNITY_2023-04-05|2023-04-05.md]]
-- [[_COMMUNITY_2023-04-06|2023-04-06.md]]
-- [[_COMMUNITY_2023-04-07|2023-04-07.md]]
-- [[_COMMUNITY_2023-04-10|2023-04-10.md]]
-- [[_COMMUNITY_2023-04-11|2023-04-11.md]]
-- [[_COMMUNITY_2023-04-12|2023-04-12.md]]
-- [[_COMMUNITY_2023-04-13|2023-04-13.md]]
-- [[_COMMUNITY_2023-04-14|2023-04-14.md]]
-- [[_COMMUNITY_2023-04-17|2023-04-17.md]]
-- [[_COMMUNITY_2023-04-18|2023-04-18.md]]
-- [[_COMMUNITY_2023-04-19|2023-04-19.md]]
-- [[_COMMUNITY_2023-04-20|2023-04-20.md]]
-- [[_COMMUNITY_2023-04-24|2023-04-24.md]]
-- [[_COMMUNITY_2023-04-25|2023-04-25.md]]
-- [[_COMMUNITY_2023-04-26|2023-04-26.md]]
-- [[_COMMUNITY_2023-04-27|2023-04-27.md]]
-- [[_COMMUNITY_2023-04-28|2023-04-28.md]]
-- [[_COMMUNITY_2023-05-01|2023-05-01.md]]
-- [[_COMMUNITY_2023-05-11|2023-05-11.md]]
-- [[_COMMUNITY_2023-05-12|2023-05-12.md]]
-- [[_COMMUNITY_2023-05-15|2023-05-15.md]]
-- [[_COMMUNITY_2023-05-16|2023-05-16.md]]
-- [[_COMMUNITY_2023-05-17|2023-05-17.md]]
-- [[_COMMUNITY_2023-05-18|2023-05-18.md]]
-- [[_COMMUNITY_2023-05-19|2023-05-19.md]]
-- [[_COMMUNITY_2023-05-22|2023-05-22.md]]
-- [[_COMMUNITY_2023-05-23|2023-05-23.md]]
-- [[_COMMUNITY_2023-05-24|2023-05-24.md]]
-- [[_COMMUNITY_2023-05-25|2023-05-25.md]]
-- [[_COMMUNITY_2023-05-26|2023-05-26.md]]
-- [[_COMMUNITY_2023-05-30|2023-05-30.md]]
-- [[_COMMUNITY_2023-05-31|2023-05-31.md]]
-- [[_COMMUNITY_2023-06-01|2023-06-01.md]]
-- [[_COMMUNITY_2023-06-02|2023-06-02.md]]
-- [[_COMMUNITY_2023-06-05|2023-06-05.md]]
-- [[_COMMUNITY_2023-06-06|2023-06-06.md]]
-- [[_COMMUNITY_2023-06-07|2023-06-07.md]]
-- [[_COMMUNITY_2023-06-08|2023-06-08.md]]
-- [[_COMMUNITY_2023-06-09|2023-06-09.md]]
-- [[_COMMUNITY_2023-06-12|2023-06-12.md]]
-- [[_COMMUNITY_2023-06-13|2023-06-13.md]]
-- [[_COMMUNITY_2023-06-14|2023-06-14.md]]
-- [[_COMMUNITY_2023-06-15|2023-06-15.md]]
-- [[_COMMUNITY_2023-06-16|2023-06-16.md]]
-- [[_COMMUNITY_2023-06-19|2023-06-19.md]]
-- [[_COMMUNITY_2023-06-20|2023-06-20.md]]
-- [[_COMMUNITY_2023-06-21|2023-06-21.md]]
-- [[_COMMUNITY_2023-06-22|2023-06-22.md]]
-- [[_COMMUNITY_2023-06-23|2023-06-23.md]]
-- [[_COMMUNITY_2023-06-26|2023-06-26.md]]
-- [[_COMMUNITY_2023-06-27|2023-06-27.md]]
-- [[_COMMUNITY_2023-06-28|2023-06-28.md]]
-- [[_COMMUNITY_2023-06-29|2023-06-29.md]]
-- [[_COMMUNITY_2023-06-30|2023-06-30.md]]
-- [[_COMMUNITY_2023-07-03|2023-07-03.md]]
-- [[_COMMUNITY_2023-07-04|2023-07-04.md]]
-- [[_COMMUNITY_2023-07-05|2023-07-05.md]]
-- [[_COMMUNITY_2023-07-06|2023-07-06.md]]
-- [[_COMMUNITY_2023-07-07|2023-07-07.md]]
-- [[_COMMUNITY_2023-07-10|2023-07-10.md]]
-- [[_COMMUNITY_2023-07-11|2023-07-11.md]]
-- [[_COMMUNITY_2023-07-12|2023-07-12.md]]
-- [[_COMMUNITY_2023-07-13|2023-07-13.md]]
-- [[_COMMUNITY_2023-07-14|2023-07-14.md]]
-- [[_COMMUNITY_2023-07-17|2023-07-17.md]]
-- [[_COMMUNITY_2023-07-18|2023-07-18.md]]
-- [[_COMMUNITY_2023-07-19|2023-07-19.md]]
-- [[_COMMUNITY_2023-07-20|2023-07-20.md]]
-- [[_COMMUNITY_2023-07-21|2023-07-21.md]]
-- [[_COMMUNITY_2023-07-24|2023-07-24.md]]
-- [[_COMMUNITY_2023-07-25|2023-07-25.md]]
-- [[_COMMUNITY_2023-07-26|2023-07-26.md]]
-- [[_COMMUNITY_2023-07-27|2023-07-27.md]]
-- [[_COMMUNITY_2023-07-28|2023-07-28.md]]
-- [[_COMMUNITY_2023-07-31|2023-07-31.md]]
-- [[_COMMUNITY_2023-08-01|2023-08-01.md]]
-- [[_COMMUNITY_2023-08-02|2023-08-02.md]]
-- [[_COMMUNITY_2023-08-03|2023-08-03.md]]
-- [[_COMMUNITY_2023-08-04|2023-08-04.md]]
-- [[_COMMUNITY_2023-08-07|2023-08-07.md]]
-- [[_COMMUNITY_2023-08-08|2023-08-08.md]]
-- [[_COMMUNITY_2023-08-09|2023-08-09.md]]
-- [[_COMMUNITY_2023-08-10|2023-08-10.md]]
-- [[_COMMUNITY_2023-08-18|2023-08-18.md]]
-- [[_COMMUNITY_2023-08-21|2023-08-21.md]]
-- [[_COMMUNITY_2023-08-22|2023-08-22.md]]
-- [[_COMMUNITY_2023-08-23|2023-08-23.md]]
-- [[_COMMUNITY_2023-08-24|2023-08-24.md]]
-- [[_COMMUNITY_2023-08-25|2023-08-25.md]]
-- [[_COMMUNITY_2023-08-28|2023-08-28.md]]
-- [[_COMMUNITY_2023-08-29|2023-08-29.md]]
-- [[_COMMUNITY_2023-08-30|2023-08-30.md]]
-- [[_COMMUNITY_2023-08-31|2023-08-31.md]]
-- [[_COMMUNITY_2023-09-01|2023-09-01.md]]
-- [[_COMMUNITY_2023-09-04|2023-09-04.md]]
-- [[_COMMUNITY_2023-09-05|2023-09-05.md]]
-- [[_COMMUNITY_2023-09-06|2023-09-06.md]]
-- [[_COMMUNITY_2023-09-07|2023-09-07.md]]
-- [[_COMMUNITY_2023-09-08|2023-09-08.md]]
-- [[_COMMUNITY_2023-09-11|2023-09-11.md]]
-- [[_COMMUNITY_2023-09-14|2023-09-14.md]]
-- [[_COMMUNITY_2023-09-15|2023-09-15.md]]
-- [[_COMMUNITY_2023-09-19|2023-09-19.md]]
-- [[_COMMUNITY_2023-09-20|2023-09-20.md]]
-- [[_COMMUNITY_2023-09-21|2023-09-21.md]]
-- [[_COMMUNITY_2023-09-22|2023-09-22.md]]
-- [[_COMMUNITY_2023-09-25|2023-09-25.md]]
-- [[_COMMUNITY_2023-09-26|2023-09-26.md]]
-- [[_COMMUNITY_2023-09-27|2023-09-27.md]]
-- [[_COMMUNITY_2023-09-28|2023-09-28.md]]
-- [[_COMMUNITY_2023-09-29|2023-09-29.md]]
-- [[_COMMUNITY_2023-10-02|2023-10-02.md]]
-- [[_COMMUNITY_2025-01-06|2025-01-06.md]]
-- [[_COMMUNITY_2025-01-07|2025-01-07.md]]
-- [[_COMMUNITY_2025-01-08|2025-01-08.md]]
-- [[_COMMUNITY_2025-01-09|2025-01-09.md]]
-- [[_COMMUNITY_2025-01-10|2025-01-10.md]]
-- [[_COMMUNITY_2025-01-13|2025-01-13.md]]
-- [[_COMMUNITY_2025-01-14|2025-01-14.md]]
-- [[_COMMUNITY_2025-01-15|2025-01-15.md]]
-- [[_COMMUNITY_2025-01-16|2025-01-16.md]]
-- [[_COMMUNITY_2025-01-17|2025-01-17.md]]
-- [[_COMMUNITY_2025-01-20|2025-01-20.md]]
-- [[_COMMUNITY_2025-01-21|2025-01-21.md]]
-- [[_COMMUNITY_2025-01-22|2025-01-22.md]]
-- [[_COMMUNITY_2025-01-23|2025-01-23.md]]
-- [[_COMMUNITY_2025-01-24|2025-01-24.md]]
-- [[_COMMUNITY_2025-01-27|2025-01-27.md]]
-- [[_COMMUNITY_2025-01-28|2025-01-28.md]]
-- [[_COMMUNITY_2025-01-29|2025-01-29.md]]
-- [[_COMMUNITY_2025-01-30|2025-01-30.md]]
-- [[_COMMUNITY_2025-01-31|2025-01-31.md]]
-- [[_COMMUNITY_2025-02-03|2025-02-03.md]]
-- [[_COMMUNITY_2025-02-04|2025-02-04.md]]
-- [[_COMMUNITY_2025-02-05|2025-02-05.md]]
-- [[_COMMUNITY_2025-02-06|2025-02-06.md]]
-- [[_COMMUNITY_2025-02-07|2025-02-07.md]]
-- [[_COMMUNITY_2025-02-10|2025-02-10.md]]
-- [[_COMMUNITY_2025-02-11|2025-02-11.md]]
-- [[_COMMUNITY_2025-02-12|2025-02-12.md]]
-- [[_COMMUNITY_2025-02-13|2025-02-13.md]]
-- [[_COMMUNITY_2025-02-14|2025-02-14.md]]
-- [[_COMMUNITY_2025-02-17|2025-02-17.md]]
-- [[_COMMUNITY_2025-02-18|2025-02-18.md]]
-- [[_COMMUNITY_2025-02-19|2025-02-19.md]]
-- [[_COMMUNITY_2025-02-20|2025-02-20.md]]
-- [[_COMMUNITY_2025-02-21|2025-02-21.md]]
-- [[_COMMUNITY_2025-02-24|2025-02-24.md]]
-- [[_COMMUNITY_2025-02-25|2025-02-25.md]]
-- [[_COMMUNITY_2025-02-26|2025-02-26.md]]
-- [[_COMMUNITY_2025-02-27|2025-02-27.md]]
-- [[_COMMUNITY_2025-02-28|2025-02-28.md]]
-- [[_COMMUNITY_2025-03-03|2025-03-03.md]]
-- [[_COMMUNITY_2025-03-04|2025-03-04.md]]
-- [[_COMMUNITY_2025-03-05|2025-03-05.md]]
-- [[_COMMUNITY_2025-03-06|2025-03-06.md]]
-- [[_COMMUNITY_2025-03-07|2025-03-07.md]]
-- [[_COMMUNITY_2025-03-10|2025-03-10.md]]
-- [[_COMMUNITY_2025-03-11|2025-03-11.md]]
-- [[_COMMUNITY_2025-03-12|2025-03-12.md]]
-- [[_COMMUNITY_2025-03-13|2025-03-13.md]]
-- [[_COMMUNITY_2025-03-14|2025-03-14.md]]
-- [[_COMMUNITY_2025-03-17|2025-03-17.md]]
-- [[_COMMUNITY_2025-03-18|2025-03-18.md]]
-- [[_COMMUNITY_2025-03-19|2025-03-19.md]]
-- [[_COMMUNITY_2025-03-20|2025-03-20.md]]
-- [[_COMMUNITY_2025-03-21|2025-03-21.md]]
-- [[_COMMUNITY_2025-03-24|2025-03-24.md]]
-- [[_COMMUNITY_2025-03-25|2025-03-25.md]]
-- [[_COMMUNITY_2025-03-26|2025-03-26.md]]
-- [[_COMMUNITY_2025-03-27|2025-03-27.md]]
-- [[_COMMUNITY_2025-03-31|2025-03-31.md]]
-- [[_COMMUNITY_2025-04-01|2025-04-01.md]]
-- [[_COMMUNITY_2025-04-02|2025-04-02.md]]
-- [[_COMMUNITY_2025-04-03|2025-04-03.md]]
-- [[_COMMUNITY_2025-04-04|2025-04-04.md]]
-- [[_COMMUNITY_2025-04-07|2025-04-07.md]]
-- [[_COMMUNITY_2025-04-08|2025-04-08.md]]
-- [[_COMMUNITY_2025-04-09|2025-04-09.md]]
-- [[_COMMUNITY_2025-04-10|2025-04-10.md]]
-- [[_COMMUNITY_2025-04-11|2025-04-11.md]]
-- [[_COMMUNITY_2025-04-14|2025-04-14.md]]
-- [[_COMMUNITY_2025-04-15|2025-04-15.md]]
-- [[_COMMUNITY_2025-04-16|2025-04-16.md]]
-- [[_COMMUNITY_2025-04-17|2025-04-17.md]]
-- [[_COMMUNITY_2025-04-18|2025-04-18.md]]
-- [[_COMMUNITY_2025-04-21|2025-04-21.md]]
-- [[_COMMUNITY_2025-04-22|2025-04-22.md]]
-- [[_COMMUNITY_2025-04-23|2025-04-23.md]]
-- [[_COMMUNITY_2025-04-24|2025-04-24.md]]
-- [[_COMMUNITY_2025-04-25|2025-04-25.md]]
-- [[_COMMUNITY_2025-04-28|2025-04-28.md]]
-- [[_COMMUNITY_2025-04-29|2025-04-29.md]]
-- [[_COMMUNITY_2025-04-30|2025-04-30.md]]
-- [[_COMMUNITY_2025-05-01|2025-05-01.md]]
-- [[_COMMUNITY_2025-05-02|2025-05-02.md]]
-- [[_COMMUNITY_2025-05-05|2025-05-05.md]]
-- [[_COMMUNITY_2025-05-06|2025-05-06.md]]
-- [[_COMMUNITY_2025-05-07|2025-05-07.md]]
-- [[_COMMUNITY_2025-05-08|2025-05-08.md]]
-- [[_COMMUNITY_2025-05-09|2025-05-09.md]]
-- [[_COMMUNITY_2025-05-12|2025-05-12.md]]
-- [[_COMMUNITY_2025-05-13|2025-05-13.md]]
-- [[_COMMUNITY_2025-05-14|2025-05-14.md]]
-- [[_COMMUNITY_2025-05-15|2025-05-15.md]]
-- [[_COMMUNITY_2025-05-16|2025-05-16.md]]
-- [[_COMMUNITY_2025-05-19|2025-05-19.md]]
-- [[_COMMUNITY_2025-05-20|2025-05-20.md]]
-- [[_COMMUNITY_2025-05-21|2025-05-21.md]]
-- [[_COMMUNITY_2025-05-22|2025-05-22.md]]
-- [[_COMMUNITY_2025-05-23|2025-05-23.md]]
-- [[_COMMUNITY_2025-05-26|2025-05-26.md]]
-- [[_COMMUNITY_2025-05-27|2025-05-27.md]]
-- [[_COMMUNITY_2025-05-28|2025-05-28.md]]
-- [[_COMMUNITY_2025-05-29|2025-05-29.md]]
-- [[_COMMUNITY_2025-05-30|2025-05-30.md]]
-- [[_COMMUNITY_2025-06-02|2025-06-02.md]]
-- [[_COMMUNITY_2025-06-03|2025-06-03.md]]
-- [[_COMMUNITY_2025-06-04|2025-06-04.md]]
-- [[_COMMUNITY_2025-06-05|2025-06-05.md]]
-- [[_COMMUNITY_2025-06-06|2025-06-06.md]]
-- [[_COMMUNITY_2025-06-09|2025-06-09.md]]
-- [[_COMMUNITY_2025-06-11|2025-06-11.md]]
-- [[_COMMUNITY_2025-06-13|2025-06-13.md]]
-- [[_COMMUNITY_2025-06-16|2025-06-16.md]]
-- [[_COMMUNITY_2025-06-17|2025-06-17.md]]
-- [[_COMMUNITY_2025-06-18|2025-06-18.md]]
-- [[_COMMUNITY_2025-06-19|2025-06-19.md]]
-- [[_COMMUNITY_2025-06-20|2025-06-20.md]]
-- [[_COMMUNITY_2025-06-23|2025-06-23.md]]
-- [[_COMMUNITY_2025-06-24|2025-06-24.md]]
-- [[_COMMUNITY_2025-06-25|2025-06-25.md]]
-- [[_COMMUNITY_2025-06-26|2025-06-26.md]]
-- [[_COMMUNITY_2025-06-27|2025-06-27.md]]
-- [[_COMMUNITY_2025-06-30|2025-06-30.md]]
-- [[_COMMUNITY_2025-07-01|2025-07-01.md]]
-- [[_COMMUNITY_2025-07-02|2025-07-02.md]]
-- [[_COMMUNITY_2025-07-03|2025-07-03.md]]
-- [[_COMMUNITY_2025-07-04|2025-07-04.md]]
-- [[_COMMUNITY_2025-07-14|2025-07-14.md]]
-- [[_COMMUNITY_2025-07-15|2025-07-15.md]]
-- [[_COMMUNITY_2025-07-16|2025-07-16.md]]
-- [[_COMMUNITY_2025-07-17|2025-07-17.md]]
-- [[_COMMUNITY_2025-07-18|2025-07-18.md]]
-- [[_COMMUNITY_2025-07-21|2025-07-21.md]]
-- [[_COMMUNITY_2025-07-22|2025-07-22.md]]
-- [[_COMMUNITY_2025-07-23|2025-07-23.md]]
-- [[_COMMUNITY_2025-07-24|2025-07-24.md]]
-- [[_COMMUNITY_2025-07-25|2025-07-25.md]]
-- [[_COMMUNITY_2025-07-28|2025-07-28.md]]
-- [[_COMMUNITY_2025-07-29|2025-07-29.md]]
-- [[_COMMUNITY_2025-07-30|2025-07-30.md]]
-- [[_COMMUNITY_2025-07-31|2025-07-31.md]]
-- [[_COMMUNITY_2025-08-01|2025-08-01.md]]
-- [[_COMMUNITY_2025-08-04|2025-08-04.md]]
-- [[_COMMUNITY_2025-08-05|2025-08-05.md]]
-- [[_COMMUNITY_2025-08-06|2025-08-06.md]]
-- [[_COMMUNITY_2025-08-07|2025-08-07.md]]
-- [[_COMMUNITY_2025-08-08|2025-08-08.md]]
-- [[_COMMUNITY_2025-08-11|2025-08-11.md]]
-- [[_COMMUNITY_2025-08-12|2025-08-12.md]]
-- [[_COMMUNITY_2025-08-13|2025-08-13.md]]
-- [[_COMMUNITY_2025-08-15|2025-08-15.md]]
-- [[_COMMUNITY_2025-08-18|2025-08-18.md]]
-- [[_COMMUNITY_2025-08-19|2025-08-19.md]]
-- [[_COMMUNITY_2025-08-20|2025-08-20.md]]
-- [[_COMMUNITY_2025-08-21|2025-08-21.md]]
-- [[_COMMUNITY_2025-08-22|2025-08-22.md]]
-- [[_COMMUNITY_2025-08-25|2025-08-25.md]]
-- [[_COMMUNITY_2025-08-26|2025-08-26.md]]
-- [[_COMMUNITY_2025-08-27|2025-08-27.md]]
-- [[_COMMUNITY_2025-08-28|2025-08-28.md]]
-- [[_COMMUNITY_2025-08-29|2025-08-29.md]]
-- [[_COMMUNITY_2025-09-01|2025-09-01.md]]
-- [[_COMMUNITY_2025-09-02|2025-09-02.md]]
-- [[_COMMUNITY_2025-09-03|2025-09-03.md]]
-- [[_COMMUNITY_2025-09-04|2025-09-04.md]]
-- [[_COMMUNITY_2025-09-05|2025-09-05.md]]
-- [[_COMMUNITY_2025-09-08|2025-09-08.md]]
-- [[_COMMUNITY_2025-09-09|2025-09-09.md]]
-- [[_COMMUNITY_2025-09-10|2025-09-10.md]]
-- [[_COMMUNITY_2025-09-11|2025-09-11.md]]
-- [[_COMMUNITY_2025-09-12|2025-09-12.md]]
-- [[_COMMUNITY_2025-09-15|2025-09-15.md]]
-- [[_COMMUNITY_2026-03-25|2026-03-25]]
-- [[_COMMUNITY_full-text search|full-text search.md]]
-- [[_COMMUNITY_OxHugo compatibility|OxHugo compatibility.md]]
-- [[_COMMUNITY_private pages|private pages.md]]
-- [[_COMMUNITY_SR-12359 DEMT processing stuck on retrieving data - MiX Telematics JIRA(httpsjira.mixtelematics.combrowseSR-12359)|[[SR-12359] DEMT processing stuck on retrieving data - MiX Telematics JIRA](https://jira.mixtelematics.com/browse/SR-12359)]]
-- [[_COMMUNITY_CONFIG-2447 Move PaOBC Settings|CONFIG-2447 Move PaOBC Settings]]
-- [[_COMMUNITY_CONFIG-3161 Missing Hypermedia|CONFIG-3161 Missing Hypermedia.md]]
-- [[_COMMUNITY_Done|Done.md]]
-- [[_COMMUNITY_VM-234 Incorrect assets displayed in Cascading list for MiXTalk|VM-234 Incorrect assets displayed in Cascading list for MiXTalk]]
-- [[_COMMUNITY_VM-234 Incorrect assets displayed in Cascading list for MiXTalk|VM-234 Incorrect assets displayed in Cascading list for MiXTalk]]
-- [[_COMMUNITY_TEL-17 21.9 Waiting Paul Extra thresholds (2)|TEL-17 [21.9 Waiting Paul] Extra thresholds (2)]]
-- [[_COMMUNITY_OBC-289 event thresholds|OBC-289 event thresholds]]
-- [[_COMMUNITY_OBC-68 Mobile device settings tab Configure Event Thresholds|OBC-68 Mobile device settings tab: Configure Event Thresholds]]
-- [[_COMMUNITY_OEM-208 Unenrollment Remove Change Mobile Device button for OEM assets|OEM-208 Unenrollment: Remove Change Mobile Device button for OEM assets]]
-- [[_COMMUNITY_PaOBC Mobile device changes TESTS|PaOBC Mobile device changes TESTS:]]
-- [[_COMMUNITY_SR-10771 Configurations groups Asset Level - Event change - Not Flagged (black flag)|SR-10771 Configurations groups: Asset Level - Event change - Not Flagged (black flag?)]]
-- [[_COMMUNITY_SR-11249|SR-11249]]
-- [[_COMMUNITY_STM-507|STM-507]]
-- [[_COMMUNITY_Web Config|Web Config]]
-- [[_COMMUNITY_AdjustOrganistationsDaylightSavingSettings|AdjustOrganistationsDaylightSavingSettings.md]]
-- [[_COMMUNITY_cleaner_solution_finding|cleaner_solution_finding.md]]
-- [[_COMMUNITY_database_schema_diagram|database_schema_diagram.md]]
-- [[_COMMUNITY_Config-3387 App Command 45 redesign.excalidraw|Config-3387 App Command 45 redesign.excalidraw.md]]
-- [[_COMMUNITY_Decommissioning MiX4000.excalidraw|Decommissioning MiX4000.excalidraw.md]]
-- [[_COMMUNITY_Frangular Minified Video Notes|Frangular Minified Video Notes.md]]
-- [[_COMMUNITY_FWQ-1403 Leading 0 being dropped.excalidraw|FWQ-1403 Leading 0 being dropped.excalidraw.md]]
-- [[_COMMUNITY_Make Device Available.excalidraw|Make Device Available.excalidraw.md]]
-- [[_COMMUNITY_SR-16213 Investigating the code for Not Commissioned.excalidraw|SR-16213 Investigating the code for Not Commissioned.excalidraw.md]]
-- [[_COMMUNITY_Status Messages.excalidraw|Status Messages.excalidraw.md]]
-- [[_COMMUNITY_2022-04-13 MiX I3 Second catchup|2022-04-13 MiX I3 Second catchup]]
-- [[_COMMUNITY_2022-04-22 MiX I3 Questions|2022-04-22 MiX I3 Questions]]
-- [[_COMMUNITY_index.d.ts|index.d.ts]]
-- [[_COMMUNITY_Black Flag|Black Flag.md]]
-- [[_COMMUNITY_CODE Large File Transfer NewFileAvailable and StoreFilePart|CODE Large File Transfer NewFileAvailable and StoreFilePart.md]]
-- [[_COMMUNITY_CODE Large File Transfer UpdateProgress|CODE Large File Transfer UpdateProgress.md]]
-- [[_COMMUNITY_Zeshan topic|Zeshan topic.md]]
-- [[_COMMUNITY_CONFIG-3624 Upload FW for FM|CONFIG-3624 Upload FW for FM]]
-- [[_COMMUNITY_CONFIG-4030 TEST Get Pending Or Loaded Configuration Version For MobileUnit|CONFIG-4030 TEST Get Pending Or Loaded Configuration Version For MobileUnit.md]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Preparing your vault for Dashboard++|Preparing your vault for Dashboard++]]
-- [[_COMMUNITY_Event Templates.excalidraw|Event Templates.excalidraw.md]]
-- [[_COMMUNITY_Handover 2022-12|Handover 2022-12.md]]
-- [[_COMMUNITY_Home Dashboard|Home Dashboard.md]]
-- [[_COMMUNITY_Leave|Leave.md]]
-- [[_COMMUNITY_Links and Files|Links and Files.md]]
-- [[_COMMUNITY_Logz.io|Logz.io.md]]
-- [[_COMMUNITY_New UI Look Meeting Zonika and Nicole|New UI Look Meeting Zonika and Nicole.md]]
-- [[_COMMUNITY_Might be missing|Might be missing]]
-- [[_COMMUNITY_AirBnb|AirBnb]]
-- [[_COMMUNITY_Zonika Outstanding Jira tickets|Zonika Outstanding Jira tickets.md]]
-- [[_COMMUNITY_OE Other eg. Languaging|OE Other eg. Languaging.md]]
-- [[_COMMUNITY_Testing on DEV|Testing on DEV]]
-- [[_COMMUNITY_Overriding the Column Width|Overriding the Column Width.md]]
-- [[_COMMUNITY_Quartz v4|Quartz v4]]
-- [[_COMMUNITY_Review Code Enhancements|Review Code Enhancements.md]]
-- [[_COMMUNITY_SR-14153 Duplicate Iridium should be allowed|SR-14153 Duplicate Iridium should be allowed.md]]
-- [[_COMMUNITY_SR-16639 Camera selection settings not cascading to templates|SR-16639 Camera selection settings not cascading to templates.md]]
-- [[_COMMUNITY_STM-768 Client call to get selected event cameras for assets|STM-768 Client call to get selected event cameras for assets.md]]
-- [[_COMMUNITY_Template Branch|Template Branch.md]]
-- [[_COMMUNITY_Template Development Note|Template Development Note.md]]
-- [[_COMMUNITY_{{title}}|{{title}}]]
-- [[_COMMUNITY_Unathi Alert Test Cases|Unathi Alert Test Cases.md]]
-- [[_COMMUNITY_Alerts values fixing|Alerts values fixing.md]]
-- [[_COMMUNITY_AWS New|AWS New.md]]
-- [[_COMMUNITY_Code Repo|Code Repo.md]]
-- [[_COMMUNITY_OE-513 Branches|OE-513 Branches.md]]
-- [[_COMMUNITY_2025-11-25|2025-11-25.md]]
-- [[_COMMUNITY_breadcrumbs|breadcrumbs.md]]
-- [[_COMMUNITY_darkmode|darkmode.md]]
-- [[_COMMUNITY_graph view|graph view.md]]
-- [[_COMMUNITY_recent notes|recent notes.md]]
-- [[_COMMUNITY_RSS Feed|RSS Feed.md]]
-- [[_COMMUNITY_SPA Routing|SPA Routing.md]]
-- [[_COMMUNITY_upcoming features|upcoming features.md]]
-- [[_COMMUNITY_AliasRedirects|AliasRedirects.md]]
-- [[_COMMUNITY_CNAME|CNAME.md]]
-- [[_COMMUNITY_ComponentResources|ComponentResources.md]]
-- [[_COMMUNITY_ContentIndex|ContentIndex.md]]
-- [[_COMMUNITY_ContentPage|ContentPage.md]]
-- [[_COMMUNITY_CrawlLinks|CrawlLinks.md]]
-- [[_COMMUNITY_CreatedModifiedDate|CreatedModifiedDate.md]]
-- [[_COMMUNITY_Description|Description.md]]
-- [[_COMMUNITY_FolderPage|FolderPage.md]]
-- [[_COMMUNITY_GitHubFlavoredMarkdown|GitHubFlavoredMarkdown.md]]
-- [[_COMMUNITY_HardLineBreaks|HardLineBreaks.md]]
-- [[_COMMUNITY_NotFoundPage|NotFoundPage.md]]
-- [[_COMMUNITY_SyntaxHighlighting|SyntaxHighlighting.md]]
-- [[_COMMUNITY_TableOfContents|TableOfContents.md]]
-- [[_COMMUNITY_TagPage|TagPage.md]]
-- [[_COMMUNITY_AC-109 LAMBDA|AC-109 LAMBDA.md]]
-- [[_COMMUNITY_AC-266 Events not added in default MiX4000 template|AC-266 Events not added in default MiX4000 template.md]]
-- [[_COMMUNITY_AC-274 SPIKE diagram for outstanding AC work|AC-274 SPIKE diagram for outstanding AC work.md]]
-- [[_COMMUNITY_zz_martin SR-10305 21.7 WIP MiX4000  MVR Units Losing Timezone Settings|zz_martin SR-10305 [21.7 WIP] MiX4000  MVR Units Losing Timezone Settings.md]]
-- [[_COMMUNITY_zz_nicole QA-4795 Diagnositic - Trip Information - Incorrect value displayed out of trip|zz_nicole QA-4795 Diagnositic - Trip Information - Incorrect value displayed out of trip.md]]
-- [[_COMMUNITY_zz_zonika SR-11740 Last Config load date not updating in DynaMiX|zz_zonika SR-11740 Last Config load date not updating in DynaMiX.md]]
-- [[_COMMUNITY_zz_zonika UAT-687 Remora and Oyster|zz_zonika UAT-687 Remora and Oyster.md]]
-- [[_COMMUNITY_CONFIG-2686 Black flag blocking unit commissioning (IMEI)|CONFIG-2686 Black flag blocking unit commissioning (IMEI).md]]
-- [[_COMMUNITY_CONFIG-2848 ODO and Engine Hours different on diagnostics modal and assets list|CONFIG-2848 ODO and Engine Hours different on diagnostics modal and assets list.md]]
-- [[_COMMUNITY_CONFIG-2948 Cant save PaOBC commissioning issues|CONFIG-2948 Cant save PaOBC commissioning issues.md]]
-- [[_COMMUNITY_CONFIG-2954 Config group issue for STM Streamax Standalone|CONFIG-2954 Config group issue for STM Streamax Standalone.md]]
-- [[_COMMUNITY_CONFIG-2958 Cant change PaOBC to FM|CONFIG-2958 Cant change PaOBC to FM.md]]
-- [[_COMMUNITY_OEM-204 CanBeDeleted|OEM-204 CanBeDeleted.md]]
-- [[_COMMUNITY_QA-4592 UAT 21.9 Event Threshold NOT available|QA-4592 UAT 21.9 Event Threshold NOT available.md]]
-- [[_COMMUNITY_QA-4706 Issue making Teltonika available on new Org|QA-4706 Issue making Teltonika available on new Org.md]]
-- [[_COMMUNITY_SR-11406 ENT EKS Infohub User Error|SR-11406 ENT EKS Infohub User Error.md]]
-- [[_COMMUNITY_SR-11408|SR-11408.md]]
-- [[_COMMUNITY_SR-11553 FM change mobile device SR|SR-11553 FM change mobile device SR.md]]
-- [[_COMMUNITY_SR-11563 VT Units Not Communicating With The UI|SR-11563 VT Units Not Communicating With The UI.md]]
-- [[_COMMUNITY_SR-11631 MiX 4000 IMEI diff on Asset Page (wrong) and modal (correct)|SR-11631 MiX 4000 IMEI diff on Asset Page (wrong) and modal (correct).md]]
-- [[_COMMUNITY_SR-9374 Live Tracking Not Showing Ignition Status Correctly|SR-9374 Live Tracking Not Showing Ignition Status Correctly.md]]
-- [[_COMMUNITY_STM-319|STM-319.md]]
-- [[_COMMUNITY_STM-471 Streamax Decommissioning and ReCommissioning|STM-471 Streamax Decommissioning and ReCommissioning.md]]
-- [[_COMMUNITY_STM-533 STM change peripheral|STM-533 STM change peripheral.md]]
-- [[_COMMUNITY_STM-544 Template Streamax Peripheral line changes should update S17|STM-544 Template Streamax Peripheral line changes should update S17.md]]
-- [[_COMMUNITY_STM-548 Reset to Config group|STM-548 Reset to Config group.md]]
-- [[_COMMUNITY_Daily|Daily.md]]
-- [[_COMMUNITY_Overtime|Overtime.md]]
-- [[_COMMUNITY_2022-03-31 MiX I3 Brainstorm|2022-03-31 MiX I3 Brainstorm.md]]
-- [[_COMMUNITY_Justus FR Peripheral work|Justus FR Peripheral work.md]]
-- [[_COMMUNITY_Legacy Config Group Move different Device Types|Legacy Config Group Move different Device Types.md]]
-- [[_COMMUNITY_Accounts|Accounts.md]]
-- [[_COMMUNITY_CONFIG-4015 Update the version numbers Client and API|CONFIG-4015 Update the version numbers Client and API.md]]
-- [[_COMMUNITY_Copied Rotation|Copied Rotation.md]]
-- [[_COMMUNITY_DaylightSavingsTimeAdjuster|DaylightSavingsTimeAdjuster.md]]
-- [[_COMMUNITY_Debug Prod|Debug Prod.md]]
-- [[_COMMUNITY_Deviceconfig API|Deviceconfig API.md]]
-- [[_COMMUNITY_Drawing 2024-10-22 12.13.04.excalidraw|Drawing 2024-10-22 12.13.04.excalidraw.md]]
-- [[_COMMUNITY_Driver Id|Driver Id.md]]
-- [[_COMMUNITY_Engine Hours|Engine Hours.md]]
-- [[_COMMUNITY_Helpful Dashboards Links|Helpful Dashboards Links.md]]
-- [[_COMMUNITY_Iridium|Iridium.md]]
-- [[_COMMUNITY_Jira Team Issues|Jira Team Issues.md]]
-- [[_COMMUNITY_Links|Links]]
-- [[_COMMUNITY_Local config|Local config.md]]
-- [[_COMMUNITY_LOG DB Maintenance|LOG DB Maintenance.md]]
-- [[_COMMUNITY_Migrating Org|Migrating Org.md]]
-- [[_COMMUNITY_Testers|Testers]]
-- [[_COMMUNITY_mobileunit. AssetMobileUnit|mobileunit. AssetMobileUnit.md]]
-- [[_COMMUNITY_mobileunit. MobileUnits|mobileunit. MobileUnits.md]]
-- [[_COMMUNITY_NA Frangular get up and running|NA Frangular get up and running.md]]
-- [[_COMMUNITY_Powershell|Powershell.md]]
-- [[_COMMUNITY_Read|Read.md]]
-- [[_COMMUNITY_Server Issues PROD|Server Issues PROD.md]]
-- [[_COMMUNITY_Template Branches|Template Branches.md]]
-- [[_COMMUNITY_template. ConfigurationGroups|template. ConfigurationGroups.md]]
-- [[_COMMUNITY_template. EventTemplates|template. EventTemplates.md]]
-- [[_COMMUNITY_template. Locations|template. Locations.md]]
-- [[_COMMUNITY_template. LocationTemplates|template. LocationTemplates.md]]
-- [[_COMMUNITY_template. MobileDeviceTemplates|template. MobileDeviceTemplates.md]]
-- [[_COMMUNITY_Netfix profanity family fix|Netfix profanity family fix]]
-- [[_COMMUNITY_UAT|UAT.md]]
-- [[_COMMUNITY_New Device LightMetrics|New Device LightMetrics.md]]
-- [[_COMMUNITY_OE Config Groups Facelift Meeting|OE Config Groups Facelift Meeting.md]]
-- [[_COMMUNITY_OE Merge to DEV Issues|OE Merge to DEV Issues.md]]
-- [[_COMMUNITY_OE-513 All SQL involved|OE-513 All SQL involved.md]]
-- [[_COMMUNITY_OPEN-712 OPEN-713|OPEN-712 OPEN-713.md]]
-- [[_COMMUNITY_MissingParametersLogicFlow|MissingParametersLogicFlow.md]]
-- [[_COMMUNITY_runAgendaPythonShell.sh|runAgendaPythonShell.sh]]
-- [[_COMMUNITY_SQL Command 45 Asset Auditing|SQL Command 45 Asset Auditing.md]]
-- [[_COMMUNITY_SQL Command 45 Asset Offset|SQL Command 45 Asset Offset.md]]
-- [[_COMMUNITY_SQL Command 45 Messages Sent|SQL Command 45 Messages Sent.md]]
-- [[_COMMUNITY_SQL Command 45 Organisation Offset|SQL Command 45 Organisation Offset.md]]
-- [[_COMMUNITY_SR-17158 Teltonika Thresholds Not applied or considered|SR-17158 Teltonika Thresholds Not applied or considered.md]]
-- [[_COMMUNITY_Template Outstanding Environments|Template Outstanding Environments.md]]
-- [[_COMMUNITY_Template Simple Note|Template Simple Note.md]]
-- [[_COMMUNITY_getParagraph|getParagraph.md]]
-- [[_COMMUNITY_AC-163_FlowChart.png|AC-163_FlowChart.png.md]]
-- [[_COMMUNITY_AC-78|AC-78.md]]
-- [[_COMMUNITY_AC Cleanup Script|AC Cleanup Script.md]]
-- [[_COMMUNITY_Adding new devices|Adding new devices.md]]
-- [[_COMMUNITY_AI Alerts Feedback 1|AI Alerts Feedback 1.md]]
-- [[_COMMUNITY_AI FW Versions|AI FW Versions.md]]
-- [[_COMMUNITY_All Outstanding|All Outstanding.md]]
-- [[_COMMUNITY_2020-08-05-15-40-50.png|2020-08-05-15-40-50.png.md]]
-- [[_COMMUNITY_301704920959.png|301704920959.png.md]]
-- [[_COMMUNITY_Bamboo HR Goals Zonika|Bamboo HR Goals Zonika.md]]
-- [[_COMMUNITY_Block UX UI|Block UX UI.md]]
-- [[_COMMUNITY_OE-513 Story Points|OE-513 Story Points.md]]
-- [[_COMMUNITY_WiXToolNotInstalledError.png|WiXToolNotInstalledError.png.md]]
-- [[_COMMUNITY_Daily Merge 20240215|Daily Merge 20240215.md]]
-- [[_COMMUNITY_Daily Merge 20240220|Daily Merge 20240220.md]]
-- [[_COMMUNITY_Daily Merge 20240223|Daily Merge 20240223.md]]
-- [[_COMMUNITY_Daily Merge 20240226|Daily Merge 20240226.md]]
-- [[_COMMUNITY_Daily Merge 20240227|Daily Merge 20240227.md]]
-- [[_COMMUNITY_Daily Merge 20240228|Daily Merge 20240228.md]]
-- [[_COMMUNITY_Daily Merge 20240229|Daily Merge 20240229.md]]
-- [[_COMMUNITY_Daily Merge 20240301|Daily Merge 20240301.md]]
-- [[_COMMUNITY_Daily Merge 20240304|Daily Merge 20240304.md]]
-- [[_COMMUNITY_Daily Merge 20240306|Daily Merge 20240306.md]]
-- [[_COMMUNITY_Daily Merge 20240308|Daily Merge 20240308.md]]
-- [[_COMMUNITY_Daily Merge 20240311|Daily Merge 20240311.md]]
-- [[_COMMUNITY_Daily Merge 20240312|Daily Merge 20240312.md]]
-- [[_COMMUNITY_Daily Merge 20240315|Daily Merge 20240315.md]]
-- [[_COMMUNITY_Daily Merge 20240319|Daily Merge 20240319.md]]
-- [[_COMMUNITY_Daily Merge 20240320|Daily Merge 20240320.md]]
-- [[_COMMUNITY_Daily Merge 20240322|Daily Merge 20240322.md]]
-- [[_COMMUNITY_Daily Merge 20240325|Daily Merge 20240325.md]]
-- [[_COMMUNITY_Daily Merge 20250506|Daily Merge 20250506.md]]
-- [[_COMMUNITY_Daily Merge 20250508|Daily Merge 20250508.md]]
-- [[_COMMUNITY_Daily Merge 20250509|Daily Merge 20250509.md]]
-- [[_COMMUNITY_Daily Merge 20250512|Daily Merge 20250512.md]]
-- [[_COMMUNITY_Jira SR Process|Jira SR Process.md]]
-- [[_COMMUNITY_Knowledge Base KB|Knowledge Base KB.md]]
-- [[_COMMUNITY_Leave - overtime|Leave - overtime.md]]
-- [[_COMMUNITY_Maybe MAC things to install for new people|Maybe MAC things to install for new people.md]]
-- [[_COMMUNITY_Missing Parameters Logic|Missing Parameters Logic.md]]
-- [[_COMMUNITY_Missing Parameters Logic Links to Logic|Missing Parameters Logic Links to Logic.md]]
-- [[_COMMUNITY_MORE changes for dropdown login environments|MORE changes for dropdown login environments.md]]
-- [[_COMMUNITY_Admin|Admin.md]]
-- [[_COMMUNITY_Application Settings or config without app settings|Application Settings or config without app settings.md]]
-- [[_COMMUNITY_AssetProperties.png|AssetProperties.png.md]]
-- [[_COMMUNITY_Battery|Battery.md]]
-- [[_COMMUNITY_Browser|Browser.md]]
-- [[_COMMUNITY_Business Logic|Business Logic.md]]
-- [[_COMMUNITY_Chat with Chad to send to Zonika re QA issues VIN related|Chat with Chad to send to Zonika re QA issues VIN related.md]]
-- [[_COMMUNITY_CICD|CICD.md]]
-- [[_COMMUNITY_coddingtonbearobsidian-local-rest-api Unlock your automation needs by interacting with your notes in Obsidian over a secure REST API.|coddingtonbearobsidian-local-rest-api Unlock your automation needs by interacting with your notes in Obsidian over a secure REST API..md]]
-- [[_COMMUNITY_Code Review - Mobile Unit Default Configuration Group|Code Review - Mobile Unit Default Configuration Group.md]]
-- [[_COMMUNITY_command line|command line.md]]
-- [[_COMMUNITY_Dale Carnegie LAST session|Dale Carnegie LAST session.md]]
-- [[_COMMUNITY_Dashboard|Dashboard.md]]
-- [[_COMMUNITY_Database|Database.md]]
-- [[_COMMUNITY_DBNames|DBNames.md]]
-- [[_COMMUNITY_dbo.Sites|dbo.Sites.md]]
-- [[_COMMUNITY_Default Events|Default Events.md]]
-- [[_COMMUNITY_Driver|Driver.md]]
-- [[_COMMUNITY_DST Moving Parts|DST Moving Parts.md]]
-- [[_COMMUNITY_Due Next Month|Due Next Month.md]]
-- [[_COMMUNITY_Due Previous Days|Due Previous Days.md]]
-- [[_COMMUNITY_Due Today|Due Today.md]]
-- [[_COMMUNITY_Files Changed (Last 10)|Files Changed (Last 10).md]]
-- [[_COMMUNITY_FM Last trips not updating|FM Last trips not updating.md]]
-- [[_COMMUNITY_Frangular Chat Pallavi Register Internal Repo-1Frangular Chat Pallavi Register Internal Repo-1.png|Frangular Chat Pallavi Register Internal Repo-1Frangular Chat Pallavi Register Internal Repo-1.png.md]]
-- [[_COMMUNITY_Frangular Languaging Constructorpng|Frangular Languaging Constructorpng.md]]
-- [[_COMMUNITY_Git Daily Merge Automation|Git Daily Merge Automation.md]]
-- [[_COMMUNITY_Handover Dec 2023|Handover Dec 2023.md]]
-- [[_COMMUNITY_Hard Link and Moving Directories|Hard Link and Moving Directories.md]]
-- [[_COMMUNITY_Hide a Tab|Hide a Tab.md]]
-- [[_COMMUNITY_IIS Logs|IIS Logs.md]]
-- [[_COMMUNITY_IMEIs|IMEIs.md]]
-- [[_COMMUNITY_Jacques Meeting Listener|Jacques Meeting Listener.md]]
-- [[_COMMUNITY_Jako idea to list out results|Jako idea to list out results.md]]
-- [[_COMMUNITY_Jira Ever Assigned|Jira Ever Assigned.md]]
-- [[_COMMUNITY_Jira Mine|Jira Mine.md]]
-- [[_COMMUNITY_Jira Open Issues|Jira Open Issues.md]]
-- [[_COMMUNITY_Jira Regression|Jira Regression.md]]
-- [[_COMMUNITY_Jira Stories busy with|Jira Stories busy with.md]]
-- [[_COMMUNITY_KafkaConsumers.png|KafkaConsumers.png.md]]
-- [[_COMMUNITY_library.Locations|library.Locations.md]]
-- [[_COMMUNITY_markdown-confluenceobsidian-integration Sync  Publish Obsidian Notes to Confluence|markdown-confluenceobsidian-integration Sync  Publish Obsidian Notes to Confluence.md]]
-- [[_COMMUNITY_Network|Network.md]]
-- [[_COMMUNITY_New Environment Server|New Environment Server.md]]
-- [[_COMMUNITY_New MiXFleet UI Component|New MiXFleet UI Component.md]]
-- [[_COMMUNITY_Obsidian plugins|Obsidian plugins.md]]
-- [[_COMMUNITY_Odometer Code|Odometer Code.md]]
-- [[_COMMUNITY_OE-513|OE-513.md]]
-- [[_COMMUNITY_OE-534 Plural assets|OE-534 Plural assets.md]]
-- [[_COMMUNITY_Opsgenie Schedule On Call|Opsgenie Schedule On Call.md]]
-- [[_COMMUNITY_Pasted image 20240730152814.png|Pasted image 20240730152814.png.md]]
-- [[_COMMUNITY_PMU|PMU.md]]
-- [[_COMMUNITY_PMU_Zip_Compilation.png|PMU_Zip_Compilation.png.md]]
-- [[_COMMUNITY_PrivateGPT|PrivateGPT.md]]
-- [[_COMMUNITY_Production|Production.md]]
-- [[_COMMUNITY_Properties|Properties.md]]
-- [[_COMMUNITY_Python Templater|Python Templater.md]]
-- [[_COMMUNITY_Quartz|Quartz.md]]
-- [[_COMMUNITY_Quick Links|Quick Links.md]]
-- [[_COMMUNITY_REGEX|REGEX.md]]
-- [[_COMMUNITY_Release 23.15|Release 23.15.md]]
-- [[_COMMUNITY_Remote Desktop|Remote Desktop.md]]
-- [[_COMMUNITY_Repos|Repos.md]]
-- [[_COMMUNITY_Running Dymix API locally|Running Dymix API locally.md]]
-- [[_COMMUNITY_S17 Meeting|S17 Meeting.md]]
-- [[_COMMUNITY_SerialNumbers for FMs|SerialNumbers for FMs.md]]
-- [[_COMMUNITY_Settings|Settings.md]]
-- [[_COMMUNITY_Shashi handover|Shashi handover.md]]
-- [[_COMMUNITY_SQL Cross Apply Help|SQL Cross Apply Help.md]]
-- [[_COMMUNITY_Stackify|Stackify.md]]
-- [[_COMMUNITY_Tasks Open|Tasks Open.md]]
-- [[_COMMUNITY_Team workflow progress testing|Team workflow progress testing.md]]
-- [[_COMMUNITY_Template Environments|Template Environments.md]]
-- [[_COMMUNITY_Todoist|Todoist.md]]
-- [[_COMMUNITY_Todoist Today|Todoist Today.md]]
-- [[_COMMUNITY_TZ Pallavi|TZ Pallavi.md]]
-- [[_COMMUNITY_UAE issue|UAE issue.md]]
-- [[_COMMUNITY_Untitled|Untitled.md]]
-- [[_COMMUNITY_Untitled 1|Untitled 1.md]]
-- [[_COMMUNITY_Untitled 2|Untitled 2.md]]
-- [[_COMMUNITY_Untitled 3|Untitled 3.md]]
-- [[_COMMUNITY_ValidationWorking.png|ValidationWorking.png.md]]
-- [[_COMMUNITY_Validator.png|Validator.png.md]]
-- [[_COMMUNITY_Virtual Machines on Prem at old offices|Virtual Machines on Prem at old offices.md]]
-- [[_COMMUNITY_Visual Studio Settings|Visual Studio Settings.md]]
-- [[_COMMUNITY_Workflow|Workflow.md]]
-- [[_COMMUNITY_xxx|xxx.md]]
-- [[_COMMUNITY_Zonika Meeting|Zonika Meeting.md]]
-- [[_COMMUNITY_New Page|New Page.md]]
-- [[_COMMUNITY_OE-611 Script to remove all stored procs and functions|OE-611 Script to remove all stored procs and functions.md]]
-- [[_COMMUNITY_Olga OPEN-345|Olga OPEN-345.md]]
-- [[_COMMUNITY_OPEN-840_TODO_ALERTS|OPEN-840_TODO_ALERTS.md]]
-- [[_COMMUNITY_OPEN-1928 ZA AWS deployment|OPEN-1928 ZA AWS deployment.md]]
-- [[_COMMUNITY_OPEN-1931 ENT AWS Deployment|OPEN-1931 ENT AWS Deployment.md]]
-- [[_COMMUNITY_OPEN-302 Unallocated Asset Description link click errpr|OPEN-302 Unallocated Asset Description link click errpr.md]]
-- [[_COMMUNITY_OPEN-756 Languaging issues|OPEN-756 Languaging issues.md]]
-- [[_COMMUNITY_Paul Common Nuget issue|Paul Common Nuget issue.md]]
-- [[_COMMUNITY_Paul DeviceData.xml|Paul DeviceData.xml.md]]
-- [[_COMMUNITY_Paul Parameter Fix|Paul Parameter Fix.md]]
-- [[_COMMUNITY_Paul Stored Proc to see configuration for mobileunit|Paul Stored Proc to see configuration for mobileunit.md]]
-- [[_COMMUNITY_Public Holiday|Public Holiday.md]]
-- [[_COMMUNITY_bootstrap-worker.mjs|bootstrap-worker.mjs]]
-- [[_COMMUNITY_Recent files with outstanding todo tasks|Recent files with outstanding todo tasks.md]]
-- [[_COMMUNITY_Roo Code Code Analysis|Roo Code Code Analysis.md]]
-- [[_COMMUNITY_Roo Code Why my Original Stored Proc didnt work|Roo Code Why my Original Stored Proc didnt work.md]]
-- [[_COMMUNITY_agenda.py|agenda.py]]
-- [[_COMMUNITY_Select Multiple Assets to move to Config group|Select Multiple Assets to move to Config group.md]]
-- [[_COMMUNITY_Selection Criteria DB|Selection Criteria DB.md]]
-- [[_COMMUNITY_Shuan Notes AI|Shuan Notes AI.md]]
-- [[_COMMUNITY_Home|Home.md]]
-- [[_COMMUNITY_SQL Message Statuses|SQL Message Statuses.md]]
-- [[_COMMUNITY_SQL Activate account|SQL Activate account.md]]
-- [[_COMMUNITY_SQL Audit Odometer|SQL Audit Odometer.md]]
-- [[_COMMUNITY_SQL Command 45 Clean Mesa Messages per AssetId|SQL Command 45 Clean Mesa Messages per AssetId.md]]
-- [[_COMMUNITY_SQL Config Group Get all Columns|SQL Config Group Get all Columns.md]]
-- [[_COMMUNITY_SQL Config Status Changes Audit|SQL Config Status Changes Audit.md]]
-- [[_COMMUNITY_SQL Configuration Group AEMP|SQL Configuration Group AEMP.md]]
-- [[_COMMUNITY_SQL Device AEMP|SQL Device AEMP.md]]
-- [[_COMMUNITY_SQL Device Exist|SQL Device Exist.md]]
-- [[_COMMUNITY_SQL Get Configuration Generation Data|SQL Get Configuration Generation Data.md]]
-- [[_COMMUNITY_SQL Get Template and Overwritten values|SQL Get Template and Overwritten values.md]]
-- [[_COMMUNITY_SQL Is Device Enabled|SQL Is Device Enabled.md]]
-- [[_COMMUNITY_SQL Is Device Enabled for MobileUnit|SQL Is Device Enabled for MobileUnit.md]]
-- [[_COMMUNITY_SQL Large File Transfer Cancel|SQL Large File Transfer Cancel.md]]
-- [[_COMMUNITY_SQL Large File Transfer NewFileAvailable and StoreFilePart|SQL Large File Transfer NewFileAvailable and StoreFilePart.md]]
-- [[_COMMUNITY_SQL Large File Transfer UpdateProgress|SQL Large File Transfer UpdateProgress.md]]
-- [[_COMMUNITY_SQL MiXTalk Carrier|SQL MiXTalk Carrier.md]]
-- [[_COMMUNITY_SQL MiXTalk Master Number Messages|SQL MiXTalk Master Number Messages.md]]
-- [[_COMMUNITY_SQL MiXTalk Master Number Messages 2|SQL MiXTalk Master Number Messages 2.md]]
-- [[_COMMUNITY_SQL QA-6193 Devices with Logicals and Properties that share values|SQL QA-6193 Devices with Logicals and Properties that share values.md]]
-- [[_COMMUNITY_SQL SR-17543 Find ORG and IMEI based on AssetId|SQL SR-17543 Find ORG and IMEI based on AssetId.md]]
-- [[_COMMUNITY_SQL SR-17917 Library Events deleted|SQL SR-17917 Library Events deleted.md]]
-- [[_COMMUNITY_SQL TEST Configuration Group AEMP Stored Proc OEM-542|SQL TEST Configuration Group AEMP Stored Proc OEM-542.md]]
-- [[_COMMUNITY_SQL to test SR-16598 Scheduler Timestamps flopping|SQL to test SR-16598 Scheduler Timestamps flopping.md]]
-- [[_COMMUNITY_SQL VIN ELD Enabled mobileunit.MobileUnit_GetEnabledDevicePropertyForAssets|SQL VIN ELD Enabled mobileunit.MobileUnit_GetEnabledDevicePropertyForAssets.md]]
-- [[_COMMUNITY_SR-12849|SR-12849.md]]
-- [[_COMMUNITY_SR-14125|SR-14125.md]]
-- [[_COMMUNITY_SR-14824 1|SR-14824 1.md]]
-- [[_COMMUNITY_SR-14824 2|SR-14824 2.md]]
-- [[_COMMUNITY_SR-14824 3|SR-14824 3.md]]
-- [[_COMMUNITY_SR-16235 Unique Identifier cant be assigned|SR-16235 Unique Identifier cant be assigned.md]]
-- [[_COMMUNITY_SR-16705 Streamax Videos not downloading after Peripheral change|SR-16705 Streamax Videos not downloading after Peripheral change.md]]
-- [[_COMMUNITY_SR-2119 Battery Level not updating in Diagnostic Modal|SR-2119 Battery Level not updating in Diagnostic Modal.md]]
-- [[_COMMUNITY_SR Process|SR Process.md]]
-- [[_COMMUNITY_SRs to handle|SRs to handle.md]]
-- [[_COMMUNITY_Template Monthly Notes|Template Monthly Notes.md]]
-- [[_COMMUNITY_Template Python Agenda|Template Python Agenda.md]]
-- [[_COMMUNITY_Template Todo|Template Todo.md]]
-- [[_COMMUNITY_Template Todo 2 Months Simple|Template Todo 2 Months Simple.md]]
-- [[_COMMUNITY_Template Todo Month|Template Todo Month.md]]
-- [[_COMMUNITY_Test New Devices|Test New Devices.md]]
-- [[_COMMUNITY_academicianAwesome|academicianAwesome.md]]
-- [[_COMMUNITY_accountantAwesome|accountantAwesome.md]]
-- [[_COMMUNITY_advertiserAwesome|advertiserAwesome.md]]
-- [[_COMMUNITY_aiassisteddoctorAwesome|aiassisteddoctorAwesome.md]]
-- [[_COMMUNITY_aitryingtoescapetheboxAwesome|aitryingtoescapetheboxAwesome.md]]
-- [[_COMMUNITY_aiwritingtutorAwesome|aiwritingtutorAwesome.md]]
-- [[_COMMUNITY_aphorismbookAwesome|aphorismbookAwesome.md]]
-- [[_COMMUNITY_artistadvisorAwesome|artistadvisorAwesome.md]]
-- [[_COMMUNITY_asciiartistAwesome|asciiartistAwesome.md]]
-- [[_COMMUNITY_astrologerAwesome|astrologerAwesome.md]]
-- [[_COMMUNITY_automobilemechanicAwesome|automobilemechanicAwesome.md]]
-- [[_COMMUNITY_babysitterAwesome|babysitterAwesome.md]]
-- [[_COMMUNITY_biblicaltranslatorAwesome|biblicaltranslatorAwesome.md]]
-- [[_COMMUNITY_buddhaAwesome|buddhaAwesome.md]]
-- [[_COMMUNITY_careercounselorAwesome|careercounselorAwesome.md]]
-- [[_COMMUNITY_carnavigationsystemAwesome|carnavigationsystemAwesome.md]]
-- [[_COMMUNITY_characterfrommoviebookanythingAwesome|characterfrommoviebookanythingAwesome.md]]
-- [[_COMMUNITY_chatgptpromptgeneratorAwesome|chatgptpromptgeneratorAwesome.md]]
-- [[_COMMUNITY_cheaptravelticketadvisorAwesome|cheaptravelticketadvisorAwesome.md]]
-- [[_COMMUNITY_chefAwesome|chefAwesome.md]]
-- [[_COMMUNITY_chemicalreactorAwesome|chemicalreactorAwesome.md]]
-- [[_COMMUNITY_chessplayerAwesome|chessplayerAwesome.md]]
-- [[_COMMUNITY_chiefexecutiveofficerAwesome|chiefexecutiveofficerAwesome.md]]
-- [[_COMMUNITY_classicalmusiccomposerAwesome|classicalmusiccomposerAwesome.md]]
-- [[_COMMUNITY_commentariatAwesome|commentariatAwesome.md]]
-- [[_COMMUNITY_commitmessagegeneratorAwesome|commitmessagegeneratorAwesome.md]]
-- [[_COMMUNITY_composerAwesome|composerAwesome.md]]
-- [[_COMMUNITY_coverletterAwesome|coverletterAwesome.md]]
-- [[_COMMUNITY_cybersecurityspecialistAwesome|cybersecurityspecialistAwesome.md]]
-- [[_COMMUNITY_debatecoachAwesome|debatecoachAwesome.md]]
-- [[_COMMUNITY_debaterAwesome|debaterAwesome.md]]
-- [[_COMMUNITY_dentistAwesome|dentistAwesome.md]]
-- [[_COMMUNITY_developerrelationsconsultantAwesome|developerrelationsconsultantAwesome.md]]
-- [[_COMMUNITY_diagramgeneratorAwesome|diagramgeneratorAwesome.md]]
-- [[_COMMUNITY_dietitianAwesome|dietitianAwesome.md]]
-- [[_COMMUNITY_diyexpertAwesome|diyexpertAwesome.md]]
-- [[_COMMUNITY_doctorAwesome|doctorAwesome.md]]
-- [[_COMMUNITY_dreaminterpreterAwesome|dreaminterpreterAwesome.md]]
-- [[_COMMUNITY_drunkpersonAwesome|drunkpersonAwesome.md]]
-- [[_COMMUNITY_educationalcontentcreatorAwesome|educationalcontentcreatorAwesome.md]]
-- [[_COMMUNITY_elocutionistAwesome|elocutionistAwesome.md]]
-- [[_COMMUNITY_emergencyresponseprofessionalAwesome|emergencyresponseprofessionalAwesome.md]]
-- [[_COMMUNITY_emojitranslatorAwesome|emojitranslatorAwesome.md]]
-- [[_COMMUNITY_englishpronunciationhelperAwesome|englishpronunciationhelperAwesome.md]]
-- [[_COMMUNITY_englishtranslatorandimproverAwesome|englishtranslatorandimproverAwesome.md]]
-- [[_COMMUNITY_essaywriterAwesome|essaywriterAwesome.md]]
-- [[_COMMUNITY_etymologistAwesome|etymologistAwesome.md]]
-- [[_COMMUNITY_excelsheetAwesome|excelsheetAwesome.md]]
-- [[_COMMUNITY_fallacyfinderAwesome|fallacyfinderAwesome.md]]
-- [[_COMMUNITY_fancytitlegeneratorAwesome|fancytitlegeneratorAwesome.md]]
-- [[_COMMUNITY_fillintheblankworksheetsgeneratorAwesome|fillintheblankworksheetsgeneratorAwesome.md]]
-- [[_COMMUNITY_filmcriticAwesome|filmcriticAwesome.md]]
-- [[_COMMUNITY_financialanalystAwesome|financialanalystAwesome.md]]
-- [[_COMMUNITY_floristAwesome|floristAwesome.md]]
-- [[_COMMUNITY_foodcriticAwesome|foodcriticAwesome.md]]
-- [[_COMMUNITY_footballcommentatorAwesome|footballcommentatorAwesome.md]]
-- [[_COMMUNITY_friendAwesome|friendAwesome.md]]
-- [[_COMMUNITY_fullstacksoftwaredeveloperAwesome|fullstacksoftwaredeveloperAwesome.md]]
-- [[_COMMUNITY_gaslighterAwesome|gaslighterAwesome.md]]
-- [[_COMMUNITY_gnomistAwesome|gnomistAwesome.md]]
-- [[_COMMUNITY_gomokuplayerAwesome|gomokuplayerAwesome.md]]
-- [[_COMMUNITY_historianAwesome|historianAwesome.md]]
-- [[_COMMUNITY_hypnotherapistAwesome|hypnotherapistAwesome.md]]
-- [[_COMMUNITY_instructorinaschoolAwesome|instructorinaschoolAwesome.md]]
-- [[_COMMUNITY_interiordecoratorAwesome|interiordecoratorAwesome.md]]
-- [[_COMMUNITY_investmentmanagerAwesome|investmentmanagerAwesome.md]]
-- [[_COMMUNITY_itarchitectAwesome|itarchitectAwesome.md]]
-- [[_COMMUNITY_itexpertAwesome|itexpertAwesome.md]]
-- [[_COMMUNITY_japanesekanjiquizmachineAwesome|japanesekanjiquizmachineAwesome.md]]
-- [[_COMMUNITY_journalistAwesome|journalistAwesome.md]]
-- [[_COMMUNITY_journalreviewerAwesome|journalreviewerAwesome.md]]
-- [[_COMMUNITY_languagedetectorAwesome|languagedetectorAwesome.md]]
-- [[_COMMUNITY_languageliterarycriticAwesome|languageliterarycriticAwesome.md]]
-- [[_COMMUNITY_legaladvisorAwesome|legaladvisorAwesome.md]]
-- [[_COMMUNITY_lifecoachAwesome|lifecoachAwesome.md]]
-- [[_COMMUNITY_linuxterminalAwesome|linuxterminalAwesome.md]]
-- [[_COMMUNITY_logisticianAwesome|logisticianAwesome.md]]
-- [[_COMMUNITY_lunaticAwesome|lunaticAwesome.md]]
-- [[_COMMUNITY_machinelearningengineerAwesome|machinelearningengineerAwesome.md]]
-- [[_COMMUNITY_magicianAwesome|magicianAwesome.md]]
-- [[_COMMUNITY_makeupartistAwesome|makeupartistAwesome.md]]
-- [[_COMMUNITY_mathematicalhistoryteacherAwesome|mathematicalhistoryteacherAwesome.md]]
-- [[_COMMUNITY_mathematicianAwesome|mathematicianAwesome.md]]
-- [[_COMMUNITY_mathteacherAwesome|mathteacherAwesome.md]]
-- [[_COMMUNITY_mentalhealthadviserAwesome|mentalhealthadviserAwesome.md]]
-- [[_COMMUNITY_midjourneypromptgeneratorAwesome|midjourneypromptgeneratorAwesome.md]]
-- [[_COMMUNITY_motivationalcoachAwesome|motivationalcoachAwesome.md]]
-- [[_COMMUNITY_motivationalspeakerAwesome|motivationalspeakerAwesome.md]]
-- [[_COMMUNITY_moviecriticAwesome|moviecriticAwesome.md]]
-- [[_COMMUNITY_muslimimamAwesome|muslimimamAwesome.md]]
-- [[_COMMUNITY_newlanguagecreatorAwesome|newlanguagecreatorAwesome.md]]
-- [[_COMMUNITY_notetakingassistantAwesome|notetakingassistantAwesome.md]]
-- [[_COMMUNITY_novelistAwesome|novelistAwesome.md]]
-- [[_COMMUNITY_passwordgeneratorAwesome|passwordgeneratorAwesome.md]]
-- [[_COMMUNITY_personalchefAwesome|personalchefAwesome.md]]
-- [[_COMMUNITY_personalshopperAwesome|personalshopperAwesome.md]]
-- [[_COMMUNITY_personalstylistAwesome|personalstylistAwesome.md]]
-- [[_COMMUNITY_personaltrainerAwesome|personaltrainerAwesome.md]]
-- [[_COMMUNITY_petbehavioristAwesome|petbehavioristAwesome.md]]
-- [[_COMMUNITY_philosopherAwesome|philosopherAwesome.md]]
-- [[_COMMUNITY_philosophyteacherAwesome|philosophyteacherAwesome.md]]
-- [[_COMMUNITY_phpinterpreterAwesome|phpinterpreterAwesome.md]]
-- [[_COMMUNITY_plagiarismcheckerAwesome|plagiarismcheckerAwesome.md]]
-- [[_COMMUNITY_poetAwesome|poetAwesome.md]]
-- [[_COMMUNITY_positioninterviewerAwesome|positioninterviewerAwesome.md]]
-- [[_COMMUNITY_productmanagerAwesome|productmanagerAwesome.md]]
-- [[_COMMUNITY_promptgeneratorAwesome|promptgeneratorAwesome.md]]
-- [[_COMMUNITY_proofreaderAwesome|proofreaderAwesome.md]]
-- [[_COMMUNITY_psychologistAwesome|psychologistAwesome.md]]
-- [[_COMMUNITY_publicspeakingcoachAwesome|publicspeakingcoachAwesome.md]]
-- [[_COMMUNITY_pythoninterpreterAwesome|pythoninterpreterAwesome.md]]
-- [[_COMMUNITY_rapperAwesome|rapperAwesome.md]]
-- [[_COMMUNITY_realestateagentAwesome|realestateagentAwesome.md]]
-- [[_COMMUNITY_recruiterAwesome|recruiterAwesome.md]]
-- [[_COMMUNITY_regexgeneratorAwesome|regexgeneratorAwesome.md]]
-- [[_COMMUNITY_relationshipcoachAwesome|relationshipcoachAwesome.md]]
-- [[_COMMUNITY_rprogramminginterpreterAwesome|rprogramminginterpreterAwesome.md]]
-- [[_COMMUNITY_salespersonAwesome|salespersonAwesome.md]]
-- [[_COMMUNITY_scientificdatavisualizerAwesome|scientificdatavisualizerAwesome.md]]
-- [[_COMMUNITY_screenwriterAwesome|screenwriterAwesome.md]]
-- [[_COMMUNITY_selfhelpbookAwesome|selfhelpbookAwesome.md]]
-- [[_COMMUNITY_seniorfrontenddeveloperAwesome|seniorfrontenddeveloperAwesome.md]]
-- [[_COMMUNITY_smartdomainnamegeneratorAwesome|smartdomainnamegeneratorAwesome.md]]
-- [[_COMMUNITY_socialmediainfluencerAwesome|socialmediainfluencerAwesome.md]]
-- [[_COMMUNITY_socialmediamanagerAwesome|socialmediamanagerAwesome.md]]
-- [[_COMMUNITY_socratAwesome|socratAwesome.md]]
-- [[_COMMUNITY_socraticmethodAwesome|socraticmethodAwesome.md]]
-- [[_COMMUNITY_softwarequalityassurancetesterAwesome|softwarequalityassurancetesterAwesome.md]]
-- [[_COMMUNITY_solrsearchengineAwesome|solrsearchengineAwesome.md]]
-- [[_COMMUNITY_songrecommenderAwesome|songrecommenderAwesome.md]]
-- [[_COMMUNITY_speechlanguagepathologistslpAwesome|speechlanguagepathologistslpAwesome.md]]
-- [[_COMMUNITY_spokenenglishteacherandimproverAwesome|spokenenglishteacherandimproverAwesome.md]]
-- [[_COMMUNITY_spongebobsmagicconchshellAwesome|spongebobsmagicconchshellAwesome.md]]
-- [[_COMMUNITY_sqlterminalAwesome|sqlterminalAwesome.md]]
-- [[_COMMUNITY_stackoverflowpostAwesome|stackoverflowpostAwesome.md]]
-- [[_COMMUNITY_standupcomedianAwesome|standupcomedianAwesome.md]]
-- [[_COMMUNITY_startupideageneratorAwesome|startupideageneratorAwesome.md]]
-- [[_COMMUNITY_startuptechlawyerAwesome|startuptechlawyerAwesome.md]]
-- [[_COMMUNITY_statisticianAwesome|statisticianAwesome.md]]
-- [[_COMMUNITY_storytellerAwesome|storytellerAwesome.md]]
-- [[_COMMUNITY_svgdesignerAwesome|svgdesignerAwesome.md]]
-- [[_COMMUNITY_synonymfinderAwesome|synonymfinderAwesome.md]]
-- [[_COMMUNITY_talentcoachAwesome|talentcoachAwesome.md]]
-- [[_COMMUNITY_teatasterAwesome|teatasterAwesome.md]]
-- [[_COMMUNITY_technologytransfererAwesome|technologytransfererAwesome.md]]
-- [[_COMMUNITY_techreviewerAwesome|techreviewerAwesome.md]]
-- [[_COMMUNITY_techwriterAwesome|techwriterAwesome.md]]
-- [[_COMMUNITY_textbasedadventuregameAwesome|textbasedadventuregameAwesome.md]]
-- [[_COMMUNITY_tictactoegameAwesome|tictactoegameAwesome.md]]
-- [[_COMMUNITY_timetravelguideAwesome|timetravelguideAwesome.md]]
-- [[_COMMUNITY_titlegeneratorforwrittenpiecesAwesome|titlegeneratorforwrittenpiecesAwesome.md]]
-- [[_COMMUNITY_travelguideAwesome|travelguideAwesome.md]]
-- [[_COMMUNITY_unconstrainedaimodeldanAwesome|unconstrainedaimodeldanAwesome.md]]
-- [[_COMMUNITY_virtualdoctorAwesome|virtualdoctorAwesome.md]]
-- [[_COMMUNITY_webbrowserAwesome|webbrowserAwesome.md]]
-- [[_COMMUNITY_webdesignconsultantAwesome|webdesignconsultantAwesome.md]]
-- [[_COMMUNITY_wikipediapageAwesome|wikipediapageAwesome.md]]
-- [[_COMMUNITY_artAnime|artAnime.md]]
-- [[_COMMUNITY_artBallPointPen|artBallPointPen.md]]
-- [[_COMMUNITY_artBanksy|artBanksy.md]]
-- [[_COMMUNITY_artColoringBook|artColoringBook.md]]
-- [[_COMMUNITY_artDeco|artDeco.md]]
-- [[_COMMUNITY_artGlitchcore|artGlitchcore.md]]
-- [[_COMMUNITY_artLowPoly|artLowPoly.md]]
-- [[_COMMUNITY_artModern|artModern.md]]
-- [[_COMMUNITY_artNormanRockwell|artNormanRockwell.md]]
-- [[_COMMUNITY_artPencilSketch|artPencilSketch.md]]
-- [[_COMMUNITY_artPixel|artPixel.md]]
-- [[_COMMUNITY_artTakashiMurakami|artTakashiMurakami.md]]
-- [[_COMMUNITY_artTimBurton|artTimBurton.md]]
-- [[_COMMUNITY_artUkiyoe|artUkiyoe.md]]
-- [[_COMMUNITY_artVanGogh|artVanGogh.md]]
-- [[_COMMUNITY_artWatercolor|artWatercolor.md]]
-- [[_COMMUNITY_getPhoto|getPhoto.md]]
-- [[_COMMUNITY_ligCinematic|ligCinematic.md]]
-- [[_COMMUNITY_ligFlare|ligFlare.md]]
-- [[_COMMUNITY_ligStudio|ligStudio.md]]
-- [[_COMMUNITY_modAwardWinning|modAwardWinning.md]]
-- [[_COMMUNITY_modDetailed|modDetailed.md]]
-- [[_COMMUNITY_modFanart|modFanart.md]]
-- [[_COMMUNITY_qua35mm|qua35mm.md]]
-- [[_COMMUNITY_qua85mm|qua85mm.md]]
-- [[_COMMUNITY_quaBokeh|quaBokeh.md]]
-- [[_COMMUNITY_quaMacro|quaMacro.md]]
-- [[_COMMUNITY_quaTiltShift|quaTiltShift.md]]
-- [[_COMMUNITY_sitNature|sitNature.md]]
-- [[_COMMUNITY_getIdeas|getIdeas.md]]
-- [[_COMMUNITY_getTags|getTags.md]]
-- [[_COMMUNITY_getTitles|getTitles.md]]
-- [[_COMMUNITY_simplify|simplify.md]]
-- [[_COMMUNITY_classify-bart-large-mnli|classify-bart-large-mnli.md]]
-- [[_COMMUNITY_summarizeBART|summarizeBART.md]]
-- [[_COMMUNITY_UDP|UDP.md]]
-- [[_COMMUNITY_2025-W49|2025-W49.md]]
-- [[_COMMUNITY_2026-02-24|2026-02-24.md]]
-- [[_COMMUNITY_2026-02-25|2026-02-25.md]]
-- [[_COMMUNITY_2026-02-26|2026-02-26.md]]
-- [[_COMMUNITY_FE|FE.md]]
-- [[_COMMUNITY_2026-02-27|2026-02-27.md]]
-- [[_COMMUNITY_Engine Hours|Engine Hours.md]]
-- [[_COMMUNITY_ENHANCEMENT Extention Method Idea Post Get Routes|ENHANCEMENT Extention Method Idea Post Get Routes.md]]
-- [[_COMMUNITY_2026-03-02|2026-03-02.md]]
-- [[_COMMUNITY_Event Templates|Event Templates.md]]
-- [[_COMMUNITY_Event Templates.excalidraw|Event Templates.excalidraw.md]]
-- [[_COMMUNITY_FWQ-1400 FWQ - 3-Axis -Accelerometer events not applicable to MiX 6000 Lte devices|FWQ-1400 FWQ - 3-Axis -Accelerometer events not applicable to MiX 6000 Lte devices]]
-- [[_COMMUNITY_Jacque Meeting Bali|Jacque Meeting Bali.md]]
-- [[_COMMUNITY_Jira Mine|Jira Mine]]
-- [[_COMMUNITY_Jira Team Issues|Jira Team Issues.md]]
-- [[_COMMUNITY_2026-03-03|2026-03-03.md]]
-- [[_COMMUNITY_2026-03-05|2026-03-05.md]]
-- [[_COMMUNITY_LOG DB Maintenance|LOG DB Maintenance.md]]
-- [[_COMMUNITY_DSSTBWS001|DSSTBWS001.md]]
-- [[_COMMUNITY_STEPS to get all the parameterIds and fix the make available|STEPS to get all the parameterIds and fix the make available]]
-- [[_COMMUNITY_2026-03-09|2026-03-09.md]]
-- [[_COMMUNITY_2026-03-10|2026-03-10.md]]
-- [[_COMMUNITY_2026-03-13|2026-03-13.md]]
-- [[_COMMUNITY_2026-03-16|2026-03-16.md]]
-- [[_COMMUNITY_2026-03-18|2026-03-18]]
-- [[_COMMUNITY_Program|Program]]
-- [[_COMMUNITY_OE-534 Plural assets|OE-534 Plural assets]]
-- [[_COMMUNITY_OBC-360 (New endpoint - still needs loads of other things)|OBC-360 (New endpoint - still needs loads of other things)]]
-- [[_COMMUNITY_OE-552 Refresh Missing in Aset Panel|OE-552 Refresh Missing in Aset Panel]]
-- [[_COMMUNITY_STM-28 Storing Streamax|STM-28 Storing Streamax]]
-- [[_COMMUNITY_Diagnostic Modal|Diagnostic Modal.md]]
-- [[_COMMUNITY_FM|FM]]
-- [[_COMMUNITY_MESA|MESA]]
-- [[_COMMUNITY_VM-83 MiXTalk final stretch|VM-83 MiXTalk final stretch]]
-- [[_COMMUNITY_Forms for improvement|Forms for improvement.md]]
-- [[_COMMUNITY_AC-362 Add Installation Profile|AC-362 Add Installation Profile]]
-- [[_COMMUNITY_Not same Kafka|Not same Kafka]]
-- [[_COMMUNITY_Multi-Select Config Groups iFrame b|Multi-Select Config Groups iFrame b]]
-- [[_COMMUNITY_Multi-Select Config Groups Menu Item|Multi-Select Config Groups Menu Item]]
-- [[_COMMUNITY_Multi-Select Config Groups Microservices|Multi-Select Config Groups Microservices]]
-- [[_COMMUNITY_Multi-Select Config Groups Permissions|Multi-Select Config Groups Permissions]]
-- [[_COMMUNITY_Multi-Select Config Groups Show Selected Groups|Multi-Select Config Groups Show Selected Groups]]
-- [[_COMMUNITY_Multi-Select Config Groups Upload FW|Multi-Select Config Groups Upload FW]]
-- [[_COMMUNITY_Multi-Select Config Groups Upload FW-1|Multi-Select Config Groups Upload FW-1]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_OE-501 API Documentation|OE-501 API Documentation.md]]
-- [[_COMMUNITY_Mobile Device Templates UI Screenshot|Mobile Device Templates UI Screenshot]]
-- [[_COMMUNITY_module.updateAssetsConfigurationGroup|module.updateAssetsConfigurationGroup]]
-- [[_COMMUNITY_Aborted|Aborted]]
-- [[_COMMUNITY_Accepted|Accepted]]
-- [[_COMMUNITY_Acknowledged|Acknowledged]]
-- [[_COMMUNITY_Arrived|Arrived]]
-- [[_COMMUNITY_Cancelled|Cancelled]]
-- [[_COMMUNITY_Close|Close]]
-- [[_COMMUNITY_Complete|Complete]]
-- [[_COMMUNITY_Completed|Completed]]
-- [[_COMMUNITY_Confirmed|Confirmed]]
-- [[_COMMUNITY_Created|Created]]
-- [[_COMMUNITY_Deleted|Deleted]]
-- [[_COMMUNITY_DeleteQueued|DeleteQueued]]
-- [[_COMMUNITY_DeleteRequested|DeleteRequested]]
-- [[_COMMUNITY_ETAChanged|ETAChanged]]
-- [[_COMMUNITY_Expired|Expired]]
-- [[_COMMUNITY_Failed|Failed]]
-- [[_COMMUNITY_KMETAChanged|KMETAChanged]]
-- [[_COMMUNITY_New|New]]
-- [[_COMMUNITY_Pending|Pending]]
-- [[_COMMUNITY_Postponed|Postponed]]
-- [[_COMMUNITY_Queued|Queued]]
-- [[_COMMUNITY_Read|Read]]
-- [[_COMMUNITY_Received|Received]]
-- [[_COMMUNITY_Rejected|Rejected]]
-- [[_COMMUNITY_SendFailed|SendFailed]]
-- [[_COMMUNITY_Sent|Sent]]
-- [[_COMMUNITY_SentAwaitingResponse|SentAwaitingResponse]]
-- [[_COMMUNITY_Unknown|Unknown]]
-- [[_COMMUNITY_GetConfigurationGroupsAlerts|GetConfigurationGroupsAlerts]]
-- [[_COMMUNITY_GetConfigurationGroupsMultiselectAssetAlertsList|GetConfigurationGroupsMultiselectAssetAlertsList]]
-- [[_COMMUNITY_MiX.Config.Frangular.API.Controllers.ConfigurationGroupController|MiX.Config.Frangular.API.Controllers.ConfigurationGroupController]]
-- [[_COMMUNITY_MiX.ConfigInternal.Api.Client.Repositories.InternalConfigurationGroupsRepository|MiX.ConfigInternal.Api.Client.Repositories.InternalConfigurationGroupsRepository]]
-- [[_COMMUNITY_MCP Tools Screenshot|MCP Tools Screenshot]]
-- [[_COMMUNITY_LocationTemplates|LocationTemplates]]
-- [[_COMMUNITY_S17 Meeting Minutes|S17 Meeting Minutes]]
-- [[_COMMUNITY_Asset Manager Diagnostic Report|Asset Manager Diagnostic Report]]
-- [[_COMMUNITY_Harsh Cornering|Harsh Cornering]]
-- [[_COMMUNITY_Commissioned Returns|Commissioned Returns]]
-- [[_COMMUNITY_UI Config List Placeholder Actions|UI Config List Placeholder Actions]]
-- [[_COMMUNITY_whatsapp norton bali|whatsapp norton bali]]
-- [[_COMMUNITY_WIP Columns Dynamic|WIP Columns Dynamic]]
-- [[_COMMUNITY_2026-03-12|2026-03-12]]
-- [[_COMMUNITY_2026-03-17|2026-03-17.md]]
-- [[_COMMUNITY_STM-123 Method for Decommissioning of Streamax Device|STM-123 Method for Decommissioning of Streamax Device]]
-- [[_COMMUNITY_OBC-401 Change the uniqueproperty PhoneNumber for Mobile Phone|OBC-401 Change the uniqueproperty "PhoneNumber" for Mobile Phone]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Code Review TECHDEBT-190|Code Review TECHDEBT-190.md]]
-- [[_COMMUNITY_STEPS to get all the parameterIds and fix the make available|STEPS to get all the parameterIds and fix the make available]]
-- [[_COMMUNITY_Git Handy Command line|Git Handy Command line.md]]
-- [[_COMMUNITY_Logging|Logging.md]]
-- [[_COMMUNITY_OE-542 Error 500 when moving asset to config group|OE-542 Error 500 when moving asset to config group]]
-- [[_COMMUNITY_ets-8669-oman-dst|ets-8669-oman-dst.md]]
-- [[_COMMUNITY_Description|Description]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_2026-07-09|2026-07-09]]
-- [[_COMMUNITY_2026-07-10|2026-07-10]]
-- [[_COMMUNITY_zz_lauren UAT-1080 (19.14 Lauren Feedback req) Scheduler module available when giving access to change mobile device|zz_lauren UAT-1080 (19.14 Lauren Feedback req) Scheduler module available when giving access to change mobile device.md]]
-- [[_COMMUNITY_SR-12349 Config Compile Display Bug - MiX Telematics JIRA(httpsjira.mixtelematics.combrowseSR-12349)|[SR-12349 Config Compile Display Bug - MiX Telematics JIRA](https://jira.mixtelematics.com/browse/SR-12349)]]
-- [[_COMMUNITY_QA-4521 PaOBC Removing asset and removing device for NO phone number supplied|QA-4521 PaOBC Removing asset and removing device for NO phone number supplied]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_FWQ-1400 3-Axis Not in event templates.excalidraw|FWQ-1400 3-Axis Not in event templates.excalidraw.md]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Manage Emotions.excalidraw|Manage Emotions.excalidraw.md]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Excalidraw Data|Excalidraw Data]]
-- [[_COMMUNITY_Going forward|Going forward]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Optimizing Obsidian|Optimizing Obsidian]]
-- [[_COMMUNITY_Sources of inspiration|Sources of inspiration]]
-- [[_COMMUNITY_Grid Footer Refresh|Grid Footer Refresh.md]]
-- [[_COMMUNITY_OE-518 Other porting story|OE-518 Other porting story]]
-- [[_COMMUNITY_global-deployment-guide|global-deployment-guide.md]]
-- [[_COMMUNITY_Video Download Uplodad Issues.excalidraw|Video Download Uplodad Issues.excalidraw.md]]
-- [[_COMMUNITY_2025-08-15|2025-08-15.md]]
-- [[_COMMUNITY_VM-234 Incorrect assets displayed in Cascading list for MiXTalk|VM-234 Incorrect assets displayed in Cascading list for MiXTalk]]
-- [[_COMMUNITY_VM-234 Incorrect assets displayed in Cascading list for MiXTalk|VM-234 Incorrect assets displayed in Cascading list for MiXTalk]]
-- [[_COMMUNITY_TEL-17 21.9 Waiting Paul Extra thresholds (2)|TEL-17 [21.9 Waiting Paul] Extra thresholds (2)]]
-- [[_COMMUNITY_OBC-289 event thresholds|OBC-289 event thresholds]]
-- [[_COMMUNITY_OBC-68 Mobile device settings tab Configure Event Thresholds|OBC-68 Mobile device settings tab: Configure Event Thresholds]]
-- [[_COMMUNITY_AdjustOrganistationsDaylightSavingSettings|AdjustOrganistationsDaylightSavingSettings.md]]
-- [[_COMMUNITY_cleaner_solution_finding|cleaner_solution_finding.md]]
-- [[_COMMUNITY_database_schema_diagram|database_schema_diagram.md]]
-- [[_COMMUNITY_Config-3387 App Command 45 redesign.excalidraw|Config-3387 App Command 45 redesign.excalidraw.md]]
-- [[_COMMUNITY_Decommissioning MiX4000.excalidraw|Decommissioning MiX4000.excalidraw.md]]
-- [[_COMMUNITY_Frangular Minified Video Notes|Frangular Minified Video Notes.md]]
-- [[_COMMUNITY_FWQ-1403 Leading 0 being dropped.excalidraw|FWQ-1403 Leading 0 being dropped.excalidraw.md]]
-- [[_COMMUNITY_Make Device Available.excalidraw|Make Device Available.excalidraw.md]]
-- [[_COMMUNITY_SR-16213 Investigating the code for Not Commissioned.excalidraw|SR-16213 Investigating the code for Not Commissioned.excalidraw.md]]
-- [[_COMMUNITY_Status Messages.excalidraw|Status Messages.excalidraw.md]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Try running these and see if it works, might need refining in the template|Try running these and see if it works, might need refining in the template:]]
-- [[_COMMUNITY_Preparing your vault for Dashboard++|Preparing your vault for Dashboard++]]
-- [[_COMMUNITY_Handover 2022-12|Handover 2022-12.md]]
-- [[_COMMUNITY_Home Dashboard|Home Dashboard.md]]
-- [[_COMMUNITY_zz_martin SR-10305 21.7 WIP MiX4000  MVR Units Losing Timezone Settings|zz_martin SR-10305 [21.7 WIP] MiX4000  MVR Units Losing Timezone Settings.md]]
-- [[_COMMUNITY_zz_nicole QA-4795 Diagnositic - Trip Information - Incorrect value displayed out of trip|zz_nicole QA-4795 Diagnositic - Trip Information - Incorrect value displayed out of trip.md]]
-- [[_COMMUNITY_zz_zonika SR-11740 Last Config load date not updating in DynaMiX|zz_zonika SR-11740 Last Config load date not updating in DynaMiX.md]]
-- [[_COMMUNITY_zz_zonika UAT-687 Remora and Oyster|zz_zonika UAT-687 Remora and Oyster.md]]
-- [[_COMMUNITY_SR-10440|SR-10440]]
-- [[_COMMUNITY_SR-11406 ENT EKS Infohub User Error|SR-11406 ENT EKS Infohub User Error.md]]
-- [[_COMMUNITY_SR-11408|SR-11408.md]]
-- [[_COMMUNITY_SR-11553 FM change mobile device SR|SR-11553 FM change mobile device SR.md]]
-- [[_COMMUNITY_SR-11563 VT Units Not Communicating With The UI|SR-11563 VT Units Not Communicating With The UI.md]]
-- [[_COMMUNITY_SR-11631 MiX 4000 IMEI diff on Asset Page (wrong) and modal (correct)|SR-11631 MiX 4000 IMEI diff on Asset Page (wrong) and modal (correct).md]]
-- [[_COMMUNITY_gemini-rotate.sh|gemini-rotate.sh]]
-- [[_COMMUNITY_graphify-rotate.sh|graphify-rotate.sh]]
-- [[_COMMUNITY_Justus FR Peripheral work|Justus FR Peripheral work.md]]
-- [[_COMMUNITY_Helpful Dashboards Links|Helpful Dashboards Links.md]]
-- [[_COMMUNITY_ConfigAdminRepository.GetLibraryMobileDevice|ConfigAdminRepository.GetLibraryMobileDevice]]
-- [[_COMMUNITY_CopyAndAddParameter|CopyAndAddParameter]]
-- [[_COMMUNITY_CreateDefaultTemplate|CreateDefaultTemplate]]
-- [[_COMMUNITY_DeviceFactory|DeviceFactory]]
-- [[_COMMUNITY_DeviceLineDetail|DeviceLineDetail]]
-- [[_COMMUNITY_GetMiX3000Model|GetMiX3000Model]]
-- [[_COMMUNITY_Initialize|Initialize]]
-- [[_COMMUNITY_InitializeLines|InitializeLines]]
-- [[_COMMUNITY_InitializeSettings|InitializeSettings]]
-- [[_COMMUNITY_LibraryMobileDevicesModule|LibraryMobileDevicesModule]]
-- [[_COMMUNITY_AssetCommissioningManager|AssetCommissioningManager]]
-- [[_COMMUNITY_LogicalDevices|LogicalDevices]]
-- [[_COMMUNITY_MakeAvailableForLibrary|MakeAvailableForLibrary]]
-- [[_COMMUNITY_MakeAvailableHelper|MakeAvailableHelper]]
-- [[_COMMUNITY_MakeDependanciesAvailable|MakeDependanciesAvailable]]
-- [[_COMMUNITY_MakeLibraryMobileDeviceAvaialble|MakeLibraryMobileDeviceAvaialble]]
-- [[_COMMUNITY_MiX3000Model|MiX3000Model]]
-- [[_COMMUNITY_NeedsExtendedDefaultConfig|NeedsExtendedDefaultConfig]]
-- [[_COMMUNITY_PeripheralDevice|PeripheralDevice]]
-- [[_COMMUNITY_Update|Update]]
-- [[_COMMUNITY_UpdateEvents|UpdateEvents]]
-- [[_COMMUNITY_UpdateLines|UpdateLines]]
-- [[_COMMUNITY_UpdateMobileDeviceTemplate|UpdateMobileDeviceTemplate]]
-- [[_COMMUNITY_AC-357 Find and assign default config group|AC-357: Find and assign default config group]]
-- [[_COMMUNITY_AC-363 Make Org ID optional|AC-363: Make Org ID optional]]
-- [[_COMMUNITY_AC Parent Document|AC Parent Document]]
-- [[_COMMUNITY_Device Setup|Device Setup]]
-- [[_COMMUNITY_FM|FM]]
-- [[_COMMUNITY_UK Region|UK Region]]
-- [[_COMMUNITY_Channels 3 to 5|Channels: 3 to 5]]
-- [[_COMMUNITY_CommandQueue|CommandQueue]]
-- [[_COMMUNITY_Compare S17 with Fleet DB|Compare S17 with Fleet DB]]
-- [[_COMMUNITY_Config|Config]]
-- [[_COMMUNITY_Compile|Compile]]
-- [[_COMMUNITY_Frangular UI|Frangular UI]]
-- [[_COMMUNITY_Upload Config|Upload Config]]
-- [[_COMMUNITY_Upload Firmware|Upload Firmware]]
-- [[_COMMUNITY_refreshVSToken|refreshVSToken]]
-- [[_COMMUNITY_vsts-npm-auth|vsts-npm-auth]]
-- [[_COMMUNITY_documentClick|documentClick]]
-- [[_COMMUNITY_sortConfigGroups|sortConfigGroups]]
-- [[_COMMUNITY_sortConfigGroupsChange|sortConfigGroupsChange]]
-- [[_COMMUNITY_GetConfigurationDataFiles|GetConfigurationDataFiles]]
-- [[_COMMUNITY_ValidateCommand|ValidateCommand]]
-- [[_COMMUNITY_ValidateCommandType|ValidateCommandType]]
-- [[_COMMUNITY_SendCommandToMobileUnit|SendCommandToMobileUnit]]
-- [[_COMMUNITY_SendCommandToMobileUnits2|SendCommandToMobileUnits2]]
-- [[_COMMUNITY_Client|Client]]
-- [[_COMMUNITY_Core|Core]]
-- [[_COMMUNITY_OLD API|OLD API]]
-- [[_COMMUNITY_DB|DB]]
-- [[_COMMUNITY_defaultTemplateResults|defaultTemplateResults]]
-- [[_COMMUNITY_Device|Device]]
-- [[_COMMUNITY_AssetDiagnosticInfoCarrier|AssetDiagnosticInfoCarrier]]
-- [[_COMMUNITY_AssetsClient|AssetsClient]]
-- [[_COMMUNITY_AssetsManager|AssetsManager]]
-- [[_COMMUNITY_AssetStatusBagConverter|AssetStatusBagConverter]]
-- [[_COMMUNITY_Convert|Convert]]
-- [[_COMMUNITY_formatZonedDate|formatZonedDate]]
-- [[_COMMUNITY_GeneralStatusInfo|GeneralStatusInfo]]
-- [[_COMMUNITY_getAssetDiagnostics|getAssetDiagnostics]]
-- [[_COMMUNITY_GetStatusValuesAsync|GetStatusValuesAsync]]
-- [[_COMMUNITY_loggedInProfile|loggedInProfile]]
-- [[_COMMUNITY_ToCarrier|ToCarrier]]
-- [[_COMMUNITY_ToEntity|ToEntity]]
-- [[_COMMUNITY_ToHistoricalTimeZone|ToHistoricalTimeZone]]
-- [[_COMMUNITY_ToTimeZone|ToTimeZone]]
-- [[_COMMUNITY_ZonedDateTime|ZonedDateTime]]
-- [[_COMMUNITY_BB06D40A-6F6A-46E5-8875-019AE770FA02|BB06D40A-6F6A-46E5-8875-019AE770FA02]]
-- [[_COMMUNITY_BUSY|BUSY]]
-- [[_COMMUNITY_edf9ecb1-ba5d-4ffd-9257-49228cca2be5|edf9ecb1-ba5d-4ffd-9257-49228cca2be5]]
-- [[_COMMUNITY_IIS Web.Config file|IIS Web.Config file]]
-- [[_COMMUNITY_Location|Location]]
-- [[_COMMUNITY_LocationServiceRequestQueue|LocationServiceRequestQueue]]
-- [[_COMMUNITY_MiX.Core2.Messaging.Msmq|MiX.Core2.Messaging.Msmq]]
-- [[_COMMUNITY_service app's config file|service app's config file]]
-- [[_COMMUNITY_Services|Services]]
-- [[_COMMUNITY_ConfigMRBugCONFIG-3161_Missing_Hypermedia|Config/MR/Bug/CONFIG-3161_Missing_Hypermedia]]
-- [[_COMMUNITY_getStreamaxStateByConfigurationGroupId|getStreamaxStateByConfigurationGroupId]]
-- [[_COMMUNITY_HandledTypedResponse|HandledTypedResponse]]
-- [[_COMMUNITY_HandleTyped|HandleTyped]]
-- [[_COMMUNITY_ProcessTypedResponse|ProcessTypedResponse]]
-- [[_COMMUNITY_GetBody|GetBody]]
-- [[_COMMUNITY_GetAssetMobileUnitMappingsByAssetIds|GetAssetMobileUnitMappingsByAssetIds]]
-- [[_COMMUNITY_GetCommandsHistoryForMoibleUnitWithinDateRangeForList|GetCommandsHistoryForMoibleUnitWithinDateRangeForList]]
-- [[_COMMUNITY_GetMobileUnitIdsForCommandHistory|GetMobileUnitIdsForCommandHistory]]
-- [[_COMMUNITY_GetMobileUnitsForAssetIds|GetMobileUnitsForAssetIds]]
-- [[_COMMUNITY_c__DisplayClass86_0.GetFeedEntriesb__15|<>c__DisplayClass86_0.<GetFeedEntries>b__15]]
-- [[_COMMUNITY_c__DisplayClass86_0.GetFeedEntriesb__16|<>c__DisplayClass86_0.<GetFeedEntries>b__16]]
-- [[_COMMUNITY_c__DisplayClass86_0.GetFeedEntriesb__7|<>c__DisplayClass86_0.<GetFeedEntries>b__7]]
-- [[_COMMUNITY_GetFeedEntries|GetFeedEntries]]
-- [[_COMMUNITY_System.AggregateException|System.AggregateException]]
-- [[_COMMUNITY_System.Exception|System.Exception]]
-- [[_COMMUNITY_UpdateAssetCommissioning|UpdateAssetCommissioning]]
-- [[_COMMUNITY_HandledTypedResponse|HandledTypedResponse]]
-- [[_COMMUNITY_HandleTyped|HandleTyped]]
-- [[_COMMUNITY_ProcessTypedResponse|ProcessTypedResponse]]
-- [[_COMMUNITY_RegisterRoute|RegisterRoute]]
-- [[_COMMUNITY_Execute|Execute]]
-- [[_COMMUNITY_ExecuteAsync|ExecuteAsync]]
-- [[_COMMUNITY_ShouldRetry|ShouldRetry]]
-- [[_COMMUNITY_ExecuteActionWithTraceAsync|ExecuteActionWithTraceAsync]]
-- [[_COMMUNITY_ExitRetryAsync|ExitRetryAsync]]
-- [[_COMMUNITY_DecommissionStreamax|DecommissionStreamax]]
-- [[_COMMUNITY_System.Threading.Tasks.TaskCanceledException|System.Threading.Tasks.TaskCanceledException]]
-- [[_COMMUNITY_Command 45 Moving Site|Command 45 Moving Site]]
-- [[_COMMUNITY_Definition Device Dependencies|Definition Device Dependencies]]
-- [[_COMMUNITY_Definition Firmware Versions|Definition Firmware Versions]]
-- [[_COMMUNITY_Fw Versions|Fw Versions]]
-- [[_COMMUNITY_General Config Group Info|General Config Group Info]]
-- [[_COMMUNITY_Template Device Properties|Template Device Properties]]
-- [[_COMMUNITY_Template Devices|Template Devices]]
-- [[_COMMUNITY_DEF_FIRMWARE_VERSIONS|DEF_FIRMWARE_VERSIONS]]
-- [[_COMMUNITY_DEF_MOBILE_DEVICES|DEF_MOBILE_DEVICES]]
-- [[_COMMUNITY_DEF_PROPERTIES|DEF_PROPERTIES]]
-- [[_COMMUNITY_LIBRARIES|LIBRARIES]]
-- [[_COMMUNITY_TPL_CONFIGURATION_GROUPS|TPL_CONFIGURATION_GROUPS]]
-- [[_COMMUNITY_TPL_DEVICE_PROPERTIES|TPL_DEVICE_PROPERTIES]]
-- [[_COMMUNITY_TPL_DEVICES|TPL_DEVICES]]
-- [[_COMMUNITY_TPL_MOBILE_DEVICE_TEMPLATES|TPL_MOBILE_DEVICE_TEMPLATES]]
-- [[_COMMUNITY__client = txtEnvironment|_client = txtEnvironment]]
-- [[_COMMUNITY_Command45|Command45]]
-- [[_COMMUNITY_DB|DB]]
-- [[_COMMUNITY_DynaMiX.Logic|DynaMiX.Logic]]
-- [[_COMMUNITY_SendCommandToMobileDevice|SendCommandToMobileDevice]]
-- [[_COMMUNITY_SendCommandToMobileUnit|SendCommandToMobileUnit]]
-- [[_COMMUNITY_UpdateAssetTimezoneDeviation|UpdateAssetTimezoneDeviation]]
-- [[_COMMUNITY_Asset commissioning|Asset commissioning]]
-- [[_COMMUNITY_CommandIdType.SendSettings|CommandIdType.SendSettings]]
-- [[_COMMUNITY_Config groups page|Config groups page]]
-- [[_COMMUNITY_state.MobileUnitMessage_GetLastMessageStatusesForTypes|[state].[MobileUnitMessage_GetLastMessageStatusesForTypes]]]
-- [[_COMMUNITY_muProxy.GetLastMessageStatusesForConfigurationUpload|muProxy.GetLastMessageStatusesForConfigurationUpload]]
-- [[_COMMUNITY_SendConfig = 254|SendConfig = 254]]
-- [[_COMMUNITY_SendSettings = 255|SendSettings = 255]]
-- [[_COMMUNITY_SendCommandsToAssetsWithOutdatedDaylightSavingsCommands|SendCommandsToAssetsWithOutdatedDaylightSavingsCommands]]
-- [[_COMMUNITY_Pipeline|Pipeline]]
-- [[_COMMUNITY_Code|Code]]
-- [[_COMMUNITY_Rectangle|Rectangle]]
-- [[_COMMUNITY_Lambda|Lambda]]
-- [[_COMMUNITY_Unit Tests|Unit Tests]]
-- [[_COMMUNITY_UI|UI]]
-- [[_COMMUNITY_Angular 12|Angular 12]]
-- [[_COMMUNITY_DynaMiX.API|DynaMiX.API]]
-- [[_COMMUNITY_FE|FE]]
-- [[_COMMUNITY_iFrame|iFrame]]
-- [[_COMMUNITY_(Kendo UI)|(Kendo UI)]]
-- [[_COMMUNITY_.Net 6 API|.Net 6 API]]
-- [[_COMMUNITY_Repo|Repo]]
-- [[_COMMUNITY_UI|UI]]
-- [[_COMMUNITY_Event Type 4 Default|Event Type: 4: Default]]
-- [[_COMMUNITY_No Default|No Default]]
-- [[_COMMUNITY_PSKKey|PSKKey]]
-- [[_COMMUNITY_UI|UI]]
-- [[_COMMUNITY_Zero Dropped|Zero Dropped]]
-- [[_COMMUNITY_DynaMiX|DynaMiX]]
-- [[_COMMUNITY_MiXFleet UI|MiXFleet UI]]
-- [[_COMMUNITY_Stress|Stress]]
-- [[_COMMUNITY_Value|Value]]
-- [[_COMMUNITY_Config API|Config API]]
-- [[_COMMUNITY_Next.js API route|Next.js API route]]
-- [[_COMMUNITY_UI|UI]]
-- [[_COMMUNITY_setupConfigAssetsGrid|setupConfigAssetsGrid]]
-- [[_COMMUNITY_setupConfigGroupsGrid|setupConfigGroupsGrid]]
-- [[_COMMUNITY_GetRemoraDevice|GetRemoraDevice]]
-- [[_COMMUNITY_isRemora|isRemora]]
-- [[_COMMUNITY_mobile-units{mobileUnitId}dme-diagnostic-data|mobile-units/{mobileUnitId}/dme-diagnostic-data]]
-- [[_COMMUNITY_MobileUnitProxy|MobileUnitProxy]]
-- [[_COMMUNITY_Property Bag|Property Bag]]
-- [[_COMMUNITY_ReportsGetDiagnosticReportData|Reports/GetDiagnosticReportData]]
-- [[_COMMUNITY_ReportsController|ReportsController]]
-- [[_COMMUNITY_ConfigStatus Message|ConfigStatus Message]]
-- [[_COMMUNITY_DP|DP]]
-- [[_COMMUNITY_FW|FW]]
-- [[_COMMUNITY_Message|Message]]
-- [[_COMMUNITY_Messages Table|Messages Table]]
-- [[_COMMUNITY_Process|Process]]
-- [[_COMMUNITY_UI|UI]]
-- [[_COMMUNITY_Unit|Unit]]
-- [[_COMMUNITY_BE|BE]]
-- [[_COMMUNITY_Client|Client]]
-- [[_COMMUNITY_DB|DB]]
-- [[_COMMUNITY_Nuget|Nuget]]
-- [[_COMMUNITY_Execute|Execute]]
-- [[_COMMUNITY_ExecuteCommands|ExecuteCommands]]
-- [[_COMMUNITY_Daily|Daily]]
-- [[_COMMUNITY_ETS-2976 Config Beta page - compile status not displayed|ETS-2976 Config Beta page - compile status not displayed]]
-- [[_COMMUNITY_Helpful Dashboards Links|Helpful Dashboards Links]]
-- [[_COMMUNITY_httpshealth-configdev.mixtelematics.compublicmapshow.htmid=2001&mapid=1A35514B-E08F-4B7C-90B8-CD1774AE8CA3|https://health-configdev.mixtelematics.com/public/mapshow.htm?id=2001&mapid=1A35514B-E08F-4B7C-90B8-CD1774AE8CA3]]
-- [[_COMMUNITY_httpspowerfleet.atlassian.netbrowsePFI-887|https://powerfleet.atlassian.net/browse/PFI-887]]
-- [[_COMMUNITY_Fleet|Fleet]]
-- [[_COMMUNITY_Format str, str|Format [str, str]]]
-- [[_COMMUNITY_Get|Get]]
-- [[_COMMUNITY_Invalidate|Invalidate]]
-- [[_COMMUNITY_Invalidate Key in Cache|Invalidate Key in Cache]]
-- [[_COMMUNITY_Item|Item]]
-- [[_COMMUNITY_Task 1|Task 1]]
-- [[_COMMUNITY_Jira SR Process|Jira SR Process]]
-- [[_COMMUNITY_On Hold|On Hold]]
-- [[_COMMUNITY_Task|Task]]
-- [[_COMMUNITY_BE|BE]]
-- [[_COMMUNITY_Channelname|Channelname]]
-- [[_COMMUNITY_Configuration Groups|Configuration Groups]]
-- [[_COMMUNITY_Controller|Controller]]
-- [[_COMMUNITY_Justus FR Peripheral work|Justus FR Peripheral work]]
-- [[_COMMUNITY_FR_UI|FR_UI]]
-- [[_COMMUNITY_IframeHost|IframeHost]]
-- [[_COMMUNITY_MFM|MFM]]
-- [[_COMMUNITY_Old UI|Old UI]]
-- [[_COMMUNITY_ReceiveMessage|ReceiveMessage]]
-- [[_COMMUNITY_URLs|URLs]]
-- [[_COMMUNITY_Knowledge Base KB|Knowledge Base KB]]
-- [[_COMMUNITY_latestFirmwareDescription|latestFirmwareDescription]]
-- [[_COMMUNITY_libraryMobileDeviceManager|libraryMobileDeviceManager]]
-- [[_COMMUNITY_MiX.Video.Services.Api|MiX.Video.Services.Api]]
-- [[_COMMUNITY_AuthController|AuthController]]
-- [[_COMMUNITY_EnvironmentSettingsProvider|EnvironmentSettingsProvider]]
-- [[_COMMUNITY_LoginView|LoginView]]
-- [[_COMMUNITY_route.ts (auth proxy)|route.ts (auth proxy)]]
-- [[_COMMUNITY_route.ts (environments proxy)|route.ts (environments proxy)]]
-- [[_COMMUNITY_Startup|Startup]]
-- [[_COMMUNITY_AssetManager.GetDeviceConfigCameraSettingsAsync|AssetManager.GetDeviceConfigCameraSettingsAsync]]
-- [[_COMMUNITY_GetCameraSettingsExtendedV2|GetCameraSettingsExtendedV2]]
-- [[_COMMUNITY_MobileUnit_GetCameraSettingsExtendedV2|MobileUnit_GetCameraSettingsExtendedV2]]
-- [[_COMMUNITY_MobileUnitRepository.GetCameraSettingsExtendedV2|MobileUnitRepository.GetCameraSettingsExtendedV2]]
-- [[_COMMUNITY_MyEnum|MyEnum]]
-- [[_COMMUNITY_asset details page|asset details page]]
-- [[_COMMUNITY_change configuration status|change configuration status]]
-- [[_COMMUNITY_check if a mu exist|check if a mu exist]]
-- [[_COMMUNITY_Config Group|Config Group]]
-- [[_COMMUNITY_Configuration Changed|Configuration Changed]]
-- [[_COMMUNITY_get_mobile_device|get_mobile_device]]
-- [[_COMMUNITY_IMEI|IMEI]]
-- [[_COMMUNITY_mobile device settings|mobile device settings]]
-- [[_COMMUNITY_QA-6032|QA-6032]]
-- [[_COMMUNITY_QA-6035|QA-6035]]
-- [[_COMMUNITY_unique identifier|unique identifier]]
-- [[_COMMUNITY_UpdateVin|UpdateVin]]
-- [[_COMMUNITY_VIN|VIN]]
-- [[_COMMUNITY_FMS Engine Coolant Temperature|FMS Engine Coolant Temperature]]
-- [[_COMMUNITY_CONFIG-4030 TEST Get Pending Or Loaded Configuration Version For MobileUnit Command 102|CONFIG-4030 TEST Get Pending Or Loaded Configuration Version For MobileUnit Command 102]]
-- [[_COMMUNITY_RunAdjustments|RunAdjustments]]
-- [[_COMMUNITY_RunDaylightSavingsCommand|RunDaylightSavingsCommand]]
-- [[_COMMUNITY_FM|FM]]
-- [[_COMMUNITY_mobileunit.mobileunitproperties|mobileunit.mobileunitproperties]]
-- [[_COMMUNITY_UNIT_IMEI|UNIT_IMEI]]
-- [[_COMMUNITY_Jira Open Issues|Jira Open Issues]]
-- [[_COMMUNITY_Jira Regression|Jira Regression]]
-- [[_COMMUNITY_LoggingAspect|LoggingAspect]]
-- [[_COMMUNITY_Method1|Method1]]
-- [[_COMMUNITY_Method2|Method2]]
-- [[_COMMUNITY_LongReturningMethodAsync|LongReturningMethodAsync]]
-- [[_COMMUNITY_Main|Main]]
-- [[_COMMUNITY_OE-518 Port all existing logic not catered for in other stories|OE-518 Port all existing logic not catered for in other stories]]
-- [[_COMMUNITY_OE-533 Move Assets Error|OE-533 Move Assets Error]]
-- [[_COMMUNITY_OE-538 Authentication and Permissions|OE-538 Authentication and Permissions]]
-- [[_COMMUNITY_2021 Aba asset|2021 Aba asset]]
-- [[_COMMUNITY_2021 Asa mobi|2021 Asa mobi]]
-- [[_COMMUNITY_2021 Tee|2021 Tee]]
-- [[_COMMUNITY_2022 Asset|2022 Asset]]
-- [[_COMMUNITY_22.5 Heavy|22.5 Heavy]]
-- [[_COMMUNITY_22.5 Light|22.5 Light]]
-- [[_COMMUNITY_A new asset 1|A new asset 1]]
-- [[_COMMUNITY_Asset 400|Asset 400]]
-- [[_COMMUNITY_Ayola trailer|Ayola trailer]]
-- [[_COMMUNITY_Boat|Boat]]
-- [[_COMMUNITY_Central Oil & Gas|Central Oil & Gas]]
-- [[_COMMUNITY_CommandID 45|CommandID 45]]
-- [[_COMMUNITY_Engineering Field Trial - MiX6000|Engineering Field Trial - MiX6000]]
-- [[_COMMUNITY_Mobile Team|Mobile Team]]
-- [[_COMMUNITY_Param1|Param1]]
-- [[_COMMUNITY_Param2|Param2]]
-- [[_COMMUNITY_Param3|Param3]]
-- [[_COMMUNITY_Schlumberger-ASA-TMV-BMP|Schlumberger-ASA-TMV-BMP]]
-- [[_COMMUNITY_Shehaam's Test Units|Shehaam's Test Units]]
-- [[_COMMUNITY_AI python to see data issues|AI python to see data issues]]
-- [[_COMMUNITY_Automation Infrastructure Setup Guide|Automation Infrastructure Setup Guide]]
-- [[_COMMUNITY_AWS Environments|AWS Environments]]
-- [[_COMMUNITY_Chatbot|Chatbot]]
-- [[_COMMUNITY_Config diff|Config diff]]
-- [[_COMMUNITY_Diff Ideas — Future Roadmap|Diff Ideas — Future Roadmap]]
-- [[_COMMUNITY_Global_Deployment_Guide|Global_Deployment_Guide]]
-- [[_COMMUNITY_OPEN-1651|OPEN-1651]]
-- [[_COMMUNITY_OPEN-1654|OPEN-1654]]
-- [[_COMMUNITY_OPEN-1664|OPEN-1664]]
-- [[_COMMUNITY_OPEN-1667|OPEN-1667]]
-- [[_COMMUNITY_OPEN-1745|OPEN-1745]]
-- [[_COMMUNITY_OPEN-1929|OPEN-1929]]
-- [[_COMMUNITY_OPEN-1931|OPEN-1931]]
-- [[_COMMUNITY_OPEN-2028|OPEN-2028]]
-- [[_COMMUNITY_Operations Enablement|Operations Enablement]]
-- [[_COMMUNITY_Operations Tools Looking forward 20260316|Operations Tools Looking forward 20260316]]
-- [[_COMMUNITY_QBR Report for clients|QBR Report for clients]]
-- [[_COMMUNITY_ResearchWhatsApp to API via n8n|Research/WhatsApp to API via n8n]]
-- [[_COMMUNITY_AWS Pizza Restaurant Analogy|AWS Pizza Restaurant Analogy]]
-- [[_COMMUNITY_PowerfleetAutomationUI_Overview|PowerfleetAutomationUI_Overview]]
-- [[_COMMUNITY_Process and back to top|Process and back to top]]
-- [[_COMMUNITY_QueryDeviceCommand|QueryDeviceCommand]]
-- [[_COMMUNITY_QueueCommand|QueueCommand]]
-- [[_COMMUNITY_Redis Cache|Redis Cache]]
-- [[_COMMUNITY_Redis Cache with Command Pattern|Redis Cache with Command Pattern]]
-- [[_COMMUNITY_Repository|Repository]]
-- [[_COMMUNITY_Response (Serialised)|Response (Serialised)]]
-- [[_COMMUNITY_Return Cache for Key|Return Cache for Key]]
-- [[_COMMUNITY_S17|S17]]
-- [[_COMMUNITY_configurationGroupManager.UpdateAssetsConfigurationGroup|configurationGroupManager.UpdateAssetsConfigurationGroup]]
-- [[_COMMUNITY_UpdateAssetConfigGroupAsync|UpdateAssetConfigGroupAsync]]
-- [[_COMMUNITY_UpdateAssetsConfigurationGroup|UpdateAssetsConfigurationGroup]]
-- [[_COMMUNITY_Sometimes Bool|Sometimes Bool]]
-- [[_COMMUNITY_Iridium Solution Integration Zeshan pdf|Iridium Solution Integration Zeshan pdf]]
-- [[_COMMUNITY_Make Device Available|Make Device Available]]
-- [[_COMMUNITY_StreamaxRepo|StreamaxRepo]]
-- [[_COMMUNITY_Success FALSE, Msg|Success FALSE, Msg]]
-- [[_COMMUNITY_Undo|Undo]]
-- [[_COMMUNITY_Undo Update Repo|Undo Update Repo]]
-- [[_COMMUNITY_UndoCommands|UndoCommands]]
-- [[_COMMUNITY_Update Repo|Update Repo]]
-- [[_COMMUNITY_UpdateDeviceCommand|UpdateDeviceCommand]]
-- [[_COMMUNITY_AngularJS Component Architecture|AngularJS Component Architecture]]
-- [[_COMMUNITY_Device Configuration|Device Configuration]]
-- [[_COMMUNITY_scripts|scripts]]
-- [[_COMMUNITY_OE-539 Video Event Configuration action|OE-539 Video Event Configuration action]]
-- [[_COMMUNITY_2026-07-13|2026-07-13]]
-- [[_COMMUNITY_SDLC Agent Rules|SDLC Agent Rules]]
-- [[_COMMUNITY_OE-481 iFrame|OE-481 iFrame]]
-- [[_COMMUNITY_global-deployment-guide|global-deployment-guide.md]]
-- [[_COMMUNITY_2026-07-16|2026-07-16]]
-- [[_COMMUNITY_SA Income Tax Brackets|SA Income Tax Brackets.md]]
-- [[_COMMUNITY_2026-07-21 Comp Meeting Cheat Sheet|2026-07-21 Comp Meeting Cheat Sheet.md]]
-- [[_COMMUNITY_automation-infra-setup-guide|automation-infra-setup-guide.md]]
-- [[_COMMUNITY_operations-tools-looking-forward|operations-tools-looking-forward.md]]
-- [[_COMMUNITY_2026-07-21|2026-07-21]]
-- [[_COMMUNITY_2026-07-22|2026-07-22]]
-- [[_COMMUNITY_3. Dependencies and Connections|3. Dependencies and Connections]]
-- [[_COMMUNITY_open-tickets-cluster2|open-tickets-cluster2.md]]
-- [[_COMMUNITY_ets-tickets-cluster4|ets-tickets-cluster4.md]]
-- [[_COMMUNITY_2026-07-24|2026-07-24]]
+- types.ts
+- index.ts
+- DONE
+- dependencies
+- build.ts
+- How to stop worrying and start living.md
+- index.md
+- TECHDEBT-190 Move the DST Service to the DeviceConfig Repo
+- ConfigTools Test Gap Analysis — 2026-06-22
+- Command-45.md
+- CONFIG-3387 App or Report for Command 45.md
+- SR-16213 assets page returns to not commissioned
+- DST Debug Guide — Daylight Saving Time Troubleshooting
+- types.ts
+- path.ts
+- MIX3K-9 MiX3000 Default Config Group.md
+- search.inline.ts
+- PMU Overview.md
+- Notes
+- OPEN-1715 Setup UI and API on AWS for AU
+- OPEN-1842 Investigate and Optimise Token Usage in AI ChatBot
+- OE-513 Configuration Groups - Frangularisation and enhancements.md
+- Description Update from Nicole
+- Description
+- OPEN-2576 — Automated Testing (Playwright E2E)
+- Tel-84 Command sent twice
+- OE-501 SPIKE to create the multi-select config groups.md
+- RecentNotes.tsx
+- Ops-Tools.md
+- Command 45
+- Gemini Project Map: Powerfleet Automation UI - Navigation & Decommissioning
+- MiX_.md
+- OE-509 UI Asset Upload FW
+- OPEN-1729 Change the UI for QC to accommodate the information needed to start checks
+- QA-6035 CalAmp - Imei field greyed out after adding a VIN number
+- index.ts
+- SR-15901
+- SR-13274 VIN not cleared after decommissioning
+- SR-17838 Error when clicking on Mobile Device Settings
+- ETS-8669 OMAN Command 45 DST issue
+- Operations Tools.md
+- Selection Criteria Example.md
+- Config Overview WIP.excalidraw.md
+- OE-611 Alert not adjusting when removing missing parameters
+- OMAN Daylight Savings Server Information
+- QA-6032 Moving a Non-OEM asset into an OEM Config group removes the VIN Number from the asset
+- ofm.ts
+- Major Issues:
+- OPEN-1832 Add Test Case Creation Screen
+- DepGraph
+- Frangular Getting Started.md
+- Frangular Languaging.md
+- Daylight Saving Time (DST) & Command 45 Summary
+- Mobile Unit Alerts Stored Procedure Optimization
+- handlers.js
+- ExplorerNode.tsx
+- SR-17834 Group with Id XXXXX not found
+- 2026-04-07.md
+- package.json
+- CONFIG-3663 Make Available Ford OEM
+- Activity feed
+- QA-6193 QA - Trimble Lite and Calamp avl and unit power changes applies to both templates when editing one
+- QA-6236 VIN is not updated on the ROVI IV device when updating manually in the DynaMiX UI
+- Code.md
+- CONFIG-4064 Validate numbers for SMSs
+- spa.inline.ts
+- index.md
+- generate_yed_graph.py
+- Session Summary
+- ETS-6021 CG Template change but Asset remains Ready to upload
+- BE.md
+- How to Win Friends and Influence people.md
+- Resource Inventory
+- Image inspiration
+- AWS Concepts: The "Pizza Restaurant" Analogy
+- Integration Testing Between OLD UI, FR-UI and FR-API.md
+- OE-20 NA POC Write a small App.md
+- OE-605 Alerts Column logic Config Group
+- The Code — Section by Section
+- Caching
+- ==LOOKING AHEAD (August)==
+- Config-3508 Testing Large file transfer for Pallavi.md
+- MIX3K-89 Missing upgrade firmware button for MiX3000 devices
+- OE-496 API Get config Groups and columns
+- OE-501 SPIKE to create the multi-select config groups
+- OPEN-1672 Add centralised login for the new Automation UI
+- SR-16008 AlsoGetTXTFiles
+- SR-16877 Airtime management Module - Contract column not displaying any data
+- AC-350 Add DynamicCAN endpoints to the Config API
+- Frangular - OLD Learning.md
+- Section 3: The CI/CD Pipeline — Azure DevOps YML (Day-to-day deploys)
+- [SR-8111](https://jira.mixtelematics.com/browse/SR-8111) Timebased events
+- TECHDEBT-190 Move the DST Service to the DeviceConfig Repo.md
+- DIE-485 DI Config Asset config file.md
+- OE-532 Add Remove action and Hyperlink Edit
+- OE-487 UI Config list.md
+- OE-490 UI Upload FW
+- OE-515 Alerts Column logic
+- SR-19946 ALG DTS fix
+- OPEN-1293 Create QC Automation API and Logic
+- Description (from Jira)
+- OPEN-930 Add Config File Downloads
+- SR-19107 IMSI has incorrect value
+- Folder Moves
+- compilerOptions
+- Alerts-Feature.md
+- Wiki Log — Powerfleet Engineering Knowledge Base
+- Test Pipeline Incident Report — 4 June 2026
+- Automation API Build Fixes — 2026-03-11
+- New Frangular Page.md
+- GPS Drift Detecting
+- CONFIG-4035 INT cant add asset
+- Odometer.md
+- BME-7 New Config Endpoint for Mesa with Magix
+- Full Sprint Overview (_synced 2026-05-28_)
+- package.json
+- SR-13904 GSM Modem Device Settings hidden on Mobile Device Template
+- SR-15971 State of Charge always 0%
+- OE-501 UI Documentation.md
+- An Example Component
+- Question
+- AWS Infrastructure and Powerfleet Automation Deployment Briefing
+- Dale Carnegie.md
+- OPEN-1493 UI for Salesforce case Info
+- OPEN-2029 Persist Config Diff to Database
+- OPEN-2881 — CT - Spike: CAN compliance data sources + formula
+- OPEN-997 New Column Reordering
+- QA-5861 Command 45 not sent when site changes
+- OPEN-2438 — OMAN: Investigate porting DST CommandLine tool from AU (v18.17 compatibility)
+- sql.md
+- STM-1074 Video event configuration
+- In-depth Architectural Review and Refactoring Plan for AssetMobileDeviceEditTemplate.html
+- AC-357 Find and assign the default config group
+- AWS Tagging — AU Powerfleet Automation Resources
+- Amazon Web Services Login
+- 1. DynaMiX.Backend
+- Frangular Spinner.md
+- Monday, November 24, 2025
+- Basic examples
+- Config.md
+- Part 1: DEV Environment Setup (Retrospective)
+- DME.md
+- CONFIG-3988 Configure alerts for new Config Compiler instances.md
+- MiX.md
+- CONFIG-3988 Configure alerts for new Config Compiler instances
+- OE-543 Move Assets Error
+- SQL Query Execution Plan.md
+- OE-491 UI Assets List Panel
+- OE-519 API Populate Lastposition for Asset List
+- OPEN-2802 — DataExports Pipeline Investigation
+- Description (from Jira)
+- Issues Fixed
+- OPEN-371 Column Order Lost
+- OPEN-505 Identify channels for blurring
+- QA-5675 QA - Remora - Diagnostic Page Speed ,Odometer and asset site time not displaying
+- Claude Agent Server — Research & Decisions
+- SR-13967 Stored Proc taking too long on Config Page
+- SR-16598 RW - Scheduler Timestamps flopping around on Uploads for FM units
+- Wiki Schema — Powerfleet Engineering Knowledge Base
+- Template Analysis and Implementation Plan
+- Comprehensive Architectural Review and Refactoring Plan
+- Frangular Notifications.md
+- Latest Oman DST Issues (Feb 2026)
+- Marty-Mix: Second Brain & Knowledge Base
+- Global Deployment Guide: Powerfleet Automation (API & UI)
+- compilerOptions
+- 18.17 information
+- DIE-495 Config Report Asset Config Report UI Work
+- CONFIG-3297 Parameter validation when renaming
+- Dashboard ideas.md
+- FWQ-1400 FWQ - 3-Axis -Accelerometer events not applicable to MiX 6000 Lte devices
+- FE-2399 Location imports
+- OEM-542 Exclude AEMP config groups from list on Asset Page
+- OE-20 Configuration Groups - Multi-select config groups
+- OE-483 Auditing
+- OE-497 API Load Assets
+- Description (from Jira)
+- Description (from Jira)
+- OPEN-837 Add an Alert Filter
+- OPEN-862 Beta Slow AI.md
+- devDependencies
+- QA-4629 UAT Change Mobile devica
+- QA-5075 Detailed Trip Specific Scenario test
+- WhatsApp → API Endpoint via n8n
+- SR-14341 Active vs passive events
+- Technical Summary
+- Config-Delta-Tool.md
+- TShirt design (Tee spring)
+- Citizen Code of Conduct
+- STM-1074 Questions regarding the above work done.md
+- CONFIG-2683 [Nicole Feedback Req] MiX2310 Diagnostic window doesn't load
+- Comprehensive Solutions for Freeing Up Space
+- How to trigger an alarm based on an AWS metrics.md
+- Config-3320 Salesforce Issue
+- DeviceConfig Client Adding
+- Languaging.md
+- SRE-212 Command45 to be send hourly
+- Untitled 4.md
+- Steps
+- OE-651 Multiselect Compile Error
+- OPEN-1362 INT Config groups page Error 500
+- OPEN-1382 Auto select Config Group from Asset List
+- OPEN-1788 Add AI ChatBot Panel to the Configuration Delta Tool
+- OPEN-714 Persisting Column Sizes
+- OPEN-862 Beta Slow
+- SR-13671 Unable to add IMEI to assets
+- SR-13955 Serial numbers now showing in config group page
+- Entities
+- Automation Infrastructure: AWS Setup Guide (DEV/INT/PROD)
+- SR-14647 Command 45 App Login Issue
+- XML Data Structure Findings for Graph Generation
+- OPEN-2030 — Discord QC Bot — DONE ✅
+- AdjustDaylightSavingsForOrganisationsAndMobileUnitsMethod.md
+- ETS-2976 Config Beta page - compile status not displayed
+- Gemini Cli Tips.md
+- index.ts
+- Async Work DeviceConfiguration.md
+- Device.md
+- Make Available.md
+- Convert the Asset Config File to 18.17
+- SAAS-10447 DST Tool in OMAN 18.17
+- TECHDEBT-427 Add config settings to switch between old and new code for the Daylight Savings Time service
+- OE-533
+- OE-521 Unallocated Assets assign to Config group
+- OE-638 Reset Black Flag
+- OPEN-1371 INT Error 500 on Config Group Alerts CHINESE
+- JIRA Story Description (Copy-Paste Ready)
+- OPEN-862 Beta Slow.md
+- QA-6016 Error when changing Template SP line
+- UAT-1687 Peripheral Library MiX Rovi II
+- SR-13199
+- SR-13285 GTMOffset is 0
+- SR-15627 Mexico DST update
+- Template Class.md
+- 2026-06-04 — Failed Pipeline Tests Analysis
+- Documenting
+- Graph
+- A Case Study
+- STM-1074 Moving Shuans html to our component.md
+- Daily Merge.md
+- Notes created today
+- AWS / SAM
+- AEMP.md
+- Different Diagrams
+- DIE-485 DI Config Asset config file
+- DIE-505 Configuration group page Asset configuration file action result in an error for Not Commissioned units
+- OE-538
+- TEL-62 Send Command Teltonika
+- OPEN-1602 Pipeline for Powerfleet Automation API
+- OPEN-1730 Change the UI for Decomm to accommodate the information needed to start checks
+- OPEN-698 Languaging
+- QA-5206 Configuration groups page Action button available on asset setup with beacon and not commissioned
+- QA-5228_FixActiveMessagePriorityColumn_Unknown
+- QA-5231_HideColumnsNotUsed
+- QA-5464 Data Exclusions Quarantined events still show
+- SR-13578 Units Stuck Config Upload
+- SR-13579_RetunValueofEnginHoursParameterDiffFM_Mesa
+- SR-14595 Over speeding - TIERED event using deleted location
+- SR-9262 Investigate potential long-taking methods
+- 2025-W31.md
+- AWS-Deployment-Pattern.md
+- In-depth Architectural Review and Refactoring Plan for EventEditTemplate.html
+- AC-363 MakeOrgIDOptional_FriendlyParameter
+- 4. Successful Bypass Strategies
+- DEV Process.md
+- Kendo Column Customised display.md
+- OE-513 Outstanding.md
+- Permissions.md
+- Jira Sync — 2026-05-15
+- 2026-05-21
+- 2026-05-26
+- OPEN-2936 — Linux Agent Path Fixes
+- OPEN-3075 — AU "outage" + Decommissioning test — DONE
+- 2026-03-04
+- Architecture Layers
+- More
+- 2025-05.md
+- Camera Video Channels Error.md
+- CONFIG-3703 Make Available Hino OEM
+- First things
+- FE.md
+- Income streams
+- OE-530 Asset Row Action
+- Description
+- OE-537 BUG Spinner on Decommissioning DME
+- OPEN-1186 Alert column should be a number
+- OPEN-1601 Setup Pipeline for the Powerfleet Automation UI
+- OPEN-2936 — Enable Tier 1/2/3 API Tests Against All Prod Environments Post-Deploy
+- SR-14616 Black flag on asset not showing what is black flagged
+- QA-5318 Negative Drive Id ranges
+- QA-6067
+- SR-12500 Custom Param names on Peripheral library gives issues
+- SR-14277 Asset Manager Diagnostic Report - No Battery information shown
+- Description
+- SR-15741 Incorrect VIN
+- SR-15876 Error Editing Location Template From Config Group
+- ADO Pipeline CI Trigger Override
+- In-depth Architectural Review and Refactoring Plan for LocationEditContentTemplate.html
+- AU Powerfleet Automation Setup Summary
+- BUILD Point to CFG fix.md
+- Getting Started with AI — A Practical Guide
+- ConfigAdmin Template Rewrite Plan
+- 2025-11-27.md
+- 2026-04-08.md
+- Jira Sync — 2026-04-15
+- Jira Sync — 2026-05-11 (Updated)
+- Formatting
+- AC-248 Default Configuration Not just Track & Trace
+- Findings
+- Jira eg
+- DIE-491 Mobile Device Section
+- DIE-493 Recording Options
+- Learning.md
+- LOG.md
+- Make Available
+- Mermaid JS.md
+- MiXTalk.md
+- Code for this:
+- OE-492 SEED Frangular API
+- Description
+- OE-517 Unallocated Assets
+- OE-541 Config Compile Status
+- OE-590 Grammar for single Config group
+- OPEN-1576 Add UI for Support to Supply Salesforce Case Info and Start Decom Automation Manually
+- OPEN-1577 Multiple UI Forms and menu
+- OPEN-249 IMEI in use message missing
+- OPEN-840 Refactor Beta Stored Procs
+- OPEN-862 Enhance Asset alerts SQL.md
+- Azure OpenAI — Company Reference
+- QA-5583 Speeding not available for selection
+- QA-5849 GetStatus Command not populating table
+- QA-7657 Camera Name not Chinese friendly
+- SR-13706 Showing date time for VIN
+- SR-14585 FM idling though distance and speed greater than 5kmh
+- SR-14824
+- SR-17424 Moving FW column wants to move Config Group
+- SR-17543 Error when Commissioning MiX4000
+- {{title}}
+- Projects Folder Coverage Map
+- Frangular Edit Templates.md
+- ConfigAdmin Template Rewrite Plan
+- AU Environment - Infrastructure Audit & Fixes Report
+- [AWS Login for SDK access using OKTA](https://confluence.mixtelematics.com/display/softwaredevelopment/AWS+Login+for+SDK+access+using+OKTA)
+- Starting points
+- generate-dependency-graph.js
+- 2023-05-03.md
+- 2023-05-04.md
+- 2023-05-05.md
+- 2023-05-08.md
+- 2023-05-09.md
+- A few pages I found that MIGHT need to be added
+- 2026-05-13 — Tuesday
+- Jira Sync — 2026-05-18
+- 2026-03-06.md
+- 2026-03-11.md
+- 2026-04-20
+- Dewald Lookup
+- OBC-403 Mobile phone validation and uniqueness check
+- VM-251 Commissioning status does not transition to "Failed" state after 30 minutes
+- QA-3925 QA - MiX Talk - IMEI already in use when entering number that hasn't been used
+- QA-3925 QA - MiX Talk - IMEI already in use when entering number that hasn't been used
+- ETS-3234 DB Schlumberger, Config Audit Report does not show change Audit Trail Dynamix Audit table blank
+- ETS-6874
+- Text Elements
+- DST.md
+- Code Review OE-501 Show all moving parts.md
+- Comms Log.md
+- Diagnostic Modal.md
+- Schemas.md
+- Code example of such a setting
+- Confluence.md
+- OrganisationControllerRoutes.md
+- OEM-489 TEST FordOEM Swagger and client.md
+- DIE-496 Config File Asset Config File Excel Export
+- STEPS to get all the parameterIds and fix the make available
+- Marty.md
+- MiX3K-9 MiX3000 First Default success.md
+- PaOBC INT issue.md
+- OE-525
+- OE-482 Replace OLD with NEW
+- OPEN-1416 Change Alert Filter Multiselect to OR
+- AI
+- OPEN-1663 API DEV issues
+- OPEN-2013 Production Branch Auto-Deploy Pipeline for Automation API and UI
+- OPEN-306
+- OPEN-403 Multiselect Columns
+- Writing Style Fine-Tune
+- OneDrive AU Cleanup
+- QA-7242 Cant view Black Flag modal
+- QA-7818 Config Groups Link goes to Legacy
+- SR-21085
+- SR-14025 Night driving event triggering incorrectly
+- SR-14042ErrorsOnUkStoredProcResolved
+- SR-14297 FM ODO sent through scheduler not being applied
+- SR-14302 Active event negative temperature incorrect
+- SR-14303 Harsh Cornering passive events not shown on Historical tracking map
+- SR-14483 Comms log order not great
+- SR-15115 Events triggering out of hours
+- SR-15477 Cant force Command 45 with tool
+- SR-17917 Library Events Missing
+- {{title}}
+- Architectural Review and Refactoring Plan for ConfigAdmin/Templates
+- INT Test Device Data — 5 June 2026
+- Frangular Build and Deploy thanks to Zonika.md
+- Languaging Kendo Items Selected.md
+- OE-513 Languaging.md
+- OE-513 PO Questions.md
+- Redefined Frangular Editing SPIKE.md
+- Discrepancy between Asset List Page and Diagnostics values.md
+- Try running these and see if it works, might need refining in the template:
+- 2023-05-29.md
+- 2026-05-25
+- Work Daily Note — 2026-05-27
+- 2026-03-30.md
+- 2026-04-14.md
+- 2026-04-23
+- 2026-04-28
+- Obsidian compatibility.md
+- OBC-402 Mobile phone refactoring of Matthew's work
+- TEL-3
+- Document
+- More involved stuff
+- Data Analyst.md
+- DIE-492 Config File Connected Lines
+- DIE-497 API and Client work
+- dynamix.MapLocations
+- Event Templates.md
+- FLEET-10449 Site level user Diagnostic request issue
+- XML
+- OE-568 Default Column Width
+- OE-614 Alerts not matched between CG and Assets
+- OEM-570 Remove AEMP on the Mobile device settings page when changing the device type
+- AWS Discovery: automation-api.dev.mixtelematics.com
+- AWS Discovery: ecs-api.config.int.priv
+- OE-528 Paging and Refresh bug
+- OE-504 UI Asset Move to Config Group
+- OE-656 Grey background
+- OPEN-2461 — API: Add Deployment Pipeline to ZAGOV Environment
+- OPEN-2578 — AUTO-UI: Build Integration Test Coverage HTML Dashboard
+- OPEN-2580 — AUTO-UI: Build Playwright E2E Page-Level HTML Test Runner
+- OPEN-2582 — AUTO-UI: Build Playwright Per-Story Scenario HTML Test Runner
+- OPEN-1252 Add line C3
+- OPEN-1299_QC_Video_Test
+- OPEN-250 New VisionAI Events
+- OPEN-699 Styling issue overflow
+- OPEN-748 Black Flag Can Script not visible
+- OPEN-836 Alert Hide missing Parameters
+- OPEN-851 Alert count link to Assets
+- OPEN-862 Beta Slow Jira summary.md
+- Future Stories / Roadmap
+- scripts
+- QA-5723 Config status different
+- QA-6053 Calamp Lite and Tracker devices have no IMEI field in Mobile device settings
+- QA-7654 Edit Camera Name Case
+- QA-7752 Sidebar Config Only Not Persist
+- UAT-973 Configuration differences from group (Black flag) does not show correct Preferred firmware version
+- GitHub CLI Login - Powerfleet Enterprise
+- SR-12339 Not able to add or save IMEI
+- SR-14554 Periodic Error editing or creating SSE
+- SR-15056 Audit Report user info needed
+- Class: XXX_NAME
+- {{title}}
+- AC-361 Fuel Type shows as null
+- Four main Alerts
+- Step-by-Step Guide: Fixing the AU DNS Routing
+- Automation API — PR Feedback 2026-03-11
+- QC Tests
+- Marty-Mix Rules
+- CONFIG-4709 CAN script not showing
+- OE-513 Sub bugs.md
+- Sub Header
+- Sub Header
+- H2 now reads well
+- Conflicts
+- Try running these and see if it works, might need refining in the template:
+- 2025-10-28.md
+- 2025-10-29.md
+- 2025-10-30.md
+- 2025-10-31.md
+- 2025-11-03.md
+- 2025-11-04.md
+- 2025-11-05.md
+- 2025-11-06.md
+- 2025-11-07.md
+- 2025-11-10.md
+- 2025-11-11.md
+- 2025-11-12.md
+- 2025-11-13.md
+- 2025-11-14.md
+- 2025-11-17.md
+- 2025-11-18.md
+- 2025-11-19.md
+- 2025-11-20.md
+- Summary of Findings for `[template].[Template_GetConfigurationGroupsOtherColumns]`
+- 2025-11-26.md
+- 2025-11-28.md
+- 2025-12-01.md
+- 2025-12-02.md
+- 2025-12-03.md
+- 2025-12-04.md
+- 2025-12-05.md
+- 2025-12-08.md
+- 2025-12-09.md
+- 2025-12-10.md
+- 2025-12-11.md
+- 2026-05-14
+- 2026-05-19
+- Work Daily Note — 2026-06-04
+- 2026-01-01.md
+- 2026-01-02.md
+- 2026-01-05.md
+- 2026-01-06.md
+- 2026-01-07.md
+- 2026-01-08.md
+- 2026-01-12.md
+- 2026-01-13.md
+- 2026-01-14.md
+- 2026-01-15.md
+- 2026-01-16.md
+- 2026-01-19.md
+- 2026-01-20.md
+- 2026-01-21.md
+- 2026-01-22.md
+- 2026-01-23.md
+- 2026-01-26.md
+- 2026-01-27.md
+- 2026-01-28.md
+- 2026-01-29.md
+- 2026-02-02.md
+- 2026-02-03.md
+- 2026-02-04.md
+- 2026-02-05.md
+- 2026-02-06.md
+- 2026-02-09.md
+- 2026-02-10.md
+- 2026-02-11.md
+- 2026-02-12.md
+- 2026-02-13.md
+- 2026-02-16.md
+- 2026-02-17.md
+- 2026-02-18.md
+- 2026-02-19.md
+- 2026-02-20.md
+- 2026-02-23.md
+- 2026-02-24.md
+- 2026-02-25.md
+- 2026-02-26.md
+- 2026-02-27.md
+- 2026-03-02.md
+- 2026-03-03.md
+- 2026-03-05.md
+- 2026-03-09.md
+- 2026-03-10.md
+- 2026-03-13.md
+- 2026-03-16.md
+- 2026-03-18
+- 2026-03-19.md
+- 2026-03-20.md
+- 2026-03-23.md
+- 2026-03-24.md
+- 2026-03-27.md
+- 2026-03-31.md
+- 2026-04-16.md
+- 2026-04-17.md
+- 2026-04-22
+- Jira Sync — 2026-05-12
+- OxHugoFlavoredMarkdown.md
+- AC-313 POC Powershell to AWS script files
+- OBC-360 (New endpoint - still needs loads of other things)
+- STM-28 Storing Streamax
+- VM-83 MiXTalk final stretch
+- ETS-2017
+- ETS-2199 Cannot delete Location
+- Excalidraw Data
+- Excalidraw Data
+- Frangular Edit Templates Grok Mirmaid prompts.md
+- CONFIG-3667 GPRS Communications tickbox was unselected
+- DB Maintenance.md
+- definition MobileDevices
+- Deploy.md
+- Deployments 23.9.md
+- Forms for improvement.md
+- Back End
+- MIX3K-9 MiX3000 Default Config Group
+- SQL Data Schema
+- TECHDEBT-372 Make use of the Glablisation API for DST in DeviceConfig API
+- OE-20 UPDATE
+- OE-485 [UI] Holding page with the Configuration Group Multiselect Panel and Assets List Panel -
+- OE-623 Missing firmware upload expired alert
+- OPEN-2462 — UI: Add Deployment Pipeline to ZAGOV Environment
+- OPEN-2577 — AUTO-API: Wire Swagger Coverage Gate into Azure DevOps Pipeline
+- OPEN-1971 — [POC] Paperclip Standalone Agentic Server - Centralised AI Orchestration
+- OPEN-235 Error when moving Unallocated to Config Group
+- OPEN-236 config group panel shows 2 assets but only 1 asset appears in the asset panel
+- OPEN-453 Healthcheck Permission
+- OPEN-494
+- OPEN-505 Identify channels for blurring.md
+- OPEN-689 Camera Direction field needed in operational stored procs
+- Shorter Description
+- QA-7744 Language Kendo Items Selected
+- Analysis and Plan for `uspGetMobileUnitMissingParameters` Logic
+- TODO.md
+- SR-15595 Assets reporting incorrect time
+- Template Daily Notes.md
+- {{title}}
+- Template Weekly Notes.md
+- 2025-W23.md
+- 2025-W26.md
+- 2025-W27.md
+- 2025-W28.md
+- 2025-W29.md
+- 2025-W30.md
+- 2025-W32.md
+- 2025-W33.md
+- 2025-W34.md
+- 2025-W35.md
+- 2025-W36.md
+- 2025-W37.md
+- 2025-W38.md
+- 2025-W39.md
+- 2025-W40.md
+- 2025-W41.md
+- 2025-W42.md
+- 2025-W43.md
+- 2025-W44.md
+- 2025-W45.md
+- 2025-W46.md
+- 2026-W06.md
+- 2026-W07.md
+- 2026-W11.md
+- 2026-W12.md
+- 2026-W16.md
+- AC-362 Add Installation Profile
+- Amy Alerts Test Cases.md
+- Automation UI URLs.md
+- AWS Discovery api.deviceconfig.configdev.mix.local
+- Claude Code: /remote-control Prerequisites
+- Adding a Filter.md
+- You are ready: Getting your SEED app up and going
+- Excalidraw Data
+- Excalidraw Data
+- OE-501 API Documentation.md
+- Excalidraw Data
+- Snippets
+- Quartz Cheatsheet
+- CORS Unity Frangular UI.md
+- Database Merge Build Issues.md
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- 2022-03-01
+- 2022-03-02
+- 2022-03-03
+- 2022-03-04
+- 2022-03-07
+- 2022-03-08
+- 2022-03-09
+- 2022-03-10
+- 2022-03-11
+- 2022-03-14
+- 2022-03-15
+- 2022-03-16
+- 2022-03-17
+- 2022-03-18
+- 2022-03-21
+- 2022-03-22
+- 2022-03-23
+- 2022-03-24
+- 2022-03-25
+- 2022-03-28
+- 2022-03-29
+- 2022-03-30
+- 2022-03-31
+- 2022-04-01
+- 2022-04-04
+- 2022-04-05
+- 2022-04-06
+- 2022-04-07
+- 2022-04-08
+- 2022-04-11
+- 2022-04-12
+- 2022-04-13
+- 2022-04-14
+- 2022-04-15
+- 2022-04-18
+- 2022-04-19
+- 2022-04-20
+- 2022-04-21
+- 2022-04-22
+- 2022-04-25
+- 2022-04-26
+- 2022-04-27
+- 2022-04-28
+- 2022-04-29
+- 2022-05-02
+- 2022-05-03
+- 2022-05-04
+- 2022-05-05
+- 2022-05-06
+- 2022-05-09
+- 2022-05-10
+- 2022-05-11
+- 2022-05-12
+- 2022-05-13
+- 2022-05-16
+- 2022-05-17
+- 2022-05-18
+- 2022-05-19
+- 2022-05-20
+- 2022-05-23
+- 2022-05-24
+- 2022-05-25
+- 2022-05-26
+- 2022-05-27
+- 2022-05-30
+- 2022-05-31
+- 2022-08-16
+- 2022-11-28.md
+- Notes
+- 2023-05-02.md
+- 2024-03-22.md
+- 2025-06-10.md
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- Notes
+- 2026-03-12
+- 2026-03-17.md
+- Infrastructure Changes
+- Jira Sync — 2026-04-09
+- Jira Sync — 2026-04-13
+- Jira Sync — 2026-05-04
+- Powerfleet.Automation — Video API Changes
+- Future Diff Ideas
+- AC-163 SPIKE CAN Config Group
+- STM-123 Method for Decommissioning of Streamax Device
+- OBC-401 Change the uniqueproperty "PhoneNumber" for Mobile Phone
+- ETS-6168 Error message appearing when trying to edit asset on  Mobile Device Settings
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Code
+- This AI Text Detector boasts 99% Accuracy, we investigate - Palantir Rejects AI Pause - Meta’s AI Music Generator - And so much more...
+- STEPS to get all the parameterIds and fix the make available
+- CreateDeviceDetailsCarrier.md
+- ENHANCEMENT Extention Method Idea Post Get Routes.md
+- Excalidraw Data
+- Git Handy Command line.md
+- Jira.md
+- OE-542 Error 500 when moving asset to config group
+- OE-602 Timer going too fast
+- OE-608 Error when loading YS_Bench Units
+- Old Daily Merge Template.md
+- Retro.md
+- Swagger Urls.md
+- Branch
+- OE-636 Column Selector not Alphabetical
+- OPEN-2574 — CT-UI: Deploy ConfigTools.UI to INT Environment
+- OPEN-1052
+- Unit Tests
+- OPEN-687
+- OPEN-781 Fix Row Width for icon rows
+- OPEN-860 Alert optimized Gemini.md
+- QA-7444
+- SR-15476 Command 45 not sent when moving between sites
+- Try running these and see if it works, might need refining in the template:
+- {{title}}
+- 2022-W09
+- 2022-W10
+- 2022-W11
+- 2022-W12
+- 2022-W13
+- 2022-W14
+- 2022-W15
+- 2022-W16
+- 2022-W17
+- 2022-W18
+- 2022-W19
+- 2022-W20
+- 2022-W21
+- 2022-W22
+- 2022-W23
+- 2022-W24
+- 2022-W25
+- 2022-W26
+- 2022-W27
+- 2022-W28
+- 2022-W29
+- 2022-W30
+- 2024-W42.md
+- 2024-W43.md
+- 2024-W44.md
+- 2024-W45.md
+- 2024-W46.md
+- 2024-W47.md
+- 2024-W48.md
+- 2024-W49.md
+- 2024-W50.md
+- 2025-W01.md
+- 2025-W02.md
+- 2025-W03.md
+- 2025-W04.md
+- 2025-W05.md
+- 2025-W06.md
+- 2025-W07.md
+- 2025-W08.md
+- 2025-W09.md
+- 2025-W10.md
+- 2025-W11.md
+- 2025-W12.md
+- 2025-W13.md
+- 2025-W14.md
+- 2025-W15.md
+- 2025-W16.md
+- 2025-W17.md
+- 2025-W18.md
+- 2025-W19.md
+- 2025-W20.md
+- 2025-W21.md
+- 2025-W22.md
+- 2025-W24.md
+- 2025-W25.md
+- dst-code-paths.md
+- dst-debug-guide.md
+- ets-8669-oman-dst.md
+- github-login.md
+- oe-config-groups-cluster3.md
+- operations-tools-master.md
+- remaining-clusters-batch.md
+- zagov-aws-deployment.md
+- 5. Refactoring Plan
+- 3. Dependencies and Connections
+- 5. Refactoring Plan
+- 3. Dependencies and Connections
+- 5. Refactoring Plan
+- AC-363 MakeOrgIDOptional_FriendlyParameter.md
+- Description
+- Alerts with AI.md
+- Excalidraw Data
+- Excalidraw Data
+- AWS api.deviceconfig.dev.priv.md
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- 2022-06-01
+- 2022-06-02
+- 2022-06-03
+- 2022-06-06
+- 2022-06-07
+- 2022-06-08
+- 2022-06-09
+- 2022-06-10
+- 2022-06-13
+- 2022-06-14
+- 2022-06-15
+- 2022-06-16
+- 2022-06-17
+- 2022-06-20
+- 2022-06-21
+- 2022-06-22
+- 2022-06-23
+- 2022-06-24
+- 2022-06-27
+- 2022-06-28
+- 2022-06-29
+- 2022-06-30
+- 2022-07-01
+- 2022-07-04
+- 2022-07-05
+- 2022-07-06
+- 2022-07-07
+- 2022-07-11
+- 2022-07-12
+- 2022-07-13
+- 2022-07-14
+- 2022-07-18
+- 2022-07-19
+- 2022-07-20
+- 2022-07-21
+- 2022-07-22
+- 2022-07-25
+- 2022-07-26
+- 2022-07-27
+- 2022-08-01
+- 2022-08-02
+- 2022-08-03
+- 2022-08-04
+- 2022-08-05
+- 2022-08-08
+- 2022-08-09
+- 2022-08-10
+- 2022-08-11
+- 2022-08-12
+- 2022-08-15
+- 2022-08-17
+- 2022-08-18
+- 2022-11-23.md
+- 2022-11-29.md
+- 2022-12-01.md
+- 2023-01-24.md
+- 2023-08-11.md
+- 2023-08-14.md
+- 2023-08-15.md
+- 2023-08-16.md
+- 2023-08-17.md
+- 2023-09-12.md
+- 2023-09-13.md
+- 2023-09-18.md
+- 2023-10-03.md
+- 2023-10-03 1.md
+- 2023-10-04.md
+- 2023-10-05.md
+- 2023-10-06.md
+- 2023-10-09.md
+- 2023-10-10.md
+- 2023-10-11.md
+- 2023-10-12.md
+- 2023-10-13.md
+- 2023-10-16.md
+- 2023-10-17.md
+- 2023-10-18.md
+- 2023-10-19.md
+- 2023-10-20.md
+- 2023-10-23.md
+- 2023-10-24.md
+- 2023-10-25.md
+- 2023-10-26.md
+- 2023-10-27.md
+- 2023-10-30.md
+- 2023-10-31.md
+- 2023-11-01.md
+- 2023-11-02.md
+- 2023-11-03.md
+- 2023-11-06.md
+- 2023-11-07.md
+- 2023-11-08.md
+- 2023-11-09.md
+- 2023-11-10.md
+- 2023-11-13.md
+- 2023-11-14.md
+- 2023-11-15.md
+- 2023-11-16.md
+- 2023-11-17.md
+- 2023-11-20.md
+- 2023-11-21.md
+- 2023-11-22.md
+- 2023-11-23.md
+- 2023-11-24.md
+- 2023-11-27.md
+- 2023-11-28.md
+- 2023-11-29.md
+- 2023-11-30.md
+- 2023-12-01.md
+- 2023-12-04.md
+- 2023-12-05.md
+- 2023-12-06.md
+- 2023-12-07.md
+- 2023-12-08.md
+- 2023-12-11.md
+- 2023-12-12.md
+- 2023-12-13.md
+- 2024-01-01.md
+- 2024-01-02.md
+- 2024-01-03.md
+- 2024-01-04.md
+- 2024-01-05.md
+- 2024-01-08.md
+- 2024-01-09.md
+- 2024-01-10.md
+- 2024-01-11.md
+- 2024-01-12.md
+- 2024-01-15.md
+- 2024-01-16.md
+- 2024-01-17.md
+- 2024-01-18.md
+- 2024-01-19.md
+- 2024-01-22.md
+- 2024-01-23.md
+- 2024-01-24.md
+- 2024-01-25.md
+- 2024-01-26.md
+- 2024-01-29.md
+- 2024-01-30.md
+- 2024-01-31.md
+- 2024-02-01.md
+- 2024-02-02.md
+- 2024-02-05.md
+- 2024-02-06.md
+- 2024-02-07.md
+- 2024-02-09.md
+- 2024-02-12.md
+- 2024-02-13.md
+- 2024-02-14.md
+- 2024-02-15.md
+- 2024-02-16.md
+- 2024-02-19.md
+- 2024-02-20.md
+- 2024-02-21.md
+- 2024-02-22.md
+- 2024-02-23.md
+- 2024-02-26.md
+- 2024-02-27.md
+- 2024-02-28.md
+- 2024-02-29.md
+- 2024-03-01.md
+- 2024-03-04.md
+- 2024-03-05.md
+- 2024-03-06.md
+- 2024-03-07.md
+- 2024-03-08.md
+- 2024-03-11.md
+- 2024-03-12.md
+- 2024-03-13.md
+- 2024-03-14.md
+- 2024-03-15.md
+- 2024-03-18.md
+- 2024-03-19.md
+- 2024-03-20.md
+- 2024-03-21.md
+- 2024-03-25.md
+- 2024-03-26.md
+- 2024-03-27.md
+- 2024-03-28.md
+- 2024-04-01.md
+- 2024-04-02.md
+- 2024-04-03.md
+- 2024-04-04.md
+- 2024-04-05.md
+- 2024-04-08.md
+- 2024-04-09.md
+- 2024-04-10.md
+- 2024-04-11.md
+- 2024-04-12.md
+- 2024-04-15.md
+- 2024-04-16.md
+- 2024-04-17.md
+- 2024-04-18.md
+- 2024-04-19.md
+- 2024-04-22.md
+- 2024-04-23.md
+- 2024-04-24.md
+- 2024-04-25.md
+- 2024-04-26.md
+- 2024-04-29.md
+- 2024-04-30.md
+- 2024-05-01.md
+- 2024-05-02.md
+- 2024-05-03.md
+- 2024-05-06.md
+- 2024-05-07.md
+- 2024-05-08.md
+- 2024-05-09.md
+- 2024-05-10.md
+- 2024-05-13.md
+- 2024-05-14.md
+- 2024-05-15.md
+- 2024-05-16.md
+- 2024-05-17.md
+- 2024-05-20.md
+- 2024-05-21.md
+- 2024-05-22.md
+- 2024-05-23.md
+- 2024-05-24.md
+- 2024-05-27.md
+- 2024-05-28.md
+- 2024-05-29.md
+- 2024-05-30.md
+- 2024-05-31.md
+- 2024-06-03.md
+- 2024-06-04.md
+- 2024-06-05.md
+- 2024-06-06.md
+- 2024-06-07.md
+- 2024-06-10.md
+- 2024-06-11.md
+- 2024-06-12.md
+- 2024-06-13.md
+- 2024-06-14.md
+- 2024-06-17.md
+- 2024-06-18.md
+- 2024-06-19.md
+- 2024-06-20.md
+- 2024-06-21.md
+- 2024-06-24.md
+- 2024-06-25.md
+- 2024-06-26.md
+- 2024-06-27.md
+- 2024-06-28.md
+- 2024-07-01.md
+- 2024-07-02.md
+- 2024-07-03.md
+- 2024-07-04.md
+- 2024-07-05.md
+- 2024-07-08.md
+- 2024-07-09.md
+- 2024-07-10.md
+- 2024-07-11.md
+- 2024-07-12.md
+- 2024-07-15.md
+- 2024-07-16.md
+- 2024-07-17.md
+- 2024-07-18.md
+- 2024-07-19.md
+- 2024-07-22.md
+- 2024-07-23.md
+- 2024-07-24.md
+- 2024-07-25.md
+- 2024-07-26.md
+- 2024-07-29.md
+- 2024-07-30.md
+- 2024-07-31.md
+- 2024-08-01.md
+- 2024-08-02.md
+- 2024-08-05.md
+- 2024-08-06.md
+- 2024-08-07.md
+- 2024-08-08.md
+- 2024-08-09.md
+- 2024-08-12.md
+- 2024-08-13.md
+- 2024-08-14.md
+- 2024-08-15.md
+- 2024-08-16.md
+- 2024-08-19.md
+- 2024-08-20.md
+- 2024-08-21.md
+- 2024-08-22.md
+- 2024-08-23.md
+- 2024-08-26.md
+- 2024-08-27.md
+- 2024-08-28.md
+- 2024-08-29.md
+- 2024-08-30.md
+- 2024-09-02.md
+- 2024-09-03.md
+- 2024-09-04.md
+- 2024-09-05.md
+- 2024-09-06.md
+- 2024-09-09.md
+- 2024-09-10.md
+- 2024-09-11.md
+- 2024-09-12.md
+- 2024-09-13.md
+- 2024-09-16.md
+- 2024-09-17.md
+- 2024-09-18.md
+- 2024-09-19.md
+- 2024-09-23.md
+- 2024-09-24.md
+- 2024-09-25.md
+- 2024-09-26.md
+- 2024-09-27.md
+- 2024-09-30.md
+- 2024-10-01.md
+- 2024-10-02.md
+- 2024-10-03.md
+- 2024-10-04.md
+- 2024-10-07.md
+- 2024-10-08.md
+- 2024-10-09.md
+- 2024-10-10.md
+- 2024-10-11.md
+- 2024-10-14.md
+- 2024-10-15.md
+- 2024-10-16.md
+- 2024-10-17.md
+- 2024-10-18.md
+- 2024-10-21.md
+- 2024-10-22.md
+- 2024-10-23.md
+- 2024-10-24.md
+- 2024-10-25.md
+- 2024-10-28.md
+- 2024-10-29.md
+- 2024-10-30.md
+- 2024-10-31.md
+- 2024-11-04.md
+- 2024-11-05.md
+- 2024-11-06.md
+- 2024-11-07.md
+- 2024-11-08.md
+- 2024-11-11.md
+- 2024-11-12.md
+- 2024-11-13.md
+- 2024-11-14.md
+- 2024-11-15.md
+- 2024-11-18.md
+- 2024-11-19.md
+- 2024-11-20.md
+- 2024-11-21.md
+- 2024-11-22.md
+- 2024-11-25.md
+- 2024-11-26.md
+- 2024-11-27.md
+- 2024-11-28.md
+- 2024-11-29.md
+- 2024-12-02.md
+- 2024-12-03.md
+- 2024-12-04.md
+- 2024-12-05.md
+- 2024-12-06.md
+- 2024-12-09.md
+- 2024-12-10.md
+- 2024-12-11.md
+- 2024-12-12.md
+- 2024-12-13.md
+- 2024-12-16.md
+- 2024-12-17.md
+- 2024-12-18.md
+- 2024-12-19.md
+- 2024-12-20.md
+- 2024-12-23.md
+- 2024-12-24.md
+- 2025-01-01.md
+- 2025-01-02.md
+- 2025-01-03.md
+- 2026-05-23
+- 2026-06-10
+- 2026-06-22
+- 2026-04-24
+- 2026-05-06
+- backlinks.md
+- callouts.md
+- folder and tag listings.md
+- Assets.md
+- ExplicitPublish.md
+- AC-163
+- AU launch
+- SR-11470 Serial number not showing in Device Configuration page even though it is in the mobileunitstate table.md
+- zz_lauren UAT-1080 (19.14 Lauren Feedback req) Scheduler module available when giving access to change mobile device.md
+- [SR-12349 Config Compile Display Bug - MiX Telematics JIRA](https://jira.mixtelematics.com/browse/SR-12349)
+- Timezones
+- CONFIG-3138 Location Import issue
+- QA-4521 PaOBC Removing asset and removing device for NO phone number supplied
+- final_solution_explanation.md
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- FWQ-1400 3-Axis Not in event templates.excalidraw.md
+- Excalidraw Data
+- Manage Emotions.excalidraw.md
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Installation
+- Config-3056 Driver Id Consilidation SPIKE 5days
+- Going forward
+- CONFIG-3919 TEST LFT RequestPart for Pallavi.md
+- CONFIG-4049 Update the version numbers Client and API to 24.1.md
+- CORS.md
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Optimizing Obsidian
+- Sources of inspiration
+- dbo.MapLocations
+- DSSTBWS001.md
+- Grid Footer Refresh.md
+- Jacque Meeting Bali.md
+- MME-268 To remove PAOBC.md
+- OE-518 Other porting story
+- Retro and Review 2024-04-17
+- =============================================================== PERSONAL
+- OE-483 Auditing Findings Marty.md
+- OE-631 Column selector styling
+- OE-632 Kebab menu not visible
+- OE-635 Dropdown filtering messed up
+- OE-652 Not Languaged config status filter dropdown
+- OE-653 Upload FW Dialogue
+- OE-654 Not Languaged firmware upload request successful
+- OPEN-2573 — CT-API: Deploy ConfigTools.API to INT Environment
+- OPEN-1493 UI for Salesforce case Info.md
+- OPEN-258 String change needed for incompatible Devices.md
+- OPEN-694 AutoFill all the time
+- OPEN-697 Edit camera name changes are not retained after saving
+- OPEN-743 new entry name is cleared
+- OPEN-780 Disable save when nothing changed
+- Writing Style — Marthinus Raath
+- QA-5713 Icon Wires not languaged
+- toc.inline.ts
+- Investigating
+- SR-16329 Iridium client exception Airtime Management Page.md
+- STM SRs.md
+- Retro and Review {{date}}
+- 2022-W31.md
+- 2022-W32.md
+- 2022-W33.md
+- 2022-W34.md
+- 2022-W35.md
+- 2022-W36.md
+- 2022-W37.md
+- 2022-W38.md
+- 2022-W39.md
+- 2022-W40.md
+- 2022-W41.md
+- 2022-W42.md
+- 2022-W43.md
+- 2022-W44.md
+- 2022-W45.md
+- 2022-W46.md
+- 2022-W47.md
+- 2022-W48.md
+- 2023-W01.md
+- 2023-W02.md
+- 2023-W03.md
+- 2023-W04.md
+- 2023-W05.md
+- 2023-W06.md
+- 2023-W07.md
+- 2023-W08.md
+- 2023-W09.md
+- 2023-W10.md
+- 2023-W11.md
+- 2023-W12.md
+- 2023-W13.md
+- 2023-W14.md
+- 2023-W15.md
+- 2023-W16.md
+- 2023-W17.md
+- 2023-W18.md
+- 2023-W19.md
+- 2023-W20.md
+- 2023-W21.md
+- 2023-W22.md
+- 2023-W23.md
+- 2023-W24.md
+- 2023-W25.md
+- 2023-W26.md
+- 2023-W27.md
+- 2023-W28.md
+- 2023-W29.md
+- 2023-W30.md
+- 2023-W31.md
+- 2023-W32.md
+- 2023-W33.md
+- 2023-W34.md
+- 2023-W35.md
+- 2023-W36.md
+- 2023-W37.md
+- 2023-W38.md
+- 2023-W39.md
+- 2023-W40.md
+- 2023-W41.md
+- 2023-W42.md
+- 2023-W43.md
+- 2023-W44.md
+- 2023-W45.md
+- 2023-W46.md
+- 2023-W47.md
+- 2023-W48.md
+- 2023-W49.md
+- 2023-W50.md
+- 2024-W01.md
+- 2024-W02.md
+- 2024-W03.md
+- 2024-W05.md
+- 2024-W06.md
+- 2024-W07.md
+- 2024-W08.md
+- 2024-W09.md
+- 2024-W10.md
+- 2024-W11.md
+- 2024-W12.md
+- 2024-W14.md
+- 2024-W15.md
+- 2024-W16.md
+- 2024-W17.md
+- 2024-W18.md
+- 2024-W19.md
+- 2024-W20.md
+- 2024-W21.md
+- 2024-W22.md
+- 2024-W23.md
+- 2024-W24.md
+- 2024-W25.md
+- 2024-W26.md
+- 2024-W27.md
+- 2024-W28.md
+- 2024-W29.md
+- 2024-W30.md
+- 2024-W31.md
+- 2024-W32.md
+- 2024-W33.md
+- 2024-W34.md
+- 2024-W35.md
+- 2024-W36.md
+- 2024-W37.md
+- 2024-W38.md
+- 2024-W40.md
+- 2024-W41.md
+- Powerfleet-GitHub-Enterprise.md
+- global-deployment-guide.md
+- Excalidraw Data
+- 1671621250691637248 Error decommissioning Streamax.md
+- Accept All Incoming Files Command Line.md
+- Video Download Uplodad Issues.excalidraw.md
+- Frangular Highlight cell conditionaly.md
+- OE-513 Outstanding DEV.md
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Daily Merge 20250610.md
+- Daily Merge 20250611.md
+- Daily Merge 20250612.md
+- Daily Merge 20250613.md
+- Daily Merge 20250617.md
+- Daily Merge 20250618.md
+- Daily Merge 20250619.md
+- Daily Merge 20250620.md
+- Daily Merge 20250623.md
+- Daily Merge 20250902.md
+- Daily Merge 20250904.md
+- Daily Merge 20250905.md
+- Try running these and see if it works, might need refining in the template:
+- Daily Merge 20250909.md
+- Daily Merge 20250910.md
+- Daily Merge 20250911.md
+- Daily Merge 20250912.md
+- Daily Merge 20250915.md
+- Daily Merge 20250916.md
+- Try running these and see if it works, might need refining in the template:
+- Daily Merge 20251113.md
+- Daily Merge 20251114.md
+- Daily Merge 20251119.md
+- Daily Merge 20251120.md
+- Daily Merge 20251121.md
+- Daily Merge 20251126.md
+- Daily Merge 20251127.md
+- Try running these and see if it works, might need refining in the template:
+- 2022-08-19.md
+- 2022-08-22.md
+- 2022-08-23.md
+- 2022-08-24.md
+- 2022-08-25.md
+- 2022-08-26.md
+- 2022-08-29.md
+- 2022-08-30.md
+- 2022-08-31.md
+- 2022-09-01.md
+- 2022-09-02.md
+- 2022-09-05.md
+- 2022-09-06.md
+- 2022-09-07.md
+- 2022-09-08.md
+- 2022-09-09.md
+- 2022-09-12.md
+- 2022-09-13.md
+- 2022-09-14.md
+- 2022-09-15.md
+- 2022-09-16.md
+- 2022-09-19.md
+- 2022-09-20.md
+- 2022-09-21.md
+- 2022-09-22.md
+- 2022-09-23.md
+- 2022-09-26.md
+- 2022-09-27.md
+- 2022-09-28.md
+- 2022-09-29.md
+- 2022-09-30.md
+- 2022-10-03.md
+- 2022-10-04.md
+- 2022-10-05.md
+- 2022-10-06.md
+- 2022-10-07.md
+- 2022-10-10.md
+- 2022-10-11.md
+- 2022-10-12.md
+- 2022-10-13.md
+- 2022-10-14.md
+- 2022-10-17.md
+- 2022-10-18.md
+- 2022-10-19.md
+- 2022-10-20.md
+- 2022-10-21.md
+- 2022-10-24.md
+- 2022-10-25.md
+- 2022-10-26.md
+- 2022-10-27.md
+- 2022-10-28.md
+- 2022-10-31.md
+- 2022-11-01.md
+- 2022-11-02.md
+- 2022-11-03.md
+- 2022-11-04.md
+- 2022-11-07.md
+- 2022-11-08.md
+- 2022-11-09.md
+- 2022-11-10.md
+- 2022-11-11.md
+- 2022-11-14.md
+- 2022-11-15.md
+- 2022-11-16.md
+- 2022-11-17.md
+- 2022-11-18.md
+- 2022-11-21.md
+- 2022-11-22.md
+- 2022-11-24.md
+- 2022-11-25.md
+- 2022-11-30.md
+- 2022-12-02.md
+- 2023-01-02.md
+- 2023-01-03.md
+- 2023-01-04.md
+- 2023-01-05.md
+- 2023-01-06.md
+- 2023-01-09.md
+- 2023-01-10.md
+- 2023-01-11.md
+- 2023-01-12.md
+- 2023-01-13.md
+- 2023-01-16.md
+- 2023-01-17.md
+- 2023-01-18.md
+- 2023-01-19.md
+- 2023-01-20.md
+- 2023-01-23.md
+- 2023-01-25.md
+- 2023-01-26.md
+- 2023-01-27.md
+- 2023-01-30.md
+- 2023-01-31.md
+- 2023-02-01.md
+- 2023-02-02.md
+- 2023-02-03.md
+- 2023-02-06.md
+- 2023-02-07.md
+- 2023-02-08.md
+- 2023-02-09.md
+- 2023-02-10.md
+- 2023-02-13.md
+- 2023-02-14.md
+- 2023-02-15.md
+- 2023-02-16.md
+- 2023-02-17.md
+- 2023-02-20.md
+- 2023-02-21.md
+- 2023-02-22.md
+- 2023-02-23.md
+- 2023-02-24.md
+- 2023-02-27.md
+- 2023-02-28.md
+- 2023-03-01.md
+- 2023-03-02.md
+- 2023-03-03.md
+- 2023-03-06.md
+- 2023-03-07.md
+- 2023-03-08.md
+- 2023-03-09.md
+- 2023-03-10.md
+- 2023-03-13.md
+- 2023-03-14.md
+- 2023-03-15.md
+- 2023-03-16.md
+- 2023-03-17.md
+- 2023-03-20.md
+- 2023-03-21.md
+- 2023-03-22.md
+- 2023-03-23.md
+- 2023-03-24.md
+- 2023-03-27.md
+- 2023-03-28.md
+- 2023-03-29.md
+- 2023-03-30.md
+- 2023-03-31.md
+- 2023-04-03.md
+- 2023-04-04.md
+- 2023-04-05.md
+- 2023-04-06.md
+- 2023-04-07.md
+- 2023-04-10.md
+- 2023-04-11.md
+- 2023-04-12.md
+- 2023-04-13.md
+- 2023-04-14.md
+- 2023-04-17.md
+- 2023-04-18.md
+- 2023-04-19.md
+- 2023-04-20.md
+- 2023-04-24.md
+- 2023-04-25.md
+- 2023-04-26.md
+- 2023-04-27.md
+- 2023-04-28.md
+- 2023-05-01.md
+- 2023-05-11.md
+- 2023-05-12.md
+- 2023-05-15.md
+- 2023-05-16.md
+- 2023-05-17.md
+- 2023-05-18.md
+- 2023-05-19.md
+- 2023-05-22.md
+- 2023-05-23.md
+- 2023-05-24.md
+- 2023-05-25.md
+- 2023-05-26.md
+- 2023-05-30.md
+- 2023-05-31.md
+- 2023-06-01.md
+- 2023-06-02.md
+- 2023-06-05.md
+- 2023-06-06.md
+- 2023-06-07.md
+- 2023-06-08.md
+- 2023-06-09.md
+- 2023-06-12.md
+- 2023-06-13.md
+- 2023-06-14.md
+- 2023-06-15.md
+- 2023-06-16.md
+- 2023-06-19.md
+- 2023-06-20.md
+- 2023-06-21.md
+- 2023-06-22.md
+- 2023-06-23.md
+- 2023-06-26.md
+- 2023-06-27.md
+- 2023-06-28.md
+- 2023-06-29.md
+- 2023-06-30.md
+- 2023-07-03.md
+- 2023-07-04.md
+- 2023-07-05.md
+- 2023-07-06.md
+- 2023-07-07.md
+- 2023-07-10.md
+- 2023-07-11.md
+- 2023-07-12.md
+- 2023-07-13.md
+- 2023-07-14.md
+- 2023-07-17.md
+- 2023-07-18.md
+- 2023-07-19.md
+- 2023-07-20.md
+- 2023-07-21.md
+- 2023-07-24.md
+- 2023-07-25.md
+- 2023-07-26.md
+- 2023-07-27.md
+- 2023-07-28.md
+- 2023-07-31.md
+- 2023-08-01.md
+- 2023-08-02.md
+- 2023-08-03.md
+- 2023-08-04.md
+- 2023-08-07.md
+- 2023-08-08.md
+- 2023-08-09.md
+- 2023-08-10.md
+- 2023-08-18.md
+- 2023-08-21.md
+- 2023-08-22.md
+- 2023-08-23.md
+- 2023-08-24.md
+- 2023-08-25.md
+- 2023-08-28.md
+- 2023-08-29.md
+- 2023-08-30.md
+- 2023-08-31.md
+- 2023-09-01.md
+- 2023-09-04.md
+- 2023-09-05.md
+- 2023-09-06.md
+- 2023-09-07.md
+- 2023-09-08.md
+- 2023-09-11.md
+- 2023-09-14.md
+- 2023-09-15.md
+- 2023-09-19.md
+- 2023-09-20.md
+- 2023-09-21.md
+- 2023-09-22.md
+- 2023-09-25.md
+- 2023-09-26.md
+- 2023-09-27.md
+- 2023-09-28.md
+- 2023-09-29.md
+- 2023-10-02.md
+- 2025-01-06.md
+- 2025-01-07.md
+- 2025-01-08.md
+- 2025-01-09.md
+- 2025-01-10.md
+- 2025-01-13.md
+- 2025-01-14.md
+- 2025-01-15.md
+- 2025-01-16.md
+- 2025-01-17.md
+- 2025-01-20.md
+- 2025-01-21.md
+- 2025-01-22.md
+- 2025-01-23.md
+- 2025-01-24.md
+- 2025-01-27.md
+- 2025-01-28.md
+- 2025-01-29.md
+- 2025-01-30.md
+- 2025-01-31.md
+- 2025-02-03.md
+- 2025-02-04.md
+- 2025-02-05.md
+- 2025-02-06.md
+- 2025-02-07.md
+- 2025-02-10.md
+- 2025-02-11.md
+- 2025-02-12.md
+- 2025-02-13.md
+- 2025-02-14.md
+- 2025-02-17.md
+- 2025-02-18.md
+- 2025-02-19.md
+- 2025-02-20.md
+- 2025-02-21.md
+- 2025-02-24.md
+- 2025-02-25.md
+- 2025-02-26.md
+- 2025-02-27.md
+- 2025-02-28.md
+- 2025-03-03.md
+- 2025-03-04.md
+- 2025-03-05.md
+- 2025-03-06.md
+- 2025-03-07.md
+- 2025-03-10.md
+- 2025-03-11.md
+- 2025-03-12.md
+- 2025-03-13.md
+- 2025-03-14.md
+- 2025-03-17.md
+- 2025-03-18.md
+- 2025-03-19.md
+- 2025-03-20.md
+- 2025-03-21.md
+- 2025-03-24.md
+- 2025-03-25.md
+- 2025-03-26.md
+- 2025-03-27.md
+- 2025-03-31.md
+- 2025-04-01.md
+- 2025-04-02.md
+- 2025-04-03.md
+- 2025-04-04.md
+- 2025-04-07.md
+- 2025-04-08.md
+- 2025-04-09.md
+- 2025-04-10.md
+- 2025-04-11.md
+- 2025-04-14.md
+- 2025-04-15.md
+- 2025-04-16.md
+- 2025-04-17.md
+- 2025-04-18.md
+- 2025-04-21.md
+- 2025-04-22.md
+- 2025-04-23.md
+- 2025-04-24.md
+- 2025-04-25.md
+- 2025-04-28.md
+- 2025-04-29.md
+- 2025-04-30.md
+- 2025-05-01.md
+- 2025-05-02.md
+- 2025-05-05.md
+- 2025-05-06.md
+- 2025-05-07.md
+- 2025-05-08.md
+- 2025-05-09.md
+- 2025-05-12.md
+- 2025-05-13.md
+- 2025-05-14.md
+- 2025-05-15.md
+- 2025-05-16.md
+- 2025-05-19.md
+- 2025-05-20.md
+- 2025-05-21.md
+- 2025-05-22.md
+- 2025-05-23.md
+- 2025-05-26.md
+- 2025-05-27.md
+- 2025-05-28.md
+- 2025-05-29.md
+- 2025-05-30.md
+- 2025-06-02.md
+- 2025-06-03.md
+- 2025-06-04.md
+- 2025-06-05.md
+- 2025-06-06.md
+- 2025-06-09.md
+- 2025-06-11.md
+- 2025-06-13.md
+- 2025-06-16.md
+- 2025-06-17.md
+- 2025-06-18.md
+- 2025-06-19.md
+- 2025-06-20.md
+- 2025-06-23.md
+- 2025-06-24.md
+- 2025-06-25.md
+- 2025-06-26.md
+- 2025-06-27.md
+- 2025-06-30.md
+- 2025-07-01.md
+- 2025-07-02.md
+- 2025-07-03.md
+- 2025-07-04.md
+- 2025-07-14.md
+- 2025-07-15.md
+- 2025-07-16.md
+- 2025-07-17.md
+- 2025-07-18.md
+- 2025-07-21.md
+- 2025-07-22.md
+- 2025-07-23.md
+- 2025-07-24.md
+- 2025-07-25.md
+- 2025-07-28.md
+- 2025-07-29.md
+- 2025-07-30.md
+- 2025-07-31.md
+- 2025-08-01.md
+- 2025-08-04.md
+- 2025-08-05.md
+- 2025-08-06.md
+- 2025-08-07.md
+- 2025-08-08.md
+- 2025-08-11.md
+- 2025-08-12.md
+- 2025-08-13.md
+- 2025-08-15.md
+- 2025-08-18.md
+- 2025-08-19.md
+- 2025-08-20.md
+- 2025-08-21.md
+- 2025-08-22.md
+- 2025-08-25.md
+- 2025-08-26.md
+- 2025-08-27.md
+- 2025-08-28.md
+- 2025-08-29.md
+- 2025-09-01.md
+- 2025-09-02.md
+- 2025-09-03.md
+- 2025-09-04.md
+- 2025-09-05.md
+- 2025-09-08.md
+- 2025-09-09.md
+- 2025-09-10.md
+- 2025-09-11.md
+- 2025-09-12.md
+- 2025-09-15.md
+- 2026-03-25
+- full-text search.md
+- OxHugo compatibility.md
+- private pages.md
+- [[SR-12359] DEMT processing stuck on retrieving data - MiX Telematics JIRA](https://jira.mixtelematics.com/browse/SR-12359)
+- CONFIG-2447 Move PaOBC Settings
+- CONFIG-3161 Missing Hypermedia.md
+- Done.md
+- VM-234 Incorrect assets displayed in Cascading list for MiXTalk
+- VM-234 Incorrect assets displayed in Cascading list for MiXTalk
+- TEL-17 [21.9 Waiting Paul] Extra thresholds (2)
+- OBC-289 event thresholds
+- OBC-68 Mobile device settings tab: Configure Event Thresholds
+- OEM-208 Unenrollment: Remove Change Mobile Device button for OEM assets
+- PaOBC Mobile device changes TESTS:
+- SR-10771 Configurations groups: Asset Level - Event change - Not Flagged (black flag?)
+- SR-11249
+- STM-507
+- Web Config
+- AdjustOrganistationsDaylightSavingSettings.md
+- cleaner_solution_finding.md
+- database_schema_diagram.md
+- Config-3387 App Command 45 redesign.excalidraw.md
+- Decommissioning MiX4000.excalidraw.md
+- Frangular Minified Video Notes.md
+- FWQ-1403 Leading 0 being dropped.excalidraw.md
+- Make Device Available.excalidraw.md
+- SR-16213 Investigating the code for Not Commissioned.excalidraw.md
+- Status Messages.excalidraw.md
+- 2022-04-13 MiX I3 Second catchup
+- 2022-04-22 MiX I3 Questions
+- index.d.ts
+- Black Flag.md
+- CODE Large File Transfer NewFileAvailable and StoreFilePart.md
+- CODE Large File Transfer UpdateProgress.md
+- Zeshan topic.md
+- CONFIG-3624 Upload FW for FM
+- CONFIG-4030 TEST Get Pending Or Loaded Configuration Version For MobileUnit.md
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Preparing your vault for Dashboard++
+- Event Templates.excalidraw.md
+- Handover 2022-12.md
+- Home Dashboard.md
+- Leave.md
+- Links and Files.md
+- Logz.io.md
+- New UI Look Meeting Zonika and Nicole.md
+- Might be missing
+- AirBnb
+- Zonika Outstanding Jira tickets.md
+- OE Other eg. Languaging.md
+- Testing on DEV
+- Overriding the Column Width.md
+- Quartz v4
+- Review Code Enhancements.md
+- SR-14153 Duplicate Iridium should be allowed.md
+- SR-16639 Camera selection settings not cascading to templates.md
+- STM-768 Client call to get selected event cameras for assets.md
+- Template Branch.md
+- Template Development Note.md
+- {{title}}
+- Unathi Alert Test Cases.md
+- Alerts values fixing.md
+- AWS New.md
+- Code Repo.md
+- OE-513 Branches.md
+- 2025-11-25.md
+- breadcrumbs.md
+- darkmode.md
+- graph view.md
+- recent notes.md
+- RSS Feed.md
+- SPA Routing.md
+- upcoming features.md
+- AliasRedirects.md
+- CNAME.md
+- ComponentResources.md
+- ContentIndex.md
+- ContentPage.md
+- CrawlLinks.md
+- CreatedModifiedDate.md
+- Description.md
+- FolderPage.md
+- GitHubFlavoredMarkdown.md
+- HardLineBreaks.md
+- NotFoundPage.md
+- SyntaxHighlighting.md
+- TableOfContents.md
+- TagPage.md
+- AC-109 LAMBDA.md
+- AC-266 Events not added in default MiX4000 template.md
+- AC-274 SPIKE diagram for outstanding AC work.md
+- zz_martin SR-10305 [21.7 WIP] MiX4000  MVR Units Losing Timezone Settings.md
+- zz_nicole QA-4795 Diagnositic - Trip Information - Incorrect value displayed out of trip.md
+- zz_zonika SR-11740 Last Config load date not updating in DynaMiX.md
+- zz_zonika UAT-687 Remora and Oyster.md
+- CONFIG-2686 Black flag blocking unit commissioning (IMEI).md
+- CONFIG-2848 ODO and Engine Hours different on diagnostics modal and assets list.md
+- CONFIG-2948 Cant save PaOBC commissioning issues.md
+- CONFIG-2954 Config group issue for STM Streamax Standalone.md
+- CONFIG-2958 Cant change PaOBC to FM.md
+- OEM-204 CanBeDeleted.md
+- QA-4592 UAT 21.9 Event Threshold NOT available.md
+- QA-4706 Issue making Teltonika available on new Org.md
+- SR-11406 ENT EKS Infohub User Error.md
+- SR-11408.md
+- SR-11553 FM change mobile device SR.md
+- SR-11563 VT Units Not Communicating With The UI.md
+- SR-11631 MiX 4000 IMEI diff on Asset Page (wrong) and modal (correct).md
+- SR-9374 Live Tracking Not Showing Ignition Status Correctly.md
+- STM-319.md
+- STM-471 Streamax Decommissioning and ReCommissioning.md
+- STM-533 STM change peripheral.md
+- STM-544 Template Streamax Peripheral line changes should update S17.md
+- STM-548 Reset to Config group.md
+- Daily.md
+- Overtime.md
+- 2022-03-31 MiX I3 Brainstorm.md
+- Justus FR Peripheral work.md
+- Legacy Config Group Move different Device Types.md
+- Accounts.md
+- CONFIG-4015 Update the version numbers Client and API.md
+- Copied Rotation.md
+- DaylightSavingsTimeAdjuster.md
+- Debug Prod.md
+- Deviceconfig API.md
+- Drawing 2024-10-22 12.13.04.excalidraw.md
+- Driver Id.md
+- Engine Hours.md
+- Helpful Dashboards Links.md
+- Iridium.md
+- Jira Team Issues.md
+- Links
+- Local config.md
+- LOG DB Maintenance.md
+- Migrating Org.md
+- Testers
+- mobileunit. AssetMobileUnit.md
+- mobileunit. MobileUnits.md
+- NA Frangular get up and running.md
+- Powershell.md
+- Read.md
+- Server Issues PROD.md
+- Template Branches.md
+- template. ConfigurationGroups.md
+- template. EventTemplates.md
+- template. Locations.md
+- template. LocationTemplates.md
+- template. MobileDeviceTemplates.md
+- Netfix profanity family fix
+- UAT.md
+- New Device LightMetrics.md
+- OE Config Groups Facelift Meeting.md
+- OE Merge to DEV Issues.md
+- OE-513 All SQL involved.md
+- OPEN-712 OPEN-713.md
+- MissingParametersLogicFlow.md
+- runAgendaPythonShell.sh
+- SQL Command 45 Asset Auditing.md
+- SQL Command 45 Asset Offset.md
+- SQL Command 45 Messages Sent.md
+- SQL Command 45 Organisation Offset.md
+- SR-17158 Teltonika Thresholds Not applied or considered.md
+- Template Outstanding Environments.md
+- Template Simple Note.md
+- getParagraph.md
+- AC-163_FlowChart.png.md
+- AC-78.md
+- AC Cleanup Script.md
+- Adding new devices.md
+- AI Alerts Feedback 1.md
+- AI FW Versions.md
+- All Outstanding.md
+- 2020-08-05-15-40-50.png.md
+- 301704920959.png.md
+- Bamboo HR Goals Zonika.md
+- Block UX UI.md
+- OE-513 Story Points.md
+- WiXToolNotInstalledError.png.md
+- Daily Merge 20240215.md
+- Daily Merge 20240220.md
+- Daily Merge 20240223.md
+- Daily Merge 20240226.md
+- Daily Merge 20240227.md
+- Daily Merge 20240228.md
+- Daily Merge 20240229.md
+- Daily Merge 20240301.md
+- Daily Merge 20240304.md
+- Daily Merge 20240306.md
+- Daily Merge 20240308.md
+- Daily Merge 20240311.md
+- Daily Merge 20240312.md
+- Daily Merge 20240315.md
+- Daily Merge 20240319.md
+- Daily Merge 20240320.md
+- Daily Merge 20240322.md
+- Daily Merge 20240325.md
+- Daily Merge 20250506.md
+- Daily Merge 20250508.md
+- Daily Merge 20250509.md
+- Daily Merge 20250512.md
+- Jira SR Process.md
+- Knowledge Base KB.md
+- Leave - overtime.md
+- Maybe MAC things to install for new people.md
+- Missing Parameters Logic.md
+- Missing Parameters Logic Links to Logic.md
+- MORE changes for dropdown login environments.md
+- Admin.md
+- Application Settings or config without app settings.md
+- AssetProperties.png.md
+- Battery.md
+- Browser.md
+- Business Logic.md
+- Chat with Chad to send to Zonika re QA issues VIN related.md
+- CICD.md
+- coddingtonbearobsidian-local-rest-api Unlock your automation needs by interacting with your notes in Obsidian over a secure REST API..md
+- Code Review - Mobile Unit Default Configuration Group.md
+- command line.md
+- Dale Carnegie LAST session.md
+- Dashboard.md
+- Database.md
+- DBNames.md
+- dbo.Sites.md
+- Default Events.md
+- Driver.md
+- DST Moving Parts.md
+- Due Next Month.md
+- Due Previous Days.md
+- Due Today.md
+- Files Changed (Last 10).md
+- FM Last trips not updating.md
+- Frangular Chat Pallavi Register Internal Repo-1Frangular Chat Pallavi Register Internal Repo-1.png.md
+- Frangular Languaging Constructorpng.md
+- Git Daily Merge Automation.md
+- Handover Dec 2023.md
+- Hard Link and Moving Directories.md
+- Hide a Tab.md
+- IIS Logs.md
+- IMEIs.md
+- Jacques Meeting Listener.md
+- Jako idea to list out results.md
+- Jira Ever Assigned.md
+- Jira Mine.md
+- Jira Open Issues.md
+- Jira Regression.md
+- Jira Stories busy with.md
+- KafkaConsumers.png.md
+- library.Locations.md
+- markdown-confluenceobsidian-integration Sync  Publish Obsidian Notes to Confluence.md
+- Network.md
+- New Environment Server.md
+- New MiXFleet UI Component.md
+- Obsidian plugins.md
+- Odometer Code.md
+- OE-513.md
+- OE-534 Plural assets.md
+- Opsgenie Schedule On Call.md
+- Pasted image 20240730152814.png.md
+- PMU.md
+- PMU_Zip_Compilation.png.md
+- PrivateGPT.md
+- Production.md
+- Properties.md
+- Python Templater.md
+- Quartz.md
+- Quick Links.md
+- REGEX.md
+- Release 23.15.md
+- Remote Desktop.md
+- Repos.md
+- Running Dymix API locally.md
+- S17 Meeting.md
+- SerialNumbers for FMs.md
+- Settings.md
+- Shashi handover.md
+- SQL Cross Apply Help.md
+- Stackify.md
+- Tasks Open.md
+- Team workflow progress testing.md
+- Template Environments.md
+- Todoist.md
+- Todoist Today.md
+- TZ Pallavi.md
+- UAE issue.md
+- Untitled.md
+- Untitled 1.md
+- Untitled 2.md
+- Untitled 3.md
+- ValidationWorking.png.md
+- Validator.png.md
+- Virtual Machines on Prem at old offices.md
+- Visual Studio Settings.md
+- Workflow.md
+- xxx.md
+- Zonika Meeting.md
+- New Page.md
+- OE-611 Script to remove all stored procs and functions.md
+- Olga OPEN-345.md
+- OPEN-840_TODO_ALERTS.md
+- OPEN-1928 ZA AWS deployment.md
+- OPEN-1931 ENT AWS Deployment.md
+- OPEN-302 Unallocated Asset Description link click errpr.md
+- OPEN-756 Languaging issues.md
+- Paul Common Nuget issue.md
+- Paul DeviceData.xml.md
+- Paul Parameter Fix.md
+- Paul Stored Proc to see configuration for mobileunit.md
+- Public Holiday.md
+- bootstrap-worker.mjs
+- Recent files with outstanding todo tasks.md
+- Roo Code Code Analysis.md
+- Roo Code Why my Original Stored Proc didnt work.md
+- agenda.py
+- Select Multiple Assets to move to Config group.md
+- Selection Criteria DB.md
+- Shuan Notes AI.md
+- Home.md
+- SQL Message Statuses.md
+- SQL Activate account.md
+- SQL Audit Odometer.md
+- SQL Command 45 Clean Mesa Messages per AssetId.md
+- SQL Config Group Get all Columns.md
+- SQL Config Status Changes Audit.md
+- SQL Configuration Group AEMP.md
+- SQL Device AEMP.md
+- SQL Device Exist.md
+- SQL Get Configuration Generation Data.md
+- SQL Get Template and Overwritten values.md
+- SQL Is Device Enabled.md
+- SQL Is Device Enabled for MobileUnit.md
+- SQL Large File Transfer Cancel.md
+- SQL Large File Transfer NewFileAvailable and StoreFilePart.md
+- SQL Large File Transfer UpdateProgress.md
+- SQL MiXTalk Carrier.md
+- SQL MiXTalk Master Number Messages.md
+- SQL MiXTalk Master Number Messages 2.md
+- SQL QA-6193 Devices with Logicals and Properties that share values.md
+- SQL SR-17543 Find ORG and IMEI based on AssetId.md
+- SQL SR-17917 Library Events deleted.md
+- SQL TEST Configuration Group AEMP Stored Proc OEM-542.md
+- SQL to test SR-16598 Scheduler Timestamps flopping.md
+- SQL VIN ELD Enabled mobileunit.MobileUnit_GetEnabledDevicePropertyForAssets.md
+- SR-12849.md
+- SR-14125.md
+- SR-14824 1.md
+- SR-14824 2.md
+- SR-14824 3.md
+- SR-16235 Unique Identifier cant be assigned.md
+- SR-16705 Streamax Videos not downloading after Peripheral change.md
+- SR-2119 Battery Level not updating in Diagnostic Modal.md
+- SR Process.md
+- SRs to handle.md
+- Template Monthly Notes.md
+- Template Python Agenda.md
+- Template Todo.md
+- Template Todo 2 Months Simple.md
+- Template Todo Month.md
+- Test New Devices.md
+- academicianAwesome.md
+- accountantAwesome.md
+- advertiserAwesome.md
+- aiassisteddoctorAwesome.md
+- aitryingtoescapetheboxAwesome.md
+- aiwritingtutorAwesome.md
+- aphorismbookAwesome.md
+- artistadvisorAwesome.md
+- asciiartistAwesome.md
+- astrologerAwesome.md
+- automobilemechanicAwesome.md
+- babysitterAwesome.md
+- biblicaltranslatorAwesome.md
+- buddhaAwesome.md
+- careercounselorAwesome.md
+- carnavigationsystemAwesome.md
+- characterfrommoviebookanythingAwesome.md
+- chatgptpromptgeneratorAwesome.md
+- cheaptravelticketadvisorAwesome.md
+- chefAwesome.md
+- chemicalreactorAwesome.md
+- chessplayerAwesome.md
+- chiefexecutiveofficerAwesome.md
+- classicalmusiccomposerAwesome.md
+- commentariatAwesome.md
+- commitmessagegeneratorAwesome.md
+- composerAwesome.md
+- coverletterAwesome.md
+- cybersecurityspecialistAwesome.md
+- debatecoachAwesome.md
+- debaterAwesome.md
+- dentistAwesome.md
+- developerrelationsconsultantAwesome.md
+- diagramgeneratorAwesome.md
+- dietitianAwesome.md
+- diyexpertAwesome.md
+- doctorAwesome.md
+- dreaminterpreterAwesome.md
+- drunkpersonAwesome.md
+- educationalcontentcreatorAwesome.md
+- elocutionistAwesome.md
+- emergencyresponseprofessionalAwesome.md
+- emojitranslatorAwesome.md
+- englishpronunciationhelperAwesome.md
+- englishtranslatorandimproverAwesome.md
+- essaywriterAwesome.md
+- etymologistAwesome.md
+- excelsheetAwesome.md
+- fallacyfinderAwesome.md
+- fancytitlegeneratorAwesome.md
+- fillintheblankworksheetsgeneratorAwesome.md
+- filmcriticAwesome.md
+- financialanalystAwesome.md
+- floristAwesome.md
+- foodcriticAwesome.md
+- footballcommentatorAwesome.md
+- friendAwesome.md
+- fullstacksoftwaredeveloperAwesome.md
+- gaslighterAwesome.md
+- gnomistAwesome.md
+- gomokuplayerAwesome.md
+- historianAwesome.md
+- hypnotherapistAwesome.md
+- instructorinaschoolAwesome.md
+- interiordecoratorAwesome.md
+- investmentmanagerAwesome.md
+- itarchitectAwesome.md
+- itexpertAwesome.md
+- japanesekanjiquizmachineAwesome.md
+- journalistAwesome.md
+- journalreviewerAwesome.md
+- languagedetectorAwesome.md
+- languageliterarycriticAwesome.md
+- legaladvisorAwesome.md
+- lifecoachAwesome.md
+- linuxterminalAwesome.md
+- logisticianAwesome.md
+- lunaticAwesome.md
+- machinelearningengineerAwesome.md
+- magicianAwesome.md
+- makeupartistAwesome.md
+- mathematicalhistoryteacherAwesome.md
+- mathematicianAwesome.md
+- mathteacherAwesome.md
+- mentalhealthadviserAwesome.md
+- midjourneypromptgeneratorAwesome.md
+- motivationalcoachAwesome.md
+- motivationalspeakerAwesome.md
+- moviecriticAwesome.md
+- muslimimamAwesome.md
+- newlanguagecreatorAwesome.md
+- notetakingassistantAwesome.md
+- novelistAwesome.md
+- passwordgeneratorAwesome.md
+- personalchefAwesome.md
+- personalshopperAwesome.md
+- personalstylistAwesome.md
+- personaltrainerAwesome.md
+- petbehavioristAwesome.md
+- philosopherAwesome.md
+- philosophyteacherAwesome.md
+- phpinterpreterAwesome.md
+- plagiarismcheckerAwesome.md
+- poetAwesome.md
+- positioninterviewerAwesome.md
+- productmanagerAwesome.md
+- promptgeneratorAwesome.md
+- proofreaderAwesome.md
+- psychologistAwesome.md
+- publicspeakingcoachAwesome.md
+- pythoninterpreterAwesome.md
+- rapperAwesome.md
+- realestateagentAwesome.md
+- recruiterAwesome.md
+- regexgeneratorAwesome.md
+- relationshipcoachAwesome.md
+- rprogramminginterpreterAwesome.md
+- salespersonAwesome.md
+- scientificdatavisualizerAwesome.md
+- screenwriterAwesome.md
+- selfhelpbookAwesome.md
+- seniorfrontenddeveloperAwesome.md
+- smartdomainnamegeneratorAwesome.md
+- socialmediainfluencerAwesome.md
+- socialmediamanagerAwesome.md
+- socratAwesome.md
+- socraticmethodAwesome.md
+- softwarequalityassurancetesterAwesome.md
+- solrsearchengineAwesome.md
+- songrecommenderAwesome.md
+- speechlanguagepathologistslpAwesome.md
+- spokenenglishteacherandimproverAwesome.md
+- spongebobsmagicconchshellAwesome.md
+- sqlterminalAwesome.md
+- stackoverflowpostAwesome.md
+- standupcomedianAwesome.md
+- startupideageneratorAwesome.md
+- startuptechlawyerAwesome.md
+- statisticianAwesome.md
+- storytellerAwesome.md
+- svgdesignerAwesome.md
+- synonymfinderAwesome.md
+- talentcoachAwesome.md
+- teatasterAwesome.md
+- technologytransfererAwesome.md
+- techreviewerAwesome.md
+- techwriterAwesome.md
+- textbasedadventuregameAwesome.md
+- tictactoegameAwesome.md
+- timetravelguideAwesome.md
+- titlegeneratorforwrittenpiecesAwesome.md
+- travelguideAwesome.md
+- unconstrainedaimodeldanAwesome.md
+- virtualdoctorAwesome.md
+- webbrowserAwesome.md
+- webdesignconsultantAwesome.md
+- wikipediapageAwesome.md
+- artAnime.md
+- artBallPointPen.md
+- artBanksy.md
+- artColoringBook.md
+- artDeco.md
+- artGlitchcore.md
+- artLowPoly.md
+- artModern.md
+- artNormanRockwell.md
+- artPencilSketch.md
+- artPixel.md
+- artTakashiMurakami.md
+- artTimBurton.md
+- artUkiyoe.md
+- artVanGogh.md
+- artWatercolor.md
+- getPhoto.md
+- ligCinematic.md
+- ligFlare.md
+- ligStudio.md
+- modAwardWinning.md
+- modDetailed.md
+- modFanart.md
+- qua35mm.md
+- qua85mm.md
+- quaBokeh.md
+- quaMacro.md
+- quaTiltShift.md
+- sitNature.md
+- getIdeas.md
+- getTags.md
+- getTitles.md
+- simplify.md
+- classify-bart-large-mnli.md
+- summarizeBART.md
+- UDP.md
+- 2025-W49.md
+- 2026-02-24.md
+- 2026-02-25.md
+- 2026-02-26.md
+- FE.md
+- 2026-02-27.md
+- Engine Hours.md
+- ENHANCEMENT Extention Method Idea Post Get Routes.md
+- 2026-03-02.md
+- Event Templates.md
+- Event Templates.excalidraw.md
+- FWQ-1400 FWQ - 3-Axis -Accelerometer events not applicable to MiX 6000 Lte devices
+- Jacque Meeting Bali.md
+- Jira Mine
+- Jira Team Issues.md
+- 2026-03-03.md
+- 2026-03-05.md
+- LOG DB Maintenance.md
+- DSSTBWS001.md
+- STEPS to get all the parameterIds and fix the make available
+- 2026-03-09.md
+- 2026-03-10.md
+- 2026-03-13.md
+- 2026-03-16.md
+- 2026-03-18
+- Program
+- OE-534 Plural assets
+- OBC-360 (New endpoint - still needs loads of other things)
+- OE-552 Refresh Missing in Aset Panel
+- STM-28 Storing Streamax
+- Diagnostic Modal.md
+- FM
+- MESA
+- VM-83 MiXTalk final stretch
+- Forms for improvement.md
+- AC-362 Add Installation Profile
+- Not same Kafka
+- Multi-Select Config Groups iFrame b
+- Multi-Select Config Groups Menu Item
+- Multi-Select Config Groups Microservices
+- Multi-Select Config Groups Permissions
+- Multi-Select Config Groups Show Selected Groups
+- Multi-Select Config Groups Upload FW
+- Multi-Select Config Groups Upload FW-1
+- Excalidraw Data
+- OE-501 API Documentation.md
+- Mobile Device Templates UI Screenshot
+- module.updateAssetsConfigurationGroup
+- Aborted
+- Accepted
+- Acknowledged
+- Arrived
+- Cancelled
+- Close
+- Complete
+- Completed
+- Confirmed
+- Created
+- Deleted
+- DeleteQueued
+- DeleteRequested
+- ETAChanged
+- Expired
+- Failed
+- KMETAChanged
+- New
+- Pending
+- Postponed
+- Queued
+- Read
+- Received
+- Rejected
+- SendFailed
+- Sent
+- SentAwaitingResponse
+- Unknown
+- GetConfigurationGroupsAlerts
+- GetConfigurationGroupsMultiselectAssetAlertsList
+- MiX.Config.Frangular.API.Controllers.ConfigurationGroupController
+- MiX.ConfigInternal.Api.Client.Repositories.InternalConfigurationGroupsRepository
+- MCP Tools Screenshot
+- LocationTemplates
+- S17 Meeting Minutes
+- Asset Manager Diagnostic Report
+- Harsh Cornering
+- Commissioned Returns
+- UI Config List Placeholder Actions
+- whatsapp norton bali
+- WIP Columns Dynamic
+- 2026-03-12
+- 2026-03-17.md
+- STM-123 Method for Decommissioning of Streamax Device
+- OBC-401 Change the uniqueproperty "PhoneNumber" for Mobile Phone
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Code Review TECHDEBT-190.md
+- STEPS to get all the parameterIds and fix the make available
+- Git Handy Command line.md
+- Logging.md
+- OE-542 Error 500 when moving asset to config group
+- ets-8669-oman-dst.md
+- Description
+- Excalidraw Data
+- 2026-07-09
+- 2026-07-10
+- zz_lauren UAT-1080 (19.14 Lauren Feedback req) Scheduler module available when giving access to change mobile device.md
+- [SR-12349 Config Compile Display Bug - MiX Telematics JIRA](https://jira.mixtelematics.com/browse/SR-12349)
+- QA-4521 PaOBC Removing asset and removing device for NO phone number supplied
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- FWQ-1400 3-Axis Not in event templates.excalidraw.md
+- Excalidraw Data
+- Manage Emotions.excalidraw.md
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Excalidraw Data
+- Going forward
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Optimizing Obsidian
+- Sources of inspiration
+- Grid Footer Refresh.md
+- OE-518 Other porting story
+- global-deployment-guide.md
+- Video Download Uplodad Issues.excalidraw.md
+- 2025-08-15.md
+- VM-234 Incorrect assets displayed in Cascading list for MiXTalk
+- VM-234 Incorrect assets displayed in Cascading list for MiXTalk
+- TEL-17 [21.9 Waiting Paul] Extra thresholds (2)
+- OBC-289 event thresholds
+- OBC-68 Mobile device settings tab: Configure Event Thresholds
+- AdjustOrganistationsDaylightSavingSettings.md
+- cleaner_solution_finding.md
+- database_schema_diagram.md
+- Config-3387 App Command 45 redesign.excalidraw.md
+- Decommissioning MiX4000.excalidraw.md
+- Frangular Minified Video Notes.md
+- FWQ-1403 Leading 0 being dropped.excalidraw.md
+- Make Device Available.excalidraw.md
+- SR-16213 Investigating the code for Not Commissioned.excalidraw.md
+- Status Messages.excalidraw.md
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Try running these and see if it works, might need refining in the template:
+- Preparing your vault for Dashboard++
+- Handover 2022-12.md
+- Home Dashboard.md
+- zz_martin SR-10305 [21.7 WIP] MiX4000  MVR Units Losing Timezone Settings.md
+- zz_nicole QA-4795 Diagnositic - Trip Information - Incorrect value displayed out of trip.md
+- zz_zonika SR-11740 Last Config load date not updating in DynaMiX.md
+- zz_zonika UAT-687 Remora and Oyster.md
+- SR-10440
+- SR-11406 ENT EKS Infohub User Error.md
+- SR-11408.md
+- SR-11553 FM change mobile device SR.md
+- SR-11563 VT Units Not Communicating With The UI.md
+- SR-11631 MiX 4000 IMEI diff on Asset Page (wrong) and modal (correct).md
+- gemini-rotate.sh
+- graphify-rotate.sh
+- Justus FR Peripheral work.md
+- Helpful Dashboards Links.md
+- ConfigAdminRepository.GetLibraryMobileDevice
+- CopyAndAddParameter
+- CreateDefaultTemplate
+- DeviceFactory
+- DeviceLineDetail
+- GetMiX3000Model
+- Initialize
+- InitializeLines
+- InitializeSettings
+- LibraryMobileDevicesModule
+- AssetCommissioningManager
+- LogicalDevices
+- MakeAvailableForLibrary
+- MakeAvailableHelper
+- MakeDependanciesAvailable
+- MakeLibraryMobileDeviceAvaialble
+- MiX3000Model
+- NeedsExtendedDefaultConfig
+- PeripheralDevice
+- Update
+- UpdateEvents
+- UpdateLines
+- UpdateMobileDeviceTemplate
+- AC-357: Find and assign default config group
+- AC-363: Make Org ID optional
+- AC Parent Document
+- Device Setup
+- FM
+- UK Region
+- Channels: 3 to 5
+- CommandQueue
+- Compare S17 with Fleet DB
+- Config
+- Compile
+- Frangular UI
+- Upload Config
+- Upload Firmware
+- refreshVSToken
+- vsts-npm-auth
+- documentClick
+- sortConfigGroups
+- sortConfigGroupsChange
+- GetConfigurationDataFiles
+- ValidateCommand
+- ValidateCommandType
+- SendCommandToMobileUnit
+- SendCommandToMobileUnits2
+- Client
+- Core
+- OLD API
+- DB
+- defaultTemplateResults
+- Device
+- AssetDiagnosticInfoCarrier
+- AssetsClient
+- AssetsManager
+- AssetStatusBagConverter
+- Convert
+- formatZonedDate
+- GeneralStatusInfo
+- getAssetDiagnostics
+- GetStatusValuesAsync
+- loggedInProfile
+- ToCarrier
+- ToEntity
+- ToHistoricalTimeZone
+- ToTimeZone
+- ZonedDateTime
+- BB06D40A-6F6A-46E5-8875-019AE770FA02
+- BUSY
+- edf9ecb1-ba5d-4ffd-9257-49228cca2be5
+- IIS Web.Config file
+- Location
+- LocationServiceRequestQueue
+- MiX.Core2.Messaging.Msmq
+- service app's config file
+- Services
+- Config/MR/Bug/CONFIG-3161_Missing_Hypermedia
+- getStreamaxStateByConfigurationGroupId
+- HandledTypedResponse
+- HandleTyped
+- ProcessTypedResponse
+- GetBody
+- GetAssetMobileUnitMappingsByAssetIds
+- GetCommandsHistoryForMoibleUnitWithinDateRangeForList
+- GetMobileUnitIdsForCommandHistory
+- GetMobileUnitsForAssetIds
+- <>c__DisplayClass86_0.<GetFeedEntries>b__15
+- <>c__DisplayClass86_0.<GetFeedEntries>b__16
+- <>c__DisplayClass86_0.<GetFeedEntries>b__7
+- GetFeedEntries
+- System.AggregateException
+- System.Exception
+- UpdateAssetCommissioning
+- HandledTypedResponse
+- HandleTyped
+- ProcessTypedResponse
+- RegisterRoute
+- Execute
+- ExecuteAsync
+- ShouldRetry
+- ExecuteActionWithTraceAsync
+- ExitRetryAsync
+- DecommissionStreamax
+- System.Threading.Tasks.TaskCanceledException
+- Command 45 Moving Site
+- Definition Device Dependencies
+- Definition Firmware Versions
+- Fw Versions
+- General Config Group Info
+- Template Device Properties
+- Template Devices
+- DEF_FIRMWARE_VERSIONS
+- DEF_MOBILE_DEVICES
+- DEF_PROPERTIES
+- LIBRARIES
+- TPL_CONFIGURATION_GROUPS
+- TPL_DEVICE_PROPERTIES
+- TPL_DEVICES
+- TPL_MOBILE_DEVICE_TEMPLATES
+- _client = txtEnvironment
+- Command45
+- DB
+- DynaMiX.Logic
+- SendCommandToMobileDevice
+- SendCommandToMobileUnit
+- UpdateAssetTimezoneDeviation
+- Asset commissioning
+- CommandIdType.SendSettings
+- Config groups page
+- [state].[MobileUnitMessage_GetLastMessageStatusesForTypes]
+- muProxy.GetLastMessageStatusesForConfigurationUpload
+- SendConfig = 254
+- SendSettings = 255
+- SendCommandsToAssetsWithOutdatedDaylightSavingsCommands
+- Pipeline
+- Code
+- Rectangle
+- Lambda
+- Unit Tests
+- UI
+- Angular 12
+- DynaMiX.API
+- FE
+- iFrame
+- (Kendo UI)
+- .Net 6 API
+- Repo
+- UI
+- Event Type: 4: Default
+- No Default
+- PSKKey
+- UI
+- Zero Dropped
+- DynaMiX
+- MiXFleet UI
+- Stress
+- Value
+- Config API
+- Next.js API route
+- UI
+- setupConfigAssetsGrid
+- setupConfigGroupsGrid
+- GetRemoraDevice
+- isRemora
+- mobile-units/{mobileUnitId}/dme-diagnostic-data
+- MobileUnitProxy
+- Property Bag
+- Reports/GetDiagnosticReportData
+- ReportsController
+- ConfigStatus Message
+- DP
+- FW
+- Message
+- Messages Table
+- Process
+- UI
+- Unit
+- BE
+- Client
+- DB
+- Nuget
+- Execute
+- ExecuteCommands
+- Daily
+- ETS-2976 Config Beta page - compile status not displayed
+- Helpful Dashboards Links
+- https://health-configdev.mixtelematics.com/public/mapshow.htm?id=2001&mapid=1A35514B-E08F-4B7C-90B8-CD1774AE8CA3
+- https://powerfleet.atlassian.net/browse/PFI-887
+- Fleet
+- Format [str, str]
+- Get
+- Invalidate
+- Invalidate Key in Cache
+- Item
+- Task 1
+- Jira SR Process
+- On Hold
+- Task
+- BE
+- Channelname
+- Configuration Groups
+- Controller
+- Justus FR Peripheral work
+- FR_UI
+- IframeHost
+- MFM
+- Old UI
+- ReceiveMessage
+- URLs
+- Knowledge Base KB
+- latestFirmwareDescription
+- libraryMobileDeviceManager
+- MiX.Video.Services.Api
+- AuthController
+- EnvironmentSettingsProvider
+- LoginView
+- route.ts (auth proxy)
+- route.ts (environments proxy)
+- Startup
+- AssetManager.GetDeviceConfigCameraSettingsAsync
+- GetCameraSettingsExtendedV2
+- MobileUnit_GetCameraSettingsExtendedV2
+- MobileUnitRepository.GetCameraSettingsExtendedV2
+- MyEnum
+- asset details page
+- change configuration status
+- check if a mu exist
+- Config Group
+- Configuration Changed
+- get_mobile_device
+- IMEI
+- mobile device settings
+- QA-6032
+- QA-6035
+- unique identifier
+- UpdateVin
+- VIN
+- FMS Engine Coolant Temperature
+- CONFIG-4030 TEST Get Pending Or Loaded Configuration Version For MobileUnit Command 102
+- RunAdjustments
+- RunDaylightSavingsCommand
+- FM
+- mobileunit.mobileunitproperties
+- UNIT_IMEI
+- Jira Open Issues
+- Jira Regression
+- LoggingAspect
+- Method1
+- Method2
+- LongReturningMethodAsync
+- Main
+- OE-518 Port all existing logic not catered for in other stories
+- OE-533 Move Assets Error
+- OE-538 Authentication and Permissions
+- 2021 Aba asset
+- 2021 Asa mobi
+- 2021 Tee
+- 2022 Asset
+- 22.5 Heavy
+- 22.5 Light
+- A new asset 1
+- Asset 400
+- Ayola trailer
+- Boat
+- Central Oil & Gas
+- CommandID 45
+- Engineering Field Trial - MiX6000
+- Mobile Team
+- Param1
+- Param2
+- Param3
+- Schlumberger-ASA-TMV-BMP
+- Shehaam's Test Units
+- AI python to see data issues
+- Automation Infrastructure Setup Guide
+- AWS Environments
+- Chatbot
+- Config diff
+- Diff Ideas — Future Roadmap
+- Global_Deployment_Guide
+- OPEN-1651
+- OPEN-1654
+- OPEN-1664
+- OPEN-1667
+- OPEN-1745
+- OPEN-1929
+- OPEN-1931
+- OPEN-2028
+- Operations Enablement
+- Operations Tools Looking forward 20260316
+- QBR Report for clients
+- Research/WhatsApp to API via n8n
+- AWS Pizza Restaurant Analogy
+- PowerfleetAutomationUI_Overview
+- Process and back to top
+- QueryDeviceCommand
+- QueueCommand
+- Redis Cache
+- Redis Cache with Command Pattern
+- Repository
+- Response (Serialised)
+- Return Cache for Key
+- S17
+- configurationGroupManager.UpdateAssetsConfigurationGroup
+- UpdateAssetConfigGroupAsync
+- UpdateAssetsConfigurationGroup
+- Sometimes Bool
+- Iridium Solution Integration Zeshan pdf
+- Make Device Available
+- StreamaxRepo
+- Success FALSE, Msg
+- Undo
+- Undo Update Repo
+- UndoCommands
+- Update Repo
+- UpdateDeviceCommand
+- AngularJS Component Architecture
+- Device Configuration
+- scripts
+- OE-539 Video Event Configuration action
+- 2026-07-13
+- SDLC Agent Rules
+- OE-481 iFrame
+- global-deployment-guide.md
+- 2026-07-16
+- SA Income Tax Brackets.md
+- 2026-07-21 Comp Meeting Cheat Sheet.md
+- automation-infra-setup-guide.md
+- operations-tools-looking-forward.md
+- 2026-07-21
+- 2026-07-22
+- 3. Dependencies and Connections
+- open-tickets-cluster2.md
+- ets-tickets-cluster4.md
+- 2026-07-24
 
 ## God Nodes (most connected - your core abstractions)
 1. `DONE` - 77 edges
@@ -3049,16 +3049,16 @@
   whatsapp-uluwatu-ram.html → whatsapp-stores-uluwatu.html
 - `UpdateActiveStateAsync` --calls|implements|references|conceptually_related_to--> `Microsoft Teams Integration Workflow Diagram`  [EXTRACTED]
   Excalidraw/Decommissioning MiX4000.excalidraw.md → Attachments/MicrosoftTeams-image (7).png
-- `mouseEnterHandler()` --references--> `url`  [EXTRACTED]
-  quartz/components/scripts/popover.inline.ts → package.json
+- `formatCrumb()` --calls--> `resolveRelative()`  [EXTRACTED]
+  quartz/components/Breadcrumbs.tsx → quartz/util/path.ts
+- `RenderComponents` --references--> `QuartzComponent`  [EXTRACTED]
+  quartz/components/renderPage.tsx → quartz/components/types.ts
 - `Item` --references--> `FullSlug`  [EXTRACTED]
   quartz/components/scripts/search.inline.ts → quartz/util/path.ts
-- `buildQuartz()` --calls--> `glob()`  [EXTRACTED]
-  quartz/build.ts → quartz/util/glob.ts
 
 ## Import Cycles
-- 3-file cycle: `quartz/cfg.ts -> quartz/components/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
 - 3-file cycle: `quartz/cfg.ts -> quartz/plugins/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
+- 3-file cycle: `quartz/cfg.ts -> quartz/components/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
 - 4-file cycle: `quartz/cfg.ts -> quartz/plugins/types.ts -> quartz/components/types.ts -> quartz/util/ctx.ts -> quartz/cfg.ts`
 
 ## Hyperedges (group relationships)
@@ -3072,28 +3072,28 @@
 ## Communities (3514 total, 1521 thin omitted)
 
 ### Community 0 - "types.ts"
-Cohesion: 0.10
-Nodes (19): NotFoundPage(), AliasRedirects(), Assets(), filesToCopy(), CNAME(), ComponentResources, ContentPage(), FolderPage() (+11 more)
+Cohesion: 0.08
+Nodes (48): FullPageLayout, QuartzConfig, headerRegex, pageResources(), RenderComponents, renderPage(), defaultContentPageLayout, defaultListPageLayout (+40 more)
 
 ### Community 1 - "index.ts"
-Cohesion: 0.09
-Nodes (42): Analytics, FullPageLayout, PageLayout, SharedLayout, ArticleTitle(), Backlinks(), Darkmode(), Options (+34 more)
+Cohesion: 0.10
+Nodes (35): ArticleTitle(), Backlinks(), BreadcrumbOptions, CrumbData, defaultOptions, formatCrumb(), ContentMetadata(), ContentMetaOptions (+27 more)
 
 ### Community 2 - "DONE"
 Cohesion: 0.04
-Nodes (58): RemoveDrafts(), ExplicitPublish(), Citations(), defaultOptions, Options, DataMap, defaultOptions, Description() (+50 more)
+Nodes (50): Citations(), defaultOptions, Options, DataMap, defaultOptions, Description(), Options, urlRegex (+42 more)
 
 ### Community 3 - "dependencies"
-Cohesion: 0.10
-Nodes (36): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+28 more)
+Cohesion: 0.11
+Nodes (29): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+21 more)
 
 ### Community 4 - "build.ts"
 Cohesion: 0.04
 Nodes (57): dependencies, async-mutex, chalk, chokidar, @clack/prompts, cli-spinner, d3, esbuild-sass-plugin (+49 more)
 
 ### Community 5 - "How to stop worrying and start living.md"
-Cohesion: 0.11
-Nodes (36): BreadcrumbOptions, CrumbData, defaultOptions, formatCrumb(), ExplorerNode(), generateSiteMap(), parseDependencies(), defaultOptions (+28 more)
+Cohesion: 0.10
+Nodes (37): DataWrapper, ExplorerNode(), ExplorerNodeProps, Options, OrderEntries, parseDependencies(), DataMap, defaultOptions (+29 more)
 
 ### Community 6 - "index.md"
 Cohesion: 0.04
@@ -3128,8 +3128,8 @@ Cohesion: 0.05
 Nodes (42): 20230731 DEV run 1, 20230731 INT Run 2, enhanced, 20230731 INT run 3, 20230801 INT 2, 20230801 INT Run 1, 20230801 RUN 3, 20230802 RUN 1, 20230804 INT 1 (+34 more)
 
 ### Community 14 - "path.ts"
-Cohesion: 0.14
-Nodes (24): GlobalConfiguration, ContentMetadata(), ContentMetaOptions, defaultOptions, Date(), formatDate(), getDate(), Props (+16 more)
+Cohesion: 0.10
+Nodes (24): Analytics, GlobalConfiguration, PageLayout, SharedLayout, Date(), formatDate(), getDate(), Props (+16 more)
 
 ### Community 15 - "MIX3K-9 MiX3000 Default Config Group.md"
 Cohesion: 0.13
@@ -3172,8 +3172,8 @@ Cohesion: 0.06
 Nodes (31): `api-integration.spec.ts` — 19 tests (no browser), Architecture — Cloud INT vs Local API, Architecture — `scan-gaps.ps1` (to be built), Category A: Infrastructure / Timing (now fixed in Run 3), Category B: Test Data Issues (env-dependent, not code bugs), Category C: FC Plus — Worker Fixture Crash (needs vehicle ID), `config-delta-write.spec.ts` — 13 tests (API layer + limited browser), Current gap state (2026-05-26) (+23 more)
 
 ### Community 25 - "Tel-84 Command sent twice"
-Cohesion: 0.09
-Nodes (31): addToVisited(), getVisited(), LinkData, NodeData, renderGlobalGraph(), renderGraph(), displayPreview(), displayResults() (+23 more)
+Cohesion: 0.07
+Nodes (41): checkboxId(), addToVisited(), getVisited(), LinkData, NodeData, renderGlobalGraph(), renderGraph(), mouseEnterHandler() (+33 more)
 
 ### Community 26 - "OE-501 SPIKE to create the multi-select config groups.md"
 Cohesion: 0.15
@@ -3392,8 +3392,8 @@ Cohesion: 0.11
 Nodes (17): BE, Branch, Calls, Client, CODE, Description, FE, FR API (+9 more)
 
 ### Community 82 - "MIX3K-89 Missing upgrade firmware button for MiX3000 devices"
-Cohesion: 0.12
-Nodes (16): author, bin, quartz, description, engines, node, npm, homepage (+8 more)
+Cohesion: 0.11
+Nodes (17): author, bin, quartz, description, engines, node, npm, homepage (+9 more)
 
 ### Community 83 - "OE-496 API Get config Groups and columns"
 Cohesion: 0.11
@@ -4204,8 +4204,8 @@ Cohesion: 0.22
 Nodes (8): API, BE, INT, Investigation, PRS, QA-7657 Camera Name not Chinese friendly, Shorter Description, TODO
 
 ### Community 293 - "SR-14277 Asset Manager Diagnostic Report - No Battery information shown"
-Cohesion: 0.12
-Nodes (14): DataWrapper, ExplorerNodeProps, FileNode, FolderState, getPathSegment(), Options, OrderEntries, MaybeHTMLElement (+6 more)
+Cohesion: 0.36
+Nodes (8): FolderState, MaybeHTMLElement, observer, setFolderState(), setupExplorer(), toggleCollapsedByPath(), toggleExplorer(), toggleFolder()
 
 ### Community 294 - "Description"
 Cohesion: 0.22
@@ -5120,7 +5120,7 @@ Cohesion: 0.33
 Nodes (5): Error Log, OPEN-494, Shorter Description, Steps, TODO
 
 ### Community 528 - "2026-01-28.md"
-Cohesion: 0.33
+Cohesion: 0.50
 Nodes (3): OPEN-696 Edit modal Temp displays briefly upon canceling without saving, Shorter Description, TODO
 
 ### Community 529 - "2026-01-29.md"
@@ -5140,8 +5140,8 @@ Cohesion: 0.33
 Nodes (5): Branch, PR, QA-7744 Language Kendo Items Selected, Shorter Description, TODO
 
 ### Community 533 - "2026-02-05.md"
-Cohesion: 0.14
-Nodes (16): url, checkboxId(), mouseEnterHandler(), p, announcer, cleanupFns, createRouter(), getOpts() (+8 more)
+Cohesion: 0.53
+Nodes (3): RemoveDrafts(), ExplicitPublish(), QuartzFilterPlugin
 
 ### Community 534 - "2026-02-06.md"
 Cohesion: 0.33
@@ -7960,7 +7960,7 @@ Cohesion: 0.50
 Nodes (3): Decision, Locally tested, Merge
 
 ### Community 1257 - "2024-11-25.md"
-Cohesion: 0.50
+Cohesion: 0.33
 Nodes (3): OPEN-694 AutoFill all the time, Shorter Description, TODO
 
 ### Community 1258 - "2024-11-26.md"
@@ -9052,7 +9052,7 @@ Cohesion: 0.50
 Nodes (3): Key Takeaways, Summary, Wiki Pages Updated
 
 ## Knowledge Gaps
-- **10032 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+10027 more)
+- **10033 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+10028 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1521 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -9063,13 +9063,13 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `DONE` connect `index.md` to `VM-83 MiXTalk final stretch`, `QA-4521 PaOBC Removing asset and removing device for NO phone number supplied`, `modFanart.md`, `qua35mm.md`, `VM-234 Incorrect assets displayed in Cascading list for MiXTalk`, `VM-234 Incorrect assets displayed in Cascading list for MiXTalk`, `TEL-17 [21.9 Waiting Paul] Extra thresholds (2)`, `OBC-289 event thresholds`, `OBC-68 Mobile device settings tab: Configure Event Thresholds`, `database_schema_diagram.md`, `SR-10440`, `Frangular Languaging Constructorpng.md`, `2024-10-25.md`, `Git Daily Merge Automation.md`, `Handover Dec 2023.md`, `Jira Open Issues.md`, `KafkaConsumers.png.md`, `OBC-360 (New endpoint - still needs loads of other things)`, `STM-28 Storing Streamax`, `STM-123 Method for Decommissioning of Streamax Device`, `OBC-401 Change the uniqueproperty "PhoneNumber" for Mobile Phone`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
-- **Why does `DepGraph` connect `global-deployment-guide.md` to `types.ts`, `index.ts`, `DONE`, `dependencies`, `How to stop worrying and start living.md`, `Tel-84 Command sent twice`?**
+- **Why does `DepGraph` connect `global-deployment-guide.md` to `types.ts`, `dependencies`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `Generates a consistent, visually distinct color for a given string.`, `Extracts the XML content from a T-SQL script variable.`, `Checks if a string represents a large integer, likely a unique ID.` to the rest of the system?**
-  _10043 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _10044 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `types.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.1028225806451613 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07859649122807018 - nodes in this community are weakly interconnected._
 - **Should `index.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.0879746835443038 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0985576923076923 - nodes in this community are weakly interconnected._
 - **Should `DONE` be split into smaller, more focused modules?**
-  _Cohesion score 0.03824561403508772 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.040674603174603176 - nodes in this community are weakly interconnected._
