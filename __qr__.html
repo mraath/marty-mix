@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Scan to Open on Phone</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+	<style>
+		body {
+			font-family: 'Segoe UI', sans-serif;
+			background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			margin: 0;
+		}
+		.box {
+			background: rgba(255,255,255,0.08);
+			border: 1px solid rgba(255,255,255,0.15);
+			border-radius: 20px;
+			padding: 40px;
+			text-align: center;
+			max-width: 420px;
+			backdrop-filter: blur(8px);
+		}
+		h1 { font-size: 1.4rem; margin-bottom: 8px; }
+		p { color: #a0c4d8; font-size: 0.88rem; margin-bottom: 24px; line-height: 1.6; }
+		#qrcode { display: flex; justify-content: center; margin-bottom: 24px; }
+		#qrcode canvas, #qrcode img { border-radius: 12px; border: 8px solid #fff; }
+		.url-box {
+			background: rgba(0,0,0,0.3);
+			border-radius: 8px;
+			padding: 10px 14px;
+			font-size: 0.82rem;
+			color: #7ec8e3;
+			word-break: break-all;
+			margin-bottom: 20px;
+		}
+		.open-btn {
+			display: inline-block;
+			background: linear-gradient(135deg, #25d366, #128c7e);
+			color: #fff;
+			text-decoration: none;
+			padding: 12px 28px;
+			border-radius: 50px;
+			font-weight: 600;
+			font-size: 0.95rem;
+		}
+		.steps {
+			background: rgba(255,255,255,0.05);
+			border-radius: 10px;
+			padding: 14px 18px;
+			text-align: left;
+			font-size: 0.8rem;
+			color: #a0c4d8;
+			line-height: 1.9;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1>📱 Open on Your Phone</h1>
+		<p>Scan the QR code with your phone camera.<br>
+		Make sure you are on the <strong>same WiFi</strong> as this laptop.</p>
+		<div id="qrcode"></div>
+		<div class="url-box">http://192.168.31.134:8080/whatsapp-dell-pro16-suppliers.html</div>
+		<a class="open-btn" href="http://192.168.31.134:8080/whatsapp-dell-pro16-suppliers.html" target="_blank">Open in This Browser</a>
+		<div class="steps">
+			1. Point your phone camera at the QR code<br>
+			2. Tap the notification / link that appears<br>
+			3. The store list opens in your phone browser<br>
+			4. Tap any WhatsApp button to message a store
+		</div>
+	</div>
+	<script>
+		new QRCode(document.getElementById('qrcode'), {
+			text: 'http://192.168.31.134:8080/whatsapp-dell-pro16-suppliers.html',
+			width: 256,
+			height: 256,
+			colorDark: '#000000',
+			colorLight: '#ffffff',
+			correctLevel: QRCode.CorrectLevel.M
+		});
+	</script>
+</body>
+</html>

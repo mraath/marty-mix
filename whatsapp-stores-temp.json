@@ -1,29 +1,83 @@
 [
-  {
-    "rank": 1,
-    "tier": 1,
-    "name": "Norton Bali Computer & Smartphone (Jimbaran)",
-    "address": "Jl. Uluwatu 2 No.02, Jimbaran, Badung",
-    "distance": "~5 km",
-    "phone": "628113979127",
-    "note": "Next to McDonald's Jimbaran"
-  },
-  {
-    "rank": 2,
-    "tier": 1,
-    "name": "Norton Service Center (Jimbaran)",
-    "address": "Jl. Uluwatu II No.2A, Jimbaran, Badung",
-    "distance": "~5 km",
-    "phone": "628224796954",
-    "note": "Next to McDonald's Jimbaran"
-  },
-  {
-    "rank": 3,
-    "tier": 2,
-    "name": "Norton Bali Computer & Smartphone (Taman Griya)",
-    "address": "Jalan Danau Batur Raya No 49C, Taman Griya, Badung",
-    "distance": "~15 km",
-    "phone": "6285792866013",
-    "note": "Main store / Store 1"
-  }
+	{
+		"rank": 1,
+		"tier": 1,
+		"name": "ElectronicsCrazy.sg (Retail Sales)",
+		"address": "39A Jalan Pemimpin, #05-05A, Halcyon Building, Singapore 577183",
+		"distance": "Singapore",
+		"phone": "6586561744",
+		"note": "Official Dell reseller & distributor — confirmed WhatsApp"
+	},
+	{
+		"rank": 2,
+		"tier": 1,
+		"name": "ElectronicsCrazy.sg (Corporate/Bulk Sales)",
+		"address": "39A Jalan Pemimpin, #05-05A, Halcyon Building, Singapore 577183",
+		"distance": "Singapore",
+		"phone": "6583571842",
+		"note": "Same store, second line — confirmed WhatsApp"
+	},
+	{
+		"rank": 3,
+		"tier": 1,
+		"name": "Century Tech",
+		"address": "24 Sin Ming Lane, #03-99, Midview City, Singapore 573970",
+		"distance": "Singapore",
+		"phone": "6581593856",
+		"note": "Authorized Dell distributor — confirmed WhatsApp"
+	},
+	{
+		"rank": 4,
+		"tier": 1,
+		"name": "Dacon Networks",
+		"address": "8 Ubi Road 2, #07-33 Zervex, Singapore 408538",
+		"distance": "Singapore",
+		"phone": "6568839762",
+		"note": "Dell distributor — this is a landline, may not open WhatsApp"
+	},
+	{
+		"rank": 5,
+		"tier": 2,
+		"name": "PC Image (West Malaysia e-store)",
+		"address": "Malaysia — nationwide e-store",
+		"distance": "Malaysia",
+		"phone": "601120912974",
+		"note": "Largest computer retailer in Malaysia — confirmed WhatsApp (e-store line)"
+	},
+	{
+		"rank": 6,
+		"tier": 2,
+		"name": "PC Image (East Malaysia e-store)",
+		"address": "Malaysia — nationwide e-store",
+		"distance": "Malaysia",
+		"phone": "601110808456",
+		"note": "Same company, East Malaysia line — confirmed WhatsApp"
+	},
+	{
+		"rank": 7,
+		"tier": 2,
+		"name": "ELANTECH",
+		"address": "Lot 568-3-68, Kompleks Mutiara, Jln Ipoh, 51200 Kuala Lumpur",
+		"distance": "Malaysia",
+		"phone": "60149321770",
+		"note": "Authorized Dell partner & reseller — confirmed WhatsApp"
+	},
+	{
+		"rank": 8,
+		"tier": 2,
+		"name": "M-LINK",
+		"address": "Pusat Teknologi Sinar Damansara, Kota Damansara, 47810 Petaling Jaya",
+		"distance": "Malaysia",
+		"phone": "60195530908",
+		"note": "Authorized Dell Technologies distributor — mobile number, WhatsApp not explicitly confirmed"
+	},
+	{
+		"rank": 9,
+		"tier": 2,
+		"name": "AceTeam Networks",
+		"address": "Damansara Intan, Jalan SS20/27, 47400 Petaling Jaya",
+		"distance": "Malaysia",
+		"phone": "60377277000",
+		"note": "Authorized Dell reseller — this is a landline, may not open WhatsApp"
+	}
 ]
