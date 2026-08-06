@@ -1,3 +1,7 @@
+---
+created: 2026-08-06T10:51
+updated: 2026-08-06T11:21
+---
 # Geotab QC Automation — System Map
 
 C4 draft (Context + Container) of what's already built, drawn from live code on `origin/integration` — not the boss's description, the actual repos. See [[GeoTab]] for the full write-up, raw messages, and the Kameel question list.
