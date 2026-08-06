@@ -149,6 +149,29 @@ Geotab-integrated camera: must be linked to a host GO unit's asset ID (Master Po
 - Manual sign-off items (camera mounting) should let the reviewer attach evidence (screenshot), not force an automated pass/fail.
 - **Asset trackers (81/85/86/87) and some legacy-integrated devices (e.g. GPS on locomotives) have a different Geotab-platform serial than the physical unit serial — the tool needs a serial-matching/lookup step, not a 1:1 assumption.** This is the concrete answer to gap #4 (serial number) — for GO units it's likely 1:1, but for asset trackers it explicitly is not, and nothing in OPEN-3192 appears to handle this resolution step.
 
+## Live Jira status — Operations Tools team only (checked 2026-08-06, direct REST — MCP unavailable this session, per standing fallback approval)
+
+Full unfiltered search hit 51 tickets containing "Geotab" — most belong to other teams (Config, DynaMiX, POS, etc.) and aren't relevant. Filtered to **Operations Tools** (verified via the Team custom field, `customfield_10001`, not just the AUTO- prefix guess):
+
+Corrects the 10-day-stale memory: **all 14 original OPEN-3192 child stories are now Done**, including OPEN-3254 (real INT/AU credentials — resolved, no longer a login blocker) and OPEN-3223. The epic OPEN-3192 itself is still showing **In Progress** despite that — looks like a bookkeeping gap (epic never formally closed), not unfinished work.
+
+**New find:** **OPEN-1531** — Spike, Done, assigned to **William King himself** — "Review spec for Advanced Geotab QC with Zoe, Olivier and Neil." Likely the origin of this whole initiative — may reference the same spec doc, or an earlier/different version of it. Worth asking William directly about this one.
+
+**Genuinely open (Ready for Sprint / Proposed), Operations Tools team, relevant to testing:**
+- **OPEN-3363** (Grant) — "Resolve coverage_gap: backend-unreachable Playwright E2E preflight." Test coverage gap on the exact feature being tested.
+- **OPEN-3362** (Grant) — "Harden qc/route.ts: error exposure, logging, unparsable-body policy." Proxy route not yet hardened — errors during testing may not surface cleanly.
+- **OPEN-3351** (Grant) — "Backfill missing self_review_gate entry for OPEN-3200." Pure bookkeeping.
+- **OPEN-3256** — "Remove hardcoded secrets from settings/.env files." Could touch the same appsettings that just got real Geotab creds via OPEN-3254 — watch it doesn't get merged in a way that breaks login mid-testing.
+- **OPEN-3262** — "SDLC - strengthen PR-time secrets warning." Process-only, low relevance.
+- **OPEN-3255** (Epic, Proposed) — parent of 3256/3262, "Hardcoded Secrets Remediation."
+
+**Confirmed NOT our team (Config team), despite being Geotab-related:** OPEN-3420 (Onboard Geotab to Compiler Service), OPEN-3421 (Digital Input Observation parameters for Geotab custom events), OPEN-3422 (AreMobileUnitsTachoEnabled). These looked relevant by name but belong to a different team — don't chase them as "our" open items, though OPEN-3421 may still be worth a cross-team question if it turns out to define the same Aux/digital-input parameters this epic's checks depend on.
+
+**Already Done, newly confirmed (not in prior memory):**
+- OPEN-3333 (Defect) — fixed Iridium/Panic QC checks silently excluding events with null `StartDateTime`.
+- OPEN-3404 / OPEN-3409 (Defects) — fixed unhandled proxy errors from resourcedata DNS resolution failures, INT and AU respectively.
+- OPEN-3353 — synced missing GEO scenario test cases into `test-suite.json`.
+
 ## Questions for Kameel (revised — most originals now answered by the doc)
 
 - **Scope confirmation:** is OPEN-3192 intentionally GO-unit-only for now (cameras/legacy Hub/asset-trackers as later phases), or did the epic miss scope that was supposed to be included?
