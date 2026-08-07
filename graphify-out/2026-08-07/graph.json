@@ -4166,7 +4166,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_depgraph_test",
-      "community": 3107,
+      "community": 0,
       "norm_label": "depgraph.test.ts"
     },
     {
@@ -4726,7 +4726,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_emitters_aliases",
-      "community": 0,
+      "community": 5,
       "norm_label": "aliases.ts"
     },
     {
@@ -5076,7 +5076,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_filters_draft",
-      "community": 0,
+      "community": 2,
       "norm_label": "draft.ts"
     },
     {
@@ -5086,7 +5086,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "quartz_plugins_filters_draft_removedrafts",
-      "community": 0,
+      "community": 2,
       "norm_label": "removedrafts()"
     },
     {
@@ -5096,7 +5096,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_filters_explicit",
-      "community": 0,
+      "community": 2,
       "norm_label": "explicit.ts"
     },
     {
@@ -5106,7 +5106,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "quartz_plugins_filters_explicit_explicitpublish",
-      "community": 0,
+      "community": 2,
       "norm_label": "explicitpublish()"
     },
     {
@@ -5116,7 +5116,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_filters_index",
-      "community": 0,
+      "community": 2,
       "norm_label": "index.ts"
     },
     {
@@ -6046,7 +6046,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "quartz_plugins_types",
-      "community": 0,
+      "community": 2,
       "norm_label": "types.ts"
     },
     {
@@ -6056,7 +6056,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "quartz_plugins_types_plugintypes",
-      "community": 3,
+      "community": 2,
       "norm_label": "plugintypes"
     },
     {
@@ -6066,7 +6066,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "quartz_plugins_types_optiontype",
-      "community": 0,
+      "community": 2,
       "norm_label": "optiontype"
     },
     {
@@ -6086,7 +6086,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "quartz_plugins_types_quartztransformerplugininstance",
-      "community": 0,
+      "community": 2,
       "norm_label": "quartztransformerplugininstance"
     },
     {
@@ -6096,7 +6096,7 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "quartz_plugins_types_quartzfilterplugin",
-      "community": 0,
+      "community": 2,
       "norm_label": "quartzfilterplugin"
     },
     {
@@ -6106,7 +6106,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "quartz_plugins_types_quartzfilterplugininstance",
-      "community": 0,
+      "community": 2,
       "norm_label": "quartzfilterplugininstance"
     },
     {
@@ -6126,7 +6126,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "quartz_plugins_types_quartzemitterplugininstance",
-      "community": 0,
+      "community": 2,
       "norm_label": "quartzemitterplugininstance"
     },
     {
@@ -53818,26 +53818,6 @@
       "norm_label": "notes created today"
     },
     {
-      "label": "2026-08-06.md",
-      "file_type": "document",
-      "source_file": "DailyNotes/2026-08-06.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "dailynotes_2026_08_06",
-      "community": 3516,
-      "norm_label": "2026-08-06.md"
-    },
-    {
-      "label": "Notes created today",
-      "file_type": "document",
-      "source_file": "DailyNotes/2026-08-06.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "dailynotes_2026_08_06_notes_created_today",
-      "community": 3516,
-      "norm_label": "notes created today"
-    },
-    {
       "label": "2026-01-01.md",
       "file_type": "document",
       "source_file": "DailyNotes/2026/2026-01-01.md",
@@ -66966,406 +66946,6 @@
       "id": "gemini_cli_tips_1_mil_context_window",
       "community": 173,
       "norm_label": "1 mil context window"
-    },
-    {
-      "label": "GeoTab System Map.md",
-      "file_type": "document",
-      "source_file": "GeoTab System Map.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "geotab_system_map",
-      "community": 3514,
-      "norm_label": "geotab system map.md"
-    },
-    {
-      "label": "Geotab QC Automation \u2014 System Map",
-      "file_type": "document",
-      "source_file": "GeoTab System Map.md",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "geotab_system_map_geotab_qc_automation_system_map",
-      "community": 3514,
-      "norm_label": "geotab qc automation \u2014 system map"
-    },
-    {
-      "label": "C1 \u2014 Context",
-      "file_type": "document",
-      "source_file": "GeoTab System Map.md",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "geotab_system_map_c1_context",
-      "community": 3514,
-      "norm_label": "c1 \u2014 context"
-    },
-    {
-      "label": "C2 \u2014 Container",
-      "file_type": "document",
-      "source_file": "GeoTab System Map.md",
-      "source_location": "L40",
-      "_origin": "ast",
-      "id": "geotab_system_map_c2_container",
-      "community": 3514,
-      "norm_label": "c2 \u2014 container"
-    },
-    {
-      "label": "Verdict states a run can end in",
-      "file_type": "document",
-      "source_file": "GeoTab System Map.md",
-      "source_location": "L70",
-      "_origin": "ast",
-      "id": "geotab_system_map_verdict_states_a_run_can_end_in",
-      "community": 3514,
-      "norm_label": "verdict states a run can end in"
-    },
-    {
-      "label": "GeoTab.md",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "geotab",
-      "community": 3514,
-      "norm_label": "geotab.md"
-    },
-    {
-      "label": "GeoTab",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "geotab_geotab",
-      "community": 3514,
-      "norm_label": "geotab"
-    },
-    {
-      "label": "Context",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "geotab_context",
-      "community": 3514,
-      "norm_label": "context"
-    },
-    {
-      "label": "Raw messages (chronological)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "geotab_raw_messages_chronological",
-      "community": 3514,
-      "norm_label": "raw messages (chronological)"
-    },
-    {
-      "label": "Boss, initial ask",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "geotab_boss_initial_ask",
-      "community": 3514,
-      "norm_label": "boss, initial ask"
-    },
-    {
-      "label": "User reply",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "geotab_user_reply",
-      "community": 3514,
-      "norm_label": "user reply"
-    },
-    {
-      "label": "Boss reply",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "geotab_boss_reply",
-      "community": 3514,
-      "norm_label": "boss reply"
-    },
-    {
-      "label": "Kameel Leeda \u2014 meeting recap link",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L39",
-      "_origin": "ast",
-      "id": "geotab_kameel_leeda_meeting_recap_link",
-      "community": 3514,
-      "norm_label": "kameel leeda \u2014 meeting recap link"
-    },
-    {
-      "label": "Reference doc shared (from someone to William, forwarded)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L45",
-      "_origin": "ast",
-      "id": "geotab_reference_doc_shared_from_someone_to_william_forwarded",
-      "community": 3514,
-      "norm_label": "reference doc shared (from someone to william, forwarded)"
-    },
-    {
-      "label": "SharePoint doc (Kameel's OneDrive, likely test steps/spec doc)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L51",
-      "_origin": "ast",
-      "id": "geotab_sharepoint_doc_kameel_s_onedrive_likely_test_steps_spec_doc",
-      "community": 3514,
-      "norm_label": "sharepoint doc (kameel's onedrive, likely test steps/spec doc)"
-    },
-    {
-      "label": "Boss follow-up",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L56",
-      "_origin": "ast",
-      "id": "geotab_boss_follow_up",
-      "community": 3514,
-      "norm_label": "boss follow-up"
-    },
-    {
-      "label": "People",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L63",
-      "_origin": "ast",
-      "id": "geotab_people",
-      "community": 3514,
-      "norm_label": "people"
-    },
-    {
-      "label": "MAJOR FINDING: this is already OPEN-3192 (built by this same SDLC agent system)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L68",
-      "_origin": "ast",
-      "id": "geotab_major_finding_this_is_already_open_3192_built_by_this_same_sdlc_agent_system",
-      "community": 3514,
-      "norm_label": "major finding: this is already open-3192 (built by this same sdlc agent system)"
-    },
-    {
-      "label": "Original 5 gaps \u2014 answered from repo evidence (2026-08-06)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L80",
-      "_origin": "ast",
-      "id": "geotab_original_5_gaps_answered_from_repo_evidence_2026_08_06",
-      "community": 3514,
-      "norm_label": "original 5 gaps \u2014 answered from repo evidence (2026-08-06)"
-    },
-    {
-      "label": "AU Installation Test Procedure \u2014 the actual spec doc (obtained 2026-08-06)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L90",
-      "_origin": "ast",
-      "id": "geotab_au_installation_test_procedure_the_actual_spec_doc_obtained_2026_08_06",
-      "community": 3514,
-      "norm_label": "au installation test procedure \u2014 the actual spec doc (obtained 2026-08-06)"
-    },
-    {
-      "label": "1. Unit types in scope (doc), vs what's actually built (OPEN-3192)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L96",
-      "_origin": "ast",
-      "id": "geotab_1_unit_types_in_scope_doc_vs_what_s_actually_built_open_3192",
-      "community": 3514,
-      "norm_label": "1. unit types in scope (doc), vs what's actually built (open-3192)"
-    },
-    {
-      "label": "2. Install config fields (drive which tests apply)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L111",
-      "_origin": "ast",
-      "id": "geotab_2_install_config_fields_drive_which_tests_apply",
-      "community": 3514,
-      "norm_label": "2. install config fields (drive which tests apply)"
-    },
-    {
-      "label": "3. Basic checks \u2014 every installation",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L116",
-      "_origin": "ast",
-      "id": "geotab_3_basic_checks_every_installation",
-      "community": 3514,
-      "norm_label": "3. basic checks \u2014 every installation"
-    },
-    {
-      "label": "4. CAN/OBD-derived checks \u2014 conditional, NOT standard QA",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L123",
-      "_origin": "ast",
-      "id": "geotab_4_can_obd_derived_checks_conditional_not_standard_qa",
-      "community": 3514,
-      "norm_label": "4. can/obd-derived checks \u2014 conditional, not standard qa"
-    },
-    {
-      "label": "5. Accessory mapping \u2014 Geotab GO unit (5.1, the part that matches what's built)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L126",
-      "_origin": "ast",
-      "id": "geotab_5_accessory_mapping_geotab_go_unit_5_1_the_part_that_matches_what_s_built",
-      "community": 3514,
-      "norm_label": "5. accessory mapping \u2014 geotab go unit (5.1, the part that matches what's built)"
-    },
-    {
-      "label": "6. Camera checks (5.2/5.3) \u2014 entirely unbuilt",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L143",
-      "_origin": "ast",
-      "id": "geotab_6_camera_checks_5_2_5_3_entirely_unbuilt",
-      "community": 3514,
-      "norm_label": "6. camera checks (5.2/5.3) \u2014 entirely unbuilt"
-    },
-    {
-      "label": "7. Dev-team notes (doc's own section 6)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L146",
-      "_origin": "ast",
-      "id": "geotab_7_dev_team_notes_doc_s_own_section_6",
-      "community": 3514,
-      "norm_label": "7. dev-team notes (doc's own section 6)"
-    },
-    {
-      "label": "Live Jira status \u2014 Operations Tools team only (checked 2026-08-06, direct REST \u2014 MCP unavailable this session, per standing fallback approval)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L152",
-      "_origin": "ast",
-      "id": "geotab_live_jira_status_operations_tools_team_only_checked_2026_08_06_direct_rest_mcp_unavailable_this_session_per_standing_fallback_approval",
-      "community": 3514,
-      "norm_label": "live jira status \u2014 operations tools team only (checked 2026-08-06, direct rest \u2014 mcp unavailable this session, per standing fallback approval)"
-    },
-    {
-      "label": "Questions for Kameel (revised \u2014 most originals now answered by the doc)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L175",
-      "_origin": "ast",
-      "id": "geotab_questions_for_kameel_revised_most_originals_now_answered_by_the_doc",
-      "community": 3514,
-      "norm_label": "questions for kameel (revised \u2014 most originals now answered by the doc)"
-    },
-    {
-      "label": "Login attempts",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L184",
-      "_origin": "ast",
-      "id": "geotab_login_attempts",
-      "community": 3514,
-      "norm_label": "login attempts"
-    },
-    {
-      "label": "Video review",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L187",
-      "_origin": "ast",
-      "id": "geotab_video_review",
-      "community": 3514,
-      "norm_label": "video review"
-    },
-    {
-      "label": "Diagramming approach",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L192",
-      "_origin": "ast",
-      "id": "geotab_diagramming_approach",
-      "community": 3514,
-      "norm_label": "diagramming approach"
-    },
-    {
-      "label": "Skill choice decided",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L199",
-      "_origin": "ast",
-      "id": "geotab_skill_choice_decided",
-      "community": 3514,
-      "norm_label": "skill choice decided"
-    },
-    {
-      "label": "C4 draft (2026-08-06) \u2014 what we DO understand",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L206",
-      "_origin": "ast",
-      "id": "geotab_c4_draft_2026_08_06_what_we_do_understand",
-      "community": 3514,
-      "norm_label": "c4 draft (2026-08-06) \u2014 what we do understand"
-    },
-    {
-      "label": "Level 1 \u2014 Context",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L214",
-      "_origin": "ast",
-      "id": "geotab_level_1_context",
-      "community": 3514,
-      "norm_label": "level 1 \u2014 context"
-    },
-    {
-      "label": "Level 2 \u2014 Container",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L234",
-      "_origin": "ast",
-      "id": "geotab_level_2_container",
-      "community": 3514,
-      "norm_label": "level 2 \u2014 container"
-    },
-    {
-      "label": "Legend",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L260",
-      "_origin": "ast",
-      "id": "geotab_legend",
-      "community": 3514,
-      "norm_label": "legend"
-    },
-    {
-      "label": "Assumptions in this draft",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L264",
-      "_origin": "ast",
-      "id": "geotab_assumptions_in_this_draft",
-      "community": 3514,
-      "norm_label": "assumptions in this draft"
-    },
-    {
-      "label": "To go further (optional)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L270",
-      "_origin": "ast",
-      "id": "geotab_to_go_further_optional",
-      "community": 3514,
-      "norm_label": "to go further (optional)"
-    },
-    {
-      "label": "Open questions (for later planning discussion)",
-      "file_type": "document",
-      "source_file": "GeoTab.md",
-      "source_location": "L273",
-      "_origin": "ast",
-      "id": "geotab_open_questions_for_later_planning_discussion",
-      "community": 3514,
-      "norm_label": "open questions (for later planning discussion)"
     },
     {
       "label": "Github Copilot.md",
@@ -94894,7 +94474,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1493_ui_for_salesforce_case_info",
-      "community": 3515,
+      "community": 330,
       "norm_label": "open-1493 ui for salesforce case info.md"
     },
     {
@@ -95394,7 +94974,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1576_add_ui_for_decom_automation_manually",
-      "community": 3515,
+      "community": 286,
       "norm_label": "open-1576 add ui for decom automation manually.md"
     },
     {
@@ -95584,7 +95164,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1601_setup_pipeline_for_the_powerfleet_automation_ui",
-      "community": 3515,
+      "community": 330,
       "norm_label": "open-1601 setup pipeline for the powerfleet automation ui.md"
     },
     {
@@ -96854,7 +96434,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "open_open_1730_change_the_ui_for_decomm",
-      "community": 3515,
+      "community": 286,
       "norm_label": "open-1730 change the ui for decomm.md"
     },
     {
@@ -139787,7 +139367,7 @@
       "community": 3173,
       "norm_label": "ac parent document",
       "community_name": "AC Parent Document",
-      "id": "ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_md"
+      "id": "ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_ac_md"
     },
     {
       "label": "OPEN-505: Identify channels for blurring diagram",
@@ -140715,7 +140295,7 @@
       "community": 2273,
       "norm_label": "geteventlist",
       "community_name": "Jira Regression.md",
-      "id": "done_done_done_done_done_done_done_done_done_done_done_done_done_done_done_done_geteventlist"
+      "id": "done_done_done_done_done_done_done_done_done_done_done_done_done_done_done_geteventlist"
     },
     {
       "label": "SR-11406 ENT EKS Infohub User Error",
@@ -149277,7 +148857,7 @@
       "community": 2542,
       "norm_label": "filters documentation",
       "community_name": "titlegeneratorforwrittenpiecesAwesome.md",
-      "id": "filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_md"
+      "id": "filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_filters_md"
     },
     {
       "label": ".npmrc",
@@ -204342,16 +203922,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "DailyNotes/2026-08-06.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "dailynotes_2026_08_06",
-      "target": "dailynotes_2026_08_06_notes_created_today",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "DailyNotes/2026/2026-01-01.md",
       "source_location": "L23",
       "weight": 1.0,
@@ -215377,396 +214947,6 @@
       "weight": 1.0,
       "source": "gemini_cli_tips",
       "target": "gemini_cli_tips_when_to_compress_your_context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L208",
-      "weight": 1.0,
-      "source": "geotab",
-      "target": "geotab_system_map",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab System Map.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "geotab_system_map",
-      "target": "geotab_system_map_geotab_qc_automation_system_map",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab System Map.md",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "geotab_system_map_geotab_qc_automation_system_map",
-      "target": "geotab_system_map_c1_context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab System Map.md",
-      "source_location": "L40",
-      "weight": 1.0,
-      "source": "geotab_system_map_geotab_qc_automation_system_map",
-      "target": "geotab_system_map_c2_container",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab System Map.md",
-      "source_location": "L70",
-      "weight": 1.0,
-      "source": "geotab_system_map_geotab_qc_automation_system_map",
-      "target": "geotab_system_map_verdict_states_a_run_can_end_in",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "geotab",
-      "target": "geotab_geotab",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L90",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_au_installation_test_procedure_the_actual_spec_doc_obtained_2026_08_06",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L206",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_c4_draft_2026_08_06_what_we_do_understand",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L192",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_diagramming_approach",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L152",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_live_jira_status_operations_tools_team_only_checked_2026_08_06_direct_rest_mcp_unavailable_this_session_per_standing_fallback_approval",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L184",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_login_attempts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L68",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_major_finding_this_is_already_open_3192_built_by_this_same_sdlc_agent_system",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L273",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_open_questions_for_later_planning_discussion",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L80",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_original_5_gaps_answered_from_repo_evidence_2026_08_06",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L63",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_people",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L175",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_questions_for_kameel_revised_most_originals_now_answered_by_the_doc",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_raw_messages_chronological",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L187",
-      "weight": 1.0,
-      "source": "geotab_geotab",
-      "target": "geotab_video_review",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L56",
-      "weight": 1.0,
-      "source": "geotab_raw_messages_chronological",
-      "target": "geotab_boss_follow_up",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "geotab_raw_messages_chronological",
-      "target": "geotab_boss_initial_ask",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L29",
-      "weight": 1.0,
-      "source": "geotab_raw_messages_chronological",
-      "target": "geotab_boss_reply",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "geotab_raw_messages_chronological",
-      "target": "geotab_kameel_leeda_meeting_recap_link",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L45",
-      "weight": 1.0,
-      "source": "geotab_raw_messages_chronological",
-      "target": "geotab_reference_doc_shared_from_someone_to_william_forwarded",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L51",
-      "weight": 1.0,
-      "source": "geotab_raw_messages_chronological",
-      "target": "geotab_sharepoint_doc_kameel_s_onedrive_likely_test_steps_spec_doc",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "geotab_raw_messages_chronological",
-      "target": "geotab_user_reply",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L96",
-      "weight": 1.0,
-      "source": "geotab_au_installation_test_procedure_the_actual_spec_doc_obtained_2026_08_06",
-      "target": "geotab_1_unit_types_in_scope_doc_vs_what_s_actually_built_open_3192",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L111",
-      "weight": 1.0,
-      "source": "geotab_au_installation_test_procedure_the_actual_spec_doc_obtained_2026_08_06",
-      "target": "geotab_2_install_config_fields_drive_which_tests_apply",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L116",
-      "weight": 1.0,
-      "source": "geotab_au_installation_test_procedure_the_actual_spec_doc_obtained_2026_08_06",
-      "target": "geotab_3_basic_checks_every_installation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L123",
-      "weight": 1.0,
-      "source": "geotab_au_installation_test_procedure_the_actual_spec_doc_obtained_2026_08_06",
-      "target": "geotab_4_can_obd_derived_checks_conditional_not_standard_qa",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L126",
-      "weight": 1.0,
-      "source": "geotab_au_installation_test_procedure_the_actual_spec_doc_obtained_2026_08_06",
-      "target": "geotab_5_accessory_mapping_geotab_go_unit_5_1_the_part_that_matches_what_s_built",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L143",
-      "weight": 1.0,
-      "source": "geotab_au_installation_test_procedure_the_actual_spec_doc_obtained_2026_08_06",
-      "target": "geotab_6_camera_checks_5_2_5_3_entirely_unbuilt",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L146",
-      "weight": 1.0,
-      "source": "geotab_au_installation_test_procedure_the_actual_spec_doc_obtained_2026_08_06",
-      "target": "geotab_7_dev_team_notes_doc_s_own_section_6",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L199",
-      "weight": 1.0,
-      "source": "geotab_diagramming_approach",
-      "target": "geotab_skill_choice_decided",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L264",
-      "weight": 1.0,
-      "source": "geotab_c4_draft_2026_08_06_what_we_do_understand",
-      "target": "geotab_assumptions_in_this_draft",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L260",
-      "weight": 1.0,
-      "source": "geotab_c4_draft_2026_08_06_what_we_do_understand",
-      "target": "geotab_legend",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L214",
-      "weight": 1.0,
-      "source": "geotab_c4_draft_2026_08_06_what_we_do_understand",
-      "target": "geotab_level_1_context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L234",
-      "weight": 1.0,
-      "source": "geotab_c4_draft_2026_08_06_what_we_do_understand",
-      "target": "geotab_level_2_container",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "GeoTab.md",
-      "source_location": "L270",
-      "weight": 1.0,
-      "source": "geotab_c4_draft_2026_08_06_what_we_do_understand",
-      "target": "geotab_to_go_further_optional",
       "confidence_score": 1.0
     },
     {
@@ -278708,5 +277888,5 @@
       "source_file": "Attachments/MicrosoftTeams-image (13).png"
     }
   ],
-  "built_at_commit": "d0e7b5d8ee5e044e93d3e81252d9a113779fa65c"
+  "built_at_commit": "a5fe00e12c635c37c2cc7409afeae4f5f189385c"
 }

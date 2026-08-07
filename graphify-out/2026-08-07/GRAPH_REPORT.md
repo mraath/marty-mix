@@ -1,16 +1,16 @@
-# Graph Report - marty-mix  (2026-08-07)
+# Graph Report - marty-mix  (2026-08-03)
 
 ## Corpus Check
-- 3111 files · ~9,875,211 words
+- 3108 files · ~9,867,648 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 14826 nodes · 12655 edges · 3517 communities (1995 shown, 1522 thin omitted)
+- 14784 nodes · 12615 edges · 3514 communities (1993 shown, 1521 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.62)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d0e7b5d8`
+- Built from commit: `a5fe00e1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -3031,8 +3031,6 @@
 - [[_COMMUNITY_open-tickets-cluster2|open-tickets-cluster2.md]]
 - [[_COMMUNITY_ets-tickets-cluster4|ets-tickets-cluster4.md]]
 - [[_COMMUNITY_2026-07-24|2026-07-24]]
-- [[_COMMUNITY_GeoTab|GeoTab]]
-- [[_COMMUNITY_2026-08-06|2026-08-06.md]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `DONE` - 77 edges
@@ -3071,11 +3069,11 @@
 - **Images Related to Config Compiler Alert Configuration** — config_test_lft_requestpart_for_pallavi_new_client_1, configure_alerts_for_new_config_compiler_condition [EXTRACTED]
 - **Integration Flow with Microsoft Teams and Mobile Device Templates** — src_auth_session, src_microsoftteams_flowchart [EXTRACTED 0.75]
 
-## Communities (3517 total, 1522 thin omitted)
+## Communities (3514 total, 1521 thin omitted)
 
 ### Community 0 - "types.ts"
-Cohesion: 0.09
-Nodes (26): NotFoundPage(), AliasRedirects(), Assets(), filesToCopy(), CNAME(), ComponentResources, ContentPage(), FolderPage() (+18 more)
+Cohesion: 0.10
+Nodes (19): NotFoundPage(), AliasRedirects(), Assets(), filesToCopy(), CNAME(), ComponentResources, ContentPage(), FolderPage() (+11 more)
 
 ### Community 1 - "index.ts"
 Cohesion: 0.09
@@ -3083,11 +3081,11 @@ Nodes (42): Analytics, FullPageLayout, PageLayout, SharedLayout, ArticleTitle(),
 
 ### Community 2 - "DONE"
 Cohesion: 0.04
-Nodes (50): Citations(), defaultOptions, Options, DataMap, defaultOptions, Description(), Options, urlRegex (+42 more)
+Nodes (58): RemoveDrafts(), ExplicitPublish(), Citations(), defaultOptions, Options, DataMap, defaultOptions, Description() (+50 more)
 
 ### Community 3 - "dependencies"
-Cohesion: 0.09
-Nodes (37): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+29 more)
+Cohesion: 0.10
+Nodes (36): BuildData, buildQuartz(), Dependencies, FileEvent, partialRebuildFromEntrypoint(), TODO: we can probably traverse the link graph to figure out what's safe to delet, rebuildFromEntrypoint(), startServing() (+28 more)
 
 ### Community 4 - "build.ts"
 Cohesion: 0.04
@@ -4178,7 +4176,7 @@ Cohesion: 0.22
 Nodes (7): OE-562 Language count, Shorter Description, TODO, Fixes, OE-590 Grammar for single Config group, Shorter Description, TODO
 
 ### Community 286 - "OPEN-1186 Alert column should be a number"
-Cohesion: 0.22
+Cohesion: 0.18
 Nodes (9): Branch, Description (from Jira), Further Chat Notes, Integration with OPEN-1730, OPEN-1576 Add UI for Support to Supply Salesforce Case Info and Start Decom Automation Manually, Overloaded Endpoint, PR Checklist, Start Here Tomorrow — Priority Checklist (+1 more)
 
 ### Community 287 - "OPEN-1601 Setup Pipeline for the Powerfleet Automation UI"
@@ -4354,7 +4352,7 @@ Cohesion: 0.25
 Nodes (8): AI, Another help regarding fields, Answer 1, Answer 2, Answers, First question - gemini, Question 3 - AG (field info etc), Second question - Antigravity (flash)
 
 ### Community 330 - "QA-5583 Speeding not available for selection"
-Cohesion: 0.25
+Cohesion: 0.20
 Nodes (6): Branch, Code, OPEN-1663 API DEV issues, PR, Shorter Description, TODO
 
 ### Community 331 - "QA-5849 GetStatus Command not populating table"
@@ -9053,14 +9051,10 @@ Nodes (4): Key Takeaways, New Entities/Concepts, Summary, Wiki Pages Updated
 Cohesion: 0.50
 Nodes (3): Key Takeaways, Summary, Wiki Pages Updated
 
-### Community 3514 - "GeoTab"
-Cohesion: 0.05
-Nodes (38): 1. Unit types in scope (doc), vs what's actually built (OPEN-3192), 2. Install config fields (drive which tests apply), 3. Basic checks — every installation, 4. CAN/OBD-derived checks — conditional, NOT standard QA, 5. Accessory mapping — Geotab GO unit (5.1, the part that matches what's built), 6. Camera checks (5.2/5.3) — entirely unbuilt, 7. Dev-team notes (doc's own section 6), Assumptions in this draft (+30 more)
-
 ## Knowledge Gaps
-- **10065 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+10060 more)
+- **10032 isolated node(s):** `fs`, `path`, `rootDir`, `templatesDir`, `cdnTemplatesDir` (+10027 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1522 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1521 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -9069,13 +9063,13 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `DONE` connect `index.md` to `VM-83 MiXTalk final stretch`, `QA-4521 PaOBC Removing asset and removing device for NO phone number supplied`, `modFanart.md`, `qua35mm.md`, `VM-234 Incorrect assets displayed in Cascading list for MiXTalk`, `VM-234 Incorrect assets displayed in Cascading list for MiXTalk`, `TEL-17 [21.9 Waiting Paul] Extra thresholds (2)`, `OBC-289 event thresholds`, `OBC-68 Mobile device settings tab: Configure Event Thresholds`, `database_schema_diagram.md`, `SR-10440`, `Frangular Languaging Constructorpng.md`, `2024-10-25.md`, `Git Daily Merge Automation.md`, `Handover Dec 2023.md`, `Jira Open Issues.md`, `KafkaConsumers.png.md`, `OBC-360 (New endpoint - still needs loads of other things)`, `STM-28 Storing Streamax`, `STM-123 Method for Decommissioning of Streamax Device`, `OBC-401 Change the uniqueproperty "PhoneNumber" for Mobile Phone`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
+- **Why does `DepGraph` connect `global-deployment-guide.md` to `types.ts`, `index.ts`, `DONE`, `dependencies`, `How to stop worrying and start living.md`, `Tel-84 Command sent twice`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `Generates a consistent, visually distinct color for a given string.`, `Extracts the XML content from a T-SQL script variable.`, `Checks if a string represents a large integer, likely a unique ID.` to the rest of the system?**
-  _10076 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _10043 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `types.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.08637873754152824 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.1028225806451613 - nodes in this community are weakly interconnected._
 - **Should `index.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.0879746835443038 - nodes in this community are weakly interconnected._
 - **Should `DONE` be split into smaller, more focused modules?**
-  _Cohesion score 0.040674603174603176 - nodes in this community are weakly interconnected._
-- **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.09398496240601503 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.03824561403508772 - nodes in this community are weakly interconnected._
