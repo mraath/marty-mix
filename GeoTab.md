@@ -172,6 +172,24 @@ Corrects the 10-day-stale memory: **all 14 original OPEN-3192 child stories are 
 - OPEN-3404 / OPEN-3409 (Defects) — fixed unhandled proxy errors from resourcedata DNS resolution failures, INT and AU respectively.
 - OPEN-3353 — synced missing GEO scenario test cases into `test-suite.json`.
 
+## NotebookLM outputs (2026-08-06)
+
+Created a "GeoTab" NotebookLM notebook (source: [[GeoTab Overview Transcript]]), generated a video explainer and slide deck from it. Both downloaded into the vault:
+- ![[GeoTab Explainer Video.mp4]]
+- Slide deck: [[GeoTab Slide Deck.pptx]] (also available as `Geotab_QA_Protocol.pdf` in the NotebookLM notebook itself)
+
+Note: `notebooklm-py`'s CLI in this venv crashes (`ModuleNotFoundError: No module named 'difflib'`) whenever a short flag (`-n`, `-a`) is passed with a UUID value — the venv's Python install is missing the stdlib `difflib` module, which click's arg-parser needs for its "did you mean" suggestions. Workaround: never pass `-n`/`-a`; rely on `notebooklm use <id>` context + `--latest` default instead.
+
+## Podcast-style AI transcript (secondary source, 2026-08-06)
+
+Full file: [[GeoTab Podcast Transcript]]. This is an AI-synthesized "podcast" recap of the same call as [[GeoTab Overview Transcript]] — **secondary/derived, not verbatim.** Per instruction: where it conflicts with the primary doc or raw transcript, the primary sources win.
+
+Mostly corroborates the AU spec doc closely (CAN/OBD-on-request, GO self-reporting, serial-number lookup, duress dual-input, log export cap, Wi-Fi/Santos behavior, legacy FT1/MGS/asset-tracker/Guardian handling, automation vision). **New claims not found elsewhere — unconfirmed, need Kameel to verify:**
+- "RideView app" as the named installer camera-alignment tool
+- IMEI-vs-billing-system fallback for camera verification through Master Portal
+- Camera assignment also depends on "duty type"/heavy-vehicle classification
+- Framing serial-number-only lookup as a workaround for skipped forms (doc/raw transcript describe it as the normal flow, not a fallback)
+
 ## Questions for Kameel (revised — most originals now answered by the doc)
 
 - **Scope confirmation:** is OPEN-3192 intentionally GO-unit-only for now (cameras/legacy Hub/asset-trackers as later phases), or did the epic miss scope that was supposed to be included?
@@ -184,10 +202,17 @@ Corrects the 10-day-stale memory: **all 14 original OPEN-3192 child stories are 
 ## Login attempts
 - 2026-08-06: user tried https://my.geotab.com/ with OpsTools access info — sign-in failed. Cause not yet diagnosed.
 
+## Status (2026-08-06)
+William wants this investigated today. Doc obtained + Jira checked. User now watching the AU Test Steps video (Kameel recap link), will report back before continuing.
+
+## Manual QA workflow C4 (2026-08-13)
+Diagrammed the *existing manual* QA/work-order system (distinct from the OPEN-3192 automation tool) from the call transcript via the `c4-model` skill. Full file: [[GeoTab Manual QA Workflow]]. Thin source (transcript gap 3:20→56:07) — heavily assumption-tagged, especially the "FC Platform" identity and non-Geotab device-type branches.
+
 ## Video review
-- User watching AU Test Steps video (Kameel recap link) themselves.
-- User asked Claude to watch + transcribe. Claude cannot access Teams/SharePoint protected video (needs SSO, same tenant login) and has no audio/video ingestion tool anyway.
-- Plan: user pastes transcript (Teams auto-transcript export, or manual notes) into chat/file once available; Claude adds key takeaways here after.
+- User watched AU Test Steps video (Kameel recap link) themselves, pasted the Teams auto-transcript.
+- Full transcript + key takeaways: [[GeoTab Overview Transcript]]
+- **Confirms the AU spec doc almost word-for-word** (transcript only covers first ~3.5 min + last few seconds, gap 3:20→56:07 not pasted): CAN/OBD data only checked if customer asks, Geotab GO units self-report so minimal manual checking needed, basic check = GPS + ignition (RPM-based or other source), lookup is by device serial number, "verify status" for a Geotab device checks MyGeotab/MyAdmin. No contradictions found — this is Kameel getting the same process live that the doc describes in writing.
+- "Four platform" in the transcript is likely a mishearing of "FC platform" (legacy Fleet Complete/Unity Hub) — not a new platform name, flagged as a transcription artifact in the file.
 
 ## Diagramming approach
 - User plans Excalidraw diagram of GeoTab system, researched diagramming methods first.
