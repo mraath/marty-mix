@@ -1,3 +1,7 @@
+---
+created: 2026-08-14T12:47
+updated: 2026-08-14T12:47
+---
 # GeoTab
 
 Status: intake, no plan yet. Raw dump of boss messages below. Jira/planning discussion comes after user done pasting.
@@ -140,6 +144,8 @@ Fuel level and RPM, sourced via OBD-II only, **only surfaced when the customer s
 
 **This table directly resolves the "harsh-driving rule names" and "DIN-to-Aux wiring" unknowns for the accessories it covers** — but note the doc never uses the term "harsh driving" or "exception events" the way OPEN-3199's ticket text does. That ticket's framing may not map 1:1 onto this doc — worth clarifying with Kameel whether "exception events" means the duress/buzzer/GoTalk triggers above, or something else entirely.
 
+**Correction (2026-08-14, [[GeoTab Code Audit]]):** the line above — "now answered" for DIN-to-Aux wiring — turned out to be wrong once actually checked against the code. `GeotabQCManager.cs` never implements Aux 1-4 as distinct checks; all four are folded into a single `DigitalInputs` stub that always returns `NotTested`, with a comment saying the wiring mapping still needs technical-team confirmation. The doc reading it as "resolved" doesn't match what got built.
+
 ### 6. Camera checks (5.2/5.3) — entirely unbuilt
 Geotab-integrated camera: must be linked to a host GO unit's asset ID (Master Portal) — cannot exist standalone. Checks: linkage, communication (recent "last data"), live view (screenshot as evidence), mounting/safe-zone (**explicitly manual/visual sign-off, not automatable** — head/torso in zone, horizon mid-frame). Hub/Unity camera: same idea but assigned as its own asset, no host GO unit, viewed via Vision AI Hub > Trips > Live Stream.
 
@@ -189,6 +195,17 @@ Mostly corroborates the AU spec doc closely (CAN/OBD-on-request, GO self-reporti
 - IMEI-vs-billing-system fallback for camera verification through Master Portal
 - Camera assignment also depends on "duty type"/heavy-vehicle classification
 - Framing serial-number-only lookup as a workaround for skipped forms (doc/raw transcript describe it as the normal flow, not a fallback)
+
+## Code audit (2026-08-14)
+
+Full write-up: [[GeoTab Code Audit]]. Read `GeotabQCManager.cs`/`GeotabQCFormView.tsx` directly off `origin/integration` (both local repo checkouts were stale, don't trust a local clone for this) and cross-checked all 17 Jira child tickets under OPEN-3192 against the actual code. Headline findings:
+
+- **🔴 Urgent: `appsettings.INT.json`/`appsettings.AU.json` on `origin/integration` contain real, cleartext Geotab credentials** — exactly what OPEN-3256 ("remove hardcoded secrets") was opened to fix, and that ticket is still open. This is a live exposure, not a stale risk. Needs a decision from William/you, not just a test-plan caveat.
+- **Aux 1-4 are not implemented** — see the correction above. The doc's "resolved" framing was wrong.
+- **`GeotabAsset` (OPEN-3194) is dead code** — never used by the real QC flow, which instead keys off `SalesforceCase.UniqueIdentifier` (the UI's "IMEI" field) searched against Geotab's own `Device.SerialNumber`. `Initializer.cs`'s own comments confirm OPEN-3195 removed OPEN-3194's original DI wiring.
+- **IgnitionSource can only return Pending through the built UI** — no form field sets `GeotabInstallType`, so its Pass/Fail branches are unreachable outside a direct API call.
+- **Geotab login is hostname-gated to exactly two URLs**: `automation.mixdevelopment.com` (INT), `automation-au.mixtelematics.com` (AU) — the option isn't rendered at all elsewhere.
+- Every one of the 17 Jira tickets under the epic has matching code — no "Done" ticket with nothing behind it. The two issues above are quality problems inside otherwise-real work, not missing work.
 
 ## Questions for Kameel (revised — most originals now answered by the doc)
 
