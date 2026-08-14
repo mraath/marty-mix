@@ -1,37 +1,46 @@
 ---
-type: entity
-entity_type: Concept
-name: 2026 Salary Increase and Bonus Review
-aliases: [Comp Review 2026, Salary Review 2026/27]
-sources:
-  - raw/2026-07-21 Comp Meeting Cheat Sheet.md
-  - raw/2026-07-21 Draft Email to Managers - Comp Review.md
-created: 2026-07-21
-last_updated: 2026-07-24
+created: 2026-08-14T16:40
+updated: 2026-08-14T16:40
 ---
+---
+title: 2026 Salary Increase and Bonus Review
+source: C:/Projects/marty-mix/wiki/raw/2026-07-21 Comp Meeting Cheat Sheet.md, C:/Projects/marty-mix/wiki/raw/2026-07-21 Draft Email to Managers - Comp Review.md
+source_date: 2026-07-21
+source_author: Marthinus
+created: 2026-08-14
+tags: [career, finance, compensation]
+status: seed
 
-Marthinus's 2026/27 compensation review — a data-driven analysis of salary increase and bonus proposed vs. historical patterns, using 4 years of IRP5 records cross-referenced with Stats SA CPI data.
+# 2026 Salary Increase and Bonus Review
 
-## Key Facts
+## Context
+This page synthesizes the compensation analysis from two source documents:
 
-- **Proposed increase:** 4.00% (vs. 3.2% CPI) → real gain +0.80pp (less than half of prior years' ~1.5–1.8pp)
-- **Proposed bonus:** R19,000 → 1.81% of base salary (vs. consistent 8.7–9.4% pattern over 4 years — a ~78% cut in percentage terms)
-- **Data source:** IRP5 records for 2023/24 through 2026/27, Stats SA CPI figures
-- **Context:** Strong performance year with positive feedback from management
-- **Status:** Draft email prepared, meeting cheat sheet created — pending delivery to managers
+1. [[2026-07-21 Comp Meeting Cheat Sheet]]
+2. [[2026-07-21 Draft Email to Managers - Comp Review]]
 
-## Connections
+## Key Findings
+- Real salary gain reduced from average 1.64 pp to 0.80 pp
+- Bonus percentage dropped from 8.7–9.4% to 1.81% (78% reduction)
+- Both metrics represent significant deviations from historical patterns
 
-- [[SA Income Tax Brackets]] — used for after-tax analysis; consistent top marginal bracket means gross comparisons aren't distorted by tax
-- [[Comp Meeting Cheat Sheet]] — 15-minute meeting prep document
-- [[Draft Email to Managers — Comp Review]] — follow-up email with full data table
+## Analysis
+The proposed 2026/27 compensation package shows two notable discrepancies compared to four-year trends:
 
-## Timeline
+1. **Real Salary Gain**
+   - Historical average: +1.62 to +1.80 percentage points above CPI
+   - Proposed: +0.80 percentage points (less than half of historical gains)
 
-- **2026-07-21** — Analysis completed, cheat sheet and draft email created
-- **Pending** — Delivery to managers (email + meeting)
+2. **Bonus Structure**
+   - Historical average: 8.7–9.4% of base salary
+   - Proposed: 1.81% of base salary (78% reduction from average)
 
-## Open Questions
+## Impact
+The proposed compensation changes have had a stronger negative psychological impact than expected, particularly due to:
+- The bonus reduction representing a fundamental shift from historical patterns
+- The real salary gain being the smallest in four years despite positive performance feedback
 
-- Has the email been sent or the meeting held?
-- Outcome of management escalation — was there room to close the gap?
+## Next Steps
+- [ ] Follow-up meeting with managers
+- [ ] Written submission of numerical analysis
+- [ ] Discussion of potential alternatives
