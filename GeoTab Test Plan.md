@@ -1,5 +1,6 @@
 ---
 created: 2026-08-14
+updated: 2026-08-14T12:07
 ---
 # GeoTab QC Automation — Test Plan
 
@@ -34,6 +35,8 @@ Before any manual testing, confirm these pass on the target branch (`origin/inte
 
 **Approach:** one test case per implemented check (table below), run against a real asset, compare tool verdict to expected outcome reasoned from the asset's known state.
 
+**Install-config prerequisite:** per the AU Installation Test Procedure spec ([[GeoTab]]), which accessory checks apply to a given asset depends on that unit's actual install config (install method OBD vs Wired, harness type, and which accessories were flagged on its work order — NFC, Aux 1-4, duress, buzzer, GoTalk, Iridium, Wi-Fi). Confirm each test asset's fitted accessories before testing — an accessory check can't be meaningfully exercised (Pass or Fail) against a unit that doesn't have that accessory installed.
+
 ### 3.3 Cross-validation against the manual process (highest-value test)
 
 Ground truth for "is this verdict correct" isn't a spec — it's Kritiya Shrestha's existing manual QC judgement. Pick a sample of real work orders she's already manually QC'd in AU (mix of pass and fail cases if available), run the same serial numbers through the automated tool, compare verdicts side by side.
@@ -46,6 +49,10 @@ Ground truth for "is this verdict correct" isn't a spec — it's Kritiya Shresth
 - The 4 stubbed checks (DigitalInputs, ExceptionEvents/harsh driving, VideoPeripheral, VideoRecordings) always return `NotTested` — don't write test cases expecting a real verdict, track as future work instead
 - Placeholder thresholds (HDOP value, ignition KnownId, voltage 11.0V/3.5V, buzzer/GoTalk event source) — a Fail here may mean "wrong threshold," not "real defect." Flag to Kameel rather than logging as a bug until confirmed
 - Non-Geotab unit types — no test cases, nothing built
+- **CAN/OBD-derived checks (fuel level, RPM)** — per the AU spec doc, these are only surfaced when a customer specifically requests them, not part of standard pass/fail, and nothing in OPEN-3192 builds them. No test cases.
+- **Aux 5-8 (secondary, customer-labelled)** — non-standard, customer-agreed labels per the doc; not part of the built check set. No test cases.
+- **Other/legacy IOX (relay kit)** — doc marks this manual-verification-only, no log field exists to automate against. No test cases.
+- **Camera checks (Geotab-integrated or Hub/Unity)** — entirely unbuilt per the AU spec doc (linkage, comms, live view, mounting sign-off all require Master Portal/Vision AI Hub integration that doesn't exist in this epic). No test cases.
 
 ## 4. Phased sequence
 
@@ -88,15 +95,19 @@ Ground truth for "is this verdict correct" isn't a spec — it's Kritiya Shresth
 - **OPEN-3362** (route.ts not yet hardened) — errors may not surface cleanly; a real backend error could look like a false test failure
 - **OPEN-3256** (remove hardcoded secrets, parent epic OPEN-3255) — touches the same appsettings that just got real Geotab creds (OPEN-3254); if merged mid-testing could break login unexpectedly — watch it
 - **OPEN-3363** (no E2E preflight) — no automated safety net if the backend becomes unreachable mid-manual-test; if login/API calls suddenly fail, check this first before assuming a data problem
+- **Geotab web UI 2,499 row/filter cap** (called out explicitly in the AU spec doc) — any check spanning a full day+ of log activity (Trips vs Salesforce ActionDate, LastCommunication) can silently miss events if verified via the paginated my.geotab.com view instead of an exported report. If a manual cross-check of a Fail verdict looks wrong, confirm via exported report before assuming the tool is wrong.
 
 ## 7. Open questions blocking full confidence
 
-Same list as [[GeoTab]]'s "Questions for Kameel" — carried here because they gate whether a Fail is trusted:
+Same list as [[GeoTab]]'s "Questions for Kameel" (revised 2026-08-06 against the AU Installation Test Procedure spec doc) — carried here because they gate whether a Fail is trusted:
 
-- Does `GeotabAsset.SerialNumber` assume 1:1 match with the Geotab-platform serial? Confirmed unsafe for asset trackers (out of scope anyway); unconfirmed for base GO units
+- **Scope confirmation:** is OPEN-3192 intentionally GO-unit-only (cameras/legacy Hub/asset-trackers as later phases), or did the epic miss scope it was supposed to cover?
+- Does `GeotabAsset.SerialNumber` assume 1:1 match with the Geotab-platform serial? The doc explicitly confirms this is **unsafe for asset trackers** (81/85/86/87 — out of scope anyway, no resolution step exists in the built code); unconfirmed for base GO units
 - Does "exception events"/"harsh driving" (OPEN-3199's wording) map to the duress/buzzer/GoTalk events already implemented, or is it a distinct, unimplemented check?
-- Is the HDOP threshold real, or should GPS quality only gate on satellite-count-as-diagnostic per the doc?
+- Is the HDOP threshold real, or should GPS quality only gate on satellite-count-as-diagnostic per the doc? (The doc explicitly frames satellite count as a diagnostic aid, not pass/fail — it doesn't mention an HDOP gate at all, which partially answers this but doesn't settle whether the built HDOP check is spec-derived or a code-only assumption.)
 - Exact mechanism of the Salesforce cross-check — inferred from epic notes, not independently verified
+- **Credentials:** OPEN-3254 (real INT/AU creds) shows Done as of the 2026-08-06 Jira check, but the 2026-08-06 login attempt against my.geotab.com still failed for an undiagnosed reason — confirm login actually works before trusting any verdict (see Phase 0 gate above)
+- Does Kameel know this build (OPEN-3192) already exists, or is he expecting this from scratch?
 
 ## 8. Sign-off
 
