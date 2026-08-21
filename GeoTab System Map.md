@@ -27,15 +27,18 @@ C4Context
     System(autoplatform, "Powerfleet Automation Platform", "Ops Tools QC automation — MX, FC Plus, Cellocator, and now Geotab")
 
     System_Ext(geotab, "MyGeotab Platform", "my.geotab.com — device, trip, diagnostic data for GO units")
-    System_Ext(salesforce, "Salesforce", "Case data — ActionDate used to cross-validate trips")
+    System_Ext(salesforce, "Salesforce", "[CORRECTION 2026-08-18: not actually called — see below] Case data — ActionDate used to cross-validate trips")
 
     Rel(tester, autoplatform, "Logs in, submits case + registration + IMEI, reviews verdicts")
     Rel(po, autoplatform, "Defines QC rules and thresholds for")
     Rel(autoplatform, geotab, "Authenticates, queries device/trip/status/fault data", "Geotab Checkmate SDK")
-    Rel(autoplatform, salesforce, "Cross-checks case ActionDate against")
+    Rel(autoplatform, salesforce, "[WRONG, see correction below] Cross-checks case ActionDate against")
 ```
 
 **What this shows:** the platform sits between a human tester and two external systems it doesn't control — Geotab (the data source being QC'd) and Salesforce (the case record used to validate trip data). Kameel shapes the rules; he doesn't operate the platform directly.
+
+> [!danger] Correction (2026-08-18) — Salesforce is NOT actually called
+> Checked `GeotabQCManager`'s constructor directly: its only dependency is `IGeotabApiClientFactory`. There is no Salesforce client, repository, or service anywhere in this code path. `SalesforceCase` is just the .NET type name of the request DTO (shared naming convention across all QC platforms in this codebase) — `ActionDate` is a plain field already present on that object when the request arrives, supplied by whatever caller constructed it. The Rel arrows above and the "Cross-checks... against Salesforce" framing throughout this file are **wrong** — there's no live integration, just a field name that made it sound like one. Left the diagram text struck through/annotated rather than silently rewritten, so the correction itself stays visible.
 
 ## C2 — Container
 
@@ -62,7 +65,7 @@ C4Container
     Rel(api, client, "Runs QC checks via")
     Rel(client, config, "Reads tenant credentials from")
     Rel(client, geotab, "Queries device/trip/status/fault data", "Geotab Checkmate SDK")
-    Rel(api, salesforce, "Cross-checks trip ActionDate against")
+    Rel(api, salesforce, "[WRONG, see correction below] Cross-checks trip ActionDate against")
 ```
 
 **What this shows:** the UI never talks to Geotab directly — every call is proxied through the API, which is the only container holding tenant credentials. That's the one hop the whole QC run depends on.
@@ -81,7 +84,7 @@ Precedence when a case has several checks: **Fail beats Pending beats Pass beats
 > [!danger] Scope gap — confirmed against the real spec doc
 > The AU Installation Test Procedure doc covers 8 unit types across 4 platforms. What's actually built (OPEN-3192) is **Geotab GO units only** — everything below is unbuilt, not just undocumented:
 > - **Vision AI camera** (Geotab-integrated + Hub/Unity) — linkage, live view, mounting sign-off, all unbuilt
-> - **Asset trackers (81/85/86/87)** — Geotab platform, but a *different device serial than the physical unit*. No serial-matching step exists in the built code.
+> - **Asset trackers (81/85/86/87, spoken "AT1/AT5/AT6/AT7" in the video — likely the same models)** — Geotab platform, but a *different device serial than the physical unit*. **Confirmed 2026-08-17 with a real example** (AT7: FOUR's serial ≠ Geotab's serial for the same unit, see [[GeoTab]]) — no serial-matching step exists in the built code.
 > - **FT1 / MGS** — legacy Unity Hub platform, entirely separate integration
 > - **Guardian, MiX units** — explicitly out of scope per the doc itself
 
@@ -119,11 +122,15 @@ Precedence when a case has several checks: **Fail beats Pending beats Pass beats
 
 | System | Would cover |
 |---|---|
-| Master Portal | Camera provisioning/linkage (Geotab-integrated cameras) |
-| Vision AI Hub | Camera live-view streaming |
-| Unity Hub / FC Legacy Platform | Legacy Hub cameras, FT1, MGS — **also the platform behind the existing manual work-order system**, see [[GeoTab Manual QA Workflow]] |
-| Guardian platform (Seeing Machine) | Guardian Gen 3 units — doc itself scopes this to online/offline check only |
+| Master Portal | Camera provisioning/linkage (Geotab-integrated cameras) — per [[GeoTab Handwritten Meeting Notes]] (2026-08-17), keyed by IMEI + duty type via a "Data Aggregation" layer, **a different serial-number scheme than Geotab GO units** — corroborates the IMEI-vs-serial risk in [[GeoTab Code Audit]] |
+| Vision AI Hub | Camera live-view streaming — likely the same product as **LightMetrics** (`master.lightmetrics.co`), the camera itself is a **Mitac Vision** unit. **Role confirmed 2026-08-17:** this is the back-office/reviewer-facing side — Kritiya and other QC/office users check camera status here, distinct from RideView's field role below |
+| RideView App | Companion/phone app for installer camera alignment — named in [[GeoTab Handwritten Meeting Notes]], resolves an item [[GeoTab]] previously flagged as an unconfirmed claim from the podcast transcript. **Confirmed 2026-08-17:** needed specifically on the installer's own phone for the Geotab-camera branch — a mobile app, not a desktop/web tool. **Role split confirmed:** RideView is what the technician uses in the field during install; other users (reviewers, office staff) check `master.lightmetrics.co` afterward instead — different people, different systems, same camera |
+| **FleetComplete Operations (Dynamics 365)** — `fleetcomplete.operations.dynamics.com` | **New system, 2026-08-17.** A Microsoft Dynamics 365 Finance & Operations instance — almost certainly the "Finance and Operations" browser tab visible in [[GeoTab]] screenshot 1, previously unexplained. Role: resolves a device's Serial Number to its IMEI for the camera lookup chain below. Kritiya may have called this "the billing system" — Marthinus wasn't fully certain of her exact wording, but the Dynamics F&O branding fits a genuinely finance/billing-oriented system that also happens to hold serial↔IMEI mapping data |
+| Unity Hub / FC Legacy Platform | Legacy Hub cameras, FT1, MGS — **also the platform behind the existing manual work-order system**, see [[GeoTab Manual QA Workflow]]. **New risk flagged 2026-08-17** (unconfirmed, needs Kameel/Kritiya): notes mention this integration can "impersonate" and lose data in some flow — not yet understood, see [[GeoTab Handwritten Meeting Notes]] |
+| Guardian platform (Seeing Machine) | Guardian Gen 3 units — doc itself scopes this to online/offline check only. Platform URL: `guardianlive.co` |
 | MiX platform | MiX units — explicitly out of scope per the doc |
+
+**Correction (2026-08-17) — the LightMetrics lookup key is IMEI, not serial number.** An earlier version of this table said "device serial number" — wrong, corrected here. `master.lightmetrics.co` needs the camera's **IMEI**, not its serial number. The real chain: installer has the device's **Serial Number** in FleetComplete/FOUR → looks it up in **FleetComplete Operations (Dynamics 365)** to resolve the **IMEI** → uses that IMEI in `master.lightmetrics.co`. Ideally the installer enters the IMEI directly into the "Camera IMEI" field on the FOUR install record at install time (seen in [[GeoTab]] screenshot 6) and this whole lookup chain is skipped entirely — the chain above is the fallback for when they didn't. This is concrete, first-hand evidence of exactly the identifier-mismatch pattern [[GeoTab Code Audit]] flagged as a risk — even Kritiya's own manual process needs a cross-system lookup because serial number and IMEI genuinely aren't the same value.
 
 ## Units in scope (device types)
 
@@ -134,7 +141,7 @@ Precedence when a case has several checks: **Fail beats Pending beats Pass beats
 | Vision camera (Hub/Unity) | Unity Hub (legacy FC) | No |
 | FT1 | Unity Hub (legacy FC) | No |
 | MGS | Unity Hub (legacy FC) | No |
-| Asset trackers (81/85/86/87) | Geotab, different device serial than the physical unit | Unclear — likely no, no serial-matching step exists |
+| Asset trackers (81/85/86/87 / AT1/AT5/AT6/AT7) | Geotab, different device serial than the physical unit — **confirmed with a real AT7 example 2026-08-17** | Unclear — likely no, no serial-matching step exists |
 | Guardian (Gen. 3) | Guardian platform | No — online/offline check only, out of scope per doc |
 | MiX units | MiX platform | No — explicitly out of scope |
 
