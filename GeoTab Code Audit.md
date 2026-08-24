@@ -239,6 +239,18 @@ This extends §4a's finding (which only caught Trips/Odometer/Driver/LastCommuni
 
 ---
 
+## 4g. OPEN-3694 regression-verified live on INT (2026-08-24)
+
+Ran `test-geotab-qc.ps1 -Env INT -SerialOrImei "NOTAREALSERIAL999"` against `https://automation-api.mixdevelopment.com` — a deliberately non-resolving garbage serial, no real device needed.
+
+**Result matches the fix exactly, no breakpoint required:** `DeviceActive` → "No device found for the given serial number." (Pending). All 15 real checks (Firmware/Trips/Odometer/Driver/LastCommunication/NfcDriverId/BuzzerOutput/GoTalkOutput/IridiumDuress/WifiPresence/GpsQuality/IgnitionSource/Voltage/FaultCodes) → `Pending`, each with "Device could not be resolved for the given serial number -- all downstream checks skipped and set to Pending." Overall case `Status: Pending`. The 4 pre-existing stubs (DigitalInputs/ExceptionEvents/VideoPeripheral/VideoRecordings) unchanged, still `NotTested` with their own specific blocker reasons — correct, unrelated to this fix.
+
+**This is the opposite of §4f's pre-fix behaviour** (identical phantom Pass/Fail data across different non-resolving serials) — confirms OPEN-3694's null-guard + per-case database fix works correctly on INT. AU still pending — see §4f/[[GeoTab Test Plan]] §5 for the sprint 26.19 release PR (#152764) gating AU.
+
+**Next: Phase 1 with Kritiya, once AU has this fix** — use one of the 6 known-registered serials from §4e (resolution-only comparison, not the data checks yet).
+
+---
+
 ## 5. Debugging: inspecting real Geotab data shapes (William's ask, 2026-08-17)
 
 William asked for breakpoints in the built code to see the actual JSON/data shapes MyGeotab returns for a real unit — this is exactly what's needed to resolve the "keyword match unconfirmed" and "threshold unconfirmed" items in §2 above. All locations are in `Powerfleet.Automation.Logic/Managers/QC/GeotabQCManager.cs` (line numbers per the 2026-08-14 read of `origin/integration` — pull latest before debugging, they may have drifted).

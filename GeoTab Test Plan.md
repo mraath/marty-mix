@@ -85,6 +85,22 @@ Ground truth for "is this verdict correct" isn't a spec — it's Kritiya Shresth
 | 5 | Cross-validation against N real AU work orders with Kritiya (3.3) | Verdicts reconciled, mismatches logged |
 | 6 | Sign-off / go decision — log real defects to Jira, threshold/spec ambiguities to Kameel as questions | Decision made, not left open-ended |
 
+### 4a. Revised near-term sequence — OPEN-3694 rollout, self-test before Kritiya (2026-08-24)
+
+This is the active plan right now — narrower and more mechanical than the phases above (which still apply once this rollout is trusted). Every phase up to D is **you alone**, using §4e's confirmed-registered real serials, not Kritiya's video customers (those aren't registered anywhere — see §4d/§4e). Nothing moves to her until the phase before it passes.
+
+| Phase | Who | What | Gate to proceed |
+|---|---|---|---|
+| A | You | INT regression — garbage serial via `test-geotab-qc.ps1 -Env INT` | ✅ **DONE 2026-08-24** — `DeviceActive` "No device found," all 15 real checks `Pending`, no phantom data. See [[GeoTab Code Audit]] §4g |
+| B | You | AU merge — PR #152764 approved + completed | ⏳ **Blocked on your ADO approval** (branch policy requires 1 reviewer vote — I can't cast it for you) |
+| C | You | AU resolution-only test — pick 1 of the 6 §4e serials (e.g. `G91U2JCDJX96`, Intellifleet), run `test-geotab-qc.ps1 -Env AU -SerialOrImei <serial>`. Just check: does `DeviceActive` resolve (not "No device found"), is the response no longer phantom-identical to a garbage serial | Device resolves; response looks device-specific, not static |
+| D | You | AU spot-check — repeat C for 2-3 more §4e serials (different orgs), sanity-check a couple of real values (Odometer/LastCommunication) against whatever you can see independently (MyAdmin/MyGeotab) for the same asset | Values look plausible, not identical across different serials |
+| E | Kritiya | Same resolution-only test as C/D, run independently by her against her manual process, same serial(s) | Her result matches yours |
+| F | Kritiya | Full cross-validation against real historical AU work orders (original Phase 5/§3.3) | Verdicts reconciled, mismatches logged |
+| G | Both | Sign-off — log real defects to Jira, remaining placeholder-threshold questions to Kameel | Decision made |
+
+**Breakpoint debugging (original Phase 2, §5 of [[GeoTab Code Audit]]) runs in parallel, not gating** — it answers a separate question (are the HDOP/voltage/keyword-match thresholds correct), not "does resolution work." Can happen any time before Phase F, doesn't block C/D/E.
+
 ## 5. Test case table (implemented checks — one row per check, verified against `GeotabQCManager.cs` @ `origin/integration` 2026-08-14)
 
 **Where to test every row in Swagger:** all 15 checks below run behind the *same* operation — `POST /api/qc-automation-geotab` in the AU/INT Automation API's Swagger UI (`{baseUrl}/swagger/index.html`, e.g. `https://automation-api-au.mixtelematics.com/swagger`). There's no per-check endpoint — the "Swagger payload" column below only exists to flag which request-body fields matter for that specific row, since the operation itself never changes.
@@ -107,7 +123,9 @@ Ground truth for "is this verdict correct" isn't a spec — it's Kritiya Shresth
 | Iridium duress | Iridium IOX present + `"emergency data success"`-keyword event, works ignition on/off | No | **Confirmed correct (2026-08-17)** — matches Kritiya's real exported-report practice, no longer a placeholder to verify | **Yes** — nothing left to verify on the matching logic; API confirms Pass/Pending | Standard payload |
 | WiFi presence (Santos) | Wi-Fi IOX add-on present — presence-only, no recency requirement | No | No | **Yes** — same mechanism as MyGeotab's own "IOX Wi-Fi (Present)" diagnostic, should match exactly | Standard payload |
 
-**Note (2026-08-18):** every row above currently returns `DeviceActive: "No device found"` regardless of the identifier submitted — see [[GeoTab Code Audit]] §4a/§4b for the confirmed root cause (no MiX-mapping resolution step) before trusting any Pass/Fail result at face value.
+**Note (2026-08-18, SUPERSEDED):** every row above used to return `DeviceActive: "No device found"` regardless of the identifier submitted, with every downstream check still returning a phantom Pass/Fail instead of Pending — see [[GeoTab Code Audit]] §4a/§4b/§4f for the confirmed root cause (missing null-guard + `GeotabTenantConfig.Database` empty string).
+
+**FIXED 2026-08-19 — OPEN-3694.** Null-guard added: when the device doesn't resolve, every check below `DeviceActive` now correctly returns Pending instead of a phantom Pass/Fail. Per-case database resolution replaces the static empty string. Merged to `integration` (PR #152958, commit `ddf4d61`) and **deployed to INT** same day (build 697033, `deploy_INT` stage succeeded). **Not yet on AU** — held behind the open sprint 26.19 release PR (#152764, `integration→production`, "DO NOT MERGE until approved") — trust the table above on AU only after that PR merges.
 
 **Net result: 0 of the 15 real checks strictly require a C# breakpoint for a first pass.** 11 are fully API-testable with real values already in the response; 3 (NFC/Buzzer/GoTalk) need cross-referencing MyGeotab's own diagnostics instead of code debugging; Iridium is already resolved. See [[GeoTab]]'s API-testing discussion (2026-08-18) for the full reasoning.
 
