@@ -92,14 +92,46 @@ This is the active plan right now — narrower and more mechanical than the phas
 | Phase | Who | What | Gate to proceed |
 |---|---|---|---|
 | A | You | INT regression — garbage serial via `test-geotab-qc.ps1 -Env INT` | ✅ **DONE 2026-08-24** — `DeviceActive` "No device found," all 15 real checks `Pending`, no phantom data. See [[GeoTab Code Audit]] §4g |
-| B | You | AU merge — PR #152764 approved + completed | ⏳ **Blocked on your ADO approval** (branch policy requires 1 reviewer vote — I can't cast it for you) |
-| C | You | AU resolution-only test — pick 1 of the 6 §4e serials (e.g. `G91U2JCDJX96`, Intellifleet), run `test-geotab-qc.ps1 -Env AU -SerialOrImei <serial>`. Just check: does `DeviceActive` resolve (not "No device found"), is the response no longer phantom-identical to a garbage serial | Device resolves; response looks device-specific, not static |
-| D | You | AU spot-check — repeat C for 2-3 more §4e serials (different orgs), sanity-check a couple of real values (Odometer/LastCommunication) against whatever you can see independently (MyAdmin/MyGeotab) for the same asset | Values look plausible, not identical across different serials |
-| E | Kritiya | Same resolution-only test as C/D, run independently by her against her manual process, same serial(s) | Her result matches yours |
-| F | Kritiya | Full cross-validation against real historical AU work orders (original Phase 5/§3.3) | Verdicts reconciled, mismatches logged |
-| G | Both | Sign-off — log real defects to Jira, remaining placeholder-threshold questions to Kameel | Decision made |
+| B | You | AU merge — PR #152764 approved + completed | ✅ **DONE** — merged |
+| C | You | AU resolution-only test — pick 1 of the 6 §4e serials (e.g. `G91U2JCDJX96`, Intellifleet), run `test-geotab-qc.ps1 -Env AU -SerialOrImei <serial>`. Just check: does `DeviceActive` resolve (not "No device found"), is the response no longer phantom-identical to a garbage serial | ✅ **DONE 2026-08-25** — see §4h below for full results and the corporate-DNS detour |
+| D | You | AU spot-check — repeat C for 2-3 more §4e serials (different orgs), sanity-check a couple of real values (Odometer/LastCommunication) against whatever you can see independently (MyAdmin/MyGeotab) for the same asset | ✅ **DONE 2026-08-25 (adapted)** — §4e serials themselves turned out to be a dead end for spot-checking (see §4h); substituted 2 more real devices from the account we can actually reach, on both AU and INT. See §4h |
+| E | Kritiya | Same resolution-only test as C/D, run independently by her against her manual process, same serial(s) | Not started — blocked on OPEN-3757 (per-customer database resolution), see §4h |
+| F | Kritiya | Full cross-validation against real historical AU work orders (original Phase 5/§3.3) | Not started |
+| G | Both | Sign-off — log real defects to Jira, remaining placeholder-threshold questions to Kameel | Not started |
+
+### 4h. Phase C/D results and a new finding — shared Geotab account only sees one company (2026-08-25)
+
+**Phase C (Water Corporation WA PROD, `G9X6YFEN5Y67`):** Two false starts before a clean result:
+1. First attempt returned "No device found" — traced to corporate DNS resolving `automation-api-au.mixtelematics.com` to the wrong IP (same known issue logged 2026-08-19 in [[GeoTab Code Audit]] §4f's org notes — still unfixed). Confirmed via `Resolve-DnsName` against the local resolver vs `8.8.8.8` (public DNS) — different IPs.
+2. Second attempt used a hosts-file override to the correct IP (`32.237.24.196`) — **passed clean.** Firmware 45.51, odometer 21139km, 3 trips today, last comm 2 minutes before the call. Real, dynamic, device-specific — Phase C gate met.
+
+**Phase D — the other 5 §4e serials (Fleet Integrations, Coho, Service Stream, FORACO, Intellifleet) all returned "No device found," even with DNS fixed.** Root cause, confirmed via code + a live MyGeotab login: the shared service account (`opstoolssvc@powerfleet.com`) used by both AU and INT only has visibility into **one Geotab company** (`producttest`, an internal test/demo account) — not each customer's own account. Water Corp happened to be reachable through it; the other 5 real, MiX-registered serials are not, because they belong to different customers' own Geotab companies that this shared login can't see at all. Confirmed by direct login to `my.geotab.com` and finding none of the 4 remaining serials present under `producttest`.
+
+**This turned out to be bigger than a self-test blocker — it's a live production gap.** Traced the code path (`GeotabApiClientFactory.GetClient`): a per-case `Database` override exists (added by OPEN-3694 itself) but nothing populates it in production — no Salesforce integration exists in the repo, and the QC UI form has no field for it. So today, any real customer other than whoever the static default resolves to would hit the same "No device found" result Kritiya would see, regardless of the OPEN-3694 fix. **Filed as [[OPEN-3757]]**, parent OPEN-3192, High priority, sprint 26.19 — separate from OPEN-3694, which remains correctly fixed and verified.
+
+**Adapted Phase D — used real devices from the one account we can reach instead:**
+- Ford Kuga (`G9J8R642RJ07`, GO9, active) — tested on **INT**: DeviceActive/Firmware Pass, Trips/Odometer honestly Pending (no trips that day), LastCommunication correctly flagged >24h old. All real, non-uniform.
+- ADL Hilux (`G977BVXVF7A5`, GO9, active) — tested on **AU**: DeviceActive/Firmware/LastCommunication Pass (comm'd ~1 min prior), Trips/Odometer honestly Pending, a device-specific GoTalk wiring flag not seen on the other two devices.
+
+Three independent real devices now confirmed, two environments (AU + INT) — every result genuinely device-specific, nothing static or repeated. **The OPEN-3694 fix itself is solid.** The real per-customer database name comes from either MyAdmin's per-device "Primary Database" field or a SharePoint "customers database" lookup page (`.../Fleet Complete Intranet/CS/SitePages/DatabaseList.aspx`, AU-Intranet-scoped, may not be accessible to Ops Tools) — two confirmed real examples on record: Santos → `santos`, Terra Cat → `terra_cat` (see [[GeoTab Overview Transcript]], ~39:39 in the AU Test Steps recording for the SharePoint list itself).
 
 **Breakpoint debugging (original Phase 2, §5 of [[GeoTab Code Audit]]) runs in parallel, not gating** — it answers a separate question (are the HDOP/voltage/keyword-match thresholds correct), not "does resolution work." Can happen any time before Phase F, doesn't block C/D/E.
+
+### 4i. Action plan agreed with boss (2026-08-25, post-status-update)
+
+Boss's read-back after the §4h update, translated into concrete next steps. Not sending anything to Kritiya until these resolve — premature, would cost trust in the system. Fallback if genuinely stuck: ask Kritiya for SharePoint access or just the DB names, or whether there's a formula for how her side derives them.
+
+| # | Action | Status |
+|---|---|---|
+| 1 | Code walkthrough of the login/auth flow — insight only, does not fix the access problem by itself | ✅ Done 2026-08-25 — see finding below |
+| 2 | Investigate passing the logged-in (MiX) user's identity through to the Geotab client, as a code change | ⏳ Next — see finding below, may turn out unnecessary |
+| 3 | Get the org → Geotab-database-name mapping (SharePoint list, or ask Kritiya) | Not started |
+| 4 | End-to-end test: real org DB name + login → confirm we can see that org's real data | Not started — blocked on #3, but partially testable now with `terra_cat` (see below) |
+| 5 | Do not contact Kritiya yet | Standing — only if stuck |
+
+**Code walkthrough finding (action 1):** the MiX `authToken` (proves you're allowed to call our API) and the Geotab login (`GeotabTenants[env].Username/Password`, hardcoded per environment in appsettings) are two completely separate systems — they never touch. Geotab auth goes straight from `GeotabApiClient` to `my.geotab.com` via the official SDK, independent of who's logged into Operations Tools. The per-case `Database` override (action 4's mechanism) already exists in code from OPEN-3694 — `GeotabApiClientFactory.GetClient(tenantKey, database)` — so testing action 4 needs no new code, just a real database name.
+
+**New wrinkle, worth resolving before committing to action 2's code change:** the browser login auto-filled `producttest`, but the API's blank-default resolved to **Water Corp** — two different companies via the same shared credentials, neither one explicitly requested either time. That's inconsistent with "this account can only ever see one company" (§4h's working theory) — it may have broader multi-company access already, with the real gap being purely "we don't know the right database names" (points 3/4), not "we lack access at all." **Testing this directly now** with a real known pair already in the docs — Terra Cat, database `terra_cat`, serial `G9FVH0K0YFNT` — same shared credentials, explicit `Database` override, no code change. If it resolves, action 2 (passing per-user identity through) may turn out unnecessary — the fix shrinks to "get real database names," which is much simpler. If it fails on an access/auth error (not a clean "No device found"), that confirms real per-company access is genuinely scoped, and action 2 becomes the real next step.
 
 ## 5. Test case table (implemented checks — one row per check, verified against `GeotabQCManager.cs` @ `origin/integration` 2026-08-14)
 
