@@ -68,6 +68,16 @@ So this is how it would be in the progress and then you have to verify status. I
 
 *— [gap: 3:20 to 56:07 not captured in this transcript] —*
 
+**Screenshot at 39:39 (2026-08-27, from the user)** falls inside this gap — Kritiya has SharePoint open at
+`https://mixtelematics.sharepoint.com/sites/AUS-Intranet/Fleet%20Complete%20Intranet/CS/SitePages/DatabaseList.aspx`,
+a flat alphabetised list of plain-text Geotab database names (one per line, e.g. `telstra_business_centre`,
+`Temporary_Tracking`, `Tenterfield_Shire`, **`terra_cat`** — highlighted in the screenshot, confirming this really
+is the literal Geotab database name behind "Terra Cat" and independently corroborating the earlier raw-`Authenticate`
+test result). This is the "customers database" SharePoint page previously only inferred from context — now
+confirmed real, with its exact URL and confirmation Kritiya's side reads it during a live case lookup. Access
+gate for our own Ops Tools team (AUS-Intranet site permissions) still unconfirmed — see [[GeoTab Test Plan]] §8a
+item 5.
+
 **Kameel Leeda** 56:07
 And then if there's any specific questions, then I'll just, you know, drop you a line or e-mail or something. Just to ask you, but yeah, I think I've got bulk of the information that I require. Finally, thank you so much. Appreciate it.
 

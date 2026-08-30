@@ -133,6 +133,12 @@ Boss's read-back after the §4h update, translated into concrete next steps. Not
 
 **New wrinkle, worth resolving before committing to action 2's code change:** the browser login auto-filled `producttest`, but the API's blank-default resolved to **Water Corp** — two different companies via the same shared credentials, neither one explicitly requested either time. That's inconsistent with "this account can only ever see one company" (§4h's working theory) — it may have broader multi-company access already, with the real gap being purely "we don't know the right database names" (points 3/4), not "we lack access at all." **Testing this directly now** with a real known pair already in the docs — Terra Cat, database `terra_cat`, serial `G9FVH0K0YFNT` — same shared credentials, explicit `Database` override, no code change. If it resolves, action 2 (passing per-user identity through) may turn out unnecessary — the fix shrinks to "get real database names," which is much simpler. If it fails on an access/auth error (not a clean "No device found"), that confirms real per-company access is genuinely scoped, and action 2 becomes the real next step.
 
+**Result (2026-08-25/26):** Two tests run.
+1. Through our own API with `Database=terra_cat` — clean "No device found." **Turned out to be inconclusive** — traced `GeotabApiClient.SafeCallAsync`: it catches *every* exception (including a real Geotab auth/access failure) and just logs it, returning null. An access-denied error and a genuine not-found look identical in our API's response — our own error handling was hiding the real answer.
+2. Bypassed our app, called Geotab's raw `Authenticate` API directly with `database=terra_cat` and the same shared credentials — **`InvalidUserException: "Incorrect login credentials"`.** Confirmed: the shared account genuinely cannot authenticate into `terra_cat` at all, not just "can't find this device." Real access scope, not a naming problem.
+
+**Conclusion: action 2 is now the confirmed real next step, action 3's SharePoint lookup alone won't fix this even once we have it.** Whoever runs a real check needs to authenticate with *their own* Geotab login (e.g. Kritiya's), not the one shared service account — a genuine code change (accept per-request Geotab credentials instead of one hardcoded pair), not just a config/lookup fix. Script used for both raw-auth tests, reusable for future database names: `test-geotab-raw-auth.ps1` (also `test-geotab-qc-database.ps1` for testing through our own API with an explicit `Database` override).
+
 ## 5. Test case table (implemented checks — one row per check, verified against `GeotabQCManager.cs` @ `origin/integration` 2026-08-14)
 
 **Where to test every row in Swagger:** all 15 checks below run behind the *same* operation — `POST /api/qc-automation-geotab` in the AU/INT Automation API's Swagger UI (`{baseUrl}/swagger/index.html`, e.g. `https://automation-api-au.mixtelematics.com/swagger`). There's no per-check endpoint — the "Swagger payload" column below only exists to flag which request-body fields matter for that specific row, since the operation itself never changes.
@@ -184,6 +190,40 @@ Same list as [[GeoTab]]'s "Questions for Kameel" (revised 2026-08-06 against the
 - Exact mechanism of the Salesforce cross-check — inferred from epic notes, not independently verified
 - **Credentials:** OPEN-3254 (real INT/AU creds) shows Done as of the 2026-08-06 Jira check, but the 2026-08-06 login attempt against my.geotab.com still failed for an undiagnosed reason — confirm login actually works before trusting any verdict (see Phase 0 gate above)
 - Does Kameel know this build (OPEN-3192) already exists, or is he expecting this from scratch?
+
+## 8a. Plan for 2026-08-27 — per-user Geotab auth (OPEN-3757 / OPEN-3770)
+
+Two tracks: one blocked on Kritiya, one buildable regardless of her reply. Goal for tomorrow morning: work Track B while Track A sits with her.
+
+**Track A — blocked on Kritiya's reply (sent 2026-08-25, no reply as of 2026-08-26 evening)**
+
+Original message covered items 1-2 below. A sharpened 3rd item still needs to go to her as a follow-up — confirming *which* login isn't the same as confirming that login actually *has* multi-org access:
+
+1. Is her Geotab login the same one she uses for QC/MFM, or separate?
+2. Can she send the list of org→database names she showed in the video, and does that list ever change (static vs. needs a live source)?
+3. **(follow-up, not yet sent)** Would she test her own Geotab login directly against 2-3 different orgs from the video and confirm all succeed? This is the actual proof the per-user-credential design works — #1 only tells us *which* credential to try, not whether it has the access we're assuming.
+
+**Track B — buildable now, independent of her answer**
+
+| # | Work item | Repo/File | Ticket | Depends on Kritiya? |
+|---|---|---|---|---|
+| 1 | Add `Database` field to UI type contract + form input (manual entry, so a tester can supply a real org DB name today) | `Powerfleet.Automation.UI/src/lib/models/contracts.ts`, `.../components/qc/QCFormView.tsx` | OPEN-3757 | No |
+| 2 | Security pass on exception logging — confirm `SafeCallAsync`/`Logger.LogException` in `GeotabApiClient.cs` never logs a credential | `Powerfleet.Automation/Powerfleet.Automation.Logic/ServiceWrappers/GeotabApiClient.cs` | OPEN-3770 | No |
+| 3 | Add an uncached `GetClient` path to `GeotabApiClientFactory` that takes explicit credentials and bypasses the singleton cache entirely (proves the per-request-credential mechanism structurally, sidesteps the User A/B cache-collision risk from OPEN-3770 Note 4) | `GeotabApiClientFactory.cs` + `IGeotabApiClientFactory.cs` | OPEN-3770 | No |
+| 4 | Wire #1 and #3 together end-to-end using the **existing shared service account's known-good credentials** as a stand-in — proves the whole "UI captures creds → API passes through per-request → uncached client" pipeline works before any real per-user Geotab login exists | UI + API, both repos | OPEN-3757 + OPEN-3770 | No |
+| 5 | Prep the serial→org→database ingestion shape (e.g. a simple JSON/dictionary config) so Kritiya's list is a data-drop, not more design work, once it arrives | TBD — likely `appsettings.*.json` or a new lookup file | OPEN-3757 | No (shape only; real data is) |
+
+**Suggested order tomorrow:** #2 first (cheap, standalone, removes a blocker for everything else touching credentials) → #3 → #1 → #4 (ties #1+#3 together, gives a real demo-able result) → #5 (prep only). Check for a Kritiya reply first thing — if it's in, fold the real answers straight into whichever of #1-#5 is still in progress rather than finishing the stand-in version.
+
+**Progress (2026-08-27):**
+- **#2 (security pass) — done, no code change needed.** Traced the exception path: `GeotabApiClient`'s own `SafeCallAsync` plus a second wrapper in `GeotabQCManager` (line 858) already catch every exception, including auth failures, before anything reaches the API response. Confirmed this is *why* the earlier `terra_cat` test returned a clean "No device found" instead of a raw exception. Documented as a constraint to preserve, not a bug to fix.
+- **#3 (uncached credentialed client) — done.** `GeotabApiClientFactory.GetClientWithCredentials(tenantKey, userName, password, database)` added — bypasses the singleton cache entirely (kills the User A/B collision risk from OPEN-3770 Note 4 as a side effect). 12/12 factory tests pass (3 new).
+- **#1 (manual `Database` field) — done, and corrected scope mid-work.** Found the local SDLC-managed clone of `Powerfleet.Automation.UI` was 7 weeks stale — it was missing `GeotabQCFormView.tsx`/OPEN-3204 entirely, which is why an earlier finding wrongly claimed no Geotab QC UI existed at all (corrected on both Jira tickets). Once synced: added `Database` to `contracts.ts` and a manual-entry field to the *real* `GeotabQCFormView.tsx`. 239/239 UI tests pass, clean typecheck.
+- **#4 (wire together) — backend half done, UI half deliberately held.** `QCController`'s Geotab action now accepts optional `X-Geotab-Username`/`X-Geotab-Password` headers (never query string or body) and routes to `GetClientWithCredentials` when both are present; both-or-neither fallback to existing shared-account behaviour otherwise. Response only ever says `credentials=caller-supplied` vs `shared account` — never the value. 928/928 full backend suite passes. Did **not** wire the UI to send these headers yet (even with the shared account as a stand-in) — that means designing a credential-capture UI element, which is the one piece still genuinely blocked on Kritiya's answer.
+- **#5 (ingestion shape prep)** — not started, but the SharePoint source is now confirmed real (not just inferred): `https://mixtelematics.sharepoint.com/sites/AUS-Intranet/Fleet%20Complete%20Intranet/CS/SitePages/DatabaseList.aspx`, a flat list of plain-text database names — `terra_cat` visible and highlighted in a screenshot from 39:39 of the AU Test Steps video (fills part of the [[GeoTab Overview Transcript]] gap). Our own team's access to this page is still unconfirmed.
+- All work on `AI_OPEN-3757_FromIntegration` in both `Powerfleet.Automation` and `Powerfleet.Automation.UI` repos, committed, not pushed.
+
+**Branches:** `AI_OPEN-3757_FromIntegration` already exists in `Powerfleet.Automation` (has the resolved-database diagnostic commit from 2026-08-26). UI-side work needs its own branch in `Powerfleet.Automation.UI` (same naming convention). OPEN-3770 items #2/#3 can land on the existing `Powerfleet.Automation` branch alongside OPEN-3757's commit, or a separate `AI_OPEN-3770_FromIntegration` branch — either is fine since both tickets are related and touch the same files; keeping them on one branch avoids a merge-order dependency between two branches touching `GeotabApiClientFactory.cs`.
 
 ## 8. Sign-off
 

@@ -12,7 +12,7 @@ sources:
   - Walkthrough - Decommissioning UI & Auth Updates.md
   - DST Daylight Saving Times/DST Code Paths.md
   - DST Daylight Saving Times/DST Debug Guide.md
-last_updated: 2026-05-28
+last_updated: 2026-08-26
 ---
 
 DynaMiX.Backend is the core .NET backend system for MiX Telematics device configuration, fleet management, and operations. It hosts `DeviceIntegrationManager`, the DST service, and many admin modules. The primary API is `DynaMiX.Services.Api`.
@@ -36,6 +36,7 @@ DynaMiX.Backend is the core .NET backend system for MiX Telematics device config
 | App configs (per-env) | `Services\Daylight Saving Adjustment\.config\app.{ENV}.config` |
 | Asset commissioning | `NancyModules\FleetAdmin\Assets\AssetCommissioningModule.cs` |
 | Org group membership | `NancyModules\FleetAdmin\OrgGroupMembershipModule.cs` |
+| Iridium account/provisioning | `Logic\DynaMiX.Logic\Operations\IridiumManager.cs` (`GetIridiumAccountInfo`, `AddIridiumContractToAsset`) — called from `AssetCommissioningManager.UpdateIridiumSatelliteDetailsIfEnabled` |
 
 ## Key Stored Procedures
 
@@ -59,3 +60,4 @@ DynaMiX.Backend is the core .NET backend system for MiX Telematics device config
 - [[FMTimeAdjuster]] — FMTimeAdjuster.Api hosted here
 - [[Alerts-Feature]] — alert calculation stored procs called from Backend
 - [[Config-Groups-Page]] — Backend powers Config Groups data
+- [[Iridium-Integration]] — Backend hosts `FLEET (DynaMiX)`, the API-side endpoint of the Iridium satellite integration

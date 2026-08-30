@@ -7,6 +7,11 @@ updated: 2026-07-24T16:00
 > Append-only. Format: `## [YYYY-MM-DD] {operation} | {title}`
 > Parse tip: `grep "^## \[" log.md | tail -10`
 
+## [2026-08-26] ingest | Iridium System Integration.pdf (shared diagram, live session)
+- Pages created: Iridium-Integration (entity), iridium-system-integration (source)
+- Pages updated: DynaMiX-Backend (added IridiumManager module path + connection), index.md
+- Contradictions flagged: none
+
 ## [2026-07-21] ingest | SA Income Tax Brackets (from live session, salary/bonus review)
 - Pages created: SA Income Tax Brackets (concept)
 - Pages updated: index.md

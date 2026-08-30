@@ -1,11 +1,11 @@
 ---
 created: 2026-07-21T15:15
-updated: 2026-07-24T16:00
+updated: 2026-08-26T00:00
 ---
 # Wiki Index — Powerfleet Engineering Knowledge Base
 
-> Auto-maintained by LLM. Last updated: 2026-07-24
-> Total pages: 35 | Sources ingested: 20
+> Auto-maintained by LLM. Last updated: 2026-08-26
+> Total pages: 37 | Sources ingested: 21
 
 ## Entities
 
@@ -14,7 +14,8 @@ updated: 2026-07-24T16:00
 
 ### Systems
 - [AWS-Environments](entities/AWS-Environments.md) — Master map of all AWS accounts, environment URLs, and auth methods
-- [DynaMiX-Backend](entities/DynaMiX-Backend.md) — Core .NET backend; DeviceIntegrationManager, DST service, alerts SPs. NEVER call from Automation/Ops Tools.
+- [DynaMiX-Backend](entities/DynaMiX-Backend.md) — Core .NET backend; DeviceIntegrationManager, DST service, alerts SPs, IridiumManager. NEVER call from Automation/Ops Tools.
+- [Iridium-Integration](entities/Iridium-Integration.md) — Full satellite architecture: hardware link, FLEET(DynaMiX)↔Iridium API, Comms-team-owned MiX.Connect.Iridium tier, Iridium Incoming→DataProcessor→Asset DB pipeline
 - [Command-45](entities/Command-45.md) — `UpdateAssetTimezoneDeviation` DST device command; 4 entry points, FM/Mesa paths
 - [Config-Api](entities/Config-Api.md) — Internal DeviceConfig API; DST endpoints, NuGet client, swagger URLs
 - [DaylightSavingAdjustmentService](entities/DaylightSavingAdjustmentService.md) — Automatic nightly Windows Service for DST; debug checklist
@@ -66,6 +67,9 @@ updated: 2026-07-24T16:00
 - [oe-config-groups-cluster3](sources/oe-config-groups-cluster3.md) — 71 OE/Config Groups ticket notes tagged
 - [ets-tickets-cluster4](sources/ets-tickets-cluster4.md) — 9 ETS ticket notes tagged
 - [remaining-clusters-batch](sources/remaining-clusters-batch.md) — 356 files tagged across SRs, SQL, Done, QA, AC, Frangular, root, misc
+
+### Iridium / Satellite
+- [iridium-system-integration](sources/iridium-system-integration.md) — Iridium Solution Integration architecture diagram (2026-08-26)
 
 ### Compensation Review
 - [comp-meeting-cheat-sheet](sources/comp-meeting-cheat-sheet.md) — 15-min meeting prep: 7-step comp discussion flow with managers (2026-07-21)
